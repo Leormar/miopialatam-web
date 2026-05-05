@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unirme a MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--txt:#1A3347;--mu:#6B8A9A;--bd:#E2EAF0;--bg:#F7F9FB}
+body{font-family:'Barlow',sans-serif;color:var(--txt);background:var(--bg)}
+.topbar{display:flex;height:5px}
+.topbar div{flex:1}
+nav{background:#fff;border-bottom:1px solid var(--bd);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-stripes{display:flex;gap:3px}
+.logo-stripes div{width:7px;height:34px;border-radius:3px}
+.logo-text strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.92rem;text-transform:uppercase;color:var(--txt)}
+.logo-text span{font-size:0.58rem;color:var(--mu)}
+.back{font-size:0.78rem;color:var(--mu);text-decoration:none}
+.wrap{max-width:640px;margin:0 auto;padding:4rem 2rem}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#E8F5E9;border:1px solid #C8E8D5;color:var(--ve);font-size:0.7rem;font-weight:600;padding:5px 14px;border-radius:20px;margin-bottom:1rem}
+.badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--ve);display:block}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;text-transform:uppercase;letter-spacing:-1px;color:var(--txt);margin-bottom:0.5rem;line-height:1;text-align:center}
+.sub{font-size:0.92rem;color:var(--mu);line-height:1.7;max-width:480px;margin:0 auto 2rem;text-align:center}
+.form-card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:2rem;box-shadow:0 4px 20px rgba(0,119,200,0.06)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+label{display:block;font-size:0.72rem;font-weight:600;color:var(--txt);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.4rem}
+input,select,textarea{width:100%;padding:0.65rem 0.9rem;border:1px solid var(--bd);border-radius:8px;font-size:0.85rem;font-family:'Barlow',sans-serif;color:var(--txt);background:#fff;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--az)}
+.mb{margin-bottom:1rem}
+.btn-wa{width:100%;background:#25D366;color:#fff;border:none;padding:0.9rem;border-radius:8px;font-size:0.95rem;font-weight:600;cursor:pointer;font-family:'Barlow',sans-serif;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:0.5rem}
+.btn-wa:hover{background:#1ea855}
+.form-note{font-size:0.72rem;color:var(--mu);text-align:center;margin-top:0.8rem;line-height:1.5}
+.info-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-top:1.5rem}
+.info-card{background:#fff;border:1px solid var(--bd);border-radius:10px;padding:1rem;text-align:center}
+.info-card-ico{font-size:1.5rem;margin-bottom:0.4rem}
+.info-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.2rem}
+.info-card p{font-size:0.7rem;color:var(--mu);line-height:1.4}
+footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3rem}
+.footer-color{display:flex;height:3px;border-radius:2px;overflow:hidden;max-width:200px;margin:0 auto 1rem}
+.footer-color div{flex:1}
+.footer-copy{font-size:0.7rem;color:rgba(255,255,255,0.4)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+    <div class="logo-text">
+      <strong>Grupo Manejo Miopia Latam</strong>
+      <span>miopialatam.org</span>
+    </div>
+  </a>
+  <a href="index.html" class="back">Volver al inicio</a>
+</nav>
+
+<div class="wrap">
+  <div style="text-align:center;margin-bottom:2rem">
+    <div class="badge">Grupo privado - Admision por revision</div>
+    <h1>Unete a la red MML</h1>
+    <p class="sub">Completa tu solicitud. El equipo fundador revisara tu perfil y te contactara por WhatsApp para confirmar tu ingreso.</p>
+  </div>
+
+  <div class="form-card">
+    <div class="grid2">
+      <div>
+        <label>Nombre completo *</label>
+        <input type="text" id="nombre" placeholder="Dr. Juan Perez" required>
+      </div>
+      <div>
+        <label>Email profesional *</label>
+        <input type="email" id="email" placeholder="tu@clinica.com" required>
+      </div>
+      <div>
+        <label>Pais *</label>
+        <select id="pais" required>
+          <option value="">Selecciona tu pais</option>
+          <option>Colombia</option>
+          <option>Mexico</option>
+          <option>Argentina</option>
+          <option>Brasil</option>
+          <option>Chile</option>
+          <option>Peru</option>
+          <option>Venezuela</option>
+          <option>Ecuador</option>
+          <option>Bolivia</option>
+          <option>Paraguay</option>
+          <option>Uruguay</option>
+          <option>Costa Rica</option>
+          <option>Guatemala</option>
+          <option>Honduras</option>
+          <option>El Salvador</option>
+          <option>Nicaragua</option>
+          <option>Panama</option>
+          <option>Cuba</option>
+          <option>Republica Dominicana</option>
+          <option>Puerto Rico</option>
+          <option>Espana</option>
+          <option>USA</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div>
+        <label>Ciudad *</label>
+        <input type="text" id="ciudad" placeholder="Tu ciudad" required>
+      </div>
+    </div>
+    <div class="mb">
+      <label>Especialidad principal *</label>
+      <select id="especialidad" required>
+        <option value="">Selecciona tu especialidad</option>
+        <option>Orto-K / Ortoqueratologia</option>
+        <option>Lentes de contacto especiales</option>
+        <option>Atropina / Control farmacologico</option>
+        <option>Miopia pediatrica</option>
+        <option>Control de miopia en comanejo</option>
+        <option>Investigacion en miopia</option>
+        <option>Oftalmologia con enfoque en miopia</option>
+        <option>Otra</option>
+      </select>
+    </div>
+    <div class="mb">
+      <label>Institucion / Clinica</label>
+      <input type="text" id="institucion" placeholder="Nombre de tu clinica o institucion">
+    </div>
+    <div class="mb">
+      <label>Por que quieres unirte a MML?</label>
+      <textarea id="mensaje" rows="3" placeholder="Cuentanos sobre tu interes en el control de miopia..."></textarea>
+    </div>
+    <button class="btn-wa" onclick="enviarWA()">Enviar solicitud por WhatsApp</button>
+    <p class="form-note">Tu solicitud llegara a los admins de MML por WhatsApp. Te contactaran en 24-48 horas para confirmar tu ingreso.</p>
+  </div>
+
+  <div class="info-cards">
+    <div class="info-card">
+      <div class="info-card-ico">O</div>
+      <h4>Solo especialistas</h4>
+      <p>Red exclusiva para optometras y oftalmologos en control de miopia</p>
+    </div>
+    <div class="info-card">
+      <div class="info-card-ico">6</div>
+      <h4>6 paises activos</h4>
+      <p>PR - CO - MX - US - ES - EC y creciendo</p>
+    </div>
+    <div class="info-card">
+      <div class="info-card-ico">E</div>
+      <h4>Evidencia clinica</h4>
+      <p>Casos, protocolos e investigacion actualizada</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-color">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="footer-copy">2026 Grupo Manejo Miopia Latam - miopialatam.org</div>
+</footer>
+
+<script>
+function enviarWA(){
+  var nombre=document.getElementById('nombre').value;
+  var email=document.getElementById('email').value;
+  var pais=document.getElementById('pais').value;
+  var ciudad=document.getElementById('ciudad').value;
+  var esp=document.getElementById('especialidad').value;
+  var inst=document.getElementById('institucion').value;
+  var msg=document.getElementById('mensaje').value;
+  if(!nombre||!email||!pais||!ciudad||!esp){alert('Por favor completa los campos obligatorios');return}
+  var texto='SOLICITUD DE MEMBRESIA MML\n\nNombre: '+nombre+'\nEmail: '+email+'\nPais: '+pais+'\nCiudad: '+ciudad+'\nEspecialidad: '+esp+'\nInstitucion: '+inst+'\nMensaje: '+msg+'\n\nmiopialatam.org';
+  var n1='17874595163';
+  var n2='573013166655';
+  window.open('https://wa.me/'+n1+'?text='+encodeURIComponent(texto),'_blank');
+  setTimeout(function(){window.open('https://wa.me/'+n2+'?text='+encodeURIComponent(texto),'_blank')},500);
+}
+</script>
+</body>
+</html>
