@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articulos - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--txt:#1A3347;--mu:#6B8A9A;--bd:#E2EAF0;--bg:#F7F9FB}
+body{font-family:'Barlow',sans-serif;color:var(--txt);background:#fff}
+.topbar{display:flex;height:5px}
+.topbar div{flex:1}
+nav{background:#fff;border-bottom:1px solid var(--bd);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-stripes{display:flex;gap:3px}
+.logo-stripes div{width:7px;height:34px;border-radius:3px}
+.logo-text strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.92rem;text-transform:uppercase;color:var(--txt)}
+.logo-text span{font-size:0.58rem;color:var(--mu)}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:0.82rem;color:var(--mu);text-decoration:none;font-weight:500}
+.nav-links a:hover{color:var(--az)}
+.btn-primary{background:var(--az);color:#fff;border:none;padding:0.42rem 1rem;border-radius:6px;font-size:0.78rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:'Barlow',sans-serif}
+.hero-sec{background:linear-gradient(160deg,#EAF4FB,#fff);padding:3rem 2rem;border-bottom:1px solid var(--bd);text-align:center}
+.sec-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.68rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--az);margin-bottom:0.4rem}
+.sec-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.5rem}
+.sec-sub{font-size:0.9rem;color:var(--mu);line-height:1.7;max-width:500px;margin:0 auto}
+.content{max-width:1100px;margin:0 auto;padding:3rem 2rem}
+.art-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--az);margin-bottom:0.4rem}
+.art-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;text-transform:uppercase;color:var(--txt);margin-bottom:1.5rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:3rem}
+.card{background:#fff;border:1px solid var(--bd);border-radius:14px;overflow:hidden;text-decoration:none;display:block}
+.card:hover{box-shadow:0 4px 16px rgba(0,119,200,0.1)}
+.card-thumb{height:80px;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.2rem;color:#fff}
+.card-body{padding:1.1rem}
+.card-tag{font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 8px;border-radius:20px;display:inline-block;margin-bottom:0.5rem}
+.card-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.95rem;color:var(--txt);line-height:1.3;margin-bottom:0.5rem}
+.card-desc{font-size:0.75rem;color:var(--mu);line-height:1.5;margin-bottom:0.7rem}
+.card-meta{display:flex;justify-content:space-between;align-items:center}
+.card-autor{font-size:0.65rem;color:var(--mu)}
+.card-leer{font-size:0.65rem;color:var(--az);font-weight:600}
+.card-prox{background:#F7F9FB;border:1px solid var(--bd);border-radius:14px;overflow:hidden;opacity:0.6}
+.card-prox .card-thumb{color:var(--mu)}
+.card-prox .card-name{color:var(--mu)}
+.sci-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.sci-card{background:#F7F9FB;border:1px solid var(--bd);border-radius:14px;padding:1.3rem;opacity:0.65}
+.sci-tag{font-size:0.6rem;font-weight:700;text-transform:uppercase;padding:2px 8px;border-radius:20px;background:#E8F5E9;color:#1B5E20;display:inline-block;margin-bottom:0.5rem}
+.sci-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.92rem;color:var(--mu);line-height:1.3;margin-bottom:0.4rem}
+.sci-desc{font-size:0.72rem;color:var(--mu);line-height:1.5}
+hr{border:none;border-top:1px solid var(--bd);margin:2rem 0}
+.cta-sec{background:linear-gradient(135deg,var(--az),var(--ve));padding:3rem 2rem;text-align:center;color:#fff}
+.cta-sec h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;text-transform:uppercase;margin-bottom:0.5rem}
+.cta-sec p{font-size:0.9rem;opacity:0.85;max-width:450px;margin:0 auto 1.5rem;line-height:1.65}
+.btn-white{background:#fff;color:var(--az);padding:0.75rem 1.5rem;border-radius:8px;font-size:0.88rem;font-weight:600;text-decoration:none;display:inline-block}
+footer{background:var(--txt);padding:2rem}
+.footer-color{display:flex;height:3px;border-radius:2px;overflow:hidden;max-width:1100px;margin:0 auto 1.5rem}
+.footer-color div{flex:1}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1rem;color:#fff;text-transform:uppercase}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:0.77rem;color:rgba(255,255,255,0.5);text-decoration:none}
+.footer-copy{font-size:0.65rem;color:rgba(255,255,255,0.25)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+    <div class="logo-text">
+      <strong>Grupo Manejo Miopia Latam</strong>
+      <span>miopialatam.org</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="articulos.html" style="color:#0077C8;font-weight:600">Articulos</a>
+    <a href="investigacion.html">Investigacion</a>
+    <a href="productos.html">Productos</a>
+    <a href="miembros.html">Nuestra Red</a>
+    <a href="familias.html">Para Familias</a>
+  </div>
+  <a href="unirme.html" class="btn-primary">Unirme a MML</a>
+</nav>
+
+<div class="hero-sec">
+  <div class="sec-label">Centro de conocimiento</div>
+  <div class="sec-title">Articulos MML</div>
+  <div class="sec-sub">Contenido clinico y cientifico en espanol, desarrollado por especialistas latinoamericanos en control de miopia.</div>
+</div>
+
+<div class="content">
+  <div class="art-label">Practica clinica</div>
+  <div class="art-title">Articulos Clinicos</div>
+  <div class="cards">
+    <a href="articulo-ortok.html" class="card">
+      <div class="card-thumb" style="background:#0077C8">Orto-K</div>
+      <div class="card-body">
+        <span class="card-tag" style="background:#EAF4FB;color:#0D47A1">Clinico</span>
+        <div class="card-name">Orto-K en ninos de 6 a 12 anos: protocolo de adaptacion y seguimiento en LATAM</div>
+        <div class="card-desc">Guia practica para la adaptacion de lentes de ortoqueratologia en poblacion pediatrica latinoamericana.</div>
+        <div class="card-meta"><span class="card-autor">MML Editorial - Mayo 2026</span><span class="card-leer">Leer 8 min</span></div>
+      </div>
+    </a>
+    <a href="articulo-atropina.html" class="card">
+      <div class="card-thumb" style="background:#7B1FA2">Atropina</div>
+      <div class="card-body">
+        <span class="card-tag" style="background:#F3E5F5;color:#7B1FA2">Clinico</span>
+        <div class="card-name">Atropina en baja concentracion: protocolo clinico para Latinoamerica</div>
+        <div class="card-desc">Guia practica sobre atropina 0.01%, 0.025% y 0.05% en el control de miopia pediatrica.</div>
+        <div class="card-meta"><span class="card-autor">MML Editorial - Abril 2026</span><span class="card-leer">Leer 10 min</span></div>
+      </div>
+    </a>
+    <div class="card-prox">
+      <div class="card-thumb" style="background:#E2EAF0">Proximamente</div>
+      <div class="card-body">
+        <span class="card-tag" style="background:#F7F9FB;color:#6B8A9A">Proximamente</span>
+        <div class="card-name">Lentes de contacto blandas de diseno dual-foco</div>
+        <div class="card-desc">Criterios de seleccion, adaptacion y seguimiento de lentes blandas para control de miopia.</div>
+        <div class="card-meta"><span class="card-autor">MML Editorial - Pronto</span></div>
+      </div>
+    </div>
+    <div class="card-prox">
+      <div class="card-thumb" style="background:#E2EAF0">Proximamente</div>
+      <div class="card-body">
+        <span class="card-tag" style="background:#F7F9FB;color:#6B8A9A">Proximamente</span>
+        <div class="card-name">Curvas de desenfoque: interpretacion clinica</div>
+        <div class="card-desc">Como generar, interpretar y usar las curvas de desenfoque como herramienta de seguimiento.</div>
+        <div class="card-meta"><span class="card-autor">MML Editorial - Pronto</span></div>
+      </div>
+    </div>
+    <div class="card-prox">
+      <div class="card-thumb" style="background:#E2EAF0">Proximamente</div>
+      <div class="card-body">
+        <span class="card-tag" style="background:#F7F9FB;color:#6B8A9A">Proximamente</span>
+        <div class="card-name">Comanejo entre optometria y oftalmologia</div>
+        <div class="card-desc">Propuesta de protocolo de comanejo interprofesional para el manejo de la miopia.</div>
+        <div class="card-meta"><span class="card-autor">MML Editorial - Pronto</span></div>
+      </div>
+    </div>
+    <div class="card-prox">
+      <div class="card-thumb" style="background:#E2EAF0">Proximamente</div>
+      <div class="card-body">
+        <span class="card-tag" style="background:#F7F9FB;color:#6B8A9A">Proximamente</span>
+        <div class="card-name">Senales de alerta de progresion rapida</div>
+        <div class="card-desc">Criterios clinicos para identificar progresion acelerada y tomar decisiones oportunas.</div>
+        <div class="card-meta"><span class="card-autor">MML Editorial - Pronto</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="art-label" style="color:#2EAA4A">Evidencia cientifica</div>
+  <div class="art-title">Articulos Cientificos</div>
+  <div class="sci-cards">
+    <div class="sci-card"><span class="sci-tag">Ciencia - Proximamente</span><div class="sci-title">Epidemiologia de la miopia en Latinoamerica: proyecciones al 2050</div><div class="sci-desc">Analisis de datos epidemiologicos sobre prevalencia de miopia en la region.</div></div>
+    <div class="sci-card"><span class="sci-tag">Ciencia - Proximamente</span><div class="sci-title">Mecanismos de la miopia: emmetropizacion y control axial</div><div class="sci-desc">Resumen de mecanismos biologicos que explican el desarrollo de la miopia.</div></div>
+    <div class="sci-card"><span class="sci-tag">Ciencia - Proximamente</span><div class="sci-title">Eficacia comparada de intervenciones para control de miopia 2024-2026</div><div class="sci-desc">Sintesis de estudios recientes sobre Orto-K, atropina y lentes especiales.</div></div>
+    <div class="sci-card"><span class="sci-tag">Ciencia - Proximamente</span><div class="sci-title">Longitud axial como biomarcador de riesgo</div><div class="sci-desc">Revision de valores normativos de longitud axial y su utilidad como indicador de riesgo.</div></div>
+  </div>
+</div>
+
+<div class="cta-sec">
+  <h2>Quieres contribuir un articulo?</h2>
+  <p>Los miembros de MML pueden publicar articulos clinicos y cientificos en este centro de conocimiento.</p>
+  <a href="mailto:info@miopialatam.org" class="btn-white">Enviar propuesta a info@miopialatam.org</a>
+</div>
+
+<footer>
+  <div class="footer-color">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="footer-inner">
+    <div><div class="footer-name">Grupo Manejo Miopia Latam</div></div>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="investigacion.html">Investigacion</a>
+      <a href="miembros.html">Miembros</a>
+      <a href="unirme.html">Unirme</a>
+    </div>
+    <div class="footer-copy">2026 MML. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+</body>
+</html>
