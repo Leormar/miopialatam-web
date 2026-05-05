@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atropina Control Miopia - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--txt:#1A3347;--mu:#6B8A9A;--bd:#E2EAF0;--bg:#F7F9FB}
+body{font-family:'Barlow',sans-serif;color:var(--txt);background:#fff}
+.topbar{display:flex;height:5px}
+.topbar div{flex:1}
+nav{background:#fff;border-bottom:1px solid var(--bd);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-stripes{display:flex;gap:3px}
+.logo-stripes div{width:7px;height:34px;border-radius:3px}
+.logo-text strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.92rem;text-transform:uppercase;color:var(--txt)}
+.logo-text span{font-size:0.58rem;color:var(--mu)}
+.back{font-size:0.78rem;color:var(--mu);text-decoration:none}
+.hero-art{background:linear-gradient(160deg,#F3E5F5,#fff);padding:3.5rem 2rem;border-bottom:1px solid var(--bd)}
+.hero-inner{max-width:780px;margin:0 auto}
+.art-tag{font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:20px;background:#F3E5F5;color:#7B1FA2;display:inline-block;margin-bottom:1rem}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.2rem;line-height:1.1;color:var(--txt);margin-bottom:1rem}
+.art-desc{font-size:1rem;color:var(--mu);line-height:1.7;margin-bottom:1rem}
+.art-meta{font-size:0.75rem;color:var(--mu)}
+.art-body{max-width:780px;margin:0 auto;padding:3rem 2rem}
+p{font-size:0.97rem;line-height:1.8;margin-bottom:1.5rem}
+.sec-head{border-left:4px solid #7B1FA2;padding-left:1.2rem;margin-bottom:1.5rem}
+.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.3rem;text-transform:uppercase;color:var(--txt)}
+.sec-head-az{border-left-color:var(--az)}
+.sec-head-ve{border-left-color:var(--ve)}
+.sec-head-am{border-left-color:var(--am)}
+.sec-head-ro{border-left-color:var(--ro)}
+.list-box{background:#F3E5F5;border:1px solid #CE93D8;border-radius:12px;padding:1.3rem;margin-bottom:2rem}
+.list-item{display:flex;gap:10px;margin-bottom:0.6rem;font-size:0.88rem;color:var(--txt);line-height:1.6}
+.list-dot{color:#7B1FA2;font-weight:700;flex-shrink:0}
+.estudios-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
+.estudio-box{border-radius:10px;padding:1rem}
+.estudio-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;margin-bottom:0.4rem}
+.estudio-desc{font-size:0.82rem;color:var(--txt);line-height:1.55}
+.step{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:1.2rem;margin-bottom:0.75rem;display:flex;gap:1rem}
+.step-n{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--bd);flex-shrink:0;line-height:1}
+.step-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.3rem}
+.step-desc{font-size:0.85rem;color:var(--mu);line-height:1.65}
+.efectos-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
+.efecto-box{background:#FFF8E1;border:1px solid #FFE082;border-radius:10px;padding:1rem}
+.efecto-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;text-transform:uppercase;color:#7A5A00;margin-bottom:0.2rem}
+.efecto-frec{font-size:0.7rem;color:#F57F17;font-weight:600;margin-bottom:0.3rem}
+.efecto-manejo{font-size:0.8rem;color:var(--txt);line-height:1.5}
+.seg-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:2rem}
+.seg-box{background:#FDECEA;border:1px solid #FFCDD2;border-radius:10px;padding:1rem}
+.seg-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;color:#B71C1C;margin-bottom:0.6rem}
+.seg-item{display:flex;gap:6px;font-size:0.78rem;color:var(--txt);margin-bottom:0.3rem;line-height:1.5}
+.conclusion{background:linear-gradient(135deg,#F3E5F5,#EAF4FB);border:1px solid var(--bd);border-radius:14px;padding:1.8rem;margin:2rem 0}
+.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.1rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.6rem}
+.refs{border-top:1px solid var(--bd);padding-top:1.5rem;margin-top:1rem}
+.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--mu);margin-bottom:0.8rem}
+.ref{font-size:0.75rem;color:var(--mu);margin-bottom:0.5rem;padding-left:1rem;border-left:2px solid var(--bd);line-height:1.5}
+.nav-art{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem}
+.btn-az{background:var(--az);color:#fff;padding:0.6rem 1.2rem;border-radius:8px;font-size:0.82rem;font-weight:600;text-decoration:none}
+.btn-link{font-size:0.82rem;color:var(--az);text-decoration:none;font-weight:600}
+footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3rem}
+.footer-color{display:flex;height:3px;border-radius:2px;overflow:hidden;max-width:200px;margin:0 auto 1rem}
+.footer-color div{flex:1}
+.footer-copy{font-size:0.7rem;color:rgba(255,255,255,0.4)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+    <div class="logo-text">
+      <strong>Grupo Manejo Miopia Latam</strong>
+      <span>miopialatam.org</span>
+    </div>
+  </a>
+  <a href="articulos.html" class="back">Volver a articulos</a>
+</nav>
+
+<div class="hero-art">
+  <div class="hero-inner">
+    <span class="art-tag">Clinico - Farmacologico</span>
+    <h1>Atropina en baja concentracion para el control de miopia: protocolo clinico para Latinoamerica</h1>
+    <p class="art-desc">Guia practica sobre el uso de atropina 0.01%, 0.025% y 0.05% en el control de miopia pediatrica, con consideraciones especificas para la realidad clinica latinoamericana.</p>
+    <div class="art-meta">MML Editorial - Abril 2026 - 10 min de lectura - Enfoque latinoamericano</div>
+  </div>
+</div>
+
+<div class="art-body">
+
+  <p>La atropina en concentraciones subterapeuticas se ha convertido en una de las intervenciones farmacologicas mas estudiadas para el control de la progresion miopica en ninos. A diferencia de la atropina al 1% utilizada historicamente para cicloplejia, las formulaciones de baja concentracion (0.01% a 0.05%) han demostrado eficacia en la reduccion de la progresion axial con un perfil de efectos adversos significativamente menor.</p>
+
+  <p style="color:var(--mu)">En Latinoamerica, el uso de atropina para control de miopia enfrenta un desafio particular: la mayoria de las concentraciones de baja dosis no estan disponibles comercialmente y requieren formulacion magistral. Esto implica una cadena de responsabilidades entre el clinico, el farmaceutico y la familia que debe ser gestionada con cuidado.</p>
+
+  <div class="sec-head">
+    <h2>1. Mecanismo de accion</h2>
+  </div>
+  <p>El mecanismo exacto por el cual la atropina frena la progresion miopica no esta completamente dilucidado. Las hipotesis actuales mas aceptadas incluyen:</p>
+  <div class="list-box">
+    <div class="list-item"><span class="list-dot">-</span>Bloqueo de receptores muscarinicos M1 y M4 en la retina, que modulan el crecimiento axial mediante senalizacion dopaminergica</div>
+    <div class="list-item"><span class="list-dot">-</span>Accion directa sobre la esclerótica, reduciendo la actividad de las metaloproteinasas de matriz responsables del remodelado del colageno escleral</div>
+    <div class="list-item"><span class="list-dot">-</span>Efecto sobre celulas de Muller y celulas ganglionares de la retina que participan en la senalizacion de emmetropizacion</div>
+    <div class="list-item"><span class="list-dot">-</span>Posible accion sobre receptores muscarinicos del cuerpo ciliar, aunque este mecanismo es menos relevante en concentraciones bajas</div>
+  </div>
+
+  <div class="sec-head sec-head-az">
+    <h2>2. Evidencia clinica - Estudios ATOM y LAMP</h2>
+  </div>
+  <p>La base de evidencia proviene principalmente de estudios realizados en Asia, que deben interpretarse con cautela al extrapolar a poblacion latina:</p>
+  <div class="estudios-grid">
+    <div class="estudio-box" style="background:#E3F2FD;border:1px solid #90CAF9">
+      <div class="estudio-title" style="color:#0D47A1">ATOM1 (2006)</div>
+      <div class="estudio-desc">Atropina 1% reduce progresion en 77% vs placebo. Alta eficacia pero efecto rebote significativo al suspender.</div>
+    </div>
+    <div class="estudio-box" style="background:#E8F5E9;border:1px solid #A5D6A7">
+      <div class="estudio-title" style="color:#1B5E20">ATOM2 (2012)</div>
+      <div class="estudio-desc">Comparacion 0.5%, 0.1% y 0.01%. La concentracion 0.01% mostro menor efecto rebote y mejor perfil de seguridad.</div>
+    </div>
+    <div class="estudio-box" style="background:#FFF8E1;border:1px solid #FFE082">
+      <div class="estudio-title" style="color:#F57F17">LAMP (2019)</div>
+      <div class="estudio-desc">Atropina 0.05% supero a 0.025% y 0.01% en eficacia sin diferencias significativas en efectos adversos.</div>
+    </div>
+    <div class="estudio-box" style="background:#FCE4EC;border:1px solid #F48FB1">
+      <div class="estudio-title" style="color:#880E4F">LAMP2 (2021)</div>
+      <div class="estudio-desc">Escalada de dosis desde 0.01% a 0.05% en no respondedores resulto en mayor control de progresion.</div>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-ve">
+    <h2>3. Protocolo de uso en LATAM</h2>
+  </div>
+  <p>Basado en la evidencia disponible y la experiencia clinica de los miembros de MML, se propone el siguiente protocolo:</p>
+
+  <div class="step"><div class="step-n">01</div><div><div class="step-title">Concentracion de inicio</div><div class="step-desc">Se recomienda iniciar con atropina 0.025% como balance entre eficacia y seguridad. En casos de progresion muy rapida (mayor a 1.00 D/ano o mayor a 0.3 mm axial/ano), considerar inicio con 0.05%.</div></div></div>
+  <div class="step"><div class="step-n">02</div><div><div class="step-title">Posologia</div><div class="step-desc">Una gota en cada ojo, una vez al dia, preferiblemente al acostarse para minimizar el efecto sobre la acomodacion y la fotofobia diurna.</div></div></div>
+  <div class="step"><div class="step-n">03</div><div><div class="step-title">Formulacion magistral</div><div class="step-desc">En LATAM la formulacion debe realizarse en farmacia magistral especializada. Verificar osmolaridad (280-320 mOsm/L) y pH (6.5-7.5). Preferir monodosis sin conservante cuando sea posible.</div></div></div>
+  <div class="step"><div class="step-n">04</div><div><div class="step-title">Duracion del tratamiento</div><div class="step-desc">Minimo 2 anos de tratamiento continuo. La suspension abrupta puede generar efecto rebote. Se recomienda reduccion gradual: 0.05% a 0.025% a 0.01% en intervalos de 6 meses.</div></div></div>
+  <div class="step"><div class="step-n">05</div><div><div class="step-title">Combinacion con otros tratamientos</div><div class="step-desc">La atropina puede combinarse con Orto-K o lentes de contacto especiales en casos de progresion rapida o miopia alta. Esta combinacion ha mostrado mayor eficacia que cualquier tratamiento aislado.</div></div></div>
+
+  <div style="margin-bottom:2rem"></div>
+
+  <div class="sec-head sec-head-am">
+    <h2>4. Efectos adversos y manejo</h2>
+  </div>
+  <div class="efectos-grid">
+    <div class="efecto-box"><div class="efecto-name">Midriasis leve</div><div class="efecto-frec">Frecuente</div><div class="efecto-manejo">Uso de lentes de sol en exteriores. Generalmente bien tolerada con concentraciones bajas.</div></div>
+    <div class="efecto-box"><div class="efecto-name">Fotofobia</div><div class="efecto-frec">Moderada</div><div class="efecto-manejo">Administracion nocturna. Lentes fotocromaticos si persiste. Rara con 0.01%.</div></div>
+    <div class="efecto-box"><div class="efecto-name">Dificultad vision cercana</div><div class="efecto-frec">Leve con dosis bajas</div><div class="efecto-manejo">Generalmente no requiere correccion adicional con 0.025% o 0.01%.</div></div>
+    <div class="efecto-box"><div class="efecto-name">Efecto rebote al suspender</div><div class="efecto-frec">Variable</div><div class="efecto-manejo">Reduccion gradual de la dosis. Mayor con concentraciones altas.</div></div>
+    <div class="efecto-box"><div class="efecto-name">Reaccion alergica conjuntival</div><div class="efecto-frec">Poco frecuente</div><div class="efecto-manejo">Suspender y evaluar cambio de formulacion o vehiculo.</div></div>
+    <div class="efecto-box"><div class="efecto-name">Toxicidad sistemica</div><div class="efecto-frec">Muy rara con dosis bajas</div><div class="efecto-manejo">Tecnica de oclusion punctal post-instilacion reduce absorcion sistemica.</div></div>
+  </div>
+
+  <div class="sec-head sec-head-ro">
+    <h2>5. Seguimiento y monitoreo</h2>
+  </div>
+  <div class="seg-grid">
+    <div class="seg-box">
+      <div class="seg-title">1 mes</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Evaluacion de tolerancia</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Control de AV</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Biomicroscopia corneal</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Ajuste de dosis si necesario</div>
+    </div>
+    <div class="seg-box">
+      <div class="seg-title">3 meses</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Refraccion bajo cicloplejia</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Evaluacion de efectos adversos</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Control de adherencia</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Topografia si aplica</div>
+    </div>
+    <div class="seg-box">
+      <div class="seg-title">6 meses</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Biometria ocular (longitud axial)</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Evaluacion de progresion</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Decision de escalar o mantener dosis</div>
+      <div class="seg-item"><span style="color:#D42B2B;flex-shrink:0">-</span>Renovacion de formulacion</div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="conclusion-title">Conclusion clinica</div>
+    <p style="margin-bottom:0">La atropina en baja concentracion es una herramienta terapeutica valiosa para el control de miopia en poblacion pediatrica latinoamericana. La concentracion de 0.025% representa un buen punto de partida, con posibilidad de escalada a 0.05% en casos de progresion rapida. Su implementacion requiere acceso a formulacion magistral confiable, educacion adecuada a la familia y seguimiento riguroso.</p>
+  </div>
+
+  <div class="refs">
+    <div class="refs-title">Referencias bibliograficas</div>
+    <div class="ref">Chua WH, et al. Atropine for the treatment of childhood myopia. Ophthalmology. 2006;113(12):2285-91. (ATOM1)</div>
+    <div class="ref">Tong L, et al. Atropine for the treatment of childhood myopia: effect on myopia progression after cessation of atropine. Ophthalmology. 2009;116(3):572-9.</div>
+    <div class="ref">Chia A, et al. Atropine for the treatment of childhood myopia: safety and efficacy of 0.5%, 0.1%, and 0.01% doses (ATOM2). Ophthalmology. 2012;119(2):347-54.</div>
+    <div class="ref">Yam JC, et al. Low-Concentration Atropine for Myopia Progression (LAMP) study. Ophthalmology. 2019;126(1):113-124.</div>
+    <div class="ref">Yam JC, et al. Two-Year Clinical Trial of the Low-Concentration Atropine for Myopia Progression (LAMP) Study. Ophthalmology. 2020;127(7):910-919.</div>
+    <div class="ref">Polling JR, et al. Effectiveness study of atropine for progressive myopia in Europeans. Eye. 2016;30(7):998-1004.</div>
+    <div class="ref">Joachimsen L, et al. A critical appraisal of atropine for myopia control. Surv Ophthalmol. 2023;68(1):54-66.</div>
+    <div class="ref">IMI - Management and Treatment of Myopia Clinical Practice Guidelines. Invest Ophthalmol Vis Sci. 2023;64(6):2.</div>
+  </div>
+
+  <div class="nav-art">
+    <a href="articulos.html" class="btn-link">Volver a articulos</a>
+    <a href="unirme.html" class="btn-az">Unirme a MML</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-color">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="footer-copy">2026 Grupo Manejo Miopia Latam - miopialatam.org</div>
+</footer>
+
+</body>
+</html>
