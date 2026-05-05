@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orto-K en ninos - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--txt:#1A3347;--mu:#6B8A9A;--bd:#E2EAF0;--bg:#F7F9FB}
+body{font-family:'Barlow',sans-serif;color:var(--txt);background:#fff}
+.topbar{display:flex;height:5px}
+.topbar div{flex:1}
+nav{background:#fff;border-bottom:1px solid var(--bd);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-stripes{display:flex;gap:3px}
+.logo-stripes div{width:7px;height:34px;border-radius:3px}
+.logo-text strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.92rem;text-transform:uppercase;color:var(--txt)}
+.logo-text span{font-size:0.58rem;color:var(--mu)}
+.back{font-size:0.78rem;color:var(--mu);text-decoration:none}
+.hero-art{background:linear-gradient(160deg,#EAF4FB,#fff);padding:3.5rem 2rem;border-bottom:1px solid var(--bd)}
+.hero-inner{max-width:780px;margin:0 auto}
+.art-tag{font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:20px;background:#EAF4FB;color:#0D47A1;display:inline-block;margin-bottom:1rem}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.2rem;line-height:1.1;color:var(--txt);margin-bottom:1rem}
+.art-desc{font-size:1rem;color:var(--mu);line-height:1.7;margin-bottom:1rem}
+.art-meta{font-size:0.75rem;color:var(--mu)}
+.art-body{max-width:780px;margin:0 auto;padding:3rem 2rem}
+p{font-size:0.97rem;line-height:1.8;margin-bottom:1.5rem}
+.sec-head{border-left:4px solid var(--az);padding-left:1.2rem;margin-bottom:1.5rem}
+.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.3rem;text-transform:uppercase;color:var(--txt)}
+.sec-head-ve{border-left-color:var(--ve)}
+.sec-head-am{border-left-color:var(--am)}
+.sec-head-ro{border-left-color:var(--ro)}
+.list-box{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:1.3rem;margin-bottom:2rem}
+.list-item{display:flex;gap:10px;margin-bottom:0.6rem;font-size:0.88rem;color:var(--txt);line-height:1.6}
+.list-dot{color:var(--az);font-weight:700;flex-shrink:0}
+.step{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:1.2rem;margin-bottom:0.75rem;display:flex;gap:1rem}
+.step-n{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--bd);flex-shrink:0;line-height:1}
+.step-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.3rem}
+.step-desc{font-size:0.85rem;color:var(--mu);line-height:1.65}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
+.period-box{background:#FFF8E1;border:1px solid var(--am);border-radius:10px;padding:1rem}
+.period-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;text-transform:uppercase;color:#7A5A00;margin-bottom:0.3rem}
+.period-desc{font-size:0.82rem;color:var(--txt);line-height:1.55}
+.latam-box{background:#FDECEA;border:1px solid #FFCDD2;border-radius:10px;padding:1rem;margin-bottom:0.75rem}
+.latam-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;color:#B71C1C;margin-bottom:0.3rem}
+.latam-desc{font-size:0.85rem;color:var(--txt);line-height:1.65}
+.conclusion{background:linear-gradient(135deg,#EAF4FB,#E8F5E9);border:1px solid var(--bd);border-radius:14px;padding:1.8rem;margin:2rem 0}
+.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.1rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.6rem}
+.refs{border-top:1px solid var(--bd);padding-top:1.5rem;margin-top:1rem}
+.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--mu);margin-bottom:0.8rem}
+.ref{font-size:0.75rem;color:var(--mu);margin-bottom:0.4rem;padding-left:1rem;border-left:2px solid var(--bd);line-height:1.5}
+.nav-art{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem}
+.btn-az{background:var(--az);color:#fff;padding:0.6rem 1.2rem;border-radius:8px;font-size:0.82rem;font-weight:600;text-decoration:none}
+.btn-link{font-size:0.82rem;color:var(--az);text-decoration:none;font-weight:600}
+footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3rem}
+.footer-color{display:flex;height:3px;border-radius:2px;overflow:hidden;max-width:200px;margin:0 auto 1rem}
+.footer-color div{flex:1}
+.footer-copy{font-size:0.7rem;color:rgba(255,255,255,0.4)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+    <div class="logo-text">
+      <strong>Grupo Manejo Miopia Latam</strong>
+      <span>miopialatam.org</span>
+    </div>
+  </a>
+  <a href="articulos.html" class="back">Volver a articulos</a>
+</nav>
+
+<div class="hero-art">
+  <div class="hero-inner">
+    <span class="art-tag">Clinico</span>
+    <h1>Orto-K en ninos de 6 a 12 anos: protocolo de adaptacion y seguimiento en LATAM</h1>
+    <p class="art-desc">Guia practica para la adaptacion de lentes de ortoqueratologia en poblacion pediatrica latinoamericana, considerando factores anatomicos, culturales y de adherencia al tratamiento.</p>
+    <div class="art-meta">MML Editorial - Mayo 2026 - 8 min de lectura - Enfoque latinoamericano</div>
+  </div>
+</div>
+
+<div class="art-body">
+
+  <p>La ortoqueratologia (Orto-K) se ha consolidado como una de las intervenciones mas efectivas para el control de miopia en ninos. Su mecanismo de accion, basado en el remodelado temporal de la cornea mediante lentes rigidos de uso nocturno, permite que el nino tenga vision nitida durante el dia sin necesidad de correccion optica convencional, al tiempo que frena la progresion axial del ojo miope.</p>
+
+  <p style="color:var(--mu)">En Latinoamerica, la implementacion de Orto-K enfrenta desafios particulares: variabilidad en el acceso a topografos corneales de alta resolucion, diferencias en los sistemas de salud, y barreras culturales frente al uso de lentes de contacto en ninos pequenos. Esta guia busca orientar al clinico latinoamericano en la seleccion, adaptacion y seguimiento de pacientes pediatricos con Orto-K.</p>
+
+  <div class="sec-head">
+    <h2>1. Criterios de seleccion del paciente</h2>
+  </div>
+  <p>La seleccion adecuada del paciente es el factor mas determinante en el exito del tratamiento. Los criterios de inclusion recomendados para poblacion pediatrica en LATAM son:</p>
+  <div class="list-box">
+    <div class="list-item"><span class="list-dot">-</span>Miopia entre -0.75 y -6.00 D, con astigmatismo no mayor a -1.75 D</div>
+    <div class="list-item"><span class="list-dot">-</span>Edad minima recomendada: 6 anos, con madurez suficiente para el manejo del lente</div>
+    <div class="list-item"><span class="list-dot">-</span>Cornea con e-value entre 0.3 y 0.6 (topografia corneal previa obligatoria)</div>
+    <div class="list-item"><span class="list-dot">-</span>Ausencia de patologia corneal activa (queratocono, distrofias, cicatrices)</div>
+    <div class="list-item"><span class="list-dot">-</span>Entorno familiar que garantice la supervision del uso nocturno y la higiene</div>
+    <div class="list-item"><span class="list-dot">-</span>Motivacion del paciente y comprension del tratamiento por parte de los padres</div>
+  </div>
+  <p style="color:var(--mu)">En la practica clinica latinoamericana, la edad de inicio tiende a ser mayor que en estudios asiaticos, debido a barreras de acceso y a la percepcion cultural de que los ninos pequenos no pueden manejar lentes de contacto. Sin embargo, la evidencia actual respalda el inicio temprano como factor protector para reducir la carga miopica acumulada.</p>
+
+  <div class="sec-head sec-head-ve">
+    <h2>2. Protocolo de adaptacion</h2>
+  </div>
+  <p>El proceso de adaptacion de Orto-K en ninos requiere un protocolo estructurado que contemple las particularidades de la cornea pediatrica y la curva de aprendizaje del manejo del lente:</p>
+
+  <div class="step"><div class="step-n">01</div><div><div class="step-title">Topografia corneal basal</div><div class="step-desc">Mapa topografico completo con software de simulacion de lente. Se recomienda topografo Placido con minimo 8.000 puntos de medicion. El mapa de elevacion anterior es fundamental para el diseno del lente.</div></div></div>
+  <div class="step"><div class="step-n">02</div><div><div class="step-title">Biometria ocular</div><div class="step-desc">Medicion de longitud axial (AL), radio corneal (K) y profundidad de camara anterior. La AL basal es el parametro mas importante para el seguimiento de la progresion miopica.</div></div></div>
+  <div class="step"><div class="step-n">03</div><div><div class="step-title">Primera noche de uso</div><div class="step-desc">El nino usa el lente bajo supervision de los padres, quienes deben recibir instruccion detallada sobre insercion, remocion y limpieza del lente.</div></div></div>
+  <div class="step"><div class="step-n">04</div><div><div class="step-title">Control a las 24 horas</div><div class="step-desc">Evaluacion de la topografia corneal post-Orto-K, agudeza visual sin correccion y confort. Es normal cierto grado de halos o vision fluctuante en los primeros dias.</div></div></div>
+  <div class="step"><div class="step-n">05</div><div><div class="step-title">Control a la semana</div><div class="step-desc">Evaluacion completa: topografia, AV, biomicroscopia corneal y adaptacion del lente. Se realizan ajustes si el patron topografico es excentrico o asimetrico.</div></div></div>
+  <div class="step"><div class="step-n">06</div><div><div class="step-title">Control al mes</div><div class="step-desc">Estabilizacion esperada del efecto. Se evalua la duracion del efecto refractivo y se ajusta el protocolo si es necesario.</div></div></div>
+
+  <div style="margin-bottom:2rem"></div>
+
+  <div class="sec-head sec-head-am">
+    <h2>3. Seguimiento a largo plazo</h2>
+  </div>
+  <p>Una vez estabilizado el tratamiento, el protocolo de seguimiento recomendado en la practica clinica latinoamericana es:</p>
+  <div class="grid2">
+    <div class="period-box"><div class="period-title">Cada 3 meses</div><div class="period-desc">Topografia corneal, AV sin correccion, evaluacion del lente y refraccion bajo cicloplejia</div></div>
+    <div class="period-box"><div class="period-title">Cada 6 meses</div><div class="period-desc">Biometria ocular completa (longitud axial) para monitorear progresion miopica</div></div>
+    <div class="period-box"><div class="period-title">Anualmente</div><div class="period-desc">Evaluacion completa del fondo de ojo, recambio del lente segun desgaste y actualizacion del diseno</div></div>
+    <div class="period-box"><div class="period-title">En cualquier visita</div><div class="period-desc">Ante signos de abrasion corneal, tincion mayor a grado 2 o dolor, suspender el lente y tratar</div></div>
+  </div>
+
+  <div class="sec-head sec-head-ro">
+    <h2>4. Consideraciones para LATAM</h2>
+  </div>
+  <div class="latam-box"><div class="latam-title">Acceso a equipamiento</div><div class="latam-desc">No todos los centros cuentan con topografo de alta resolucion. Se puede trabajar con queratometria convencional y lentes de prueba, aunque se pierde precision en el diseno. Se recomienda la derivacion a centros especializados cuando sea posible.</div></div>
+  <div class="latam-box"><div class="latam-title">Adherencia y cultura</div><div class="latam-desc">La percepcion de riesgo de los padres frente al uso nocturno de lentes es una barrera frecuente. La educacion al paciente y familia es tan importante como la adaptacion tecnica. Se recomienda entregar material escrito en lenguaje sencillo.</div></div>
+  <div class="latam-box"><div class="latam-title">Costo y acceso</div><div class="latam-desc">El costo del tratamiento puede ser una barrera significativa. El costo-beneficio a largo plazo (menor progresion, menor riesgo de complicaciones) debe ser parte de la conversacion con la familia.</div></div>
+  <div class="latam-box"><div class="latam-title">Clima y humedad</div><div class="latam-desc">En regiones tropicales, la humedad ambiental alta puede afectar el confort del lente. Se recomienda lubricacion adicional al insertar el lente en climas muy humedos.</div></div>
+
+  <div class="conclusion">
+    <div class="conclusion-title">Conclusion clinica</div>
+    <p style="margin-bottom:0">La ortoqueratologia es una herramienta eficaz y segura para el control de miopia en ninos latinoamericanos cuando se implementa con un protocolo estructurado, seleccion adecuada del paciente y seguimiento riguroso. La clave del exito en LATAM esta en adaptar el protocolo a la realidad del paciente: sus recursos, su entorno familiar y su contexto clinico. La comunicacion con la familia y la educacion del nino son parte fundamental del tratamiento.</p>
+  </div>
+
+  <div class="refs">
+    <div class="refs-title">Referencias</div>
+    <div class="ref">Charm J, Cho P. High myopia-partial reduction orthokeratology. Optom Vis Sci. 2013</div>
+    <div class="ref">Walline JJ, et al. BLINK Study Group. Myopia Control with Soft Contact Lenses. JAMA Ophthalmol. 2020</div>
+    <div class="ref">Cho P, Cheung SW. Retardation of Myopia in Orthokeratology (ROMIO) Study. Invest Ophthalmol Vis Sci. 2012</div>
+    <div class="ref">Santodomingo-Rubido J, et al. Myopia control with orthokeratology contact lenses in Spain. Invest Ophthalmol Vis Sci. 2012</div>
+    <div class="ref">Hiraoka T, et al. Long-term effect of overnight orthokeratology on axial length elongation. Ophthalmology. 2012</div>
+    <div class="ref">IMI - Orthokeratology Report. Invest Ophthalmol Vis Sci. 2023</div>
+    <div class="ref">MML Research Group. Consideraciones clinicas para Orto-K en poblacion latina. 2026</div>
+  </div>
+
+  <div class="nav-art">
+    <a href="articulos.html" class="btn-link">Volver a articulos</a>
+    <a href="unirme.html" class="btn-az">Unirme a MML</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-color">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="footer-copy">2026 Grupo Manejo Miopia Latam - miopialatam.org</div>
+</footer>
+
+</body>
+</html>
