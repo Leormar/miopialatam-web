@@ -87,15 +87,18 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6rem,5vw,4.4rem);line-height:0.95;letter-spacing:-0.03em;color:var(--ink);text-transform:uppercase;margin-bottom:1.2rem}
 .section-sub{font-size:1.1rem;color:var(--mu);line-height:1.65;max-width:620px;margin:0 auto}
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1200px;margin:0 auto}
-.feat-card{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:2rem;position:relative;overflow:hidden;transition:all .25s;cursor:pointer;text-decoration:none;display:block}
-.feat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent}
-.feat-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--bar);transition:width .25s}
-.feat-card:hover::before{width:6px}
-.feat-icon{width:64px;height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:1.4rem;position:relative;overflow:hidden}
-.feat-icon::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.4) 0%,transparent 50%);pointer-events:none}
-.feat-icon svg{width:34px;height:34px;display:block;position:relative;z-index:2;stroke-width:2}
-.feat-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;letter-spacing:-0.01em;color:var(--ink);margin-bottom:0.6rem;line-height:1.1}
-.feat-card p{font-size:0.92rem;color:var(--mu);line-height:1.65;margin-bottom:1rem}
+.feat-card{background:#fff;border:1px solid var(--bd);border-radius:20px;overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer;text-decoration:none;display:flex;flex-direction:column;position:relative}
+.feat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:transparent}
+.feat-photo{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%)}
+.feat-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.4,0,.2,1);position:relative;z-index:2}
+.feat-card:hover .feat-photo img{transform:scale(1.06)}
+.feat-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,37,64,0.35) 100%);pointer-events:none;z-index:3}
+.feat-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;z-index:0}
+.feat-icon svg{width:90px;height:90px;display:block;opacity:0.45;stroke-width:1.5}
+.feat-badge{position:absolute;top:14px;left:14px;padding:5px 12px;border-radius:999px;font-size:0.62rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;z-index:4;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,0.95);color:var(--c-dark);box-shadow:0 2px 10px rgba(0,0,0,0.15)}
+.feat-content{padding:1.8rem 2rem 2rem;flex:1;display:flex;flex-direction:column}
+.feat-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.45rem;text-transform:uppercase;letter-spacing:-0.015em;color:var(--ink);margin-bottom:0.7rem;line-height:1.1}
+.feat-card p{font-size:0.95rem;color:var(--mu);line-height:1.65;margin-bottom:1.2rem;flex:1}
 .feat-link{display:inline-flex;align-items:center;gap:6px;font-size:0.82rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:0.01em;transition:gap .2s}
 .feat-card:hover .feat-link{gap:10px;color:var(--az)}
 .feat-link::after{content:'\2192'}
@@ -294,23 +297,41 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     <p class="section-sub">Reune en un solo lugar protocolos clinicos basados en evidencia, investigacion propia LATAM y formacion continua en espanol.</p>
   </div>
   <div class="features">
-    <a href="articulos.html" class="feat-card" style="--bar:#0077C8">
-      <div class="feat-icon" style="background:#EAF4FB;color:#0077C8"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="20" height="26" rx="3"/><line x1="11" y1="10" x2="22" y2="10"/><line x1="11" y1="16" x2="22" y2="16"/><line x1="11" y1="22" x2="18" y2="22"/></svg></div>
-      <h3>Articulos clinicos</h3>
-      <p>Guias practicas para el manejo diario de la miopia, desde el diagnostico temprano hasta la eleccion del tratamiento mas adecuado segun el paciente.</p>
-      <span class="feat-link">Ver biblioteca clinica</span>
+    <a href="articulos.html" class="feat-card" style="--c:#0077C8;--c-dark:#005FA3">
+      <div class="feat-photo">
+        <span class="feat-badge">Practica clinica</span>
+        <div class="feat-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="20" height="26" rx="3"/><line x1="11" y1="10" x2="22" y2="10"/><line x1="11" y1="16" x2="22" y2="16"/><line x1="11" y1="22" x2="18" y2="22"/></svg></div>
+        <img src="img/features/articulos.jpg" alt="Articulos clinicos" onerror="this.remove()">
+      </div>
+      <div class="feat-content">
+        <h3>Articulos clinicos</h3>
+        <p>Guias practicas para el manejo diario de la miopia, desde el diagnostico temprano hasta la eleccion del tratamiento mas adecuado segun el paciente.</p>
+        <span class="feat-link">Ver biblioteca clinica</span>
+      </div>
     </a>
-    <a href="investigacion.html" class="feat-card" style="--bar:#2EAA4A">
-      <div class="feat-icon" style="background:#E6F7EB;color:#2EAA4A"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="8"/><line x1="20" y1="20" x2="27" y2="27"/><path d="M11 14 L13.5 16.5 L17.5 11.5"/></svg></div>
-      <h3>Ciencia y evidencia</h3>
-      <p>Resumenes de los ultimos estudios sobre epidemiologia, mecanismos y eficacia de tratamientos con enfasis en poblacion latina.</p>
-      <span class="feat-link">Ver investigacion MML</span>
+    <a href="investigacion.html" class="feat-card" style="--c:#2EAA4A;--c-dark:#1E7D34">
+      <div class="feat-photo">
+        <span class="feat-badge">Investigacion</span>
+        <div class="feat-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="8"/><line x1="20" y1="20" x2="27" y2="27"/><path d="M11 14 L13.5 16.5 L17.5 11.5"/></svg></div>
+        <img src="img/features/ciencia.jpg" alt="Ciencia y evidencia" onerror="this.remove()">
+      </div>
+      <div class="feat-content">
+        <h3>Ciencia y evidencia</h3>
+        <p>Resumenes de los ultimos estudios sobre epidemiologia, mecanismos y eficacia de tratamientos con enfasis en poblacion latina.</p>
+        <span class="feat-link">Ver investigacion MML</span>
+      </div>
     </a>
-    <a href="unirme.html" class="feat-card" style="--bar:#F5C518">
-      <div class="feat-icon" style="background:#FFF6D8;color:#A88300"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 L16 5 L30 12 L16 19 Z"/><path d="M8 15 V22 Q16 26 24 22 V15"/><line x1="28" y1="13" x2="28" y2="21"/><circle cx="28" cy="23" r="1.5" fill="currentColor" stroke="none"/></svg></div>
-      <h3>Formacion continua</h3>
-      <p>Cursos en linea, webinars y recursos educativos en espanol creados por y para especialistas latinoamericanos.</p>
-      <span class="feat-link">Conocer mas</span>
+    <a href="unirme.html" class="feat-card" style="--c:#F5C518;--c-dark:#C9A200">
+      <div class="feat-photo">
+        <span class="feat-badge">Educacion</span>
+        <div class="feat-icon" style="color:#5C4400"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 L16 5 L30 12 L16 19 Z"/><path d="M8 15 V22 Q16 26 24 22 V15"/><line x1="28" y1="13" x2="28" y2="21"/><circle cx="28" cy="23" r="1.5" fill="currentColor" stroke="none"/></svg></div>
+        <img src="img/features/formacion.jpg" alt="Formacion continua" onerror="this.remove()">
+      </div>
+      <div class="feat-content">
+        <h3>Formacion continua</h3>
+        <p>Cursos en linea, webinars y recursos educativos en espanol creados por y para especialistas latinoamericanos.</p>
+        <span class="feat-link">Conocer mas</span>
+      </div>
     </a>
   </div>
 </section>
