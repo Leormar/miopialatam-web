@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventos - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+  --shadow-lg:0 12px 40px rgba(10,37,64,0.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}
+.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.nav-links{display:flex;gap:4px;align-items:center;background:rgba(245,247,250,0.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:999px;padding:6px;position:relative;overflow:hidden}
+.nav-links::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(245,197,24,0.14) 20%,rgba(46,170,74,0.14) 40%,rgba(0,119,200,0.14) 60%,rgba(212,43,43,0.14) 80%,transparent 100%);background-size:200% 100%;animation:aladino 10s linear infinite;pointer-events:none;border-radius:999px;z-index:0}
+@keyframes aladino{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--mu);text-decoration:none;position:relative;padding:10px 20px;border-radius:999px;transition:all .3s cubic-bezier(.4,0,.2,1);white-space:nowrap;z-index:2}
+.nav-links a:hover{color:var(--ink);background:rgba(255,255,255,0.95);box-shadow:0 4px 14px rgba(10,37,64,0.08)}
+.nav-links a.active{color:#fff;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);box-shadow:0 6px 20px rgba(0,119,200,0.4);overflow:hidden;font-weight:700}
+.nav-links a.active::after{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:shineActive 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes shineActive{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.btn-primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px;position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(0,119,200,0.3)}
+.btn-primary::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes aladino-shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,119,200,0.45)}
+.btn-primary::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
+.btn-primary:hover::after{transform:translateX(3px)}
+
+.hero-sec{padding:7.5rem 2rem 4.5rem;text-align:center;background:linear-gradient(180deg,#FAFCFE 0%,#fff 100%);position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:1000px;margin:0 auto;position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--az);margin-bottom:1rem}
+.kicker::before{content:'';width:24px;height:2px;background:var(--az);border-radius:2px}
+h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(3.4rem,7.5vw,6.4rem);line-height:0.92;letter-spacing:-0.04em;color:var(--ink);text-transform:uppercase;margin-bottom:1.4rem}
+.hero-sec p.lead{font-size:1.2rem;color:var(--mu);line-height:1.6;max-width:680px;margin:0 auto 2.2rem}
+.hero-stats{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap}
+.hero-stat{text-align:center}
+.hero-stat-n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.6rem;color:var(--az);line-height:1;letter-spacing:-0.03em}
+.hero-stat-l{font-size:0.78rem;color:var(--mu);font-weight:500;margin-top:0.25rem}
+
+.search-bar{max-width:1200px;margin:0 auto;padding:3rem 2rem 1rem}
+.search-wrap{background:#fff;border:1px solid var(--bd);border-radius:18px;padding:1.2rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;box-shadow:var(--shadow-sm)}
+.search-input-wrap{flex:1;position:relative;min-width:240px}
+.search-input-wrap::before{content:'';position:absolute;left:18px;top:50%;transform:translateY(-50%);width:18px;height:18px;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%235A7184' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='16' y1='16' x2='21' y2='21'/%3E%3C/svg%3E") no-repeat center;background-size:contain}
+.search-input{width:100%;padding:0.85rem 1rem 0.85rem 3rem;border:1px solid var(--bd);border-radius:12px;font-size:0.95rem;font-family:inherit;color:var(--ink);background:var(--bg);outline:none;transition:all .2s}
+.search-input:focus{border-color:var(--az);background:#fff;box-shadow:0 0 0 4px rgba(0,119,200,0.1)}
+.search-input::placeholder{color:var(--soft)}
+.filter-pills{display:flex;gap:6px;flex-wrap:wrap}
+.f-pill{padding:0.55rem 1rem;border:1px solid var(--bd);border-radius:999px;background:#fff;font-family:'Inter',sans-serif;font-size:0.82rem;font-weight:600;color:var(--mu);cursor:pointer;transition:all .2s;letter-spacing:0.01em}
+.f-pill:hover{color:var(--ink);border-color:var(--ink)}
+.f-pill.active{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:0 4px 14px rgba(10,37,64,0.15)}
+.results-info{max-width:1200px;margin:0 auto;padding:1rem 2rem;font-size:0.85rem;color:var(--mu)}
+.results-info strong{color:var(--ink);font-weight:600}
+
+.events-grid{max-width:1200px;margin:0 auto;padding:1rem 2rem 5rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.event-card{background:#fff;border:1px solid var(--bd);border-radius:20px;display:grid;grid-template-columns:120px 1fr;gap:0;overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative}
+.event-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent}
+.event-card.hidden{display:none}
+.event-date{background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%);color:#fff;padding:1.6rem 1rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.event-date::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(255,255,255,0.2),transparent 60%);pointer-events:none}
+.event-month{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.95rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.85;position:relative;z-index:2}
+.event-day{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.4rem;letter-spacing:-0.03em;line-height:1;margin:0.1rem 0;position:relative;z-index:2}
+.event-year{font-size:0.75rem;font-weight:500;opacity:0.7;letter-spacing:0.06em;position:relative;z-index:2}
+.event-body{padding:1.4rem 1.6rem 1.4rem 1.4rem;display:flex;flex-direction:column}
+.event-tags{display:flex;gap:6px;margin-bottom:0.6rem;flex-wrap:wrap}
+.event-tag{font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:3px 9px;border-radius:999px}
+.event-tag.tag-latam{background:#E6F7EB;color:#1B5E20}
+.event-tag.tag-global{background:#EAF4FB;color:#0D47A1}
+.event-tag.tag-online{background:#FFF6D8;color:#92690A}
+.event-tag.tag-presencial{background:#F3E5F5;color:#7B1FA2}
+.event-tag.tag-hibrido{background:#FDECEA;color:#B71C1C}
+.event-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.5rem;letter-spacing:-0.015em;line-height:1.15}
+.event-location{font-size:0.85rem;color:var(--mu);margin-bottom:0.3rem;display:flex;align-items:center;gap:6px}
+.event-location::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--c);flex-shrink:0}
+.event-organizer{font-size:0.78rem;color:var(--soft);margin-bottom:0.7rem;font-weight:500}
+.event-desc{font-size:0.85rem;color:var(--mu);line-height:1.55;margin-bottom:0.9rem;flex:1}
+.event-link{font-size:0.8rem;color:var(--ink);font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px;align-self:flex-start;transition:gap .2s}
+.event-link::after{content:'\2192';transition:transform .2s}
+.event-link:hover{color:var(--az);gap:10px}
+
+.no-results{grid-column:1/-1;text-align:center;padding:4rem 2rem;color:var(--mu);font-size:0.95rem;display:none}
+.no-results.show{display:block}
+
+.suggest-sec{background:linear-gradient(135deg,#FAFCFE 0%,#fff 100%);padding:4rem 2rem;border-top:1px solid var(--bd);text-align:center}
+.suggest-inner{max-width:620px;margin:0 auto}
+.suggest-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.4rem);text-transform:uppercase;color:var(--ink);margin-bottom:0.7rem;letter-spacing:-0.02em}
+.suggest-text{font-size:0.95rem;color:var(--mu);line-height:1.6;margin-bottom:1.5rem}
+.btn-suggest{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:0.9rem 1.7rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;position:relative;overflow:hidden;box-shadow:0 6px 20px rgba(0,119,200,0.35);transition:all .2s}
+.btn-suggest::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+.btn-suggest::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
+.btn-suggest:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(0,119,200,0.5)}
+.btn-suggest:hover::after{transform:translateX(3px)}
+
+footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2.5rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;margin-bottom:0.5rem}
+.footer-brand p{font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.6;max-width:300px}
+.footer-col h5{font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem;color:rgba(255,255,255,0.55)}
+.footer-col a{display:block;font-size:0.86rem;color:rgba(255,255,255,0.8);text-decoration:none;margin-bottom:0.6rem;transition:color .2s}
+.footer-col a:hover{color:var(--am)}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.45)}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+
+@media(max-width:1180px){.nav-links a{font-size:0.95rem;padding:9px 16px}}
+@media(max-width:980px){
+  nav{padding:0 1.5rem;height:88px}.logo img{height:64px}.nav-links{display:none}
+  .events-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+}
+@media(max-width:640px){
+  .event-card{grid-template-columns:90px 1fr}
+  .event-day{font-size:1.8rem}
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="articulos.html">Articulos</a>
+    <a href="investigacion.html">Investigacion</a>
+    <a href="productos.html">Productos</a>
+    <a href="eventos.html" class="active">Eventos</a>
+    <a href="miembros.html">Nuestra Red</a>
+    <a href="familias.html">Para Familias</a>
+  </div>
+  <a href="unirme.html" class="btn-primary">Unirme a MML</a>
+</nav>
+
+<section class="hero-sec">
+  <div class="hero-inner">
+    <div class="kicker">Agenda 2026</div>
+    <h1 class="hero-title">Eventos de<br>control de miopía</h1>
+    <p class="lead">Congresos, simposios, cursos y webinars en LATAM y a nivel mundial. La agenda actualizada de toda la comunidad MML.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-n">12+</div><div class="hero-stat-l">Eventos en 2026</div></div>
+      <div class="hero-stat"><div class="hero-stat-n" style="color:var(--ve)">6</div><div class="hero-stat-l">Países LATAM</div></div>
+      <div class="hero-stat"><div class="hero-stat-n" style="color:var(--am)">Online</div><div class="hero-stat-l">y presenciales</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="search-bar">
+  <div class="search-wrap">
+    <div class="search-input-wrap">
+      <input type="text" class="search-input" id="search" placeholder="Buscar evento por nombre, ciudad, país u organizador...">
+    </div>
+    <div class="filter-pills">
+      <button class="f-pill active" data-filter="all">Todos</button>
+      <button class="f-pill" data-filter="latam">LATAM</button>
+      <button class="f-pill" data-filter="global">Global</button>
+      <button class="f-pill" data-filter="online">Online</button>
+      <button class="f-pill" data-filter="presencial">Presencial</button>
+    </div>
+  </div>
+</div>
+
+<div class="results-info"><strong id="results-count">12</strong> eventos encontrados</div>
+
+<div class="events-grid" id="events-grid">
+
+  <article class="event-card" data-region="latam" data-type="online" data-date="2026-02-15" style="--c:#0077C8;--c-dark:#005FA3">
+    <div class="event-date"><span class="event-month">FEB</span><span class="event-day">15</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-online">Online</span></div>
+      <div class="event-title">Webinar MML: AXL vs SER en práctica clínica</div>
+      <div class="event-location">Online - Zoom</div>
+      <div class="event-organizer">Organiza: Grupo Manejo Miopía LATAM</div>
+      <div class="event-desc">Discusión clínica sobre biomarcadores de seguimiento en control de miopía. Modera Leonardo Orjuela M. OD.</div>
+      <a href="unirme.html" class="event-link">Inscribirse gratis</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="latam" data-type="presencial" data-date="2026-03-22" style="--c:#5C35D4;--c-dark:#3B1FA8">
+    <div class="event-date"><span class="event-month">MAR</span><span class="event-day">22-24</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">Congreso FCOC 2026 - Optometría Colombia</div>
+      <div class="event-location">Medellín, Colombia</div>
+      <div class="event-organizer">Organiza: Federación Colombiana de Optómetras</div>
+      <div class="event-desc">Simposio sobre control de miopía y lentes de contacto especializados con ponentes internacionales.</div>
+      <a href="#" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="global" data-type="presencial" data-date="2026-05-03" style="--c:#D42B2B;--c-dark:#A01F1F">
+    <div class="event-date"><span class="event-month">MAY</span><span class="event-day">3-7</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-global">Global</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">ARVO 2026 - Visión e Investigación</div>
+      <div class="event-location">Salt Lake City, USA</div>
+      <div class="event-organizer">Organiza: Association for Research in Vision and Ophthalmology</div>
+      <div class="event-desc">Congreso internacional de investigación oftálmica con sesiones específicas sobre miopía y mecanismos.</div>
+      <a href="https://www.arvo.org" target="_blank" rel="noopener" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="latam" data-type="hibrido" data-date="2026-06-12" style="--c:#2EAA4A;--c-dark:#1E7D34">
+    <div class="event-date"><span class="event-month">JUN</span><span class="event-day">12-14</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-hibrido">Híbrido</span></div>
+      <div class="event-title">MML Latin Summit 2026</div>
+      <div class="event-location">Ciudad de México + Online</div>
+      <div class="event-organizer">Organiza: MML - Grupo Manejo Miopía LATAM</div>
+      <div class="event-desc">Encuentro anual MML con embajadores de 6 países. Presentación de investigación regional y protocolos.</div>
+      <a href="unirme.html" class="event-link">Solicitar invitación</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="global" data-type="presencial" data-date="2026-07-08" style="--c:#F5C518;--c-dark:#C9A200">
+    <div class="event-date"><span class="event-month">JUL</span><span class="event-day">8-10</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-global">Global</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">IMC 2026 - International Myopia Conference</div>
+      <div class="event-location">Singapur</div>
+      <div class="event-organizer">Organiza: International Myopia Institute</div>
+      <div class="event-desc">El congreso más importante del mundo en control de miopía. Última evidencia clínica y científica.</div>
+      <a href="https://myopiainstitute.org" target="_blank" rel="noopener" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="latam" data-type="online" data-date="2026-08-20" style="--c:#7B1FA2;--c-dark:#4A148C">
+    <div class="event-date"><span class="event-month">AGO</span><span class="event-day">20</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-online">Online</span></div>
+      <div class="event-title">Curso intensivo: Atropina baja concentración</div>
+      <div class="event-location">Online - Plataforma MML</div>
+      <div class="event-organizer">Organiza: MML + Universidad de Alicante</div>
+      <div class="event-desc">Curso de 4 horas sobre protocolo de atropina 0.025% en práctica latinoamericana. Certificado.</div>
+      <a href="unirme.html" class="event-link">Inscribirse</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="global" data-type="presencial" data-date="2026-09-15" style="--c:#0077C8;--c-dark:#005FA3">
+    <div class="event-date"><span class="event-month">SEP</span><span class="event-day">15-19</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-global">Global</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">ICSC 2026 - International Contact Lens Specialists Conference</div>
+      <div class="event-location">Las Vegas, USA</div>
+      <div class="event-organizer">Organiza: ICSC</div>
+      <div class="event-desc">El evento donde nació MML. Sesiones sobre Orto-K, control de miopía y lentes especializados.</div>
+      <a href="#" target="_blank" rel="noopener" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="latam" data-type="presencial" data-date="2026-09-25" style="--c:#0097A7;--c-dark:#006978">
+    <div class="event-date"><span class="event-month">SEP</span><span class="event-day">25-27</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">Congreso Ecuatoriano de Optometría</div>
+      <div class="event-location">Cuenca, Ecuador</div>
+      <div class="event-organizer">Organiza: Asociación Ecuatoriana de Optometría</div>
+      <div class="event-desc">Simposio sobre miopía pediátrica y nuevas tecnologías de control. Coordinado por Ariolfo Vázquez.</div>
+      <a href="#" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="global" data-type="presencial" data-date="2026-10-08" style="--c:#1A237E;--c-dark:#0D1346">
+    <div class="event-date"><span class="event-month">OCT</span><span class="event-day">8-11</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-global">Global</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">AAO 2026 - American Academy of Optometry</div>
+      <div class="event-location">Boston, USA</div>
+      <div class="event-organizer">Organiza: American Academy of Optometry</div>
+      <div class="event-desc">Encuentro anual con sesión especial de la sección hispanohablante y track de control de miopía.</div>
+      <a href="https://www.aaopt.org" target="_blank" rel="noopener" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="latam" data-type="presencial" data-date="2026-10-22" style="--c:#F5C518;--c-dark:#C9A200">
+    <div class="event-date"><span class="event-month">OCT</span><span class="event-day">22-24</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">Congreso CooperVision México</div>
+      <div class="event-location">Ciudad de México</div>
+      <div class="event-organizer">Organiza: CooperVision México + UNAM</div>
+      <div class="event-desc">Simposio sobre MiSight 1 day y diseños duales en niños. Coordinado por Ricardo Pintor L.</div>
+      <a href="#" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="latam" data-type="online" data-date="2026-11-10" style="--c:#2EAA4A;--c-dark:#1E7D34">
+    <div class="event-date"><span class="event-month">NOV</span><span class="event-day">10</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-online">Online</span></div>
+      <div class="event-title">Webinar MML: Terapias combinadas en miopía</div>
+      <div class="event-location">Online - Zoom</div>
+      <div class="event-organizer">Organiza: MML - Grupo Manejo Miopía LATAM</div>
+      <div class="event-desc">Mesa redonda sobre Orto-K + atropina, DIMS + atropina y combinaciones avanzadas con casos clínicos.</div>
+      <a href="unirme.html" class="event-link">Inscribirse gratis</a>
+    </div>
+  </article>
+
+  <article class="event-card" data-region="latam" data-type="presencial" data-date="2026-11-18" style="--c:#D42B2B;--c-dark:#A01F1F">
+    <div class="event-date"><span class="event-month">NOV</span><span class="event-day">18-20</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-presencial">Presencial</span></div>
+      <div class="event-title">Simposio de Lentes de Contacto Puerto Rico</div>
+      <div class="event-location">San Juan, Puerto Rico</div>
+      <div class="event-organizer">Organiza: Colegio de Optómetras de Puerto Rico + MML</div>
+      <div class="event-desc">Evento anual con énfasis en adaptación de lentes especializados. Coordinado por Edgar Dávila García.</div>
+      <a href="#" class="event-link">Ver detalles</a>
+    </div>
+  </article>
+
+  <div class="no-results" id="no-results">
+    <strong>Sin resultados.</strong> Prueba con otros términos de búsqueda o cambia los filtros.
+  </div>
+</div>
+
+<section class="suggest-sec">
+  <div class="suggest-inner">
+    <h2 class="suggest-title">¿Conoces un evento que falta?</h2>
+    <p class="suggest-text">Si organizas o conoces un evento sobre control de miopía en LATAM o a nivel mundial, mándanos la info. Lo revisamos y lo agregamos a la agenda MML.</p>
+    <a href="mailto:eventos@miopialatam.org" class="btn-suggest">Sugerir un evento</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopía Latam</h4>
+      <p>Red internacional de especialistas en control de miopía. Activa en Puerto Rico, Colombia, México, USA, España y Ecuador.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Recursos</h5>
+      <a href="articulos.html">Artículos clínicos</a>
+      <a href="investigacion.html">Investigación</a>
+      <a href="productos.html">Productos</a>
+      <a href="eventos.html">Eventos</a>
+    </div>
+    <div class="footer-col">
+      <h5>Comunidad</h5>
+      <a href="miembros.html">Nuestra red</a>
+      <a href="familias.html">Para familias</a>
+      <a href="unirme.html">Unirme a MML</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="mailto:info@miopialatam.org">info@miopialatam.org</a>
+      <a href="mailto:eventos@miopialatam.org">eventos@miopialatam.org</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">2026 MML - miopialatam.org - Todos los derechos reservados</div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const searchInput = document.getElementById('search');
+const filterPills = document.querySelectorAll('.f-pill');
+const cards = document.querySelectorAll('.event-card');
+const resultsCount = document.getElementById('results-count');
+const noResults = document.getElementById('no-results');
+let currentFilter = 'all';
+
+function filterEvents() {
+  const term = searchInput.value.toLowerCase().trim();
+  let visible = 0;
+  cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    const region = card.dataset.region;
+    const type = card.dataset.type;
+    const matchesText = !term || text.includes(term);
+    let matchesFilter = currentFilter === 'all'
+      || currentFilter === region
+      || currentFilter === type;
+    if (matchesText && matchesFilter) {
+      card.classList.remove('hidden');
+      visible++;
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+  resultsCount.textContent = visible;
+  noResults.classList.toggle('show', visible === 0);
+}
+
+searchInput.addEventListener('input', filterEvents);
+filterPills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    filterPills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    currentFilter = pill.dataset.filter;
+    filterEvents();
+  });
+});
+</script>
+</body>
+</html>
