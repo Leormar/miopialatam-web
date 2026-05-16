@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embajadores MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+  --shadow-lg:0 12px 40px rgba(10,37,64,0.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.nav-links{display:flex;gap:4px;align-items:center;background:rgba(245,247,250,0.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:999px;padding:6px;position:relative;overflow:hidden}
+.nav-links::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(245,197,24,0.14) 20%,rgba(46,170,74,0.14) 40%,rgba(0,119,200,0.14) 60%,rgba(212,43,43,0.14) 80%,transparent 100%);background-size:200% 100%;animation:aladino 10s linear infinite;pointer-events:none;border-radius:999px;z-index:0}
+@keyframes aladino{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--mu);text-decoration:none;position:relative;padding:10px 20px;border-radius:999px;transition:all .3s cubic-bezier(.4,0,.2,1);white-space:nowrap;z-index:2}
+.nav-links a:hover{color:var(--ink);background:rgba(255,255,255,0.95);box-shadow:0 4px 14px rgba(10,37,64,0.08)}
+.nav-links a.active{color:#fff;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);box-shadow:0 6px 20px rgba(0,119,200,0.4);overflow:hidden;font-weight:700}
+.nav-links a.active::after{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:shineActive 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes shineActive{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.btn-primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px;position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(0,119,200,0.3)}
+.btn-primary::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes aladino-shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,119,200,0.45)}
+.btn-primary::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
+.btn-primary:hover::after{transform:translateX(3px)}
+
+.hero-sec{padding:7.5rem 2rem 5rem;text-align:center;background:linear-gradient(180deg,#FAFCFE 0%,#fff 100%);position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:1000px;margin:0 auto;position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--az);margin-bottom:1rem}
+.kicker::before{content:'';width:24px;height:2px;background:var(--az);border-radius:2px}
+h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(3.4rem,7.5vw,6.4rem);line-height:0.92;letter-spacing:-0.04em;color:var(--ink);text-transform:uppercase;margin-bottom:1.4rem}
+.hero-sec p.lead{font-size:1.2rem;color:var(--mu);line-height:1.6;max-width:680px;margin:0 auto 2rem}
+.btn-register{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:0.95rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;position:relative;overflow:hidden;box-shadow:0 6px 20px rgba(0,119,200,0.35);transition:all .2s}
+.btn-register::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+.btn-register::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
+.btn-register:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(0,119,200,0.5)}
+.btn-register:hover::after{transform:translateX(3px)}
+
+.search-bar{max-width:1200px;margin:0 auto;padding:3rem 2rem 1rem}
+.search-wrap{background:#fff;border:1px solid var(--bd);border-radius:18px;padding:1.2rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;box-shadow:var(--shadow-sm)}
+.search-input-wrap{flex:1;position:relative;min-width:240px}
+.search-input-wrap::before{content:'';position:absolute;left:18px;top:50%;transform:translateY(-50%);width:18px;height:18px;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%235A7184' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='16' y1='16' x2='21' y2='21'/%3E%3C/svg%3E") no-repeat center;background-size:contain}
+.search-input{width:100%;padding:0.85rem 1rem 0.85rem 3rem;border:1px solid var(--bd);border-radius:12px;font-size:0.95rem;font-family:inherit;color:var(--ink);background:var(--bg);outline:none;transition:all .2s}
+.search-input:focus{border-color:var(--az);background:#fff;box-shadow:0 0 0 4px rgba(0,119,200,0.1)}
+.filter-pills{display:flex;gap:6px;flex-wrap:wrap}
+.f-pill{padding:0.55rem 1rem;border:1px solid var(--bd);border-radius:999px;background:#fff;font-family:'Inter',sans-serif;font-size:0.82rem;font-weight:600;color:var(--mu);cursor:pointer;transition:all .2s}
+.f-pill:hover{color:var(--ink);border-color:var(--ink)}
+.f-pill.active{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:0 4px 14px rgba(10,37,64,0.15)}
+.results-info{max-width:1200px;margin:0 auto;padding:1rem 2rem;font-size:0.85rem;color:var(--mu)}
+.results-info strong{color:var(--ink);font-weight:600}
+
+.emb-grid{max-width:1200px;margin:0 auto;padding:1rem 2rem 4rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.emb-card{background:#fff;border:1px solid var(--bd);border-radius:24px;padding:2.4rem 1.6rem 2rem;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1)}
+.emb-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:transparent}
+.emb-card.hidden{display:none}
+.emb-photo{width:140px;height:140px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.5rem;color:#fff;margin-bottom:1.2rem;letter-spacing:0.02em;box-shadow:0 8px 24px rgba(10,37,64,0.15);position:relative;overflow:hidden;background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%)}
+.emb-photo::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--bd);z-index:-1;transition:border-color .3s}
+.emb-card:hover .emb-photo::after{border-color:var(--c)}
+.emb-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;z-index:2}
+.emb-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.25rem;letter-spacing:-0.015em;line-height:1.1}
+.emb-title{font-size:0.74rem;color:var(--c);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.9rem}
+.emb-esp{font-size:0.86rem;color:var(--mu);line-height:1.55;margin-bottom:1rem;min-height:2.5em}
+.emb-country{font-size:0.72rem;font-weight:600;padding:5px 14px;border-radius:999px;margin-bottom:0.9rem;display:inline-block;letter-spacing:0.02em;background:var(--c-light);color:var(--c-dark)}
+.emb-web{font-size:0.75rem;color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1px solid var(--bd);padding-bottom:2px;transition:all .2s}
+.emb-web:hover{color:var(--c);border-color:var(--c)}
+.emb-bar{position:absolute;bottom:0;left:0;right:0;display:flex;height:3px}
+.emb-bar div{flex:1}
+.emb-badge{position:absolute;top:14px;right:14px;background:linear-gradient(135deg,#F5C518,#E8AC00);color:#5C4400;font-size:0.6rem;font-weight:800;padding:3px 10px;border-radius:999px;letter-spacing:0.08em;text-transform:uppercase;z-index:3;box-shadow:0 2px 8px rgba(245,197,24,0.4)}
+
+.empty-state{grid-column:1/-1;text-align:center;padding:4rem 2rem;background:var(--bg);border:1px dashed var(--bd);border-radius:24px;display:none}
+.empty-state.show{display:block}
+.empty-state h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.6rem;color:var(--ink);margin-bottom:0.5rem;text-transform:uppercase}
+.empty-state p{font-size:0.95rem;color:var(--mu);max-width:480px;margin:0 auto}
+
+.no-results{grid-column:1/-1;text-align:center;padding:3rem 2rem;color:var(--mu);font-size:0.95rem;display:none}
+.no-results.show{display:block}
+
+.cta-sec{background:linear-gradient(135deg,#0A2540 0%,#102E50 100%);padding:5rem 2rem;color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(0,119,200,0.3),transparent 60%)}
+.cta-inner{position:relative;z-index:2;max-width:680px;margin:0 auto}
+.cta-sec h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.4rem,4.5vw,3.6rem);text-transform:uppercase;letter-spacing:-0.025em;margin-bottom:1rem;line-height:1}
+.cta-sec p{font-size:1.05rem;color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 2rem;line-height:1.6}
+.btn-cta{background:#fff;color:var(--ink);padding:0.95rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,255,255,0.2)}
+.btn-cta::after{content:'\2192';transition:transform .2s}
+.btn-cta:hover::after{transform:translateX(3px)}
+
+footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2.5rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;margin-bottom:0.5rem}
+.footer-brand p{font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.6;max-width:300px}
+.footer-col h5{font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem;color:rgba(255,255,255,0.55)}
+.footer-col a{display:block;font-size:0.86rem;color:rgba(255,255,255,0.8);text-decoration:none;margin-bottom:0.6rem;transition:color .2s}
+.footer-col a:hover{color:var(--am)}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.45)}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+
+@media(max-width:1180px){.nav-links a{font-size:0.95rem;padding:9px 16px}}
+@media(max-width:980px){
+  nav{padding:0 1.5rem;height:88px}.logo img{height:64px}.nav-links{display:none}
+  .emb-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+}
+@media(max-width:640px){.emb-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="articulos.html">Artículos</a>
+    <a href="investigacion.html">Investigación</a>
+    <a href="productos.html">Productos</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="embajadores.html" class="active">Embajadores</a>
+    <a href="familias.html">Para Familias</a>
+  </div>
+  <a href="unirme.html" class="btn-primary">Unirme a MML</a>
+</nav>
+
+<section class="hero-sec">
+  <div class="hero-inner">
+    <div class="kicker">Red MML en LATAM</div>
+    <h1 class="hero-title">Embajadores MML</h1>
+    <p class="lead">Especialistas en control de miopía que lideran las actividades educativas, clínicas y de investigación en cada país de Latinoamérica.</p>
+    <a href="embajadores-registro.html" class="btn-register">Registrarse como embajador</a>
+  </div>
+</section>
+
+<div class="search-bar">
+  <div class="search-wrap">
+    <div class="search-input-wrap">
+      <input type="text" class="search-input" id="search" placeholder="Buscar por nombre, país, ciudad o especialidad...">
+    </div>
+    <div class="filter-pills">
+      <button class="f-pill active" data-filter="all">Todos</button>
+      <button class="f-pill" data-filter="colombia">Colombia</button>
+      <button class="f-pill" data-filter="mexico">México</button>
+      <button class="f-pill" data-filter="ecuador">Ecuador</button>
+      <button class="f-pill" data-filter="puerto-rico">Puerto Rico</button>
+      <button class="f-pill" data-filter="usa">USA</button>
+      <button class="f-pill" data-filter="espana">España</button>
+    </div>
+  </div>
+</div>
+
+<div class="results-info"><strong id="results-count">0</strong> embajadores</div>
+
+<div class="emb-grid" id="emb-grid">
+
+  <!-- Los miembros fundadores aparecen aqui automaticamente. Embajadores nuevos se agregan via el formulario. -->
+
+  <div class="emb-card" data-country="puerto-rico" data-search="edgar davila garcia puerto rico optometra lentes contacto control miopia" style="--c:#0077C8;--c-dark:#005FA3;--c-light:#EAF4FB">
+    <div class="emb-badge">Fundador</div>
+    <div class="emb-photo"><img src="img/miembros/edgar-davila.jpg" alt="Edgar Davila Garcia" onerror="this.remove()">ED</div>
+    <div class="emb-name">Edgar Dávila García</div>
+    <div class="emb-title">Opt. - Puerto Rico</div>
+    <div class="emb-esp">Control de miopía · Lentes de contacto especializados</div>
+    <span class="emb-country">Puerto Rico</span>
+    <a href="http://contactosespecializados.com" class="emb-web" target="_blank">contactosespecializados.com</a>
+    <div class="emb-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
+  </div>
+
+  <div class="emb-card" data-country="espana" data-search="david pinero espana optometra investigador universidad alicante" style="--c:#2EAA4A;--c-dark:#1E7D34;--c-light:#E6F7EB">
+    <div class="emb-badge">Fundador</div>
+    <div class="emb-photo"><img src="img/miembros/david-pinero.jpg" alt="David P. Pinero" onerror="this.remove()">DP</div>
+    <div class="emb-name">David P. Piñero</div>
+    <div class="emb-title">Opt. - Investigador</div>
+    <div class="emb-esp">Control de miopía · Universidad de Alicante</div>
+    <span class="emb-country">España</span>
+    <a href="mailto:david.pinyero@ua.es" class="emb-web">david.pinyero@ua.es</a>
+    <div class="emb-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
+  </div>
+
+  <div class="emb-card" data-country="usa" data-search="elise kramer miami usa optometra lentes contacto control miopia" style="--c:#D42B2B;--c-dark:#A01F1F;--c-light:#FDECEA">
+    <div class="emb-badge">Fundador</div>
+    <div class="emb-photo"><img src="img/miembros/elise-kramer.jpg" alt="Elise G. Kramer" onerror="this.remove()">EK</div>
+    <div class="emb-name">Elise G. Kramer</div>
+    <div class="emb-title">Opt. - USA</div>
+    <div class="emb-esp">Lentes de contacto · Control de miopía · Miami FL</div>
+    <span class="emb-country">USA - Miami</span>
+    <a href="http://miamicontactlens.com" class="emb-web" target="_blank">miamicontactlens.com</a>
+    <div class="emb-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
+  </div>
+
+  <div class="emb-card" data-country="mexico" data-search="ricardo pintor mexico optometra unam coopervision orto-k control miopia" style="--c:#F5C518;--c-dark:#C9A200;--c-light:#FFF6D8">
+    <div class="emb-badge">Fundador</div>
+    <div class="emb-photo"><img src="img/miembros/ricardo-pintor.jpg" alt="Ricardo Pintor L." onerror="this.remove()">RP</div>
+    <div class="emb-name">Ricardo Pintor L.</div>
+    <div class="emb-title">Opt. FIACLE - México</div>
+    <div class="emb-esp">Control de miopía · Orto-K · CooperVision · UNAM</div>
+    <span class="emb-country">México</span>
+    <a href="http://thevisioncareinstitute.com.mx" class="emb-web" target="_blank">thevisioncareinstitute.com.mx</a>
+    <div class="emb-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
+  </div>
+
+  <div class="emb-card" data-country="ecuador" data-search="ariolfo vazquez ecuador cuenca optometra control miopia lentes contacto" style="--c:#0097A7;--c-dark:#006978;--c-light:#E0F2F1">
+    <div class="emb-badge">Fundador</div>
+    <div class="emb-photo"><img src="img/miembros/ariolfo-vazquez.jpg" alt="Ariolfo Vazquez" onerror="this.remove()">AV</div>
+    <div class="emb-name">Ariolfo Vázquez</div>
+    <div class="emb-title">Opt. - Ecuador</div>
+    <div class="emb-esp">Control de miopía · Lentes de contacto · Cuenca</div>
+    <span class="emb-country">Ecuador - Cuenca</span>
+    <a href="mailto:vazrueda@gmail.com" class="emb-web">vazrueda@gmail.com</a>
+    <div class="emb-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
+  </div>
+
+  <div class="emb-card" data-country="colombia" data-search="leonardo orjuela medellin colombia optometra orto-k lentes contacto control miopia comanejo" style="--c:#5C35D4;--c-dark:#3B1FA8;--c-light:#EDE7F6">
+    <div class="emb-badge">Fundador</div>
+    <div class="emb-photo"><img src="img/miembros/leonardo-orjuela.jpg" alt="Leonardo Orjuela M." onerror="this.remove()">LO</div>
+    <div class="emb-name">Leonardo Orjuela M.</div>
+    <div class="emb-title">Opt. - Colombia</div>
+    <div class="emb-esp">Orto-K · Lentes de contacto · Control de miopía en comanejo</div>
+    <span class="emb-country">Colombia - Medellín</span>
+    <a href="http://lentesespecializados.com" class="emb-web" target="_blank">lentesespecializados.com</a>
+    <div class="emb-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
+  </div>
+
+  <!-- AQUI SE AGREGAN LOS NUEVOS EMBAJADORES -->
+
+  <div class="no-results" id="no-results"><strong>Sin resultados.</strong> Prueba con otro nombre, país o especialidad.</div>
+</div>
+
+<section class="cta-sec">
+  <div class="cta-inner">
+    <h2>¿Eres especialista en control de miopía?</h2>
+    <p>Si trabajas en control de miopía y quieres formar parte de la red de embajadores MML en tu país, registra tus datos. El equipo fundador revisará tu perfil.</p>
+    <a href="embajadores-registro.html" class="btn-cta">Registrarse como embajador</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopía Latam</h4>
+      <p>Red internacional de especialistas en control de miopía. Activa en Puerto Rico, Colombia, México, USA, España y Ecuador.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Recursos</h5>
+      <a href="articulos.html">Artículos clínicos</a>
+      <a href="investigacion.html">Investigación</a>
+      <a href="productos.html">Productos</a>
+      <a href="eventos.html">Eventos</a>
+    </div>
+    <div class="footer-col">
+      <h5>Comunidad</h5>
+      <a href="embajadores.html">Embajadores</a>
+      <a href="familias.html">Para familias</a>
+      <a href="unirme.html">Unirme a MML</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="mailto:info@miopialatam.org">info@miopialatam.org</a>
+      <a href="mailto:embajadores@miopialatam.org">embajadores@miopialatam.org</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">2026 MML - miopialatam.org - Todos los derechos reservados</div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const searchInput = document.getElementById('search');
+const filterPills = document.querySelectorAll('.f-pill');
+const cards = document.querySelectorAll('.emb-card');
+const resultsCount = document.getElementById('results-count');
+const noResults = document.getElementById('no-results');
+let currentFilter = 'all';
+
+function filterEmb() {
+  const term = searchInput.value.toLowerCase().trim();
+  let visible = 0;
+  cards.forEach(card => {
+    const text = (card.dataset.search || '') + ' ' + card.textContent.toLowerCase();
+    const country = card.dataset.country;
+    const matchesText = !term || text.toLowerCase().includes(term);
+    const matchesFilter = currentFilter === 'all' || currentFilter === country;
+    if (matchesText && matchesFilter) {
+      card.classList.remove('hidden');
+      visible++;
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+  resultsCount.textContent = visible;
+  noResults.classList.toggle('show', visible === 0);
+}
+
+filterEmb();
+searchInput.addEventListener('input', filterEmb);
+filterPills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    filterPills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    currentFilter = pill.dataset.filter;
+    filterEmb();
+  });
+});
+</script>
+</body>
+</html>

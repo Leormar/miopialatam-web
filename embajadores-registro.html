@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Embajadores - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+  --shadow-lg:0 12px 40px rgba(10,37,64,0.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.back{font-size:0.84rem;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-weight:600;transition:all .25s;padding:8px 16px;border-radius:999px;background:rgba(245,247,250,0.7);border:1px solid var(--bd);position:relative;overflow:hidden}
+.back::before{content:'\2190';font-size:1.05rem;position:relative;z-index:2;transition:transform .25s}
+.back::after{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(90deg,transparent 0%,rgba(245,197,24,0.18) 25%,rgba(46,170,74,0.18) 50%,rgba(0,119,200,0.18) 75%,transparent 100%);background-size:200% 100%;animation:aladino-shine 4s linear infinite;pointer-events:none}
+@keyframes aladino-shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.back:hover{background:#fff;border-color:var(--ink);transform:translateX(-2px);box-shadow:var(--shadow-sm)}
+.back:hover::before{transform:translateX(-3px)}
+
+.wrap{max-width:780px;margin:0 auto;padding:4rem 2rem 5rem}
+.intro{text-align:center;margin-bottom:2.5rem}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #C8E0F5;color:var(--az);font-size:0.74rem;font-weight:600;padding:6px 16px;border-radius:999px;margin-bottom:1.2rem;box-shadow:var(--shadow-sm)}
+.badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--az);box-shadow:0 0 0 4px rgba(0,119,200,0.18);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(0,119,200,0.18)}50%{box-shadow:0 0 0 8px rgba(0,119,200,0.05)}}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(3rem,6vw,5rem);text-transform:uppercase;letter-spacing:-0.04em;color:var(--ink);margin-bottom:1rem;line-height:0.92}
+.sub{font-size:1.15rem;color:var(--mu);line-height:1.6;max-width:580px;margin:0 auto}
+
+.proceso{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem}
+.proceso-step{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:1.2rem;text-align:center}
+.proceso-n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.6rem;color:var(--az);line-height:1;margin-bottom:0.4rem;letter-spacing:-0.02em}
+.proceso-t{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.3rem;letter-spacing:-0.01em}
+.proceso-d{font-size:0.75rem;color:var(--mu);line-height:1.5}
+
+.form-card{background:#fff;border:1px solid var(--bd);border-radius:24px;padding:2.5rem;box-shadow:var(--shadow-md)}
+.form-section{margin-bottom:1.5rem}
+.form-section-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--soft);margin-bottom:1.1rem;padding-bottom:0.8rem;border-bottom:1px solid var(--bd-soft);display:flex;align-items:center;gap:10px}
+.form-section-title::before{content:'';width:20px;height:2px;background:var(--az);border-radius:2px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+label{display:block;font-size:0.78rem;font-weight:600;color:var(--ink);margin-bottom:0.4rem;letter-spacing:0.01em}
+label .req{color:var(--ro)}
+input,select,textarea{width:100%;padding:0.85rem 1rem;border:1px solid var(--bd);border-radius:12px;font-size:0.92rem;font-family:'Inter',sans-serif;color:var(--ink);background:#fff;outline:none;transition:all .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--az);box-shadow:0 0 0 4px rgba(0,119,200,0.1)}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+textarea{resize:vertical;min-height:90px;font-family:inherit}
+.mb{margin-bottom:1rem}
+.checkbox-group{display:flex;flex-direction:column;gap:0.7rem;padding:0.5rem 0}
+.checkbox-item{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:0.88rem;color:var(--txt)}
+.checkbox-item input{width:18px;height:18px;accent-color:var(--az);cursor:pointer;flex-shrink:0}
+.foto-note{background:linear-gradient(135deg,#EAF4FB,#F7FBFE);border:1px solid #C8E0F5;border-radius:12px;padding:1rem 1.2rem;font-size:0.85rem;color:#0D47A1;line-height:1.6;margin-bottom:1rem}
+.foto-note strong{color:var(--ink)}
+
+.btn-wa{width:100%;background:#25D366;color:#fff;border:none;padding:1.1rem;border-radius:14px;font-size:1.05rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:1.5rem;transition:all .2s;box-shadow:0 4px 14px rgba(37,211,102,0.3)}
+.btn-wa:hover{background:#1EAB55;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,0.4)}
+.btn-wa::after{content:'\2192';transition:transform .2s}
+.btn-wa:hover::after{transform:translateX(3px)}
+.form-note{font-size:0.8rem;color:var(--mu);text-align:center;margin-top:1rem;line-height:1.55}
+
+footer{background:var(--ink);padding:2rem;text-align:center;color:#fff}
+.footer-stripes{display:flex;gap:4px;justify-content:center;margin-bottom:0.8rem}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.45)}
+
+@media(max-width:640px){
+  nav{padding:0 1.2rem;height:88px}.logo img{height:64px}
+  .form-card{padding:1.6rem}.grid2{grid-template-columns:1fr}
+  .proceso{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <a href="embajadores.html" class="back">Volver a embajadores</a>
+</nav>
+
+<div class="wrap">
+  <div class="intro">
+    <div class="badge">Registro abierto · Revisión por equipo fundador</div>
+    <h1>Registro de Embajador MML</h1>
+    <p class="sub">Completa tus datos profesionales. El equipo fundador revisará tu perfil y te contactará por WhatsApp para confirmar tu ingreso a la red de embajadores.</p>
+  </div>
+
+  <div class="proceso">
+    <div class="proceso-step"><div class="proceso-n">01</div><div class="proceso-t">Llena tus datos</div><div class="proceso-d">Información profesional, especialidad y contacto.</div></div>
+    <div class="proceso-step"><div class="proceso-n">02</div><div class="proceso-t">Envías al admin</div><div class="proceso-d">El formulario te abre WhatsApp con la info lista.</div></div>
+    <div class="proceso-step"><div class="proceso-n">03</div><div class="proceso-t">Revisión y publicación</div><div class="proceso-d">El equipo aprueba y publica tu perfil en 24-72h.</div></div>
+  </div>
+
+  <div class="form-card">
+
+    <div class="form-section">
+      <div class="form-section-title">Datos personales</div>
+      <div class="grid2">
+        <div>
+          <label>Nombre completo <span class="req">*</span></label>
+          <input type="text" id="nombre" placeholder="Dr. Juan Pérez García" required>
+        </div>
+        <div>
+          <label>Título profesional <span class="req">*</span></label>
+          <input type="text" id="titulo" placeholder="Optómetra · Oftalmólogo · OD · MD" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Ubicación</div>
+      <div class="grid2">
+        <div>
+          <label>País <span class="req">*</span></label>
+          <select id="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option>Argentina</option><option>Bolivia</option><option>Brasil</option>
+            <option>Chile</option><option>Colombia</option><option>Costa Rica</option>
+            <option>Cuba</option><option>Ecuador</option><option>El Salvador</option>
+            <option>España</option><option>Guatemala</option><option>Honduras</option>
+            <option>México</option><option>Nicaragua</option><option>Panamá</option>
+            <option>Paraguay</option><option>Perú</option><option>Puerto Rico</option>
+            <option>Rep. Dominicana</option><option>Uruguay</option>
+            <option>USA</option><option>Venezuela</option><option>Otro</option>
+          </select>
+        </div>
+        <div>
+          <label>Ciudad <span class="req">*</span></label>
+          <input type="text" id="ciudad" placeholder="Tu ciudad" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Especialidad y experiencia</div>
+      <div class="mb">
+        <label>Especialidad principal <span class="req">*</span></label>
+        <select id="especialidad" required>
+          <option value="">Selecciona tu especialidad</option>
+          <option>Orto-K / Ortoqueratología</option>
+          <option>Lentes de contacto especializados</option>
+          <option>Atropina / Control farmacológico</option>
+          <option>Miopía pediátrica</option>
+          <option>Comanejo Optometría-Oftalmología</option>
+          <option>Investigación en miopía</option>
+          <option>Oftalmología con enfoque en miopía</option>
+          <option>Educación / Docencia en optometría</option>
+          <option>Otra</option>
+        </select>
+      </div>
+      <div class="mb">
+        <label>Modalidades de tratamiento que ofreces <span class="req">*</span></label>
+        <div class="checkbox-group">
+          <label class="checkbox-item"><input type="checkbox" value="Orto-K" name="mods"> Orto-K (Ortoqueratología)</label>
+          <label class="checkbox-item"><input type="checkbox" value="Atropina" name="mods"> Atropina baja concentración</label>
+          <label class="checkbox-item"><input type="checkbox" value="LC blandos especiales" name="mods"> Lentes de contacto blandos especiales (MiSight, MYLO, NaturalVue, Biofinity MF)</label>
+          <label class="checkbox-item"><input type="checkbox" value="Lentes oftalmicas control" name="mods"> Lentes oftálmicas de control (DIMS / HALT / DOT)</label>
+          <label class="checkbox-item"><input type="checkbox" value="Biometria" name="mods"> Biometría ocular (AXL) y seguimiento</label>
+        </div>
+      </div>
+      <div class="mb">
+        <label>Años de experiencia en control de miopía</label>
+        <input type="number" id="experiencia" placeholder="5" min="0" max="50">
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Contacto profesional</div>
+      <div class="grid2">
+        <div>
+          <label>Email profesional <span class="req">*</span></label>
+          <input type="email" id="email" placeholder="tu@clinica.com" required>
+        </div>
+        <div>
+          <label>WhatsApp / Teléfono <span class="req">*</span></label>
+          <input type="tel" id="telefono" placeholder="+57 300 123 4567" required>
+        </div>
+      </div>
+      <div class="grid2">
+        <div>
+          <label>Institución / Clínica</label>
+          <input type="text" id="institucion" placeholder="Nombre de tu clínica">
+        </div>
+        <div>
+          <label>Sitio web o Instagram</label>
+          <input type="text" id="web" placeholder="ej. tuclinica.com o @tuusuario">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Bio profesional</div>
+      <div class="mb">
+        <label>Cuéntanos sobre tu trayectoria en control de miopía <span class="req">*</span></label>
+        <textarea id="bio" rows="4" placeholder="Tu formación, experiencia clínica, certificaciones (FIACLE, BCLA, etc.), actividades educativas..." required></textarea>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-title">Foto profesional</div>
+      <div class="foto-note">
+        <strong>📷 Envía tu foto profesional por WhatsApp después del formulario.</strong> El formulario abrirá WhatsApp con tus datos. Adjunta tu foto en el mismo chat. Recomendado: foto cuadrada, fondo neutro, formato JPG/PNG, mínimo 400×400px.
+      </div>
+    </div>
+
+    <button class="btn-wa" onclick="enviar()">Enviar registro por WhatsApp</button>
+    <p class="form-note">Tu solicitud llegará al equipo fundador MML por WhatsApp. Te contactarán en 24-72 horas para confirmar tu publicación.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-stripes">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="footer-copy">2026 Grupo Manejo Miopía Latam · miopialatam.org</div>
+</footer>
+
+<script>
+function enviar(){
+  const v = id => document.getElementById(id).value.trim();
+  const nombre=v('nombre'),titulo=v('titulo'),pais=v('pais'),ciudad=v('ciudad');
+  const esp=v('especialidad'),exp=v('experiencia'),email=v('email');
+  const tel=v('telefono'),inst=v('institucion'),web=v('web'),bio=v('bio');
+  if(!nombre||!titulo||!pais||!ciudad||!esp||!email||!tel||!bio){
+    alert('Por favor completa los campos obligatorios (*)');return;
+  }
+  const mods = Array.from(document.querySelectorAll('input[name="mods"]:checked'))
+    .map(c=>c.value).join(', ') || '(no especificadas)';
+
+  const texto = `🌎 *NUEVO REGISTRO DE EMBAJADOR MML*
+
+👤 *Datos personales*
+Nombre: ${nombre}
+Título: ${titulo}
+
+📍 *Ubicación*
+País: ${pais}
+Ciudad: ${ciudad}
+
+🎯 *Especialidad*
+Principal: ${esp}
+Modalidades: ${mods}
+Experiencia: ${exp||'No indicada'} años
+
+📞 *Contacto*
+Email: ${email}
+WhatsApp: ${tel}
+Institución: ${inst||'No indicada'}
+Web/IG: ${web||'No indicada'}
+
+📝 *Bio*
+${bio}
+
+— Enviado desde miopialatam.org/embajadores-registro`;
+
+  const n1='17874595163'; // Edgar Davila admin
+  const n2='573013166655'; // Leonardo Orjuela admin
+  window.open('https://wa.me/'+n1+'?text='+encodeURIComponent(texto),'_blank');
+  setTimeout(()=>window.open('https://wa.me/'+n2+'?text='+encodeURIComponent(texto),'_blank'),500);
+}
+</script>
+</body>
+</html>
