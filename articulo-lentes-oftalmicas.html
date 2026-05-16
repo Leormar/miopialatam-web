@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lentes oftalmicas DIMS HALT DOT - Control de miopia - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.back{font-size:0.84rem;color:var(--mu);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:500;transition:color .2s}
+.back:hover{color:var(--ink)}.back::before{content:'\2190'}
+
+.hero-art{background:linear-gradient(180deg,#E6F7EB 0%,#FAFCFE 100%);padding:6.5rem 2rem 5rem;position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-art::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:920px;margin:0 auto;position:relative;z-index:2}
+.art-tag{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;padding:6px 16px;border-radius:999px;background:#fff;color:var(--ve);border:1px solid #A5D6A7;display:inline-block;margin-bottom:1.5rem}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6rem,5.5vw,4.6rem);line-height:0.98;color:var(--ink);margin-bottom:1.4rem;letter-spacing:-0.035em;text-transform:uppercase}
+.art-desc{font-size:1.25rem;color:var(--mu);line-height:1.6;margin-bottom:1.6rem;font-weight:400;max-width:760px}
+.art-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.82rem;color:var(--soft);font-weight:500}
+.art-meta span{display:inline-flex;align-items:center;gap:6px}
+.art-meta span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--ve)}
+
+.art-body{max-width:740px;margin:0 auto;padding:4rem 2rem}
+.art-body p{font-family:'Source Serif 4','Georgia',serif;font-size:1.08rem;line-height:1.8;margin-bottom:1.5rem;color:var(--txt)}
+.lead-p{font-size:1.2rem !important;color:var(--ink) !important;font-weight:500}
+
+.sec-head{margin:3rem 0 1.5rem;padding-left:1.2rem;border-left:3px solid var(--ve)}
+.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.55rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.015em;line-height:1.1}
+.sec-head-az{border-left-color:var(--az)}
+.sec-head-am{border-left-color:var(--am)}
+.sec-head-ro{border-left-color:var(--ro)}
+
+.lente-card{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:2rem;margin-bottom:1.4rem;position:relative;overflow:hidden;transition:all .25s;font-family:'Inter',sans-serif}
+.lente-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.lente-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.lente-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1.2rem;padding-left:1.2rem}
+.lente-tech{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.5rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.02em;line-height:1.1;margin-bottom:0.3rem}
+.lente-marca{font-size:0.85rem;color:var(--mu);font-weight:500}
+.lente-marca strong{color:var(--ink);font-weight:600}
+.lente-tag{background:var(--bg);border:1px solid var(--bd);padding:5px 12px;border-radius:999px;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink);white-space:nowrap}
+.lente-body{padding-left:1.2rem;font-family:'Inter',sans-serif}
+.lente-row{display:grid;grid-template-columns:auto 1fr;gap:1rem;margin-bottom:0.7rem;font-size:0.92rem;line-height:1.6}
+.lente-row strong{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--soft);padding-top:2px;min-width:120px}
+.lente-stats{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--bd-soft)}
+.stat-block{background:var(--bg);border-radius:10px;padding:0.85rem 1rem}
+.stat-block-label{font-size:0.7rem;font-weight:700;color:var(--soft);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.3rem}
+.stat-block-value{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;color:var(--c);line-height:1;letter-spacing:-0.02em}
+
+.tabla-wrap{background:var(--bg);border:1px solid var(--bd);border-radius:16px;padding:1.5rem;margin-bottom:2.5rem;overflow-x:auto;font-family:'Inter',sans-serif}
+.tabla-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);margin-bottom:1rem}
+table{width:100%;border-collapse:collapse;min-width:600px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
+th{padding:0.85rem 1rem;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--soft);text-align:left;background:var(--bg);border-bottom:1px solid var(--bd)}
+td{padding:0.9rem 1rem;font-size:0.86rem;color:var(--txt);border-bottom:1px solid var(--bd-soft);font-family:'Inter',sans-serif}
+tr:last-child td{border-bottom:none}
+td strong{font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--ink);text-transform:uppercase;font-size:0.92rem}
+
+.callout{background:linear-gradient(135deg,#EAF4FB,#F7FBFE);border:1px solid #C8E0F5;border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:2rem;font-size:0.92rem;color:#0D47A1;line-height:1.65;font-family:'Inter',sans-serif}
+.callout strong{color:var(--ink)}
+
+.conclusion{background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);border-radius:20px;padding:2.2rem;margin:2.5rem 0;color:#fff;position:relative;overflow:hidden}
+.conclusion::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(46,170,74,0.3),transparent 60%)}
+.conclusion-inner{position:relative;z-index:2}
+.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:#fff;margin-bottom:0.8rem;letter-spacing:-0.01em}
+.conclusion p{color:rgba(255,255,255,0.85) !important;margin-bottom:0;font-family:'Inter',sans-serif !important;font-size:1rem !important;line-height:1.7 !important}
+
+.refs{border-top:1px solid var(--bd);padding-top:1.8rem;margin-top:3rem}
+.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--soft);margin-bottom:1rem}
+.ref{font-size:0.82rem;color:var(--mu);margin-bottom:0.6rem;padding-left:1rem;border-left:2px solid var(--bd-soft);line-height:1.55;font-family:'Inter',sans-serif}
+
+.nav-art{display:flex;justify-content:space-between;margin-top:3.5rem;padding-top:1.8rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem;align-items:center}
+.btn-az{background:var(--ink);color:#fff;padding:0.8rem 1.6rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;font-family:'Inter',sans-serif}
+.btn-az:hover{background:var(--az);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-az::after{content:'\2192';transition:transform .2s}
+.btn-az:hover::after{transform:translateX(3px)}
+.btn-link{font-size:0.9rem;color:var(--mu);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .2s;font-family:'Inter',sans-serif}
+.btn-link::before{content:'\2190'}
+.btn-link:hover{color:var(--ink)}
+
+footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase}
+.footer-brand p{font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.2rem}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
+
+@media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
+@media(max-width:640px){.lente-stats{grid-template-columns:1fr}.lente-row{grid-template-columns:1fr}.art-body{padding:2.5rem 1.5rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <a href="articulos.html" class="back">Volver a articulos</a>
+</nav>
+
+<section class="hero-art">
+  <div class="hero-inner">
+    <span class="art-tag">Optica de control - Gafas</span>
+    <h1>Lentes oftalmicas para control de miopia: DIMS, HALT y DOT</h1>
+    <p class="art-desc">Las gafas de control son hoy una opcion de primera linea para el manejo de la miopia pediatrica. Revisamos las tres tecnologias con mas evidencia: DIMS de Hoya, HALT de Essilor y DOT de SightGlass/CooperVision, con datos de eficacia, mecanismo y consideraciones clinicas.</p>
+    <div class="art-meta">
+      <span>MML Editorial - Leonardo Orjuela M. OD</span>
+      <span>2025</span>
+      <span>9 min de lectura</span>
+      <span>Practica clinica</span>
+    </div>
+  </div>
+</section>
+
+<div class="art-body">
+
+  <p class="lead-p">Las lentes oftalmicas de control de miopia son hoy la modalidad mas segura, accesible y aceptable para el manejo en poblacion pediatrica latinoamericana.</p>
+
+  <p>Su no invasividad y la posibilidad de prescribirlas desde edades tempranas (4 anos en algunos casos) las convierten en una opcion de primera linea, especialmente cuando los lentes de contacto no son viables. La evidencia de los ultimos cinco anos ha consolidado tres tecnologias principales, cada una con un mecanismo distinto y eficacia clinica documentada.</p>
+
+  <div class="sec-head sec-head-az"><h2>1. Lente HALT - Stellest (Essilor)</h2></div>
+
+  <div class="lente-card" style="--c:#0077C8">
+    <div class="lente-head">
+      <div>
+        <div class="lente-tech">Stellest</div>
+        <div class="lente-marca">Tecnologia <strong>HALT (Highly Aspherical Lenslet Target)</strong> - Essilor</div>
+      </div>
+      <span class="lente-tag" style="background:#EAF4FB;color:#0D47A1">Alta evidencia</span>
+    </div>
+    <div class="lente-body">
+      <div class="lente-row"><strong>Mecanismo</strong><span>Red de microlentes asfericas que crean un "escudo" de luz delante de la retina del ojo, ralentizando el alargamiento del ojo y la progresion de la miopia en ninos mientras proporciona vision nitida.</span></div>
+      <div class="lente-row"><strong>Principio</strong><span>Compensacion del desenfoque hipermetropico periferico</span></div>
+      <div class="lente-stats">
+        <div class="stat-block" style="--c:#0077C8"><div class="stat-block-label">SER en 2 anos</div><div class="stat-block-value" style="color:#0077C8">- 0.80 D</div></div>
+        <div class="stat-block" style="--c:#0077C8"><div class="stat-block-label">AXL en 24 meses</div><div class="stat-block-value" style="color:#0077C8">- 0.30 a 0.35 mm</div></div>
+      </div>
+      <p style="font-family:'Inter',sans-serif;font-size:0.88rem;color:var(--mu);margin-top:0.8rem;margin-bottom:0">Eficacia equivalente a ~60-67% de reduccion en la progresion respecto a controles con monofocales.</p>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-ve"><h2>2. Lente DIMS - MiYOSMART (Hoya)</h2></div>
+
+  <div class="lente-card" style="--c:#2EAA4A">
+    <div class="lente-head">
+      <div>
+        <div class="lente-tech">MiYOSMART</div>
+        <div class="lente-marca">Tecnologia <strong>DIMS (Defocus Incorporated Multiple Segments)</strong> - Hoya</div>
+      </div>
+      <span class="lente-tag" style="background:#E6F7EB;color:#1B5E20">Alta evidencia</span>
+    </div>
+    <div class="lente-body">
+      <div class="lente-row"><strong>Mecanismo</strong><span>Anillos concentricos de zonas de desenfoque miopico alrededor de una zona central clara. Las microsegmentos crean un patron de desenfoque periferico positivo de forma simultanea con la imagen nitida central.</span></div>
+      <div class="lente-row"><strong>Principio</strong><span>Desenfoque miopico periferico positivo</span></div>
+      <div class="lente-stats">
+        <div class="stat-block" style="--c:#2EAA4A"><div class="stat-block-label">SER en 2 anos</div><div class="stat-block-value" style="color:#2EAA4A">- 52%</div></div>
+        <div class="stat-block" style="--c:#2EAA4A"><div class="stat-block-label">AXL en 24 meses</div><div class="stat-block-value" style="color:#2EAA4A">- 0.21 mm</div></div>
+      </div>
+      <p style="font-family:'Inter',sans-serif;font-size:0.88rem;color:var(--mu);margin-top:0.8rem;margin-bottom:0">Eficacia equivalente a ~62% de reduccion en la progresion respecto a controles con monofocales.</p>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-am"><h2>3. Lente DOT - MiSight Spectacle (CooperVision / SightGlass Vision)</h2></div>
+
+  <div class="lente-card" style="--c:#F5C518">
+    <div class="lente-head">
+      <div>
+        <div class="lente-tech">MiSight Spectacle</div>
+        <div class="lente-marca">Tecnologia <strong>DOT (Diffusion Optics Technology)</strong> - CooperVision / SightGlass Vision</div>
+      </div>
+      <span class="lente-tag" style="background:#FFF6D8;color:#92690A">Evidencia emergente</span>
+    </div>
+    <div class="lente-body">
+      <div class="lente-row"><strong>Mecanismo</strong><span>Micro-dispersores que reducen el contraste periferico retinal. A diferencia de DIMS y HALT, no usa desenfoque sino modulacion de contraste para frenar los estimulos de crecimiento axial.</span></div>
+      <div class="lente-row"><strong>Principio</strong><span>Modulacion de contraste retinal periferico</span></div>
+      <div class="lente-stats">
+        <div class="stat-block" style="--c:#C9A200"><div class="stat-block-label">SER en 24 meses (CYPRESS)</div><div class="stat-block-value" style="color:#C9A200">- 0.33 D</div></div>
+        <div class="stat-block" style="--c:#C9A200"><div class="stat-block-label">AXL en 24 meses</div><div class="stat-block-value" style="color:#C9A200">- 0.21 mm</div></div>
+      </div>
+      <p style="font-family:'Inter',sans-serif;font-size:0.88rem;color:var(--mu);margin-top:0.8rem;margin-bottom:0">Datos CYPRESS Trial: 59% con progresion menor a 0.50 D en 2 anos vs 19% en controles. A 36 meses: -0.13 mm AXL; a 48 meses: -0.05 mm AXL.</p>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-ro"><h2>4. Comparativa de las tres tecnologias</h2></div>
+
+  <div class="tabla-wrap">
+    <div class="tabla-label">Resumen comparativo</div>
+    <table>
+      <thead>
+        <tr><th>Tecnologia</th><th>Eficacia AXL</th><th>Evidencia</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>DIMS - MiYOSMART</strong></td><td>~0.21 mm menos en 24m (~62%)</td><td>RCT 2 anos (Lam et al., 2020)</td></tr>
+        <tr><td><strong>HALT - Stellest</strong></td><td>~0.30-0.35 mm menos en 24m (~60-67%)</td><td>RCT 2 anos (Bao et al., 2022)</td></tr>
+        <tr><td><strong>DOT - SightGlass</strong></td><td>-0.13 mm en 36m / -0.05 mm en 48m</td><td>CYPRESS Trial (Laughton et al., 2024)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout"><strong>Nota clinica:</strong> Las tres tecnologias muestran eficacia comparable en la reduccion de progresion miopica. La eleccion depende de disponibilidad regional, costo, edad del paciente y preferencias estilo de vida de la familia.</div>
+
+  <div class="sec-head"><h2>5. Consideraciones practicas en LATAM</h2></div>
+  <p>En la practica clinica latinoamericana, las gafas de control tienen ventajas operativas frente a otras modalidades:</p>
+  <ul style="font-family:'Inter',sans-serif;font-size:0.95rem;line-height:1.75;padding-left:1.3rem;color:var(--txt);margin-bottom:2rem">
+    <li><strong>Disponibilidad:</strong> Stellest y MiYOSMART estan ampliamente distribuidas en la region.</li>
+    <li><strong>Edad de inicio:</strong> Desde los 4 anos en algunos disenos. Mas tempranas que LC u Orto-K.</li>
+    <li><strong>Adherencia:</strong> Mayor cumplimiento que otras opciones, aunque con variabilidad en deporte o lectura prolongada.</li>
+    <li><strong>Costo:</strong> Mas economicas que LC especiales o Orto-K. Combinable con atropina sin conflicto.</li>
+    <li><strong>Seguridad:</strong> Modalidad mas segura. Sin riesgo de queratitis ni complicaciones corneales.</li>
+  </ul>
+
+  <div class="conclusion">
+    <div class="conclusion-inner">
+      <div class="conclusion-title">Mensaje clinico</div>
+      <p>Las gafas de control de miopia son la modalidad mas segura, accesible y aceptable. DIMS, HALT y DOT muestran eficacia comparable. Como ningun nino con miopia progresiva debe usar lentes monofocales si existe una alternativa de control disponible, la recomendacion es <strong>no dejar ir al paciente sin opciones de control optico</strong>. Individualizar segun edad, grado, estilo de vida y disponibilidad.</p>
+    </div>
+  </div>
+
+  <div class="refs">
+    <div class="refs-title">Referencias bibliograficas</div>
+    <div class="ref">Lam CS, et al. Defocus Incorporated Multiple Segments (DIMS) lens slows myopia progression in Chinese children: a 2-year randomised clinical trial. Br J Ophthalmol. 2020;104(3):363-368.</div>
+    <div class="ref">Bao J, et al. Spectacle lenses with aspherical lenslets for myopia control: a randomised clinical trial - the Stellest study. Invest Ophthalmol Vis Sci. 2022.</div>
+    <div class="ref">Laughton D, et al. CYPRESS Trial: DOT lenses efficacy and safety - 24 month results. Ophthalmic Physiol Opt. 2024.</div>
+    <div class="ref">Rappon J, et al. CYPRESS Trial 12-month outcomes: safety and efficacy of novel spectacle lens. Optom Vis Sci. 2020;97:E-abstract 200036.</div>
+    <div class="ref">Logan NS, Bullimore MA. Optical interventions for myopia control. Ophthalmic Physiol Opt. 2024.</div>
+    <div class="ref">Guggenheim JA. Mechanism of optical treatments for myopia. Ophthalmic Physiol Opt. 2024.</div>
+    <div class="ref">Zaabaar N, et al. Myopia control strategies: A systematic review and meta-meta-analysis. Prog Retin Eye Res. 2025.</div>
+    <div class="ref">International Myopia Institute (IMI). Myopia Consensus Statement 2025. Invest Ophthalmol Vis Sci. 2025.</div>
+  </div>
+
+  <div class="nav-art">
+    <a href="articulos.html" class="btn-link">Volver a articulos</a>
+    <a href="unirme.html" class="btn-az">Unirme a MML</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopia Latam</h4>
+      <p>miopialatam.org - Red internacional de especialistas</p>
+    </div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">2026 MML - Todos los derechos reservados</div></div>
+</footer>
+
+</body>
+</html>

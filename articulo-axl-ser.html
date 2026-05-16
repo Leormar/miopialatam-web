@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AXL vs SER - Por que medir la elongacion axial - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.back{font-size:0.84rem;color:var(--mu);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:500;transition:color .2s}
+.back:hover{color:var(--ink)}.back::before{content:'\2190'}
+
+.hero-art{background:linear-gradient(180deg,#EAF4FB 0%,#FAFCFE 100%);padding:6.5rem 2rem 5rem;position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-art::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:920px;margin:0 auto;position:relative;z-index:2}
+.art-tag{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;padding:6px 16px;border-radius:999px;background:#fff;color:var(--az);border:1px solid #C8E0F5;display:inline-block;margin-bottom:1.5rem}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6rem,5.5vw,4.6rem);line-height:0.98;color:var(--ink);margin-bottom:1.4rem;letter-spacing:-0.035em;text-transform:uppercase}
+.art-desc{font-size:1.25rem;color:var(--mu);line-height:1.6;margin-bottom:1.6rem;font-weight:400;max-width:760px}
+.art-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.82rem;color:var(--soft);font-weight:500}
+.art-meta span{display:inline-flex;align-items:center;gap:6px}
+.art-meta span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--az)}
+
+.art-body{max-width:740px;margin:0 auto;padding:4rem 2rem}
+.art-body p{font-family:'Source Serif 4','Georgia',serif;font-size:1.08rem;line-height:1.8;margin-bottom:1.5rem;color:var(--txt)}
+.lead-p{font-size:1.2rem !important;color:var(--ink) !important;font-weight:500}
+
+.sec-head{margin:3rem 0 1.5rem;padding-left:1.2rem;border-left:3px solid var(--az)}
+.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.55rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.015em;line-height:1.1}
+.sec-head-ve{border-left-color:var(--ve)}
+.sec-head-am{border-left-color:var(--am)}
+.sec-head-ro{border-left-color:var(--ro)}
+
+.list-box{background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:1.6rem 1.8rem;margin-bottom:2.5rem}
+.list-item{display:flex;gap:14px;margin-bottom:0.8rem;font-size:0.95rem;color:var(--txt);line-height:1.65;font-family:'Inter',sans-serif}
+.list-item:last-child{margin-bottom:0}
+.list-dot{width:5px;height:5px;border-radius:50%;background:var(--az);margin-top:11px;flex-shrink:0}
+
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2.5rem}
+.comp-box{border-radius:16px;padding:1.5rem;font-family:'Inter',sans-serif}
+.comp-az{background:#EAF4FB;border:1px solid #90CAF9}
+.comp-ve{background:#E6F7EB;border:1px solid #A5D6A7}
+.comp-label{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem}
+.comp-az .comp-label{color:#0D47A1}
+.comp-ve .comp-label{color:#1B5E20}
+.comp-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.5rem;color:var(--ink);margin-bottom:0.7rem;letter-spacing:-0.02em}
+.comp-desc{font-size:0.92rem;color:var(--txt);line-height:1.65}
+
+.biometer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem}
+.bio-card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:1.3rem;text-align:center;transition:all .25s}
+.bio-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.bio-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.4rem;letter-spacing:-0.01em}
+.bio-tag{font-size:0.7rem;font-weight:600;color:var(--az);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.5rem}
+.bio-desc{font-size:0.82rem;color:var(--mu);line-height:1.5;font-family:'Inter',sans-serif}
+
+.callout{background:linear-gradient(135deg,#FFF8E1,#FFFDF0);border:1px solid #FFE082;border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:2rem;display:flex;gap:1rem;align-items:flex-start}
+.callout-ico{width:36px;height:36px;border-radius:10px;background:#F5C518;color:#5C4400;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.95rem;flex-shrink:0}
+.callout-body{flex:1}
+.callout-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.92rem;text-transform:uppercase;color:#5C4400;margin-bottom:0.3rem;letter-spacing:-0.01em}
+.callout-text{font-size:0.92rem;color:var(--txt);line-height:1.65;font-family:'Inter',sans-serif}
+
+.conclusion{background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);border-radius:20px;padding:2.2rem;margin:2.5rem 0;color:#fff;position:relative;overflow:hidden}
+.conclusion::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(0,119,200,0.3),transparent 60%)}
+.conclusion-inner{position:relative;z-index:2}
+.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:#fff;margin-bottom:0.8rem;letter-spacing:-0.01em}
+.conclusion p{color:rgba(255,255,255,0.85) !important;margin-bottom:0;font-family:'Inter',sans-serif !important;font-size:1rem !important;line-height:1.7 !important}
+
+.refs{border-top:1px solid var(--bd);padding-top:1.8rem;margin-top:3rem}
+.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--soft);margin-bottom:1rem}
+.ref{font-size:0.82rem;color:var(--mu);margin-bottom:0.6rem;padding-left:1rem;border-left:2px solid var(--bd-soft);line-height:1.55;font-family:'Inter',sans-serif}
+
+.nav-art{display:flex;justify-content:space-between;margin-top:3.5rem;padding-top:1.8rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem;align-items:center}
+.btn-az{background:var(--ink);color:#fff;padding:0.8rem 1.6rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;font-family:'Inter',sans-serif}
+.btn-az:hover{background:var(--az);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-az::after{content:'\2192';transition:transform .2s}
+.btn-az:hover::after{transform:translateX(3px)}
+.btn-link{font-size:0.9rem;color:var(--mu);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .2s;font-family:'Inter',sans-serif}
+.btn-link::before{content:'\2190'}
+.btn-link:hover{color:var(--ink)}
+
+footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase}
+.footer-brand p{font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.2rem}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
+
+@media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
+@media(max-width:640px){.comparison,.biometer-grid{grid-template-columns:1fr}.art-body{padding:2.5rem 1.5rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <a href="articulos.html" class="back">Volver a articulos</a>
+</nav>
+
+<section class="hero-art">
+  <div class="hero-inner">
+    <span class="art-tag">Diagnostico y seguimiento</span>
+    <h1>AXL vs SER: por que medir la elongacion axial y no solo el equivalente esferico</h1>
+    <p class="art-desc">El equivalente esferico de refraccion (SER) ha sido historicamente el parametro de seguimiento en miopia, pero la longitud axial (AXL) representa hoy el endpoint mas sensible y clinicamente significativo para evaluar la progresion y respuesta a tratamiento.</p>
+    <div class="art-meta">
+      <span>MML Editorial - Leonardo Orjuela M. OD</span>
+      <span>2025</span>
+      <span>7 min de lectura</span>
+      <span>Diagnostico clinico</span>
+    </div>
+  </div>
+</section>
+
+<div class="art-body">
+
+  <p class="lead-p">En el control de miopia, lo que medimos define lo que podemos controlar. Y la evidencia actual es clara: la longitud axial (AXL) es un marcador mas confiable que la refraccion para evaluar progresion y respuesta terapeutica.</p>
+
+  <p>Durante decadas el seguimiento de la miopia pediatrica se baso en la refraccion ciclopleda y el equivalente esferico (SER). Pero el SER, al depender de variables corneales, cristalinianas y de la acomodacion, puede dar resultados inestables. La longitud axial, en cambio, refleja directamente el crecimiento del globo ocular - el fenomeno biologico subyacente a la miopia.</p>
+
+  <div class="sec-head"><h2>1. Diferencia conceptual entre SER y AXL</h2></div>
+  <p>Ambos parametros son utiles pero miden cosas distintas:</p>
+
+  <div class="comparison">
+    <div class="comp-box comp-az">
+      <div class="comp-label">Parametro refractivo</div>
+      <div class="comp-title">SER</div>
+      <div class="comp-desc"><strong>Equivalente Esferico de Refraccion.</strong> Medida refractiva expresada en dioptrias (D). Se calcula como Esfera + (Cilindro/2). Puede modificarse por acomodacion, cicloplejia, o alteraciones corneales o lenticulares.</div>
+    </div>
+    <div class="comp-box comp-ve">
+      <div class="comp-label">Biomarcador estructural</div>
+      <div class="comp-title">AXL</div>
+      <div class="comp-desc"><strong>Longitud Axial.</strong> Medida en milimetros desde la cornea hasta la retina. Marcador biologico preciso del crecimiento ocular. Esta directamente vinculado con el riesgo de desarrollar patologias relacionadas con miopia alta.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-ico">!</div>
+    <div class="callout-body">
+      <div class="callout-title">Conclusion clinica</div>
+      <div class="callout-text">La AXL representa el endpoint mas sensible y clinicamente significativo para evaluar la eficacia de las intervenciones de control de miopia. El SER complementa, no reemplaza.</div>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-ve"><h2>2. Por que la AXL es mas confiable</h2></div>
+  <p>La superioridad de la AXL como biomarcador se sustenta en varios principios biologicos y clinicos:</p>
+  <div class="list-box">
+    <div class="list-item"><span class="list-dot"></span>Refleja directamente el crecimiento estructural del ojo - el fenomeno biologico de la miopia</div>
+    <div class="list-item"><span class="list-dot"></span>No depende de la acomodacion, ni de variabilidad corneal o lenticular</div>
+    <div class="list-item"><span class="list-dot"></span>Permite comparacion con curvas normativas por edad y etnia</div>
+    <div class="list-item"><span class="list-dot"></span>Esta correlacionada con el riesgo de complicaciones de alta miopia (desprendimiento de retina, glaucoma, maculopatia miopica)</div>
+    <div class="list-item"><span class="list-dot"></span>Es reproducible entre visitas con el mismo dispositivo (variabilidad &lt; 0.05 mm)</div>
+    <div class="list-item"><span class="list-dot"></span>Permite detectar cambios sutiles antes de que se reflejen en la refraccion</div>
+  </div>
+
+  <div class="sec-head sec-head-am"><h2>3. Biometros disponibles para seguimiento</h2></div>
+  <p>Tres dispositivos son los mas utilizados en la practica clinica latinoamericana:</p>
+
+  <div class="biometer-grid">
+    <div class="bio-card">
+      <div class="bio-name">IOLMaster 700</div>
+      <div class="bio-tag">Gold standard</div>
+      <div class="bio-desc">Mejor reproducibilidad documentada. Referencia para estudios clinicos y casos donde se requiere maxima precision.</div>
+    </div>
+    <div class="bio-card">
+      <div class="bio-name">Myah</div>
+      <div class="bio-tag">Multifuncional</div>
+      <div class="bio-desc">Equipo multifuncional preciso y fiable en condiciones clinicas. Combina biometria con topografia y otras pruebas.</div>
+    </div>
+    <div class="bio-card">
+      <div class="bio-name">Myopia Master</div>
+      <div class="bio-tag">Especializado</div>
+      <div class="bio-desc">Diseñado especificamente para control de miopia. Software con curvas de progresion integrado.</div>
+    </div>
+  </div>
+
+  <p style="font-family:'Inter',sans-serif;font-size:0.95rem">La comparacion entre los tres biometros muestra <strong>buena concordancia general</strong>, pero se deben tener precauciones al interpretar valores entre diferentes instrumentos.</p>
+
+  <div class="sec-head sec-head-ro"><h2>4. Recomendaciones practicas de seguimiento</h2></div>
+  <div class="list-box">
+    <div class="list-item"><span class="list-dot" style="background:var(--ro)"></span><strong>Usar siempre el mismo dispositivo</strong> para el seguimiento individual de cada paciente</div>
+    <div class="list-item"><span class="list-dot" style="background:var(--ro)"></span>Considerar diferencias de <strong>mas de 0.1 mm entre visitas como indicativas de cambio significativo</strong></div>
+    <div class="list-item"><span class="list-dot" style="background:var(--ro)"></span>Documentar el biometro utilizado en cada medicion</div>
+    <div class="list-item"><span class="list-dot" style="background:var(--ro)"></span>Realizar mediciones en condiciones estandarizadas (luz, posicion, fijacion)</div>
+    <div class="list-item"><span class="list-dot" style="background:var(--ro)"></span>Combinar AXL con SER bajo cicloplejia para una imagen completa</div>
+    <div class="list-item"><span class="list-dot" style="background:var(--ro)"></span>Intervalo recomendado de medicion: cada 6 meses en pacientes en tratamiento activo</div>
+  </div>
+
+  <div class="conclusion">
+    <div class="conclusion-inner">
+      <div class="conclusion-title">Mensaje clinico</div>
+      <p>Use AXL como medida de seguimiento, mas confiable que el SER para valorar eficacia de cualquier tratamiento de control de miopia. La AXL es el endpoint de referencia en los ensayos clinicos actuales y debe serlo tambien en la practica diaria. La consistencia metodologica - mismo dispositivo, mismo operador cuando sea posible - es tan importante como la eleccion del biometro.</p>
+    </div>
+  </div>
+
+  <div class="refs">
+    <div class="refs-title">Referencias bibliograficas</div>
+    <div class="ref">Zaabaar N, et al. Myopia control strategies: A systematic review and meta-meta-analysis. Prog Retin Eye Res. 2025.</div>
+    <div class="ref">Guan M, et al. Axial length measurement and myopia progression. Ophthalmic Physiol Opt. 2020.</div>
+    <div class="ref">Chamberlain P, et al. A 3-year randomized clinical trial of MiSight lenses. Invest Ophthalmol Vis Sci. 2019.</div>
+    <div class="ref">Chow AHY, Mungalsingh MA, Thai D, Selimos Z, Yan SK, Xu H, et al. Suitability of multifunction devices Myah and Myopia Master for monitoring myopia progression in children and adults. Ophthalmic Physiol Opt. 2024.</div>
+    <div class="ref">International Myopia Institute (IMI). Myopia Consensus Statement 2025. Invest Ophthalmol Vis Sci. 2025.</div>
+    <div class="ref">Bullimore MA, et al. Myopia control review. Ophthalmic Physiol Opt. 2024.</div>
+  </div>
+
+  <div class="nav-art">
+    <a href="articulos.html" class="btn-link">Volver a articulos</a>
+    <a href="unirme.html" class="btn-az">Unirme a MML</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopia Latam</h4>
+      <p>miopialatam.org - Red internacional de especialistas</p>
+    </div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">2026 MML - Todos los derechos reservados</div></div>
+</footer>
+
+</body>
+</html>

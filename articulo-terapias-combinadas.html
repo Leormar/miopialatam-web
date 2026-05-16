@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terapias combinadas en control de miopia - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--pu:#7B1FA2;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.back{font-size:0.84rem;color:var(--mu);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:500;transition:color .2s}
+.back:hover{color:var(--ink)}.back::before{content:'\2190'}
+
+.hero-art{background:linear-gradient(180deg,#FFF6D8 0%,#FAFCFE 100%);padding:6.5rem 2rem 5rem;position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-art::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:920px;margin:0 auto;position:relative;z-index:2}
+.art-tag{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;padding:6px 16px;border-radius:999px;background:#fff;color:#92690A;border:1px solid #F5C518;display:inline-block;margin-bottom:1.5rem}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6rem,5.5vw,4.6rem);line-height:0.98;color:var(--ink);margin-bottom:1.4rem;letter-spacing:-0.035em;text-transform:uppercase}
+.art-desc{font-size:1.25rem;color:var(--mu);line-height:1.6;margin-bottom:1.6rem;font-weight:400;max-width:760px}
+.art-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.82rem;color:var(--soft);font-weight:500}
+.art-meta span{display:inline-flex;align-items:center;gap:6px}
+.art-meta span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--am)}
+
+.art-body{max-width:740px;margin:0 auto;padding:4rem 2rem}
+.art-body p{font-family:'Source Serif 4','Georgia',serif;font-size:1.08rem;line-height:1.8;margin-bottom:1.5rem;color:var(--txt)}
+.lead-p{font-size:1.2rem !important;color:var(--ink) !important;font-weight:500}
+
+.sec-head{margin:3rem 0 1.5rem;padding-left:1.2rem;border-left:3px solid var(--am)}
+.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.55rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.015em;line-height:1.1}
+.sec-head-az{border-left-color:var(--az)}
+.sec-head-ve{border-left-color:var(--ve)}
+.sec-head-pu{border-left-color:var(--pu)}
+.sec-head-ro{border-left-color:var(--ro)}
+
+.terapia-card{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:2rem;margin-bottom:1.4rem;position:relative;overflow:hidden;font-family:'Inter',sans-serif;transition:all .25s}
+.terapia-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.terapia-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.terapia-header{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:1.2rem;padding-left:1.2rem;flex-wrap:wrap}
+.terapia-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.02em;line-height:1.15}
+.terapia-badge{padding:5px 12px;border-radius:999px;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap}
+.b-eficaz{background:#E6F7EB;color:#1B5E20}
+.b-limitado{background:#FFF6D8;color:#92690A}
+.b-aditivo{background:#EAF4FB;color:#0D47A1}
+.b-sin-superioridad{background:#F0F3F6;color:#5A7184}
+.terapia-body{padding-left:1.2rem;font-size:0.95rem;line-height:1.7;font-family:'Inter',sans-serif}
+.terapia-body p{font-family:'Inter',sans-serif !important;font-size:0.95rem !important;line-height:1.7 !important;margin-bottom:0.8rem}
+.terapia-stat{background:var(--bg);border-radius:10px;padding:0.9rem 1.1rem;margin-top:1rem;font-size:0.88rem}
+.terapia-stat strong{font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--c);font-size:1rem;text-transform:uppercase}
+
+.tabla-wrap{background:var(--bg);border:1px solid var(--bd);border-radius:16px;padding:1.5rem;margin-bottom:2.5rem;overflow-x:auto;font-family:'Inter',sans-serif}
+.tabla-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);margin-bottom:1rem}
+table{width:100%;border-collapse:collapse;min-width:600px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--bd)}
+th{padding:0.85rem 1rem;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--soft);text-align:left;background:var(--bg);border-bottom:1px solid var(--bd)}
+td{padding:0.9rem 1rem;font-size:0.86rem;color:var(--txt);border-bottom:1px solid var(--bd-soft);font-family:'Inter',sans-serif}
+tr:last-child td{border-bottom:none}
+td strong{font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--ink);text-transform:uppercase;font-size:0.92rem}
+.dot-badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:0.7rem;font-weight:700;letter-spacing:0.04em}
+
+.callout{background:linear-gradient(135deg,#FFF6D8,#FFFDF0);border:1px solid #FFE082;border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:2rem;font-size:0.92rem;color:#5C4400;line-height:1.65;font-family:'Inter',sans-serif}
+.callout strong{color:var(--ink)}
+
+.conclusion{background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);border-radius:20px;padding:2.2rem;margin:2.5rem 0;color:#fff;position:relative;overflow:hidden}
+.conclusion::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(245,197,24,0.3),transparent 60%)}
+.conclusion-inner{position:relative;z-index:2}
+.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:#fff;margin-bottom:0.8rem;letter-spacing:-0.01em}
+.conclusion p{color:rgba(255,255,255,0.85) !important;margin-bottom:0;font-family:'Inter',sans-serif !important;font-size:1rem !important;line-height:1.7 !important}
+
+.refs{border-top:1px solid var(--bd);padding-top:1.8rem;margin-top:3rem}
+.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--soft);margin-bottom:1rem}
+.ref{font-size:0.82rem;color:var(--mu);margin-bottom:0.6rem;padding-left:1rem;border-left:2px solid var(--bd-soft);line-height:1.55;font-family:'Inter',sans-serif}
+
+.nav-art{display:flex;justify-content:space-between;margin-top:3.5rem;padding-top:1.8rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem;align-items:center}
+.btn-az{background:var(--ink);color:#fff;padding:0.8rem 1.6rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;font-family:'Inter',sans-serif}
+.btn-az:hover{background:var(--az);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-az::after{content:'\2192';transition:transform .2s}
+.btn-az:hover::after{transform:translateX(3px)}
+.btn-link{font-size:0.9rem;color:var(--mu);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .2s;font-family:'Inter',sans-serif}
+.btn-link::before{content:'\2190'}
+.btn-link:hover{color:var(--ink)}
+
+footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase}
+.footer-brand p{font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.2rem}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
+
+@media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
+@media(max-width:640px){.art-body{padding:2.5rem 1.5rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <a href="articulos.html" class="back">Volver a articulos</a>
+</nav>
+
+<section class="hero-art">
+  <div class="hero-inner">
+    <span class="art-tag">Terapias combinadas</span>
+    <h1>Combinacion de terapias para el control de miopia: evidencia actualizada</h1>
+    <p class="art-desc">La combinacion de tratamientos opticos con atropina es una estrategia cada vez mas frecuente en casos de progresion rapida. Revisamos la evidencia disponible para LC + atropina, gafas DIMS/HALT + atropina y Orto-K + atropina.</p>
+    <div class="art-meta">
+      <span>MML Editorial - Leonardo Orjuela M. OD</span>
+      <span>2025</span>
+      <span>8 min de lectura</span>
+      <span>Practica clinica avanzada</span>
+    </div>
+  </div>
+</section>
+
+<div class="art-body">
+
+  <p class="lead-p">¿La suma de tratamientos suma eficacia? La pregunta es relevante para casos de progresion rapida o miopia alta, donde una sola modalidad puede no ser suficiente.</p>
+
+  <p>La evidencia sobre terapias combinadas en control de miopia es heterogenea: en algunos casos el efecto es claramente aditivo (Orto-K + atropina), en otros la combinacion no supera a la monoterapia (LC multifocal + atropina). Esta guia resume los datos disponibles para tomar decisiones clinicas informadas.</p>
+
+  <div class="sec-head sec-head-pu"><h2>1. Lentes de contacto + Atropina</h2></div>
+
+  <div class="terapia-card" style="--c:#5C35D4">
+    <div class="terapia-header">
+      <div class="terapia-title">LC desenfoque periferico + Atropina 0.01%</div>
+      <span class="terapia-badge b-sin-superioridad">Sin superioridad demostrada</span>
+    </div>
+    <div class="terapia-body">
+      <p>Los ensayos clinicos con lentes de contacto de desenfoque periferico combinados con atropina al 0.01% muestran <strong>eficacia clinica</strong>, pero sin diferencias significativas respecto a atropina sola. La adicion del lente de contacto no aporta beneficio estadisticamente significativo en estas condiciones.</p>
+      <div class="terapia-stat" style="--c:#5C35D4">No se demuestra <strong>efecto aditivo</strong> en LC de desenfoque periferico + atropina 0.01%</div>
+    </div>
+  </div>
+
+  <div class="terapia-card" style="--c:#7B1FA2">
+    <div class="terapia-header">
+      <div class="terapia-title">LC multifocales + Atropina</div>
+      <span class="terapia-badge b-sin-superioridad">Sin beneficio adicional</span>
+    </div>
+    <div class="terapia-body">
+      <p>De forma similar, los lentes de contacto multifocales centro-lejos combinados con atropina <strong>no han demostrado beneficio adicional</strong> frente a cualquiera de las dos terapias por separado. Los estudios actuales sugieren que el mecanismo de desenfoque ya saturaria el efecto sobre la elongacion axial.</p>
+      <div class="terapia-stat" style="--c:#7B1FA2">Sin <strong>beneficio adicional demostrado</strong> en LC multifocales + atropina</div>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-ve"><h2>2. Gafas DIMS / HALT + Atropina</h2></div>
+
+  <div class="terapia-card" style="--c:#2EAA4A">
+    <div class="terapia-header">
+      <div class="terapia-title">DIMS + Atropina 0.025%</div>
+      <span class="terapia-badge b-eficaz">Alta eficacia</span>
+    </div>
+    <div class="terapia-body">
+      <p>Los ensayos clinicos disponibles muestran que la combinacion de gafas DIMS (MiYOSMART) con atropina al 0.025% <strong>reduce significativamente la elongacion axial</strong> respecto a cualquiera de las dos modalidades por separado. Un mayor porcentaje de niños permanecen sin progresion axial significativa.</p>
+      <div class="terapia-stat" style="--c:#2EAA4A"><strong>Menor elongacion axial</strong> y mas niños sin progresion en DIMS + atropina 0.025%</div>
+    </div>
+  </div>
+
+  <div class="terapia-card" style="--c:#F5C518">
+    <div class="terapia-header">
+      <div class="terapia-title">HALT (Stellest) + Atropina</div>
+      <span class="terapia-badge b-limitado">Evidencia limitada</span>
+    </div>
+    <div class="terapia-body">
+      <p>La evidencia sobre la combinacion HALT + atropina es <strong>limitada</strong>. Los estudios iniciales no muestran resultados concluyentes. Se requieren mas ensayos prospectivos para confirmar o descartar un efecto aditivo significativo.</p>
+      <div class="terapia-stat" style="--c:#C9A200">Estudios <strong>en curso</strong>; sin resultados conclusivos a la fecha</div>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-az"><h2>3. Orto-K + Atropina</h2></div>
+
+  <div class="terapia-card" style="--c:#0077C8">
+    <div class="terapia-header">
+      <div class="terapia-title">Orto-K + Atropina 0.01%</div>
+      <span class="terapia-badge b-aditivo">Efecto aditivo demostrado</span>
+    </div>
+    <div class="terapia-body">
+      <p>La ortoqueratologia sola reduce la progresion axial entre <strong>30-60%</strong>. Cuando se combina con atropina al 0.01%, los estudios muestran <strong>evidencia de efecto aditivo</strong>, sin incremento significativo de efectos adversos. Es la combinacion con mejor perfil documentado.</p>
+      <p>Hay ensayos clinicos prospectivos en curso (a 24 meses) que confirman esta tendencia con tamaños muestrales mayores.</p>
+      <div class="terapia-stat" style="--c:#0077C8"><strong>Efecto aditivo confirmado</strong> sin aumento de efectos adversos significativos</div>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-ro"><h2>4. Resumen comparativo</h2></div>
+
+  <div class="tabla-wrap">
+    <div class="tabla-label">Combinaciones y su evidencia actual</div>
+    <table>
+      <thead>
+        <tr><th>Modalidad</th><th>Evidencia combinada</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>LC + Atropina</strong></td><td><span class="dot-badge" style="background:#F0F3F6;color:#5A7184">Sin superioridad</span> Eficaz, pero sin ventaja frente a monoterapia</td></tr>
+        <tr><td><strong>DIMS + Atropina</strong></td><td><span class="dot-badge" style="background:#E6F7EB;color:#1B5E20">Alta eficacia</span> Elongacion axial reducida significativamente</td></tr>
+        <tr><td><strong>HALT + Atropina</strong></td><td><span class="dot-badge" style="background:#FFF6D8;color:#92690A">Limitada</span> Evidencia limitada, resultados aun inciertos</td></tr>
+        <tr><td><strong>Orto-K + Atropina</strong></td><td><span class="dot-badge" style="background:#EAF4FB;color:#0D47A1">Efecto aditivo</span> Efecto aditivo demostrado, estudios en curso</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout"><strong>Cuando considerar terapia combinada:</strong> En pacientes con progresion rapida (mas de 1.00 D/año o mas de 0.30 mm AXL/año), miopia alta (mayor a -6.00 D), antecedentes familiares de alta miopia, o falta de respuesta a monoterapia despues de 6 meses.</div>
+
+  <div class="conclusion">
+    <div class="conclusion-inner">
+      <div class="conclusion-title">Mensaje clinico</div>
+      <p>Las terapias combinadas (opticas + atropina) tienen <strong>evidencia aun en estudio</strong>. La mejor evidencia actual respalda Orto-K + atropina 0.01% (efecto aditivo) y DIMS + atropina 0.025% (eficacia alta). Las combinaciones con LC blandos no muestran superioridad clara. Individualizar el tratamiento segun el caso: edad, perfil de progresion, adherencia previa y disponibilidad regional. La monoterapia bien ejecutada sigue siendo la primera linea para la mayoria de pacientes.</p>
+    </div>
+  </div>
+
+  <div class="refs">
+    <div class="refs-title">Referencias bibliograficas</div>
+    <div class="ref">Kinoshita N, et al. Additive effects of orthokeratology and atropine 0.01% ophthalmic solution in slowing axial elongation in children with myopia. Jpn J Ophthalmol. 2018;62(5):544-553. PMC9072981.</div>
+    <div class="ref">Tan Q, et al. Combined atropine with orthokeratology for myopia control: study design and preliminary results. Curr Eye Res. 2019. PMC9781043.</div>
+    <div class="ref">Combination of atropine and DIMS spectacle lenses for childhood myopia control. ScienceDirect. 2024.</div>
+    <div class="ref">Liu J, et al. Combined low-concentration atropine and DIMS lens treatment for childhood myopia: a 1-year randomized clinical trial. ResearchGate. 2024.</div>
+    <div class="ref">Myopia Profile. Combination therapy in myopia control: where we stand. 2023.</div>
+    <div class="ref">Review of Myopia Management. Orthokeratology and atropine combination: updated review. 2022.</div>
+    <div class="ref">International Myopia Institute (IMI). Myopia Consensus Statement 2025: combination therapies. Invest Ophthalmol Vis Sci. 2025.</div>
+    <div class="ref">Bullimore MA, et al. Myopia control review. Ophthalmic Physiol Opt. 2024.</div>
+  </div>
+
+  <div class="nav-art">
+    <a href="articulos.html" class="btn-link">Volver a articulos</a>
+    <a href="unirme.html" class="btn-az">Unirme a MML</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopia Latam</h4>
+      <p>miopialatam.org - Red internacional de especialistas</p>
+    </div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">2026 MML - Todos los derechos reservados</div></div>
+</footer>
+
+</body>
+</html>

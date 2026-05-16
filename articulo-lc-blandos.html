@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lentes de contacto blandos EDOF Dual Multifocales - MML</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--pu:#5C35D4;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.back{font-size:0.84rem;color:var(--mu);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:500;transition:color .2s}
+.back:hover{color:var(--ink)}.back::before{content:'\2190'}
+
+.hero-art{background:linear-gradient(180deg,#EDE7F6 0%,#FAFCFE 100%);padding:6.5rem 2rem 5rem;position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-art::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:920px;margin:0 auto;position:relative;z-index:2}
+.art-tag{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;padding:6px 16px;border-radius:999px;background:#fff;color:var(--pu);border:1px solid #B39DDB;display:inline-block;margin-bottom:1.5rem}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6rem,5.5vw,4.6rem);line-height:0.98;color:var(--ink);margin-bottom:1.4rem;letter-spacing:-0.035em;text-transform:uppercase}
+.art-desc{font-size:1.25rem;color:var(--mu);line-height:1.6;margin-bottom:1.6rem;font-weight:400;max-width:760px}
+.art-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.82rem;color:var(--soft);font-weight:500}
+.art-meta span{display:inline-flex;align-items:center;gap:6px}
+.art-meta span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--pu)}
+
+.art-body{max-width:740px;margin:0 auto;padding:4rem 2rem}
+.art-body p{font-family:'Source Serif 4','Georgia',serif;font-size:1.08rem;line-height:1.8;margin-bottom:1.5rem;color:var(--txt)}
+.lead-p{font-size:1.2rem !important;color:var(--ink) !important;font-weight:500}
+
+.sec-head{margin:3rem 0 1.5rem;padding-left:1.2rem;border-left:3px solid var(--pu)}
+.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.55rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.015em;line-height:1.1}
+.sec-head-az{border-left-color:var(--az)}
+.sec-head-ve{border-left-color:var(--ve)}
+.sec-head-am{border-left-color:var(--am)}
+.sec-head-ro{border-left-color:var(--ro)}
+
+.lente-card{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:2rem;margin-bottom:1.4rem;position:relative;overflow:hidden;transition:all .25s;font-family:'Inter',sans-serif}
+.lente-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.lente-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.lente-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1.2rem;padding-left:1.2rem}
+.lente-tech{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.5rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.02em;line-height:1.1;margin-bottom:0.3rem}
+.lente-marca{font-size:0.85rem;color:var(--mu);font-weight:500}
+.lente-marca strong{color:var(--ink);font-weight:600}
+.lente-tag{background:var(--bg);border:1px solid var(--bd);padding:5px 12px;border-radius:999px;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink);white-space:nowrap}
+.lente-body{padding-left:1.2rem;font-family:'Inter',sans-serif}
+.lente-row{display:grid;grid-template-columns:auto 1fr;gap:1rem;margin-bottom:0.7rem;font-size:0.92rem;line-height:1.6}
+.lente-row strong{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--soft);padding-top:2px;min-width:120px}
+.lente-stats{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--bd-soft)}
+.stat-block{background:var(--bg);border-radius:10px;padding:0.85rem 1rem}
+.stat-block-label{font-size:0.7rem;font-weight:700;color:var(--soft);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.3rem}
+.stat-block-value{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;color:var(--c);line-height:1;letter-spacing:-0.02em}
+
+.callout{background:linear-gradient(135deg,#EDE7F6,#F7F4FB);border:1px solid #D1C4E9;border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:2rem;font-size:0.92rem;color:#311B92;line-height:1.65;font-family:'Inter',sans-serif}
+.callout strong{color:var(--ink)}
+
+.conclusion{background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);border-radius:20px;padding:2.2rem;margin:2.5rem 0;color:#fff;position:relative;overflow:hidden}
+.conclusion::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(92,53,212,0.3),transparent 60%)}
+.conclusion-inner{position:relative;z-index:2}
+.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:#fff;margin-bottom:0.8rem;letter-spacing:-0.01em}
+.conclusion p{color:rgba(255,255,255,0.85) !important;margin-bottom:0;font-family:'Inter',sans-serif !important;font-size:1rem !important;line-height:1.7 !important}
+
+.refs{border-top:1px solid var(--bd);padding-top:1.8rem;margin-top:3rem}
+.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--soft);margin-bottom:1rem}
+.ref{font-size:0.82rem;color:var(--mu);margin-bottom:0.6rem;padding-left:1rem;border-left:2px solid var(--bd-soft);line-height:1.55;font-family:'Inter',sans-serif}
+
+.nav-art{display:flex;justify-content:space-between;margin-top:3.5rem;padding-top:1.8rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem;align-items:center}
+.btn-az{background:var(--ink);color:#fff;padding:0.8rem 1.6rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;font-family:'Inter',sans-serif}
+.btn-az:hover{background:var(--az);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-az::after{content:'\2192';transition:transform .2s}
+.btn-az:hover::after{transform:translateX(3px)}
+.btn-link{font-size:0.9rem;color:var(--mu);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .2s;font-family:'Inter',sans-serif}
+.btn-link::before{content:'\2190'}
+.btn-link:hover{color:var(--ink)}
+
+footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase}
+.footer-brand p{font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.2rem}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
+
+@media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
+@media(max-width:640px){.lente-stats{grid-template-columns:1fr}.lente-row{grid-template-columns:1fr}.art-body{padding:2.5rem 1.5rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <a href="articulos.html" class="back">Volver a articulos</a>
+</nav>
+
+<section class="hero-art">
+  <div class="hero-inner">
+    <span class="art-tag">Lentes de contacto especiales</span>
+    <h1>Lentes de contacto blandos para control de miopia: EDOF, Dual-Focus y Multifocales</h1>
+    <p class="art-desc">Los lentes de contacto blandos especiales son hoy una opcion consolidada en el control de miopia pediatrica. Revisamos las tres categorias principales: profundidad de foco extendida (EDOF), dual-focus y multifocales centro-lejos, con datos de eficacia y consideraciones clinicas.</p>
+    <div class="art-meta">
+      <span>MML Editorial - Leonardo Orjuela M. OD</span>
+      <span>2025</span>
+      <span>9 min de lectura</span>
+      <span>Practica clinica</span>
+    </div>
+  </div>
+</section>
+
+<div class="art-body">
+
+  <p class="lead-p">Los lentes de contacto blandos especiales combinan correccion refractiva con control de progresion en una sola modalidad, con buena aceptacion en ninos activos.</p>
+
+  <p>A diferencia de las gafas y de la ortoqueratologia, los lentes de contacto blandos diurnos ofrecen libertad visual durante el dia, mejor estetica y mayor adherencia en ninos deportistas. La oferta clinica se ha consolidado en tres tecnologias principales: profundidad de foco extendida (EDOF), dual-focus y multifocales centro-lejos.</p>
+
+  <div class="sec-head sec-head-az"><h2>1. EDOF - Profundidad de foco extendida</h2></div>
+
+  <div class="lente-card" style="--c:#0077C8">
+    <div class="lente-head">
+      <div>
+        <div class="lente-tech">MYLO</div>
+        <div class="lente-marca">EDOF - <strong>MarKnovy SP</strong> - Tecnologia patentada por Brien Holden Vision Institute</div>
+      </div>
+      <span class="lente-tag" style="background:#EAF4FB;color:#0D47A1">Evidencia consolidada</span>
+    </div>
+    <div class="lente-body">
+      <div class="lente-row"><strong>Diseno</strong><span>Profundidad de Foco Extendida (EDOF, Extended Depth of Focus). Patentada por el Instituto de Vision Brien Holden.</span></div>
+      <div class="lente-row"><strong>Principio</strong><span>Aberraciones controladas que extienden el rango de foco nitido a multiples distancias retinales simultaneamente, reduciendo la señal de crecimiento axial.</span></div>
+      <div class="lente-stats">
+        <div class="stat-block" style="--c:#0077C8"><div class="stat-block-label">Reduccion SER</div><div class="stat-block-value" style="color:#0077C8">hasta 40%</div></div>
+        <div class="stat-block" style="--c:#0077C8"><div class="stat-block-label">Reduccion AXL en 2 anos</div><div class="stat-block-value" style="color:#0077C8">0.33 mm (~44%)</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-ve"><h2>2. Dual-Focus - MiSight 1 day</h2></div>
+
+  <div class="lente-card" style="--c:#2EAA4A">
+    <div class="lente-head">
+      <div>
+        <div class="lente-tech">MiSight 1 day</div>
+        <div class="lente-marca">Dual-Focus - <strong>CooperVision</strong> - Desechable diario</div>
+      </div>
+      <span class="lente-tag" style="background:#E6F7EB;color:#1B5E20">Alta evidencia</span>
+    </div>
+    <div class="lente-body">
+      <div class="lente-row"><strong>Diseno</strong><span>Zona central para vision lejana + anillos concentricos de desenfoque periferico. Las zonas alternas crean foco simultaneo y desenfoque miopico periferico.</span></div>
+      <div class="lente-row"><strong>Modalidad</strong><span>Desechable diario - mayor seguridad e higiene, alta adherencia en ninos.</span></div>
+      <div class="lente-stats">
+        <div class="stat-block" style="--c:#2EAA4A"><div class="stat-block-label">Reduccion SER</div><div class="stat-block-value" style="color:#2EAA4A">hasta 50%</div></div>
+        <div class="stat-block" style="--c:#2EAA4A"><div class="stat-block-label">Reduccion AXL en 3 anos</div><div class="stat-block-value" style="color:#2EAA4A">0.30 mm</div></div>
+      </div>
+      <p style="font-family:'Inter',sans-serif;font-size:0.88rem;color:var(--mu);margin-top:0.8rem;margin-bottom:0">Respaldado por el RCT de Chamberlain et al. (2019, 3-year), el ensayo de referencia para LC de control en niños.</p>
+    </div>
+  </div>
+
+  <div class="sec-head sec-head-am"><h2>3. Multifocales centro-lejos</h2></div>
+
+  <div class="lente-card" style="--c:#F5C518">
+    <div class="lente-head">
+      <div>
+        <div class="lente-tech">NaturalVue</div>
+        <div class="lente-marca">Multifocal centro-lejos - <strong>Visioneering Technologies Inc. (VTI)</strong></div>
+      </div>
+      <span class="lente-tag" style="background:#FFF6D8;color:#92690A">Evidencia emergente</span>
+    </div>
+    <div class="lente-body">
+      <div class="lente-row"><strong>Diseno</strong><span>Lente multifocal con zona central de vision lejana y adicion progresiva hacia la periferia. Genera desenfoque miopico periferico continuo.</span></div>
+      <div class="lente-row"><strong>Evidencia</strong><span>Estudio PROTECT 2025 - resultados a 1 año en poblacion pediatrica con seguimiento prospectivo.</span></div>
+      <div class="lente-stats">
+        <div class="stat-block" style="--c:#C9A200"><div class="stat-block-label">Reduccion SER</div><div class="stat-block-value" style="color:#C9A200">hasta 86%</div></div>
+        <div class="stat-block" style="--c:#C9A200"><div class="stat-block-label">Reduccion AXL en 1 año</div><div class="stat-block-value" style="color:#C9A200">0.17 mm</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lente-card" style="--c:#5C35D4">
+    <div class="lente-head">
+      <div>
+        <div class="lente-tech">Biofinity MF</div>
+        <div class="lente-marca">Multifocal mensual - <strong>CooperVision</strong></div>
+      </div>
+      <span class="lente-tag" style="background:#EDE7F6;color:#311B92">Variable</span>
+    </div>
+    <div class="lente-body">
+      <div class="lente-row"><strong>Diseno</strong><span>Lente multifocal centro-lejos de uso mensual. Eficacia variable segun adicion utilizada (+1.50, +2.00, +2.50 D).</span></div>
+      <div class="lente-row"><strong>Limitaciones</strong><span>Resultados heterogeneos entre estudios. Adicion mas alta tiende a mostrar mayor eficacia pero con mas adaptacion visual requerida.</span></div>
+      <div class="lente-stats">
+        <div class="stat-block" style="--c:#5C35D4"><div class="stat-block-label">Reduccion AXL</div><div class="stat-block-value" style="color:#5C35D4">30 - 50%</div></div>
+        <div class="stat-block" style="--c:#5C35D4"><div class="stat-block-label">Modalidad</div><div class="stat-block-value" style="color:#5C35D4;font-size:1rem">Mensual</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout"><strong>Nota clinica:</strong> Los lentes de contacto blandos diarios (MiSight 1 day, MYLO) tienen ventajas significativas en adherencia, seguridad y aceptacion en ninos deportistas. La incidencia de queratitis microbiana en lentes blandos diarios es muy baja (2-4 casos/10.000 usuarios-año).</div>
+
+  <div class="sec-head sec-head-ro"><h2>4. Consideraciones clinicas para LATAM</h2></div>
+  <ul style="font-family:'Inter',sans-serif;font-size:0.95rem;line-height:1.75;padding-left:1.3rem;color:var(--txt);margin-bottom:2rem">
+    <li><strong>Edad de inicio:</strong> Desde los 8 anos en la mayoria de disenos, segun madurez del paciente y supervision familiar.</li>
+    <li><strong>Disponibilidad:</strong> MiSight 1 day, NaturalVue y Biofinity MF estan presentes en la region. MYLO disponible en mercados especificos.</li>
+    <li><strong>Cumplimiento:</strong> Alto con desechables diarios. Beneficio visual inmediato favorece motivacion en ninos activos.</li>
+    <li><strong>Limitaciones:</strong> Halos o deslumbramiento nocturno posibles. Requiere supervision familiar para higiene y uso.</li>
+    <li><strong>Combinacion con atropina:</strong> Permitida; sin evidencia clara de efecto aditivo en LC multifocales, pero combinable de forma segura.</li>
+    <li><strong>Costo:</strong> Variable. Los desechables diarios pueden ser mas costosos a largo plazo que mensuales o gafas.</li>
+  </ul>
+
+  <div class="conclusion">
+    <div class="conclusion-inner">
+      <div class="conclusion-title">Mensaje clinico</div>
+      <p>Los lentes de contacto blandos especiales son una excelente opcion para ninos activos, deportistas o con dificultad de adherencia a gafas. MiSight 1 day tiene la evidencia mas robusta a 3 anos; NaturalVue muestra resultados prometedores en 1 año. La eleccion entre dual-focus, EDOF o multifocal depende de disponibilidad regional, edad, perfil refractivo y preferencias. Como en toda intervencion: <strong>el mejor tratamiento es el que el niño realmente usa</strong> (Bullimore, 2024).</p>
+    </div>
+  </div>
+
+  <div class="refs">
+    <div class="refs-title">Referencias bibliograficas</div>
+    <div class="ref">Chamberlain P, et al. A 3-year randomized clinical trial of MiSight lenses for myopia control. Optom Vis Sci. 2019;96(8):556-567.</div>
+    <div class="ref">Brennan NA, Toubouti YM. Myopia control with soft contact lenses: an updated review. Rev Myopia Management. 2023.</div>
+    <div class="ref">Walline JJ, et al. Effect of high add power, medium add power, or single-vision contact lenses on myopia progression in children: the BLINK randomized clinical trial. JAMA. 2020;324(6):571-580.</div>
+    <div class="ref">PROTECT Study Group. NaturalVue 1 Day multifocal lenses for myopia control: 12-month outcomes. 2025.</div>
+    <div class="ref">Sankaridurg P, et al. Myopia control with novel central and peripheral plus contact lenses and extended depth of focus lenses: the EDOF study. Ophthalmic Physiol Opt. 2019.</div>
+    <div class="ref">Bullimore MA, et al. Myopia control with contact lenses: a position statement. Cont Lens Anterior Eye. 2024.</div>
+    <div class="ref">International Myopia Institute (IMI). Myopia Consensus Statement 2025. Invest Ophthalmol Vis Sci. 2025.</div>
+    <div class="ref">Logan NS, Bullimore MA. Optical interventions for myopia control. Ophthalmic Physiol Opt. 2024.</div>
+  </div>
+
+  <div class="nav-art">
+    <a href="articulos.html" class="btn-link">Volver a articulos</a>
+    <a href="unirme.html" class="btn-az">Unirme a MML</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopia Latam</h4>
+      <p>miopialatam.org - Red internacional de especialistas</p>
+    </div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">2026 MML - Todos los derechos reservados</div></div>
+</footer>
+
+</body>
+</html>
