@@ -67,6 +67,8 @@ h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-siz
 .event-card{background:#fff;border:1px solid var(--bd);border-radius:20px;display:grid;grid-template-columns:120px 1fr;gap:0;overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative}
 .event-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent}
 .event-card.hidden{display:none}
+.event-card.event-verified{border:2px solid #2EAA4A;box-shadow:0 4px 16px rgba(46,170,74,0.12)}
+.event-card.event-verified:hover{box-shadow:0 12px 40px rgba(46,170,74,0.18)}
 .event-date{background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%);color:#fff;padding:1.6rem 1rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
 .event-date::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(255,255,255,0.2),transparent 60%);pointer-events:none}
 .event-month{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.95rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.85;position:relative;z-index:2}
@@ -179,6 +181,18 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 
 <div class="events-grid" id="events-grid">
 
+  <article class="event-card event-verified" data-region="latam" data-type="presencial" data-date="2026-09-03" style="--c:#5C35D4;--c-dark:#3B1FA8">
+    <div class="event-date"><span class="event-month">Sep</span><span class="event-day">3-5</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-presencial">Presencial</span><span class="event-tag" style="background:#E6F7EB;color:#1B5E20">✓ Verificado</span></div>
+      <div class="event-title">Congreso Internacional FEDOPTO 2026</div>
+      <div class="event-location">Centro de Convenciones ExpoFuturo · Pereira, Colombia</div>
+      <div class="event-organizer">Organiza: Federación Colombiana de Optómetras (FEDOPTO)</div>
+      <div class="event-desc">Ejes: <strong>Lentes de contacto (básico y avanzado)</strong>, clínico asistencial, tecnología e innovación, gestión, investigación. Ponentes nacionales e internacionales. Convocatoria de casos clínicos abierta hasta 15 junio 2026.</div>
+      <a href="https://fedopto.org/congreso" target="_blank" rel="noopener" class="event-link">Registro e información oficial</a>
+    </div>
+  </article>
+
   <article class="event-card" data-region="global" data-type="presencial" style="--c:#0077C8;--c-dark:#005FA3">
     <div class="event-date"><span class="event-month">Mayo</span><span class="event-day">Anual</span><span class="event-year">Global</span></div>
     <div class="event-body">
@@ -236,18 +250,6 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <div class="event-organizer">Organiza: Specialty Contact Lens Society / Global Specialty Lens Symposium</div>
       <div class="event-desc">Eventos referentes en ortoqueratología, lentes esclerales y lentes de contacto especializados.</div>
       <a href="https://www.gsls.com/" target="_blank" rel="noopener" class="event-link">Ver web oficial</a>
-    </div>
-  </article>
-
-  <article class="event-card" data-region="latam" data-type="presencial" style="--c:#5C35D4;--c-dark:#3B1FA8">
-    <div class="event-date"><span class="event-month">Anual</span><span class="event-day">FCO</span><span class="event-year">CO</span></div>
-    <div class="event-body">
-      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-presencial">Presencial</span></div>
-      <div class="event-title">Congreso FEDOPTO Colombia</div>
-      <div class="event-location">Sede rotativa - Colombia</div>
-      <div class="event-organizer">Organiza: Federación Colombiana de Optómetras (FEDOPTO)</div>
-      <div class="event-desc">Congreso nacional anual de optometría colombiana con sesiones de control de miopía.</div>
-      <a href="https://fedopto.org/" target="_blank" rel="noopener" class="event-link">Ver web oficial</a>
     </div>
   </article>
 
