@@ -30,9 +30,11 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .nav-links a.active{color:#fff;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);box-shadow:0 6px 20px rgba(0,119,200,0.4);overflow:hidden;font-weight:700}
 .nav-links a.active::after{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:shineActive 3.5s ease-in-out infinite;pointer-events:none}
 @keyframes shineActive{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.btn-primary{background:var(--ink);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
-.btn-primary:hover{background:var(--az);transform:translateY(-1px);box-shadow:var(--shadow-md)}
-.btn-primary::after{content:'\2192';transition:transform .2s}
+.btn-primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px;position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(0,119,200,0.3)}
+.btn-primary::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes aladino-shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,119,200,0.45)}
+.btn-primary::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
 .btn-primary:hover::after{transform:translateX(3px)}
 
 .hero-sec{padding:7.5rem 2rem 5.5rem;text-align:center;background:linear-gradient(180deg,#FAFCFE 0%,#fff 100%);position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
@@ -45,9 +47,10 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(3.4rem,7.5vw,6.4rem);line-height:0.92;letter-spacing:-0.04em;color:var(--ink);text-transform:uppercase;margin-bottom:1.4rem}
 .hero-sec p.lead{font-size:1.2rem;color:var(--mu);line-height:1.6;max-width:680px;margin:0 auto 2.4rem}
 .hero-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn-hero{background:var(--ink);color:#fff;padding:0.9rem 1.7rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
-.btn-hero:hover{background:var(--az);transform:translateY(-2px);box-shadow:var(--shadow-md)}
-.btn-hero::after{content:'\2192';transition:transform .2s}
+.btn-hero{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:0.9rem 1.7rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;position:relative;overflow:hidden;box-shadow:0 6px 20px rgba(0,119,200,0.35)}
+.btn-hero::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+.btn-hero:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(0,119,200,0.5)}
+.btn-hero::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
 .btn-hero:hover::after{transform:translateX(3px)}
 .btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--bd);padding:0.9rem 1.7rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
 .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
@@ -70,14 +73,17 @@ h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-siz
 .senales-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:5rem}
 .senal{background:#fff;border:1px solid var(--bd);border-radius:18px;padding:1.6rem;display:flex;gap:1.1rem;align-items:flex-start;transition:all .25s}
 .senal:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:transparent}
-.senal-ico{width:48px;height:48px;border-radius:12px;background:#FFF1EF;color:var(--ro);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;flex-shrink:0;letter-spacing:0.02em}
+.senal-ico{width:52px;height:52px;border-radius:14px;background:#FFF1EF;color:var(--ro);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;overflow:hidden}
+.senal-ico svg{width:28px;height:28px;display:block}
 .senal-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.35rem;letter-spacing:-0.01em;line-height:1.15}
 .senal-desc{font-size:0.85rem;color:var(--mu);line-height:1.55}
 
 .trats{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-bottom:2rem}
 .trat{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:1.8rem;display:flex;gap:1.2rem;transition:all .25s}
 .trat:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:transparent}
-.trat-ico{width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.05rem;color:#fff;flex-shrink:0;box-shadow:var(--shadow-md);letter-spacing:0.02em}
+.trat-ico{width:68px;height:68px;border-radius:18px;display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0;box-shadow:var(--shadow-md);position:relative;overflow:hidden}
+.trat-ico::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.25) 0%,transparent 60%);pointer-events:none}
+.trat-ico svg{width:34px;height:34px;display:block;position:relative;z-index:2;stroke-width:2}
 .trat-header{display:flex;gap:10px;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap}
 .trat-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.01em}
 .trat-tag{font-size:0.62rem;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacing:0.04em;text-transform:uppercase}
@@ -191,27 +197,27 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 
   <div class="senales-grid">
     <div class="senal">
-      <div class="senal-ico">VC</div>
+      <div class="senal-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="3" y="9" width="14" height="14" rx="2"/><path d="M17 13 H24 V19 H17"/><line x1="27" y1="16" x2="29" y2="16"/><line x1="25" y1="13" x2="29" y2="13"/><line x1="25" y1="19" x2="29" y2="19"/></svg></div>
       <div><div class="senal-title">Se acerca mucho a las cosas</div><div class="senal-desc">Tu hijo acerca objetos o pantallas mas de lo normal para verlos claramente.</div></div>
     </div>
     <div class="senal">
-      <div class="senal-ico">DC</div>
+      <div class="senal-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="14" r="9"/><path d="M11 11 L8 8"/><path d="M21 11 L24 8"/><path d="M11 16 Q14 18 16 18 Q18 18 21 16"/><path d="M11 25 L11 28"/><path d="M16 25 L16 29"/><path d="M21 25 L21 28"/></svg></div>
       <div><div class="senal-title">Dolores de cabeza frecuentes</div><div class="senal-desc">Cefaleas frecuentes al final del dia escolar o tras usar pantallas.</div></div>
     </div>
     <div class="senal">
-      <div class="senal-ico">TB</div>
+      <div class="senal-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="3" y="5" width="26" height="18" rx="2"/><path d="M8 11 L13 14 L8 17"/><line x1="15" y1="17" x2="22" y2="17"/><line x1="14" y1="27" x2="18" y2="27"/><line x1="16" y1="23" x2="16" y2="27"/></svg></div>
       <div><div class="senal-title">Dificultad para ver el tablero</div><div class="senal-desc">No puede leer lo que esta escrito en el pizarron desde su puesto en clase.</div></div>
     </div>
     <div class="senal">
-      <div class="senal-ico">EC</div>
+      <div class="senal-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16 Q9 11 16 11 Q23 11 29 16"/><path d="M3 16 Q9 21 16 21 Q23 21 29 16"/><line x1="11" y1="14" x2="13" y2="18"/><line x1="21" y1="14" x2="19" y2="18"/></svg></div>
       <div><div class="senal-title">Entrecierra los ojos</div><div class="senal-desc">Hace un gesto de entrecerrar los ojos para enfocar mejor objetos lejanos.</div></div>
     </div>
     <div class="senal">
-      <div class="senal-ico">RE</div>
+      <div class="senal-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 8 V25 Q5 27 7 27 H25 Q27 27 27 25 V8"/><path d="M5 8 Q5 5 9 5 H23 Q27 5 27 8"/><path d="M16 5 V27"/><line x1="10" y1="12" x2="14" y2="12"/><line x1="10" y1="17" x2="14" y2="17"/></svg></div>
       <div><div class="senal-title">Bajo rendimiento escolar</div><div class="senal-desc">Dificultades de aprendizaje relacionadas con no ver bien en clase.</div></div>
     </div>
     <div class="senal">
-      <div class="senal-ico">LU</div>
+      <div class="senal-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="5"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="16" y1="25" x2="16" y2="29"/><line x1="3" y1="16" x2="7" y2="16"/><line x1="25" y1="16" x2="29" y2="16"/><line x1="7" y1="7" x2="9.5" y2="9.5"/><line x1="22.5" y1="22.5" x2="25" y2="25"/><line x1="22.5" y1="9.5" x2="25" y2="7"/><line x1="7" y1="25" x2="9.5" y2="22.5"/></svg></div>
       <div><div class="senal-title">Molestia con la luz</div><div class="senal-desc">Sensibilidad a la luz o dificultad para ver bien en ambientes poco iluminados.</div></div>
     </div>
   </div>
@@ -224,28 +230,28 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 
   <div class="trats">
     <div class="trat">
-      <div class="trat-ico" style="background:linear-gradient(135deg,#0077C8,#005FA3)">OK</div>
+      <div class="trat-ico" style="background:linear-gradient(135deg,#0077C8,#005FA3)"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 6 Q26 8 28 13 Q29 19 25 23 Q21 27 15 26 Q9 24 7 19 Q12 21 17 19 Q22 16 21 11 Q20 8 21 6 Z"/><circle cx="20" cy="11" r="0.8" fill="currentColor" stroke="none"/><circle cx="24" cy="15" r="0.6" fill="currentColor" stroke="none"/></svg></div>
       <div>
         <div class="trat-header"><div class="trat-name">Orto-K</div><span class="trat-tag" style="background:#E6F7EB;color:#1B5E20">Alta evidencia</span></div>
         <div class="trat-desc">Lentes nocturnos que remodelan la cornea. El nino duerme con ellos y ve bien durante el dia sin gafas. Alta eficacia comprobada en reduccion de progresion miopica.</div>
       </div>
     </div>
     <div class="trat">
-      <div class="trat-ico" style="background:linear-gradient(135deg,#7B1FA2,#4A148C)">AT</div>
+      <div class="trat-ico" style="background:linear-gradient(135deg,#7B1FA2,#4A148C)"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 4 Q22 12 22 18 Q22 24 16 24 Q10 24 10 18 Q10 12 16 4 Z"/><path d="M14 18 Q14 20 16 20"/></svg></div>
       <div>
         <div class="trat-header"><div class="trat-name">Atropina</div><span class="trat-tag" style="background:#E6F7EB;color:#1B5E20">Alta evidencia</span></div>
         <div class="trat-desc">Gotas oculares en concentracion muy baja. Se aplican una vez al dia. Frenan el crecimiento del ojo con minimos efectos secundarios en concentraciones bajas.</div>
       </div>
     </div>
     <div class="trat">
-      <div class="trat-ico" style="background:linear-gradient(135deg,#5C35D4,#3B1FA8)">LC</div>
+      <div class="trat-ico" style="background:linear-gradient(135deg,#5C35D4,#3B1FA8)"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="6.5"/><circle cx="16" cy="16" r="2.5"/><path d="M9 9 Q11 11 11 13" opacity="0.6"/></svg></div>
       <div>
         <div class="trat-header"><div class="trat-name">Lentes de contacto especiales</div><span class="trat-tag" style="background:#FFF6D8;color:#92690A">Evidencia moderada</span></div>
         <div class="trat-desc">Lentes blandas de uso diurno con diseno especial para reducir el estimulo de crecimiento axial. Ideales para ninos activos desde los 8 anos.</div>
       </div>
     </div>
     <div class="trat">
-      <div class="trat-ico" style="background:linear-gradient(135deg,#2EAA4A,#1E7D34)">LO</div>
+      <div class="trat-ico" style="background:linear-gradient(135deg,#2EAA4A,#1E7D34)"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="9" cy="18" r="6"/><circle cx="23" cy="18" r="6"/><path d="M15 17 Q16 16 17 17"/><path d="M3 14 L5 13"/><path d="M29 14 L27 13"/></svg></div>
       <div>
         <div class="trat-header"><div class="trat-name">Lentes oftalmicas de control</div><span class="trat-tag" style="background:#FFF6D8;color:#92690A">Evidencia moderada</span></div>
         <div class="trat-desc">Gafas con tecnologia de desenfoque periferico. Opcion no invasiva, ideal para ninos que no toleran lentes de contacto. Disponibles desde los 4 anos.</div>

@@ -30,9 +30,11 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .nav-links a.active{color:#fff;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);box-shadow:0 6px 20px rgba(0,119,200,0.4);overflow:hidden;font-weight:700}
 .nav-links a.active::after{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:shineActive 3.5s ease-in-out infinite;pointer-events:none}
 @keyframes shineActive{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.btn-primary{background:var(--ink);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
-.btn-primary:hover{background:var(--az);transform:translateY(-1px);box-shadow:var(--shadow-md)}
-.btn-primary::after{content:'\2192';transition:transform .2s}
+.btn-primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px;position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(0,119,200,0.3)}
+.btn-primary::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes aladino-shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,119,200,0.45)}
+.btn-primary::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
 .btn-primary:hover::after{transform:translateX(3px)}
 
 .hero-sec{padding:7.5rem 2rem 5.5rem;text-align:center;background:linear-gradient(180deg,#FAFCFE 0%,#fff 100%);position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
