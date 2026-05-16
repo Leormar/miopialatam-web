@@ -1,0 +1,99 @@
+ORTO-K EN NIÑOS DE 6 A 12 AÑOS: PROTOCOLO DE ADAPTACION Y SEGUIMIENTO EN LATAM
+
+Autor: MML Editorial - Grupo Manejo Miopia Latam - 2026
+
+==========================================================
+INTRODUCCION
+==========================================================
+
+La ortoqueratologia (Orto-K) se ha consolidado como una de las intervenciones mas efectivas para el control de miopia en niños. Su mecanismo de accion, basado en el remodelado temporal de la cornea mediante lentes rigidos de uso nocturno, permite que el niño tenga vision nitida durante el dia sin necesidad de correccion optica convencional, al tiempo que frena la progresion axial del ojo miope.
+
+En Latinoamerica, la implementacion de Orto-K enfrenta desafios particulares: variabilidad en el acceso a topografos corneales de alta resolucion, diferencias en los sistemas de salud, y barreras culturales frente al uso de lentes de contacto en niños pequeños.
+
+==========================================================
+1. CRITERIOS DE SELECCION DEL PACIENTE
+==========================================================
+
+La seleccion adecuada del paciente es el factor mas determinante en el exito del tratamiento. Los criterios de inclusion recomendados para poblacion pediatrica en LATAM son:
+
+- Miopia entre -0.75 y -6.00 D, con astigmatismo no mayor a -1.75 D
+- Edad minima recomendada: 6 años, con madurez suficiente para el manejo del lente
+- Cornea con e-value entre 0.3 y 0.6 (topografia corneal previa obligatoria)
+- Ausencia de patologia corneal activa (queratocono, distrofias, cicatrices)
+- Entorno familiar que garantice la supervision del uso nocturno y la higiene
+- Motivacion del paciente y comprension del tratamiento por parte de los padres
+
+En la practica clinica latinoamericana, la edad de inicio tiende a ser mayor que en estudios asiaticos. Sin embargo, la evidencia actual respalda el inicio temprano como factor protector para reducir la carga miopica acumulada.
+
+==========================================================
+2. PROTOCOLO DE ADAPTACION (6 PASOS)
+==========================================================
+
+Paso 1 - Topografia corneal basal:
+Mapa topografico completo con software de simulacion de lente. Se recomienda topografo Placido con minimo 8.000 puntos de medicion.
+
+Paso 2 - Biometria ocular:
+Medicion de longitud axial (AL), radio corneal (K) y profundidad de camara anterior. La AL basal es el parametro mas importante para el seguimiento.
+
+Paso 3 - Primera noche de uso:
+El niño usa el lente bajo supervision de los padres, quienes deben recibir instruccion detallada sobre insercion, remocion y limpieza.
+
+Paso 4 - Control a las 24 horas:
+Evaluacion de topografia corneal post-Orto-K, agudeza visual sin correccion y confort.
+
+Paso 5 - Control a la semana:
+Evaluacion completa: topografia, AV, biomicroscopia corneal y adaptacion del lente.
+
+Paso 6 - Control al mes:
+Estabilizacion esperada del efecto. Se evalua la duracion del efecto refractivo.
+
+==========================================================
+3. SEGUIMIENTO A LARGO PLAZO
+==========================================================
+
+- Cada 3 meses: Topografia corneal, AV sin correccion, evaluacion del lente y refraccion bajo cicloplejia
+- Cada 6 meses: Biometria ocular completa (longitud axial) para monitorear progresion miopica
+- Anualmente: Evaluacion completa del fondo de ojo, recambio del lente segun desgaste
+- En cualquier visita: Ante signos de abrasion corneal, tincion mayor a grado 2 o dolor, suspender el lente
+
+==========================================================
+4. CONSIDERACIONES PARA LATAM
+==========================================================
+
+Acceso a equipamiento:
+No todos los centros cuentan con topografo de alta resolucion. Se puede trabajar con queratometria convencional pero se pierde precision.
+
+Adherencia y cultura:
+La percepcion de riesgo de los padres frente al uso nocturno de lentes es una barrera. La educacion al paciente y familia es tan importante como la adaptacion tecnica.
+
+Costo y acceso:
+El costo del tratamiento puede ser una barrera significativa. El costo-beneficio a largo plazo debe ser parte de la conversacion.
+
+Clima y humedad:
+En regiones tropicales, la humedad ambiental alta puede afectar el confort del lente.
+
+==========================================================
+EFICACIA Y SEGURIDAD
+==========================================================
+
+- Orto-K reduce la elongacion axial entre 43% y 63% en niños miopes
+- Riesgo de queratitis microbiana: 5-14 casos por 10.000 usuarios-año
+- Mayor seguridad con materiales de alta permeabilidad (Dk/t) y educacion en higiene
+- Posible efecto aditivo con Atropina 0.01% (ensayos prospectivos en curso)
+
+==========================================================
+CONCLUSION CLINICA
+==========================================================
+
+La ortoqueratologia es una herramienta eficaz y segura para el control de miopia en niños latinoamericanos cuando se implementa con un protocolo estructurado, seleccion adecuada del paciente y seguimiento riguroso. La clave del exito en LATAM esta en adaptar el protocolo a la realidad del paciente: sus recursos, su entorno familiar y su contexto clinico.
+
+==========================================================
+REFERENCIAS
+==========================================================
+
+- Cho P, Cheung SW. Retardation of Myopia in Orthokeratology (ROMIO) Study. IOVS 2012
+- Charm J, Cho P. High myopia-partial reduction orthokeratology. Optom Vis Sci 2013
+- Walline JJ, et al. BLINK Study Group. JAMA Ophthalmol 2020
+- Santodomingo-Rubido J, et al. Ortho-K in Spain. IOVS 2012
+- Hiraoka T, et al. Long-term Orto-K. Ophthalmology 2012
+- IMI Orthokeratology Report. IOVS 2023

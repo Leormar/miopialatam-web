@@ -99,6 +99,22 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 .footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
 .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
 
+.podcast-player{background:linear-gradient(135deg,#0A2540,#102E50);border-radius:18px;padding:1.8rem;margin:0 0 2.5rem;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-md);font-family:'Inter',sans-serif}
+.podcast-player::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(245,197,24,0.35),transparent 70%);pointer-events:none}
+.pp-header{display:flex;gap:1.2rem;align-items:center;margin-bottom:1.2rem;position:relative;z-index:2}
+.pp-icon-wrap{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,#F5C518,#E8AC00);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;color:#5C4400;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem}
+.pp-icon-wrap::after{content:'';position:absolute;inset:-5px;border-radius:18px;border:2px solid var(--am);opacity:0.4;animation:pulse-ring 2s ease-in-out infinite}
+@keyframes pulse-ring{0%,100%{opacity:0.4;transform:scale(1)}50%{opacity:0;transform:scale(1.15)}}
+.pp-text{flex:1;min-width:0}
+.pp-label{font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--am);margin-bottom:0.3rem}
+.pp-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:-0.01em;margin-bottom:0.2rem;line-height:1.15;color:#fff}
+.pp-meta{font-size:0.74rem;color:rgba(255,255,255,0.6)}
+.pp-audio{width:100%;display:block;position:relative;z-index:2;height:44px;border-radius:10px;outline:none}
+
+.svg-fig{margin:2.5rem 0;padding:1.5rem;background:var(--bg);border:1px solid var(--bd);border-radius:18px;font-family:'Inter',sans-serif}
+.svg-fig svg{display:block;width:100%;height:auto;max-width:640px;margin:0 auto}
+.svg-caption{font-size:0.82rem;color:var(--soft);text-align:center;margin-top:1rem;line-height:1.5}
+
 @media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
 @media(max-width:640px){.art-body{padding:2.5rem 1.5rem}}
 </style>
@@ -132,6 +148,21 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 </section>
 
 <div class="art-body">
+
+  <div class="podcast-player">
+    <div class="pp-header">
+      <div class="pp-icon-wrap">PLAY</div>
+      <div class="pp-text">
+        <div class="pp-label">Discusion clinica - Podcast</div>
+        <div class="pp-title">Terapias combinadas en control de miopia</div>
+        <div class="pp-meta">Generado con NotebookLM - 2 expertos discutiendo</div>
+      </div>
+    </div>
+    <audio controls preload="none" class="pp-audio">
+      <source src="audio/terapias-combinadas.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </div>
 
   <p class="lead-p">¿La suma de tratamientos suma eficacia? La pregunta es relevante para casos de progresion rapida o miopia alta, donde una sola modalidad puede no ser suficiente.</p>
 
@@ -214,6 +245,40 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
         <tr><td><strong>Orto-K + Atropina</strong></td><td><span class="dot-badge" style="background:#EAF4FB;color:#0D47A1">Efecto aditivo</span> Efecto aditivo demostrado, estudios en curso</td></tr>
       </tbody>
     </table>
+  </div>
+
+  <div class="svg-fig">
+    <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Matriz de evidencia terapias combinadas">
+      <text x="320" y="28" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="16" fill="#0A2540">MATRIZ DE EVIDENCIA - COMBINACIONES CON ATROPINA</text>
+      <text x="320" y="48" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Intensidad del color = fortaleza de la evidencia para efecto aditivo</text>
+      <rect x="60" y="80" width="140" height="80" fill="#F0F3F6" stroke="#5A7184" stroke-width="1.5" rx="10"/>
+      <text x="130" y="115" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="16" fill="#5A7184">LC + AT</text>
+      <text x="130" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#5A7184">Sin superioridad</text>
+      <text x="130" y="150" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8B9DAA">vs monoterapia</text>
+      <rect x="220" y="80" width="140" height="80" fill="#E6F7EB" stroke="#2EAA4A" stroke-width="2" rx="10"/>
+      <text x="290" y="115" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="16" fill="#1B5E20">DIMS + AT</text>
+      <text x="290" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#1B5E20" font-weight="600">Alta eficacia</text>
+      <text x="290" y="150" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#2EAA4A">Reduccion AXL signif.</text>
+      <rect x="380" y="80" width="140" height="80" fill="#FFF6D8" stroke="#F5C518" stroke-width="1.5" rx="10"/>
+      <text x="450" y="115" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="16" fill="#92690A">HALT + AT</text>
+      <text x="450" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#92690A">Limitada</text>
+      <text x="450" y="150" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#C9A200">Resultados inciertos</text>
+      <rect x="220" y="200" width="200" height="100" fill="#EAF4FB" stroke="#0077C8" stroke-width="2.5" rx="14"/>
+      <text x="320" y="235" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="20" fill="#0D47A1">ORTO-K + ATROPINA</text>
+      <text x="320" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#0D47A1" font-weight="700">Efecto aditivo demostrado</text>
+      <text x="320" y="275" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0077C8">Sin aumento de efectos adversos</text>
+      <text x="320" y="290" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0077C8">Estudios prospectivos en curso</text>
+      <text x="60" y="345" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Evidencia:</text>
+      <rect x="130" y="335" width="14" height="14" fill="#F0F3F6" rx="3"/>
+      <text x="150" y="346" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Limitada</text>
+      <rect x="220" y="335" width="14" height="14" fill="#FFF6D8" rx="3"/>
+      <text x="240" y="346" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Moderada</text>
+      <rect x="320" y="335" width="14" height="14" fill="#E6F7EB" rx="3"/>
+      <text x="340" y="346" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Alta</text>
+      <rect x="395" y="335" width="14" height="14" fill="#EAF4FB" rx="3"/>
+      <text x="415" y="346" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Aditivo demostrado</text>
+    </svg>
+    <div class="svg-caption">Orto-K + Atropina 0.01% es la combinacion con mejor evidencia de efecto aditivo. DIMS + Atropina 0.025% muestra alta eficacia. Las combinaciones con LC blandos no superan a la monoterapia.</div>
   </div>
 
   <div class="callout"><strong>Cuando considerar terapia combinada:</strong> En pacientes con progresion rapida (mas de 1.00 D/año o mas de 0.30 mm AXL/año), miopia alta (mayor a -6.00 D), antecedentes familiares de alta miopia, o falta de respuesta a monoterapia despues de 6 meses.</div>

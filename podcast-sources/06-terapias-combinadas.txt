@@ -1,0 +1,86 @@
+TERAPIAS COMBINADAS EN EL CONTROL DE MIOPIA: EVIDENCIA ACTUALIZADA
+
+Autor: Leonardo Orjuela M. OD - Grupo Manejo Miopia Latam - 2025
+
+==========================================================
+INTRODUCCION
+==========================================================
+
+La combinacion de tratamientos opticos con atropina es una estrategia cada vez mas frecuente en casos de progresion rapida. La pregunta clave: ¿la suma de tratamientos suma eficacia?
+
+La evidencia sobre terapias combinadas en control de miopia es heterogenea: en algunos casos el efecto es claramente aditivo (Orto-K + atropina), en otros la combinacion no supera a la monoterapia (LC multifocal + atropina).
+
+==========================================================
+1. LENTES DE CONTACTO + ATROPINA
+==========================================================
+
+LC desenfoque periferico + Atropina 0.01%:
+Los ensayos clinicos con lentes de contacto de desenfoque periferico combinados con atropina al 0.01% muestran eficacia clinica, pero sin diferencias significativas respecto a atropina sola. La adicion del lente de contacto no aporta beneficio estadisticamente significativo.
+Conclusion: Sin superioridad demostrada.
+
+LC multifocales + Atropina:
+Los lentes de contacto multifocales centro-lejos combinados con atropina no han demostrado beneficio adicional frente a cualquiera de las dos terapias por separado. Los estudios sugieren que el mecanismo de desenfoque ya saturaria el efecto sobre la elongacion axial.
+Conclusion: Sin beneficio adicional demostrado.
+
+==========================================================
+2. GAFAS DIMS / HALT + ATROPINA
+==========================================================
+
+DIMS + Atropina 0.025%:
+Los ensayos clinicos muestran que la combinacion de gafas DIMS (MiYOSMART) con atropina al 0.025% reduce significativamente la elongacion axial respecto a cualquiera de las dos modalidades por separado. Un mayor porcentaje de niños permanecen sin progresion axial significativa.
+Conclusion: Alta eficacia.
+
+HALT (Stellest) + Atropina:
+La evidencia sobre la combinacion HALT + atropina es limitada. Los estudios iniciales no muestran resultados concluyentes. Se requieren mas ensayos prospectivos.
+Conclusion: Evidencia limitada.
+
+==========================================================
+3. ORTO-K + ATROPINA
+==========================================================
+
+Orto-K + Atropina 0.01%:
+La ortoqueratologia sola reduce la progresion axial entre 30-60%. Cuando se combina con atropina al 0.01%, los estudios muestran evidencia de efecto aditivo, sin incremento significativo de efectos adversos. Es la combinacion con mejor perfil documentado.
+
+Hay ensayos clinicos prospectivos en curso (a 24 meses) que confirman esta tendencia con tamaños muestrales mayores.
+Conclusion: Efecto aditivo demostrado.
+
+==========================================================
+4. RESUMEN COMPARATIVO
+==========================================================
+
+| Modalidad | Evidencia combinada |
+|-----------|---------------------|
+| LC + Atropina | Sin superioridad. Eficaz pero sin ventaja frente a monoterapia |
+| DIMS + Atropina | Alta eficacia. Elongacion axial reducida significativamente |
+| HALT + Atropina | Limitada. Resultados aun inciertos |
+| Orto-K + Atropina | Efecto aditivo demostrado. Estudios en curso |
+
+==========================================================
+5. CUANDO CONSIDERAR TERAPIA COMBINADA
+==========================================================
+
+- Pacientes con progresion rapida (mas de 1.00 D/año o mas de 0.30 mm AXL/año)
+- Miopia alta (mayor a -6.00 D)
+- Antecedentes familiares de alta miopia
+- Falta de respuesta a monoterapia despues de 6 meses
+
+==========================================================
+MENSAJE CLINICO FINAL
+==========================================================
+
+Las terapias combinadas (opticas + atropina) tienen evidencia aun en estudio. La mejor evidencia actual respalda Orto-K + atropina 0.01% (efecto aditivo) y DIMS + atropina 0.025% (eficacia alta). Las combinaciones con LC blandos no muestran superioridad clara.
+
+Individualizar el tratamiento segun el caso: edad, perfil de progresion, adherencia previa y disponibilidad regional. La monoterapia bien ejecutada sigue siendo la primera linea para la mayoria de pacientes.
+
+==========================================================
+REFERENCIAS
+==========================================================
+
+- Kinoshita N, et al. Orto-K + Atropina. Jpn J Ophthalmol 2018
+- Tan Q, et al. Combined atropine with orthokeratology. Curr Eye Res 2019
+- Combination atropine and DIMS spectacle lenses. ScienceDirect 2024
+- Liu J, et al. Atropine + DIMS lens RCT. 2024
+- Myopia Profile. Combination therapy review. 2023
+- Review of Myopia Management. Orthokeratology and atropine. 2022
+- IMI Consensus Statement 2025: combination therapies. IOVS 2025
+- Bullimore MA, et al. Myopia control review. 2024

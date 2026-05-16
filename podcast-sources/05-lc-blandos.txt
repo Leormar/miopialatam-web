@@ -1,0 +1,108 @@
+LENTES DE CONTACTO BLANDOS PARA CONTROL DE MIOPIA: EDOF, DUAL-FOCUS Y MULTIFOCALES
+
+Autor: Leonardo Orjuela M. OD - Grupo Manejo Miopia Latam - 2025
+
+==========================================================
+INTRODUCCION
+==========================================================
+
+Los lentes de contacto blandos especiales combinan correccion refractiva con control de progresion en una sola modalidad, con buena aceptacion en niños activos.
+
+A diferencia de las gafas y de la ortoqueratologia, los lentes de contacto blandos diurnos ofrecen libertad visual durante el dia, mejor estetica y mayor adherencia en niños deportistas. La oferta clinica se ha consolidado en tres tecnologias: profundidad de foco extendida (EDOF), dual-focus y multifocales centro-lejos.
+
+==========================================================
+1. EDOF - PROFUNDIDAD DE FOCO EXTENDIDA
+==========================================================
+
+Producto principal: MYLO (MarKnovy SP)
+Tecnologia: EDOF (Extended Depth of Focus)
+Origen: Patentada por el Instituto de Vision Brien Holden
+
+Diseño:
+Profundidad de Foco Extendida basada en aberraciones controladas que extienden el rango de foco nitido a multiples distancias retinales simultaneamente, reduciendo la señal de crecimiento axial.
+
+Eficacia:
+- Reduccion SER: hasta 40%
+- Reduccion AXL en 2 años: 0.33 mm (~44%)
+
+==========================================================
+2. DUAL-FOCUS - MISIGHT 1 DAY
+==========================================================
+
+Producto: MiSight 1 day - CooperVision
+Modalidad: Desechable diario
+
+Diseño:
+Zona central para vision lejana + anillos concentricos de desenfoque periferico. Las zonas alternas crean foco simultaneo y desenfoque miopico periferico.
+
+Eficacia:
+- Reduccion SER: hasta 50%
+- Reduccion AXL en 3 años: 0.30 mm
+
+Estudio de referencia: RCT 3-year de Chamberlain et al. (2019) - es el ensayo de referencia para LC de control en niños.
+
+==========================================================
+3. MULTIFOCALES CENTRO-LEJOS
+==========================================================
+
+NaturalVue (Visioneering Technologies Inc. - VTI):
+Diseño: Multifocal con zona central de vision lejana y adicion progresiva hacia la periferia. Genera desenfoque miopico periferico continuo.
+Eficacia (Estudio PROTECT 2025):
+- Reduccion SER: hasta 86%
+- Reduccion AXL en 1 año: 0.17 mm
+
+Biofinity MF (CooperVision):
+Diseño: Multifocal centro-lejos de uso mensual.
+Eficacia variable segun adicion utilizada (+1.50, +2.00, +2.50 D):
+- Reduccion AXL: 30 - 50%
+- Resultados heterogeneos entre estudios
+
+==========================================================
+4. SEGURIDAD Y ADHERENCIA
+==========================================================
+
+Los lentes de contacto blandos diarios (MiSight 1 day, MYLO) tienen ventajas significativas en adherencia, seguridad y aceptacion en niños deportistas.
+
+La incidencia de queratitis microbiana en lentes blandos diarios es muy baja: 2-4 casos por 10.000 usuarios-año.
+
+==========================================================
+5. CONSIDERACIONES CLINICAS PARA LATAM
+==========================================================
+
+Edad de inicio:
+Desde los 8 años en la mayoria de diseños, segun madurez del paciente y supervision familiar.
+
+Disponibilidad:
+MiSight 1 day, NaturalVue y Biofinity MF estan presentes en la region. MYLO disponible en mercados especificos.
+
+Cumplimiento:
+Alto con desechables diarios. Beneficio visual inmediato favorece motivacion en niños activos.
+
+Limitaciones:
+Halos o deslumbramiento nocturno posibles. Requiere supervision familiar para higiene y uso.
+
+Combinacion con atropina:
+Permitida; sin evidencia clara de efecto aditivo en LC multifocales, pero combinable de forma segura.
+
+Costo:
+Variable. Los desechables diarios pueden ser mas costosos a largo plazo que mensuales o gafas.
+
+==========================================================
+MENSAJE CLINICO FINAL
+==========================================================
+
+Los lentes de contacto blandos especiales son una excelente opcion para niños activos, deportistas o con dificultad de adherencia a gafas. MiSight 1 day tiene la evidencia mas robusta a 3 años; NaturalVue muestra resultados prometedores en 1 año. La eleccion entre dual-focus, EDOF o multifocal depende de disponibilidad regional, edad, perfil refractivo y preferencias.
+
+Como en toda intervencion: "el mejor tratamiento es el que el niño realmente usa" (Bullimore, 2024).
+
+==========================================================
+REFERENCIAS
+==========================================================
+
+- Chamberlain P, et al. MiSight 3-year RCT. Optom Vis Sci 2019
+- Brennan NA, Toubouti YM. Soft lenses myopia control review. Rev Myopia Management 2023
+- Walline JJ, et al. BLINK trial. JAMA 2020
+- PROTECT Study Group. NaturalVue 12-month outcomes. 2025
+- Sankaridurg P, et al. EDOF study. Ophthalmic Physiol Opt 2019
+- Bullimore MA, et al. Myopia control review. 2024
+- IMI Consensus Statement 2025. IOVS 2025

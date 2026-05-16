@@ -92,6 +92,18 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 .footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
 .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
 
+.podcast-player{background:linear-gradient(135deg,#0A2540,#102E50);border-radius:18px;padding:1.8rem;margin:0 0 2.5rem;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-md);font-family:'Inter',sans-serif}
+.podcast-player::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(0,119,200,0.35),transparent 70%);pointer-events:none}
+.pp-header{display:flex;gap:1.2rem;align-items:center;margin-bottom:1.2rem;position:relative;z-index:2}
+.pp-icon-wrap{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,#F5C518,#E8AC00);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;color:#5C4400;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem}
+.pp-icon-wrap::after{content:'';position:absolute;inset:-5px;border-radius:18px;border:2px solid var(--am);opacity:0.4;animation:pulse-ring 2s ease-in-out infinite}
+@keyframes pulse-ring{0%,100%{opacity:0.4;transform:scale(1)}50%{opacity:0;transform:scale(1.15)}}
+.pp-text{flex:1;min-width:0}
+.pp-label{font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--am);margin-bottom:0.3rem}
+.pp-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:-0.01em;margin-bottom:0.2rem;line-height:1.15;color:#fff}
+.pp-meta{font-size:0.74rem;color:rgba(255,255,255,0.6)}
+.pp-audio{width:100%;display:block;position:relative;z-index:2;height:44px;border-radius:10px;outline:none}
+
 @media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
 @media(max-width:640px){.grid2{grid-template-columns:1fr}.art-body{padding:2.5rem 1.5rem}}
 </style>
@@ -125,6 +137,21 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 </section>
 
 <div class="art-body">
+
+  <div class="podcast-player">
+    <div class="pp-header">
+      <div class="pp-icon-wrap">PLAY</div>
+      <div class="pp-text">
+        <div class="pp-label">Discusion clinica - Podcast</div>
+        <div class="pp-title">Orto-K en ninos: protocolo LATAM</div>
+        <div class="pp-meta">Generado con NotebookLM - 2 expertos discutiendo</div>
+      </div>
+    </div>
+    <audio controls preload="none" class="pp-audio">
+      <source src="audio/ortok.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </div>
 
   <p class="lead-p">La ortoqueratologia (Orto-K) se ha consolidado como una de las intervenciones mas efectivas para el control de miopia en ninos.</p>
 

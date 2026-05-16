@@ -1,0 +1,118 @@
+LENTES OFTALMICAS PARA CONTROL DE MIOPIA: DIMS, HALT Y DOT
+
+Autor: Leonardo Orjuela M. OD - Grupo Manejo Miopia Latam - 2025
+
+==========================================================
+INTRODUCCION
+==========================================================
+
+Las lentes oftalmicas de control de miopia son hoy la modalidad mas segura, accesible y aceptable para el manejo en poblacion pediatrica latinoamericana. Su no invasividad y la posibilidad de prescribirlas desde edades tempranas (4 años en algunos casos) las convierten en una opcion de primera linea.
+
+La evidencia de los ultimos cinco años ha consolidado tres tecnologias principales: HALT (Stellest, Essilor), DIMS (MiYOSMART, Hoya) y DOT (MiSight Spectacle Lenses, CooperVision).
+
+==========================================================
+1. LENTE HALT - STELLEST (ESSILOR)
+==========================================================
+
+Tecnologia: HALT (Highly Aspherical Lenslet Target)
+Marca: Stellest - Essilor
+
+Mecanismo:
+Red de microlentes asfericas que crean un "escudo" de luz delante de la retina del ojo, ralentizando el alargamiento del ojo y la progresion de la miopia en niños mientras proporciona vision nitida.
+
+Principio: Compensacion del desenfoque hipermetropico periferico.
+
+Eficacia:
+- SER: reduccion de 0.80 D en 2 años
+- AXL: reduccion de 0.30 a 0.35 mm en 24 meses
+- Equivalente a ~60-67% de reduccion en la progresion respecto a controles con monofocales
+
+Referencia: Bao J, et al. Stellest lens slowing myopia progression. IOVS 2022
+
+==========================================================
+2. LENTE DIMS - MIYOSMART (HOYA)
+==========================================================
+
+Tecnologia: DIMS (Defocus Incorporated Multiple Segments)
+Marca: MiYOSMART - Hoya
+
+Mecanismo:
+Anillos concentricos de zonas de desenfoque miopico alrededor de una zona central clara. Los microsegmentos crean un patron de desenfoque periferico positivo de forma simultanea con la imagen nitida central.
+
+Principio: Desenfoque miopico periferico positivo.
+
+Eficacia:
+- SER: reduccion del 52% en 2 años
+- AXL: reduccion de 0.21 mm en 24 meses
+- Equivalente a ~62% de reduccion en la progresion
+
+Referencia: Lam CS, et al. DIMS lenses. Br J Ophthalmol 2020
+
+==========================================================
+3. LENTE DOT - MISIGHT SPECTACLE (COOPERVISION / SIGHTGLASS VISION)
+==========================================================
+
+Tecnologia: DOT (Diffusion Optics Technology)
+Marca: MiSight Spectacle Lenses - CooperVision / SightGlass Vision
+
+Mecanismo:
+Micro-dispersores que reducen el contraste periferico retinal. A diferencia de DIMS y HALT, no usa desenfoque sino modulacion de contraste para frenar los estimulos de crecimiento axial.
+
+Principio: Modulacion de contraste retinal periferico.
+
+Eficacia (CYPRESS Trial):
+- SER: reduccion de 0.33 D en 24 meses
+- AXL: reduccion de 0.21 mm en 24 meses
+- 59% con progresion menor a 0.50 D en 2 años vs 19% controles
+- A 36 meses: -0.13 mm AXL; a 48 meses: -0.05 mm AXL
+
+Referencia: Laughton D, et al. CYPRESS Trial. Ophthalmic Physiol Opt 2024
+
+==========================================================
+4. COMPARATIVA DE LAS TRES TECNOLOGIAS
+==========================================================
+
+| Tecnologia | Eficacia AXL | Evidencia |
+|------------|--------------|-----------|
+| DIMS MiYOSMART | ~0.21 mm menos en 24m (~62%) | RCT 2 años Lam 2020 |
+| HALT Stellest | ~0.30-0.35 mm menos en 24m (~60-67%) | RCT 2 años Bao 2022 |
+| DOT SightGlass | -0.13 mm en 36m / -0.05 mm en 48m | CYPRESS Trial Laughton 2024 |
+
+Las tres tecnologias muestran eficacia comparable. La eleccion depende de disponibilidad regional, costo, edad del paciente y preferencias de estilo de vida de la familia.
+
+==========================================================
+5. CONSIDERACIONES PRACTICAS EN LATAM
+==========================================================
+
+Disponibilidad:
+Stellest y MiYOSMART estan ampliamente distribuidas en la region.
+
+Edad de inicio:
+Desde los 4 años en algunos diseños. Mas tempranas que LC u Orto-K.
+
+Adherencia:
+Mayor cumplimiento que otras opciones, aunque con variabilidad en deporte o lectura prolongada.
+
+Costo:
+Mas economicas que LC especiales o Orto-K. Combinable con atropina sin conflicto.
+
+Seguridad:
+Modalidad mas segura. Sin riesgo de queratitis ni complicaciones corneales.
+
+==========================================================
+MENSAJE CLINICO FINAL
+==========================================================
+
+Las gafas de control de miopia son la modalidad mas segura, accesible y aceptable. DIMS, HALT y DOT muestran eficacia comparable. Ningun niño con miopia progresiva debe usar lentes monofocales si existe una alternativa de control disponible. La recomendacion es no dejar ir al paciente sin opciones de control optico. Individualizar segun edad, grado, estilo de vida y disponibilidad.
+
+==========================================================
+REFERENCIAS
+==========================================================
+
+- Lam CS, et al. DIMS lens slows myopia progression. Br J Ophthalmol 2020
+- Bao J, et al. Stellest lens RCT. IOVS 2022
+- Laughton D, et al. CYPRESS Trial DOT. Ophthalmic Physiol Opt 2024
+- Logan NS, Bullimore MA. Optical interventions for myopia control. 2024
+- Guggenheim JA. Mechanism of optical treatments. 2024
+- Zaabaar N, et al. Systematic review. Prog Retin Eye Res 2025
+- IMI Consensus Statement 2025. IOVS 2025

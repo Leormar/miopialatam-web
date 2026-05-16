@@ -1,0 +1,92 @@
+AXL vs SER: POR QUE MEDIR LA ELONGACION AXIAL EN EL CONTROL DE MIOPIA
+
+Autor: Leonardo Orjuela M. OD - Grupo Manejo Miopia Latam (MML) - 2025
+
+==========================================================
+TEMA PRINCIPAL
+==========================================================
+
+En el control de miopia, lo que medimos define lo que podemos controlar. La evidencia actual es clara: la longitud axial (AXL) es un marcador mas confiable que la refraccion (SER) para evaluar progresion y respuesta terapeutica en niños y adolescentes con miopia.
+
+Durante decadas el seguimiento de la miopia pediatrica se baso en la refraccion ciclopleda y el equivalente esferico (SER). Pero el SER, al depender de variables corneales, cristalinianas y de la acomodacion, puede dar resultados inestables. La longitud axial, en cambio, refleja directamente el crecimiento del globo ocular - el fenomeno biologico subyacente a la miopia.
+
+==========================================================
+1. DIFERENCIA CONCEPTUAL ENTRE SER Y AXL
+==========================================================
+
+SER (Equivalente Esferico de Refraccion):
+- Medida refractiva expresada en dioptrias (D)
+- Se calcula como Esfera + (Cilindro/2)
+- Puede modificarse por acomodacion, cicloplejia, o alteraciones corneales o lenticulares
+- Variable e influenciado por multiples factores
+
+AXL (Longitud Axial):
+- Medida en milimetros desde la cornea hasta la retina
+- Marcador biologico preciso del crecimiento ocular
+- Esta directamente vinculado con el riesgo de desarrollar patologias relacionadas con miopia alta (desprendimiento de retina, glaucoma, maculopatia miopica)
+
+Conclusion: La AXL representa el endpoint mas sensible y clinicamente significativo para evaluar la eficacia de las intervenciones de control de miopia. El SER complementa, no reemplaza.
+
+==========================================================
+2. POR QUE LA AXL ES MAS CONFIABLE
+==========================================================
+
+La superioridad de la AXL como biomarcador se sustenta en varios principios biologicos y clinicos:
+
+- Refleja directamente el crecimiento estructural del ojo - el fenomeno biologico de la miopia
+- No depende de la acomodacion, ni de variabilidad corneal o lenticular
+- Permite comparacion con curvas normativas por edad y etnia
+- Esta correlacionada con el riesgo de complicaciones de alta miopia
+- Es reproducible entre visitas con el mismo dispositivo (variabilidad menor a 0.05 mm)
+- Permite detectar cambios sutiles antes de que se reflejen en la refraccion
+
+==========================================================
+3. BIOMETROS DISPONIBLES PARA SEGUIMIENTO
+==========================================================
+
+Tres dispositivos son los mas utilizados en la practica clinica latinoamericana:
+
+IOLMaster 700 (Carl Zeiss):
+- Gold standard, mejor reproducibilidad documentada
+- Referencia para estudios clinicos
+- Casos donde se requiere maxima precision
+
+Myah (Topcon):
+- Equipo multifuncional preciso y fiable
+- Combina biometria con topografia y otras pruebas
+- Adecuado para clinica general
+
+Myopia Master (OCULUS):
+- Diseñado especificamente para control de miopia
+- Software con curvas de progresion integrado
+- Reportes especializados para seguimiento
+
+La comparacion entre los tres biometros muestra buena concordancia general, pero se deben tener precauciones al interpretar valores entre diferentes instrumentos.
+
+==========================================================
+4. RECOMENDACIONES PRACTICAS DE SEGUIMIENTO
+==========================================================
+
+- Usar siempre el mismo dispositivo para el seguimiento individual de cada paciente
+- Considerar diferencias de mas de 0.1 mm entre visitas como indicativas de cambio significativo
+- Documentar el biometro utilizado en cada medicion
+- Realizar mediciones en condiciones estandarizadas (luz, posicion, fijacion)
+- Combinar AXL con SER bajo cicloplejia para una imagen completa
+- Intervalo recomendado de medicion: cada 6 meses en pacientes en tratamiento activo
+
+==========================================================
+MENSAJE CLINICO FINAL
+==========================================================
+
+Use AXL como medida de seguimiento, mas confiable que el SER para valorar eficacia de cualquier tratamiento de control de miopia. La AXL es el endpoint de referencia en los ensayos clinicos actuales y debe serlo tambien en la practica diaria. La consistencia metodologica - mismo dispositivo, mismo operador cuando sea posible - es tan importante como la eleccion del biometro.
+
+==========================================================
+REFERENCIAS BIBLIOGRAFICAS
+==========================================================
+
+- Zaabaar N, et al. Myopia control strategies: A systematic review and meta-meta-analysis. Prog Retin Eye Res. 2025.
+- Guan M, et al. Axial length measurement and myopia progression. Ophthalmic Physiol Opt. 2020.
+- Chamberlain P, et al. A 3-year randomized clinical trial of MiSight lenses. Invest Ophthalmol Vis Sci. 2019.
+- Chow AHY, et al. Suitability of multifunction devices Myah and Myopia Master for monitoring myopia progression. Ophthalmic Physiol Opt. 2024.
+- International Myopia Institute (IMI). Myopia Consensus Statement 2025. IOVS. 2025.
+- Bullimore MA, et al. Myopia control review. Ophthalmic Physiol Opt. 2024.

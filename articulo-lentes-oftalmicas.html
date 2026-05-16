@@ -98,6 +98,22 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 .footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
 .footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
 
+.podcast-player{background:linear-gradient(135deg,#0A2540,#102E50);border-radius:18px;padding:1.8rem;margin:0 0 2.5rem;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-md);font-family:'Inter',sans-serif}
+.podcast-player::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(46,170,74,0.35),transparent 70%);pointer-events:none}
+.pp-header{display:flex;gap:1.2rem;align-items:center;margin-bottom:1.2rem;position:relative;z-index:2}
+.pp-icon-wrap{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,#F5C518,#E8AC00);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;color:#5C4400;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem}
+.pp-icon-wrap::after{content:'';position:absolute;inset:-5px;border-radius:18px;border:2px solid var(--am);opacity:0.4;animation:pulse-ring 2s ease-in-out infinite}
+@keyframes pulse-ring{0%,100%{opacity:0.4;transform:scale(1)}50%{opacity:0;transform:scale(1.15)}}
+.pp-text{flex:1;min-width:0}
+.pp-label{font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--am);margin-bottom:0.3rem}
+.pp-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:-0.01em;margin-bottom:0.2rem;line-height:1.15;color:#fff}
+.pp-meta{font-size:0.74rem;color:rgba(255,255,255,0.6)}
+.pp-audio{width:100%;display:block;position:relative;z-index:2;height:44px;border-radius:10px;outline:none}
+
+.svg-fig{margin:2.5rem 0;padding:1.5rem;background:var(--bg);border:1px solid var(--bd);border-radius:18px;font-family:'Inter',sans-serif}
+.svg-fig svg{display:block;width:100%;height:auto;max-width:640px;margin:0 auto}
+.svg-caption{font-size:0.82rem;color:var(--soft);text-align:center;margin-top:1rem;line-height:1.5}
+
 @media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
 @media(max-width:640px){.lente-stats{grid-template-columns:1fr}.lente-row{grid-template-columns:1fr}.art-body{padding:2.5rem 1.5rem}}
 </style>
@@ -131,6 +147,21 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 </section>
 
 <div class="art-body">
+
+  <div class="podcast-player">
+    <div class="pp-header">
+      <div class="pp-icon-wrap">PLAY</div>
+      <div class="pp-text">
+        <div class="pp-label">Discusion clinica - Podcast</div>
+        <div class="pp-title">Lentes oftalmicas DIMS HALT DOT</div>
+        <div class="pp-meta">Generado con NotebookLM - 2 expertos discutiendo</div>
+      </div>
+    </div>
+    <audio controls preload="none" class="pp-audio">
+      <source src="audio/lentes-oftalmicas.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </div>
 
   <p class="lead-p">Las lentes oftalmicas de control de miopia son hoy la modalidad mas segura, accesible y aceptable para el manejo en poblacion pediatrica latinoamericana.</p>
 
@@ -213,6 +244,46 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
         <tr><td><strong>DOT - SightGlass</strong></td><td>-0.13 mm en 36m / -0.05 mm en 48m</td><td>CYPRESS Trial (Laughton et al., 2024)</td></tr>
       </tbody>
     </table>
+  </div>
+
+  <div class="svg-fig">
+    <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparativa eficacia lentes oftalmicas">
+      <text x="320" y="28" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="16" fill="#0A2540">REDUCCION DE ELONGACION AXIAL A 24 MESES</text>
+      <text x="320" y="48" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Datos de RCTs de cada tecnologia (mm de AXL menos que controles con monofocales)</text>
+      <line x1="100" y1="80" x2="100" y2="290" stroke="#E5EAEF" stroke-width="1.5"/>
+      <line x1="100" y1="290" x2="610" y2="290" stroke="#E5EAEF" stroke-width="1.5"/>
+      <line x1="100" y1="80" x2="610" y2="80" stroke="#F0F3F6" stroke-width="1" stroke-dasharray="2,3"/>
+      <line x1="100" y1="150" x2="610" y2="150" stroke="#F0F3F6" stroke-width="1" stroke-dasharray="2,3"/>
+      <line x1="100" y1="220" x2="610" y2="220" stroke="#F0F3F6" stroke-width="1" stroke-dasharray="2,3"/>
+      <text x="92" y="85" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#8B9DAA">0.40 mm</text>
+      <text x="92" y="155" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#8B9DAA">0.30 mm</text>
+      <text x="92" y="225" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#8B9DAA">0.20 mm</text>
+      <text x="92" y="294" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#8B9DAA">0 mm</text>
+      <rect x="160" y="143" width="100" height="147" fill="#2EAA4A" rx="6"/>
+      <rect x="160" y="143" width="100" height="147" fill="url(#g1)" rx="6"/>
+      <text x="210" y="133" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="22" fill="#1A3347">0.21 mm</text>
+      <text x="210" y="312" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="15" fill="#1A3347">DIMS</text>
+      <text x="210" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">MiYOSMART (Hoya)</text>
+      <text x="210" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#2EAA4A" font-weight="600">~62% eficacia</text>
+      <rect x="285" y="59" width="100" height="231" fill="#0077C8" rx="6"/>
+      <rect x="285" y="59" width="100" height="231" fill="url(#g2)" rx="6"/>
+      <text x="335" y="49" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="22" fill="#1A3347">0.33 mm</text>
+      <text x="335" y="312" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="15" fill="#1A3347">HALT</text>
+      <text x="335" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Stellest (Essilor)</text>
+      <text x="335" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0077C8" font-weight="600">~60-67% eficacia</text>
+      <rect x="410" y="143" width="100" height="147" fill="#F5C518" rx="6"/>
+      <rect x="410" y="143" width="100" height="147" fill="url(#g3)" rx="6"/>
+      <text x="460" y="133" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="22" fill="#1A3347">0.21 mm</text>
+      <text x="460" y="312" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="15" fill="#1A3347">DOT</text>
+      <text x="460" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">SightGlass/MiSight</text>
+      <text x="460" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#C9A200" font-weight="600">59% con &lt;0.5D</text>
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fff" stop-opacity="0.25"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fff" stop-opacity="0.25"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fff" stop-opacity="0.25"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      </defs>
+    </svg>
+    <div class="svg-caption">Las tres tecnologias muestran eficacia clinicamente relevante. HALT tiene la mayor reduccion absoluta en AXL; DIMS y DOT comparten ~0.21 mm con perfiles de evidencia distintos.</div>
   </div>
 
   <div class="callout"><strong>Nota clinica:</strong> Las tres tecnologias muestran eficacia comparable en la reduccion de progresion miopica. La eleccion depende de disponibilidad regional, costo, edad del paciente y preferencias estilo de vida de la familia.</div>

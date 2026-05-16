@@ -1,0 +1,93 @@
+ATROPINA EN BAJA CONCENTRACION PARA EL CONTROL DE MIOPIA: PROTOCOLO PARA LATAM
+
+Autor: MML Editorial - Grupo Manejo Miopia Latam - 2026
+
+==========================================================
+INTRODUCCION
+==========================================================
+
+La atropina en concentraciones subterapeuticas se ha convertido en una de las intervenciones farmacologicas mas estudiadas para el control de la progresion miopica en niños. A diferencia de la atropina al 1% utilizada historicamente para cicloplejia, las formulaciones de baja concentracion (0.01% a 0.05%) han demostrado eficacia en la reduccion de la progresion axial con un perfil de efectos adversos significativamente menor.
+
+En Latinoamerica, el uso de atropina para control de miopia enfrenta un desafio particular: la mayoria de las concentraciones de baja dosis no estan disponibles comercialmente y requieren formulacion magistral.
+
+==========================================================
+1. MECANISMO DE ACCION
+==========================================================
+
+El mecanismo exacto por el cual la atropina frena la progresion miopica no esta completamente dilucidado. Las hipotesis mas aceptadas:
+
+- Bloqueo de receptores muscarinicos M1 y M4 en la retina, que modulan el crecimiento axial mediante señalizacion dopaminergica
+- Accion directa sobre la esclerotica, reduciendo la actividad de las metaloproteinasas de matriz
+- Efecto sobre celulas de Muller y celulas ganglionares de la retina
+- Posible accion sobre receptores muscarinicos del cuerpo ciliar (menos relevante en concentraciones bajas)
+
+==========================================================
+2. EVIDENCIA CLINICA - ESTUDIOS ATOM Y LAMP
+==========================================================
+
+ATOM1 (2006):
+Atropina 1% reduce progresion en 77% vs placebo. Alta eficacia pero efecto rebote significativo al suspender.
+
+ATOM2 (2012):
+Comparacion 0.5%, 0.1% y 0.01%. La concentracion 0.01% mostro menor efecto rebote y mejor perfil de seguridad.
+
+LAMP (2019):
+Atropina 0.05% supero a 0.025% y 0.01% en eficacia sin diferencias significativas en efectos adversos.
+
+LAMP2 (2021):
+Escalada de dosis desde 0.01% a 0.05% en no respondedores resulto en mayor control de progresion.
+
+==========================================================
+3. PROTOCOLO DE USO EN LATAM (5 PASOS)
+==========================================================
+
+Paso 1 - Concentracion de inicio:
+Iniciar con atropina 0.025% como balance entre eficacia y seguridad. En progresion rapida considerar inicio con 0.05%.
+
+Paso 2 - Posologia:
+Una gota en cada ojo, una vez al dia, preferiblemente al acostarse para minimizar efecto sobre la acomodacion y fotofobia.
+
+Paso 3 - Formulacion magistral:
+En LATAM la formulacion debe realizarse en farmacia magistral especializada. Verificar osmolaridad (280-320 mOsm/L) y pH (6.5-7.5).
+
+Paso 4 - Duracion del tratamiento:
+Minimo 2 años de tratamiento continuo. La suspension abrupta puede generar efecto rebote. Reduccion gradual: 0.05% a 0.025% a 0.01% en intervalos de 6 meses.
+
+Paso 5 - Combinacion con otros tratamientos:
+La atropina puede combinarse con Orto-K o lentes de contacto especiales. La combinacion ha mostrado mayor eficacia que cualquier tratamiento aislado.
+
+==========================================================
+4. EFECTOS ADVERSOS Y MANEJO
+==========================================================
+
+- Midriasis leve (frecuente): uso de lentes de sol. Bien tolerada con concentraciones bajas
+- Fotofobia (moderada): administracion nocturna, lentes fotocromaticos. Rara con 0.01%
+- Dificultad vision cercana (leve con dosis bajas): no requiere correccion adicional con 0.025% o 0.01%
+- Efecto rebote al suspender (variable): reduccion gradual de la dosis
+- Reaccion alergica conjuntival (poco frecuente): cambio de formulacion o vehiculo
+- Toxicidad sistemica (muy rara): tecnica de oclusion punctal post-instilacion
+
+==========================================================
+5. SEGUIMIENTO Y MONITOREO
+==========================================================
+
+1 mes: Tolerancia, AV, biomicroscopia corneal, ajuste de dosis si necesario
+3 meses: Refraccion bajo cicloplejia, efectos adversos, control de adherencia, topografia si aplica
+6 meses: Biometria ocular (AL), evaluacion de progresion, decision de escalar o mantener, renovacion de formulacion
+
+==========================================================
+CONCLUSION CLINICA
+==========================================================
+
+La atropina en baja concentracion es una herramienta terapeutica valiosa para el control de miopia en poblacion pediatrica latinoamericana. La concentracion de 0.025% representa un buen punto de partida, con posibilidad de escalada a 0.05% en casos de progresion rapida. Su implementacion requiere acceso a formulacion magistral confiable, educacion adecuada a la familia y seguimiento riguroso.
+
+==========================================================
+REFERENCIAS
+==========================================================
+
+- Chua WH, et al. ATOM1. Ophthalmology 2006
+- Chia A, et al. ATOM2. Ophthalmology 2012
+- Yam JC, et al. LAMP Study. Ophthalmology 2019
+- Yam JC, et al. LAMP2. Ophthalmology 2020
+- Polling JR, et al. Atropine in Europeans. Eye 2016
+- IMI Management Guidelines. IOVS 2023
