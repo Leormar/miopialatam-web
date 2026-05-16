@@ -22,11 +22,14 @@ body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-fon
 nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;text-decoration:none}
 .logo img{height:88px;width:auto;display:block}
-.nav-links{display:flex;gap:2.2rem;align-items:center}
-.nav-links a{font-size:0.82rem;color:var(--mu);text-decoration:none;font-weight:500;letter-spacing:0.01em;position:relative;padding:6px 0;transition:color .2s}
-.nav-links a:hover{color:var(--ink)}
-.nav-links a.active{color:var(--ink);font-weight:600}
-.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--az);border-radius:2px}
+.nav-links{display:flex;gap:4px;align-items:center;background:rgba(245,247,250,0.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:999px;padding:6px;position:relative;overflow:hidden}
+.nav-links::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(245,197,24,0.14) 20%,rgba(46,170,74,0.14) 40%,rgba(0,119,200,0.14) 60%,rgba(212,43,43,0.14) 80%,transparent 100%);background-size:200% 100%;animation:aladino 10s linear infinite;pointer-events:none;border-radius:999px;z-index:0}
+@keyframes aladino{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--mu);text-decoration:none;position:relative;padding:10px 20px;border-radius:999px;transition:all .3s cubic-bezier(.4,0,.2,1);white-space:nowrap;z-index:2}
+.nav-links a:hover{color:var(--ink);background:rgba(255,255,255,0.95);box-shadow:0 4px 14px rgba(10,37,64,0.08)}
+.nav-links a.active{color:#fff;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);box-shadow:0 6px 20px rgba(0,119,200,0.4);overflow:hidden;font-weight:700}
+.nav-links a.active::after{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:shineActive 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes shineActive{0%{background-position:200% 0}100%{background-position:-200% 0}}
 .btn-primary{background:var(--ink);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
 .btn-primary:hover{background:var(--az);transform:translateY(-1px);box-shadow:var(--shadow-md)}
 .btn-primary::after{content:'\2192';transition:transform .2s}
@@ -104,6 +107,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 .footer-stripes{display:flex;gap:4px}
 .footer-stripes div{width:24px;height:4px;border-radius:2px}
 
+@media(max-width:1180px){.nav-links a{font-size:0.95rem;padding:9px 16px}}
 @media(max-width:980px){
   nav{padding:0 1.5rem;height:88px}.logo img{height:64px}.nav-links{display:none}
   .prod{grid-template-columns:1fr;gap:1.5rem}
