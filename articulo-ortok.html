@@ -4,60 +4,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Orto-K en ninos - MML</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--txt:#1A3347;--mu:#6B8A9A;--bd:#E2EAF0;--bg:#F7F9FB}
-body{font-family:'Barlow',sans-serif;color:var(--txt);background:#fff}
-.topbar{display:flex;height:5px}
-.topbar div{flex:1}
-nav{background:#fff;border-bottom:2px solid var(--bd);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:80px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo img{height:72px;width:auto;display:block}
-.logo-stripes{display:flex;gap:3px}
-.logo-stripes div{width:7px;height:34px;border-radius:3px}
-.logo-text strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.92rem;text-transform:uppercase;color:var(--txt)}
-.logo-text span{font-size:0.58rem;color:var(--mu)}
-.back{font-size:0.78rem;color:var(--mu);text-decoration:none}
-.hero-art{background:linear-gradient(160deg,#EAF4FB,#fff);padding:3.5rem 2rem;border-bottom:1px solid var(--bd)}
-.hero-inner{max-width:780px;margin:0 auto}
-.art-tag{font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:20px;background:#EAF4FB;color:#0D47A1;display:inline-block;margin-bottom:1rem}
-h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.2rem;line-height:1.1;color:var(--txt);margin-bottom:1rem}
-.art-desc{font-size:1rem;color:var(--mu);line-height:1.7;margin-bottom:1rem}
-.art-meta{font-size:0.75rem;color:var(--mu)}
-.art-body{max-width:780px;margin:0 auto;padding:3rem 2rem}
-p{font-size:0.97rem;line-height:1.8;margin-bottom:1.5rem}
-.sec-head{border-left:4px solid var(--az);padding-left:1.2rem;margin-bottom:1.5rem}
-.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.3rem;text-transform:uppercase;color:var(--txt)}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}.topbar div{flex:1}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.back{font-size:0.84rem;color:var(--mu);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:500;transition:color .2s}
+.back:hover{color:var(--ink)}
+.back::before{content:'\2190'}
+
+.hero-art{background:linear-gradient(180deg,#EAF4FB 0%,#FAFCFE 100%);padding:5rem 2rem 4rem;position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-art::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:820px;margin:0 auto;position:relative;z-index:2}
+.art-tag{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;padding:5px 14px;border-radius:999px;background:#fff;color:var(--az);border:1px solid #C8E0F5;display:inline-block;margin-bottom:1.3rem}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3rem);line-height:1.05;color:var(--ink);margin-bottom:1.2rem;letter-spacing:-0.025em;text-transform:uppercase}
+.art-desc{font-size:1.1rem;color:var(--mu);line-height:1.6;margin-bottom:1.5rem;font-weight:400;max-width:680px}
+.art-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.82rem;color:var(--soft);font-weight:500}
+.art-meta span{display:inline-flex;align-items:center;gap:6px}
+.art-meta span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--az)}
+
+.art-body{max-width:740px;margin:0 auto;padding:4rem 2rem}
+.art-body p{font-family:'Source Serif 4','Georgia',serif;font-size:1.08rem;line-height:1.8;margin-bottom:1.5rem;color:var(--txt)}
+.lead-p{font-size:1.2rem !important;color:var(--ink) !important;font-weight:500}
+
+.sec-head{margin:3rem 0 1.5rem;padding-left:1.2rem;border-left:3px solid var(--az)}
+.sec-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.55rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.015em;line-height:1.1}
 .sec-head-ve{border-left-color:var(--ve)}
 .sec-head-am{border-left-color:var(--am)}
 .sec-head-ro{border-left-color:var(--ro)}
-.list-box{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:1.3rem;margin-bottom:2rem}
-.list-item{display:flex;gap:10px;margin-bottom:0.6rem;font-size:0.88rem;color:var(--txt);line-height:1.6}
-.list-dot{color:var(--az);font-weight:700;flex-shrink:0}
-.step{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:1.2rem;margin-bottom:0.75rem;display:flex;gap:1rem}
-.step-n{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--bd);flex-shrink:0;line-height:1}
-.step-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.3rem}
-.step-desc{font-size:0.85rem;color:var(--mu);line-height:1.65}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
-.period-box{background:#FFF8E1;border:1px solid var(--am);border-radius:10px;padding:1rem}
-.period-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;text-transform:uppercase;color:#7A5A00;margin-bottom:0.3rem}
-.period-desc{font-size:0.82rem;color:var(--txt);line-height:1.55}
-.latam-box{background:#FDECEA;border:1px solid #FFCDD2;border-radius:10px;padding:1rem;margin-bottom:0.75rem}
-.latam-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;color:#B71C1C;margin-bottom:0.3rem}
-.latam-desc{font-size:0.85rem;color:var(--txt);line-height:1.65}
-.conclusion{background:linear-gradient(135deg,#EAF4FB,#E8F5E9);border:1px solid var(--bd);border-radius:14px;padding:1.8rem;margin:2rem 0}
-.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.1rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.6rem}
-.refs{border-top:1px solid var(--bd);padding-top:1.5rem;margin-top:1rem}
-.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--mu);margin-bottom:0.8rem}
-.ref{font-size:0.75rem;color:var(--mu);margin-bottom:0.4rem;padding-left:1rem;border-left:2px solid var(--bd);line-height:1.5}
-.nav-art{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem}
-.btn-az{background:var(--az);color:#fff;padding:0.6rem 1.2rem;border-radius:8px;font-size:0.82rem;font-weight:600;text-decoration:none}
-.btn-link{font-size:0.82rem;color:var(--az);text-decoration:none;font-weight:600}
-footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3rem}
-.footer-color{display:flex;height:3px;border-radius:2px;overflow:hidden;max-width:200px;margin:0 auto 1rem}
-.footer-color div{flex:1}
-.footer-copy{font-size:0.7rem;color:rgba(255,255,255,0.4)}
+
+.list-box{background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:1.6rem 1.8rem;margin-bottom:2.5rem}
+.list-item{display:flex;gap:14px;margin-bottom:0.8rem;font-size:0.95rem;color:var(--txt);line-height:1.65;font-family:'Inter',sans-serif}
+.list-item:last-child{margin-bottom:0}
+.list-dot{width:5px;height:5px;border-radius:50%;background:var(--az);margin-top:11px;flex-shrink:0}
+
+.step{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:1.5rem 1.6rem;margin-bottom:0.8rem;display:flex;gap:1.3rem;transition:all .25s;font-family:'Inter',sans-serif}
+.step:hover{border-color:var(--bd);box-shadow:var(--shadow-md);transform:translateX(4px)}
+.step-n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2rem;color:var(--az);flex-shrink:0;line-height:1;letter-spacing:-0.02em;opacity:0.3}
+.step-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.35rem;letter-spacing:-0.01em}
+.step-desc{font-size:0.92rem;color:var(--mu);line-height:1.65;font-family:'Inter',sans-serif}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2.5rem}
+.period-box{background:linear-gradient(135deg,#FFF8E1,#FFFDF0);border:1px solid #FFE082;border-radius:14px;padding:1.2rem 1.3rem}
+.period-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.92rem;text-transform:uppercase;color:#6B5200;margin-bottom:0.4rem;letter-spacing:-0.01em}
+.period-desc{font-size:0.88rem;color:var(--txt);line-height:1.6;font-family:'Inter',sans-serif}
+
+.latam-box{background:#fff;border:1px solid var(--bd);border-left:3px solid var(--ro);border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:0.8rem}
+.latam-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.98rem;text-transform:uppercase;color:var(--ro);margin-bottom:0.4rem;letter-spacing:-0.01em}
+.latam-desc{font-size:0.92rem;color:var(--txt);line-height:1.65;font-family:'Inter',sans-serif}
+
+.conclusion{background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);border-radius:20px;padding:2.2rem;margin:2.5rem 0;color:#fff;position:relative;overflow:hidden}
+.conclusion::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(0,119,200,0.3),transparent 60%)}
+.conclusion-inner{position:relative;z-index:2}
+.conclusion-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:#fff;margin-bottom:0.8rem;letter-spacing:-0.01em}
+.conclusion p{color:rgba(255,255,255,0.85) !important;margin-bottom:0;font-family:'Inter',sans-serif !important;font-size:1rem !important;line-height:1.7 !important}
+
+.refs{border-top:1px solid var(--bd);padding-top:1.8rem;margin-top:3rem}
+.refs-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.18em;color:var(--soft);margin-bottom:1rem}
+.ref{font-size:0.82rem;color:var(--mu);margin-bottom:0.6rem;padding-left:1rem;border-left:2px solid var(--bd-soft);line-height:1.55;font-family:'Inter',sans-serif}
+
+.nav-art{display:flex;justify-content:space-between;margin-top:3.5rem;padding-top:1.8rem;border-top:1px solid var(--bd);flex-wrap:wrap;gap:1rem;align-items:center}
+.btn-az{background:var(--ink);color:#fff;padding:0.8rem 1.6rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;font-family:'Inter',sans-serif}
+.btn-az:hover{background:var(--az);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-az::after{content:'\2192';transition:transform .2s}
+.btn-az:hover::after{transform:translateX(3px)}
+.btn-link{font-size:0.9rem;color:var(--mu);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .2s;font-family:'Inter',sans-serif}
+.btn-link::before{content:'\2190'}
+.btn-link:hover{color:var(--ink)}
+
+footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase}
+.footer-brand p{font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.2rem}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.4)}
+
+@media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}.art-body{padding:2.5rem 1.5rem}}
 </style>
 </head>
 <body>
@@ -70,48 +106,45 @@ footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3r
 </div>
 
 <nav>
-  <a href="index.html" class="logo">
-    <img src="logo-mml.png" alt="MML">
-    <div class="logo-text">
-      <strong>Grupo Manejo Miopia Latam</strong>
-      <span>miopialatam.org</span>
-    </div>
-  </a>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
   <a href="articulos.html" class="back">Volver a articulos</a>
 </nav>
 
-<div class="hero-art">
+<section class="hero-art">
   <div class="hero-inner">
-    <span class="art-tag">Clinico</span>
+    <span class="art-tag">Articulo clinico - Orto-K</span>
     <h1>Orto-K en ninos de 6 a 12 anos: protocolo de adaptacion y seguimiento en LATAM</h1>
     <p class="art-desc">Guia practica para la adaptacion de lentes de ortoqueratologia en poblacion pediatrica latinoamericana, considerando factores anatomicos, culturales y de adherencia al tratamiento.</p>
-    <div class="art-meta">MML Editorial - Mayo 2026 - 8 min de lectura - Enfoque latinoamericano</div>
+    <div class="art-meta">
+      <span>MML Editorial</span>
+      <span>Mayo 2026</span>
+      <span>8 min de lectura</span>
+      <span>Enfoque latinoamericano</span>
+    </div>
   </div>
-</div>
+</section>
 
 <div class="art-body">
 
-  <p>La ortoqueratologia (Orto-K) se ha consolidado como una de las intervenciones mas efectivas para el control de miopia en ninos. Su mecanismo de accion, basado en el remodelado temporal de la cornea mediante lentes rigidos de uso nocturno, permite que el nino tenga vision nitida durante el dia sin necesidad de correccion optica convencional, al tiempo que frena la progresion axial del ojo miope.</p>
+  <p class="lead-p">La ortoqueratologia (Orto-K) se ha consolidado como una de las intervenciones mas efectivas para el control de miopia en ninos.</p>
 
-  <p style="color:var(--mu)">En Latinoamerica, la implementacion de Orto-K enfrenta desafios particulares: variabilidad en el acceso a topografos corneales de alta resolucion, diferencias en los sistemas de salud, y barreras culturales frente al uso de lentes de contacto en ninos pequenos. Esta guia busca orientar al clinico latinoamericano en la seleccion, adaptacion y seguimiento de pacientes pediatricos con Orto-K.</p>
+  <p>Su mecanismo de accion, basado en el remodelado temporal de la cornea mediante lentes rigidos de uso nocturno, permite que el nino tenga vision nitida durante el dia sin necesidad de correccion optica convencional, al tiempo que frena la progresion axial del ojo miope.</p>
 
-  <div class="sec-head">
-    <h2>1. Criterios de seleccion del paciente</h2>
-  </div>
+  <p>En Latinoamerica, la implementacion de Orto-K enfrenta desafios particulares: variabilidad en el acceso a topografos corneales de alta resolucion, diferencias en los sistemas de salud, y barreras culturales frente al uso de lentes de contacto en ninos pequenos. Esta guia busca orientar al clinico latinoamericano en la seleccion, adaptacion y seguimiento de pacientes pediatricos con Orto-K.</p>
+
+  <div class="sec-head"><h2>1. Criterios de seleccion del paciente</h2></div>
   <p>La seleccion adecuada del paciente es el factor mas determinante en el exito del tratamiento. Los criterios de inclusion recomendados para poblacion pediatrica en LATAM son:</p>
   <div class="list-box">
-    <div class="list-item"><span class="list-dot">-</span>Miopia entre -0.75 y -6.00 D, con astigmatismo no mayor a -1.75 D</div>
-    <div class="list-item"><span class="list-dot">-</span>Edad minima recomendada: 6 anos, con madurez suficiente para el manejo del lente</div>
-    <div class="list-item"><span class="list-dot">-</span>Cornea con e-value entre 0.3 y 0.6 (topografia corneal previa obligatoria)</div>
-    <div class="list-item"><span class="list-dot">-</span>Ausencia de patologia corneal activa (queratocono, distrofias, cicatrices)</div>
-    <div class="list-item"><span class="list-dot">-</span>Entorno familiar que garantice la supervision del uso nocturno y la higiene</div>
-    <div class="list-item"><span class="list-dot">-</span>Motivacion del paciente y comprension del tratamiento por parte de los padres</div>
+    <div class="list-item"><span class="list-dot"></span>Miopia entre -0.75 y -6.00 D, con astigmatismo no mayor a -1.75 D</div>
+    <div class="list-item"><span class="list-dot"></span>Edad minima recomendada: 6 anos, con madurez suficiente para el manejo del lente</div>
+    <div class="list-item"><span class="list-dot"></span>Cornea con e-value entre 0.3 y 0.6 (topografia corneal previa obligatoria)</div>
+    <div class="list-item"><span class="list-dot"></span>Ausencia de patologia corneal activa (queratocono, distrofias, cicatrices)</div>
+    <div class="list-item"><span class="list-dot"></span>Entorno familiar que garantice la supervision del uso nocturno y la higiene</div>
+    <div class="list-item"><span class="list-dot"></span>Motivacion del paciente y comprension del tratamiento por parte de los padres</div>
   </div>
-  <p style="color:var(--mu)">En la practica clinica latinoamericana, la edad de inicio tiende a ser mayor que en estudios asiaticos, debido a barreras de acceso y a la percepcion cultural de que los ninos pequenos no pueden manejar lentes de contacto. Sin embargo, la evidencia actual respalda el inicio temprano como factor protector para reducir la carga miopica acumulada.</p>
+  <p>En la practica clinica latinoamericana, la edad de inicio tiende a ser mayor que en estudios asiaticos, debido a barreras de acceso y a la percepcion cultural de que los ninos pequenos no pueden manejar lentes de contacto. Sin embargo, la evidencia actual respalda el inicio temprano como factor protector para reducir la carga miopica acumulada.</p>
 
-  <div class="sec-head sec-head-ve">
-    <h2>2. Protocolo de adaptacion</h2>
-  </div>
+  <div class="sec-head sec-head-ve"><h2>2. Protocolo de adaptacion</h2></div>
   <p>El proceso de adaptacion de Orto-K en ninos requiere un protocolo estructurado que contemple las particularidades de la cornea pediatrica y la curva de aprendizaje del manejo del lente:</p>
 
   <div class="step"><div class="step-n">01</div><div><div class="step-title">Topografia corneal basal</div><div class="step-desc">Mapa topografico completo con software de simulacion de lente. Se recomienda topografo Placido con minimo 8.000 puntos de medicion. El mapa de elevacion anterior es fundamental para el diseno del lente.</div></div></div>
@@ -121,11 +154,7 @@ footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3r
   <div class="step"><div class="step-n">05</div><div><div class="step-title">Control a la semana</div><div class="step-desc">Evaluacion completa: topografia, AV, biomicroscopia corneal y adaptacion del lente. Se realizan ajustes si el patron topografico es excentrico o asimetrico.</div></div></div>
   <div class="step"><div class="step-n">06</div><div><div class="step-title">Control al mes</div><div class="step-desc">Estabilizacion esperada del efecto. Se evalua la duracion del efecto refractivo y se ajusta el protocolo si es necesario.</div></div></div>
 
-  <div style="margin-bottom:2rem"></div>
-
-  <div class="sec-head sec-head-am">
-    <h2>3. Seguimiento a largo plazo</h2>
-  </div>
+  <div class="sec-head sec-head-am" style="margin-top:3rem"><h2>3. Seguimiento a largo plazo</h2></div>
   <p>Una vez estabilizado el tratamiento, el protocolo de seguimiento recomendado en la practica clinica latinoamericana es:</p>
   <div class="grid2">
     <div class="period-box"><div class="period-title">Cada 3 meses</div><div class="period-desc">Topografia corneal, AV sin correccion, evaluacion del lente y refraccion bajo cicloplejia</div></div>
@@ -134,17 +163,17 @@ footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3r
     <div class="period-box"><div class="period-title">En cualquier visita</div><div class="period-desc">Ante signos de abrasion corneal, tincion mayor a grado 2 o dolor, suspender el lente y tratar</div></div>
   </div>
 
-  <div class="sec-head sec-head-ro">
-    <h2>4. Consideraciones para LATAM</h2>
-  </div>
+  <div class="sec-head sec-head-ro"><h2>4. Consideraciones para LATAM</h2></div>
   <div class="latam-box"><div class="latam-title">Acceso a equipamiento</div><div class="latam-desc">No todos los centros cuentan con topografo de alta resolucion. Se puede trabajar con queratometria convencional y lentes de prueba, aunque se pierde precision en el diseno. Se recomienda la derivacion a centros especializados cuando sea posible.</div></div>
   <div class="latam-box"><div class="latam-title">Adherencia y cultura</div><div class="latam-desc">La percepcion de riesgo de los padres frente al uso nocturno de lentes es una barrera frecuente. La educacion al paciente y familia es tan importante como la adaptacion tecnica. Se recomienda entregar material escrito en lenguaje sencillo.</div></div>
   <div class="latam-box"><div class="latam-title">Costo y acceso</div><div class="latam-desc">El costo del tratamiento puede ser una barrera significativa. El costo-beneficio a largo plazo (menor progresion, menor riesgo de complicaciones) debe ser parte de la conversacion con la familia.</div></div>
   <div class="latam-box"><div class="latam-title">Clima y humedad</div><div class="latam-desc">En regiones tropicales, la humedad ambiental alta puede afectar el confort del lente. Se recomienda lubricacion adicional al insertar el lente en climas muy humedos.</div></div>
 
   <div class="conclusion">
-    <div class="conclusion-title">Conclusion clinica</div>
-    <p style="margin-bottom:0">La ortoqueratologia es una herramienta eficaz y segura para el control de miopia en ninos latinoamericanos cuando se implementa con un protocolo estructurado, seleccion adecuada del paciente y seguimiento riguroso. La clave del exito en LATAM esta en adaptar el protocolo a la realidad del paciente: sus recursos, su entorno familiar y su contexto clinico. La comunicacion con la familia y la educacion del nino son parte fundamental del tratamiento.</p>
+    <div class="conclusion-inner">
+      <div class="conclusion-title">Conclusion clinica</div>
+      <p>La ortoqueratologia es una herramienta eficaz y segura para el control de miopia en ninos latinoamericanos cuando se implementa con un protocolo estructurado, seleccion adecuada del paciente y seguimiento riguroso. La clave del exito en LATAM esta en adaptar el protocolo a la realidad del paciente: sus recursos, su entorno familiar y su contexto clinico. La comunicacion con la familia y la educacion del nino son parte fundamental del tratamiento.</p>
+    </div>
   </div>
 
   <div class="refs">
@@ -166,13 +195,19 @@ footer{background:var(--txt);padding:1.5rem 2rem;text-align:center;margin-top:3r
 </div>
 
 <footer>
-  <div class="footer-color">
-    <div style="background:#F5C518"></div>
-    <div style="background:#2EAA4A"></div>
-    <div style="background:#0077C8"></div>
-    <div style="background:#D42B2B"></div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopia Latam</h4>
+      <p>miopialatam.org - Red internacional de especialistas</p>
+    </div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
   </div>
-  <div class="footer-copy">2026 Grupo Manejo Miopia Latam - miopialatam.org</div>
+  <div class="footer-bottom"><div class="footer-copy">2026 MML - Todos los derechos reservados</div></div>
 </footer>
 
 </body>

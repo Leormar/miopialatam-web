@@ -4,66 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Investigacion - MML</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--txt:#1A3347;--mu:#6B8A9A;--bd:#E2EAF0;--bg:#F7F9FB}
-body{font-family:'Barlow',sans-serif;color:var(--txt);background:#fff}
-.topbar{display:flex;height:5px}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+  --shadow-lg:0 12px 40px rgba(10,37,64,0.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.topbar{display:flex;height:4px}
 .topbar div{flex:1}
-nav{background:#fff;border-bottom:2px solid var(--bd);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:80px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo img{height:72px;width:auto;display:block}
-.logo-stripes{display:flex;gap:3px}
-.logo-stripes div{width:7px;height:34px;border-radius:3px}
-.logo-text strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.92rem;text-transform:uppercase;color:var(--txt)}
-.logo-text span{font-size:0.58rem;color:var(--mu)}
-.nav-links{display:flex;gap:1.5rem}
-.nav-links a{font-size:0.82rem;color:var(--mu);text-decoration:none;font-weight:500}
-.nav-links a:hover{color:var(--az)}
-.btn-primary{background:var(--az);color:#fff;padding:0.42rem 1rem;border-radius:6px;font-size:0.78rem;font-weight:600;text-decoration:none}
-.hero-sec{background:linear-gradient(160deg,#E8F5E9,#EAF4FB,#fff);padding:3.5rem 2rem;border-bottom:1px solid var(--bd);text-align:center}
-.sec-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.68rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--ve);margin-bottom:0.4rem}
-.sec-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.5rem}
-.sec-sub{font-size:0.9rem;color:var(--mu);line-height:1.7;max-width:560px;margin:0 auto 1.5rem}
-.btn-ve{background:var(--ve);color:#fff;padding:0.75rem 1.5rem;border-radius:8px;font-size:0.88rem;font-weight:600;text-decoration:none;display:inline-block}
-.content{max-width:1100px;margin:0 auto;padding:3rem 2rem}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:3rem}
-.stat-card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:1.3rem;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
-.stat-n{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.5rem;letter-spacing:-1px;margin-bottom:0.3rem}
-.stat-l{font-size:0.78rem;font-weight:600;color:var(--txt);margin-bottom:0.2rem}
-.stat-s{font-size:0.7rem;color:var(--mu);line-height:1.4}
-.sub-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--ve);margin-bottom:0.4rem}
-.sub-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.5rem}
-.sub-desc{font-size:0.9rem;color:var(--mu);line-height:1.65;max-width:500px;margin-bottom:1.5rem}
-.estudios{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:3rem}
-.estudio{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:1.3rem;display:flex;gap:1rem}
-.est-ico{width:54px;height:54px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1rem;color:#fff;flex-shrink:0}
-.est-tags{display:flex;gap:6px;margin-bottom:0.5rem;flex-wrap:wrap}
-.est-tag{font-size:0.6rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 8px;border-radius:20px}
-.est-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.92rem;color:var(--txt);line-height:1.3;margin-bottom:0.4rem}
-.est-desc{font-size:0.72rem;color:var(--mu);line-height:1.5;margin-bottom:0.5rem}
-.est-meta{font-size:0.65rem;color:var(--mu)}
-hr{border:none;border-top:1px solid var(--bd);margin:2rem 0}
-.lineas{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:3rem}
-.linea{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:1.3rem}
-.linea-ico{font-size:1.8rem;margin-bottom:0.6rem}
-.linea-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;color:var(--txt);margin-bottom:0.4rem}
-.linea-desc{font-size:0.78rem;color:var(--mu);line-height:1.6}
-.cta-sec{background:linear-gradient(135deg,var(--txt),var(--ve));padding:3.5rem 2rem;text-align:center;color:#fff}
-.cta-sec h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;text-transform:uppercase;letter-spacing:-0.5px;margin-bottom:0.5rem}
-.cta-sec p{font-size:0.9rem;opacity:0.85;max-width:480px;margin:0 auto 1.5rem;line-height:1.65}
-.cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn-white{background:#fff;color:var(--txt);padding:0.75rem 1.5rem;border-radius:8px;font-size:0.88rem;font-weight:600;text-decoration:none;display:inline-block}
-.btn-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.5);padding:0.75rem 1.5rem;border-radius:8px;font-size:0.88rem;font-weight:500;text-decoration:none;display:inline-block}
-footer{background:var(--txt);padding:2rem}
-.footer-color{display:flex;height:3px;border-radius:2px;overflow:hidden;max-width:1100px;margin:0 auto 1.5rem}
-.footer-color div{flex:1}
-.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.footer-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1rem;color:#fff;text-transform:uppercase}
-.footer-links{display:flex;gap:1.5rem}
-.footer-links a{font-size:0.77rem;color:rgba(255,255,255,0.5);text-decoration:none}
-.footer-copy{font-size:0.65rem;color:rgba(255,255,255,0.25)}
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.nav-links{display:flex;gap:2.2rem;align-items:center}
+.nav-links a{font-size:0.82rem;color:var(--mu);text-decoration:none;font-weight:500;letter-spacing:0.01em;position:relative;padding:6px 0;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a.active{color:var(--ink);font-weight:600}
+.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--az);border-radius:2px}
+.btn-primary{background:var(--ink);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.btn-primary:hover{background:var(--az);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn-primary::after{content:'\2192';transition:transform .2s}
+.btn-primary:hover::after{transform:translateX(3px)}
+
+.hero-sec{padding:5rem 2rem 4.5rem;text-align:center;background:linear-gradient(180deg,#FAFCFE 0%,#fff 100%);position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
+.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--ve);margin-bottom:1rem}
+.kicker::before{content:'';width:24px;height:2px;background:var(--ve);border-radius:2px}
+.kicker.az{color:var(--az)}
+.kicker.az::before{background:var(--az)}
+h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.5vw,3.6rem);line-height:1;letter-spacing:-0.025em;color:var(--ink);text-transform:uppercase;margin-bottom:1rem}
+.hero-sec p.lead{font-size:1.05rem;color:var(--mu);line-height:1.65;max-width:600px;margin:0 auto 1.8rem}
+.btn-hero{background:var(--ink);color:#fff;border:none;padding:0.9rem 1.7rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.btn-hero:hover{background:var(--ve);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn-hero::after{content:'\2192';transition:transform .2s}
+.btn-hero:hover::after{transform:translateX(3px)}
+
+.content{max-width:1200px;margin:0 auto;padding:5rem 2rem}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-bottom:5rem}
+.stat-card{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:1.8rem 1.5rem;position:relative;overflow:hidden;transition:all .25s}
+.stat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:transparent}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--c)}
+.stat-n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:3.2rem;letter-spacing:-0.03em;margin-bottom:0.5rem;line-height:0.95}
+.stat-l{font-size:0.84rem;font-weight:600;color:var(--ink);margin-bottom:0.3rem}
+.stat-s{font-size:0.78rem;color:var(--mu);line-height:1.4}
+
+.section-head{margin-bottom:2.5rem;max-width:600px}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw,2.4rem);text-transform:uppercase;color:var(--ink);letter-spacing:-0.02em;line-height:1;margin-bottom:0.5rem}
+.section-sub{font-size:0.95rem;color:var(--mu);line-height:1.6}
+
+.estudios{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;margin-bottom:5rem}
+.estudio{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:1.8rem;display:flex;gap:1.3rem;transition:all .25s}
+.estudio:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:transparent}
+.est-ico{width:60px;height:60px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;flex-shrink:0}
+.est-tags{display:flex;gap:6px;margin-bottom:0.7rem;flex-wrap:wrap}
+.est-tag{font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:3px 9px;border-radius:999px}
+.est-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;color:var(--ink);line-height:1.15;margin-bottom:0.5rem;text-transform:uppercase;letter-spacing:-0.01em}
+.est-desc{font-size:0.85rem;color:var(--mu);line-height:1.55;margin-bottom:0.6rem}
+.est-meta{font-size:0.72rem;color:var(--soft);font-weight:500;padding-top:0.6rem;border-top:1px solid var(--bd-soft)}
+
+.divider{display:flex;align-items:center;gap:1.5rem;margin:0 0 3rem}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--bd)}
+.divider-text{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--soft)}
+
+.lineas{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:3rem}
+.linea{background:var(--bg);border:1px solid var(--bd);border-radius:18px;padding:1.7rem;position:relative;transition:all .25s}
+.linea:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);background:#fff}
+.linea-ico{width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.05rem;color:var(--az);margin-bottom:1rem}
+.linea-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.4rem;letter-spacing:-0.01em}
+.linea-desc{font-size:0.84rem;color:var(--mu);line-height:1.55}
+
+.cta-sec{padding:5rem 2rem;background:var(--ink);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(46,170,74,0.3),transparent 60%)}
+.cta-inner{position:relative;z-index:2;max-width:640px;margin:0 auto}
+.cta-sec h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2rem,3.5vw,3rem);text-transform:uppercase;letter-spacing:-0.025em;margin-bottom:1rem;line-height:1}
+.cta-sec p{font-size:1rem;color:rgba(255,255,255,0.75);max-width:480px;margin:0 auto 2rem;line-height:1.6}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{background:#fff;color:var(--ink);padding:0.9rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,255,255,0.2)}
+.btn-white::after{content:'\2192';transition:transform .2s}
+.btn-white:hover::after{transform:translateX(3px)}
+.btn-outline-w{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.3);padding:0.9rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,0.05)}
+
+footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2.5rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;margin-bottom:0.5rem}
+.footer-brand p{font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.6;max-width:300px}
+.footer-col h5{font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem;color:rgba(255,255,255,0.55)}
+.footer-col a{display:block;font-size:0.86rem;color:rgba(255,255,255,0.8);text-decoration:none;margin-bottom:0.6rem;transition:color .2s}
+.footer-col a:hover{color:var(--am)}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.45)}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+
+@media(max-width:980px){
+  nav{padding:0 1.5rem;height:88px}.logo img{height:64px}.nav-links{display:none}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .estudios{grid-template-columns:1fr}.lineas{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+}
+@media(max-width:640px){
+  .stats-grid,.lineas{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -76,16 +126,11 @@ footer{background:var(--txt);padding:2rem}
 </div>
 
 <nav>
-  <a href="index.html" class="logo">
-    <img src="logo-mml.png" alt="MML">
-    <div class="logo-text">
-      <strong>Grupo Manejo Miopia Latam</strong>
-      <span>miopialatam.org</span>
-    </div>
-  </a>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
   <div class="nav-links">
+    <a href="index.html">Inicio</a>
     <a href="articulos.html">Articulos</a>
-    <a href="investigacion.html" style="color:#0077C8;font-weight:600">Investigacion</a>
+    <a href="investigacion.html" class="active">Investigacion</a>
     <a href="productos.html">Productos</a>
     <a href="miembros.html">Nuestra Red</a>
     <a href="familias.html">Para Familias</a>
@@ -93,24 +138,29 @@ footer{background:var(--txt);padding:2rem}
   <a href="unirme.html" class="btn-primary">Unirme a MML</a>
 </nav>
 
-<div class="hero-sec">
-  <div class="sec-label">Area de investigacion</div>
-  <div class="sec-title">Investigacion MML</div>
-  <div class="sec-sub">Latinoamerica necesita investigacion propia en miopia. MML coordina y difunde estudios clinicos y epidemiologicos generados desde y para nuestra region.</div>
-  <a href="mailto:investigacion@miopialatam.org" class="btn-ve">Colaborar en investigacion</a>
-</div>
+<section class="hero-sec">
+  <div class="hero-inner">
+    <div class="kicker">Area de investigacion</div>
+    <h1 class="hero-title">Investigacion clinica<br>desde y para LATAM</h1>
+    <p class="lead">Latinoamerica necesita investigacion propia en miopia. MML coordina y difunde estudios clinicos y epidemiologicos generados por especialistas de la region.</p>
+    <a href="mailto:investigacion@miopialatam.org" class="btn-hero">Colaborar en investigacion</a>
+  </div>
+</section>
 
 <div class="content">
+
   <div class="stats-grid">
-    <div class="stat-card"><div class="stat-n" style="color:#F5C518">50%</div><div class="stat-l">Prevalencia proyectada</div><div class="stat-s">LATAM para el ano 2050</div></div>
-    <div class="stat-card"><div class="stat-n" style="color:#2EAA4A">6</div><div class="stat-l">Paises en la red</div><div class="stat-s">PR - CO - MX - US - ES - EC</div></div>
-    <div class="stat-card"><div class="stat-n" style="color:#0077C8">10x</div><div class="stat-l">Mayor riesgo</div><div class="stat-s">De complicaciones en alta miopia</div></div>
-    <div class="stat-card"><div class="stat-n" style="color:#D42B2B">8-12</div><div class="stat-l">Anos - Ventana critica</div><div class="stat-s">Para intervencion efectiva</div></div>
+    <div class="stat-card" style="--c:#F5C518"><div class="stat-n" style="color:#F5C518">50%</div><div class="stat-l">Prevalencia proyectada</div><div class="stat-s">LATAM para el ano 2050</div></div>
+    <div class="stat-card" style="--c:#2EAA4A"><div class="stat-n" style="color:#2EAA4A">6</div><div class="stat-l">Paises en la red</div><div class="stat-s">PR - CO - MX - US - ES - EC</div></div>
+    <div class="stat-card" style="--c:#0077C8"><div class="stat-n" style="color:#0077C8">10x</div><div class="stat-l">Mayor riesgo</div><div class="stat-s">De complicaciones en alta miopia</div></div>
+    <div class="stat-card" style="--c:#D42B2B"><div class="stat-n" style="color:#D42B2B">8-12</div><div class="stat-l">Anos - ventana critica</div><div class="stat-s">Para intervencion efectiva</div></div>
   </div>
 
-  <div class="sub-label">Produccion cientifica</div>
-  <div class="sub-title">Estudios MML</div>
-  <div class="sub-desc">Investigacion clinica y epidemiologica generada por los miembros de la red, con enfoque en la poblacion latinoamericana.</div>
+  <div class="section-head">
+    <div class="kicker">Produccion cientifica</div>
+    <h2 class="section-title">Estudios MML</h2>
+    <p class="section-sub">Investigacion clinica y epidemiologica generada por miembros de la red, con enfoque en poblacion latinoamericana.</p>
+  </div>
 
   <div class="estudios">
     <div class="estudio">
@@ -118,7 +168,7 @@ footer{background:var(--txt);padding:2rem}
       <div>
         <div class="est-tags">
           <span class="est-tag" style="background:#EAF4FB;color:#0D47A1">Epidemiologia</span>
-          <span class="est-tag" style="background:#FFF8E1;color:#92690A">En revision</span>
+          <span class="est-tag" style="background:#FFF6D8;color:#92690A">En revision</span>
         </div>
         <div class="est-title">Prevalencia de miopia en escolares colombianos: estudio multicentrico 2024</div>
         <div class="est-desc">Estudio de prevalencia en 1.200 escolares de 5 ciudades colombianas, evaluando factores de riesgo ambientales y geneticos.</div>
@@ -126,11 +176,11 @@ footer{background:var(--txt);padding:2rem}
       </div>
     </div>
     <div class="estudio">
-      <div class="est-ico" style="background:#E8F5E9;color:#2EAA4A">CL</div>
+      <div class="est-ico" style="background:#E6F7EB;color:#2EAA4A">CL</div>
       <div>
         <div class="est-tags">
-          <span class="est-tag" style="background:#E8F5E9;color:#1B5E20">Clinico</span>
-          <span class="est-tag" style="background:#E8F5E9;color:#1B5E20">Publicado</span>
+          <span class="est-tag" style="background:#E6F7EB;color:#1B5E20">Clinico</span>
+          <span class="est-tag" style="background:#E6F7EB;color:#1B5E20">Publicado</span>
         </div>
         <div class="est-title">Eficacia de Orto-K en poblacion latina: seguimiento a 24 meses</div>
         <div class="est-desc">Analisis retrospectivo de 340 pacientes tratados con ortoqueratologia en 4 paises latinoamericanos.</div>
@@ -150,10 +200,10 @@ footer{background:var(--txt);padding:2rem}
       </div>
     </div>
     <div class="estudio">
-      <div class="est-ico" style="background:#FFF8E1;color:#F57F17">BM</div>
+      <div class="est-ico" style="background:#FFF6D8;color:#F57F17">BM</div>
       <div>
         <div class="est-tags">
-          <span class="est-tag" style="background:#FFF8E1;color:#92690A">Biometria</span>
+          <span class="est-tag" style="background:#FFF6D8;color:#92690A">Biometria</span>
           <span class="est-tag" style="background:#EAF4FB;color:#0D47A1">En proceso</span>
         </div>
         <div class="est-title">Valores normativos de longitud axial en ninos latinos de 6 a 14 anos</div>
@@ -163,71 +213,91 @@ footer{background:var(--txt);padding:2rem}
     </div>
   </div>
 
-  <hr>
+  <div class="divider"><span class="divider-text">Lineas prioritarias</span></div>
 
-  <div class="sub-label">Areas prioritarias</div>
-  <div class="sub-title">Lineas de investigacion</div>
-  <div class="sub-desc">Areas de enfoque donde MML busca generar evidencia propia para la region.</div>
+  <div class="section-head">
+    <div class="kicker az">Areas de enfoque</div>
+    <h2 class="section-title">Lineas de investigacion</h2>
+    <p class="section-sub">Areas donde MML busca generar evidencia propia para la region.</p>
+  </div>
 
   <div class="lineas">
     <div class="linea">
-      <div class="linea-ico">G</div>
+      <div class="linea-ico">EP</div>
       <div class="linea-title">Epidemiologia regional</div>
       <div class="linea-desc">Prevalencia, incidencia y factores de riesgo de miopia en Latinoamerica. Necesitamos datos propios.</div>
     </div>
     <div class="linea">
-      <div class="linea-ico">B</div>
+      <div class="linea-ico">BM</div>
       <div class="linea-title">Biometria ocular</div>
       <div class="linea-desc">Valores normativos de longitud axial, radio corneal y camara anterior en poblacion latina infantil.</div>
     </div>
     <div class="linea">
-      <div class="linea-ico">F</div>
+      <div class="linea-ico">FA</div>
       <div class="linea-title">Farmacologia clinica</div>
       <div class="linea-desc">Respuesta a atropina en distintas concentraciones considerando variaciones etnicas en metabolismo.</div>
     </div>
     <div class="linea">
-      <div class="linea-ico">T</div>
+      <div class="linea-ico">TE</div>
       <div class="linea-title">Tecnologia y digitalizacion</div>
       <div class="linea-desc">Uso de inteligencia artificial y telemedicina en el seguimiento de la miopia en LATAM.</div>
     </div>
     <div class="linea">
-      <div class="linea-ico">A</div>
+      <div class="linea-ico">AM</div>
       <div class="linea-title">Factores ambientales LATAM</div>
       <div class="linea-desc">Impacto del tiempo en exteriores, uso de pantallas y actividad escolar en distintas regiones.</div>
     </div>
     <div class="linea">
-      <div class="linea-ico">C</div>
+      <div class="linea-ico">CM</div>
       <div class="linea-title">Comanejo interprofesional</div>
       <div class="linea-desc">Modelos de atencion colaborativa entre optometria y oftalmologia en los sistemas de salud de la region.</div>
     </div>
   </div>
 </div>
 
-<div class="cta-sec">
-  <h2>Tienes un estudio en curso?</h2>
-  <p>MML apoya y difunde investigacion generada por sus miembros. Si tienes datos o una propuesta de estudio, contactanos.</p>
-  <div class="cta-btns">
-    <a href="mailto:investigacion@miopialatam.org" class="btn-white">investigacion@miopialatam.org</a>
-    <a href="unirme.html" class="btn-outline">Unirme a MML</a>
+<section class="cta-sec">
+  <div class="cta-inner">
+    <h2>Tienes un estudio en curso?</h2>
+    <p>MML apoya y difunde investigacion generada por sus miembros. Si tienes datos o una propuesta de estudio, contactanos.</p>
+    <div class="cta-btns">
+      <a href="mailto:investigacion@miopialatam.org" class="btn-white">investigacion@miopialatam.org</a>
+      <a href="unirme.html" class="btn-outline-w">Unirme a MML</a>
+    </div>
   </div>
-</div>
+</section>
 
 <footer>
-  <div class="footer-color">
-    <div style="background:#F5C518"></div>
-    <div style="background:#2EAA4A"></div>
-    <div style="background:#0077C8"></div>
-    <div style="background:#D42B2B"></div>
-  </div>
-  <div class="footer-inner">
-    <div><div class="footer-name">Grupo Manejo Miopia Latam</div></div>
-    <div class="footer-links">
-      <a href="index.html">Inicio</a>
-      <a href="articulos.html">Articulos</a>
-      <a href="miembros.html">Miembros</a>
-      <a href="unirme.html">Unirme</a>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopia Latam</h4>
+      <p>Red internacional de especialistas en control de miopia. Activa en Puerto Rico, Colombia, Mexico, USA, Espana y Ecuador.</p>
     </div>
-    <div class="footer-copy">2026 MML. Todos los derechos reservados.</div>
+    <div class="footer-col">
+      <h5>Recursos</h5>
+      <a href="articulos.html">Articulos clinicos</a>
+      <a href="investigacion.html">Investigacion</a>
+      <a href="productos.html">Productos</a>
+    </div>
+    <div class="footer-col">
+      <h5>Comunidad</h5>
+      <a href="miembros.html">Nuestra red</a>
+      <a href="familias.html">Para familias</a>
+      <a href="unirme.html">Unirme a MML</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="mailto:info@miopialatam.org">info@miopialatam.org</a>
+      <a href="mailto:investigacion@miopialatam.org">investigacion@miopialatam.org</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">2026 MML - miopialatam.org - Todos los derechos reservados</div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
   </div>
 </footer>
 
