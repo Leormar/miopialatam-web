@@ -125,6 +125,21 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .stat-n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:3.4rem;line-height:0.95;letter-spacing:-0.04em}
 .stat-l{font-size:0.74rem;color:rgba(255,255,255,0.55);margin-top:6px;letter-spacing:0.04em;line-height:1.3}
 
+/* ORIGEN */
+.origen-sec{padding:6rem 2rem;background:var(--bg)}
+.origen-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:3.5rem;align-items:center;max-width:1200px;margin:0 auto;background:#fff;border:1px solid var(--bd);border-radius:28px;padding:3.5rem;position:relative;overflow:hidden;box-shadow:var(--shadow-md)}
+.origen-grid::before{content:'';position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(180deg,#F5C518 0%,#2EAA4A 33%,#0077C8 66%,#D42B2B 100%)}
+.origen-text .section-title{margin-bottom:1.2rem;font-size:clamp(2.4rem,4.5vw,3.8rem);text-align:left}
+.origen-text p{font-size:1.05rem;color:var(--mu);line-height:1.75;margin-bottom:1.2rem}
+.origen-text strong{color:var(--ink);font-weight:600}
+.timeline{display:flex;align-items:center;gap:1rem;margin-top:1.8rem}
+.t-item{flex:1;padding:1rem 1.2rem;background:var(--bg);border:1px solid var(--bd);border-radius:14px}
+.t-year{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.7rem;color:var(--az);letter-spacing:-0.02em;line-height:1;margin-bottom:0.25rem}
+.t-event{font-size:0.78rem;color:var(--mu);font-weight:500}
+.origen-photo{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/3}
+.origen-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-caption{position:absolute;bottom:0;left:0;right:0;padding:1.6rem 1.4rem 1rem;background:linear-gradient(180deg,transparent 0%,rgba(10,37,64,0.85) 100%);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;text-align:center}
+
 /* MEMBERS */
 .members-sec{padding:6rem 2rem;background:#fff}
 .members{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;max-width:1200px;margin:0 auto}
@@ -141,7 +156,8 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .member-web:hover{color:var(--az);border-color:var(--az)}
 .member-bar{position:absolute;bottom:0;left:0;right:0;display:flex;height:3px}
 .member-bar div{flex:1}
-.admin-tag{position:absolute;top:14px;right:14px;background:var(--am);color:#5C4400;font-size:0.6rem;font-weight:700;padding:3px 10px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.04em;text-transform:uppercase}
+.founder-tag{position:absolute;top:14px;left:14px;background:#fff;color:var(--ink);font-size:0.58rem;font-weight:700;padding:3px 10px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.08em;text-transform:uppercase;z-index:3;border:1px solid var(--bd);box-shadow:var(--shadow-sm)}
+.admin-tag{position:absolute;top:14px;right:14px;background:linear-gradient(135deg,#F5C518,#E8AC00);color:#5C4400;font-size:0.58rem;font-weight:800;padding:3px 10px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.08em;text-transform:uppercase;z-index:3;box-shadow:0 2px 8px rgba(245,197,24,0.4)}
 
 /* CTA */
 .cta-sec{padding:6rem 2rem;background:var(--ink);color:#fff;text-align:center;position:relative;overflow:hidden}
@@ -193,10 +209,13 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   .stats{grid-template-columns:1fr;padding:2.5rem}
   .stats-nums{grid-template-columns:repeat(2,1fr)}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .origen-grid{grid-template-columns:1fr;gap:2rem;padding:2.5rem}
 }
 @media(max-width:640px){
   .features,.cards,.members{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
+  .origen-grid{padding:2rem 1.5rem}
+  .timeline{flex-direction:column;gap:0.7rem}
   .hero{padding:4rem 1.5rem 3.5rem}
   .hero h1{font-size:3rem;letter-spacing:-0.03em}
   nav{padding:0 1rem}
@@ -333,6 +352,25 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 </section>
 
+<section class="origen-sec">
+  <div class="origen-grid">
+    <div class="origen-text">
+      <div class="kicker">Nuestro origen</div>
+      <h2 class="section-title">Nacimos en el<br>ICSC 2019</h2>
+      <p>MML surgio en el marco del <strong>International Contact Lens Specialists Conference (ICSC)</strong> en 2019, como una iniciativa de un grupo de optometras latinoamericanos comprometidos con iniciar el manejo activo de la miopia y la ralentizacion de su progresion en la region.</p>
+      <p>Desde entonces, la red ha crecido hasta integrar especialistas en 6 paises, generando articulos clinicos, investigacion regional y formacion continua en control de miopia.</p>
+      <div class="timeline">
+        <div class="t-item"><div class="t-year">2019</div><div class="t-event">Fundacion en ICSC</div></div>
+        <div class="t-item"><div class="t-year">2026</div><div class="t-event">6 paises - 50+ especialistas</div></div>
+      </div>
+    </div>
+    <div class="origen-photo">
+      <img src="img/fundadores-icsc-2019.jpg" alt="Fundadores MML en el ICSC 2019">
+      <div class="photo-caption">Fundadores MML - ICSC 2019</div>
+    </div>
+  </div>
+</section>
+
 <section class="members-sec">
   <div class="features-head">
     <div class="kicker">Nuestra red</div>
@@ -341,7 +379,8 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
   <div class="members">
     <div class="member-card">
-      <div class="admin-tag">Fundador</div>
+      <div class="founder-tag">Fundador 2019</div>
+      <div class="admin-tag">Admin</div>
       <div class="member-av" style="background:linear-gradient(135deg,#0077C8,#005FA3)"><img src="img/miembros/edgar-davila.jpg" alt="Edgar Davila Garcia" onerror="this.remove()">ED</div>
       <div class="member-name">Edgar Davila Garcia</div>
       <div class="member-title">Opt. - Fundador</div>
@@ -351,6 +390,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
     </div>
     <div class="member-card">
+      <div class="founder-tag">Fundador 2019</div>
       <div class="member-av" style="background:linear-gradient(135deg,#2EAA4A,#1E7D34)"><img src="img/miembros/david-pinero.jpg" alt="David P. Pinero" onerror="this.remove()">DP</div>
       <div class="member-name">David P. Pinero</div>
       <div class="member-title">Opt. - Investigador</div>
@@ -360,6 +400,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
     </div>
     <div class="member-card">
+      <div class="founder-tag">Fundador 2019</div>
       <div class="member-av" style="background:linear-gradient(135deg,#D42B2B,#A01F1F)"><img src="img/miembros/elise-kramer.jpg" alt="Elise G. Kramer" onerror="this.remove()">EK</div>
       <div class="member-name">Elise G. Kramer</div>
       <div class="member-title">Opt. - Especialista</div>
@@ -369,6 +410,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
     </div>
     <div class="member-card">
+      <div class="founder-tag">Fundador 2019</div>
       <div class="member-av" style="background:linear-gradient(135deg,#F5C518,#C9A200)"><img src="img/miembros/ricardo-pintor.jpg" alt="Ricardo Pintor L." onerror="this.remove()">RP</div>
       <div class="member-name">Ricardo Pintor L.</div>
       <div class="member-title">Opt. FIACLE - Especialista</div>
@@ -378,6 +420,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
     </div>
     <div class="member-card">
+      <div class="founder-tag">Fundador 2019</div>
       <div class="member-av" style="background:linear-gradient(135deg,#0097A7,#006978)"><img src="img/miembros/ariolfo-vazquez.jpg" alt="Ariolfo Vazquez" onerror="this.remove()">AV</div>
       <div class="member-name">Ariolfo Vazquez</div>
       <div class="member-title">Opt. - Especialista</div>
@@ -387,6 +430,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
     </div>
     <div class="member-card">
+      <div class="founder-tag">Fundador 2019</div>
       <div class="member-av" style="background:linear-gradient(135deg,#5C35D4,#3B1FA8)"><img src="img/miembros/leonardo-orjuela.jpg" alt="Leonardo Orjuela M." onerror="this.remove()">LO</div>
       <div class="member-name">Leonardo Orjuela M.</div>
       <div class="member-title">Opt. - Especialista</div>
