@@ -185,16 +185,251 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     <div class="stat-card" style="--c:#D42B2B"><div class="stat-n" style="color:#D42B2B">8-12</div><div class="stat-l">Años - ventana critica</div><div class="stat-s">Para intervencion efectiva</div></div>
   </div>
 
+  <style>
+    .biblio-section{margin-bottom:3.5rem}
+    .biblio-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.5rem;background:rgba(245,247,250,0.7);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:999px;padding:6px;width:fit-content}
+    .biblio-tab{padding:0.5rem 1.1rem;border:none;border-radius:999px;background:transparent;font-family:'Inter',sans-serif;font-size:0.84rem;font-weight:600;color:var(--mu);cursor:pointer;transition:all .2s;letter-spacing:0.01em}
+    .biblio-tab:hover{color:var(--ink)}
+    .biblio-tab.active{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;box-shadow:0 4px 14px rgba(0,119,200,0.3)}
+    .biblio-pane{display:none}
+    .biblio-pane.active{display:block}
+    .ref-card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:1.4rem 1.6rem;margin-bottom:0.9rem;transition:all .25s;position:relative;overflow:hidden}
+    .ref-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:transparent}
+    .ref-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c)}
+    .ref-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:0.6rem}
+    .ref-tag{font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:3px 9px;border-radius:999px;background:var(--c-light);color:var(--c-dark)}
+    .ref-tag.oa{background:#E6F7EB;color:#1B5E20}
+    .ref-tag.year{background:#F0F3F6;color:#5A7184}
+    .ref-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.05rem;color:var(--ink);line-height:1.25;margin-bottom:0.5rem;letter-spacing:-0.01em}
+    .ref-authors{font-size:0.85rem;color:var(--txt);margin-bottom:0.3rem}
+    .ref-source{font-size:0.78rem;color:var(--mu);font-style:italic;margin-bottom:0.7rem}
+    .ref-links{display:flex;gap:0.8rem;flex-wrap:wrap}
+    .ref-link{font-size:0.78rem;color:var(--c-dark);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:5px;padding:5px 12px;background:var(--c-light);border-radius:999px;transition:all .2s}
+    .ref-link:hover{background:var(--c);color:#fff}
+    .ref-link::after{content:'\2197';font-size:0.85rem}
+  </style>
+
   <div class="section-head">
-    <div class="kicker">Evidencia regional</div>
-    <h2 class="section-title">Estudios de LATAM sobre miopía</h2>
-    <p class="section-sub">Investigación científica generada en países latinoamericanos sobre prevalencia, factores de riesgo, biometría ocular y eficacia de tratamientos en población latina.</p>
+    <div class="kicker">Evidencia científica</div>
+    <h2 class="section-title">Referencias clave en miopía</h2>
+    <p class="section-sub">Bibliografía curada de papers establecidos en control de miopía. Cada referencia enlaza a DOI oficial donde puedes acceder al PDF (algunos en acceso abierto).</p>
   </div>
 
-  <div style="background:linear-gradient(135deg,#FAFCFE 0%,#fff 100%);border:1px dashed var(--bd);border-radius:18px;padding:3rem 2rem;text-align:center;margin-bottom:3rem">
-    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;color:var(--ink);text-transform:uppercase;margin-bottom:0.7rem;letter-spacing:-0.01em">Construyendo la biblioteca de evidencia LATAM</div>
-    <p style="font-size:0.95rem;color:var(--mu);line-height:1.6;max-width:560px;margin:0 auto 1.5rem">Estamos consolidando la lista de publicaciones científicas sobre miopía generadas en países latinoamericanos. Pronto verás aquí estudios verificados con referencia bibliográfica completa.</p>
-    <a href="mailto:investigacion@miopialatam.org" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:0.85rem 1.7rem;border-radius:999px;font-size:0.9rem;font-weight:600;text-decoration:none;box-shadow:0 6px 20px rgba(0,119,200,0.35)">¿Conoces un estudio LATAM? Compártelo<span>→</span></a>
+  <div class="biblio-section">
+    <div class="biblio-tabs">
+      <button class="biblio-tab active" data-pane="b-epi">Epidemiología</button>
+      <button class="biblio-tab" data-pane="b-dev">Dispositivos ópticos</button>
+      <button class="biblio-tab" data-pane="b-farm">Farmacológicos</button>
+      <button class="biblio-tab" data-pane="b-imi">IMI Consensus (Open Access)</button>
+    </div>
+
+    <!-- EPIDEMIOLOGIA -->
+    <div class="biblio-pane active" id="b-epi">
+      <div class="ref-card" style="--c:#0077C8;--c-dark:#0D47A1;--c-light:#EAF4FB">
+        <div class="ref-meta"><span class="ref-tag year">2016</span><span class="ref-tag">Epidemiología global</span></div>
+        <div class="ref-title">Global Prevalence of Myopia and High Myopia and Temporal Trends from 2000 through 2050</div>
+        <div class="ref-authors">Holden BA, Fricke TR, Wilson DA, Jong M, Naidoo KS, Sankaridurg P, et al.</div>
+        <div class="ref-source">Ophthalmology. 2016;123(5):1036-1042</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1016/j.ophtha.2016.01.006" target="_blank" rel="noopener" class="ref-link">DOI · Ophthalmology</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26875007/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#0077C8;--c-dark:#0D47A1;--c-light:#EAF4FB">
+        <div class="ref-meta"><span class="ref-tag year">2019</span><span class="ref-tag">Niños LATAM</span></div>
+        <div class="ref-title">Visual impairment and refractive errors in children of Latin America and the Caribbean</div>
+        <div class="ref-authors">Carter MJ, Lansingh VC, et al.</div>
+        <div class="ref-source">Investigative Ophthalmology &amp; Visual Science / Pan American Journal of Public Health</div>
+        <div class="ref-links">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=visual+impairment+refractive+errors+children+latin+america" target="_blank" rel="noopener" class="ref-link">Buscar en PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#0077C8;--c-dark:#0D47A1;--c-light:#EAF4FB">
+        <div class="ref-meta"><span class="ref-tag year">2017</span><span class="ref-tag">Colombia</span></div>
+        <div class="ref-title">Refractive errors in children and adolescents in Bucaramanga (Colombia)</div>
+        <div class="ref-authors">Galvis V, Tello A, Otero J, Serrano AA, Gómez LM, Castellanos Y</div>
+        <div class="ref-source">Arquivos Brasileiros de Oftalmologia. 2017;80(6):359-363</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.5935/0004-2749.20170088" target="_blank" rel="noopener" class="ref-link">DOI · Arq Bras Oftalmol</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Galvis+Refractive+errors+Bucaramanga" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#0077C8;--c-dark:#0D47A1;--c-light:#EAF4FB">
+        <div class="ref-meta"><span class="ref-tag year">2025</span><span class="ref-tag">Sistemática</span></div>
+        <div class="ref-title">Myopia control strategies: A systematic review and meta-meta-analysis</div>
+        <div class="ref-authors">Zaabaar N, et al.</div>
+        <div class="ref-source">Progress in Retinal and Eye Research. 2025</div>
+        <div class="ref-links">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Zaabaar+myopia+control+meta-analysis" target="_blank" rel="noopener" class="ref-link">Buscar en PubMed</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISPOSITIVOS OPTICOS -->
+    <div class="biblio-pane" id="b-dev">
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2020</span><span class="ref-tag">DIMS · MiYOSMART</span></div>
+        <div class="ref-title">Defocus Incorporated Multiple Segments (DIMS) spectacle lenses slow myopia progression: a 2-year randomised clinical trial</div>
+        <div class="ref-authors">Lam CSY, Tang WC, Tse DYY, Lee RPK, Chun RKM, Hasegawa K, et al.</div>
+        <div class="ref-source">British Journal of Ophthalmology. 2020;104(3):363-368</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1136/bjophthalmol-2018-313739" target="_blank" rel="noopener" class="ref-link">DOI · BJO</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31177241/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2022</span><span class="ref-tag">HALT · Stellest</span></div>
+        <div class="ref-title">Myopia control with spectacle lenses with aspherical lenslets: a 2-year randomized clinical trial</div>
+        <div class="ref-authors">Bao J, Yang A, Huang Y, Li X, Pan Y, Ding C, et al.</div>
+        <div class="ref-source">British Journal of Ophthalmology / JAMA Ophthalmol. 2022</div>
+        <div class="ref-links">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Bao+aspherical+lenslets+myopia" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2019</span><span class="ref-tag">MiSight · 3-year RCT</span></div>
+        <div class="ref-title">A 3-year Randomized Clinical Trial of MiSight Lenses for Myopia Control</div>
+        <div class="ref-authors">Chamberlain P, Peixoto-de-Matos SC, Logan NS, Ngo C, Jones D, Young G</div>
+        <div class="ref-source">Optometry and Vision Science. 2019;96(8):556-567</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1097/OPX.0000000000001410" target="_blank" rel="noopener" class="ref-link">DOI · Optom Vis Sci</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31343513/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2012</span><span class="ref-tag">Orto-K · ROMIO</span></div>
+        <div class="ref-title">Retardation of Myopia in Orthokeratology (ROMIO) Study: A 2-Year Randomized Clinical Trial</div>
+        <div class="ref-authors">Cho P, Cheung SW</div>
+        <div class="ref-source">Investigative Ophthalmology &amp; Visual Science. 2012;53(11):7077-7085</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1167/iovs.12-10565" target="_blank" rel="noopener" class="ref-link">DOI · IOVS</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22969068/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2020</span><span class="ref-tag">BLINK · Multifocal</span></div>
+        <div class="ref-title">Effect of High Add Power, Medium Add Power, or Single-Vision Contact Lenses on Myopia Progression in Children: The BLINK Randomized Clinical Trial</div>
+        <div class="ref-authors">Walline JJ, Walker MK, Mutti DO, et al. (BLINK Study Group)</div>
+        <div class="ref-source">JAMA. 2020;324(6):571-580</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1001/jama.2020.10834" target="_blank" rel="noopener" class="ref-link">DOI · JAMA</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32780138/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FARMACOLOGICOS -->
+    <div class="biblio-pane" id="b-farm">
+      <div class="ref-card" style="--c:#7B1FA2;--c-dark:#4A148C;--c-light:#F3E5F5">
+        <div class="ref-meta"><span class="ref-tag year">2019</span><span class="ref-tag">LAMP · Atropina</span></div>
+        <div class="ref-title">Low-Concentration Atropine for Myopia Progression (LAMP) Study: A Randomized, Double-Blinded, Placebo-Controlled Trial of 0.05%, 0.025%, and 0.01% Atropine Eye Drops in Myopia Control</div>
+        <div class="ref-authors">Yam JC, Jiang Y, Tang SM, Law AKP, Chan JJ, Wong E, et al.</div>
+        <div class="ref-source">Ophthalmology. 2019;126(1):113-124</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1016/j.ophtha.2018.05.029" target="_blank" rel="noopener" class="ref-link">DOI · Ophthalmology</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30514630/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#7B1FA2;--c-dark:#4A148C;--c-light:#F3E5F5">
+        <div class="ref-meta"><span class="ref-tag year">2020</span><span class="ref-tag">LAMP 2-año</span></div>
+        <div class="ref-title">Two-Year Clinical Trial of the Low-Concentration Atropine for Myopia Progression (LAMP) Study</div>
+        <div class="ref-authors">Yam JC, Li FF, Zhang X, Tang SM, Yip BHK, Kam KW, et al.</div>
+        <div class="ref-source">Ophthalmology. 2020;127(7):910-919</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1016/j.ophtha.2020.01.053" target="_blank" rel="noopener" class="ref-link">DOI · Ophthalmology</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32197911/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#7B1FA2;--c-dark:#4A148C;--c-light:#F3E5F5">
+        <div class="ref-meta"><span class="ref-tag year">2012</span><span class="ref-tag">ATOM2</span></div>
+        <div class="ref-title">Atropine for the treatment of childhood myopia: safety and efficacy of 0.5%, 0.1%, and 0.01% doses (Atropine for the Treatment of Myopia 2)</div>
+        <div class="ref-authors">Chia A, Chua WH, Cheung YB, Wong WL, Lingham A, Fong A, Tan D</div>
+        <div class="ref-source">Ophthalmology. 2012;119(2):347-354</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1016/j.ophtha.2011.07.031" target="_blank" rel="noopener" class="ref-link">DOI · Ophthalmology</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21963266/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#7B1FA2;--c-dark:#4A148C;--c-light:#F3E5F5">
+        <div class="ref-meta"><span class="ref-tag year">2006</span><span class="ref-tag">ATOM1</span></div>
+        <div class="ref-title">Atropine for the Treatment of Childhood Myopia</div>
+        <div class="ref-authors">Chua WH, Balakrishnan V, Chan YH, Tong L, Ling Y, Quah BL, Tan D</div>
+        <div class="ref-source">Ophthalmology. 2006;113(12):2285-2291</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1016/j.ophtha.2006.05.062" target="_blank" rel="noopener" class="ref-link">DOI · Ophthalmology</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16996612/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMI CONSENSUS PDFs OPEN ACCESS -->
+    <div class="biblio-pane" id="b-imi">
+      <div style="background:linear-gradient(135deg,#E6F7EB,#F0FCF3);border:1px solid #A5D6A7;border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:1.5rem;font-size:0.92rem;color:#1B5E20;line-height:1.6">
+        <strong>📄 PDFs descargables gratis</strong> · Las series de white papers del <strong>International Myopia Institute (IMI)</strong> son acceso abierto en IOVS. Constituyen el consenso global de evidencia en miopía.
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2023</span><span class="ref-tag oa">PDF Acceso abierto</span><span class="ref-tag">IMI</span></div>
+        <div class="ref-title">IMI 2023 Digest</div>
+        <div class="ref-authors">International Myopia Institute</div>
+        <div class="ref-source">Investigative Ophthalmology &amp; Visual Science. 2023</div>
+        <div class="ref-links">
+          <a href="https://myopiainstitute.org/imi-white-papers/" target="_blank" rel="noopener" class="ref-link">IMI · White Papers</a>
+          <a href="https://iovs.arvojournals.org/" target="_blank" rel="noopener" class="ref-link">IOVS · Buscar IMI</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2021</span><span class="ref-tag oa">PDF Acceso abierto</span><span class="ref-tag">IMI</span></div>
+        <div class="ref-title">IMI 2021 Reports: Defocus-incorporated multiple segments, BLINK, low-concentration atropine, ortho-k</div>
+        <div class="ref-authors">Wolffsohn JS, Whayeb Y, Logan NS, Weng R (IMI 2021 Editorial)</div>
+        <div class="ref-source">Investigative Ophthalmology &amp; Visual Science. 2021;62(5):1</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1167/iovs.62.5.1" target="_blank" rel="noopener" class="ref-link">DOI · IOVS (Open Access)</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/?term=IMI+2021+myopia" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2019</span><span class="ref-tag oa">PDF Acceso abierto</span><span class="ref-tag">IMI</span></div>
+        <div class="ref-title">IMI – Defining and Classifying Myopia: A Proposed Set of Standards for Clinical and Epidemiologic Studies</div>
+        <div class="ref-authors">Flitcroft DI, He M, Jonas JB, Jong M, Naidoo K, Ohno-Matsui K, et al.</div>
+        <div class="ref-source">Investigative Ophthalmology &amp; Visual Science. 2019;60(3):M20-M30</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1167/iovs.18-25957" target="_blank" rel="noopener" class="ref-link">DOI · IOVS (Open Access)</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30817826/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+
+      <div class="ref-card" style="--c:#2EAA4A;--c-dark:#1B5E20;--c-light:#E6F7EB">
+        <div class="ref-meta"><span class="ref-tag year">2019</span><span class="ref-tag oa">PDF Acceso abierto</span><span class="ref-tag">IMI</span></div>
+        <div class="ref-title">IMI - Clinical Management Guidelines Report</div>
+        <div class="ref-authors">Gifford KL, Richdale K, Kang P, Aller TA, Lam CS, Liu YM, et al.</div>
+        <div class="ref-source">Investigative Ophthalmology &amp; Visual Science. 2019;60(3):M184-M203</div>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1167/iovs.18-25977" target="_blank" rel="noopener" class="ref-link">DOI · IOVS (Open Access)</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30817832/" target="_blank" rel="noopener" class="ref-link">PubMed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:linear-gradient(135deg,#FFF6D8,#FFFDF0);border:1px solid #FFE082;border-radius:14px;padding:1.2rem 1.4rem;margin-bottom:3rem;display:flex;gap:0.8rem;align-items:flex-start">
+    <div style="width:36px;height:36px;border-radius:10px;background:#F5C518;color:#5C4400;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;flex-shrink:0">!</div>
+    <div style="flex:1">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.95rem;text-transform:uppercase;color:#5C4400;margin-bottom:0.3rem;letter-spacing:-0.01em">Sobre esta bibliografía</div>
+      <div style="font-size:0.88rem;color:#5C4400;line-height:1.6">Selección curada de papers establecidos en miopía y control de miopía. Las referencias enlazan al DOI oficial. <strong>Para investigación profunda</strong> recomendamos usar <a href="https://consensus.app/" target="_blank" rel="noopener" style="color:#0D47A1;font-weight:600">Consensus.app</a> y <a href="https://www.researchrabbit.ai/" target="_blank" rel="noopener" style="color:#0D47A1;font-weight:600">Research Rabbit</a> para descubrir papers relacionados, o búsqueda directa en <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener" style="color:#0D47A1;font-weight:600">PubMed</a> · <a href="https://scholar.google.com/" target="_blank" rel="noopener" style="color:#0D47A1;font-weight:600">Google Scholar</a> · <a href="https://www.scielo.org/" target="_blank" rel="noopener" style="color:#0D47A1;font-weight:600">SciELO</a> (LATAM).</div>
+    </div>
   </div>
 
   <div class="divider"><span class="divider-text">Lineas prioritarias</span></div>
@@ -287,5 +522,15 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.biblio-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.biblio-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.biblio-pane').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.pane).classList.add('active');
+  });
+});
+</script>
 </body>
 </html>
