@@ -104,7 +104,7 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .kicker::before{content:'';width:24px;height:2px;background:var(--az);border-radius:2px}
 .section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6rem,5vw,4.4rem);line-height:0.95;letter-spacing:-0.03em;color:var(--ink);text-transform:uppercase;margin-bottom:1.2rem}
 .section-sub{font-size:1.1rem;color:var(--mu);line-height:1.65;max-width:620px;margin:0 auto}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1200px;margin:0 auto}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;max-width:1280px;margin:0 auto}
 .feat-card{background:#fff;border:1px solid var(--bd);border-radius:20px;overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer;text-decoration:none;display:flex;flex-direction:column;position:relative}
 .feat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:transparent}
 .feat-photo{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%)}
@@ -383,14 +383,26 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     </a>
     <a href="unirme.html" class="feat-card" style="--c:#F5C518;--c-dark:#C9A200">
       <div class="feat-photo">
-        <span class="feat-badge">Educacion</span>
+        <span class="feat-badge">Educación</span>
         <div class="feat-icon" style="color:#5C4400"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 L16 5 L30 12 L16 19 Z"/><path d="M8 15 V22 Q16 26 24 22 V15"/><line x1="28" y1="13" x2="28" y2="21"/><circle cx="28" cy="23" r="1.5" fill="currentColor" stroke="none"/></svg></div>
-        <img src="img/features/formacion.jpg" alt="Formacion continua" onerror="this.remove()">
+        <img src="img/features/formacion.jpg" alt="Formación continua" onerror="this.remove()">
       </div>
       <div class="feat-content">
-        <h3>Formacion continua</h3>
-        <p>Cursos en linea, webinars y recursos educativos en español creados por y para especialistas latinoamericanos.</p>
-        <span class="feat-link">Conocer mas</span>
+        <h3>Formación continua</h3>
+        <p>Cursos en línea, webinars y recursos educativos en español creados por y para especialistas latinoamericanos.</p>
+        <span class="feat-link">Conocer más</span>
+      </div>
+    </a>
+    <a href="recursos.html" class="feat-card" style="--c:#D42B2B;--c-dark:#A01F1F">
+      <div class="feat-photo">
+        <span class="feat-badge">Enlaces curados</span>
+        <div class="feat-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18 L18 14 M11 16 L7 20 Q4 23 7 26 Q10 29 13 26 L17 22"/><path d="M18 14 L22 10 Q25 7 22 4 Q19 1 16 4 L12 8"/><circle cx="12" cy="20" r="1.5" fill="currentColor" stroke="none"/><circle cx="20" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></div>
+        <img src="img/features/recursos.jpg" alt="Recursos y enlaces de interés" onerror="this.remove()">
+      </div>
+      <div class="feat-content">
+        <h3>Recursos curados</h3>
+        <p>Directorio de herramientas clínicas (PreMO), institutos (IMI, Brien Holden), guías y buscadores bibliográficos.</p>
+        <span class="feat-link">Ver enlaces</span>
       </div>
     </a>
   </div>
