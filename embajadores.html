@@ -67,6 +67,28 @@ h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-siz
 .btn-register:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(0,119,200,0.5)}
 .btn-register:hover::after{transform:translateX(3px)}
 
+.fundadores-sec{background:linear-gradient(180deg,#fff 0%,#FAFCFE 100%);padding:5rem 2rem 4rem;border-bottom:1px solid var(--bd)}
+.fundadores-inner{max-width:1200px;margin:0 auto}
+.fundadores-head{text-align:center;margin-bottom:3rem;max-width:680px;margin-left:auto;margin-right:auto}
+.fundadores-head .kicker{color:#C9A200;justify-content:center}
+.fundadores-head .kicker::before{background:linear-gradient(90deg,#F5C518,#E8AC00)}
+.fundadores-head h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.4rem,4.5vw,3.6rem);text-transform:uppercase;color:var(--ink);letter-spacing:-0.03em;line-height:0.95;margin-bottom:1rem}
+.fundadores-head p{font-size:1.05rem;color:var(--mu);line-height:1.6}
+.fundadores-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.fundador-card{background:#fff;border:2px solid #F5C518;border-radius:24px;padding:2.4rem 1.8rem 2rem;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1);box-shadow:0 4px 20px rgba(245,197,24,0.12)}
+.fundador-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(245,197,24,0.25);border-color:#E8AC00}
+.fundador-crown{position:absolute;top:14px;right:14px;background:linear-gradient(135deg,#F5C518,#E8AC00);color:#5C4400;font-size:0.62rem;font-weight:800;padding:5px 12px;border-radius:999px;letter-spacing:0.08em;text-transform:uppercase;z-index:3;box-shadow:0 3px 10px rgba(245,197,24,0.5);display:flex;align-items:center;gap:5px}
+.fundador-crown::before{content:'★';font-size:0.7rem}
+.fundador-photo{width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.4rem;color:#fff;margin-bottom:1.3rem;letter-spacing:0.02em;box-shadow:0 10px 28px rgba(10,37,64,0.18);position:relative;overflow:hidden;background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%)}
+.fundador-photo::after{content:'';position:absolute;inset:-8px;border-radius:50%;border:3px solid #F5C518;z-index:-1;opacity:0.5}
+.fundador-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;z-index:2}
+.fundador-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.3rem;letter-spacing:-0.02em;line-height:1.1}
+.fundador-title{font-size:0.74rem;color:var(--c);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.9rem}
+.fundador-esp{font-size:0.86rem;color:var(--mu);line-height:1.55;margin-bottom:1rem;min-height:2.5em}
+.fundador-country{font-size:0.72rem;font-weight:600;padding:5px 14px;border-radius:999px;margin-bottom:0.9rem;display:inline-block;letter-spacing:0.02em;background:var(--c-light);color:var(--c-dark)}
+.fundador-web{font-size:0.76rem;color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1px solid var(--bd);padding-bottom:2px;transition:all .2s}
+.fundador-web:hover{color:var(--c);border-color:var(--c)}
+
 .search-bar{max-width:1200px;margin:0 auto;padding:3rem 2rem 1rem}
 .search-wrap{background:#fff;border:1px solid var(--bd);border-radius:18px;padding:1.2rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;box-shadow:var(--shadow-sm)}
 .search-input-wrap{flex:1;position:relative;min-width:240px}
@@ -132,9 +154,10 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 @media(max-width:980px){
   nav{padding:0 1.5rem;height:88px}.logo img{height:64px}.nav-links{display:none}
   .emb-grid{grid-template-columns:repeat(2,1fr)}
+  .fundadores-grid{grid-template-columns:repeat(2,1fr)}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
 }
-@media(max-width:640px){.emb-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.emb-grid,.fundadores-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -164,8 +187,74 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   <div class="hero-inner">
     <div class="kicker">Red MML en LATAM</div>
     <h1 class="hero-title">Embajadores MML</h1>
-    <p class="lead">Especialistas en control de miopía que lideran las actividades educativas, clínicas y de investigación en cada país de Latinoamérica.</p>
+    <p class="lead">Equipo fundador + <strong>25 embajadores 2026</strong> en 19 países. Especialistas que lideran las actividades educativas, clínicas y de investigación en cada país de Latinoamérica.</p>
     <a href="embajadores-registro.html" class="btn-register">Registrarse como embajador</a>
+  </div>
+</section>
+
+<section class="fundadores-sec">
+  <div class="fundadores-inner">
+    <div class="fundadores-head">
+      <div class="kicker">Equipo Fundador 2019</div>
+      <h2>Los 6 visionarios que crearon MML</h2>
+      <p>En 2019, en el marco del <strong>International Contact Lens Specialists Conference (ICSC)</strong>, un grupo de optómetras latinoamericanos dio vida al Grupo Manejo Miopía LATAM.</p>
+    </div>
+    <div class="fundadores-grid">
+      <div class="fundador-card" style="--c:#0077C8;--c-dark:#005FA3;--c-light:#EAF4FB">
+        <div class="fundador-crown">Admin</div>
+        <div class="fundador-photo"><img src="img/miembros/edgar-davila.jpg" alt="Edgar Dávila García" onerror="this.remove()">ED</div>
+        <div class="fundador-name">Edgar Dávila García</div>
+        <div class="fundador-title">Opt. · Fundador</div>
+        <div class="fundador-esp">Control de miopía · Lentes de contacto especializados</div>
+        <span class="fundador-country">Puerto Rico</span>
+        <a href="http://contactosespecializados.com" class="fundador-web" target="_blank" rel="noopener">contactosespecializados.com</a>
+      </div>
+      <div class="fundador-card" style="--c:#2EAA4A;--c-dark:#1E7D34;--c-light:#E6F7EB">
+        <div class="fundador-crown">Fundador</div>
+        <div class="fundador-photo"><img src="img/miembros/david-pinero.jpg" alt="David P. Piñero" onerror="this.remove()">DP</div>
+        <div class="fundador-name">David P. Piñero</div>
+        <div class="fundador-title">OD, MSc PhD · Investigador</div>
+        <div class="fundador-esp">Control de miopía · Universidad de Alicante</div>
+        <span class="fundador-country">España</span>
+        <a href="mailto:david.pinyero@ua.es" class="fundador-web">david.pinyero@ua.es</a>
+      </div>
+      <div class="fundador-card" style="--c:#D42B2B;--c-dark:#A01F1F;--c-light:#FDECEA">
+        <div class="fundador-crown">Fundador</div>
+        <div class="fundador-photo"><img src="img/miembros/elise-kramer.jpg" alt="Elise G. Kramer" onerror="this.remove()">EK</div>
+        <div class="fundador-name">Elise G. Kramer</div>
+        <div class="fundador-title">OD, FAAO, FSLS</div>
+        <div class="fundador-esp">Lentes de contacto · Control de miopía · Miami FL</div>
+        <span class="fundador-country">USA · Miami</span>
+        <a href="http://miamicontactlens.com" class="fundador-web" target="_blank" rel="noopener">miamicontactlens.com</a>
+      </div>
+      <div class="fundador-card" style="--c:#F5C518;--c-dark:#C9A200;--c-light:#FFF6D8">
+        <div class="fundador-crown">Fundador</div>
+        <div class="fundador-photo"><img src="img/miembros/ricardo-pintor.jpg" alt="Ricardo Pintor L." onerror="this.remove()">RP</div>
+        <div class="fundador-name">Ricardo Pintor L.</div>
+        <div class="fundador-title">OD, FIACLE</div>
+        <div class="fundador-esp">Control de miopía · Orto-K · CooperVision · UNAM</div>
+        <span class="fundador-country">México</span>
+        <a href="http://thevisioncareinstitute.com.mx" class="fundador-web" target="_blank" rel="noopener">thevisioncareinstitute.com.mx</a>
+      </div>
+      <div class="fundador-card" style="--c:#0097A7;--c-dark:#006978;--c-light:#E0F2F1">
+        <div class="fundador-crown">Fundador</div>
+        <div class="fundador-photo"><img src="img/miembros/ariolfo-vazquez.jpg" alt="Ariolfo Vázquez" onerror="this.remove()">AV</div>
+        <div class="fundador-name">Ariolfo Vázquez</div>
+        <div class="fundador-title">OD, FIACLE, FSLS</div>
+        <div class="fundador-esp">Control de miopía · Lentes de contacto · Cuenca</div>
+        <span class="fundador-country">Ecuador · Cuenca</span>
+        <a href="mailto:vazrueda@gmail.com" class="fundador-web">vazrueda@gmail.com</a>
+      </div>
+      <div class="fundador-card" style="--c:#5C35D4;--c-dark:#3B1FA8;--c-light:#EDE7F6">
+        <div class="fundador-crown">Fundador</div>
+        <div class="fundador-photo"><img src="img/miembros/leonardo-orjuela.jpg" alt="Leonardo Orjuela M." onerror="this.remove()">LO</div>
+        <div class="fundador-name">Leonardo Orjuela M.</div>
+        <div class="fundador-title">OD · Especialista</div>
+        <div class="fundador-esp">Orto-K · Lentes de contacto · Control de miopía en comanejo</div>
+        <span class="fundador-country">Colombia · Medellín</span>
+        <a href="http://lentesespecializados.com" class="fundador-web" target="_blank" rel="noopener">lentesespecializados.com</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -201,7 +290,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 </div>
 
-<div class="results-info"><strong id="results-count">0</strong> embajadores</div>
+<div class="results-info" style="padding-bottom:1.5rem"><div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.6rem;color:var(--ink);text-transform:uppercase;letter-spacing:-0.02em;margin-bottom:0.3rem">Toda la red MML</div><div><strong id="results-count">0</strong> personas · Fundadores + Embajadores 2026</div></div>
 
 <div class="emb-grid" id="emb-grid">
 
