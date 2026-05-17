@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://miopialatam.org/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://miopialatam.org/articulos.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://miopialatam.org/investigacion.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/productos.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/eventos.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://miopialatam.org/embajadores.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://miopialatam.org/embajadores-registro.html</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/miembros.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/familias.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/unirme.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/articulo-axl-ser.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/articulo-ortok.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/articulo-atropina.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/articulo-lentes-oftalmicas.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/articulo-lc-blandos.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://miopialatam.org/articulo-terapias-combinadas.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/</loc><lastmod>2026-05-17</lastmod><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://miopialatam.org/articulos.html</loc><lastmod>2026-05-17</lastmod><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://miopialatam.org/investigacion.html</loc><lastmod>2026-05-17</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/productos.html</loc><lastmod>2026-05-17</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/eventos.html</loc><lastmod>2026-05-17</lastmod><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://miopialatam.org/embajadores.html</loc><lastmod>2026-05-17</lastmod><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://miopialatam.org/embajadores-registro.html</loc><lastmod>2026-05-17</lastmod><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/miembros.html</loc><lastmod>2026-05-17</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/familias.html</loc><lastmod>2026-05-17</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/recursos.html</loc><lastmod>2026-05-17</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/unirme.html</loc><lastmod>2026-05-17</lastmod><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/articulo-axl-ser.html</loc><lastmod>2026-05-17</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/articulo-ortok.html</loc><lastmod>2026-05-17</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/articulo-atropina.html</loc><lastmod>2026-05-17</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/articulo-lentes-oftalmicas.html</loc><lastmod>2026-05-17</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/articulo-lc-blandos.html</loc><lastmod>2026-05-17</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://miopialatam.org/articulo-terapias-combinadas.html</loc><lastmod>2026-05-17</lastmod><priority>0.7</priority><changefreq>monthly</changefreq></url>
 </urlset>
