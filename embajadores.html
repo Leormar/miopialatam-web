@@ -150,9 +150,27 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 .footer-stripes{display:flex;gap:4px}
 .footer-stripes div{width:24px;height:4px;border-radius:2px}
 
+.nav-toggle{display:none;background:transparent;border:none;cursor:pointer;padding:8px;border-radius:10px;color:var(--ink);transition:all .2s;position:relative;z-index:101}
+.nav-toggle svg{width:32px;height:32px;display:block}
+.nav-toggle:hover{background:rgba(10,37,64,0.06)}
+.nav-toggle .ico-close{display:none}
+.nav-toggle.active .ico-open{display:none}
+.nav-toggle.active .ico-close{display:block}
+
 @media(max-width:1180px){.nav-links a{font-size:0.95rem;padding:9px 16px}}
 @media(max-width:980px){
-  nav{padding:0 1.5rem;height:88px}.logo img{height:64px}.nav-links{display:none}
+  nav{padding:0 1.5rem;height:88px}
+  .logo img{height:64px}
+  .nav-toggle{display:flex}
+  body.nav-open{overflow:hidden}
+  .nav-links{position:fixed;top:88px;left:0;right:0;bottom:0;background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none;display:flex !important;flex-direction:column;padding:2rem 1.5rem;gap:0.5rem;z-index:99;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);overflow-y:auto;border:none !important;border-radius:0 !important;align-items:stretch}
+  .nav-links::before{display:none !important}
+  .nav-links.open{transform:translateX(0);box-shadow:-12px 0 40px rgba(10,37,64,0.15)}
+  .nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem !important;font-weight:800 !important;padding:1.1rem 1.4rem !important;width:100%;text-align:left;border-radius:14px !important;background:var(--bg) !important;color:var(--ink) !important;letter-spacing:0.02em !important;border:1px solid var(--bd)}
+  .nav-links a:hover{background:#fff !important;border-color:var(--ink)}
+  .nav-links a.active{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%) !important;color:#fff !important;border-color:transparent}
+  .nav-links a.active::after{display:none}
+  nav>a.btn-primary{display:none}
   .emb-grid{grid-template-columns:repeat(2,1fr)}
   .fundadores-grid{grid-template-columns:repeat(2,1fr)}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
@@ -181,7 +199,11 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     <a href="recursos.html">Recursos</a>
     <a href="familias.html">Para Familias</a>
   </div>
-  <a href="unirme.html" class="btn-primary">Unirme a MML</a>
+  <a href="unirme.html" class="btn-primary">Unirme a MML  <button class="nav-toggle" aria-label="Abrir menú">
+    <svg class="ico-open" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"><line x1="6" y1="10" x2="26" y2="10"/><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="22" x2="26" y2="22"/></svg>
+    <svg class="ico-close" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"><line x1="8" y1="8" x2="24" y2="24"/><line x1="24" y1="8" x2="8" y2="24"/></svg>
+  </button>
+</a>
 </nav>
 
 <section class="hero-sec">
@@ -724,6 +746,24 @@ filterPills.forEach(pill => {
     filterEmb();
   });
 });
+</script>
+<script>
+(function(){
+  const t = document.querySelector('.nav-toggle');
+  const l = document.querySelector('.nav-links');
+  if(!t || !l) return;
+  t.addEventListener('click', ()=>{
+    l.classList.toggle('open');
+    t.classList.toggle('active');
+    document.body.classList.toggle('nav-open');
+    t.setAttribute('aria-label', l.classList.contains('open') ? 'Cerrar menú' : 'Abrir menú');
+  });
+  l.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+    l.classList.remove('open');
+    t.classList.remove('active');
+    document.body.classList.remove('nav-open');
+  }));
+})();
 </script>
 </body>
 </html>
