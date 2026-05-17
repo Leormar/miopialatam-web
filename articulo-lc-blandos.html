@@ -26,7 +26,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--pu:#5C35D4;
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;--pu:#0077C8;
   --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
   --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
   --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
@@ -45,7 +45,7 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .back:hover::before{transform:translateX(-3px)}
 .back span{position:relative;z-index:2}
 
-.hero-art{background:linear-gradient(180deg,#EDE7F6 0%,#FAFCFE 100%);padding:6.5rem 2rem 5rem;position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
+.hero-art{background:linear-gradient(180deg,#EAF4FB 0%,#FAFCFE 100%);padding:6.5rem 2rem 5rem;position:relative;overflow:hidden;border-bottom:1px solid var(--bd)}
 .hero-art::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);-webkit-mask-image:linear-gradient(180deg,transparent,#000 60%,transparent);opacity:0.5}
 .hero-inner{max-width:920px;margin:0 auto;position:relative;z-index:2}
 .art-tag{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;padding:6px 16px;border-radius:999px;background:#fff;color:var(--pu);border:1px solid #B39DDB;display:inline-block;margin-bottom:1.5rem}
@@ -82,7 +82,7 @@ h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6
 .stat-block-label{font-size:0.7rem;font-weight:700;color:var(--soft);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.3rem}
 .stat-block-value{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;color:var(--c);line-height:1;letter-spacing:-0.02em}
 
-.callout{background:linear-gradient(135deg,#EDE7F6,#F7F4FB);border:1px solid #D1C4E9;border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:2rem;font-size:0.92rem;color:#311B92;line-height:1.65;font-family:'Inter',sans-serif}
+.callout{background:linear-gradient(135deg,#EAF4FB,#F7F4FB);border:1px solid #D1C4E9;border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:2rem;font-size:0.92rem;color:#0D47A1;line-height:1.65;font-family:'Inter',sans-serif}
 .callout strong{color:var(--ink)}
 
 .conclusion{background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);border-radius:20px;padding:2.2rem;margin:2.5rem 0;color:#fff;position:relative;overflow:hidden}
@@ -248,20 +248,20 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
     </div>
   </div>
 
-  <div class="lente-card" style="--c:#5C35D4">
+  <div class="lente-card" style="--c:#0077C8">
     <div class="lente-head">
       <div>
         <div class="lente-tech">Biofinity MF</div>
         <div class="lente-marca">Multifocal mensual - <strong>CooperVision</strong></div>
       </div>
-      <span class="lente-tag" style="background:#EDE7F6;color:#311B92">Variable</span>
+      <span class="lente-tag" style="background:#EAF4FB;color:#0D47A1">Variable</span>
     </div>
     <div class="lente-body">
       <div class="lente-row"><strong>Diseño</strong><span>Lente multifocal centro-lejos de uso mensual. Eficacia variable segun adicion utilizada (+1.50, +2.00, +2.50 D).</span></div>
       <div class="lente-row"><strong>Limitaciones</strong><span>Resultados heterogeneos entre estudios. Adicion mas alta tiende a mostrar mayor eficacia pero con mas adaptacion visual requerida.</span></div>
       <div class="lente-stats">
-        <div class="stat-block" style="--c:#5C35D4"><div class="stat-block-label">Reduccion AXL</div><div class="stat-block-value" style="color:#5C35D4">30 - 50%</div></div>
-        <div class="stat-block" style="--c:#5C35D4"><div class="stat-block-label">Modalidad</div><div class="stat-block-value" style="color:#5C35D4;font-size:1rem">Mensual</div></div>
+        <div class="stat-block" style="--c:#0077C8"><div class="stat-block-label">Reduccion AXL</div><div class="stat-block-value" style="color:#0077C8">30 - 50%</div></div>
+        <div class="stat-block" style="--c:#0077C8"><div class="stat-block-label">Modalidad</div><div class="stat-block-value" style="color:#0077C8;font-size:1rem">Mensual</div></div>
       </div>
     </div>
   </div>
@@ -294,11 +294,11 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
       <text x="400" y="312" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="14" fill="#1A3347">MULTIF.</text>
       <text x="400" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">NaturalVue</text>
       <text x="400" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#C9A200" font-weight="600">0.17 mm AXL (1a)</text>
-      <rect x="465" y="206" width="90" height="84" fill="#5C35D4" rx="6"/>
+      <rect x="465" y="206" width="90" height="84" fill="#0077C8" rx="6"/>
       <text x="510" y="196" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="22" fill="#1A3347">40%</text>
       <text x="510" y="312" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="14" fill="#1A3347">MULTIF.</text>
       <text x="510" y="328" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#5A7184">Biofinity MF</text>
-      <text x="510" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#5C35D4" font-weight="600">30-50% AXL</text>
+      <text x="510" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0077C8" font-weight="600">30-50% AXL</text>
     </svg>
     <div class="svg-caption">% maximo de reduccion en progresion SER reportado en estudios. NaturalVue muestra mayor reduccion porcentual (PROTECT 2025 - 1 año); MiSight 1 day mantiene la evidencia mas robusta a largo plazo (3 años).</div>
   </div>
