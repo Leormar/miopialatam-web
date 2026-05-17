@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página no encontrada · MML - Grupo Manejo Miopía Latam</title>
+<meta name="description" content="La página que buscas no existe. Vuelve al inicio de miopialatam.org">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A2540">
+<link rel="canonical" href="https://miopialatam.org/404.html">
+<link rel="icon" type="image/png" href="/logo-mml.png">
+<link rel="apple-touch-icon" href="/logo-mml.png">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bg:#FAFBFC;
+}
+html,body{height:100%}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5;min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden}
+
+.topbar{display:flex;height:4px}
+.topbar div{flex:1}
+
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 2rem;position:relative;overflow:hidden;background:linear-gradient(180deg,#FAFCFE 0%,#fff 100%)}
+main::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent 0%,#000 50%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 50%,transparent 100%);opacity:0.6;pointer-events:none}
+main::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(0,119,200,0.08),transparent 70%);pointer-events:none}
+
+.inner{max-width:780px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.logo-wrap{margin-bottom:2.5rem;display:flex;justify-content:center}
+.logo-wrap img{max-width:200px;width:100%;height:auto}
+
+.error-code{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(7rem,18vw,14rem);line-height:0.85;letter-spacing:-0.06em;color:var(--ink);background:linear-gradient(135deg,var(--az) 0%,var(--ink) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.5rem;position:relative}
+.error-code::after{content:'';position:absolute;left:50%;bottom:-14px;transform:translateX(-50%);width:80px;height:5px;background:linear-gradient(90deg,var(--am) 0%,var(--ve) 33%,var(--az) 66%,var(--ro) 100%);border-radius:3px}
+
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.8rem,4vw,3rem);line-height:1.05;letter-spacing:-0.02em;color:var(--ink);text-transform:uppercase;margin-top:2.2rem;margin-bottom:1.2rem}
+
+.lead{font-size:1.1rem;color:var(--mu);line-height:1.65;max-width:520px;margin:0 auto 2.5rem;font-weight:400}
+
+.actions{display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:0.95rem 1.6rem;border-radius:999px;font-family:inherit;font-size:0.92rem;font-weight:600;text-decoration:none;transition:all .2s;border:none;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;box-shadow:0 6px 18px rgba(0,119,200,0.3)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,119,200,0.42)}
+.btn-secondary{background:#fff;color:var(--ink);border:1px solid var(--bd)}
+.btn-secondary:hover{border-color:var(--az);color:var(--az)}
+
+.quick-links{background:linear-gradient(135deg,#FAFCFE 0%,#fff 100%);border:1px solid var(--bd);border-radius:18px;padding:1.6rem 1.8rem;max-width:580px;margin:0 auto;text-align:left;box-shadow:0 4px 16px rgba(10,37,64,0.05)}
+.quick-links-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--az);margin-bottom:0.9rem;display:flex;align-items:center;gap:8px}
+.quick-links-label::before{content:'';width:24px;height:2px;background:var(--az);border-radius:2px}
+.quick-links-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.4rem 1rem}
+.quick-links-grid a{color:var(--txt);font-size:0.92rem;text-decoration:none;padding:0.4rem 0;border-bottom:1px solid transparent;transition:all .15s;display:flex;align-items:center;gap:6px}
+.quick-links-grid a::before{content:'→';color:var(--soft);transition:transform .15s}
+.quick-links-grid a:hover{color:var(--ink)}
+.quick-links-grid a:hover::before{transform:translateX(3px);color:var(--az)}
+
+footer{background:var(--ink);padding:1.8rem;text-align:center;color:#fff}
+.footer-stripes{display:flex;gap:4px;justify-content:center;margin-bottom:0.7rem}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.5)}
+.footer-copy a{color:rgba(255,255,255,0.8);text-decoration:none}
+
+@media(max-width:640px){
+  .logo-wrap img{max-width:160px}
+  .quick-links{padding:1.3rem 1.4rem}
+  .quick-links-grid{grid-template-columns:1fr}
+  .actions{flex-direction:column;width:100%}
+  .actions .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<main>
+  <div class="inner">
+    <div class="logo-wrap">
+      <a href="/"><img src="/logo-mml.png" alt="Grupo Manejo Miopía Latam"></a>
+    </div>
+
+    <div class="error-code">404</div>
+
+    <h1>Esta página no existe</h1>
+
+    <p class="lead">La URL que buscaste no se encuentra en miopialatam.org. Puede que el enlace esté desactualizado o tenga un error.</p>
+
+    <div class="actions">
+      <a href="/" class="btn btn-primary">← Volver al inicio</a>
+      <a href="/embajadores.html" class="btn btn-secondary">Ver embajadores</a>
+    </div>
+
+    <div class="quick-links">
+      <div class="quick-links-label">Enlaces rápidos</div>
+      <div class="quick-links-grid">
+        <a href="/articulos.html">Artículos clínicos</a>
+        <a href="/investigacion.html">Investigación</a>
+        <a href="/embajadores.html">Embajadores</a>
+        <a href="/eventos.html">Eventos</a>
+        <a href="/familias.html">Para familias</a>
+        <a href="/recursos.html">Recursos</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-stripes">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="footer-copy">2026 Grupo Manejo Miopía Latam · <a href="/">miopialatam.org</a></div>
+</footer>
+
+</body>
+</html>
