@@ -3,271 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MML - Grupo Manejo Miopía LATAM</title>
-<meta name="description" content="Red latinoamericana de especialistas en control de miopía. Protocolos clínicos, investigación regional y formación continua en español para optómetras y oftalmólogos.">
+<title>MML · Próximo lanzamiento</title>
+<meta name="description" content="Grupo Manejo Miopía LATAM — sitio oficial próximo a lanzarse.">
+<meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0A2540">
-<link rel="canonical" href="https://miopialatam.org/">
 <link rel="icon" type="image/png" href="logo-mml.png">
 <link rel="apple-touch-icon" href="logo-mml.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://miopialatam.org/">
-<meta property="og:title" content="MML - Grupo Manejo Miopía LATAM">
-<meta property="og:description" content="Red latinoamericana de especialistas en control de miopía. Protocolos clínicos, investigación regional y formación continua en español para optómetras y oftalmólogos.">
-<meta property="og:image" content="https://miopialatam.org/logo-mml.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:site_name" content="MML - Grupo Manejo Miopía LATAM">
-<meta property="og:locale" content="es_LA">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MML - Grupo Manejo Miopía LATAM">
-<meta name="twitter:description" content="Red latinoamericana de especialistas en control de miopía. Protocolos clínicos, investigación regional y formación continua en español para optómetras y oftalmólogos.">
-<meta name="twitter:image" content="https://miopialatam.org/logo-mml.png">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
   --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
-  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;--white:#fff;
-  --az-deep:#005FA3;--az-soft:#EAF4FB;
-  --grad-az:linear-gradient(135deg,#0077C8 0%,#005FA3 100%);
-  --grad-ve:linear-gradient(135deg,#2EAA4A 0%,#1E7D34 100%);
-  --grad-hero:linear-gradient(180deg,#FAFCFE 0%,#fff 100%);
-  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
-  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
-  --shadow-lg:0 12px 40px rgba(10,37,64,0.10);
+  --bd:#E5EAEF;--bg:#FAFBFC;
 }
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--txt);background:var(--white);font-feature-settings:'ss01','cv11';-webkit-font-smoothing:antialiased;line-height:1.5}
+html,body{height:100%}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5;min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden}
 
-/* TOPBAR ACCENT */
 .topbar{display:flex;height:4px}
 .topbar div{flex:1}
 
-/* NAV */
-nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
-.logo{display:flex;align-items:center;text-decoration:none}
-.logo img{height:88px;width:auto;display:block}
-.nav-links{display:flex;gap:4px;align-items:center;background:rgba(245,247,250,0.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:999px;padding:6px;position:relative;overflow:hidden}
-.nav-links::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 0%,rgba(245,197,24,0.14) 20%,rgba(46,170,74,0.14) 40%,rgba(0,119,200,0.14) 60%,rgba(212,43,43,0.14) 80%,transparent 100%);background-size:200% 100%;animation:aladino 10s linear infinite;pointer-events:none;border-radius:999px;z-index:0}
-@keyframes aladino{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--mu);text-decoration:none;position:relative;padding:10px 20px;border-radius:999px;transition:all .3s cubic-bezier(.4,0,.2,1);white-space:nowrap;z-index:2}
-.nav-links a:hover{color:var(--ink);background:rgba(255,255,255,0.95);box-shadow:0 4px 14px rgba(10,37,64,0.08)}
-.nav-links a.active{color:#fff;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);box-shadow:0 6px 20px rgba(0,119,200,0.4);overflow:hidden;font-weight:700}
-.nav-links a.active::after{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:shineActive 3.5s ease-in-out infinite;pointer-events:none}
-@keyframes shineActive{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.btn-primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;letter-spacing:0.01em;transition:all .2s;display:inline-flex;align-items:center;gap:6px;position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(0,119,200,0.3)}
-.btn-primary::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
-@keyframes aladino-shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,119,200,0.45)}
-.btn-primary>*{position:relative;z-index:2}
-.btn-primary::after{content:'\2192';font-size:0.95rem;transition:transform .2s;position:relative;z-index:2}
-.btn-primary:hover::after{transform:translateX(3px)}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 2rem;position:relative;overflow:hidden;background:linear-gradient(180deg,#FAFCFE 0%,#fff 100%)}
+main::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent 0%,#000 50%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 50%,transparent 100%);opacity:0.6;pointer-events:none}
+main::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(0,119,200,0.08),transparent 70%);pointer-events:none}
 
-/* HERO */
-.hero{position:relative;padding:8rem 2rem 6rem;text-align:center;overflow:hidden;background:var(--grad-hero)}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(0,119,200,0.08),transparent 70%);pointer-events:none}
-.hero::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.05) 1px,transparent 0);background-size:24px 24px;mask-image:linear-gradient(180deg,transparent 0%,#000 30%,#000 60%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 30%,#000 60%,transparent 100%);opacity:0.5;pointer-events:none}
-.hero-inner{max-width:1080px;margin:0 auto;position:relative;z-index:2}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--bd);color:var(--ink);font-size:0.74rem;font-weight:600;padding:7px 16px 7px 12px;border-radius:999px;margin-bottom:1.8rem;box-shadow:var(--shadow-sm)}
-.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--ve);box-shadow:0 0 0 4px rgba(46,170,74,0.18);animation:pulse 2s infinite}
+.inner{max-width:780px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.logo-wrap{margin-bottom:2.5rem;display:flex;justify-content:center}
+.logo-wrap img{max-width:280px;width:100%;height:auto}
+
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--bd);color:var(--ink);font-size:0.76rem;font-weight:600;padding:7px 16px;border-radius:999px;margin-bottom:1.6rem;box-shadow:0 1px 3px rgba(10,37,64,0.06);letter-spacing:0.04em;text-transform:uppercase;font-family:'Barlow Condensed',sans-serif}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--ve);box-shadow:0 0 0 4px rgba(46,170,74,0.18);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(46,170,74,0.18)}50%{box-shadow:0 0 0 8px rgba(46,170,74,0.05)}}
-.hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(3.5rem,8.5vw,7.5rem);line-height:0.9;letter-spacing:-0.04em;color:var(--ink);margin-bottom:1.8rem;text-transform:uppercase}
-.hero h1 .accent{position:relative;display:inline-block;color:var(--az)}
-.hero h1 .accent::after{content:'';position:absolute;left:0;right:0;bottom:10px;height:16px;background:rgba(245,197,24,0.4);z-index:-1;border-radius:3px}
-.hero p.lead{font-size:1.25rem;color:var(--mu);line-height:1.6;max-width:720px;margin:0 auto 2.8rem;font-weight:400}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem}
-.btn-hero{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.95rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;cursor:pointer;font-family:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;letter-spacing:0.01em;position:relative;overflow:hidden;box-shadow:0 6px 20px rgba(0,119,200,0.35)}
-.btn-hero::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
-.btn-hero:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(0,119,200,0.5)}
-.btn-hero::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
-.btn-hero:hover::after{transform:translateX(3px)}
-.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--bd);padding:0.95rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;cursor:pointer;font-family:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
-.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
-.hero-flags{display:flex;justify-content:center;align-items:center;gap:1.4rem;flex-wrap:wrap;font-size:0.78rem;color:var(--soft);letter-spacing:0.04em}
-.hero-flags strong{color:var(--ink);font-weight:600}
-.hero-flags span{display:inline-flex;align-items:center;gap:6px}
-.hero-flags span::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--ve)}
 
-/* TRUST STRIP */
-.trust-strip{border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);background:#fff;padding:1.4rem 2rem}
-.trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
-.trust-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--soft)}
-.trust-items{display:flex;gap:2.5rem;flex-wrap:wrap}
-.trust-item{display:flex;align-items:center;gap:8px;font-size:0.84rem;color:var(--ink);font-weight:500}
-.trust-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.5rem;line-height:1;color:var(--az)}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.8rem,7vw,5.6rem);line-height:0.95;letter-spacing:-0.035em;color:var(--ink);text-transform:uppercase;margin-bottom:1.2rem}
+h1 .accent{position:relative;display:inline-block;color:var(--az)}
+h1 .accent::after{content:'';position:absolute;left:0;right:0;bottom:6px;height:14px;background:rgba(245,197,24,0.35);z-index:-1;border-radius:3px}
 
-/* FEATURES */
-.features-sec{padding:6rem 2rem;background:var(--bg)}
-.features-head{max-width:760px;margin:0 auto 3.5rem;text-align:center}
-.kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--az);margin-bottom:1rem}
-.kicker::before{content:'';width:24px;height:2px;background:var(--az);border-radius:2px}
-.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.6rem,5vw,4.4rem);line-height:0.95;letter-spacing:-0.03em;color:var(--ink);text-transform:uppercase;margin-bottom:1.2rem}
-.section-sub{font-size:1.1rem;color:var(--mu);line-height:1.65;max-width:620px;margin:0 auto}
-.features{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;max-width:1280px;margin:0 auto}
-.feat-card{background:#fff;border:1px solid var(--bd);border-radius:20px;overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer;text-decoration:none;display:flex;flex-direction:column;position:relative}
-.feat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:transparent}
-.feat-photo{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%)}
-.feat-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.4,0,.2,1);position:relative;z-index:2}
-.feat-card:hover .feat-photo img{transform:scale(1.06)}
-.feat-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,37,64,0.35) 100%);pointer-events:none;z-index:3}
-.feat-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;z-index:0}
-.feat-icon svg{width:90px;height:90px;display:block;opacity:0.45;stroke-width:1.5}
-.feat-badge{position:absolute;top:14px;left:14px;padding:5px 12px;border-radius:999px;font-size:0.62rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;z-index:4;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,0.95);color:var(--c-dark);box-shadow:0 2px 10px rgba(0,0,0,0.15)}
-.feat-content{padding:1.8rem 2rem 2rem;flex:1;display:flex;flex-direction:column}
-.feat-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.45rem;text-transform:uppercase;letter-spacing:-0.015em;color:var(--ink);margin-bottom:0.7rem;line-height:1.1}
-.feat-card p{font-size:0.95rem;color:var(--mu);line-height:1.65;margin-bottom:1.2rem;flex:1}
-.feat-link{display:inline-flex;align-items:center;gap:6px;font-size:0.82rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:0.01em;transition:gap .2s}
-.feat-card:hover .feat-link{gap:10px;color:var(--az)}
-.feat-link::after{content:'\2192'}
+.lead{font-size:1.15rem;color:var(--mu);line-height:1.65;max-width:560px;margin:0 auto 2.5rem;font-weight:400}
 
-/* DUAL */
-.dual{padding:6rem 2rem;background:#fff}
-.dual-inner{max-width:1200px;margin:0 auto}
-.dual-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;flex-wrap:wrap;gap:1.5rem}
-.dual-head-text{max-width:600px}
-.dual-head .section-title{margin-bottom:0.6rem}
-.tabs{display:inline-flex;background:var(--bg);border:1px solid var(--bd);border-radius:999px;padding:5px}
-.tab{padding:0.55rem 1.4rem;font-family:'Inter',sans-serif;font-size:0.84rem;font-weight:600;cursor:pointer;color:var(--mu);background:transparent;border:none;border-radius:999px;transition:all .2s;letter-spacing:0.01em}
-.tab.active{background:var(--ink);color:#fff;box-shadow:var(--shadow-sm)}
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
-.card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:1.6rem;transition:all .25s;position:relative;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column}
-.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:transparent}
-.card-arrow{margin-top:auto;padding-top:0.8rem;font-size:0.78rem;font-weight:600;color:var(--az);letter-spacing:0.01em;transition:gap .2s}
-.card:hover .card-arrow{color:var(--ink)}
-.card-ico{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;position:relative;overflow:hidden}
-.card-ico svg{width:26px;height:26px;display:block;stroke-width:2}
-.card h3{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:800;text-transform:uppercase;color:var(--ink);margin-bottom:0.4rem;line-height:1.1}
-.card p{font-size:0.84rem;color:var(--mu);line-height:1.55}
-#tab-c{display:none}
+.mision{background:linear-gradient(135deg,#FAFCFE 0%,#fff 100%);border:1px solid var(--bd);border-radius:18px;padding:1.6rem 1.8rem;max-width:580px;margin:0 auto 2.5rem;text-align:left;box-shadow:0 4px 16px rgba(10,37,64,0.05)}
+.mision-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--az);margin-bottom:0.5rem;display:flex;align-items:center;gap:8px}
+.mision-label::before{content:'';width:24px;height:2px;background:var(--az);border-radius:2px}
+.mision-text{font-size:0.95rem;color:var(--txt);line-height:1.65}
+.mision-text strong{color:var(--ink);font-weight:600}
 
-/* STATS DARK */
-.stats-sec{padding:0 2rem;margin:2rem 0 0}
-.stats{background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);border-radius:28px;padding:3.5rem 3rem;display:grid;grid-template-columns:1.2fr 2fr;gap:3rem;align-items:center;max-width:1200px;margin:0 auto;position:relative;overflow:hidden}
-.stats::before{content:'';position:absolute;right:-100px;top:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(0,119,200,0.25),transparent 70%);pointer-events:none}
-.stats-left{position:relative;z-index:2}
-.stats-left .kicker{color:var(--am);margin-bottom:1rem}
-.stats-left .kicker::before{background:var(--am)}
-.stats-left h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2rem,3vw,2.8rem);color:#fff;text-transform:uppercase;letter-spacing:-0.03em;margin-bottom:0.9rem;line-height:0.95}
-.stats-left p{font-size:0.95rem;color:rgba(255,255,255,0.65);line-height:1.65}
-.stats-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;position:relative;z-index:2}
-.stat{position:relative;padding-left:1.2rem;border-left:2px solid rgba(255,255,255,0.15)}
-.stat-n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:3.4rem;line-height:0.95;letter-spacing:-0.04em}
-.stat-l{font-size:0.74rem;color:rgba(255,255,255,0.55);margin-top:6px;letter-spacing:0.04em;line-height:1.3}
+.cta-info{font-size:0.85rem;color:var(--soft);margin-bottom:1.5rem}
+.cta-info a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--bd);padding-bottom:1px}
+.cta-info a:hover{color:var(--az);border-color:var(--az)}
 
-/* ORIGEN */
-.origen-sec{padding:6rem 2rem;background:var(--bg)}
-.origen-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:3.5rem;align-items:center;max-width:1200px;margin:0 auto;background:#fff;border:1px solid var(--bd);border-radius:28px;padding:3.5rem;position:relative;overflow:hidden;box-shadow:var(--shadow-md)}
-.origen-grid::before{content:'';position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(180deg,#F5C518 0%,#2EAA4A 33%,#0077C8 66%,#D42B2B 100%)}
-.origen-kicker{display:inline-flex;align-items:center;gap:12px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--az);margin-bottom:1.4rem}
-.origen-kicker::before{content:'';width:42px;height:3px;background:linear-gradient(90deg,#F5C518 0%,#2EAA4A 33%,#0077C8 66%,#D42B2B 100%);border-radius:2px}
-.origen-text .section-title{margin-bottom:1.2rem;font-size:clamp(2.6rem,5vw,4.4rem);text-align:left}
-.origen-text p{font-size:1.05rem;color:var(--mu);line-height:1.75;margin-bottom:1.2rem}
-.origen-text strong{color:var(--ink);font-weight:600}
-.timeline{display:flex;align-items:center;gap:1rem;margin-top:1.8rem}
-.t-item{flex:1;padding:1rem 1.2rem;background:var(--bg);border:1px solid var(--bd);border-radius:14px}
-.t-year{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.7rem;color:var(--az);letter-spacing:-0.02em;line-height:1;margin-bottom:0.25rem}
-.t-event{font-size:0.78rem;color:var(--mu);font-weight:500}
-.origen-photo{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/3}
-.origen-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.photo-caption{position:absolute;bottom:0;left:0;right:0;padding:1.6rem 1.4rem 1rem;background:linear-gradient(180deg,transparent 0%,rgba(10,37,64,0.85) 100%);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;text-align:center}
+.colors-strip{display:flex;justify-content:center;gap:6px;margin-bottom:2rem}
+.colors-strip div{width:36px;height:5px;border-radius:3px}
 
-/* MEMBERS */
-.members-sec{padding:6rem 2rem;background:#fff}
-.members{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;max-width:1200px;margin:0 auto}
-.member-card{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:2rem 1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;overflow:hidden;transition:all .25s}
-.member-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:transparent}
-.member-av{width:120px;height:120px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.2rem;color:#fff;margin-bottom:1.2rem;letter-spacing:0.02em;box-shadow:var(--shadow-md);position:relative;overflow:hidden}
-.member-av::before{content:'';position:absolute;inset:-5px;border-radius:50%;border:2px solid rgba(0,119,200,0.12);z-index:-1}
-.member-av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;z-index:2}
-.member-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.2rem;letter-spacing:-0.01em}
-.member-title{font-size:0.72rem;color:var(--az);font-weight:600;text-transform:uppercase;margin-bottom:0.8rem;letter-spacing:0.05em}
-.member-esp{font-size:0.84rem;color:var(--mu);line-height:1.55;margin-bottom:1rem;min-height:2.5em}
-.member-tag{font-size:0.7rem;font-weight:600;padding:5px 12px;border-radius:999px;margin-bottom:0.8rem;display:inline-block;letter-spacing:0.02em}
-.member-web{font-size:0.74rem;color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1px solid var(--bd);padding-bottom:2px;transition:all .2s}
-.member-web:hover{color:var(--az);border-color:var(--az)}
-.member-bar{position:absolute;bottom:0;left:0;right:0;display:flex;height:3px}
-.member-bar div{flex:1}
-.founder-tag{position:absolute;top:14px;left:14px;background:#fff;color:var(--ink);font-size:0.58rem;font-weight:700;padding:3px 10px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.08em;text-transform:uppercase;z-index:3;border:1px solid var(--bd);box-shadow:var(--shadow-sm)}
-.admin-tag{position:absolute;top:14px;right:14px;background:linear-gradient(135deg,#F5C518,#E8AC00);color:#5C4400;font-size:0.58rem;font-weight:800;padding:3px 10px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.08em;text-transform:uppercase;z-index:3;box-shadow:0 2px 8px rgba(245,197,24,0.4)}
-
-/* CTA */
-.cta-sec{padding:6rem 2rem;background:var(--ink);color:#fff;text-align:center;position:relative;overflow:hidden}
-.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(0,119,200,0.3),transparent 60%)}
-.cta-sec::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,0.05) 1px,transparent 0);background-size:30px 30px;opacity:0.5}
-.cta-inner{position:relative;z-index:2;max-width:680px;margin:0 auto}
-.cta-sec h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.8rem,5.5vw,4.8rem);text-transform:uppercase;letter-spacing:-0.035em;margin-bottom:1.4rem;line-height:0.92}
-.cta-sec p{font-size:1.05rem;color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 2.4rem;line-height:1.6}
-.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-white{background:#fff;color:var(--ink);padding:0.95rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
-.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,255,255,0.2)}
-.btn-white::after{content:'\2192';transition:transform .2s}
-.btn-white:hover::after{transform:translateX(3px)}
-.btn-outline-w{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.3);padding:0.95rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
-.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,0.05)}
-
-/* NEWSLETTER */
-.newsletter{padding:5rem 2rem;background:var(--bg);text-align:center;border-top:1px solid var(--bd)}
-.nl-inner{max-width:520px;margin:0 auto}
-.newsletter h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.6rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.5rem;letter-spacing:-0.02em;line-height:1}
-.newsletter p{font-size:0.95rem;color:var(--mu);margin-bottom:1.6rem;line-height:1.55}
-.nl-form{display:flex;gap:8px;justify-content:center;background:#fff;padding:6px;border:1px solid var(--bd);border-radius:999px;box-shadow:var(--shadow-sm)}
-.nl-input{flex:1;padding:0.7rem 1rem;border:none;font-size:0.9rem;font-family:inherit;color:var(--ink);outline:none;background:transparent}
-.nl-btn{background:var(--ink);color:#fff;border:none;padding:0.7rem 1.6rem;border-radius:999px;font-size:0.86rem;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;transition:background .2s}
-.nl-btn:hover{background:var(--az)}
-
-/* FOOTER */
-footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
-.footer-grid{max-width:1200px;margin:0 auto 2.5rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
-.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;margin-bottom:0.5rem;letter-spacing:-0.01em}
-.footer-brand p{font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.6;max-width:300px}
-.footer-col h5{font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem;color:rgba(255,255,255,0.55)}
-.footer-col a{display:block;font-size:0.86rem;color:rgba(255,255,255,0.8);text-decoration:none;margin-bottom:0.6rem;transition:color .2s}
-.footer-col a:hover{color:var(--am)}
-.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.45)}
-.footer-stripes{display:flex;gap:4px}
+footer{background:var(--ink);padding:2rem;text-align:center;color:#fff}
+.footer-stripes{display:flex;gap:4px;justify-content:center;margin-bottom:0.8rem}
 .footer-stripes div{width:24px;height:4px;border-radius:2px}
+.footer-copy{font-size:0.76rem;color:rgba(255,255,255,0.5)}
 
-.nav-toggle{display:none;background:transparent;border:none;cursor:pointer;padding:8px;border-radius:10px;color:var(--ink);transition:all .2s;position:relative;z-index:10000}
-.nav-toggle svg{width:32px;height:32px;display:block}
-.nav-toggle:hover{background:rgba(10,37,64,0.06)}
-.nav-toggle .ico-close{display:none}
-.nav-toggle.active .ico-open{display:none}
-.nav-toggle.active .ico-close{display:block}
-
-@media(max-width:1180px){
-  .nav-links a{font-size:0.95rem;padding:9px 16px}
-}
-@media(max-width:980px){
-  nav{padding:0 1.5rem;height:88px}
-  .logo img{height:64px}
-  .nav-toggle{display:flex}
-  body.nav-open{overflow:hidden}
-  .nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#fff;display:flex !important;flex-direction:column;padding:6rem 1.2rem 2rem;gap:0.5rem;z-index:9998;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);overflow-y:auto;-webkit-overflow-scrolling:touch;border:none !important;border-radius:0 !important;align-items:stretch;backdrop-filter:none !important;-webkit-backdrop-filter:none !important}
-  .nav-links::before{display:none !important}
-  .nav-links.open{transform:translateX(0)}
-  .nav-links a{display:block !important;width:100% !important;box-sizing:border-box;font-family:'Barlow Condensed',sans-serif !important;font-size:1.25rem !important;font-weight:700 !important;letter-spacing:0.03em !important;text-transform:uppercase !important;padding:1rem 1.3rem !important;border-radius:12px !important;background:#F5F7FA !important;color:var(--ink) !important;border:1px solid var(--bd) !important;text-align:left !important;line-height:1.2 !important;overflow:visible !important;text-decoration:none !important;box-shadow:none !important;transform:none !important}
-  .nav-links a:hover,.nav-links a:active{background:#fff !important;border-color:var(--ink) !important}
-  .nav-links a.active{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%) !important;color:#fff !important;border-color:transparent !important}
-  .nav-links a.active::after,.nav-links a.active::before{display:none !important}
-  nav>a.btn-primary{display:none}
-  .features,.cards{grid-template-columns:repeat(2,1fr)}
-  .members{grid-template-columns:repeat(2,1fr)}
-  .stats{grid-template-columns:1fr;padding:2.5rem}
-  .stats-nums{grid-template-columns:repeat(2,1fr)}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
-  .origen-grid{grid-template-columns:1fr;gap:2rem;padding:2.5rem}
-}
 @media(max-width:640px){
-  .features,.cards,.members{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
-  .origen-grid{padding:2rem 1.5rem}
-  .timeline{flex-direction:column;gap:0.7rem}
-  .hero{padding:4rem 1.5rem 3.5rem}
-  .hero h1{font-size:3rem;letter-spacing:-0.03em}
-  nav{padding:0 1rem}
-  .nav-cta-text{display:none}
+  .logo-wrap img{max-width:220px}
+  h1{font-size:2.6rem}
+  .mision{padding:1.3rem 1.4rem}
 }
 </style>
 </head>
@@ -280,358 +75,43 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   <div style="background:#D42B2B"></div>
 </div>
 
-<nav>
-  <a href="index.html" class="logo">
-    <img src="logo-mml.png" alt="Grupo Manejo Miopia Latam">
-  </a>
-  <div class="nav-links">
-    <a href="index.html" class="active">Inicio</a>
-    <a href="articulos.html">Articulos</a>
-    <a href="investigacion.html">Investigacion</a>
-    <a href="productos.html">Productos</a>
-    <a href="eventos.html">Eventos</a>
-    <a href="embajadores.html">Embajadores</a>
-    <a href="recursos.html">Recursos</a>
-    <a href="miembros.html">Nuestra Red</a>
-    <a href="familias.html">Para Familias</a>
-  </div>
-  <a href="unirme.html" class="btn-primary"><span class="nav-cta-text">Unirme a MML</span></a>
-  <button class="nav-toggle" aria-label="Abrir menú">
-    <svg class="ico-open" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"><line x1="6" y1="10" x2="26" y2="10"/><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="22" x2="26" y2="22"/></svg>
-    <svg class="ico-close" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"><line x1="8" y1="8" x2="24" y2="24"/><line x1="24" y1="8" x2="8" y2="24"/></svg>
-  </button>
-</nav>
+<main>
+  <div class="inner">
+    <div class="logo-wrap">
+      <img src="logo-mml.png" alt="Grupo Manejo Miopía Latam">
+    </div>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-badge"><span class="dot"></span>Red de embajadores activa en toda Latinoamérica</div>
-    <h1>Liderando el <span class="accent">control de miopía</span><br>en Latinoamérica</h1>
-    <p class="lead">MML es la red latinoamericana dedicada a la <strong>investigación en manejo de la miopía</strong> y a educar a los proveedores de salud visual de la región de manera académica y libre de influencias comerciales.</p>
-    <div class="hero-btns">
-      <a href="articulos.html" class="btn-hero">Explorar contenido clínico</a>
-      <a href="unirme.html" class="btn-ghost">Solicitar membresía</a>
-    </div>
-    <div class="hero-flags">
-      <strong>Embajadores en 19 países:</strong>
-      <span>Argentina</span>
-      <span>Bolivia</span>
-      <span>Brasil</span>
-      <span>Chile</span>
-      <span>Colombia</span>
-      <span>Costa Rica</span>
-      <span>Ecuador</span>
-      <span>El Salvador</span>
-      <span>España</span>
-      <span>Guatemala</span>
-      <span>Honduras</span>
-      <span>México</span>
-      <span>Nicaragua</span>
-      <span>Panamá</span>
-      <span>Paraguay</span>
-      <span>Perú</span>
-      <span>Puerto Rico</span>
-      <span>Rep. Dominicana</span>
-      <span>Uruguay</span>
-      <span>USA</span>
-      <span>Venezuela</span>
-    </div>
-  </div>
-</section>
+    <div class="badge"><span class="dot"></span>Próximo lanzamiento</div>
 
-<div class="trust-strip">
-  <div class="trust-inner">
-    <div class="trust-label">Indicadores de impacto MML</div>
-    <div class="trust-items">
-      <div class="trust-item"><span class="trust-num">19</span><span>países con embajadores</span></div>
-      <div class="trust-item"><span class="trust-num" style="color:var(--ve)">31</span><span>especialistas en red</span></div>
-      <div class="trust-item"><span class="trust-num" style="color:var(--am)">6</span><span>artículos clínicos publicados</span></div>
-      <div class="trust-item"><span class="trust-num" style="color:var(--ro)">6</span><span>líneas de investigación</span></div>
-    </div>
-  </div>
-</div>
+    <h1>Sitio oficial<br><span class="accent">en construcción</span></h1>
 
-<section class="features-sec">
-  <div class="features-head">
-    <div class="kicker">Plataforma integral</div>
-    <h2 class="section-title">Todo lo que tu practica clinica necesita</h2>
-    <p class="section-sub">Reune en un solo lugar protocolos clinicos basados en evidencia, investigacion propia LATAM y formacion continua en español.</p>
-  </div>
-  <div class="features">
-    <a href="articulos.html" class="feat-card" style="--c:#0077C8;--c-dark:#005FA3">
-      <div class="feat-photo">
-        <span class="feat-badge">Practica clinica</span>
-        <div class="feat-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="20" height="26" rx="3"/><line x1="11" y1="10" x2="22" y2="10"/><line x1="11" y1="16" x2="22" y2="16"/><line x1="11" y1="22" x2="18" y2="22"/></svg></div>
-        <img src="img/features/articulos.jpg" alt="Articulos clinicos" onerror="this.remove()">
-      </div>
-      <div class="feat-content">
-        <h3>Articulos clinicos</h3>
-        <p>Guias practicas para el manejo diario de la miopia, desde el diagnostico temprano hasta la eleccion del tratamiento mas adecuado segun el paciente.</p>
-        <span class="feat-link">Ver biblioteca clinica</span>
-      </div>
-    </a>
-    <a href="investigacion.html" class="feat-card" style="--c:#2EAA4A;--c-dark:#1E7D34">
-      <div class="feat-photo">
-        <span class="feat-badge">Investigacion</span>
-        <div class="feat-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="8"/><line x1="20" y1="20" x2="27" y2="27"/><path d="M11 14 L13.5 16.5 L17.5 11.5"/></svg></div>
-        <img src="img/features/ciencia.jpg" alt="Ciencia y evidencia" onerror="this.remove()">
-      </div>
-      <div class="feat-content">
-        <h3>Ciencia y evidencia</h3>
-        <p>Resumenes de los ultimos estudios sobre epidemiologia, mecanismos y eficacia de tratamientos con enfasis en poblacion latina.</p>
-        <span class="feat-link">Ver investigacion MML</span>
-      </div>
-    </a>
-    <a href="unirme.html" class="feat-card" style="--c:#F5C518;--c-dark:#C9A200">
-      <div class="feat-photo">
-        <span class="feat-badge">Educación</span>
-        <div class="feat-icon" style="color:#5C4400"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 L16 5 L30 12 L16 19 Z"/><path d="M8 15 V22 Q16 26 24 22 V15"/><line x1="28" y1="13" x2="28" y2="21"/><circle cx="28" cy="23" r="1.5" fill="currentColor" stroke="none"/></svg></div>
-        <img src="img/features/formacion.jpg" alt="Formación continua" onerror="this.remove()">
-      </div>
-      <div class="feat-content">
-        <h3>Formación continua</h3>
-        <p>Cursos en línea, webinars y recursos educativos en español creados por y para especialistas latinoamericanos.</p>
-        <span class="feat-link">Conocer más</span>
-      </div>
-    </a>
-    <a href="recursos.html" class="feat-card" style="--c:#D42B2B;--c-dark:#A01F1F">
-      <div class="feat-photo">
-        <span class="feat-badge">Enlaces curados</span>
-        <div class="feat-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18 L18 14 M11 16 L7 20 Q4 23 7 26 Q10 29 13 26 L17 22"/><path d="M18 14 L22 10 Q25 7 22 4 Q19 1 16 4 L12 8"/><circle cx="12" cy="20" r="1.5" fill="currentColor" stroke="none"/><circle cx="20" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></div>
-        <img src="img/features/recursos.jpg" alt="Recursos y enlaces de interés" onerror="this.remove()">
-      </div>
-      <div class="feat-content">
-        <h3>Recursos curados</h3>
-        <p>Directorio de herramientas clínicas (PreMO), institutos (IMI, Brien Holden), guías y buscadores bibliográficos.</p>
-        <span class="feat-link">Ver enlaces</span>
-      </div>
-    </a>
-  </div>
-</section>
+    <p class="lead">Estamos preparando el lanzamiento oficial del sitio web del Grupo Manejo Miopía Latam.</p>
 
-<section class="dual">
-  <div class="dual-inner">
-    <div class="dual-head">
-      <div class="dual-head-text">
-        <div class="kicker">Para quien es MML</div>
-        <h2 class="section-title">Una plataforma, dos caminos</h2>
-        <p class="section-sub">Disenada tanto para el especialista clinico como para la familia que busca orientacion confiable y cercana.</p>
-      </div>
-      <div class="tabs">
-        <button class="tab active" onclick="showTab('f',this)">Familias y pacientes</button>
-        <button class="tab" onclick="showTab('c',this)">Especialistas clinicos</button>
-      </div>
+    <div class="mision">
+      <div class="mision-label">Nuestra misión</div>
+      <div class="mision-text">MML es la red latinoamericana dedicada a la <strong>investigación en manejo de la miopía</strong> y a educar a los proveedores de salud visual de la región de manera académica y libre de influencias comerciales.</div>
     </div>
-    <div id="tab-f" class="cards">
-      <a href="embajadores.html" class="card"><div class="card-ico" style="background:#EAF4FB;color:#0077C8"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 4 C11 4 7 8 7 13 C7 20 16 28 16 28 C16 28 25 20 25 13 C25 8 21 4 16 4 Z"/><circle cx="16" cy="13" r="3"/></svg></div><h3>Encuentra tu especialista</h3><p>Directorio verificado de embajadores MML por país de Latinoamérica.</p><span class="card-arrow">Ver directorio →</span></a>
-      <a href="familias.html" class="card"><div class="card-ico" style="background:#E6F7EB;color:#2EAA4A"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="11" cy="10" r="3.5"/><circle cx="21" cy="10" r="3.5"/><path d="M5 24 Q5 17 11 17 Q17 17 17 22"/><path d="M15 22 Q15 17 21 17 Q27 17 27 24"/></svg></div><h3>Guías para padres</h3><p>Señales de alerta en niños, tratamientos disponibles y preguntas frecuentes.</p><span class="card-arrow">Ver guía →</span></a>
-      <a href="recursos.html" class="card"><div class="card-ico" style="background:#FFF6D8;color:#A88300"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16 Q9 7 16 7 Q23 7 29 16 Q23 25 16 25 Q9 25 3 16 Z"/><circle cx="16" cy="16" r="4"/><circle cx="16" cy="16" r="1.5" fill="currentColor" stroke="none"/></svg></div><h3>Seguimiento visual</h3><p>Conoce PreMO, herramienta gratuita para visualizar la progresión miópica de tu hijo.</p><span class="card-arrow">Ver herramienta →</span></a>
-      <a href="https://www.facebook.com/groups/controldemiopiaLATAM" target="_blank" rel="noopener" class="card"><div class="card-ico" style="background:#FDECEA;color:#D42B2B"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="12"/><line x1="4" y1="16" x2="28" y2="16"/><path d="M16 4 Q22 10 22 16 Q22 22 16 28 Q10 22 10 16 Q10 10 16 4"/></svg></div><h3>Comunidad LATAM</h3><p>Grupo de Facebook con familias y especialistas de toda Latinoamérica.</p><span class="card-arrow">Unirme al grupo →</span></a>
-    </div>
-    <div id="tab-c" class="cards">
-      <a href="embajadores-registro.html" class="card"><div class="card-ico" style="background:#EAF4FB;color:#0077C8"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 3 L24 6 V14 Q24 22 16 29 Q8 22 8 14 V6 Z"/><path d="M12 15 L15 18 L21 12"/></svg></div><h3>Perfil verificado</h3><p>Regístrate como embajador MML y aparece en el directorio con tu perfil profesional.</p><span class="card-arrow">Registrarme →</span></a>
-      <a href="embajadores.html" class="card"><div class="card-ico" style="background:#E6F7EB;color:#2EAA4A"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="8" cy="10" r="3"/><circle cx="24" cy="10" r="3"/><circle cx="16" cy="23" r="3"/><line x1="10.5" y1="12" x2="14" y2="21"/><line x1="21.5" y1="12" x2="18" y2="21"/><line x1="11" y1="10" x2="21" y2="10"/></svg></div><h3>Red de colegas</h3><p>Conecta con los 31 fundadores y embajadores MML en 19 países LATAM.</p><span class="card-arrow">Ver red →</span></a>
-      <a href="recursos.html" class="card"><div class="card-ico" style="background:#FFF6D8;color:#A88300"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="5" y="5" width="6" height="22" rx="1"/><rect x="13" y="5" width="6" height="22" rx="1"/><path d="M21 7 L26 26"/><line x1="7" y1="11" x2="9" y2="11"/><line x1="15" y1="11" x2="17" y2="11"/></svg></div><h3>Recursos clínicos</h3><p>IMI white papers, Brien Holden Institute, IACLE, PubMed, SciELO y más.</p><span class="card-arrow">Ver recursos →</span></a>
-      <a href="articulos.html" class="card"><div class="card-ico" style="background:#FDECEA;color:#D42B2B"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="4" y="6" width="24" height="18" rx="2"/><path d="M8 19 L13 13 L17 16 L22 10 L26 14"/><circle cx="13" cy="13" r="1.5" fill="currentColor" stroke="none"/><circle cx="22" cy="10" r="1.5" fill="currentColor" stroke="none"/></svg></div><h3>Artículos clínicos</h3><p>6 artículos publicados: AXL/SER, Orto-K, atropina, lentes oftálmicas, LC blandos, combinadas.</p><span class="card-arrow">Leer artículos →</span></a>
-    </div>
-    <div id="tab-c" class="cards">
-      <div class="card"><div class="card-ico" style="background:#EAF4FB;color:#0077C8"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 3 L24 6 V14 Q24 22 16 29 Q8 22 8 14 V6 Z"/><path d="M12 15 L15 18 L21 12"/></svg></div><h3>Perfil verificado</h3><p>Aparece en el directorio con tu especializacion, metodos y ubicacion.</p></div>
-      <div class="card"><div class="card-ico" style="background:#E6F7EB;color:#2EAA4A"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="8" cy="10" r="3"/><circle cx="24" cy="10" r="3"/><circle cx="16" cy="23" r="3"/><line x1="10.5" y1="12" x2="14" y2="21"/><line x1="21.5" y1="12" x2="18" y2="21"/><line x1="11" y1="10" x2="21" y2="10"/></svg></div><h3>Red de colegas</h3><p>Intercambio de casos y evidencia entre especialistas LATAM.</p></div>
-      <div class="card"><div class="card-ico" style="background:#FFF6D8;color:#A88300"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="5" y="5" width="6" height="22" rx="1"/><rect x="13" y="5" width="6" height="22" rx="1"/><path d="M21 7 L26 26"/><line x1="7" y1="11" x2="9" y2="11"/><line x1="15" y1="11" x2="17" y2="11"/></svg></div><h3>Recursos clinicos</h3><p>Literatura actualizada y herramientas de diagnostico.</p></div>
-      <div class="card"><div class="card-ico" style="background:#FDECEA;color:#D42B2B"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="4" y="6" width="24" height="18" rx="2"/><path d="M8 19 L13 13 L17 16 L22 10 L26 14"/><circle cx="13" cy="13" r="1.5" fill="currentColor" stroke="none"/><circle cx="22" cy="10" r="1.5" fill="currentColor" stroke="none"/></svg></div><h3>Herramientas digitales</h3><p>Curvas de desenfoque, reportes y seguimiento integrado.</p></div>
-    </div>
-  </div>
-</section>
 
-<section class="stats-sec">
-  <div class="stats">
-    <div class="stats-left">
-      <div class="kicker">Datos en LATAM</div>
-      <h3>La miopia es la epidemia silenciosa de la region</h3>
-      <p>Latinoamerica enfrenta un crecimiento acelerado de la miopia sin contar aun con una red organizada de atencion especializada. MML existe para cambiar eso.</p>
-    </div>
-    <div class="stats-nums">
-      <div class="stat"><div class="stat-n" style="color:#F5C518">50%</div><div class="stat-l">Prevalencia<br>LATAM 2050</div></div>
-      <div class="stat"><div class="stat-n" style="color:#2EAA4A">19</div><div class="stat-l">Países<br>con embajadores</div></div>
-      <div class="stat"><div class="stat-n" style="color:#5AB4FF">10x</div><div class="stat-l">Riesgo<br>alta miopía</div></div>
-      <div class="stat"><div class="stat-n" style="color:#FF8585">8-12</div><div class="stat-l">Años ventana<br>crítica</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="origen-sec">
-  <div class="origen-grid">
-    <div class="origen-text">
-      <div class="origen-kicker">Nuestro origen</div>
-      <h2 class="section-title">Nacimos en el<br>ICSC 2019</h2>
-      <p>MML surgio en el marco del <strong>International Contact Lens Specialists Conference (ICSC)</strong> en 2019, como una iniciativa de un grupo de optometras latinoamericanos comprometidos con iniciar el manejo activo de la miopia y la ralentizacion de su progresion en la region.</p>
-      <p>Hoy somos una red presente en <strong>toda Latinoamerica</strong>, con embajadores en cada pais que lideran actividades educativas, clinicas y de investigacion. Llevan protocolos, articulos y formacion continua a las comunidades de especialistas, conectando colegas y generando evidencia regional propia.</p>
-      <div class="timeline">
-        <div class="t-item"><div class="t-year">2019</div><div class="t-event">Fundacion en el ICSC</div></div>
-        <div class="t-item"><div class="t-year">2026</div><div class="t-event">Red de embajadores en LATAM</div></div>
-      </div>
-    </div>
-    <div class="origen-photo">
-      <img src="img/fundadores-icsc-2019.jpg" alt="Fundadores MML en el ICSC 2019">
-      <div class="photo-caption">Fundadores MML - ICSC 2019</div>
-    </div>
-  </div>
-</section>
-
-<section class="members-sec">
-  <div class="features-head">
-    <div class="kicker">Nuestra red</div>
-    <h2 class="section-title">Miembros fundadores MML</h2>
-    <p class="section-sub">Optometras especializados en control de miopia que conforman el nucleo de esta red internacional activa.</p>
-  </div>
-  <div class="members">
-    <div class="member-card">
-      <div class="founder-tag">Fundador 2019</div>
-      <div class="admin-tag">Admin</div>
-      <div class="member-av" style="background:linear-gradient(135deg,#0077C8,#005FA3)"><img src="img/miembros/edgar-davila.jpg" alt="Edgar Davila Garcia" onerror="this.remove()">ED</div>
-      <div class="member-name">Edgar Davila Garcia</div>
-      <div class="member-title">Opt. - Fundador</div>
-      <div class="member-esp">Control de miopia - Lentes de contacto especializados</div>
-      <span class="member-tag" style="background:#EAF4FB;color:#0D47A1">Puerto Rico</span>
-      <a href="http://contactosespecializados.com" class="member-web" target="_blank">contactosespecializados.com</a>
-      <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
-    </div>
-    <div class="member-card">
-      <div class="founder-tag">Fundador 2019</div>
-      <div class="member-av" style="background:linear-gradient(135deg,#2EAA4A,#1E7D34)"><img src="img/miembros/david-pinero.jpg" alt="David P. Pinero" onerror="this.remove()">DP</div>
-      <div class="member-name">David P. Pinero</div>
-      <div class="member-title">Opt. - Investigador</div>
-      <div class="member-esp">Control de miopia - Universidad de Alicante</div>
-      <span class="member-tag" style="background:#FCE4EC;color:#880E4F">España</span>
-      <a href="mailto:david.pinyero@ua.es" class="member-web">david.pinyero@ua.es</a>
-      <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
-    </div>
-    <div class="member-card">
-      <div class="founder-tag">Fundador 2019</div>
-      <div class="member-av" style="background:linear-gradient(135deg,#D42B2B,#A01F1F)"><img src="img/miembros/elise-kramer.jpg" alt="Elise G. Kramer" onerror="this.remove()">EK</div>
-      <div class="member-name">Elise G. Kramer</div>
-      <div class="member-title">Opt. - Especialista</div>
-      <div class="member-esp">Lentes de contacto - Control de miopia - Miami</div>
-      <span class="member-tag" style="background:#E8EAF6;color:#1A237E">USA - Miami FL</span>
-      <a href="http://miamicontactlens.com" class="member-web" target="_blank">miamicontactlens.com</a>
-      <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
-    </div>
-    <div class="member-card">
-      <div class="founder-tag">Fundador 2019</div>
-      <div class="member-av" style="background:linear-gradient(135deg,#F5C518,#C9A200)"><img src="img/miembros/ricardo-pintor.jpg" alt="Ricardo Pintor L." onerror="this.remove()">RP</div>
-      <div class="member-name">Ricardo Pintor L.</div>
-      <div class="member-title">Opt. FIACLE - Especialista</div>
-      <div class="member-esp">Control de miopia - Orto-K - CooperVision - UNAM</div>
-      <span class="member-tag" style="background:#E6F7EB;color:#1B5E20">Mexico</span>
-      <a href="http://thevisioncareinstitute.com.mx" class="member-web" target="_blank">thevisioncareinstitute.com.mx</a>
-      <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
-    </div>
-    <div class="member-card">
-      <div class="founder-tag">Fundador 2019</div>
-      <div class="member-av" style="background:linear-gradient(135deg,#2EAA4A,#1E7D34)"><img src="img/miembros/ariolfo-vazquez.jpg" alt="Ariolfo Vazquez" onerror="this.remove()">AV</div>
-      <div class="member-name">Ariolfo Vazquez</div>
-      <div class="member-title">Opt. - Especialista</div>
-      <div class="member-esp">Control de miopia - Lentes de contacto - Cuenca</div>
-      <span class="member-tag" style="background:#E6F7EB;color:#1B5E20">Ecuador - Cuenca</span>
-      <a href="mailto:vazrueda@gmail.com" class="member-web">vazrueda@gmail.com</a>
-      <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
-    </div>
-    <div class="member-card">
-      <div class="founder-tag">Fundador 2019</div>
-      <div class="member-av" style="background:linear-gradient(135deg,#0077C8,#005FA3)"><img src="img/miembros/leonardo-orjuela.jpg" alt="Leonardo Orjuela M." onerror="this.remove()">LO</div>
-      <div class="member-name">Leonardo Orjuela M.</div>
-      <div class="member-title">Opt. - Especialista</div>
-      <div class="member-esp">Orto-K - Lentes de contacto - Control de miopia en comanejo</div>
-      <span class="member-tag" style="background:#EAF4FB;color:#0D47A1">Colombia - Medellin</span>
-      <a href="http://lentesespecializados.com" class="member-web" target="_blank">lentesespecializados.com</a>
-      <div class="member-bar"><div style="background:#F5C518"></div><div style="background:#2EAA4A"></div><div style="background:#0077C8"></div><div style="background:#D42B2B"></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-sec">
-  <div class="cta-inner">
-    <h2>Unete a la discusion</h2>
-    <p>El grupo MML es un espacio exclusivo para especialistas en control de miopia. Comparte casos, evidencia y protocolos con colegas de toda la region.</p>
-    <div class="cta-btns">
-      <a href="unirme.html" class="btn-white">Solicitar membresia</a>
-      <a href="mailto:info@miopialatam.org" class="btn-outline-w">info@miopialatam.org</a>
-    </div>
-  </div>
-</section>
-
-<section class="newsletter">
-  <div class="nl-inner">
-    <h3>Mantente actualizado</h3>
-    <p>Recibe articulos clinicos, novedades en investigacion y recursos de MML en tu correo.</p>
-    <form class="nl-form" onsubmit="event.preventDefault();alert('Gracias por suscribirte!')">
-      <input class="nl-input" type="email" placeholder="Tu correo profesional" required>
-      <button class="nl-btn" type="submit">Suscribirme</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <h4>Grupo Manejo Miopia Latam</h4>
-      <p>Red internacional de especialistas en control de miopia. Activa en Puerto Rico, Colombia, Mexico, USA, España y Ecuador.</p>
-    </div>
-    <div class="footer-col">
-      <h5>Recursos</h5>
-      <a href="articulos.html">Articulos clinicos</a>
-      <a href="investigacion.html">Investigacion</a>
-      <a href="productos.html">Productos</a>
-    </div>
-    <div class="footer-col">
-      <h5>Comunidad</h5>
-      <a href="miembros.html">Nuestra red</a>
-      <a href="familias.html">Para familias</a>
-      <a href="unirme.html">Unirme a MML</a>
-    </div>
-    <div class="footer-col">
-      <h5>Contacto</h5>
-      <a href="mailto:info@miopialatam.org">info@miopialatam.org</a>
-      <a href="mailto:investigacion@miopialatam.org">investigacion@miopialatam.org</a>
-      <a href="https://www.facebook.com/groups/controldemiopiaLATAM" target="_blank" rel="noopener">Facebook · Control de Miopía LATAM</a>
-      <a href="https://www.facebook.com/groups/404463937343554" target="_blank" rel="noopener">Facebook · Grupo MMLatam</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">2026 MML - miopialatam.org - Todos los derechos reservados</div>
-    <div class="footer-stripes">
+    <div class="colors-strip">
       <div style="background:#F5C518"></div>
       <div style="background:#2EAA4A"></div>
       <div style="background:#0077C8"></div>
       <div style="background:#D42B2B"></div>
     </div>
+
+    <p class="cta-info">¿Eres especialista en control de miopía? <a href="mailto:info@miopialatam.org">info@miopialatam.org</a></p>
   </div>
+</main>
+
+<footer>
+  <div class="footer-stripes">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="footer-copy">2026 Grupo Manejo Miopía Latam · miopialatam.org</div>
 </footer>
 
-<script>
-function showTab(t,el){
-  document.getElementById('tab-f').style.display=t==='f'?'grid':'none';
-  document.getElementById('tab-c').style.display=t==='c'?'grid':'none';
-  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
-  el.classList.add('active');
-}
-</script>
-<script>
-(function(){
-  const t = document.querySelector('.nav-toggle');
-  const l = document.querySelector('.nav-links');
-  if(!t || !l) return;
-  t.addEventListener('click', ()=>{
-    l.classList.toggle('open');
-    t.classList.toggle('active');
-    document.body.classList.toggle('nav-open');
-    t.setAttribute('aria-label', l.classList.contains('open') ? 'Cerrar menú' : 'Abrir menú');
-  });
-  l.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
-    l.classList.remove('open');
-    t.classList.remove('active');
-    document.body.classList.remove('nav-open');
-  }));
-})();
-</script>
 </body>
 </html>
