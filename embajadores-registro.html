@@ -285,12 +285,18 @@ Web/IG: ${web||'No indicada'}
 📝 *Bio*
 ${bio}
 
+📷 *FOTO PROFESIONAL:* (por favor adjunta tu foto a este mismo chat después de enviar este mensaje — cuadrada, fondo neutro, mínimo 400×400 px)
+
 — Enviado desde miopialatam.org/embajadores-registro`;
 
   const n1='17874595163'; // Edgar Davila admin
   const n2='573013166655'; // Leonardo Orjuela admin
   window.open('https://wa.me/'+n1+'?text='+encodeURIComponent(texto),'_blank');
   setTimeout(()=>window.open('https://wa.me/'+n2+'?text='+encodeURIComponent(texto),'_blank'),500);
+
+  setTimeout(()=>{
+    alert('✓ Datos enviados.\n\n📷 IMPORTANTE: ahora adjunta tu foto profesional en el mismo chat de WhatsApp que se abrió. Sin foto tu perfil quedará incompleto en el directorio MML.');
+  }, 1200);
 }
 </script>
 </body>
