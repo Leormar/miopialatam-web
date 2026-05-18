@@ -129,6 +129,8 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 .pp-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:-0.01em;margin-bottom:0.2rem;line-height:1.15;color:#fff}
 .pp-meta{font-size:0.74rem;color:rgba(255,255,255,0.6)}
 .pp-audio{width:100%;display:block;position:relative;z-index:2;height:44px;border-radius:10px;outline:none}
+.pp-video{position:relative;z-index:2;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
+.pp-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 @media(max-width:980px){nav{padding:0 1.5rem;height:88px}.logo img{height:64px}}
 @media(max-width:640px){.grid2{grid-template-columns:1fr}.art-body{padding:2.5rem 1.5rem}}
@@ -173,10 +175,9 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
         <div class="pp-meta">Generado con NotebookLM - 2 expertos discutiendo</div>
       </div>
     </div>
-    <audio controls preload="none" class="pp-audio">
-      <source src="audio/ortok.mp3" type="audio/mpeg">
-      Tu navegador no soporta audio HTML5.
-    </audio>
+    <div class="pp-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/Vt8a76fZ7wY?modestbranding=1&amp;rel=0&amp;playsinline=1&amp;color=white" title="Podcast MML: Ortoqueratología en control de miopía" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
 
   <p class="lead-p">La ortoqueratologia (Orto-K) se ha consolidado como una de las intervenciones mas efectivas para el control de miopia en niños.</p>
