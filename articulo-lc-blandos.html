@@ -129,6 +129,8 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
 .pp-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:-0.01em;margin-bottom:0.2rem;line-height:1.15;color:#fff}
 .pp-meta{font-size:0.74rem;color:rgba(255,255,255,0.6)}
 .pp-audio{width:100%;display:block;position:relative;z-index:2;height:44px;border-radius:10px;outline:none}
+.pp-video{position:relative;z-index:2;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
+.pp-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 .svg-fig{margin:2.5rem 0;padding:1.5rem;background:var(--bg);border:1px solid var(--bd);border-radius:18px;font-family:'Inter',sans-serif}
 .svg-fig svg{display:block;width:100%;height:auto;max-width:640px;margin:0 auto}
@@ -177,10 +179,9 @@ footer{background:var(--ink);padding:3rem 2rem 2rem;color:#fff}
         <div class="pp-meta">Generado con NotebookLM - 2 expertos discutiendo</div>
       </div>
     </div>
-    <audio controls preload="none" class="pp-audio">
-      <source src="audio/lc-blandos.mp3" type="audio/mpeg">
-      Tu navegador no soporta audio HTML5.
-    </audio>
+    <div class="pp-video">
+      <iframe src="https://www.youtube.com/embed/KvJmCTnACuY" title="Podcast MML: Lentes de contacto blandos para control de miopía" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
 
   <p class="lead-p">Los lentes de contacto blandos especiales combinan correccion refractiva con control de progresion en una sola modalidad, con buena aceptacion en niños activos.</p>
