@@ -435,14 +435,14 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   <div class="maw-inner">
     <div class="maw-tag">
       <span class="maw-dot"></span>
-      <span>Esta semana</span>
+      <span id="mawTag">Esta semana</span>
     </div>
     <div class="maw-content">
       <div class="maw-text">
-        <img src="img/maw2026-logo.webp" alt="Myopia Awareness Week 2026 · Campaña oficial BHVI" class="maw-logo" loading="lazy">
-        <h2 class="maw-title">Semana Mundial de<br>la Miopía 2026</h2>
-        <div class="maw-dates">18 — 24 de mayo · #MyopiaAwarenessWeek</div>
-        <p class="maw-theme">"Empezar temprano, proteger la visión de por vida"</p>
+        <img id="mawImage" src="img/maw2026-logo.webp" alt="Myopia Awareness Week 2026 · Campaña oficial BHVI" class="maw-logo" loading="lazy">
+        <h2 id="mawTitle" class="maw-title">Semana Mundial de<br>la Miopía 2026</h2>
+        <div id="mawDates" class="maw-dates">18 — 24 de mayo · #MyopiaAwarenessWeek</div>
+        <p id="mawTheme" class="maw-theme">"Empezar temprano, proteger la visión de por vida"</p>
       </div>
       <div class="maw-actions">
         <a href="familias.html" class="maw-action-card">
@@ -901,6 +901,91 @@ function showTab(t,el){
     t.classList.remove('active');
     document.body.classList.remove('nav-open');
   }));
+})();
+
+// Rotación diaria del banner MAW 2026 (18-24 mayo)
+(function(){
+  const days = [
+    { // Lunes 18 - apertura
+      tag: 'Día 1 · Lunes 18',
+      title: 'Semana Mundial de<br>la Miopía 2026',
+      dates: '18 — 24 de mayo · #MyopiaAwarenessWeek',
+      theme: '"Empezar temprano, proteger la visión de por vida"',
+      img: 'img/maw2026-logo.webp'
+    },
+    { // Martes 19 - examen visual
+      tag: 'Día 2 · Martes 19',
+      title: 'Día del examen<br>visual anual',
+      dates: 'Detección temprana = mejor pronóstico',
+      theme: 'Lleva a tu hijo a un examen visual completo desde la edad escolar.',
+      img: 'img/maw-day-ecp.webp'
+    },
+    { // Miércoles 20 - Conversatorio MML
+      tag: 'Día 3 · Miércoles 20 · ¡HOY!',
+      title: 'Conversatorio MML<br>LATAM',
+      dates: 'Hoy 18:00 hrs México · 2 horas vía Zoom',
+      theme: 'Embajadores MML de toda Latinoamérica en vivo. Educación libre de influencias comerciales.',
+      img: 'img/maw2026-logo.webp'
+    },
+    { // Jueves 21 - aire libre
+      tag: 'Día 4 · Jueves 21',
+      title: 'Día del<br>aire libre',
+      dates: '2-3 horas al día reducen el riesgo de miopía',
+      theme: 'La luz natural y la visión a distancia protegen los ojos en desarrollo.',
+      img: 'img/maw2026-logo.webp'
+    },
+    { // Viernes 22 - intervenciones
+      tag: 'Día 5 · Viernes 22',
+      title: 'Día de las<br>intervenciones',
+      dates: 'Orto-K · Atropina · Lentes especializadas',
+      theme: 'Hoy existen tratamientos basados en evidencia para frenar la progresión miópica.',
+      img: 'img/maw-day-pledge.webp'
+    },
+    { // Sábado 23 - difundir
+      tag: 'Día 6 · Sábado 23',
+      title: 'Día de<br>difundir',
+      dates: 'Comparte la campaña #MAW2026',
+      theme: 'Cada conversación cuenta. Cuéntale a otra familia sobre la importancia del examen visual.',
+      img: 'img/maw-day-banner.webp'
+    },
+    { // Domingo 24 - cierre
+      tag: 'Día 7 · Domingo 24 · cierre',
+      title: 'Compromiso<br>con la visión',
+      dates: 'Tu pledge: cuidar la visión de los niños',
+      theme: 'La red MML continúa todo el año en 19 países. Únete a la misión.',
+      img: 'img/maw-day-pledge.webp'
+    }
+  ];
+
+  const today = new Date();
+  const m = today.getMonth(); // 0-indexed: mayo = 4
+  const d = today.getDate();
+
+  // Solo dentro de mayo 18-24 2026
+  if (m === 4 && d >= 18 && d <= 24) {
+    const idx = d - 18;
+    const data = days[idx];
+    const tag = document.getElementById('mawTag');
+    const title = document.getElementById('mawTitle');
+    const dates = document.getElementById('mawDates');
+    const theme = document.getElementById('mawTheme');
+    const img = document.getElementById('mawImage');
+    if (tag) tag.textContent = data.tag;
+    if (title) title.innerHTML = data.title;
+    if (dates) dates.textContent = data.dates;
+    if (theme) theme.textContent = data.theme;
+    if (img) img.src = data.img;
+  } else if (m === 4 && d > 24 && today.getFullYear() === 2026) {
+    // Después del 24 - mensaje de cierre durante resto de mayo
+    const tag = document.getElementById('mawTag');
+    const title = document.getElementById('mawTitle');
+    const dates = document.getElementById('mawDates');
+    const theme = document.getElementById('mawTheme');
+    if (tag) tag.textContent = 'Gracias';
+    if (title) title.innerHTML = '#MAW2026<br>completada';
+    if (dates) dates.textContent = 'La campaña terminó · La red MML continúa';
+    if (theme) theme.textContent = 'Gracias por participar en la Semana Mundial de la Miopía 2026. MML sigue activo todo el año en 19 países LATAM.';
+  }
 })();
 </script>
 </body>
