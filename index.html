@@ -96,7 +96,17 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .maw-action-card strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.01em;line-height:1.1;margin-bottom:0.15rem}
 .maw-action-card span{font-size:0.82rem;color:#5A4A1A;line-height:1.3}
 
-.maw-cta-row{grid-column:1/-1;display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1.4rem;padding-top:1.4rem;border-top:1px solid rgba(10,37,64,0.15)}
+.maw-event-card{grid-column:1/-1;background:linear-gradient(135deg,var(--ink) 0%,#102E50 100%);color:#fff;border-radius:16px;padding:1.4rem 1.6rem;margin-top:1.4rem;position:relative;overflow:hidden;box-shadow:0 8px 28px rgba(10,37,64,0.25)}
+.maw-event-card::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(245,197,24,0.18) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 4s ease-in-out infinite;pointer-events:none}
+.maw-event-card::after{content:'';position:absolute;right:-60px;top:-30px;width:200px;height:200px;background:radial-gradient(circle,rgba(245,197,24,0.2),transparent 60%);pointer-events:none}
+.maw-event-badge{display:inline-block;background:var(--am);color:var(--ink);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.74rem;letter-spacing:0.16em;text-transform:uppercase;padding:5px 13px;border-radius:999px;margin-bottom:0.7rem;position:relative;z-index:2}
+.maw-event-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.3rem,2.4vw,1.7rem);text-transform:uppercase;letter-spacing:-0.02em;line-height:1.1;margin-bottom:0.5rem;position:relative;z-index:2}
+.maw-event-meta{font-size:0.85rem;color:rgba(255,255,255,0.78);line-height:1.5;margin-bottom:1.1rem;position:relative;z-index:2}
+.maw-event-btn{display:inline-flex;align-items:center;gap:8px;background:var(--am);color:var(--ink);padding:0.85rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.9rem;font-family:'Inter',sans-serif;transition:all .2s;position:relative;z-index:2;box-shadow:0 4px 14px rgba(245,197,24,0.4)}
+.maw-event-btn:hover{background:#fff;transform:translateY(-2px);box-shadow:0 8px 22px rgba(245,197,24,0.6)}
+.maw-event-btn svg{flex-shrink:0}
+
+.maw-cta-row{grid-column:1/-1;display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1.2rem;padding-top:1.4rem;border-top:1px solid rgba(10,37,64,0.15)}
 .maw-btn{display:inline-flex;align-items:center;gap:8px;padding:0.85rem 1.6rem;border-radius:999px;font-family:'Inter',sans-serif;font-size:0.88rem;font-weight:600;text-decoration:none;transition:all .2s;letter-spacing:0.01em;position:relative;overflow:hidden}
 .maw-btn>*{position:relative;z-index:2}
 .maw-btn::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.55) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none;z-index:1}
@@ -452,6 +462,15 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
             <span>comparte en el grupo MML</span>
           </div>
           <span class="maw-arrow">↗</span>
+        </a>
+      </div>
+      <div class="maw-event-card">
+        <div class="maw-event-badge">★ Evento MML · 20 mayo</div>
+        <div class="maw-event-title">Conversatorio: Concientización de la Miopía 2026</div>
+        <div class="maw-event-meta">Online · 18:00 hrs México · 2 horas · Embajadores MML de toda LATAM</div>
+        <a href="https://us06web.zoom.us/webinar/register/WN_arhWMVJYSlyEMmhPp6UGSg#/registration" target="_blank" rel="noopener" class="maw-event-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M3 6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6zm17 1l-4 3v4l4 3V7z"/></svg>
+          Registrarse gratis en Zoom →
         </a>
       </div>
       <div class="maw-cta-row">
