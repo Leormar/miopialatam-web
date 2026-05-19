@@ -61,6 +61,9 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .kicker::before{content:'';width:24px;height:2px;background:var(--az);border-radius:2px}
 h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(3.4rem,7.5vw,6.4rem);line-height:0.92;letter-spacing:-0.04em;color:var(--ink);text-transform:uppercase;margin-bottom:1.4rem}
 .hero-sec p.lead{font-size:1.2rem;color:var(--mu);line-height:1.6;max-width:680px;margin:0 auto 2rem}
+.hero-cta-row{display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:0.95rem 1.6rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;color:var(--ink);border:1.5px solid var(--ink);background:transparent;transition:all .2s;font-family:'Inter',sans-serif}
+.btn-ghost:hover{background:var(--ink);color:#fff;transform:translateY(-2px);box-shadow:0 6px 18px rgba(10,37,64,0.25)}
 .btn-register{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:0.95rem 1.8rem;border-radius:999px;font-size:0.92rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;position:relative;overflow:hidden;box-shadow:0 6px 20px rgba(0,119,200,0.35);transition:all .2s}
 .btn-register::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
 .btn-register::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
@@ -212,7 +215,6 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     <a href="investigacion.html">Investigación</a>
     <a href="productos.html">Productos</a>
     <a href="eventos.html">Eventos</a>
-    <a href="embajadores.html" class="active">Embajadores</a>
     <a href="recursos.html">Recursos</a>
     <a href="familias.html">Para Familias</a>
   </div>
@@ -228,7 +230,10 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     <div class="kicker">Red MML en LATAM</div>
     <h1 class="hero-title">Embajadores MML</h1>
     <p class="lead"><strong>25 embajadores 2026</strong> en 19 países de Latinoamérica. Profesionales de la salud visual que lideran las actividades educativas, clínicas y de investigación en cada país de la región.</p>
-    <a href="embajadores-registro.html" class="btn-register">Registrarse como embajador</a>
+    <div class="hero-cta-row">
+      <a href="embajadores-registro.html" class="btn-register">Registrarse como embajador</a>
+      <a href="miembros.html" class="btn-ghost">Ver equipo fundador →</a>
+    </div>
   </div>
 </section>
 
