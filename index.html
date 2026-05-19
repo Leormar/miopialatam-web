@@ -67,9 +67,12 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 /* SEMANA DE LA MIOPÍA - BANNER */
 .maw-banner{background:linear-gradient(135deg,#F5C518 0%,#E8AC00 100%);position:relative;overflow:hidden;border-bottom:3px solid var(--ink)}
 .maw-banner.hidden{display:none}
-.maw-banner::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.08) 1px,transparent 0);background-size:24px 24px;opacity:0.6;pointer-events:none}
-.maw-banner::after{content:'';position:absolute;right:-100px;top:-50px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,0.4),transparent 60%);pointer-events:none}
-.maw-inner{max-width:1200px;margin:0 auto;padding:2.5rem 2rem;position:relative;z-index:2}
+.maw-banner::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.08) 1px,transparent 0);background-size:24px 24px;opacity:0.6;pointer-events:none;z-index:1}
+.maw-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,0.55) 48%,rgba(255,255,255,0.75) 50%,rgba(255,255,255,0.55) 52%,transparent 70%);background-size:200% 100%;animation:maw-shine 5s ease-in-out infinite;pointer-events:none;z-index:1}
+@keyframes maw-shine{0%{background-position:200% 0}55%,100%{background-position:-200% 0}}
+.maw-glow{position:absolute;right:-100px;top:-50px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,0.45),transparent 60%);pointer-events:none;z-index:1;animation:maw-glow-pulse 6s ease-in-out infinite}
+@keyframes maw-glow-pulse{0%,100%{opacity:0.6;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.maw-inner{max-width:1200px;margin:0 auto;padding:2.5rem 2rem;position:relative;z-index:3}
 
 .maw-tag{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;padding:6px 14px;border-radius:999px;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1.4rem}
 .maw-dot{width:8px;height:8px;border-radius:50%;background:#D42B2B;animation:pulse-maw 1.5s ease-in-out infinite}
@@ -90,11 +93,14 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .maw-action-card span{font-size:0.82rem;color:#5A4A1A;line-height:1.3}
 
 .maw-cta-row{grid-column:1/-1;display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1.4rem;padding-top:1.4rem;border-top:1px solid rgba(10,37,64,0.15)}
-.maw-btn{display:inline-flex;align-items:center;gap:8px;padding:0.85rem 1.4rem;border-radius:999px;font-family:'Inter',sans-serif;font-size:0.88rem;font-weight:600;text-decoration:none;transition:all .2s;letter-spacing:0.01em}
-.maw-btn.primary{background:var(--ink);color:#fff}
-.maw-btn.primary:hover{background:#000;transform:translateY(-2px);box-shadow:0 6px 18px rgba(10,37,64,0.3)}
+.maw-btn{display:inline-flex;align-items:center;gap:8px;padding:0.85rem 1.6rem;border-radius:999px;font-family:'Inter',sans-serif;font-size:0.88rem;font-weight:600;text-decoration:none;transition:all .2s;letter-spacing:0.01em;position:relative;overflow:hidden}
+.maw-btn>*{position:relative;z-index:2}
+.maw-btn::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.55) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none;z-index:1}
+.maw-btn.primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;box-shadow:0 4px 14px rgba(10,37,64,0.3)}
+.maw-btn.primary:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,119,200,0.5)}
 .maw-btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
-.maw-btn.ghost:hover{background:var(--ink);color:#fff}
+.maw-btn.ghost::before{background:linear-gradient(120deg,transparent 30%,rgba(10,37,64,0.18) 50%,transparent 70%);background-size:200% 100%}
+.maw-btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 
 .maw-close{position:absolute;top:1rem;right:1rem;width:36px;height:36px;border-radius:50%;background:rgba(10,37,64,0.1);border:none;color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif}
 .maw-close:hover{background:var(--ink);color:var(--am)}
@@ -402,6 +408,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 </nav>
 
 <aside class="maw-banner" id="mawBanner">
+  <div class="maw-glow"></div>
   <div class="maw-inner">
     <div class="maw-tag">
       <span class="maw-dot"></span>
