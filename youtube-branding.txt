@@ -1,0 +1,123 @@
+═══════════════════════════════════════════════
+  CANAL DE YOUTUBE - GRUPO MANEJO MIOPÍA LATAM
+  Plantilla completa para copiar/pegar
+═══════════════════════════════════════════════
+
+
+▶ NOMBRE DEL CANAL
+───────────────────
+Grupo Manejo Miopía Latam
+
+
+▶ HANDLE (@username)
+───────────────────
+@miopialatam
+
+(Si no está disponible, prueba: @miopialatamMML, @mml-latam)
+
+
+▶ DESCRIPCIÓN DEL CANAL (about / descripción)
+───────────────────
+Red latinoamericana de optómetras y oftalmólogos dedicada a la investigación
+en manejo de miopía y a educar a los profesionales de la salud visual
+de manera académica y libre de influencias comerciales.
+
+🌎 Especialistas en 19+ países de Latinoamérica
+📚 Contenido basado en evidencia
+🔬 Resúmenes de literatura científica y mesas de discusión
+👨‍⚕️ Conversatorios entre expertos del manejo de miopía
+
+Sitio oficial: https://miopialatam.org
+Embajadores: https://miopialatam.org/embajadores.html
+Investigación: https://miopialatam.org/investigacion.html
+
+Contacto profesional: info@miopialatam.org
+
+
+▶ TAGS / PALABRAS CLAVE (Settings → Channel → Basic info → Keywords)
+───────────────────
+control de miopia, manejo de miopia, optometria latinoamerica, miopia, orto-k,
+ortoqueratologia, atropina, MiSight, lentes desenfocadas, lentes de contacto,
+control miopia infantil, miopia patologica, salud visual, optometria pediatrica,
+miopia latam, MML, ICSC, evidencia cientifica, congresos optometria
+
+
+▶ ENLACES (Customization → Basic info → Links)
+───────────────────
+Sitio oficial    →  https://miopialatam.org
+Embajadores      →  https://miopialatam.org/embajadores.html
+Investigación    →  https://miopialatam.org/investigacion.html
+Recursos         →  https://miopialatam.org/recursos.html
+Facebook LATAM   →  https://www.facebook.com/groups/controldemiopiaLATAM
+
+
+▶ PAÍS Y SECCIONES
+───────────────────
+Country (Settings → Channel → Basic info):  Colombia (o donde estés)
+Categoría principal: Science & Technology / Education
+
+
+▶ BANNER (channel art)
+───────────────────
+Tamaño: 2560 × 1440 px
+Safe zone para TV/escritorio/celular: 1546 × 423 px central
+
+Generar en https://labs.google/fx/tools/image-fx con el prompt indicado.
+
+
+▶ PROFILE PICTURE (avatar)
+───────────────────
+Usa logo-mml.png (ya está en el repositorio)
+YouTube te lo escala a 800×800 automáticamente.
+
+
+▶ WATERMARK (logo flotante en videos)
+───────────────────
+Tamaño: 150×150 px PNG transparente
+Usa logo-mml.png o una versión simplificada
+
+
+▶ ASOCIACIÓN CON EL SITIO WEB
+───────────────────
+YouTube Studio → Settings → Channel → Advanced settings →
+"Associated website": miopialatam.org
+
+YouTube generará un meta tag tipo:
+<meta name="google-site-verification" content="..." />
+
+Cuando lo tengas, pásamelo y lo añado al <head> de index.html.
+
+
+▶ PLANTILLA PARA DESCRIPCIÓN DE VIDEOS
+───────────────────
+[En esta primera línea: 1 frase con el contenido]
+
+En este video del Grupo Manejo Miopía Latam:
+• [Punto 1]
+• [Punto 2]
+• [Punto 3]
+
+📚 Lee el artículo completo: https://miopialatam.org/articulo-[X].html
+
+🔬 Referencias citadas:
+- [Autor año. Revista. DOI]
+- [Autor año. Revista. DOI]
+
+🌎 Conoce a los embajadores MML en tu país:
+https://miopialatam.org/embajadores.html
+
+💬 Únete a la comunidad en Facebook:
+https://www.facebook.com/groups/controldemiopiaLATAM
+
+#ControlDeMiopia #MML #OptometriaLatam #SaludVisual
+
+
+▶ THUMBNAIL TEMPLATE (portadas de video)
+───────────────────
+Tamaño: 1280 × 720 px
+Elementos sugeridos:
+- Fondo blanco o azul navy MML
+- Título grande en Barlow Condensed (mismo de la web)
+- Franja de 4 colores MML arriba o abajo
+- Foto del presentador o gráfico médico relevante
+- Logo MML pequeño en una esquina
