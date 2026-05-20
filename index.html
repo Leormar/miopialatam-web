@@ -975,26 +975,10 @@ function showTab(t,el){
   const d = today.getDate();
   const h = today.getHours();
 
-  // Mapeo personalizado:
-  // Día 1 (Apertura) se queda hasta May 20 al mediodía
-  // Luego avanza 1 día por calendario
+  // Mapeo 1 día calendario = 1 día de campaña (18-may a 24-may)
   let idx = -1;
-  if (m === 4) {
-    if (d === 18 || d === 19 || (d === 20 && h < 12)) {
-      idx = 0; // Día 1 — Apertura
-    } else if (d === 20 && h >= 12) {
-      idx = 1; // Día 2 — Examen visual (desde mediodía May 20)
-    } else if (d === 21) {
-      idx = 2; // Día 3 — Conversatorio MML
-    } else if (d === 22) {
-      idx = 3; // Día 4 — Aire libre
-    } else if (d === 23) {
-      idx = 4; // Día 5 — Intervenciones
-    } else if (d === 24) {
-      idx = 5; // Día 6 — Difundir
-    } else if (d === 25 && h < 12) {
-      idx = 6; // Día 7 — Cierre (hasta May 25 mediodía)
-    }
+  if (m === 4 && d >= 18 && d <= 24) {
+    idx = d - 18; // 18→0, 19→1, ... 24→6
   }
 
   const tag = document.getElementById('mawTag');
@@ -1010,8 +994,8 @@ function showTab(t,el){
     if (dates) dates.textContent = data.dates;
     if (theme) theme.textContent = data.theme;
     if (img) img.src = data.img;
-  } else if (m === 4 && ((d === 25 && h >= 12) || (d > 25)) && today.getFullYear() === 2026) {
-    // Después de May 25 mediodía - mensaje de cierre
+  } else if (m === 4 && d >= 25 && today.getFullYear() === 2026) {
+    // Desde el 25 de mayo - mensaje de cierre
     if (tag) tag.textContent = 'Gracias';
     if (title) title.innerHTML = '#MAW2026<br>completada';
     if (dates) dates.textContent = 'La campaña terminó · La red MML continúa';
