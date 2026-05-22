@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visión MML LATAM · Edición 01 — Mayo 2026</title>
+<meta name="description" content="Primera edición del Newsletter Visión MML LATAM. Editorial fundadores, investigación regional, práctica clínica y futuro LATAM en control de miopía.">
+<meta name="theme-color" content="#0A2540">
+<link rel="canonical" href="https://miopialatam.org/boletin-ed01.html">
+<link rel="icon" type="image/png" href="logo-mml.png">
+<link rel="apple-touch-icon" href="logo-mml.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://miopialatam.org/boletin-ed01.html">
+<meta property="og:title" content="Visión MML LATAM · Edición 01 — Mayo 2026">
+<meta property="og:description" content="El primer paso para una red regional · Hacia un consenso LATAM en control de miopía">
+<meta property="og:image" content="https://miopialatam.org/logo-mml.png">
+<meta property="og:site_name" content="MML - Grupo Manejo Miopía LATAM">
+<meta property="og:locale" content="es_LA">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --am:#F5C518;--ve:#2EAA4A;--az:#0077C8;--ro:#D42B2B;
+  --ink:#0A2540;--txt:#1A3347;--mu:#5A7184;--soft:#8B9DAA;
+  --bd:#E5EAEF;--bd-soft:#F0F3F6;--bg:#FAFBFC;
+  --shadow-sm:0 1px 3px rgba(10,37,64,0.06);
+  --shadow-md:0 4px 16px rgba(10,37,64,0.08);
+  --shadow-lg:0 12px 40px rgba(10,37,64,0.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--txt);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.6}
+.topbar{display:flex;height:4px}
+.topbar div{flex:1}
+
+nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--bd);padding:0 3rem;display:flex;align-items:center;justify-content:space-between;height:108px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{height:88px;width:auto;display:block}
+.nav-links{display:flex;gap:4px;align-items:center;background:rgba(245,247,250,0.7);border:1px solid var(--bd);border-radius:999px;padding:6px}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--mu);text-decoration:none;padding:10px 20px;border-radius:999px;transition:all .3s;white-space:nowrap}
+.nav-links a:hover{color:var(--ink);background:#fff}
+.nav-links a.active{color:#fff;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%)}
+.btn-primary{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.7rem 1.3rem;border-radius:999px;font-size:0.8rem;font-weight:600;cursor:pointer;text-decoration:none;font-family:inherit;display:inline-flex;align-items:center;gap:6px;transition:all .2s}
+.btn-primary:hover{transform:translateY(-2px)}
+
+/* ISSUE COVER */
+.cover{background:linear-gradient(135deg,#0A2540 0%,#102E50 60%,#0077C8 100%);color:#fff;position:relative;overflow:hidden;padding:4.5rem 2rem 5.5rem}
+.cover::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,0.06) 1px,transparent 0);background-size:28px 28px;opacity:0.7}
+.cover::after{content:'';position:absolute;right:-100px;top:-100px;width:520px;height:520px;background:radial-gradient(circle,rgba(245,197,24,0.18),transparent 60%);pointer-events:none}
+.cover-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:center}
+.cover-stripe{position:absolute;top:0;left:0;width:100%;height:6px;display:flex;z-index:3}
+.cover-stripe div{flex:1}
+
+.vmml-logo{display:inline-flex;flex-direction:column;align-items:flex-start;gap:0.2rem;line-height:0.95;text-align:left;margin-bottom:1.5rem}
+.vmml-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:0.36em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:0.2rem}
+.vmml-title{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(2.4rem,5vw,4rem);line-height:0.92;letter-spacing:-0.02em;color:#fff;display:inline-flex;align-items:baseline;gap:0.4rem;flex-wrap:wrap}
+.vmml-vision{font-style:italic}
+.vmml-letters{display:inline-flex;font-family:'Barlow Condensed',sans-serif;font-weight:900}
+.vmml-letters .m1{color:#F5C518}
+.vmml-letters .m2{color:#2EAA4A}
+.vmml-letters .l{color:#7AB6E0}
+.vmml-locale{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.95rem;letter-spacing:0.4em;text-transform:uppercase;color:#fff;padding:4px 12px;background:rgba(212,43,43,0.55);border-radius:999px;margin-top:0.4rem;display:inline-block}
+
+.issue-tag{display:inline-flex;align-items:center;gap:10px;background:rgba(245,197,24,0.18);border:1px solid rgba(245,197,24,0.55);color:#F5C518;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:0.18em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:1.4rem}
+.cover-title{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:clamp(2.4rem,4.5vw,3.8rem);line-height:1.05;letter-spacing:-0.015em;margin-bottom:0.9rem;color:#fff}
+.cover-deck{font-size:1.1rem;color:rgba(255,255,255,0.78);line-height:1.6;max-width:520px;margin-bottom:1.6rem}
+.cover-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.85rem;color:rgba(255,255,255,0.65);margin-bottom:1.6rem}
+.cover-meta span strong{color:#fff;font-weight:600}
+
+.cover-actions{display:flex;gap:0.7rem;flex-wrap:wrap}
+.cover-btn{display:inline-flex;align-items:center;gap:8px;padding:0.85rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.92rem;font-family:inherit;transition:all .2s;letter-spacing:0.01em}
+.cover-btn.primary{background:#F5C518;color:#0A2540;box-shadow:0 8px 26px rgba(245,197,24,0.45)}
+.cover-btn.primary:hover{background:#fff;transform:translateY(-2px)}
+.cover-btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.4)}
+.cover-btn.ghost:hover{background:#fff;color:#0A2540;border-color:#fff}
+
+.cover-toc{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:1.5rem;backdrop-filter:blur(10px)}
+.cover-toc-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.78rem;letter-spacing:0.22em;text-transform:uppercase;color:#F5C518;margin-bottom:1.1rem}
+.toc-item{display:flex;gap:14px;padding:0.7rem 0;border-bottom:1px solid rgba(255,255,255,0.1);text-decoration:none;color:#fff;transition:padding-left .2s}
+.toc-item:last-child{border-bottom:none}
+.toc-item:hover{padding-left:4px}
+.toc-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.5rem;color:#F5C518;line-height:1;min-width:32px}
+.toc-info{flex:1;line-height:1.3}
+.toc-kicker{font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:2px;font-weight:700}
+.toc-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:-0.005em;color:#fff;line-height:1.15}
+
+@media(max-width:980px){.cover-inner{grid-template-columns:1fr;gap:2rem}}
+
+/* ARTICLE */
+.article{max-width:780px;margin:0 auto;padding:5rem 2rem 4rem}
+.editorial-letter{background:#FAFBFC;border-left:4px solid #0077C8;padding:2rem 2rem;border-radius:0 16px 16px 0;margin-bottom:4rem;position:relative}
+.editorial-letter::before{content:'\201C';position:absolute;top:-20px;left:1.4rem;font-family:'Playfair Display',serif;font-size:5rem;color:#0077C8;line-height:1;opacity:0.35}
+.editorial-letter h2{font-family:'Playfair Display',serif;font-style:italic;font-weight:800;font-size:1.6rem;color:var(--ink);margin-bottom:1rem;letter-spacing:-0.01em}
+.editorial-letter p{font-size:1rem;color:var(--txt);line-height:1.75;margin-bottom:1rem}
+.editorial-letter p:last-of-type{margin-bottom:1.3rem}
+.editorial-signature{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.84rem;color:var(--ink);text-transform:uppercase;letter-spacing:0.08em}
+.editorial-signature small{color:var(--mu);font-weight:500;letter-spacing:0.04em}
+
+.section{margin-bottom:4rem;scroll-margin-top:130px}
+.sec-kicker{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--c,#0077C8);margin-bottom:1rem;padding:6px 14px;background:var(--cb,rgba(0,119,200,0.08));border-radius:999px;border:1px solid var(--c,#0077C8)}
+.sec-kicker::before{content:'';width:16px;height:2px;background:var(--c,#0077C8);border-radius:2px}
+.sec-title{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(1.9rem,3vw,2.8rem);color:var(--ink);line-height:1.1;letter-spacing:-0.02em;margin-bottom:0.8rem}
+.sec-title em{font-style:italic;color:var(--c,#0077C8)}
+.sec-deck{font-size:1.1rem;color:var(--mu);line-height:1.65;margin-bottom:1.6rem;font-style:italic}
+.sec-body p{font-size:1rem;color:var(--txt);line-height:1.8;margin-bottom:1.2rem}
+.sec-body p strong{color:var(--ink);font-weight:600}
+.sec-body ul{padding-left:1.4rem;margin-bottom:1.2rem}
+.sec-body li{font-size:1rem;color:var(--txt);line-height:1.75;margin-bottom:0.5rem}
+.sec-body li strong{color:var(--ink);font-weight:600}
+.callout{background:linear-gradient(135deg,#FFF6D8 0%,#FFFCEB 100%);border-left:4px solid #F5C518;padding:1.4rem 1.6rem;border-radius:0 14px 14px 0;margin:1.6rem 0}
+.callout-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:#5C4400;margin-bottom:0.5rem}
+.callout-text{font-size:0.96rem;color:#3C2E00;line-height:1.65;font-weight:500}
+.tip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0 0.4rem}
+.tip-card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:1.1rem 1rem;display:flex;flex-direction:column;gap:0.4rem}
+.tip-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;color:var(--c,#0077C8);line-height:1}
+.tip-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.92rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.005em;line-height:1.15}
+.tip-text{font-size:0.86rem;color:var(--mu);line-height:1.5}
+@media(max-width:640px){.tip-grid{grid-template-columns:1fr}}
+
+.references{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:1.1rem 1.3rem;margin-top:1.5rem}
+.references h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.74rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--mu);margin-bottom:0.6rem}
+.references ol{padding-left:1.3rem}
+.references li{font-size:0.82rem;color:var(--txt);line-height:1.55;margin-bottom:0.4rem}
+
+/* ED COMMITTEE INLINE */
+.ed-inline{background:linear-gradient(135deg,#0A2540 0%,#102E50 100%);color:#fff;border-radius:24px;padding:2.5rem 2rem;margin:3rem 0;position:relative;overflow:hidden}
+.ed-inline::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,0.05) 1px,transparent 0);background-size:24px 24px;opacity:0.6}
+.ed-inline-head{position:relative;z-index:2;text-align:center;margin-bottom:1.6rem}
+.ed-inline-head .kicker-w{display:inline-flex;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.75rem;letter-spacing:0.24em;text-transform:uppercase;color:#F5C518;margin-bottom:0.5rem}
+.ed-inline-head h3{font-family:'Playfair Display',serif;font-style:italic;font-weight:900;font-size:1.8rem;color:#fff;letter-spacing:-0.01em}
+.ed-grid-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:0.7rem;position:relative;z-index:2}
+.ed-mini{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:0.85rem 0.9rem;display:flex;align-items:center;gap:10px}
+.ed-mini-av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.85rem;flex-shrink:0;overflow:hidden;position:relative}
+.ed-mini-av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ed-mini-info{line-height:1.2;min-width:0}
+.ed-mini-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.88rem;text-transform:uppercase;color:#fff;letter-spacing:-0.005em;line-height:1.1}
+.ed-mini-role{font-size:0.7rem;color:#F5C518;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin-top:1px}
+.ed-mini-loc{font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:2px}
+@media(max-width:840px){.ed-grid-mini{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.ed-grid-mini{grid-template-columns:1fr}}
+
+/* PDF / PRINT BUTTONS */
+.actions-bar{background:#fff;border:1px solid var(--bd);border-radius:18px;padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:2rem 0}
+.actions-bar-text{font-size:0.88rem;color:var(--mu);line-height:1.5}
+.actions-bar-text strong{color:var(--ink);font-weight:600}
+
+/* NAV ISSUES */
+.next-issue{background:var(--bg);padding:3.5rem 2rem;text-align:center;border-top:1px solid var(--bd)}
+.next-issue h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.6rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.6rem;letter-spacing:-0.02em}
+.next-issue p{font-size:0.95rem;color:var(--mu);max-width:480px;margin:0 auto 1.4rem;line-height:1.6}
+.next-actions{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.next-btn{display:inline-flex;align-items:center;gap:8px;padding:0.85rem 1.6rem;border-radius:999px;font-family:inherit;font-weight:600;font-size:0.9rem;text-decoration:none;transition:all .2s}
+.next-btn.primary{background:linear-gradient(135deg,#0A2540,#0077C8);color:#fff;box-shadow:0 6px 20px rgba(0,119,200,0.35)}
+.next-btn.primary:hover{transform:translateY(-2px)}
+.next-btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--bd)}
+.next-btn.ghost:hover{border-color:var(--ink)}
+
+/* FOOTER */
+footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
+.footer-grid{max-width:1200px;margin:0 auto 2.5rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;margin-bottom:0.5rem}
+.footer-brand p{font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.6;max-width:300px}
+.footer-col h5{font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem;color:rgba(255,255,255,0.55)}
+.footer-col a{display:block;font-size:0.86rem;color:rgba(255,255,255,0.8);text-decoration:none;margin-bottom:0.6rem;transition:color .2s}
+.footer-col a:hover{color:var(--am)}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.45)}
+.footer-stripes{display:flex;gap:4px}
+.footer-stripes div{width:24px;height:4px;border-radius:2px}
+
+.nav-toggle{display:none;background:transparent;border:none;cursor:pointer;padding:8px;border-radius:10px;color:var(--ink);position:relative;z-index:10000}
+.nav-toggle svg{width:32px;height:32px;display:block}
+.nav-toggle .ico-close{display:none}
+.nav-toggle.active .ico-open{display:none}
+.nav-toggle.active .ico-close{display:block}
+
+@media(max-width:1180px){.nav-links a{font-size:0.95rem;padding:9px 16px}}
+@media(max-width:980px){
+  nav{padding:0 1.5rem;height:88px}
+  .logo img{height:64px}
+  .nav-toggle{display:flex}
+  body.nav-open{overflow:hidden}
+  .nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#fff;display:flex !important;flex-direction:column;padding:6rem 1.2rem 2rem;gap:0.5rem;z-index:9998;transform:translateX(100%);transition:transform .35s;overflow-y:auto;align-items:stretch;border:none !important;border-radius:0 !important}
+  .nav-links.open{transform:translateX(0)}
+  .nav-links a{display:block !important;width:100% !important;font-size:1.25rem !important;padding:1rem 1.3rem !important;border-radius:12px !important;background:#F5F7FA !important;color:var(--ink) !important;border:1px solid var(--bd) !important;text-align:left !important;text-transform:uppercase !important;font-family:'Barlow Condensed',sans-serif !important;font-weight:700 !important}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .cover{padding:3rem 1.5rem 4rem}
+}
+@media(max-width:640px){.footer-grid{grid-template-columns:1fr}}
+
+/* PRINT */
+@media print{
+  nav,.actions-bar,.next-issue,footer,.nav-toggle,.cover-actions{display:none !important}
+  body{background:#fff}
+  .cover{background:#fff !important;color:#0A2540 !important;padding:2rem 0;border-bottom:2px solid #0A2540}
+  .cover::before,.cover::after{display:none}
+  .cover-inner{grid-template-columns:1fr}
+  .cover-toc{background:#FAFBFC;border:1px solid #E5EAEF}
+  .cover-toc-title,.toc-name,.toc-num,.toc-kicker{color:#0A2540 !important}
+  .vmml-eyebrow,.cover-title,.cover-deck,.cover-meta{color:#0A2540 !important}
+  .vmml-letters .l{color:#0077C8 !important}
+  .vmml-locale{color:#0A2540 !important;background:#fff !important;border:1px solid #D42B2B}
+  .article{padding:2rem 0}
+  .section{page-break-inside:avoid}
+  .ed-inline{background:#FAFBFC !important;color:#0A2540 !important;border:1px solid #E5EAEF;page-break-inside:avoid}
+  .ed-inline-head h3,.ed-mini-name{color:#0A2540 !important}
+  .ed-mini{background:#fff;border:1px solid #E5EAEF}
+  .ed-mini-loc{color:#5A7184 !important}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="background:#F5C518"></div>
+  <div style="background:#2EAA4A"></div>
+  <div style="background:#0077C8"></div>
+  <div style="background:#D42B2B"></div>
+</div>
+
+<nav>
+  <a href="index.html" class="logo"><img src="logo-mml.png" alt="MML"></a>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="articulos.html">Articulos</a>
+    <a href="investigacion.html">Investigacion</a>
+    <a href="productos.html">Intervenciones</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="embajadores.html">Nuestra Red</a>
+    <a href="familias.html">Para Familias</a>
+    <a href="boletin.html" class="active">Boletin</a>
+  </div>
+  <a href="boletin.html" class="btn-primary">Repositorio</a>
+  <button class="nav-toggle" aria-label="Abrir menú">
+    <svg class="ico-open" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"><line x1="6" y1="10" x2="26" y2="10"/><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="22" x2="26" y2="22"/></svg>
+    <svg class="ico-close" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"><line x1="8" y1="8" x2="24" y2="24"/><line x1="24" y1="8" x2="8" y2="24"/></svg>
+  </button>
+</nav>
+
+<section class="cover">
+  <div class="cover-stripe">
+    <div style="background:#F5C518"></div>
+    <div style="background:#2EAA4A"></div>
+    <div style="background:#0077C8"></div>
+    <div style="background:#D42B2B"></div>
+  </div>
+  <div class="cover-inner">
+    <div>
+      <div class="vmml-logo">
+        <div class="vmml-eyebrow">Newsletter</div>
+        <div class="vmml-title">
+          <span class="vmml-vision">Visión</span>
+          <span class="vmml-letters"><span class="m1">M</span><span class="m2">M</span><span class="l">L</span></span>
+        </div>
+        <div class="vmml-locale">LATAM</div>
+      </div>
+      <div class="issue-tag">Edición 01 · Mayo 2026</div>
+      <h1 class="cover-title">El primer paso<br>para una red regional</h1>
+      <p class="cover-deck">Hacia un consenso LATAM en control de miopía. Editorial fundadores · prevalencia regional · selección de tratamiento · futuro de la red MML.</p>
+      <div class="cover-meta">
+        <span>Publicado <strong>22 de mayo de 2026</strong></span>
+        <span>Lectura <strong>~ 9 min</strong></span>
+        <span>Idioma <strong>Español</strong></span>
+      </div>
+      <div class="cover-actions">
+        <button class="cover-btn primary" onclick="window.print()">Descargar PDF</button>
+        <a class="cover-btn ghost" href="boletin.html">Ver repositorio</a>
+      </div>
+    </div>
+    <aside class="cover-toc">
+      <div class="cover-toc-title">En esta edición</div>
+      <a class="toc-item" href="#editorial">
+        <div class="toc-num">00</div>
+        <div class="toc-info"><div class="toc-kicker">Carta editorial</div><div class="toc-name">Comité Editorial MML</div></div>
+      </a>
+      <a class="toc-item" href="#seccion-1">
+        <div class="toc-num">01</div>
+        <div class="toc-info"><div class="toc-kicker">Investigación regional</div><div class="toc-name">Prevalencia de miopía en LATAM</div></div>
+      </a>
+      <a class="toc-item" href="#seccion-2">
+        <div class="toc-num">02</div>
+        <div class="toc-info"><div class="toc-kicker">Práctica clínica</div><div class="toc-name">Selección de tratamiento</div></div>
+      </a>
+      <a class="toc-item" href="#seccion-3">
+        <div class="toc-num">03</div>
+        <div class="toc-info"><div class="toc-kicker">Futuro LATAM</div><div class="toc-name">Hacia un consenso regional</div></div>
+      </a>
+    </aside>
+  </div>
+</section>
+
+<article class="article">
+
+  <section class="editorial-letter" id="editorial">
+    <h2>Una red que se vuelve voz: por qué nace Visión MML LATAM</h2>
+    <p>El control de la miopía dejó de ser un nicho. Es, hoy, una <strong>prioridad de salud pública</strong> que la región latinoamericana no puede aplazar. La evidencia sobre Orto-K, atropina en baja concentración, lentes de contacto y lentes oftálmicas de control crece cada año, pero <strong>su traslación a la práctica clínica regional sigue siendo desigual</strong> y muchas veces aislada.</p>
+    <p>En 2019, en el marco del <strong>International Contact Lens Specialists Conference (ICSC)</strong>, seis profesionales de la salud visual decidimos articular una red latinoamericana independiente, sin filiación comercial y con vocación de evidencia. Ese fue el origen de <strong>MML</strong>. Hoy, esa red opera con embajadores activos en 19 países.</p>
+    <p>Con esta primera edición de <em>Visión MML LATAM</em> abrimos un canal editorial trimestral pensado para nuestra región: <strong>tres secciones por número</strong> — investigación, clínica y futuro LATAM — al servicio de pacientes, profesionales y de la industria que opera en español. El tono es académico; la línea, libre de influencias comerciales.</p>
+    <p>Gracias por estar aquí. Esto apenas empieza.</p>
+    <div class="editorial-signature">— Comité Editorial Visión MML LATAM<br><small>Edgar Davila García · David P. Piñero · Elise G. Kramer · Ricardo Pintor L. · Ariolfo Vazquez · Leonardo Orjuela M.</small></div>
+  </section>
+
+  <!-- SECCIÓN 1 -->
+  <section class="section" id="seccion-1" style="--c:#0077C8;--cb:rgba(0,119,200,0.08)">
+    <div class="sec-kicker">01 · Investigación regional</div>
+    <h2 class="sec-title">Prevalencia de miopía en <em>LATAM</em>: lo que sabemos en 2026</h2>
+    <p class="sec-deck">Mientras el sudeste asiático supera el 80% de prevalencia en jóvenes, Latinoamérica enfrenta un escenario heterogéneo, con datos fragmentados y una pendiente clara de crecimiento. La evidencia regional importa porque <strong>la genética, la urbanización y los hábitos escolares de LATAM no son idénticos a los de Asia o Europa</strong>.</p>
+    <div class="sec-body">
+      <p>Los estudios de cohorte publicados durante los últimos cinco años en México, Argentina, Brasil, Colombia y Chile coinciden en una tendencia: la <strong>prevalencia de miopía en edad escolar viene subiendo de forma sostenida</strong>, especialmente en entornos urbanos de alta densidad. Las proyecciones de Holden et al. para 2050 sugieren que cerca del <strong>50% de la población latinoamericana</strong> podría ser miope, con un incremento acelerado del subgrupo de miopía alta (más de -6.00 D), que es el de mayor riesgo de complicaciones.</p>
+      <p>Tres hallazgos consistentes en los estudios latinoamericanos recientes:</p>
+      <ul>
+        <li><strong>Inicio más temprano</strong> de la miopía en niños urbanos respecto a poblaciones rurales del mismo país.</li>
+        <li><strong>Asociación con tiempo en pantallas</strong>, jornadas escolares prolongadas y escasa exposición a luz natural diaria.</li>
+        <li><strong>Sub-diagnóstico crónico</strong>: en muchas regiones, el primer examen visual formal ocurre después de los 8 años, fuera de la ventana óptima de intervención.</li>
+      </ul>
+      <div class="callout">
+        <div class="callout-title">Implicación regional</div>
+        <div class="callout-text">La evidencia originada en Asia no se traslada uno a uno a LATAM. Necesitamos <strong>estudios propios</strong>, con coberturas locales y diseños longitudinales, para fundamentar protocolos y políticas públicas de tamizaje escolar.</div>
+      </div>
+      <div class="references">
+        <h4>Referencias</h4>
+        <ol>
+          <li>Holden BA et al. Global Prevalence of Myopia and High Myopia and Temporal Trends from 2000 through 2050. <em>Ophthalmology</em> 2016;123(5):1036-1042.</li>
+          <li>International Myopia Institute (IMI). White Papers, ediciones 2019–2023.</li>
+          <li>Review of Myopia Management — Editorial perspectives 2024–2025 · miopiamanagement.com</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 -->
+  <section class="section" id="seccion-2" style="--c:#2EAA4A;--cb:rgba(46,170,74,0.08)">
+    <div class="sec-kicker">02 · Práctica clínica</div>
+    <h2 class="sec-title">Selección de tratamiento por <em>perfil de paciente</em></h2>
+    <p class="sec-deck">El paciente latino no es homogéneo. La elección del tratamiento de control debe equilibrar evidencia, adherencia esperada, acceso a producto y contexto familiar. Tres perfiles típicos vistos en consulta MML y la primera línea recomendada por el comité.</p>
+    <div class="tip-grid">
+      <div class="tip-card" style="--c:#0077C8">
+        <div class="tip-num">01</div>
+        <div class="tip-title">Niño activo / deportista</div>
+        <div class="tip-text">Primera línea: <strong>Orto-K</strong>. Día libre de corrección óptica, alta evidencia, reducción del AXL. Requiere adherencia nocturna y revisión topográfica.</div>
+      </div>
+      <div class="tip-card" style="--c:#2EAA4A">
+        <div class="tip-num">02</div>
+        <div class="tip-title">Familia conservadora</div>
+        <div class="tip-text">Primera línea: <strong>Atropina 0.05% + lentes oftálmicas de control</strong>. Régimen simple, costo manejable, mínima curva de aprendizaje familiar.</div>
+      </div>
+      <div class="tip-card" style="--c:#D42B2B">
+        <div class="tip-num">03</div>
+        <div class="tip-title">Niño que no tolera lentes</div>
+        <div class="tip-text">Primera línea: <strong>Lentes oftálmicas de control</strong> (DIMS / HAL / DOT). Opción no invasiva, disponible desde los 4 años, evidencia creciente.</div>
+      </div>
+    </div>
+    <div class="sec-body" style="margin-top:1.4rem">
+      <p>En todos los perfiles, la decisión debe tomarse con la familia en una <strong>consulta extendida</strong> donde se discuten objetivos, expectativas, costos, frecuencia de revisión y plan de seguimiento (cada 6 meses con biometría y refracción ciclopléjica).</p>
+      <div class="callout">
+        <div class="callout-title">Buenas prácticas MML</div>
+        <div class="callout-text">Documentar de inicio el <strong>longitud axial (AXL)</strong>, la refracción ciclopléjica y el contexto familiar. La velocidad de progresión es el indicador clave de eficacia, más allá de la dioptría seca.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3 -->
+  <section class="section" id="seccion-3" style="--c:#D42B2B;--cb:rgba(212,43,43,0.07)">
+    <div class="sec-kicker">03 · Futuro LATAM</div>
+    <h2 class="sec-title">Hacia un <em>consenso regional</em> en control de miopía</h2>
+    <p class="sec-deck">El próximo paso para MML es consolidar lineamientos regionales basados en evidencia y adaptados a nuestros sistemas de salud. Tres prioridades editoriales para los próximos 12 meses.</p>
+    <div class="sec-body">
+      <ul>
+        <li><strong>Grupo de trabajo regional MML</strong>: convocar un panel multinacional para acordar criterios mínimos de manejo (cuándo iniciar, qué medir, qué reportar).</li>
+        <li><strong>Publicaciones LATAM</strong>: producir 2-3 documentos editoriales por año, con autoría regional, en español, accesibles a profesionales y a las familias.</li>
+        <li><strong>Formación continua</strong>: webinars trimestrales, casos clínicos compartidos entre embajadores y vínculo formal con instituciones académicas (IMI, BHVI, IACLE).</li>
+      </ul>
+      <p>El objetivo no es competir con la evidencia global, sino <strong>traducirla y completarla con datos propios</strong>. Latinoamérica tiene una oportunidad demográfica única para liderar evidencia en miopía pediátrica con un enfoque equitativo y multidisciplinario.</p>
+      <div class="callout">
+        <div class="callout-title">Llamado a participar</div>
+        <div class="callout-text">Si trabajas en una universidad, hospital o consulta privada y quieres aportar datos o casos al consenso, escríbenos a <strong>investigacion@miopialatam.org</strong>. La calidad de la red depende de la pluralidad regional.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMITÉ EDITORIAL INLINE -->
+  <div class="ed-inline">
+    <div class="ed-inline-head">
+      <div class="kicker-w">Grupo Editorial · Fundadores MML</div>
+      <h3>El equipo que firma esta edición</h3>
+    </div>
+    <div class="ed-grid-mini">
+      <div class="ed-mini">
+        <div class="ed-mini-av" style="background:linear-gradient(135deg,#0077C8,#005FA3)"><img src="img/miembros/edgar-davila.jpg" alt="Edgar Davila García" onerror="this.remove()">ED</div>
+        <div class="ed-mini-info"><div class="ed-mini-name">Edgar Davila García</div><div class="ed-mini-role">Editor en jefe</div><div class="ed-mini-loc">Opt. · Puerto Rico</div></div>
+      </div>
+      <div class="ed-mini">
+        <div class="ed-mini-av" style="background:linear-gradient(135deg,#2EAA4A,#1E7D34)"><img src="img/miembros/david-pinero.jpg" alt="David P. Piñero" onerror="this.remove()">DP</div>
+        <div class="ed-mini-info"><div class="ed-mini-name">David P. Piñero</div><div class="ed-mini-role">Editor científico</div><div class="ed-mini-loc">Opt. · España · U. Alicante</div></div>
+      </div>
+      <div class="ed-mini">
+        <div class="ed-mini-av" style="background:linear-gradient(135deg,#D42B2B,#A01F1F)"><img src="img/miembros/elise-kramer.jpg" alt="Elise G. Kramer" onerror="this.remove()">EK</div>
+        <div class="ed-mini-info"><div class="ed-mini-name">Elise G. Kramer</div><div class="ed-mini-role">Editora clínica</div><div class="ed-mini-loc">Opt. · USA · Miami FL</div></div>
+      </div>
+      <div class="ed-mini">
+        <div class="ed-mini-av" style="background:linear-gradient(135deg,#F5C518,#C9A200)"><img src="img/miembros/ricardo-pintor.jpg" alt="Ricardo Pintor L." onerror="this.remove()">RP</div>
+        <div class="ed-mini-info"><div class="ed-mini-name">Ricardo Pintor L.</div><div class="ed-mini-role">Editor clínico</div><div class="ed-mini-loc">Opt. FIACLE · México · UNAM</div></div>
+      </div>
+      <div class="ed-mini">
+        <div class="ed-mini-av" style="background:linear-gradient(135deg,#2EAA4A,#1E7D34)"><img src="img/miembros/ariolfo-vazquez.jpg" alt="Ariolfo Vazquez" onerror="this.remove()">AV</div>
+        <div class="ed-mini-info"><div class="ed-mini-name">Ariolfo Vazquez</div><div class="ed-mini-role">Editor regional Andes</div><div class="ed-mini-loc">Opt. · Ecuador · Cuenca</div></div>
+      </div>
+      <div class="ed-mini">
+        <div class="ed-mini-av" style="background:linear-gradient(135deg,#0077C8,#005FA3)"><img src="img/miembros/leonardo-orjuela.jpg" alt="Leonardo Orjuela M." onerror="this.remove()">LO</div>
+        <div class="ed-mini-info"><div class="ed-mini-name">Leonardo Orjuela M.</div><div class="ed-mini-role">Editor de difusión</div><div class="ed-mini-loc">Opt. · Colombia · Medellín</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions-bar">
+    <div class="actions-bar-text"><strong>¿Quieres compartir esta edición?</strong> Descarga el PDF e imprime o compártelo en tu comunidad clínica.</div>
+    <button class="cover-btn primary" onclick="window.print()" style="margin:0">Descargar PDF</button>
+  </div>
+
+</article>
+
+<section class="next-issue">
+  <h3>Próxima edición · 3.er trimestre 2026</h3>
+  <p>Suscríbete para recibir cada edición de <strong>Visión MML LATAM</strong> directamente en tu correo.</p>
+  <div class="next-actions">
+    <a href="boletin.html#suscribirme" class="next-btn primary">Suscribirme al newsletter</a>
+    <a href="boletin.html" class="next-btn ghost">Ver repositorio</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>Grupo Manejo Miopia Latam</h4>
+      <p>Red internacional de profesionales de la salud visual en control de miopia. Activa en Puerto Rico, Colombia, Mexico, USA, España y Ecuador.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Recursos</h5>
+      <a href="articulos.html">Articulos clinicos</a>
+      <a href="investigacion.html">Investigacion</a>
+      <a href="productos.html">Intervenciones</a>
+    </div>
+    <div class="footer-col">
+      <h5>Comunidad</h5>
+      <a href="miembros.html">Nuestra red</a>
+      <a href="familias.html">Para familias</a>
+      <a href="boletin.html">Newsletter Visión MML LATAM</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="mailto:info@miopialatam.org">info@miopialatam.org</a>
+      <a href="mailto:investigacion@miopialatam.org">investigacion@miopialatam.org</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">2026 MML - miopialatam.org - Todos los derechos reservados</div>
+    <div class="footer-stripes">
+      <div style="background:#F5C518"></div>
+      <div style="background:#2EAA4A"></div>
+      <div style="background:#0077C8"></div>
+      <div style="background:#D42B2B"></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const t = document.querySelector('.nav-toggle');
+  const l = document.querySelector('.nav-links');
+  if(!t || !l) return;
+  t.addEventListener('click', ()=>{
+    l.classList.toggle('open');
+    t.classList.toggle('active');
+    document.body.classList.toggle('nav-open');
+  });
+  l.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+    l.classList.remove('open');
+    t.classList.remove('active');
+    document.body.classList.remove('nav-open');
+  }));
+})();
+</script>
+
+</body>
+</html>

@@ -124,6 +124,10 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .maw-event-meta{font-size:0.85rem;color:rgba(10,37,64,0.78);line-height:1.5;margin-bottom:1.1rem;position:relative;z-index:2;font-weight:500}
 .maw-event-btn{display:inline-flex;align-items:center;gap:8px;background:#0A2540;color:#fff;padding:0.85rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.9rem;font-family:'Inter',sans-serif;transition:all .2s;position:relative;z-index:2;box-shadow:0 4px 14px rgba(10,37,64,0.4)}
 .maw-event-btn:hover{background:#0077C8;transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,119,200,0.55)}
+.maw-event-btn.yt{background:#FF0000;color:#fff;box-shadow:0 6px 20px rgba(255,0,0,0.5)}
+.maw-event-btn.yt:hover{background:#CC0000;box-shadow:0 10px 28px rgba(255,0,0,0.6)}
+.maw-event-thanks{margin-top:0.85rem;padding-top:0.85rem;border-top:1px dashed rgba(10,37,64,0.25);font-size:0.78rem;color:#5C4400;line-height:1.5;font-style:italic;position:relative;z-index:2}
+.maw-event-thanks strong{color:#0A2540;font-weight:700;font-style:normal}
 .maw-event-btn svg{flex-shrink:0}
 
 .maw-cta-row{grid-column:1/-1;display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1.2rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,0.18)}
@@ -363,13 +367,26 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 
 /* NEWSLETTER */
 .newsletter{padding:5rem 2rem;background:var(--bg);text-align:center;border-top:1px solid var(--bd)}
-.nl-inner{max-width:520px;margin:0 auto}
-.newsletter h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.6rem;text-transform:uppercase;color:var(--ink);margin-bottom:0.5rem;letter-spacing:-0.02em;line-height:1}
-.newsletter p{font-size:0.95rem;color:var(--mu);margin-bottom:1.6rem;line-height:1.55}
-.nl-form{display:flex;gap:8px;justify-content:center;background:#fff;padding:6px;border:1px solid var(--bd);border-radius:999px;box-shadow:var(--shadow-sm)}
-.nl-input{flex:1;padding:0.7rem 1rem;border:none;font-size:0.9rem;font-family:inherit;color:var(--ink);outline:none;background:transparent}
-.nl-btn{background:var(--ink);color:#fff;border:none;padding:0.7rem 1.6rem;border-radius:999px;font-size:0.86rem;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;transition:background .2s}
-.nl-btn:hover{background:var(--az)}
+.nl-inner{max-width:600px;margin:0 auto}
+.nl-logo{display:inline-flex;flex-direction:column;align-items:center;gap:0.2rem;line-height:0.95;margin-bottom:1.4rem}
+.nl-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.32em;text-transform:uppercase;color:var(--mu)}
+.nl-title{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:clamp(2.4rem,5vw,3.6rem);line-height:0.92;letter-spacing:-0.02em;color:var(--ink);display:inline-flex;align-items:baseline;gap:0.4rem}
+.nl-vision{}
+.nl-letters{display:inline-flex;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:normal}
+.nl-letters .m1{color:#F5C518}
+.nl-letters .m2{color:#2EAA4A}
+.nl-letters .l{color:#0077C8}
+.nl-locale{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.85rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--ro);padding:4px 12px;background:rgba(212,43,43,0.08);border-radius:999px}
+.newsletter p{font-size:0.98rem;color:var(--mu);margin-bottom:1.8rem;line-height:1.6;max-width:520px;margin-left:auto;margin-right:auto}
+.newsletter p strong{color:var(--ink)}
+.nl-cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:1rem 1.9rem;border-radius:999px;text-decoration:none;font-weight:700;font-family:inherit;font-size:0.95rem;transition:all .2s;box-shadow:0 8px 26px rgba(0,119,200,0.4);position:relative;overflow:hidden}
+.nl-cta::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+.nl-cta::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
+.nl-cta>*{position:relative;z-index:2}
+.nl-cta:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,119,200,0.55)}
+.nl-cta:hover::after{transform:translateX(4px)}
+.nl-second{display:block;margin-top:1rem;font-size:0.86rem;color:var(--mu);text-decoration:none;font-weight:600;transition:color .2s}
+.nl-second:hover{color:var(--az)}
 
 /* MIRA PROMO */
 .mira-sec{padding:5rem 2rem;background:linear-gradient(135deg,#EAF4FB 0%,#F7FBFE 60%,#FFF6D8 100%);position:relative;overflow:hidden}
@@ -513,6 +530,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     <a href="recursos.html">Recursos</a>
     <a href="embajadores.html">Nuestra Red</a>
     <a href="familias.html">Para Familias</a>
+    <a href="boletin.html">Boletin</a>
   </div>
   <button class="nav-toggle" aria-label="Abrir menú">
     <svg class="ico-open" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"><line x1="6" y1="10" x2="26" y2="10"/><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="22" x2="26" y2="22"/></svg>
@@ -573,10 +591,11 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
         <div class="maw-event-badge">▶ Grabación · 20 mayo 2026</div>
         <div class="maw-event-title">Conversatorio: Concientización de la Miopía 2026</div>
         <div class="maw-event-meta">Embajadores MML de toda LATAM · Educación libre de influencias comerciales · ¡Ya disponible!</div>
-        <a href="https://youtu.be/X9FfjTFydk0?si=NaKl2En6R9WP1a0G" target="_blank" rel="noopener" class="maw-event-btn">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-          Mira nuestro conversatorio →
+        <a href="https://youtu.be/X9FfjTFydk0?si=NaKl2En6R9WP1a0G" target="_blank" rel="noopener" class="maw-event-btn yt">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          Mira nuestro conversatorio en YouTube
         </a>
+        <div class="maw-event-thanks">Agradecimiento especial a <strong>Spectrum International</strong> por ceder la plataforma del conversatorio.</div>
       </div>
       <div class="maw-cta-row">
         <a href="https://bhvi.org/maw2026/" target="_blank" rel="noopener" class="maw-btn primary">Conoce la campaña oficial →</a>
@@ -950,12 +969,17 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 
 <section class="newsletter">
   <div class="nl-inner">
-    <h3>Mantente actualizado</h3>
-    <p>Recibe articulos clinicos, novedades en investigacion y recursos de MML en tu correo.</p>
-    <form class="nl-form" onsubmit="event.preventDefault();alert('Gracias por suscribirte!')">
-      <input class="nl-input" type="email" placeholder="Tu correo profesional" required>
-      <button class="nl-btn" type="submit">Suscribirme</button>
-    </form>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800;1,900&display=swap" rel="stylesheet">
+    <div class="nl-logo">
+      <div class="nl-eyebrow">Newsletter</div>
+      <div class="nl-title">
+        <span class="nl-vision">Visión</span><span class="nl-letters"><span class="m1">M</span><span class="m2">M</span><span class="l">L</span></span>
+      </div>
+      <div class="nl-locale">LATAM</div>
+    </div>
+    <p>Boletín editorial trimestral de la red MML. <strong>Investigación regional · práctica clínica · futuro LATAM</strong> en control de miopía. Sin influencias comerciales.</p>
+    <a href="boletin.html#suscribirme" class="nl-cta">Suscríbete al newsletter</a>
+    <a href="boletin-ed01.html" class="nl-second">Leer la primera edición →</a>
   </div>
 </section>
 
@@ -973,11 +997,11 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     </div>
     <div class="visits-widget">
       <div id="clustrmaps-container" style="width:100%;text-align:center">
-        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=pdwbLC0ok_nSfm2k_D2DdnfjYsF9JSIbPb3Gkt-68K8"></script>
+        <script type="text/javascript" id="clstr_globe" src="https://clustrmaps.com/globe.js?d=pdwbLC0ok_nSfm2k_D2DdnfjYsF9JSIbPb3Gkt-68K8"></script>
       </div>
       <div class="clustrmaps-fallback" id="clustrmaps-fallback" style="display:none">
-        <strong>Cargando globo de visitantes...</strong>
-        Si no aparece el globo, recarga la página o verifica tu conexión.
+        <strong>El globo de visitantes no se pudo cargar</strong>
+        Suele ser por un bloqueador de rastreadores (uBlock, Brave Shields, AdBlock). Visita <a href="https://clustrmaps.com/map/Miopialatam.org" target="_blank" rel="noopener" style="color:var(--az);text-decoration:underline">el mapa en ClustrMaps</a> para ver las visitas registradas.
       </div>
     </div>
   </div>
@@ -999,7 +1023,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <h5>Comunidad</h5>
       <a href="miembros.html">Nuestra red</a>
       <a href="familias.html">Para familias</a>
-      <a href="unirme.html">Unirme a MML</a>
+      <a href="boletin.html">Newsletter Visión MML LATAM</a>
     </div>
     <div class="footer-col">
             <h5>Contacto</h5>
