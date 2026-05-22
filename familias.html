@@ -169,6 +169,89 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 .nav-toggle.active .ico-open{display:none}
 .nav-toggle.active .ico-close{display:block}
 
+/* DOC MIRA · CHATBOT FAMILIAS */
+.docmira-fab{position:fixed;right:24px;bottom:24px;z-index:9990;display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;border-radius:999px;padding:0.85rem 1.6rem 0.85rem 0.85rem;font-family:inherit;cursor:pointer;box-shadow:0 16px 40px rgba(0,119,200,0.5),0 0 0 5px rgba(255,255,255,0.75);transition:transform .2s,box-shadow .2s;animation:docmira-pop 4s ease-in-out infinite}
+.docmira-fab:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(0,119,200,0.6),0 0 0 5px rgba(255,255,255,0.85)}
+.docmira-fab.is-open{display:none}
+@keyframes docmira-pop{0%,90%,100%{box-shadow:0 16px 40px rgba(0,119,200,0.5),0 0 0 5px rgba(255,255,255,0.75)}45%{box-shadow:0 16px 40px rgba(0,119,200,0.5),0 0 0 16px rgba(0,119,200,0.18)}}
+.docmira-avatar{width:62px;height:62px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;box-shadow:inset 0 0 0 3px rgba(245,197,24,0.6),0 4px 12px rgba(10,37,64,0.25)}
+.docmira-avatar svg{width:100%;height:100%;display:block}
+.docmira-fab-text{display:flex;flex-direction:column;align-items:flex-start;line-height:1.1;gap:2px}
+.docmira-fab-text strong{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:0.02em;text-transform:uppercase}
+.docmira-fab-text span{font-size:0.78rem;opacity:0.9;font-weight:500}
+.docmira-fab-pulse{position:absolute;top:0;right:6px;width:18px;height:18px;border-radius:50%;background:#2EAA4A;border:3px solid #fff;animation:docmira-blink 1.5s ease-in-out infinite}
+@keyframes docmira-blink{0%,100%{box-shadow:0 0 0 0 rgba(46,170,74,0.6)}50%{box-shadow:0 0 0 10px rgba(46,170,74,0)}}
+
+.docmira-panel{position:fixed;right:24px;bottom:24px;width:420px;max-width:calc(100vw - 30px);height:640px;max-height:calc(100vh - 40px);background:#fff;border-radius:24px;box-shadow:0 28px 70px rgba(10,37,64,0.32),0 0 0 1px var(--bd);z-index:9991;display:none;flex-direction:column;overflow:hidden;font-family:inherit}
+.docmira-panel.is-open{display:flex;animation:docmira-slide .28s cubic-bezier(.16,.84,.36,1)}
+@keyframes docmira-slide{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+.docmira-head{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:1.15rem 1.2rem 2.2rem;display:flex;align-items:center;gap:14px;position:relative}
+.docmira-head .docmira-avatar{width:58px;height:58px}
+.docmira-head-text{flex:1;line-height:1.15}
+.docmira-head-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.35rem;text-transform:uppercase;letter-spacing:0.01em;margin-bottom:2px}
+.docmira-head-sub{font-size:0.78rem;opacity:0.92;display:inline-flex;align-items:center;gap:6px;font-weight:500}
+.docmira-head-sub::before{content:'';width:7px;height:7px;border-radius:50%;background:#2EAA4A;box-shadow:0 0 0 3px rgba(46,170,74,0.25)}
+.docmira-head-stats{position:absolute;left:0;right:0;bottom:0;background:rgba(10,37,64,0.45);padding:0.42rem 1.2rem;display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;font-weight:500;color:rgba(255,255,255,0.92);letter-spacing:0.01em}
+.docmira-head-stats strong{color:#F5C518;font-weight:700}
+.docmira-head-stars{display:inline-flex;gap:1px;font-size:0.8rem;line-height:1;color:#F5C518;letter-spacing:1px}
+.docmira-close{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.15);border:none;color:#fff;font-size:1.4rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;font-family:inherit}
+.docmira-close:hover{background:rgba(255,255,255,0.25)}
+
+.docmira-body{flex:1;overflow-y:auto;padding:1.1rem;background:#FAFCFE;display:flex;flex-direction:column;gap:0.75rem;scroll-behavior:smooth}
+.docmira-body::-webkit-scrollbar{width:6px}
+.docmira-body::-webkit-scrollbar-thumb{background:#C8D2DC;border-radius:3px}
+.docmira-msg{max-width:88%;padding:0.75rem 0.95rem;border-radius:16px;font-size:0.88rem;line-height:1.55;animation:docmira-msg .3s ease-out}
+@keyframes docmira-msg{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.docmira-msg.bot{background:#fff;color:var(--txt);border:1px solid var(--bd);align-self:flex-start;border-bottom-left-radius:4px}
+.docmira-msg.bot strong{color:var(--ink);font-weight:700}
+.docmira-msg.user{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;align-self:flex-end;border-bottom-right-radius:4px;font-weight:500}
+.docmira-typing{align-self:flex-start;display:inline-flex;gap:4px;padding:0.6rem 0.95rem;background:#fff;border:1px solid var(--bd);border-radius:16px;border-bottom-left-radius:4px}
+.docmira-typing span{width:6px;height:6px;border-radius:50%;background:#8B9DAA;animation:docmira-dot 1.2s ease-in-out infinite}
+.docmira-typing span:nth-child(2){animation-delay:.2s}
+.docmira-typing span:nth-child(3){animation-delay:.4s}
+@keyframes docmira-dot{0%,80%,100%{transform:scale(0.6);opacity:0.5}40%{transform:scale(1);opacity:1}}
+
+.docmira-options{display:flex;flex-direction:column;gap:6px;margin-top:6px;align-self:stretch}
+.docmira-opt{background:#fff;border:1px solid #C8E0F5;color:var(--ink);padding:0.7rem 0.95rem;border-radius:12px;font-family:inherit;font-size:0.84rem;font-weight:500;text-align:left;cursor:pointer;transition:all .18s;line-height:1.35;display:flex;align-items:center;gap:8px}
+.docmira-opt:hover{background:#EAF4FB;border-color:#0077C8;transform:translateX(2px)}
+.docmira-opt::before{content:'→';color:#0077C8;font-weight:700;flex-shrink:0;transition:transform .2s}
+.docmira-opt:hover::before{transform:translateX(3px)}
+.docmira-opt.back{background:transparent;border-style:dashed;color:var(--mu);font-weight:600}
+.docmira-opt.back::before{content:'←'}
+.docmira-opt.link{background:#EAF4FB;border-color:#0077C8;color:#0D47A1;font-weight:600}
+.docmira-opt.link::before{content:'↗'}
+
+.docmira-foot{padding:0.7rem 1rem;border-top:1px solid var(--bd);background:#fff;font-size:0.7rem;color:var(--mu);text-align:center;line-height:1.4}
+.docmira-foot strong{color:var(--ink)}
+
+.docmira-consent{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:1.1rem 1.15rem;align-self:stretch;display:flex;flex-direction:column;gap:0.8rem}
+.docmira-consent h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;color:var(--ink);letter-spacing:0.01em;line-height:1.15}
+.docmira-consent p{font-size:0.82rem;color:var(--mu);line-height:1.55}
+.docmira-field{display:flex;flex-direction:column;gap:4px}
+.docmira-field label{font-size:0.74rem;color:var(--ink);font-weight:600;letter-spacing:0.02em}
+.docmira-field input,.docmira-field select{font-family:inherit;font-size:0.88rem;color:var(--ink);background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:0.6rem 0.8rem;outline:none;transition:border-color .2s}
+.docmira-field input:focus,.docmira-field select:focus{border-color:#0077C8;background:#fff}
+.docmira-check{display:flex;align-items:flex-start;gap:8px;cursor:pointer;font-size:0.78rem;color:var(--txt);line-height:1.45}
+.docmira-check input{margin-top:2px;accent-color:#0077C8;width:16px;height:16px;flex-shrink:0;cursor:pointer}
+.docmira-check strong{color:var(--ink)}
+.docmira-cta-start{background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;padding:0.85rem 1rem;border-radius:12px;font-family:inherit;font-weight:700;font-size:0.92rem;cursor:pointer;transition:transform .15s,opacity .2s;letter-spacing:0.01em}
+.docmira-cta-start:hover:not(:disabled){transform:translateY(-1px)}
+.docmira-cta-start:disabled{opacity:0.5;cursor:not-allowed}
+.docmira-rating{background:linear-gradient(135deg,#FFF6D8,#FFFCEB);border:1px solid #F5C518;border-radius:14px;padding:0.9rem 1rem;text-align:center;align-self:stretch;margin-top:0.4rem}
+.docmira-rating-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.95rem;color:var(--ink);text-transform:uppercase;letter-spacing:0.01em;margin-bottom:0.55rem}
+.docmira-stars{display:inline-flex;gap:4px;justify-content:center}
+.docmira-star{font-size:1.65rem;line-height:1;cursor:pointer;color:#D8D8D8;transition:transform .12s,color .12s;background:transparent;border:none;padding:0 2px;font-family:inherit}
+.docmira-star:hover,.docmira-star.hot{color:#F5C518;transform:scale(1.18)}
+.docmira-rating.done{background:#E6F7EB;border-color:#2EAA4A}
+.docmira-rating-thanks{font-size:0.82rem;color:#1E7D34;font-weight:600;margin-top:0.3rem}
+
+@media(max-width:560px){
+  .docmira-fab{right:14px;bottom:14px;padding:0.55rem 0.95rem 0.55rem 0.55rem}
+  .docmira-fab-text strong{font-size:0.9rem}
+  .docmira-panel{right:8px;left:8px;bottom:8px;width:auto;height:calc(100vh - 16px);max-height:none;border-radius:18px}
+}
+
 @media(max-width:1180px){.nav-links a{font-size:0.95rem;padding:9px 16px}}
 @media(max-width:980px){
   nav{padding:0 1.5rem;height:88px}
@@ -444,6 +527,39 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 </footer>
 
+<!-- DOC MIRA · CHATBOT -->
+<button class="docmira-fab" id="docmiraFab" aria-label="Abrir chat con Doc Mira">
+  <span class="docmira-fab-pulse" aria-hidden="true"></span>
+  <span class="docmira-avatar" aria-hidden="true">
+    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="dmHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a1f"/><stop offset="1" stop-color="#2a1d14"/></linearGradient><linearGradient id="dmSkin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD9B5"/><stop offset="1" stop-color="#F2BE91"/></linearGradient></defs><circle cx="40" cy="40" r="38" fill="#EAF4FB"/><path d="M14 36 C14 18 24 8 40 8 C56 8 66 18 66 36 L66 40 C62 30 56 26 50 28 C48 20 32 20 30 28 C24 26 18 30 14 40 Z" fill="url(#dmHair)"/><path d="M22 38 Q22 56 40 64 Q58 56 58 38 Q58 26 40 26 Q22 26 22 38 Z" fill="url(#dmSkin)"/><circle cx="22.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><circle cx="57.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><g stroke="#0A2540" stroke-width="2.2" fill="rgba(255,255,255,0.6)"><circle cx="30" cy="40" r="7.5"/><circle cx="50" cy="40" r="7.5"/></g><line x1="37" y1="40" x2="43" y2="40" stroke="#0A2540" stroke-width="2"/><line x1="22" y1="38" x2="14" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><line x1="58" y1="38" x2="66" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="41" r="3" fill="#0A2540"/><circle cx="50" cy="41" r="3" fill="#0A2540"/><circle cx="31.3" cy="39.6" r="1" fill="#fff"/><circle cx="51.3" cy="39.6" r="1" fill="#fff"/><path d="M30 54 Q40 60 50 54" stroke="#D42B2B" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M40 56 Q42 58 40 60 Q38 58 40 56" fill="#D42B2B" opacity="0.4"/><circle cx="40" cy="14" r="3" fill="#F5C518"/></svg>
+  </span>
+  <span class="docmira-fab-text">
+    <strong>Doc Mira</strong>
+    <span>Pregúntame sobre miopía</span>
+  </span>
+</button>
+
+<aside class="docmira-panel" id="docmiraPanel" role="dialog" aria-label="Pregúntale a Mira, nuestra IA">
+  <div class="docmira-head">
+    <span class="docmira-avatar" aria-hidden="true">
+      <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="dmHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a1f"/><stop offset="1" stop-color="#2a1d14"/></linearGradient><linearGradient id="dmSkin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD9B5"/><stop offset="1" stop-color="#F2BE91"/></linearGradient></defs><circle cx="40" cy="40" r="38" fill="#EAF4FB"/><path d="M14 36 C14 18 24 8 40 8 C56 8 66 18 66 36 L66 40 C62 30 56 26 50 28 C48 20 32 20 30 28 C24 26 18 30 14 40 Z" fill="url(#dmHair)"/><path d="M22 38 Q22 56 40 64 Q58 56 58 38 Q58 26 40 26 Q22 26 22 38 Z" fill="url(#dmSkin)"/><circle cx="22.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><circle cx="57.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><g stroke="#0A2540" stroke-width="2.2" fill="rgba(255,255,255,0.6)"><circle cx="30" cy="40" r="7.5"/><circle cx="50" cy="40" r="7.5"/></g><line x1="37" y1="40" x2="43" y2="40" stroke="#0A2540" stroke-width="2"/><line x1="22" y1="38" x2="14" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><line x1="58" y1="38" x2="66" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="41" r="3" fill="#0A2540"/><circle cx="50" cy="41" r="3" fill="#0A2540"/><circle cx="31.3" cy="39.6" r="1" fill="#fff"/><circle cx="51.3" cy="39.6" r="1" fill="#fff"/><path d="M30 54 Q40 60 50 54" stroke="#D42B2B" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M40 56 Q42 58 40 60 Q38 58 40 56" fill="#D42B2B" opacity="0.4"/><circle cx="40" cy="14" r="3" fill="#F5C518"/></svg>
+    </span>
+    <div class="docmira-head-text">
+      <div class="docmira-head-title">Pregúntale a Mira</div>
+      <div class="docmira-head-sub">Nuestra IA · Información para familias</div>
+    </div>
+    <button class="docmira-close" id="docmiraClose" aria-label="Cerrar chat">×</button>
+    <div class="docmira-head-stats">
+      <span><span class="docmira-head-stars" id="dmRatingStars">★★★★★</span> <strong id="dmRatingAvg">—</strong>/5 · <span id="dmRatingCount">0</span> valoraciones</span>
+      <span><strong id="dmVisits">0</strong> conversaciones</span>
+    </div>
+  </div>
+  <div class="docmira-body" id="docmiraBody"></div>
+  <div class="docmira-foot">
+    <strong>Doc Mira</strong> entrega información educativa con base en MML. No reemplaza la consulta con un profesional de la salud visual.
+  </div>
+</aside>
+
 <script>
 (function(){
   const t = document.querySelector('.nav-toggle');
@@ -460,6 +576,315 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     t.classList.remove('active');
     document.body.classList.remove('nav-open');
   }));
+})();
+
+// ===== DOC MIRA · CHATBOT FAMILIAS =====
+(function(){
+  const fab = document.getElementById('docmiraFab');
+  const panel = document.getElementById('docmiraPanel');
+  const closeBtn = document.getElementById('docmiraClose');
+  const body = document.getElementById('docmiraBody');
+  if (!fab || !panel || !body) return;
+
+  const ABACUS = 'https://abacus.jasoncameron.dev';
+  const NS = 'miopialatam.org';
+  const ratedKey = 'docmira-rated-v1';
+  const consentKey = 'docmira-consent-v1';
+
+  function loadConsent(){
+    try { return JSON.parse(localStorage.getItem(consentKey)); } catch(e) { return null; }
+  }
+  function saveConsent(data){
+    try { localStorage.setItem(consentKey, JSON.stringify(data)); } catch(e) {}
+  }
+
+  function getCounter(key){
+    return fetch(ABACUS + '/get/' + NS + '/' + key).then(r => r.json()).then(d => d.value || 0).catch(() => 0);
+  }
+  function hitCounter(key){
+    return fetch(ABACUS + '/hit/' + NS + '/' + key).then(r => r.json()).then(d => d.value || 0).catch(() => 0);
+  }
+
+  async function refreshStats(){
+    try {
+      const visits = await getCounter('docmira-visits');
+      const counts = await Promise.all([1,2,3,4,5].map(s => getCounter('docmira-rate-' + s)));
+      const total = counts.reduce((a,b) => a + b, 0);
+      const sum = counts.reduce((a,b,i) => a + b * (i + 1), 0);
+      const avg = total > 0 ? (sum / total).toFixed(1) : null;
+      const v = document.getElementById('dmVisits');
+      const r = document.getElementById('dmRatingAvg');
+      const c = document.getElementById('dmRatingCount');
+      const s = document.getElementById('dmRatingStars');
+      if (v) v.textContent = visits.toLocaleString('es-419');
+      if (c) c.textContent = total.toLocaleString('es-419');
+      if (r) r.textContent = avg !== null ? avg : '—';
+      if (s && avg !== null) {
+        const rounded = Math.round(parseFloat(avg));
+        s.textContent = '★★★★★'.slice(0, rounded) + '☆☆☆☆☆'.slice(0, 5 - rounded);
+      }
+    } catch(e) {}
+  }
+  refreshStats();
+
+  function greeting(){
+    const c = loadConsent();
+    if (c && c.name) return '¡Hola <strong>' + escapeHTML(c.name) + '</strong>! Soy <strong>Doc Mira</strong> 👁️ Te ayudo con preguntas sobre miopía en niños. ¿Qué quieres saber?';
+    return '¡Hola! Soy <strong>Doc Mira</strong> 👁️ Te ayudo con preguntas sobre miopía en niños. ¿Qué quieres saber?';
+  }
+  function escapeHTML(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  // Base de conocimiento curada desde familias.html
+  const TOPICS = {
+    menu: {
+      label: 'Menú principal',
+      get text(){ return greeting(); },
+      options: [
+        { id: 'basico', text: '¿Qué es la miopía?' },
+        { id: 'senales', text: '¿Cómo sé si mi hijo tiene miopía?' },
+        { id: 'edad', text: '¿A qué edad puede aparecer?' },
+        { id: 'cura', text: '¿Tiene cura la miopía?' },
+        { id: 'control', text: '¿Por qué es importante controlarla?' },
+        { id: 'tratamientos', text: '¿Qué tratamientos existen?' },
+        { id: 'aire-libre', text: '¿Cuánto tiempo al aire libre?' },
+        { id: 'frecuencia', text: '¿Cada cuánto al oftalmólogo pediatra o al optómetra?' },
+        { id: 'especialista', text: '¿Cómo encuentro un especialista?' }
+      ]
+    },
+    basico: {
+      text: 'La <strong>miopía</strong> ocurre cuando el ojo crece en longitud más de lo normal. La imagen se enfoca <strong>delante</strong> de la retina y no sobre ella → los objetos lejanos se ven borrosos, los cercanos se ven bien.<br><br>Es la alteración visual más frecuente en niños en edad escolar. En LATAM su prevalencia está aumentando aceleradamente por más pantallas, menos horas al aire libre y factores genéticos.',
+      followups: ['edad', 'senales', 'cura']
+    },
+    senales: {
+      text: 'Hay <strong>6 señales de alerta</strong> claves. Si ves alguna en tu hijo, consulta con un profesional de la salud visual:<br><br>1. <strong>Se acerca mucho</strong> a pantallas u objetos.<br>2. <strong>Dolores de cabeza</strong> frecuentes (sobre todo al final del día escolar).<br>3. <strong>Dificultad para ver el tablero</strong> en clase.<br>4. <strong>Entrecierra los ojos</strong> para enfocar de lejos.<br>5. <strong>Bajo rendimiento escolar</strong> sin otra causa aparente.<br>6. <strong>Molestia con la luz</strong> o dificultad en ambientes poco iluminados.',
+      followups: ['frecuencia', 'tratamientos', 'especialista']
+    },
+    edad: {
+      text: 'La miopía puede aparecer <strong>desde los 6 años</strong>, pero es más frecuente entre los <strong>8 y 12 años</strong> — coincide con el período de crecimiento escolar, la ventana de mayor riesgo.<br><br>Por eso es tan importante el control visual <strong>anual</strong> desde los primeros años, especialmente si hay antecedentes familiares.',
+      followups: ['frecuencia', 'senales', 'control']
+    },
+    cura: {
+      text: 'La miopía <strong>no tiene cura definitiva</strong> en la infancia, pero <strong>sí se puede controlar</strong>.<br><br>Los tratamientos actuales (Orto-K, atropina, lentes especiales, lentes oftálmicas de control) han demostrado <strong>reducir su progresión hasta en un 60%</strong>, protegiendo la visión a largo plazo.',
+      followups: ['tratamientos', 'control', 'especialista']
+    },
+    control: {
+      text: 'Una <strong>miopía alta</strong> (más de -6.00 dioptrías) aumenta significativamente el riesgo de complicaciones graves en la edad adulta:<br><br>• Desprendimiento de retina<br>• Glaucoma<br>• Cataratas tempranas<br>• Maculopatía miópica<br><br>Controlar la miopía desde niño <strong>reduce hasta 10 veces</strong> el riesgo de estas complicaciones.',
+      followups: ['tratamientos', 'cura', 'especialista']
+    },
+    tratamientos: {
+      text: 'Existen <strong>4 opciones principales</strong> con evidencia científica. El profesional indicará la más adecuada según edad, grado y estilo de vida:',
+      options: [
+        { id: 'ortok', text: '🌙 Orto-K (lentes nocturnos)' },
+        { id: 'atropina', text: '💧 Atropina (gotas)' },
+        { id: 'lc-especiales', text: '👁 Lentes de contacto especiales' },
+        { id: 'gafas-control', text: '👓 Lentes oftálmicas de control' },
+        { id: 'menu', text: 'Volver al menú', back: true }
+      ]
+    },
+    ortok: {
+      text: '<strong>Orto-K</strong> son lentes nocturnos rígidos que <strong>remodelan suavemente la córnea</strong>. El niño duerme con ellos y durante el día <strong>ve bien sin gafas ni lentes</strong>.<br><br>✔ Alta evidencia científica<br>✔ Reducción de progresión muy efectiva<br>✔ Ideal para niños activos / deportistas<br>✔ Reversible: si se suspende, todo vuelve a la normalidad',
+      followups: ['atropina', 'lc-especiales', 'especialista']
+    },
+    atropina: {
+      text: '<strong>Atropina</strong> son <strong>gotas oculares en concentración muy baja</strong> (0.01% – 0.05%). Se aplican <strong>una vez al día</strong>, normalmente antes de dormir.<br><br>✔ Alta evidencia científica<br>✔ Frena el crecimiento del ojo<br>✔ Efectos secundarios mínimos en bajas concentraciones<br>✔ Se puede combinar con otros tratamientos',
+      followups: ['ortok', 'gafas-control', 'especialista']
+    },
+    'lc-especiales': {
+      text: '<strong>Lentes de contacto blandas especiales</strong> de uso <strong>diurno</strong> con diseño de desenfoque periférico.<br><br>✔ Reducen el estímulo de crecimiento axial<br>✔ Ideales para niños activos desde los 8 años<br>✔ Evidencia moderada-alta<br>✔ Uso diario, retiro nocturno',
+      followups: ['ortok', 'gafas-control', 'especialista']
+    },
+    'gafas-control': {
+      text: '<strong>Lentes oftálmicas (gafas) de control</strong> con tecnología de desenfoque periférico (DIMS, HAL, DOT).<br><br>✔ Opción <strong>no invasiva</strong><br>✔ Ideales para niños que <strong>no toleran lentes de contacto</strong><br>✔ Disponibles desde los 4 años<br>✔ Evidencia moderada',
+      followups: ['ortok', 'atropina', 'especialista']
+    },
+    'aire-libre': {
+      text: 'Los estudios recomiendan al menos <strong>90 minutos diarios</strong> de actividad <strong>al aire libre con luz natural</strong> (idealmente 2-3 horas).<br><br>⚠ Importante: el aire libre <strong>no detiene</strong> la miopía ya instaurada, pero <strong>retrasa su aparición</strong> en niños que aún no la tienen. Es una excelente medida preventiva.',
+      followups: ['senales', 'edad', 'frecuencia']
+    },
+    frecuencia: {
+      text: 'Tanto el <strong>oftalmólogo pediatra</strong> como el <strong>optómetra especializado en control de miopía</strong> pueden hacer la revisión y el seguimiento de tu hijo.<br><br><strong>Si tu hijo ya es miope:</strong> revisión <strong>cada 6 meses</strong> para evaluar la progresión.<br><br><strong>Si no es miope pero hay antecedentes familiares:</strong> revisión <strong>anual</strong> desde los 5-6 años.<br><br><strong>Sin antecedentes:</strong> revisión anual desde el inicio de la edad escolar.',
+      followups: ['senales', 'especialista', 'aire-libre']
+    },
+    especialista: {
+      text: 'La red <strong>MML</strong> cuenta con <strong>profesionales de la salud visual especializados en control de miopía</strong> en toda Latinoamérica.',
+      options: [
+        { id: 'link:miembros.html', text: 'Ver directorio de especialistas', link: true },
+        { id: 'link:https://wa.me/573013166655?text=Hola%20MML,%20busco%20un%20especialista%20de%20control%20de%20miopia%20cerca%20de%20mi', text: 'Contactar por WhatsApp', link: true },
+        { id: 'link:mailto:info@miopialatam.org', text: 'Escribir a info@miopialatam.org', link: true },
+        { id: 'menu', text: 'Volver al menú', back: true }
+      ]
+    }
+  };
+
+  let started = false;
+
+  function scrollDown(){ requestAnimationFrame(()=>{ body.scrollTop = body.scrollHeight; }); }
+
+  function addMsg(html, who){
+    const div = document.createElement('div');
+    div.className = 'docmira-msg ' + (who || 'bot');
+    div.innerHTML = html;
+    body.appendChild(div);
+    scrollDown();
+    return div;
+  }
+
+  function showTyping(){
+    const t = document.createElement('div');
+    t.className = 'docmira-typing';
+    t.innerHTML = '<span></span><span></span><span></span>';
+    body.appendChild(t);
+    scrollDown();
+    return t;
+  }
+
+  function addOptions(opts){
+    const wrap = document.createElement('div');
+    wrap.className = 'docmira-options';
+    opts.forEach(o => {
+      const b = document.createElement('button');
+      let cls = 'docmira-opt';
+      if (o.back) cls += ' back';
+      if (o.link) cls += ' link';
+      b.className = cls;
+      b.textContent = o.text;
+      b.addEventListener('click', () => {
+        if (o.link && o.id.indexOf('link:') === 0) {
+          window.open(o.id.slice(5), '_blank', 'noopener');
+          return;
+        }
+        addMsg(o.text, 'user');
+        wrap.remove();
+        goto(o.id);
+      });
+      wrap.appendChild(b);
+    });
+    body.appendChild(wrap);
+    scrollDown();
+  }
+
+  function goto(topicId){
+    const topic = TOPICS[topicId];
+    if (!topic) return;
+    const typing = showTyping();
+    setTimeout(() => {
+      typing.remove();
+      addMsg(topic.text, 'bot');
+      if (topic.options) {
+        addOptions(topic.options);
+      } else if (topic.followups) {
+        const followOpts = topic.followups
+          .map(id => {
+            const t = TOPICS[id];
+            if (!t) return null;
+            const label = TOPICS.menu.options.find(o => o.id === id);
+            return label ? { id: id, text: label.text } : null;
+          })
+          .filter(Boolean);
+        followOpts.push({ id: 'menu', text: 'Volver al menú', back: true });
+        addOptions(followOpts);
+      }
+    }, 600);
+  }
+
+  function showRating(){
+    if (localStorage.getItem(ratedKey)) return;
+    const card = document.createElement('div');
+    card.className = 'docmira-rating';
+    card.innerHTML = '<div class="docmira-rating-title">¿Te sirvió la respuesta de Mira?</div><div class="docmira-stars" id="docmiraStars"></div>';
+    body.appendChild(card);
+    const stars = card.querySelector('#docmiraStars');
+    for (let i = 1; i <= 5; i++) {
+      const b = document.createElement('button');
+      b.className = 'docmira-star';
+      b.textContent = '★';
+      b.setAttribute('aria-label', i + ' estrellas');
+      b.addEventListener('mouseenter', () => {
+        [...stars.children].forEach((el, idx) => el.classList.toggle('hot', idx < i));
+      });
+      b.addEventListener('mouseleave', () => {
+        [...stars.children].forEach(el => el.classList.remove('hot'));
+      });
+      b.addEventListener('click', async () => {
+        localStorage.setItem(ratedKey, String(i));
+        await hitCounter('docmira-rate-' + i);
+        card.classList.add('done');
+        card.innerHTML = '<div class="docmira-rating-title">¡Gracias por valorar a Mira!</div><div class="docmira-stars">' + '★★★★★'.slice(0,i) + '☆☆☆☆☆'.slice(0,5-i) + '</div><div class="docmira-rating-thanks">Tu valoración ayuda a otras familias.</div>';
+        refreshStats();
+      });
+      stars.appendChild(b);
+    }
+    scrollDown();
+  }
+
+  function showConsentGate(onDone){
+    addMsg('Antes de empezar, necesito que te identifiques y aceptes los términos. Esto me ayuda a darte una mejor experiencia.', 'bot');
+    const card = document.createElement('div');
+    card.className = 'docmira-consent';
+    card.innerHTML = '\
+<h4>Cuéntame quién eres</h4>\
+<div class="docmira-field"><label for="dmName">¿Cómo te llamo?</label><input id="dmName" type="text" maxlength="40" placeholder="Tu nombre o apodo" autocomplete="given-name"></div>\
+<div class="docmira-field"><label for="dmRole">Soy...</label><select id="dmRole"><option value="">Selecciona una opción</option><option>Madre</option><option>Padre</option><option>Cuidador/a</option><option>Familiar</option><option>Profesional de la salud</option><option>Otro</option></select></div>\
+<div class="docmira-field"><label for="dmCountry">País (opcional)</label><input id="dmCountry" type="text" maxlength="40" placeholder="México, Colombia, Argentina..."></div>\
+<label class="docmira-check"><input type="checkbox" id="dmCk1"><span>Entiendo que <strong>Doc Mira</strong> es una <strong>IA</strong> (no un profesional de la salud).</span></label>\
+<label class="docmira-check"><input type="checkbox" id="dmCk2"><span>Acepto que la información de Mira es <strong>educativa</strong> y <strong>no reemplaza el criterio médico u optométrico</strong> de un profesional.</span></label>\
+<button class="docmira-cta-start" id="dmStart" disabled>Empezar a chatear con Mira</button>';
+    body.appendChild(card);
+    scrollDown();
+
+    const nameEl = card.querySelector('#dmName');
+    const roleEl = card.querySelector('#dmRole');
+    const countryEl = card.querySelector('#dmCountry');
+    const ck1 = card.querySelector('#dmCk1');
+    const ck2 = card.querySelector('#dmCk2');
+    const startBtn = card.querySelector('#dmStart');
+
+    function validate(){
+      const ok = nameEl.value.trim().length >= 2 && roleEl.value && ck1.checked && ck2.checked;
+      startBtn.disabled = !ok;
+    }
+    [nameEl, roleEl, ck1, ck2].forEach(el => el.addEventListener('input', validate));
+    [ck1, ck2].forEach(el => el.addEventListener('change', validate));
+
+    startBtn.addEventListener('click', () => {
+      const data = {
+        name: nameEl.value.trim().slice(0, 40),
+        role: roleEl.value,
+        country: countryEl.value.trim().slice(0, 40),
+        acceptedAI: true,
+        acceptedDisclaimer: true,
+        ts: new Date().toISOString()
+      };
+      saveConsent(data);
+      hitCounter('docmira-consents');
+      card.remove();
+      addMsg('¡Gracias <strong>' + escapeHTML(data.name) + '</strong>! Listo, ahora podemos hablar.', 'bot');
+      setTimeout(onDone, 500);
+    });
+  }
+
+  function open(){
+    panel.classList.add('is-open');
+    fab.classList.add('is-open');
+    if (!started) {
+      started = true;
+      hitCounter('docmira-visits').then(() => refreshStats());
+      const c = loadConsent();
+      if (!c || !c.acceptedAI || !c.acceptedDisclaimer) {
+        showConsentGate(() => { goto('menu'); setTimeout(showRating, 1400); });
+      } else {
+        goto('menu');
+        setTimeout(showRating, 1400);
+      }
+    }
+  }
+  function close(){
+    panel.classList.remove('is-open');
+    fab.classList.remove('is-open');
+  }
+
+  fab.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
 })();
 </script>
 </body>
