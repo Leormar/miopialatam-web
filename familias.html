@@ -169,7 +169,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 .nav-toggle.active .ico-open{display:none}
 .nav-toggle.active .ico-close{display:block}
 
-/* DOC MIRA · CHATBOT FAMILIAS */
+/* MIRA IA · CHATBOT FAMILIAS */
 .docmira-fab{position:fixed;right:24px;bottom:24px;z-index:9990;display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;border:none;border-radius:999px;padding:0.85rem 1.6rem 0.85rem 0.85rem;font-family:inherit;cursor:pointer;box-shadow:0 16px 40px rgba(0,119,200,0.5),0 0 0 5px rgba(255,255,255,0.75);transition:transform .2s,box-shadow .2s;animation:docmira-pop 4s ease-in-out infinite}
 .docmira-fab:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(0,119,200,0.6),0 0 0 5px rgba(255,255,255,0.85)}
 .docmira-fab.is-open{display:none}
@@ -527,14 +527,14 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 </footer>
 
-<!-- DOC MIRA · CHATBOT -->
-<button class="docmira-fab" id="docmiraFab" aria-label="Abrir chat con Doc Mira">
+<!-- MIRA IA · CHATBOT -->
+<button class="docmira-fab" id="docmiraFab" aria-label="Abrir chat con MIRA IA">
   <span class="docmira-fab-pulse" aria-hidden="true"></span>
   <span class="docmira-avatar" aria-hidden="true">
     <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="dmHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a1f"/><stop offset="1" stop-color="#2a1d14"/></linearGradient><linearGradient id="dmSkin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD9B5"/><stop offset="1" stop-color="#F2BE91"/></linearGradient></defs><circle cx="40" cy="40" r="38" fill="#EAF4FB"/><path d="M14 36 C14 18 24 8 40 8 C56 8 66 18 66 36 L66 40 C62 30 56 26 50 28 C48 20 32 20 30 28 C24 26 18 30 14 40 Z" fill="url(#dmHair)"/><path d="M22 38 Q22 56 40 64 Q58 56 58 38 Q58 26 40 26 Q22 26 22 38 Z" fill="url(#dmSkin)"/><circle cx="22.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><circle cx="57.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><g stroke="#0A2540" stroke-width="2.2" fill="rgba(255,255,255,0.6)"><circle cx="30" cy="40" r="7.5"/><circle cx="50" cy="40" r="7.5"/></g><line x1="37" y1="40" x2="43" y2="40" stroke="#0A2540" stroke-width="2"/><line x1="22" y1="38" x2="14" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><line x1="58" y1="38" x2="66" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="41" r="3" fill="#0A2540"/><circle cx="50" cy="41" r="3" fill="#0A2540"/><circle cx="31.3" cy="39.6" r="1" fill="#fff"/><circle cx="51.3" cy="39.6" r="1" fill="#fff"/><path d="M30 54 Q40 60 50 54" stroke="#D42B2B" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M40 56 Q42 58 40 60 Q38 58 40 56" fill="#D42B2B" opacity="0.4"/><circle cx="40" cy="14" r="3" fill="#F5C518"/></svg>
   </span>
   <span class="docmira-fab-text">
-    <strong>Doc Mira</strong>
+    <strong>MIRA IA</strong>
     <span>Pregúntame sobre miopía</span>
   </span>
 </button>
@@ -556,7 +556,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
   <div class="docmira-body" id="docmiraBody"></div>
   <div class="docmira-foot">
-    <strong>Doc Mira</strong> entrega información educativa con base en MML. No reemplaza la consulta con un profesional de la salud visual.
+    <strong>MIRA IA</strong> entrega información educativa con base en MML. No reemplaza la consulta con un profesional de la salud visual.
   </div>
 </aside>
 
@@ -578,7 +578,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   }));
 })();
 
-// ===== DOC MIRA · CHATBOT FAMILIAS =====
+// ===== MIRA IA · CHATBOT FAMILIAS =====
 (function(){
   const fab = document.getElementById('docmiraFab');
   const panel = document.getElementById('docmiraPanel');
@@ -629,8 +629,8 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 
   function greeting(){
     const c = loadConsent();
-    if (c && c.name) return '¡Hola <strong>' + escapeHTML(c.name) + '</strong>! Soy <strong>Doc Mira</strong> 👁️ Te ayudo con preguntas sobre miopía en niños. ¿Qué quieres saber?';
-    return '¡Hola! Soy <strong>Doc Mira</strong> 👁️ Te ayudo con preguntas sobre miopía en niños. ¿Qué quieres saber?';
+    if (c && c.name) return '¡Hola <strong>' + escapeHTML(c.name) + '</strong>! Soy <strong>MIRA IA</strong> 👁️ Te ayudo con preguntas sobre miopía en niños. ¿Qué quieres saber?';
+    return '¡Hola! Soy <strong>MIRA IA</strong> 👁️ Te ayudo con preguntas sobre miopía en niños. ¿Qué quieres saber?';
   }
   function escapeHTML(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
@@ -825,7 +825,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 <div class="docmira-field"><label for="dmName">¿Cómo te llamo?</label><input id="dmName" type="text" maxlength="40" placeholder="Tu nombre o apodo" autocomplete="given-name"></div>\
 <div class="docmira-field"><label for="dmRole">Soy...</label><select id="dmRole"><option value="">Selecciona una opción</option><option>Madre</option><option>Padre</option><option>Cuidador/a</option><option>Familiar</option><option>Profesional de la salud</option><option>Otro</option></select></div>\
 <div class="docmira-field"><label for="dmCountry">País (opcional)</label><input id="dmCountry" type="text" maxlength="40" placeholder="México, Colombia, Argentina..."></div>\
-<label class="docmira-check"><input type="checkbox" id="dmCk1"><span>Entiendo que <strong>Doc Mira</strong> es una <strong>IA</strong> (no un profesional de la salud).</span></label>\
+<label class="docmira-check"><input type="checkbox" id="dmCk1"><span>Entiendo que <strong>MIRA IA</strong> es una <strong>inteligencia artificial</strong> (no un profesional de la salud).</span></label>\
 <label class="docmira-check"><input type="checkbox" id="dmCk2"><span>Acepto que la información de Mira es <strong>educativa</strong> y <strong>no reemplaza el criterio médico u optométrico</strong> de un profesional.</span></label>\
 <button class="docmira-cta-start" id="dmStart" disabled>Empezar a chatear con Mira</button>';
     body.appendChild(card);
