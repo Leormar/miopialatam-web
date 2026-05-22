@@ -81,6 +81,13 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .sub-btn::after{content:'\2192';margin-left:8px;display:inline-block;transition:transform .2s}
 .sub-btn:hover::after{transform:translateX(4px)}
 .sub-msg{font-size:0.78rem;color:var(--ve);margin-top:0.8rem;text-align:center;font-weight:600;display:none}
+.sub-done{background:#fff;border:1px solid var(--bd);border-radius:24px;padding:2rem;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;text-align:center;animation:sub-done-in .3s ease-out}
+.sub-done::before{content:'';position:absolute;top:0;left:0;width:100%;height:6px;background:linear-gradient(90deg,#F5C518 0%,#2EAA4A 33%,#0077C8 66%,#D42B2B 100%)}
+.sub-done-check{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,#2EAA4A,#1E7D34);color:#fff;font-size:2.2rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 8px 24px rgba(46,170,74,0.4)}
+.sub-done h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.7rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.02em;line-height:1.05;margin-bottom:0.7rem}
+.sub-done p{font-size:0.9rem;color:var(--mu);line-height:1.55;margin-bottom:1.3rem}
+.sub-done p strong{color:var(--ink)}
+@keyframes sub-done-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
 @media(max-width:980px){.hero-inner{grid-template-columns:1fr;gap:2rem}}
 
@@ -249,6 +256,13 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <button type="submit" class="sub-btn">Quiero el newsletter</button>
       <div class="sub-msg" id="subMsg">¡Gracias! Te abriremos tu correo para terminar la suscripción.</div>
     </form>
+    <div class="sub-done" id="subDone" style="display:none">
+      <div class="sub-done-check">✓</div>
+      <h3>¡Gracias, <span id="subDoneName">colega</span>!</h3>
+      <p>Te abrimos tu cliente de correo con la confirmación. Mientras procesamos tu suscripción, <strong>ya puedes leer la primera edición</strong> de Visión MML LATAM.</p>
+      <a href="boletin-ed01.html" class="sub-btn" style="display:block;text-align:center;text-decoration:none">Leer la Edición 01 ahora</a>
+      <p style="margin-top:0.9rem;font-size:0.78rem">Recibirás las próximas ediciones en tu correo.</p>
+    </div>
   </div>
 </section>
 
@@ -428,10 +442,18 @@ function subscribe(e){
     'Rol: ' + role + '\n' +
     'País: ' + country + '\n'
   );
-  window.location.href = 'mailto:info@miopialatam.org?subject=' + subject + '&body=' + body;
-  document.getElementById('subMsg').style.display = 'block';
+  // Abre el cliente de correo en una pestaña aparte para que la página se quede
+  const mailtoLink = 'mailto:info@miopialatam.org?subject=' + subject + '&body=' + body;
+  window.open(mailtoLink, '_self');
   // Contador de suscripciones
-  try { fetch('https://abacus.jasoncameron.dev/hit/miopialatam.org/newsletter-subs'); } catch(e) {}
+  try { fetch('https://abacus.jasoncameron.dev/hit/miopialatam.org/newsletter-subs'); } catch(err) {}
+  // Reemplaza el form por la pantalla de confirmación + botón directo al newsletter
+  const form = e.target;
+  const done = document.getElementById('subDone');
+  const doneName = document.getElementById('subDoneName');
+  if (doneName) doneName.textContent = name.split(' ')[0] || name;
+  if (form) form.style.display = 'none';
+  if (done) done.style.display = 'block';
   return false;
 }
 </script>
