@@ -457,7 +457,11 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">A que edad puede aparecer?</div>
-      <div class="faq-a">Puede aparecer desde los 6 años, aunque es mas frecuente entre los 8 y 12 años. El periodo de crecimiento escolar es el de mayor riesgo. Por eso es tan importante el control visual anual desde los primeros años.</div>
+      <div class="faq-a">Puede aparecer desde los <strong>4-6 años</strong>, aunque es más frecuente entre los <strong>8 y 12 años</strong>. El período de crecimiento escolar es el de mayor riesgo. Antes de ser miope, muchos niños pasan por una etapa llamada <strong>pre-miopía</strong> (ver la siguiente pregunta), donde ya están en riesgo aunque la visión todavía sea normal. Por eso es tan importante el primer examen visual desde los 3-5 años y el control anual.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">¿Qué es la pre-miopía y cómo se detecta?</div>
+      <div class="faq-a"><strong>La pre-miopía es la etapa <em>antes</em> de que tu hijo sea miope</strong>, pero ya con riesgo alto de serlo. Según la <strong>International Myopia Institute (IMI)</strong>, se identifica cuando un niño tiene una refracción muy baja para su edad — es decir, su "reserva" de hipermetropía (la hipermetropía fisiológica que tienen los niños) ya está agotada antes de tiempo.<br><br><strong>Umbrales de pre-miopía según la edad (refracción):</strong><br>· 6 años: menos de +0.75 D<br>· 7-8 años: menos de +0.50 D<br>· 9-10 años: menos de +0.25 D<br>· 11 años: refracción cercana a 0 (emetropía)<br><br>En esta etapa el niño <strong>todavía no es miope</strong>, pero la probabilidad de que lo sea en los próximos años es alta. Detectarla a tiempo permite iniciar <strong>medidas preventivas</strong>: aumentar a 2-3 horas diarias al aire libre con luz natural, descansos visuales frecuentes, control cada 6 meses con biometría (longitud axial) y, en casos seleccionados, intervención clínica anticipada. El primer examen visual con cicloplejía desde los 3-5 años es clave para detectarla.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Tiene cura la miopia?</div>
@@ -643,6 +647,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
         { id: 'basico', text: '¿Qué es la miopía?' },
         { id: 'senales', text: '¿Cómo sé si mi hijo tiene miopía?' },
         { id: 'edad', text: '¿A qué edad puede aparecer?' },
+        { id: 'premiopia', text: '¿Qué es la pre-miopía?' },
         { id: 'cura', text: '¿Tiene cura la miopía?' },
         { id: 'control', text: '¿Por qué es importante controlarla?' },
         { id: 'tratamientos', text: '¿Qué tratamientos existen?' },
@@ -660,8 +665,12 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       followups: ['frecuencia', 'tratamientos', 'especialista']
     },
     edad: {
-      text: 'La miopía puede aparecer <strong>desde los 6 años</strong>, pero es más frecuente entre los <strong>8 y 12 años</strong> — coincide con el período de crecimiento escolar, la ventana de mayor riesgo.<br><br>Por eso es tan importante el control visual <strong>anual</strong> desde los primeros años, especialmente si hay antecedentes familiares.',
-      followups: ['frecuencia', 'senales', 'control']
+      text: 'La miopía puede aparecer <strong>desde los 4-6 años</strong>, pero es más frecuente entre los <strong>8 y 12 años</strong> — coincide con el período de crecimiento escolar, la ventana de mayor riesgo.<br><br>Antes de ser miope, muchos niños pasan por una etapa llamada <strong>pre-miopía</strong>: la visión todavía es normal, pero su "reserva" de hipermetropía es baja para su edad y es muy probable que progresen hacia miopía si no se toman medidas preventivas.<br><br>Por eso es importante el <strong>primer examen visual con cicloplejía desde los 3-5 años</strong> y control anual, especialmente si hay antecedentes familiares.',
+      followups: ['premiopia', 'frecuencia', 'senales']
+    },
+    premiopia: {
+      text: 'La <strong>pre-miopía</strong> es la etapa <em>antes</em> de que tu hijo sea miope, pero ya con riesgo alto. La <strong>International Myopia Institute (IMI)</strong> la define como un ojo con refracción muy baja para su edad — es decir, su reserva natural de hipermetropía está agotada antes de tiempo.<br><br><strong>Umbrales por edad (refracción):</strong><br>· 6 años: menos de +0.75 D<br>· 7-8 años: menos de +0.50 D<br>· 9-10 años: menos de +0.25 D<br>· 11 años: cercana a 0 (emetropía)<br><br>En esta etapa el niño <strong>todavía no es miope</strong>, pero la probabilidad de serlo en los próximos años es alta.<br><br><strong>Qué hacer:</strong><br>· Examen visual con cicloplejía<br>· 2-3 horas diarias al aire libre con luz natural<br>· Descansos visuales cada 20-30 min al usar pantallas<br>· Control cada 6 meses con biometría (longitud axial)<br>· En casos seleccionados, intervención clínica anticipada con tu profesional de la salud visual',
+      followups: ['edad', 'aire-libre', 'frecuencia']
     },
     cura: {
       text: 'La miopía <strong>no tiene cura definitiva</strong> en la infancia, pero <strong>sí se puede controlar</strong>.<br><br>Los tratamientos actuales (Orto-K, atropina, lentes especiales, lentes oftálmicas de control) han demostrado <strong>reducir su progresión hasta en un 60%</strong>, protegiendo la visión a largo plazo.',
