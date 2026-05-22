@@ -187,24 +187,256 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 }
 @media(max-width:640px){.footer-grid{grid-template-columns:1fr}}
 
-/* PRINT */
+/* ============================================================
+   PRINT / PDF · diseño editorial revista
+   Recomendado imprimir desde Chrome/Edge → "Guardar como PDF"
+   con la opción "Gráficos en segundo plano" / "Background graphics" ACTIVADA
+   ============================================================ */
 @media print{
+  @page{
+    size:A4;
+    margin:16mm 14mm 22mm 14mm;
+    @bottom-left{
+      content:"Visión MML LATAM · Edición 01 · Mayo 2026";
+      font-family:'Barlow Condensed',sans-serif;
+      font-size:8pt;
+      color:#5A7184;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+    }
+    @bottom-right{
+      content:"Pág. " counter(page);
+      font-family:'Barlow Condensed',sans-serif;
+      font-size:8pt;
+      color:#5A7184;
+      letter-spacing:0.04em;
+    }
+  }
+  @page :first{
+    margin:0;
+    @bottom-left{content:none}
+    @bottom-right{content:none}
+  }
+  *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;color-adjust:exact !important}
+  html,body{background:#fff;color:#1A3347;font-size:10.5pt;line-height:1.6}
   nav,.actions-bar,.next-issue,footer,.nav-toggle,.cover-actions{display:none !important}
-  body{background:#fff}
-  .cover{background:#fff !important;color:#0A2540 !important;padding:2rem 0;border-bottom:2px solid #0A2540}
-  .cover::before,.cover::after{display:none}
-  .cover-inner{grid-template-columns:1fr}
-  .cover-toc{background:#FAFBFC;border:1px solid #E5EAEF}
-  .cover-toc-title,.toc-name,.toc-num,.toc-kicker{color:#0A2540 !important}
-  .vmml-eyebrow,.cover-title,.cover-deck,.cover-meta{color:#0A2540 !important}
-  .vmml-letters .l{color:#0077C8 !important}
-  .vmml-locale{color:#0A2540 !important;background:#fff !important;border:1px solid #D42B2B}
-  .article{padding:2rem 0}
-  .section{page-break-inside:avoid}
-  .ed-inline{background:#FAFBFC !important;color:#0A2540 !important;border:1px solid #E5EAEF;page-break-inside:avoid}
-  .ed-inline-head h3,.ed-mini-name{color:#0A2540 !important}
-  .ed-mini{background:#fff;border:1px solid #E5EAEF}
-  .ed-mini-loc{color:#5A7184 !important}
+
+  /* PORTADA · página 1 full bleed */
+  .cover{
+    background:linear-gradient(135deg,#0A2540 0%,#102E50 55%,#0077C8 100%) !important;
+    color:#fff !important;
+    padding:30mm 20mm 28mm !important;
+    margin:0 !important;
+    min-height:297mm;
+    box-sizing:border-box;
+    page-break-after:always;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:space-between !important;
+    border:none !important;
+    position:relative;
+    overflow:hidden;
+  }
+  .cover::before{display:block !important;opacity:0.55}
+  .cover::after{display:block !important;width:380mm;height:380mm;right:-150mm;top:-80mm;opacity:0.7}
+  .cover-stripe{display:flex !important;position:absolute !important;top:0;left:0;width:100%;height:5mm !important;z-index:5}
+  .cover-stripe div{height:100% !important}
+  .cover-inner{
+    display:block !important;
+    text-align:center !important;
+    max-width:140mm !important;
+    margin:auto !important;
+    grid-template-columns:1fr !important;
+    gap:0 !important;
+  }
+  .cover .cover-toc{display:none !important}
+  .vmml-logo{align-items:center !important;margin:0 auto 4mm !important;text-align:center !important}
+  .vmml-eyebrow{color:rgba(255,255,255,0.78) !important;font-size:9pt !important;letter-spacing:0.4em !important}
+  .vmml-title{font-size:34pt !important;justify-content:center !important;color:#fff !important}
+  .vmml-letters .l{color:#7AB6E0 !important}
+  .vmml-locale{background:rgba(212,43,43,0.5) !important;color:#fff !important;font-size:9.5pt !important;letter-spacing:0.5em !important;padding:3pt 14pt !important}
+  .issue-tag{
+    color:#F5C518 !important;
+    background:rgba(245,197,24,0.18) !important;
+    border:1pt solid rgba(245,197,24,0.55) !important;
+    font-size:9pt !important;
+    margin:8mm auto 6mm !important;
+    padding:4pt 12pt !important;
+  }
+  .cover-title{
+    font-size:38pt !important;
+    line-height:1.05 !important;
+    color:#fff !important;
+    margin:0 auto 6mm !important;
+    font-style:italic !important;
+    letter-spacing:-0.015em !important;
+  }
+  .cover-deck{
+    font-size:12.5pt !important;
+    color:rgba(255,255,255,0.88) !important;
+    max-width:120mm !important;
+    margin:0 auto 8mm !important;
+    line-height:1.55 !important;
+  }
+  .cover-meta{
+    justify-content:center !important;
+    color:rgba(255,255,255,0.7) !important;
+    font-size:9.5pt !important;
+    gap:8mm !important;
+    margin-bottom:0 !important;
+  }
+  .cover-meta span strong{color:#fff !important;font-weight:600 !important}
+
+  /* ARTICLE BODY · páginas 2+ */
+  .article{padding:0 !important;max-width:100% !important;margin:0 !important}
+
+  /* CARTA EDITORIAL · página 2 */
+  .editorial-letter{
+    page-break-before:always;
+    background:#FAFBFC !important;
+    border-left:5pt solid #0077C8 !important;
+    padding:10mm 10mm 9mm 12mm !important;
+    margin:0 0 8mm 0 !important;
+    border-radius:0 3mm 3mm 0 !important;
+  }
+  .editorial-letter::before{
+    color:#0077C8 !important;
+    opacity:0.35;
+    top:-10mm !important;
+    left:6mm !important;
+    font-size:80pt !important;
+  }
+  .editorial-letter h2{
+    font-size:21pt !important;
+    color:#0A2540 !important;
+    margin-bottom:5mm !important;
+    line-height:1.15 !important;
+  }
+  .editorial-letter p{font-size:10.5pt !important;line-height:1.7 !important;color:#1A3347 !important;margin-bottom:3mm !important}
+  .editorial-letter p:first-of-type::first-letter{
+    font-family:'Playfair Display',serif;
+    font-weight:900;
+    float:left;
+    font-size:36pt;
+    line-height:0.85;
+    margin:1mm 3mm 0 0;
+    color:#0077C8;
+  }
+  .editorial-signature{color:#0A2540 !important;font-size:9pt !important;line-height:1.4 !important}
+  .editorial-signature small{color:#5A7184 !important;font-weight:500 !important}
+
+  /* SECCIONES · una por página */
+  .section{
+    page-break-before:always;
+    margin:0 0 6mm 0 !important;
+    scroll-margin-top:0 !important;
+  }
+  .sec-kicker{
+    color:var(--c) !important;
+    background:var(--cb) !important;
+    border:1pt solid var(--c) !important;
+    font-size:8.5pt !important;
+    padding:3pt 10pt !important;
+    margin-bottom:4mm !important;
+  }
+  .sec-title{
+    font-size:30pt !important;
+    color:#0A2540 !important;
+    line-height:1.05 !important;
+    margin-bottom:4mm !important;
+  }
+  .sec-title em{color:var(--c) !important;font-style:italic !important}
+  .sec-deck{
+    font-size:12pt !important;
+    color:#5A7184 !important;
+    margin-bottom:6mm !important;
+    line-height:1.55 !important;
+    font-style:italic !important;
+    border-top:1pt solid var(--c) !important;
+    padding-top:3mm !important;
+  }
+  .sec-body p{font-size:10.5pt !important;line-height:1.7 !important;color:#1A3347 !important;margin-bottom:3mm !important}
+  .sec-body p strong{color:#0A2540 !important}
+  .sec-body ul{padding-left:6mm !important;margin-bottom:3mm !important}
+  .sec-body li{font-size:10.5pt !important;line-height:1.7 !important;margin-bottom:2mm !important}
+
+  /* CALLOUT (cinta amarilla MML) */
+  .callout{
+    background:linear-gradient(135deg,#FFF6D8 0%,#FFFCEB 100%) !important;
+    border-left:5pt solid #F5C518 !important;
+    border-radius:0 3mm 3mm 0 !important;
+    padding:5mm 6mm !important;
+    page-break-inside:avoid;
+    margin:6mm 0 !important;
+  }
+  .callout-title{color:#5C4400 !important;font-size:8.5pt !important;letter-spacing:0.2em !important;margin-bottom:2mm !important}
+  .callout-text{color:#3C2E00 !important;font-size:10.5pt !important;line-height:1.6 !important}
+
+  /* TIP CARDS · 3 columnas */
+  .tip-grid{
+    grid-template-columns:repeat(3,1fr) !important;
+    gap:3mm !important;
+    margin:5mm 0 3mm !important;
+    page-break-inside:avoid;
+  }
+  .tip-card{
+    background:#fff !important;
+    border:1pt solid #E5EAEF !important;
+    border-top:3pt solid var(--c) !important;
+    border-radius:2mm !important;
+    padding:4mm !important;
+    page-break-inside:avoid;
+    display:flex !important;
+    flex-direction:column !important;
+    gap:1.5mm !important;
+  }
+  .tip-num{color:var(--c) !important;font-size:13pt !important;font-weight:800 !important}
+  .tip-title{color:#0A2540 !important;font-size:9.5pt !important;line-height:1.15 !important}
+  .tip-text{color:#5A7184 !important;font-size:9pt !important;line-height:1.5 !important}
+
+  /* REFERENCIAS */
+  .references{
+    background:#FAFBFC !important;
+    border:1pt solid #E5EAEF !important;
+    padding:4mm 5mm !important;
+    page-break-inside:avoid;
+    margin-top:5mm !important;
+    border-radius:2mm !important;
+  }
+  .references h4{color:#5A7184 !important;font-size:8pt !important;margin-bottom:2mm !important}
+  .references ol{padding-left:5mm !important}
+  .references li{font-size:8.5pt !important;line-height:1.5 !important;color:#1A3347 !important;margin-bottom:1.5mm !important}
+  .references li em{color:#5A7184 !important}
+
+  /* COMITÉ EDITORIAL · página final */
+  .ed-inline{
+    page-break-before:always;
+    background:linear-gradient(135deg,#0A2540 0%,#102E50 100%) !important;
+    color:#fff !important;
+    padding:14mm 8mm 12mm !important;
+    margin:0 !important;
+    border-radius:0 !important;
+    page-break-inside:avoid;
+    position:relative;
+    overflow:hidden;
+  }
+  .ed-inline::before{opacity:0.45 !important}
+  .ed-inline-head{margin-bottom:8mm !important}
+  .ed-inline-head .kicker-w{color:#F5C518 !important;font-size:9pt !important;letter-spacing:0.3em !important;margin-bottom:3mm !important}
+  .ed-inline-head h3{color:#fff !important;font-size:22pt !important;line-height:1.1 !important}
+  .ed-grid-mini{grid-template-columns:repeat(2,1fr) !important;gap:3mm !important}
+  .ed-mini{
+    background:rgba(255,255,255,0.06) !important;
+    border:1pt solid rgba(255,255,255,0.18) !important;
+    color:#fff !important;
+    padding:3mm 4mm !important;
+    page-break-inside:avoid;
+    border-radius:2mm !important;
+  }
+  .ed-mini-av{width:12mm !important;height:12mm !important;font-size:9pt !important}
+  .ed-mini-name{color:#fff !important;font-size:10pt !important}
+  .ed-mini-role{color:#F5C518 !important;font-size:8pt !important}
+  .ed-mini-loc{color:rgba(255,255,255,0.65) !important;font-size:8pt !important}
 }
 </style>
 </head>
@@ -413,7 +645,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 
   <div class="actions-bar">
-    <div class="actions-bar-text"><strong>¿Quieres compartir esta edición?</strong> Descarga el PDF e imprime o compártelo en tu comunidad clínica.</div>
+    <div class="actions-bar-text"><strong>¿Quieres compartir esta edición?</strong> Descarga el PDF e imprime o compártelo en tu comunidad clínica.<br><small style="color:#5A7184">Tip: al imprimir desde Chrome o Edge, activa <strong>"Gráficos en segundo plano"</strong> en "Más ajustes" para conservar los colores del diseño.</small></div>
     <button class="cover-btn primary" onclick="window.print()" style="margin:0">Descargar PDF</button>
   </div>
 
