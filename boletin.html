@@ -427,6 +427,24 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   }));
 })();
 
+// =============================================================
+// SUSCRIPCIÓN AL NEWSLETTER
+// Para activar Formspree (recomendado): registrarse en formspree.io,
+// crear un form, copiar el endpoint y pegarlo aquí abajo.
+// Mientras FORMSPREE_ENDPOINT esté en '', sigue funcionando el mailto
+// + respaldo en localStorage del navegador del visitante.
+const FORMSPREE_ENDPOINT = ''; // ej: 'https://formspree.io/f/abc12345'
+const BACKUP_EMAIL = 'info@miopialatam.org';
+const SUBS_KEY = 'miopialatam-newsletter-subs-v1';
+
+function saveSubLocally(data){
+  try {
+    const list = JSON.parse(localStorage.getItem(SUBS_KEY) || '[]');
+    list.push(data);
+    localStorage.setItem(SUBS_KEY, JSON.stringify(list));
+  } catch(err) {}
+}
+
 function subscribe(e){
   e.preventDefault();
   const name = document.getElementById('subName').value.trim();
@@ -434,20 +452,34 @@ function subscribe(e){
   const role = document.getElementById('subRole').value;
   const country = document.getElementById('subCountry').value.trim();
   if (!name || !email || !role || !country) return false;
-  const subject = encodeURIComponent('Suscripción Newsletter Visión MML LATAM');
-  const body = encodeURIComponent(
-    'Hola, quiero suscribirme al Newsletter Visión MML LATAM.\n\n' +
-    'Nombre: ' + name + '\n' +
-    'Email: ' + email + '\n' +
-    'Rol: ' + role + '\n' +
-    'País: ' + country + '\n'
-  );
-  // Abre el cliente de correo en una pestaña aparte para que la página se quede
-  const mailtoLink = 'mailto:info@miopialatam.org?subject=' + subject + '&body=' + body;
-  window.open(mailtoLink, '_self');
-  // Contador de suscripciones
+
+  const data = { name, email, role, country, ts: new Date().toISOString() };
+  saveSubLocally(data);
+
+  // Contador público de suscripciones
   try { fetch('https://abacus.jasoncameron.dev/hit/miopialatam.org/newsletter-subs'); } catch(err) {}
-  // Reemplaza el form por la pantalla de confirmación + botón directo al newsletter
+
+  // Vía 1 (recomendada): Formspree configurado → envío fiable
+  if (FORMSPREE_ENDPOINT) {
+    fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).catch(err => console.log('Formspree error', err));
+  } else {
+    // Vía 2 (fallback): mailto al buzón institucional
+    const subject = encodeURIComponent('Suscripción Newsletter Visión MML LATAM');
+    const body = encodeURIComponent(
+      'Hola, quiero suscribirme al Newsletter Visión MML LATAM.\n\n' +
+      'Nombre: ' + name + '\n' +
+      'Email: ' + email + '\n' +
+      'Rol: ' + role + '\n' +
+      'País: ' + country + '\n'
+    );
+    window.open('mailto:' + BACKUP_EMAIL + '?subject=' + subject + '&body=' + body, '_self');
+  }
+
+  // Reemplaza el form por confirmación + CTA al primer número
   const form = e.target;
   const done = document.getElementById('subDone');
   const doneName = document.getElementById('subDoneName');
@@ -456,6 +488,25 @@ function subscribe(e){
   if (done) done.style.display = 'block';
   return false;
 }
+
+// Vista de admin: añadir ?admin=subs a la URL para descargar
+// el JSON de todas las suscripciones guardadas en este navegador
+(function(){
+  if (new URLSearchParams(location.search).get('admin') !== 'subs') return;
+  const list = JSON.parse(localStorage.getItem(SUBS_KEY) || '[]');
+  const csv = 'fecha,nombre,email,rol,pais\n' + list.map(s =>
+    [s.ts, s.name, s.email, s.role, s.country].map(v => '"' + String(v || '').replace(/"/g,'""') + '"').join(',')
+  ).join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'visionmml-suscripciones-' + new Date().toISOString().slice(0,10) + '.csv';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(url); }, 1000);
+  alert('Descarga iniciada: ' + list.length + ' suscripción(es) guardadas en este navegador.');
+})();
 </script>
 
 </body>
