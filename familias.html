@@ -705,8 +705,45 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
         { id: 'atropina', text: '💧 Atropina (gotas)' },
         { id: 'lc-especiales', text: '👁 Lentes de contacto especiales' },
         { id: 'gafas-control', text: '👓 Lentes oftálmicas de control' },
+        { id: 'tratamientos-faq', text: '❓ Preguntas frecuentes sobre tratamientos' },
         { id: 'menu', text: 'Volver al menú', back: true }
       ]
+    },
+    'tratamientos-faq': {
+      text: 'Estas son las dudas más frecuentes que reciben los profesionales MML sobre los tratamientos de control de miopía:',
+      options: [
+        { id: 'trat-edad', text: '¿A qué edad se puede empezar el tratamiento?' },
+        { id: 'trat-combinar', text: '¿Se pueden combinar tratamientos?' },
+        { id: 'trat-efectos', text: '¿Qué efectos secundarios tienen?' },
+        { id: 'trat-resultados', text: '¿Cuándo veo resultados?' },
+        { id: 'trat-rebote', text: '¿Qué pasa si suspendo el tratamiento? ¿Hay rebote?' },
+        { id: 'trat-deporte', text: '¿Mi hijo puede hacer deporte con el tratamiento?' },
+        { id: 'tratamientos', text: 'Volver a los tratamientos', back: true }
+      ]
+    },
+    'trat-edad': {
+      text: 'La edad de inicio depende del tratamiento y del perfil del niño:<br><br>· <strong>Lentes oftálmicas de control</strong> (DIMS, HAL, DOT): desde los <strong>4 años</strong><br>· <strong>Atropina baja concentración</strong> (0.01-0.05 %): desde los <strong>4-6 años</strong><br>· <strong>Lentes de contacto blandos especiales</strong>: desde los <strong>8 años</strong><br>· <strong>Orto-K</strong> (lentes nocturnos): desde los <strong>8 años</strong> (en algunos casos desde 6-7, con buena higiene familiar)<br><br><strong>¿Cuándo conviene iniciar?</strong><br>· Apenas se detecta miopía con progresión<br>· En <strong>pre-miopía con factores de riesgo</strong> (padres miopes altos, poco aire libre)<br>· Cuanto antes se inicia, mayor es la protección a futuro contra miopía alta y sus complicaciones.',
+      followups: ['trat-combinar', 'tratamientos', 'frecuencia']
+    },
+    'trat-combinar': {
+      text: 'Sí, los tratamientos <strong>se pueden y se deben combinar</strong> cuando uno solo no logra controlar la progresión.<br><br><strong>Evidencia 2024-2025 sobre Orto-K + atropina baja</strong> (la combinación más estudiada):<br>· Orto-K + atropina <strong>0.01 %</strong> → reducción adicional del <strong>28.4 %</strong> en la elongación axial anual<br>· Orto-K + atropina <strong>0.025 %</strong> → reducción adicional del <strong>31.4 %</strong><br>· Orto-K + atropina <strong>0.05 %</strong> → reducción adicional del <strong>39.4 %</strong><br><br><strong>Otras combinaciones posibles:</strong><br>· Gafas de control + atropina baja<br>· LC especiales + atropina baja<br>· Cualquier tratamiento + <strong>cambios de estilo de vida</strong> (más aire libre, menos pantallas continuas)<br><br>La decisión la toma el profesional según la <strong>velocidad de progresión</strong> y el perfil del niño.',
+      followups: ['trat-efectos', 'trat-resultados', 'tratamientos']
+    },
+    'trat-efectos': {
+      text: 'Los efectos secundarios son <strong>generalmente leves y manejables</strong> bajo control profesional:<br><br>· <strong>Orto-K</strong>: riesgo bajo pero real de <strong>queratitis bacteriana</strong> si la higiene no es estricta (~7-10 casos por 10,000 usuarios/año). En la adaptación, halos nocturnos transitorios.<br>· <strong>Atropina baja</strong> (0.01-0.05 %): leve <strong>midriasis</strong> (pupila dilatada) y <strong>sensibilidad a la luz</strong> en algunos niños. El 0.01 % suele ser casi imperceptible.<br>· <strong>LC blandos especiales</strong>: ojo seco ocasional, intolerancia en algunos niños, riesgo bajo de infección (mejor uso diurno y descartar según indicación).<br>· <strong>Lentes oftálmicas de control</strong>: <strong>ningún efecto sistémico</strong>. La adaptación a la zona de tratamiento periférico suele ser rápida en niños.<br><br>La <strong>higiene</strong> y el seguimiento <strong>cada 6 meses</strong> son clave para mantener todos los tratamientos seguros.',
+      followups: ['trat-rebote', 'trat-resultados', 'tratamientos']
+    },
+    'trat-resultados': {
+      text: 'La evaluación se hace con <strong>biometría axial</strong> (medición del largo del ojo) cada 6 meses, junto con refracción ciclopléjica.<br><br><strong>Tiempos típicos:</strong><br>· <strong>Visión clara (efecto refractivo)</strong>: desde el primer día (gafas, LC) o desde la mañana siguiente (Orto-K)<br>· <strong>Efecto en progresión visible</strong>: a los <strong>6-12 meses</strong> medido en biometría<br>· Velocidad de elongación <strong>menor a 0.20 mm/año</strong> = buena respuesta al tratamiento<br>· Si la progresión sigue alta, se considera <strong>combinación</strong> o cambio de estrategia<br><br><strong>Indicador clave:</strong> NO es la dioptría seca, sino la <strong>velocidad de crecimiento del ojo</strong> (longitud axial, AXL). Pídele a tu profesional que registre AXL desde la primera consulta.',
+      followups: ['trat-combinar', 'frecuencia', 'tratamientos']
+    },
+    'trat-rebote': {
+      text: '<strong>Depende del tratamiento:</strong><br><br>· <strong>Orto-K</strong>: 100 % reversible. La córnea vuelve a su forma original en 1-2 semanas, sin daño. Si se suspende, la miopía puede progresar a ritmo natural.<br>· <strong>Atropina 0.01 %</strong>: prácticamente <strong>sin rebote</strong> al suspender (estudio LAMP).<br>· <strong>Atropina 0.025 % - 0.05 %</strong>: hay <strong>rebote dosis-dependiente</strong>. Se recomienda <strong>reducir gradualmente</strong> (tapering) y nunca suspender de golpe.<br>· <strong>LC blandos especiales y gafas de control</strong>: reversibles, sin rebote farmacológico.<br><br><strong>Regla general MML:</strong> nunca suspender un tratamiento sin hablar con el profesional. La transición debe ser <strong>gradual y supervisada</strong>, idealmente cuando ya se cerró la "ventana de progresión" (típicamente alrededor de los 16-18 años en niñas y 18-20 en niños).',
+      followups: ['trat-resultados', 'frecuencia', 'tratamientos']
+    },
+    'trat-deporte': {
+      text: '¡Sí! Los tratamientos de control de miopía son <strong>compatibles con el deporte</strong>, y en algunos casos lo facilitan:<br><br>· <strong>Orto-K</strong>: <strong>ideal para deportistas</strong> (natación, fútbol, baloncesto, artes marciales). El niño ve perfecto sin gafas ni lentes durante todo el día.<br>· <strong>Lentes de contacto blandos</strong>: aptas para casi todo, <strong>con cuidado en deportes acuáticos</strong> (evitar piscina/mar o usar gafas de natación encima).<br>· <strong>Lentes oftálmicas de control</strong>: en deportes de contacto, considerar montura deportiva con lentes de <strong>policarbonato</strong> (irrompibles).<br>· <strong>Atropina</strong>: <strong>sin restricciones deportivas</strong>. Leve sensibilidad a la luz en exteriores se maneja con gorra o gafas de sol.<br><br>Ningún tratamiento limita la actividad física. Al contrario: <strong>más actividad al aire libre = mejor control de la miopía</strong>.',
+      followups: ['aire-libre', 'trat-combinar', 'tratamientos']
     },
     ortok: {
       text: '<strong>Orto-K</strong> son lentes nocturnos rígidos que <strong>remodelan suavemente la córnea</strong>. El niño duerme con ellos y durante el día <strong>ve bien sin gafas ni lentes</strong>.<br><br>✔ Alta evidencia científica<br>✔ Reducción de progresión muy efectiva<br>✔ Ideal para niños activos / deportistas<br>✔ Reversible: si se suspende, todo vuelve a la normalidad',
