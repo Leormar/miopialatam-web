@@ -428,12 +428,11 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 })();
 
 // =============================================================
-// SUSCRIPCIÓN AL NEWSLETTER
-// Para activar Formspree (recomendado): registrarse en formspree.io,
-// crear un form, copiar el endpoint y pegarlo aquí abajo.
-// Mientras FORMSPREE_ENDPOINT esté en '', sigue funcionando el mailto
-// + respaldo en localStorage del navegador del visitante.
-const FORMSPREE_ENDPOINT = ''; // ej: 'https://formspree.io/f/abc12345'
+// SUSCRIPCIÓN AL NEWSLETTER · Formspree AJAX
+// Endpoint activo: https://formspree.io/f/mwvzbdlw
+// Plan free Formspree: 50 envíos/mes. Las suscripciones también se guardan
+// en localStorage del navegador del visitante como red de seguridad.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mwvzbdlw';
 const BACKUP_EMAIL = 'info@miopialatam.org';
 const SUBS_KEY = 'miopialatam-newsletter-subs-v1';
 
@@ -461,11 +460,22 @@ function subscribe(e){
 
   // Vía 1 (recomendada): Formspree configurado → envío fiable
   if (FORMSPREE_ENDPOINT) {
+    const payload = {
+      name: data.name,
+      email: data.email,
+      role: data.role,
+      country: data.country,
+      timestamp: data.ts,
+      _subject: 'Visión MML LATAM · Suscripción de ' + data.name + ' (' + data.country + ')',
+      _replyto: data.email
+    };
     fetch(FORMSPREE_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
-    }).catch(err => console.log('Formspree error', err));
+      body: JSON.stringify(payload)
+    }).then(r => {
+      if (!r.ok) console.warn('Formspree respondió', r.status);
+    }).catch(err => console.warn('Formspree error', err));
   } else {
     // Vía 2 (fallback): mailto al buzón institucional
     const subject = encodeURIComponent('Suscripción Newsletter Visión MML LATAM');
