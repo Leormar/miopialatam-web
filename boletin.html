@@ -80,6 +80,7 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .sub-btn:hover{transform:translateY(-2px)}
 .sub-btn::after{content:'\2192';margin-left:8px;display:inline-block;transition:transform .2s}
 .sub-btn:hover::after{transform:translateX(4px)}
+.sub-embed-wrap{margin-bottom:1rem;border-radius:14px;overflow:hidden}
 .sub-btn-link{display:block;text-align:center;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:0.85rem;border-radius:12px;text-decoration:none;font-family:inherit;font-weight:700;font-size:0.92rem;transition:transform .15s;letter-spacing:0.01em;margin-top:0.4rem}
 .sub-btn-link:hover{transform:translateY(-2px)}
 .sub-mini{font-size:0.72rem !important;color:var(--mu) !important;margin:0.9rem 0 0 !important;line-height:1.5 !important;text-align:center}
@@ -235,41 +236,14 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
         <div class="hero-stat"><strong>Trimestral</strong> · sin costo</div>
       </div>
     </div>
-    <form class="sub-form" id="suscribirme" onsubmit="return subscribe(event)">
+    <div class="sub-form" id="suscribirme">
       <h3>Suscríbete al newsletter</h3>
-      <p>Recibe cada edición de <strong>Visión MML LATAM</strong> en tu correo. Información editorial, libre de influencias comerciales.</p>
-      <div class="sub-field">
-        <label for="subName">Nombre</label>
-        <input id="subName" type="text" maxlength="80" placeholder="Tu nombre" autocomplete="name" required>
+      <p>Recibe cada edición de <strong>Visión MML LATAM</strong> en tu correo. Te llegará un email de bienvenida para confirmar la suscripción (revisa también la carpeta SPAM).</p>
+      <div class="sub-embed-wrap">
+        <iframe src="https://09da9881.sibforms.com/serve/MUIFAD2Jipq7up7R4BjSwZdUHTnwlq6hvK3szKCyLu3s_dWHXqEiwIpA-kqO06ies9T4DZ9M5RGk6bTsL8ZXWsN0R1gLF-ub5DNmz4GUf3s5ZiQMly85ynQYQ5rRtjwLsVi4EtWUNXne7kj_Ichep0whN7bFvupfiWfwSNQBHrKHihSIVE2Y0CUyGeFtIuxac6bmoldXpzLQFbzBDQ==" width="100%" height="540" style="border:1px solid #E5EAEF;background:#fff;border-radius:14px;display:block" frameborder="0" scrolling="yes" allowfullscreen title="Suscripción al Newsletter Visión MML LATAM"></iframe>
       </div>
-      <div class="sub-field">
-        <label for="subEmail">Email</label>
-        <input id="subEmail" type="email" maxlength="120" placeholder="tu@correo.com" autocomplete="email" required>
-      </div>
-      <div class="sub-field">
-        <label for="subRole">Soy</label>
-        <select id="subRole" required>
-          <option value="">Selecciona una opción</option>
-          <option>Optómetra</option>
-          <option>Oftalmólogo/a</option>
-          <option>Estudiante de salud visual</option>
-          <option>Madre / Padre / Cuidador-a</option>
-          <option>Industria</option>
-          <option>Otro</option>
-        </select>
-      </div>
-      <div class="sub-field">
-        <label for="subCountry">País</label>
-        <input id="subCountry" type="text" maxlength="40" placeholder="México, Colombia, Argentina..." autocomplete="country-name" required>
-      </div>
-      <button type="submit" class="sub-btn">Quiero el newsletter</button>
+      <a href="https://09da9881.sibforms.com/serve/MUIFAD2Jipq7up7R4BjSwZdUHTnwlq6hvK3szKCyLu3s_dWHXqEiwIpA-kqO06ies9T4DZ9M5RGk6bTsL8ZXWsN0R1gLF-ub5DNmz4GUf3s5ZiQMly85ynQYQ5rRtjwLsVi4EtWUNXne7kj_Ichep0whN7bFvupfiWfwSNQBHrKHihSIVE2Y0CUyGeFtIuxac6bmoldXpzLQFbzBDQ==" target="_blank" rel="noopener" class="sub-btn-link">Abrir formulario en pestaña nueva ↗</a>
       <p class="sub-mini">Al suscribirte aceptás recibir el boletín trimestral. Podés cancelar cuando quieras desde el mismo correo.</p>
-    </form>
-    <div class="sub-done" id="subDone" style="display:none">
-      <div class="sub-done-check">✓</div>
-      <h3>¡Gracias, <span id="subDoneName">colega</span>!</h3>
-      <p>Tu suscripción quedó registrada. Recibirás cada edición de <strong>Visión MML LATAM</strong> en tu correo.</p>
-      <a href="boletin-ed01.html" class="sub-btn-link" style="margin-top:0">Leer la Edición 01 ahora</a>
     </div>
   </div>
 </section>
