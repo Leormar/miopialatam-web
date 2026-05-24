@@ -64,100 +64,62 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .btn-primary::after{content:'\2192';font-size:0.95rem;transition:transform .2s;position:relative;z-index:2}
 .btn-primary:hover::after{transform:translateX(3px)}
 
-/* SEMANA DE LA MIOPÍA - BANNER */
-.maw-banner{background:linear-gradient(135deg,#0A2540 0%,#4A1525 55%,#D42B2B 100%);position:relative;overflow:hidden;border-bottom:3px solid #F5C518;color:#fff}
-.maw-banner.hidden{display:none}
-.maw-banner::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,0.08) 1px,transparent 0);background-size:24px 24px;opacity:0.6;pointer-events:none;z-index:1}
-.maw-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(245,197,24,0.18) 48%,rgba(255,255,255,0.28) 50%,rgba(245,197,24,0.18) 52%,transparent 70%);background-size:200% 100%;animation:maw-shine 5s ease-in-out infinite;pointer-events:none;z-index:1}
-@keyframes maw-shine{0%{background-position:200% 0}55%,100%{background-position:-200% 0}}
-.maw-glow{position:absolute;right:-100px;top:-50px;width:400px;height:400px;background:radial-gradient(circle,rgba(245,197,24,0.32),transparent 60%);pointer-events:none;z-index:1;animation:maw-glow-pulse 6s ease-in-out infinite}
-@keyframes maw-glow-pulse{0%,100%{opacity:0.6;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
-.maw-inner{max-width:1200px;margin:0 auto;padding:2.5rem 2rem;position:relative;z-index:3}
+/* HOME BANNER · Newsletter + MIRA IA */
+.home-banner{position:relative;background:linear-gradient(135deg,#0A2540 0%,#102E50 55%,#0077C8 100%);color:#fff;padding:3rem 2rem 3.2rem;overflow:hidden;border-bottom:3px solid rgba(245,197,24,0.6)}
+.home-banner::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,0.06) 1px,transparent 0);background-size:26px 26px;opacity:0.55;pointer-events:none;z-index:1}
+.home-banner-glow{position:absolute;right:-120px;top:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(245,197,24,0.22),transparent 60%);pointer-events:none;z-index:1;animation:hb-glow 8s ease-in-out infinite}
+@keyframes hb-glow{0%,100%{opacity:0.6;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+.home-banner-stripes{position:absolute;top:0;left:0;width:100%;height:5px;display:flex;z-index:4}
+.home-banner-stripes div{flex:1;height:100%}
+.home-banner-stripes div:nth-child(1){background:#F5C518}
+.home-banner-stripes div:nth-child(2){background:#2EAA4A}
+.home-banner-stripes div:nth-child(3){background:#0077C8}
+.home-banner-stripes div:nth-child(4){background:#D42B2B}
+.home-banner-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1px 1fr;gap:2.5rem;align-items:stretch;position:relative;z-index:3}
+.hb-card{display:flex;flex-direction:column;gap:0.85rem;min-width:0}
+.hb-divider{background:linear-gradient(180deg,transparent 0%,rgba(255,255,255,0.25) 30%,rgba(255,255,255,0.25) 70%,transparent 100%);width:1px;min-height:240px}
+.hb-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.78);margin-bottom:0.1rem}
 
-.maw-urgency{display:inline-flex;align-items:center;gap:10px;background:#F5C518;color:#0A2540;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:0.95rem;padding:8px 18px;border-radius:999px;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem;box-shadow:0 6px 22px rgba(245,197,24,0.55);animation:urgency-pulse 1.4s ease-in-out infinite;position:relative;z-index:2}
-.maw-urgency::before{content:'';width:10px;height:10px;border-radius:50%;background:#D42B2B;box-shadow:0 0 0 0 rgba(212,43,43,0.7);animation:urgency-dot 1.4s ease-in-out infinite}
-@keyframes urgency-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
-@keyframes urgency-dot{0%,100%{box-shadow:0 0 0 0 rgba(212,43,43,0.8)}50%{box-shadow:0 0 0 10px rgba(212,43,43,0)}}
+/* Newsletter logo */
+.hb-logo-newsletter{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:clamp(2rem,3.5vw,2.8rem);line-height:1;color:#fff;letter-spacing:-0.02em;text-shadow:0 4px 18px rgba(0,0,0,0.35);display:inline-flex;align-items:baseline;gap:0.35rem}
+.hb-letters{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:normal;display:inline-flex;letter-spacing:-0.01em}
+.hb-locale{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.78rem;letter-spacing:0.45em;text-transform:uppercase;color:#fff;padding:4px 14px;background:rgba(212,43,43,0.55);border-radius:999px;display:inline-block;align-self:flex-start;margin-top:0.1rem}
 
-.maw-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;padding:6px 14px;border-radius:999px;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1.4rem;border:1px solid rgba(255,255,255,0.22)}
-.maw-dot{width:8px;height:8px;border-radius:50%;background:#F5C518;animation:pulse-maw 1.5s ease-in-out infinite}
-@keyframes pulse-maw{0%,100%{box-shadow:0 0 0 0 rgba(245,197,24,0.6)}50%{box-shadow:0 0 0 8px rgba(245,197,24,0)}}
+/* Mira head */
+.hb-mira-head{display:flex;align-items:center;gap:14px;margin-top:0.1rem}
+.hb-mira-avatar{width:64px;height:64px;border-radius:50%;background:#fff;overflow:hidden;flex-shrink:0;box-shadow:inset 0 0 0 3px rgba(245,197,24,0.7),0 6px 16px rgba(0,0,0,0.25);position:relative}
+.hb-mira-avatar::after{content:'';position:absolute;top:2px;right:2px;width:14px;height:14px;border-radius:50%;background:#2EAA4A;border:2px solid #fff;animation:hb-pulse 1.6s ease-in-out infinite}
+@keyframes hb-pulse{0%,100%{box-shadow:0 0 0 0 rgba(46,170,74,0.6)}50%{box-shadow:0 0 0 8px rgba(46,170,74,0)}}
+.hb-mira-avatar svg{width:100%;height:100%;display:block}
+.hb-mira-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:#fff;line-height:1;letter-spacing:0.03em;text-transform:uppercase;text-shadow:0 4px 16px rgba(0,0,0,0.35)}
+.hb-mira-tag{font-size:0.82rem;color:rgba(255,255,255,0.78);margin-top:4px;font-weight:500}
 
-.maw-content{display:grid;grid-template-columns:1.1fr 1.4fr;gap:2.5rem;align-items:center}
-.maw-text{position:relative}
-.maw-logo-stack{display:inline-flex;flex-direction:column;align-items:stretch;margin-bottom:1.4rem;max-width:100%;animation:maw-float 4s ease-in-out infinite;filter:drop-shadow(0 12px 30px rgba(0,0,0,0.45)) drop-shadow(0 0 24px rgba(245,197,24,0.25))}
-.maw-logo{display:block;width:440px;max-width:100%;height:auto;border-radius:12px 12px 0 0}
-.maw-sublogo{background:rgba(255,255,255,0.97);color:#0A2540;padding:0.85rem 1.2rem;border-radius:0 0 12px 12px;position:relative;overflow:hidden;text-align:left}
-.maw-sublogo-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;letter-spacing:0.01em;line-height:1.1;color:#0A2540}
-.maw-sublogo-meta{font-family:'Inter',sans-serif;font-size:0.72rem;font-weight:600;color:#5A7184;letter-spacing:0.06em;margin-top:3px;text-transform:uppercase}
-.maw-sublogo-meta strong{color:#0077C8;font-weight:800;letter-spacing:0.08em}
-.maw-sublogo-stripes{display:flex;height:3px;margin-top:0.6rem;border-radius:2px;overflow:hidden}
-.maw-sublogo-stripes div{flex:1}
-.maw-sublogo-stripes div:nth-child(1){background:#F5C518}
-.maw-sublogo-stripes div:nth-child(2){background:#2EAA4A}
-.maw-sublogo-stripes div:nth-child(3){background:#0077C8}
-.maw-sublogo-stripes div:nth-child(4){background:#D42B2B}
-@keyframes maw-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.maw-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3.4rem);line-height:0.95;color:#fff;text-transform:uppercase;letter-spacing:-0.035em;margin-bottom:0.7rem;text-shadow:0 2px 18px rgba(0,0,0,0.35)}
-.maw-dates{font-family:'Inter',sans-serif;font-size:0.95rem;font-weight:600;color:rgba(255,255,255,0.88);margin-bottom:1rem;letter-spacing:0.01em}
-.maw-theme{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.15rem;color:#fff;font-style:italic;line-height:1.3;padding-left:14px;border-left:3px solid #F5C518}
-.maw-invite{margin-top:1.2rem;display:inline-flex;align-items:center;gap:10px;background:#F5C518;color:#0A2540;padding:0.9rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:800;font-family:'Inter',sans-serif;font-size:0.95rem;transition:all .2s;box-shadow:0 8px 24px rgba(245,197,24,0.45);letter-spacing:0.01em}
-.maw-invite:hover{transform:translateY(-2px);background:#fff;box-shadow:0 12px 30px rgba(255,255,255,0.35)}
-.maw-invite::after{content:'\2192';transition:transform .2s}
-.maw-invite:hover::after{transform:translateX(4px)}
+/* Common */
+.hb-desc{font-size:0.94rem;line-height:1.55;color:rgba(255,255,255,0.88);margin:0.2rem 0}
+.hb-desc strong{color:#fff;font-weight:600}
+.hb-stats{display:flex;gap:0.55rem;flex-wrap:wrap;margin:0.2rem 0 0.3rem}
+.hb-chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:999px;padding:5px 12px;font-size:0.78rem;color:rgba(255,255,255,0.92);font-weight:500;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.hb-chip strong{color:#F5C518;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.95rem}
+.hb-stars{color:#F5C518;letter-spacing:1px;font-size:0.84rem;line-height:1}
 
-.maw-actions{display:flex;flex-direction:column;gap:0.8rem}
-.maw-action-card{background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:14px;padding:1rem 1.2rem;display:flex;align-items:center;gap:14px;border:1px solid rgba(10,37,64,0.1);transition:all .25s;text-decoration:none;color:inherit;cursor:pointer}
-.maw-action-card:hover{background:#fff;transform:translateX(5px);box-shadow:0 6px 20px rgba(10,37,64,0.18);border-color:var(--ink)}
-.maw-arrow{margin-left:auto;font-size:1.2rem;color:var(--ink);font-weight:700;opacity:0.4;transition:all .25s;flex-shrink:0}
-.maw-action-card:hover .maw-arrow{opacity:1;transform:translateX(3px)}
-.maw-icon{width:44px;height:44px;border-radius:12px;background:var(--ink);color:var(--am);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.maw-icon svg{width:22px;height:22px}
-.maw-action-card strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;text-transform:uppercase;color:var(--ink);letter-spacing:-0.01em;line-height:1.1;margin-bottom:0.15rem}
-.maw-action-card span{font-size:0.82rem;color:#5A4A1A;line-height:1.3}
-
-.maw-event-card{grid-column:1/-1;background:linear-gradient(135deg,#F5C518 0%,#E8AC00 100%);color:#0A2540;border-radius:16px;padding:1.4rem 1.6rem;margin-top:1.4rem;position:relative;overflow:hidden;box-shadow:0 10px 32px rgba(245,197,24,0.45),0 0 0 2px rgba(255,255,255,0.12) inset}
-.maw-event-card::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 4s ease-in-out infinite;pointer-events:none}
-.maw-event-card::after{content:'';position:absolute;right:-60px;top:-30px;width:200px;height:200px;background:radial-gradient(circle,rgba(255,255,255,0.3),transparent 60%);pointer-events:none}
-.maw-event-badge{display:inline-block;background:#0A2540;color:#F5C518;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.74rem;letter-spacing:0.16em;text-transform:uppercase;padding:5px 13px;border-radius:999px;margin-bottom:0.7rem;position:relative;z-index:2}
-.maw-event-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.3rem,2.4vw,1.7rem);text-transform:uppercase;letter-spacing:-0.02em;line-height:1.1;margin-bottom:0.5rem;position:relative;z-index:2;color:#0A2540}
-.maw-event-meta{font-size:0.85rem;color:rgba(10,37,64,0.78);line-height:1.5;margin-bottom:1.1rem;position:relative;z-index:2;font-weight:500}
-.maw-event-btn{display:inline-flex;align-items:center;gap:8px;background:#0A2540;color:#fff;padding:0.85rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.9rem;font-family:'Inter',sans-serif;transition:all .2s;position:relative;z-index:2;box-shadow:0 4px 14px rgba(10,37,64,0.4)}
-.maw-event-btn:hover{background:#0077C8;transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,119,200,0.55)}
-.maw-event-btn.yt{background:#FF0000;color:#fff;box-shadow:0 6px 20px rgba(255,0,0,0.5)}
-.maw-event-btn.yt:hover{background:#CC0000;box-shadow:0 10px 28px rgba(255,0,0,0.6)}
-.maw-event-thanks{margin-top:0.85rem;padding-top:0.85rem;border-top:1px dashed rgba(10,37,64,0.25);font-size:0.78rem;color:#5C4400;line-height:1.5;font-style:italic;position:relative;z-index:2}
-.maw-event-thanks strong{color:#0A2540;font-weight:700;font-style:normal}
-.maw-event-btn svg{flex-shrink:0}
-
-.maw-cta-row{grid-column:1/-1;display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:1.2rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,0.18)}
-.maw-btn{display:inline-flex;align-items:center;gap:8px;padding:0.85rem 1.6rem;border-radius:999px;font-family:'Inter',sans-serif;font-size:0.88rem;font-weight:600;text-decoration:none;transition:all .2s;letter-spacing:0.01em;position:relative;overflow:hidden}
-.maw-btn>*{position:relative;z-index:2}
-.maw-btn::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.55) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none;z-index:1}
-.maw-btn.primary{background:#F5C518;color:#0A2540;box-shadow:0 6px 18px rgba(245,197,24,0.45)}
-.maw-btn.primary:hover{transform:translateY(-2px);background:#fff;box-shadow:0 10px 26px rgba(255,255,255,0.35)}
-.maw-btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.55)}
-.maw-btn.ghost::before{background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.22) 50%,transparent 70%);background-size:200% 100%}
-.maw-btn.ghost:hover{background:#fff;color:#0A2540;border-color:#fff}
-
-.maw-close{position:absolute;top:1rem;right:1rem;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);color:#fff;font-size:1.4rem;line-height:1;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif}
-.maw-close:hover{background:#fff;color:#0A2540}
+.hb-btn{display:inline-flex;align-items:center;gap:8px;padding:0.9rem 1.6rem;border-radius:999px;font-family:inherit;font-weight:700;font-size:0.94rem;text-decoration:none;transition:transform .2s,box-shadow .2s;letter-spacing:0.01em;margin-top:0.4rem;align-self:flex-start;position:relative;overflow:hidden}
+.hb-btn::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
+.hb-btn>*{position:relative;z-index:2}
+.hb-btn-yellow{background:#F5C518;color:#0A2540;box-shadow:0 8px 24px rgba(245,197,24,0.4)}
+.hb-btn-yellow:hover{transform:translateY(-2px);background:#fff;box-shadow:0 12px 30px rgba(255,255,255,0.35)}
+.hb-btn-white{background:#fff;color:#0A2540;box-shadow:0 8px 24px rgba(255,255,255,0.28)}
+.hb-btn-white:hover{transform:translateY(-2px);background:#F5C518;box-shadow:0 12px 30px rgba(245,197,24,0.45)}
+.hb-secondary{display:inline-flex;align-items:center;gap:6px;font-size:0.82rem;color:rgba(255,255,255,0.72);text-decoration:none;font-weight:500;margin-top:0.25rem;transition:color .2s}
+.hb-secondary:hover{color:#F5C518}
 
 @media(max-width:840px){
-  .maw-inner{padding:2rem 1.4rem}
-  .maw-content{grid-template-columns:1fr;gap:1.5rem}
-  .maw-action-card{padding:0.85rem 1rem}
-  .maw-cta-row{flex-direction:column}
-  .maw-btn{justify-content:center;width:100%}
-  .maw-logo-stack{width:340px;max-width:100%;margin:0 auto 1rem;align-self:center}
-  .maw-logo{width:340px}
-  .maw-sublogo{text-align:center}
-  .maw-text{text-align:center}
-  .maw-theme{padding-left:0;border-left:none;padding-top:0.6rem;border-top:3px solid #F5C518;display:inline-block;margin:0 auto}
-  .maw-invite{margin:1.2rem auto 0;display:inline-flex}
-}
-@media(max-width:480px){
-  .maw-close{top:0.7rem;right:0.7rem;width:30px;height:30px;font-size:1.2rem}
+  .home-banner{padding:2rem 1.4rem 2.2rem}
+  .home-banner-inner{grid-template-columns:1fr;gap:1.6rem}
+  .hb-divider{display:none}
+  .hb-card{padding:1.4rem 1.2rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:18px}
+  .hb-mira-avatar{width:54px;height:54px}
+  .hb-mira-title{font-size:1.6rem}
+  .hb-logo-newsletter{font-size:1.9rem}
 }
 
 /* HERO */
@@ -388,37 +350,6 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
 .nl-second{display:block;margin-top:1rem;font-size:0.86rem;color:var(--mu);text-decoration:none;font-weight:600;transition:color .2s}
 .nl-second:hover{color:var(--az)}
 
-/* MIRA PROMO */
-.mira-sec{padding:5rem 2rem;background:linear-gradient(135deg,#EAF4FB 0%,#F7FBFE 60%,#FFF6D8 100%);position:relative;overflow:hidden}
-.mira-sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(10,37,64,0.06) 1px,transparent 0);background-size:24px 24px;opacity:0.5;pointer-events:none}
-.mira-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center;position:relative;z-index:2;background:#fff;border:1px solid var(--bd);border-radius:28px;padding:3rem 3rem;box-shadow:var(--shadow-lg)}
-.mira-inner::before{content:'';position:absolute;top:0;left:0;width:6px;height:100%;background:linear-gradient(180deg,#F5C518 0%,#2EAA4A 33%,#0077C8 66%,#D42B2B 100%);border-radius:6px 0 0 6px}
-.mira-avatar{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,#EAF4FB 0%,#fff 100%);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 16px 40px rgba(10,37,64,0.18),inset 0 0 0 4px rgba(245,197,24,0.7);flex-shrink:0;position:relative;animation:mira-float 5s ease-in-out infinite}
-@keyframes mira-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.mira-avatar svg{width:100%;height:100%;display:block}
-.mira-avatar::after{content:'';position:absolute;top:8px;right:14px;width:22px;height:22px;border-radius:50%;background:#2EAA4A;border:3px solid #fff;box-shadow:0 0 0 0 rgba(46,170,74,0.6);animation:mira-blink 1.6s ease-in-out infinite}
-@keyframes mira-blink{0%,100%{box-shadow:0 0 0 0 rgba(46,170,74,0.6)}50%{box-shadow:0 0 0 12px rgba(46,170,74,0)}}
-.mira-text .kicker{margin-bottom:0.7rem}
-.mira-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.5vw,3.6rem);text-transform:uppercase;color:var(--ink);letter-spacing:-0.03em;line-height:0.95;margin-bottom:0.7rem}
-.mira-title em{font-style:normal;background:linear-gradient(135deg,#0077C8 0%,#0A2540 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.mira-desc{font-size:1.05rem;color:var(--mu);line-height:1.65;margin-bottom:1.4rem;max-width:520px}
-.mira-stats{display:flex;flex-wrap:wrap;gap:0.7rem;margin-bottom:1.5rem}
-.mira-chip{display:inline-flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--bd);padding:0.55rem 1rem;border-radius:14px;font-size:0.86rem;color:var(--ink);font-weight:500}
-.mira-chip strong{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;color:var(--az)}
-.mira-chip-stars{color:#F5C518;letter-spacing:1px;font-size:0.95rem}
-.mira-cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:1rem 1.8rem;border-radius:999px;text-decoration:none;font-weight:700;font-family:inherit;font-size:0.95rem;transition:all .2s;box-shadow:0 8px 26px rgba(0,119,200,0.4);position:relative;overflow:hidden}
-.mira-cta::before{content:'';position:absolute;inset:0;border-radius:999px;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,0.45) 50%,transparent 70%);background-size:200% 100%;animation:aladino-shine 3.5s ease-in-out infinite;pointer-events:none}
-.mira-cta>*{position:relative;z-index:2}
-.mira-cta:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(0,119,200,0.55)}
-.mira-cta::after{content:'\2192';transition:transform .2s;position:relative;z-index:2}
-.mira-cta:hover::after{transform:translateX(4px)}
-@media(max-width:840px){
-  .mira-inner{grid-template-columns:1fr;gap:1.8rem;padding:2.2rem 1.8rem;text-align:center;justify-items:center}
-  .mira-avatar{width:160px;height:160px;margin:0 auto}
-  .mira-desc{margin-left:auto;margin-right:auto}
-  .mira-stats{justify-content:center}
-}
-
 /* VISITAS / CLUSTRMAPS */
 .visits-sec{padding:5rem 2rem;background:#fff;border-top:1px solid var(--bd)}
 .visits-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:center}
@@ -538,90 +469,52 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </button>
 </nav>
 
-<aside class="maw-banner" id="mawBanner">
-  <div class="maw-glow"></div>
-  <div class="maw-inner">
-    <div id="mawUrgency" class="maw-urgency" style="display:none"></div>
-    <div class="maw-tag">
-      <span class="maw-dot"></span>
-      <span id="mawTag">Esta semana</span>
-    </div>
-    <div class="maw-content">
-      <div class="maw-text">
-        <div class="maw-logo-stack">
-          <img id="mawImage" src="img/maw2026-logo.webp" alt="Myopia Awareness Week 2026 · Campaña oficial BHVI" class="maw-logo" loading="lazy">
-          <div class="maw-sublogo">
-            <div class="maw-sublogo-title">Semana Mundial de la Miopía</div>
-            <div class="maw-sublogo-meta">2026 · Versión LATAM por <strong>MML</strong></div>
-            <div class="maw-sublogo-stripes"><div></div><div></div><div></div><div></div></div>
-          </div>
-        </div>
-        <h2 id="mawTitle" class="maw-title">Semana Mundial de<br>la Miopía 2026</h2>
-        <div id="mawDates" class="maw-dates">18 — 24 de mayo · #MyopiaAwarenessWeek</div>
-        <p id="mawTheme" class="maw-theme">"Empezar temprano, proteger la visión de por vida"</p>
-        <a id="mawInvite" href="#contenido-maw" class="maw-invite" style="display:none">Explora el contenido especial #MAW2026</a>
-      </div>
-      <div class="maw-actions">
-        <a href="familias.html" class="maw-action-card">
-          <div class="maw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
-          <div>
-            <strong>Examen visual anual</strong>
-            <span>en niños desde edad escolar</span>
-          </div>
-          <span class="maw-arrow">→</span>
-        </a>
-        <a href="https://bhvi.org/maw2026/" target="_blank" rel="noopener" class="maw-action-card">
-          <div class="maw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2 M12 20v2 M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41 M2 12h2 M20 12h2 M4.93 19.07l1.41-1.41 M17.66 6.34l1.41-1.41"/></svg></div>
-          <div>
-            <strong>2-3 horas al aire libre</strong>
-            <span>evidencia BHVI · ver campaña</span>
-          </div>
-          <span class="maw-arrow">↗</span>
-        </a>
-        <a href="https://www.facebook.com/share/g/16s1PdvuWY/" target="_blank" rel="noopener" class="maw-action-card">
-          <div class="maw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8z"/></svg></div>
-          <div>
-            <strong>Difundir el mensaje</strong>
-            <span>comparte en el grupo MML</span>
-          </div>
-          <span class="maw-arrow">↗</span>
-        </a>
-      </div>
-      <div class="maw-event-card">
-        <div class="maw-event-badge">▶ Grabación · 20 mayo 2026</div>
-        <div class="maw-event-title">Conversatorio: Concientización de la Miopía 2026</div>
-        <div class="maw-event-meta">Embajadores MML de toda LATAM · Educación libre de influencias comerciales · ¡Ya disponible!</div>
-        <a href="https://youtu.be/X9FfjTFydk0?si=NaKl2En6R9WP1a0G" target="_blank" rel="noopener" class="maw-event-btn yt">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-          Mira nuestro conversatorio en YouTube
-        </a>
-        <div class="maw-event-thanks">Agradecimiento especial a <strong>Spectrum International</strong> por ceder la plataforma del conversatorio.</div>
-      </div>
-      <div class="maw-cta-row">
-        <a href="https://bhvi.org/maw2026/" target="_blank" rel="noopener" class="maw-btn primary">Conoce la campaña oficial →</a>
-        <a href="familias.html" class="maw-btn ghost">Para familias</a>
-      </div>
-    </div>
-    <button class="maw-close" onclick="document.getElementById('mawBanner').classList.add('hidden')" aria-label="Cerrar banner">&times;</button>
-  </div>
-</aside>
+<section class="home-banner" id="homeBanner">
+  <div class="home-banner-stripes"><div></div><div></div><div></div><div></div></div>
+  <div class="home-banner-glow"></div>
+  <div class="home-banner-inner">
 
-<section class="mira-sec" id="conoce-a-mira">
-  <div class="mira-inner">
-    <div class="mira-avatar" aria-hidden="true">
-      <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="mpHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a1f"/><stop offset="1" stop-color="#2a1d14"/></linearGradient><linearGradient id="mpSkin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD9B5"/><stop offset="1" stop-color="#F2BE91"/></linearGradient></defs><circle cx="40" cy="40" r="38" fill="#EAF4FB"/><path d="M14 36 C14 18 24 8 40 8 C56 8 66 18 66 36 L66 40 C62 30 56 26 50 28 C48 20 32 20 30 28 C24 26 18 30 14 40 Z" fill="url(#mpHair)"/><path d="M22 38 Q22 56 40 64 Q58 56 58 38 Q58 26 40 26 Q22 26 22 38 Z" fill="url(#mpSkin)"/><circle cx="22.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><circle cx="57.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><g stroke="#0A2540" stroke-width="2.2" fill="rgba(255,255,255,0.6)"><circle cx="30" cy="40" r="7.5"/><circle cx="50" cy="40" r="7.5"/></g><line x1="37" y1="40" x2="43" y2="40" stroke="#0A2540" stroke-width="2"/><line x1="22" y1="38" x2="14" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><line x1="58" y1="38" x2="66" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="41" r="3" fill="#0A2540"/><circle cx="50" cy="41" r="3" fill="#0A2540"/><circle cx="31.3" cy="39.6" r="1" fill="#fff"/><circle cx="51.3" cy="39.6" r="1" fill="#fff"/><path d="M30 54 Q40 60 50 54" stroke="#D42B2B" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="40" cy="14" r="3" fill="#F5C518"/></svg>
-    </div>
-    <div class="mira-text">
-      <div class="kicker">Nueva · IA MML para padres</div>
-      <h2 class="mira-title">Conoce a <em>Mira</em><br>nuestra IA para padres</h2>
-      <p class="mira-desc">Mira es nuestra asistente de información para familias. Resuelve dudas sobre miopía en niños: qué es, señales de alerta, tratamientos basados en evidencia, edades de control y cómo encontrar un especialista de la red MML.</p>
-      <div class="mira-stats">
-        <div class="mira-chip"><span class="mira-chip-stars" id="miraPromoStars">★★★★★</span> <strong id="miraPromoAvg">—</strong>/5</div>
-        <div class="mira-chip"><strong id="miraPromoRatings">0</strong> valoraciones</div>
-        <div class="mira-chip"><strong id="miraPromoVisits">0</strong> conversaciones</div>
+    <!-- COLUMNA · NEWSLETTER -->
+    <div class="hb-card hb-newsletter">
+      <div class="hb-eyebrow">📰 Newsletter Editorial</div>
+      <div class="hb-logo-newsletter">
+        <span class="hb-vision">Visión</span><span class="hb-letters"><span style="color:#F5C518">M</span><span style="color:#2EAA4A">M</span><span style="color:#7AB6E0">L</span></span>
       </div>
-      <a href="familias.html#conoce-mira" class="mira-cta">Habla con Mira ahora</a>
+      <span class="hb-locale">LATAM</span>
+      <p class="hb-desc">Boletín editorial trimestral de la red MML. <strong>Investigación regional · práctica clínica · futuro LATAM</strong>. Sin influencias comerciales.</p>
+      <div class="hb-stats">
+        <span class="hb-chip">✉ <strong id="nlSubs">—</strong> suscriptores</span>
+        <span class="hb-chip">📅 Trimestral</span>
+        <span class="hb-chip">🆓 Gratis</span>
+      </div>
+      <a href="boletin.html#suscribirme" class="hb-btn hb-btn-yellow">Suscribirme al newsletter →</a>
+      <a href="boletin-ed01.html" class="hb-secondary">Leer la Edición 01 ↗</a>
     </div>
+
+    <div class="hb-divider"></div>
+
+    <!-- COLUMNA · MIRA IA -->
+    <div class="hb-card hb-mira" id="conoce-a-mira">
+      <div class="hb-eyebrow">🤖 Asistente IA para padres</div>
+      <div class="hb-mira-head">
+        <div class="hb-mira-avatar" aria-hidden="true">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="hbHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2a1f"/><stop offset="1" stop-color="#2a1d14"/></linearGradient><linearGradient id="hbSkin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD9B5"/><stop offset="1" stop-color="#F2BE91"/></linearGradient></defs><circle cx="40" cy="40" r="38" fill="#EAF4FB"/><path d="M14 36 C14 18 24 8 40 8 C56 8 66 18 66 36 L66 40 C62 30 56 26 50 28 C48 20 32 20 30 28 C24 26 18 30 14 40 Z" fill="url(#hbHair)"/><path d="M22 38 Q22 56 40 64 Q58 56 58 38 Q58 26 40 26 Q22 26 22 38 Z" fill="url(#hbSkin)"/><circle cx="22.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><circle cx="57.5" cy="46" r="3.4" fill="#FFB8B8" opacity="0.55"/><g stroke="#0A2540" stroke-width="2.2" fill="rgba(255,255,255,0.6)"><circle cx="30" cy="40" r="7.5"/><circle cx="50" cy="40" r="7.5"/></g><line x1="37" y1="40" x2="43" y2="40" stroke="#0A2540" stroke-width="2"/><line x1="22" y1="38" x2="14" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><line x1="58" y1="38" x2="66" y2="34" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="41" r="3" fill="#0A2540"/><circle cx="50" cy="41" r="3" fill="#0A2540"/><circle cx="31.3" cy="39.6" r="1" fill="#fff"/><circle cx="51.3" cy="39.6" r="1" fill="#fff"/><path d="M30 54 Q40 60 50 54" stroke="#D42B2B" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <div class="hb-mira-info">
+          <div class="hb-mira-title">MIRA IA</div>
+          <div class="hb-mira-tag">Nuestra IA para familias</div>
+        </div>
+      </div>
+      <p class="hb-desc">Responde dudas sobre miopía en niños basadas en evidencia: <strong>pre-miopía, genética parental, tratamientos, señales de alerta y síndromes asociados</strong>.</p>
+      <div class="hb-stats">
+        <span class="hb-chip"><span class="hb-stars" id="miraPromoStars">★★★★★</span> <strong id="miraPromoAvg">—</strong>/5</span>
+        <span class="hb-chip">💬 <strong id="miraPromoVisits">0</strong> conversaciones</span>
+        <span class="hb-chip">14 temas curados</span>
+      </div>
+      <a href="familias.html" class="hb-btn hb-btn-white">Hablar con Mira →</a>
+      <a href="familias.html#senales" class="hb-secondary">Ver señales de alerta en niños ↗</a>
+    </div>
+
   </div>
 </section>
 
@@ -1071,109 +964,6 @@ function showTab(t,el){
   }));
 })();
 
-// Rotación diaria del banner MAW 2026 (18-24 mayo)
-(function(){
-  const days = [
-    { // Lunes 18 - apertura
-      tag: 'Día 1 · Lunes 18',
-      title: 'Semana Mundial de<br>la Miopía 2026',
-      dates: '18 — 24 de mayo · #MyopiaAwarenessWeek',
-      theme: '"Empezar temprano, proteger la visión de por vida"',
-      img: 'img/maw2026-logo.webp'
-    },
-    { // Martes 19 - examen visual
-      tag: 'Día 2 · Martes 19',
-      title: 'Día del examen<br>visual anual',
-      dates: 'Detección temprana = mejor pronóstico',
-      theme: 'Lleva a tu hijo a un examen visual completo desde la edad escolar.',
-      img: 'img/maw-day-ecp.webp'
-    },
-    { // Miércoles 20 - Conversatorio MML
-      tag: 'Día 3 · Miércoles 20 · ¡HOY!',
-      title: 'Conversatorio MML<br>LATAM',
-      dates: 'Hoy 18:00 hrs México · 2 horas vía Zoom',
-      theme: 'Embajadores MML de toda Latinoamérica en vivo. Educación libre de influencias comerciales.',
-      img: 'img/maw2026-logo.webp'
-    },
-    { // Jueves 21 - aire libre
-      tag: 'Día 4 · Jueves 21',
-      title: 'Día del<br>aire libre',
-      dates: '2-3 horas al día reducen el riesgo de miopía',
-      theme: 'La luz natural y la visión a distancia protegen los ojos en desarrollo.',
-      img: 'img/maw2026-logo.webp'
-    },
-    { // Viernes 22 - intervenciones · ÚLTIMOS 3 DÍAS
-      tag: 'Día 5 · Viernes 22',
-      title: 'Día de las<br>intervenciones',
-      dates: 'Orto-K · Atropina · Lentes especializadas',
-      theme: 'No te pierdas el contenido especial: artículos, podcasts y la red MML LATAM antes del cierre de la campaña.',
-      img: 'img/maw-day-pledge.webp',
-      urgency: 'Últimos 3 días · No te pierdas el contenido',
-      invite: 'Explora el contenido especial #MAW2026'
-    },
-    { // Sábado 23 - difundir · ÚLTIMOS 2 DÍAS
-      tag: 'Día 6 · Sábado 23',
-      title: 'Día de<br>difundir',
-      dates: 'Comparte la campaña #MAW2026',
-      theme: 'Cada conversación cuenta. Quedan 2 días — revisa artículos, evidencia y casos de la red MML LATAM.',
-      img: 'img/maw-day-banner.webp',
-      urgency: 'Últimos 2 días · Difunde y explora',
-      invite: 'Ver todo el contenido #MAW2026'
-    },
-    { // Domingo 24 - ÚLTIMO DÍA · cierre
-      tag: 'Día 7 · Domingo 24 · cierre',
-      title: 'Último día<br>de la campaña',
-      dates: 'Hoy termina #MAW2026 · 24 de mayo',
-      theme: 'Es tu última oportunidad de revisar todo el contenido especial: artículos clínicos, podcasts e iniciativas de la red MML LATAM.',
-      img: 'img/maw-day-pledge.webp',
-      urgency: '¡Último día! · No te pierdas el contenido',
-      invite: 'Explora el contenido antes del cierre'
-    }
-  ];
-
-  const today = new Date();
-  const m = today.getMonth(); // 0-indexed: mayo = 4
-  const d = today.getDate();
-  const h = today.getHours();
-
-  // Mapeo 1 día calendario = 1 día de campaña (18-may a 24-may)
-  let idx = -1;
-  if (m === 4 && d >= 18 && d <= 24) {
-    idx = d - 18; // 18→0, 19→1, ... 24→6
-  }
-
-  const tag = document.getElementById('mawTag');
-  const title = document.getElementById('mawTitle');
-  const dates = document.getElementById('mawDates');
-  const theme = document.getElementById('mawTheme');
-  const img = document.getElementById('mawImage');
-  const urgency = document.getElementById('mawUrgency');
-  const invite = document.getElementById('mawInvite');
-
-  if (idx >= 0 && idx < days.length) {
-    const data = days[idx];
-    if (tag) tag.textContent = data.tag;
-    if (title) title.innerHTML = data.title;
-    if (dates) dates.textContent = data.dates;
-    if (theme) theme.textContent = data.theme;
-    if (img) img.src = data.img;
-    if (urgency) {
-      if (data.urgency) { urgency.textContent = data.urgency; urgency.style.display = 'inline-flex'; }
-      else { urgency.style.display = 'none'; }
-    }
-    if (invite) {
-      if (data.invite) { invite.textContent = data.invite; invite.style.display = 'inline-flex'; }
-      else { invite.style.display = 'none'; }
-    }
-  } else if (m === 4 && d >= 25 && today.getFullYear() === 2026) {
-    // Desde el 25 de mayo - mensaje de cierre
-    if (tag) tag.textContent = 'Gracias';
-    if (title) title.innerHTML = '#MAW2026<br>completada';
-    if (dates) dates.textContent = 'La campaña terminó · La red MML continúa';
-    if (theme) theme.textContent = 'Gracias por participar en la Semana Mundial de la Miopía 2026. MML sigue activo todo el año en 19 países LATAM.';
-  }
-})();
-
 // Visitas + geolocalización del visitante
 (function(){
   function flagEmoji(cc){
@@ -1220,29 +1010,30 @@ function showTab(t,el){
     }
   }, 6000);
 
-  // Estadísticas en vivo de MIRA IA para la promo del home
+  // Stats en vivo del banner home (MIRA IA + Newsletter)
   const ABACUS = 'https://abacus.jasoncameron.dev';
   const NS = 'miopialatam.org';
   function getC(k){ return fetch(ABACUS + '/get/' + NS + '/' + k).then(r => r.json()).then(d => d.value || 0).catch(() => 0); }
   Promise.all([
     getC('docmira-visits'),
-    getC('docmira-rate-1'), getC('docmira-rate-2'), getC('docmira-rate-3'), getC('docmira-rate-4'), getC('docmira-rate-5')
-  ]).then(([visits, r1, r2, r3, r4, r5]) => {
+    getC('docmira-rate-1'), getC('docmira-rate-2'), getC('docmira-rate-3'), getC('docmira-rate-4'), getC('docmira-rate-5'),
+    getC('newsletter-subs')
+  ]).then(([visits, r1, r2, r3, r4, r5, subs]) => {
     const counts = [r1, r2, r3, r4, r5];
     const total = counts.reduce((a,b) => a + b, 0);
     const sum = counts.reduce((a,b,i) => a + b * (i + 1), 0);
     const avg = total > 0 ? (sum / total).toFixed(1) : null;
     const v = document.getElementById('miraPromoVisits');
     const a = document.getElementById('miraPromoAvg');
-    const c = document.getElementById('miraPromoRatings');
     const s = document.getElementById('miraPromoStars');
+    const n = document.getElementById('nlSubs');
     if (v) v.textContent = visits.toLocaleString('es-419');
-    if (c) c.textContent = total.toLocaleString('es-419');
     if (a) a.textContent = avg !== null ? avg : '—';
     if (s && avg !== null) {
       const rounded = Math.round(parseFloat(avg));
       s.textContent = '★★★★★'.slice(0, rounded) + '☆☆☆☆☆'.slice(0, 5 - rounded);
     }
+    if (n) n.textContent = subs > 0 ? subs.toLocaleString('es-419') : 'sé el primero';
   }).catch(() => {});
 })();
 </script>
