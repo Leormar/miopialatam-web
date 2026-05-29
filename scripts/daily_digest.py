@@ -37,6 +37,14 @@ MP_CATEGORIES = [
 ]
 MP_BASE = "https://www.myopiaprofile.com"
 
+# Tope de artículos a parsear por Myopia Profile (ambas categorías combinadas).
+# Antes era 15 fijo y dejaba afuera novedades reales que quedaban más abajo en
+# la página → digests "sin novedades" con contenido fresco disponible.
+MP_MAX_ITEMS = int(os.environ.get("MP_MAX_ITEMS", "40"))
+# Máximo de novedades a incluir en UN email (honra el "3-5 destacadas").
+# Las que excedan se marcan como vistas igual para no repetirlas mañana.
+MAX_DIGEST_ITEMS = int(os.environ.get("MAX_DIGEST_ITEMS", "6"))
+
 SMTP_HOST = "mail.privateemail.com"
 SMTP_PORT = 587
 SMTP_USER = os.environ.get("SMTP_USER", "info@miopialatam.org")
@@ -122,7 +130,7 @@ def fetch_myopia_profile() -> list[dict]:
                 "summary": "",
                 "published": "",
             })
-    return items[:15]
+    return items[:MP_MAX_ITEMS]
 
 
 def _apply_category(art: dict, cat: str) -> None:
@@ -451,7 +459,13 @@ def main() -> int:
         subject = "📚 Digest MML activado · primer envío"
         email_articles = []
     else:
-        email_articles = new_items
+        # Honra el "3-5 destacadas": si hay un backlog grande, se envían las
+        # primeras MAX_DIGEST_ITEMS (las más recientes); el resto se marca
+        # como visto igual (más abajo) para no repetirlas.
+        email_articles = new_items[:MAX_DIGEST_ITEMS]
+        if len(new_items) > MAX_DIGEST_ITEMS:
+            print(f"backlog: {len(new_items)} nuevos; se envían {len(email_articles)} "
+                  f"(MAX_DIGEST_ITEMS={MAX_DIGEST_ITEMS}), el resto se marca como visto")
         html = render_html(email_articles, bootstrap=False)
         today_short = datetime.now(timezone.utc).strftime("%d %b")
         subject = f"📚 Digest MML · {len(email_articles)} novedades · {today_short}"
