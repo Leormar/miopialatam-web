@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T14:12:00.062052+00:00",
+  "generated_at": "2026-05-29T15:11:21.297241+00:00",
   "date_display": "29 May 2026",
   "items": [
     {
@@ -7,40 +7,40 @@
       "source_short": "Myopia Profile",
       "title": "The Joint Position Statement on contact lenses for myopia management – Q&A with Tacy Song We speak to Tacy Song about impact of the Joint Position Statement on contact lenses for myopia control in the Asia-Pacific region Read Full Article",
       "url": "https://www.myopiaprofile.com/articles/joint-position-statement-contact-lenses-for-myopia-control",
-      "summary_es": "Entrevista con Tacy Song sobre el impacto de la declaración conjunta de posición en lentes de contacto para control de miopía en la región de Asia-Pacífico, abordando evidencia clínica y recomendaciones terapéuticas.",
+      "summary_es": "Entrevista con Tacy Song sobre el impacto de la declaración conjunta de posicionamiento en lentes de contacto para el control de miopía en la región de Asia-Pacífico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Essilor Stellest lenses receive FDA market authorization in the U.S. Essilor® Stellest® lenses have received FDA market authorization in the U.S., marking an important milestone for expanding access to spectacle-based myopia management for children. Read Full Article",
-      "url": "https://www.myopiaprofile.com/articles/essilor-stellest-fda-market-authorization",
-      "summary_es": "Essilor recibió autorización de la FDA para comercializar las lentes Stellest en Estados Unidos, ampliando el acceso a opciones de manejo de miopía basadas en lentes oftálmicas para la población pediátrica.",
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Pricing Myopia Control: Stop Charging for a Lens and Start Charging for a Program",
+      "url": "https://reviewofmm.com/pricing-myopia-control-stop-charging-for-a-lens-and-start-charging-for-a-program/",
+      "summary_es": "El artículo analiza estrategias de pricing para el manejo de miopía, destacando la necesidad de transitar desde el modelo de cobro por producto individual hacia un enfoque de programa médico longitudinal que refleje el valor terapéutico y reducción de riesgo ocular a largo plazo.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Muru Annamalai Named President, Asia-Pacific at CooperVision",
+      "url": "https://reviewofmm.com/muru-annamalai-named-president-asia-pacific-at-coopervision/",
+      "summary_es": "CooperVision anunció el nombramiento de Muru Annamalai como Presidente de Asia-Pacífico a partir del 1 de junio de 2026. El ejecutivo cuenta con más de dos décadas de experiencia en liderazgo global en sectores farmacéutico y sanitario, consolidando la apuesta de la compañía en una región estratégica clave.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Inside the Consultation Room – Q&A on mEYE® Suite with Amit Sharma Amit Sharma discusses using Ocumetra’s mEYE® Suite in practice. Read Full Article",
-      "url": "https://www.myopiaprofile.com/articles/Amit-Sharma-using-Ocumetra-mEYE-Suite-in-practice",
-      "summary_es": "Ocumetra presenta mEYE® Suite, una plataforma digital para la consulta oftalmológica. El recurso incluye una sesión de preguntas y respuestas con expertos sobre su implementación en la práctica clínica diaria.",
-      "category": "WEB",
-      "category_color": "#F5C518",
-      "category_label": "Nuevos recursos"
-    },
-    {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Myopia management in ophthalmology - Q&A with Professor Andrzej Grzybowski We speak to Prof Andrzej Grzybowski about using technologies for myopia management. Read Full Article",
-      "url": "https://www.myopiaprofile.com/articles/Myopia-management-in-ophthalmology-with-Professor-Andrzej-Grzybowski",
-      "summary_es": "Entrevista con el Prof. Andrzej Grzybowski sobre tecnologías para el control de la miopía. Perspectiva de experto en estrategias y herramientas disponibles para la gestión clínica.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "EssilorLuxottica Highlights Stellest Findings at ARVO 2026",
+      "url": "https://reviewofmm.com/essilorluxottica-highlights-stellest-findings-at-arvo-2026/",
+      "summary_es": "EssilorLuxottica presentó hallazgos sobre lentes Stellest en el congreso ARVO 2026, con 12 resúmenes enfocados en manejo de miopía que integran ensayos clínicos, datos del mundo real y comprensión mecanística para optimizar resultados personalizados en la progresión miópica.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     }
   ]
 }
