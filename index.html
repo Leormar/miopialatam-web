@@ -122,6 +122,41 @@ nav{background:rgba(255,255,255,0.96);backdrop-filter:saturate(180%) blur(12px);
   .hb-logo-newsletter{font-size:1.9rem}
 }
 
+/* HOME · LECTURAS DEL DÍA (Digest público) */
+.home-digest{background:linear-gradient(180deg,#F7F9FC 0%,#EEF2F6 100%);padding:3.4rem 2rem 3.6rem;border-bottom:1px solid #E5EAEF}
+.digest-inner{max-width:1200px;margin:0 auto}
+.digest-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.8rem}
+.digest-head-left{flex:1;min-width:280px}
+.digest-eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:0.3em;text-transform:uppercase;color:#0077C8;padding:6px 14px;background:rgba(0,119,200,0.08);border:1px solid rgba(0,119,200,0.25);border-radius:999px;margin-bottom:0.9rem}
+.digest-eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:#2EAA4A;box-shadow:0 0 0 4px rgba(46,170,74,0.18);animation:digest-pulse 2.2s ease-in-out infinite}
+@keyframes digest-pulse{0%,100%{opacity:1}50%{opacity:0.45}}
+.digest-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(1.7rem,3vw,2.4rem);text-transform:uppercase;color:#0A2540;letter-spacing:-0.02em;line-height:1.05;margin-bottom:0.4rem}
+.digest-sub{font-size:0.94rem;color:#5A7184;line-height:1.55;max-width:640px}
+.digest-meta{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:0.18em;text-transform:uppercase;color:#5A7184;background:#fff;border:1px solid #E5EAEF;border-radius:999px;padding:8px 16px}
+.digest-meta strong{color:#0077C8}
+.digest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:1.6rem}
+.digest-card{background:#fff;border:1px solid #E5EAEF;border-radius:18px;padding:1.4rem 1.4rem 1.5rem;display:flex;flex-direction:column;gap:0.65rem;transition:all .25s;text-decoration:none;color:inherit;position:relative;overflow:hidden}
+.digest-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:#F5C518}
+.digest-card.src-roMM::before{background:#D42B2B}
+.digest-card.src-myopiaprofile::before{background:#0077C8}
+.digest-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(10,37,64,0.1);border-color:transparent}
+.digest-card-src{display:inline-flex;align-items:center;gap:6px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:#5A7184}
+.digest-card-src::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor}
+.digest-card-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.12rem;color:#0A2540;line-height:1.2;letter-spacing:-0.005em;margin-bottom:0.1rem}
+.digest-card-summary{font-size:0.88rem;color:#41566F;line-height:1.55;flex:1}
+.digest-card-cta{font-size:0.82rem;color:#0077C8;font-weight:700;letter-spacing:0.02em;margin-top:0.4rem;display:inline-flex;align-items:center;gap:6px}
+.digest-card-cta::after{content:'\2192';transition:transform .2s}
+.digest-card:hover .digest-card-cta::after{transform:translateX(4px)}
+.digest-empty{grid-column:1/-1;text-align:center;padding:2.4rem 1rem;color:#5A7184;background:#fff;border:1px dashed #C9D2DE;border-radius:18px;font-size:0.95rem}
+.digest-cta-row{display:flex;justify-content:center;align-items:center;gap:0.8rem;flex-wrap:wrap;padding-top:1rem;border-top:1px solid #E5EAEF}
+.digest-cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#0A2540 0%,#0077C8 100%);color:#fff;padding:0.9rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.92rem;transition:all .2s;box-shadow:0 6px 18px rgba(0,119,200,0.28)}
+.digest-cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,119,200,0.4)}
+.digest-cta::after{content:'\2192';transition:transform .2s}
+.digest-cta:hover::after{transform:translateX(4px)}
+.digest-fuentes{font-size:0.78rem;color:#5A7184}
+.digest-fuentes strong{color:#0A2540}
+@media(max-width:900px){.digest-grid{grid-template-columns:1fr;gap:1rem}.digest-head{flex-direction:column;align-items:flex-start}}
+
 /* HOME · AGRADECIMIENTOS POST-MAW */
 .home-thanks{position:relative;background:linear-gradient(180deg,#06192C 0%,#0A2540 100%);color:#fff;padding:3.2rem 2rem 3.5rem;overflow:hidden;border-bottom:1px solid rgba(255,255,255,0.08)}
 .home-thanks::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(245,197,24,0.05) 1px,transparent 0);background-size:28px 28px;opacity:0.4;pointer-events:none}
@@ -535,6 +570,28 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <a href="https://www.myopialatam.com" target="_blank" rel="noopener" class="hb-secondary">Más información en myopialatam.com ↗</a>
     </div>
 
+  </div>
+</section>
+
+<section class="home-digest" id="lecturas-del-dia">
+  <div class="digest-inner">
+    <div class="digest-head">
+      <div class="digest-head-left">
+        <div class="digest-eyebrow">📚 Curaduría diaria · MML LATAM</div>
+        <h2 class="digest-title">Lecturas del día</h2>
+        <p class="digest-sub">Selección automática de las últimas novedades globales en control de miopía. Curada cada mañana por el Comité Editorial MML LATAM con resúmenes en español.</p>
+      </div>
+      <div class="digest-meta">Actualizado · <strong id="digestDate">—</strong></div>
+    </div>
+
+    <div class="digest-grid" id="digestGrid">
+      <div class="digest-empty">📡 Cargando curaduría editorial...</div>
+    </div>
+
+    <div class="digest-cta-row">
+      <a href="boletin.html#suscribirme" class="digest-cta">Recibirlo en mi inbox cada mañana</a>
+      <div class="digest-fuentes">Fuentes: <strong>Review of Myopia Management</strong> · <strong>Myopia Profile</strong></div>
+    </div>
   </div>
 </section>
 
@@ -1070,6 +1127,43 @@ function showTab(t,el){
     }
     if (n) n.textContent = subs > 0 ? subs.toLocaleString('es-419') : 'sé el primero';
   }).catch(() => {});
+})();
+</script>
+<script>
+(function(){
+  const grid = document.getElementById('digestGrid');
+  const dateEl = document.getElementById('digestDate');
+  if (!grid) return;
+  function srcClass(s){
+    s = (s || '').toLowerCase();
+    if (s.indexOf('romm') !== -1 || s.indexOf('review of myopia') !== -1) return 'src-roMM';
+    if (s.indexOf('myopia profile') !== -1) return 'src-myopiaprofile';
+    return '';
+  }
+  function escapeHtml(str){
+    return (str || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  fetch('data/digest-latest.json', {cache: 'no-store'})
+    .then(r => { if (!r.ok) throw new Error('no snapshot'); return r.json(); })
+    .then(data => {
+      if (dateEl) dateEl.textContent = data.date_display || '—';
+      const items = (data.items || []).slice(0, 3);
+      if (items.length === 0) {
+        grid.innerHTML = '<div class="digest-empty">Sin novedades hoy en las fuentes monitoreadas. Volvemos mañana a las 7:00 AM con la siguiente curaduría.</div>';
+        return;
+      }
+      grid.innerHTML = items.map(it => `
+        <a class="digest-card ${srcClass(it.source_short || it.source)}" href="${escapeHtml(it.url)}" target="_blank" rel="noopener">
+          <div class="digest-card-src">${escapeHtml(it.source_short || it.source)}</div>
+          <div class="digest-card-title">${escapeHtml(it.title)}</div>
+          <div class="digest-card-summary">${escapeHtml(it.summary_es || '')}</div>
+          <span class="digest-card-cta">Leer artículo</span>
+        </a>`).join('');
+    })
+    .catch(() => {
+      grid.innerHTML = '<div class="digest-empty">📡 La curaduría se publica cada mañana a las 7:00 AM (Colombia). Volvé mañana o suscribite para recibirla en tu inbox.</div>';
+      if (dateEl) dateEl.textContent = 'próximamente';
+    });
 })();
 </script>
 </body>

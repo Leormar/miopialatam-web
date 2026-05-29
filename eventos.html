@@ -87,6 +87,9 @@ h1.hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-siz
 .event-card.hidden{display:none}
 .event-card.event-verified{border:2px solid #2EAA4A;box-shadow:0 4px 16px rgba(46,170,74,0.12)}
 .event-card.event-verified:hover{box-shadow:0 12px 40px rgba(46,170,74,0.18)}
+.event-card.event-past{opacity:0.65;filter:grayscale(0.3)}
+.event-card.event-past::after{content:'PASADO';position:absolute;top:10px;right:10px;background:#D42B2B;color:#fff;font-family:'Inter',sans-serif;font-size:0.62rem;font-weight:800;letter-spacing:0.1em;padding:3px 9px;border-radius:99px;z-index:3}
+#togglePast.active{background:#D42B2B;color:#fff;border-color:#D42B2B}
 .event-date{background:linear-gradient(135deg,var(--c) 0%,var(--c-dark) 100%);color:#fff;padding:1.6rem 1rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
 .event-date::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(255,255,255,0.2),transparent 60%);pointer-events:none}
 .event-month{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.95rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.85;position:relative;z-index:2}
@@ -222,23 +225,24 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <button class="f-pill" data-filter="global">Global</button>
       <button class="f-pill" data-filter="online">Online</button>
       <button class="f-pill" data-filter="presencial">Presencial</button>
+      <button class="f-pill" id="togglePast" style="margin-left:auto;border-color:#D42B2B;color:#D42B2B">Mostrar eventos pasados</button>
     </div>
   </div>
 </div>
 
-<div class="results-info"><strong>Organizaciones de referencia</strong> · Sitios oficiales para verificar fechas y registro</div>
+<div class="results-info"><strong>Eventos vigentes</strong> · los eventos cuya fecha ya pasó se ocultan automáticamente · click en <em>"Mostrar eventos pasados"</em> para verlos</div>
 
 <div class="events-grid" id="events-grid">
 
-  <article class="event-card event-verified" data-region="latam" data-type="online" data-date="2026-05-20" style="--c:#0077C8;--c-dark:#005FA3">
-    <div class="event-date"><span class="event-month">May</span><span class="event-day">20</span><span class="event-year">2026</span></div>
+  <article class="event-card event-verified" data-region="latam" data-type="online" data-date="2026-06-10" style="--c:#0077C8;--c-dark:#005FA3">
+    <div class="event-date"><span class="event-month">Jun</span><span class="event-day">10</span><span class="event-year">2026</span></div>
     <div class="event-body">
       <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-online">Online</span><span class="event-tag" style="background:#E6F7EB;color:#1B5E20">✓ Verificado</span><span class="event-tag" style="background:#FFF6D8;color:#92690A">MML Oficial</span></div>
-      <div class="event-title">Conversatorio: Concientización de la Miopía 2026</div>
-      <div class="event-location">Online · 18:00 hrs México · Duración 2 horas</div>
-      <div class="event-organizer">Organiza: Grupo Manejo Miopía LATAM (MML)</div>
-      <div class="event-desc">Conversatorio abierto sobre <strong>concientización de la miopía</strong> con embajadores MML de toda Latinoamérica. Educación académica libre de influencias comerciales.</div>
-      <a href="https://us06web.zoom.us/webinar/register/WN_arhWMVJYSlyEMmhPp6UGSg#/registration" target="_blank" rel="noopener" class="event-link">Registrarse en Zoom →</a>
+      <div class="event-title">MYOPIALATAM 2026 · Congreso online de control de miopía</div>
+      <div class="event-location">100% online · desde donde estés · Certificado de asistencia</div>
+      <div class="event-organizer">Organiza: Grupo Manejo Miopía LATAM · con aval académico de la Fundación Universitaria San Martín</div>
+      <div class="event-desc"><strong>"La miopía se maneja con estrategia"</strong> — congreso enfocado en el abordaje clínico real de la miopía y su progresión. Diseñado para profesionales que buscan herramientas aplicables, basadas en evidencia y enfocadas en la práctica diaria. <strong>Inscripción gratuita.</strong></div>
+      <a href="https://forms.gle/gdq3n5S7bZbThA7k9" target="_blank" rel="noopener" class="event-link">Inscribirme gratis →</a>
     </div>
   </article>
 
@@ -408,6 +412,13 @@ const cards = document.querySelectorAll('.event-card');
 const resultsCount = document.getElementById('results-count');
 const noResults = document.getElementById('no-results');
 let currentFilter = 'all';
+let showPast = false;
+
+const todayISO = new Date().toISOString().slice(0, 10);
+cards.forEach(card => {
+  const d = card.dataset.date;
+  if (d && d < todayISO) card.classList.add('event-past');
+});
 
 function filterEvents() {
   const term = searchInput.value.toLowerCase().trim();
@@ -417,10 +428,12 @@ function filterEvents() {
     const region = card.dataset.region;
     const type = card.dataset.type;
     const matchesText = !term || text.includes(term);
-    let matchesFilter = currentFilter === 'all'
+    const matchesFilter = currentFilter === 'all'
       || currentFilter === region
       || currentFilter === type;
-    if (matchesText && matchesFilter) {
+    const isPast = card.classList.contains('event-past');
+    const passesDate = showPast || !isPast;
+    if (matchesText && matchesFilter && passesDate) {
       card.classList.remove('hidden');
       visible++;
     } else {
@@ -440,6 +453,18 @@ filterPills.forEach(pill => {
     filterEvents();
   });
 });
+
+const togglePast = document.getElementById('togglePast');
+if (togglePast) {
+  togglePast.addEventListener('click', () => {
+    showPast = !showPast;
+    togglePast.textContent = showPast ? 'Ocultar eventos pasados' : 'Mostrar eventos pasados';
+    togglePast.classList.toggle('active', showPast);
+    filterEvents();
+  });
+}
+
+filterEvents();
 </script>
 <script>
 (function(){

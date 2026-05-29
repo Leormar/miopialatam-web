@@ -5,8 +5,11 @@ Fuentes:
 - Review of Myopia Management (RSS)
 - Myopia Profile (scraping clinical + science)
 
-Resume cada artículo nuevo con Claude y envía un correo a info@miopialatam.org.
-Pensado para correr en GitHub Actions todos los días a las 7:00 AM Colombia (12:00 UTC).
+Resume cada artículo nuevo con Claude, guarda un snapshot público
+en data/digest-latest.json (consumido por el home) y envía un email:
+- Si BREVO_API_KEY está seteada → envía vía Brevo a todos los contactos
+  de la lista BREVO_LIST_ID (default 6).
+- Si no → fallback SMTP single recipient a EMAIL_TO.
 """
 
 import json
@@ -25,6 +28,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_FILE = ROOT / "state" / "last_seen.json"
+SNAPSHOT_FILE = ROOT / "data" / "digest-latest.json"
 
 ROMM_FEED = "https://reviewofmm.com/feed/"
 MP_CATEGORIES = [
@@ -38,6 +42,10 @@ SMTP_PORT = 587
 SMTP_USER = os.environ.get("SMTP_USER", "info@miopialatam.org")
 EMAIL_FROM = os.environ.get("EMAIL_FROM", "info@miopialatam.org")
 EMAIL_TO = os.environ.get("EMAIL_TO", "info@miopialatam.org")
+SENDER_NAME = os.environ.get("SENDER_NAME", "Comité Editorial MML")
+
+BREVO_API_BASE = "https://api.brevo.com/v3"
+BREVO_LIST_ID = int(os.environ.get("BREVO_LIST_ID", "6"))
 
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
 
@@ -65,6 +73,7 @@ def fetch_romm() -> list[dict]:
         soup = BeautifulSoup(summary, "html.parser")
         items.append({
             "source": "Review of Myopia Management",
+            "source_short": "RoMM",
             "title": entry.title.strip(),
             "url": entry.link,
             "summary": soup.get_text(" ", strip=True)[:600],
@@ -98,6 +107,7 @@ def fetch_myopia_profile() -> list[dict]:
             seen_urls.add(href)
             items.append({
                 "source": f"Myopia Profile · {label}",
+                "source_short": "Myopia Profile",
                 "title": title,
                 "url": href,
                 "summary": "",
@@ -108,6 +118,8 @@ def fetch_myopia_profile() -> list[dict]:
 
 def summarize(articles: list[dict], client: Anthropic) -> None:
     for art in articles:
+        if art.get("summary_es"):
+            continue
         prompt = (
             "Resumí en 2 líneas en español neutro LATAM el siguiente artículo "
             "para el digest diario del Comité Editorial MML LATAM (manejo de "
@@ -126,6 +138,28 @@ def summarize(articles: list[dict], client: Anthropic) -> None:
             art["summary_es"] = response.content[0].text.strip()
         except Exception as exc:
             art["summary_es"] = f"(Resumen no disponible: {exc})"
+
+
+def write_snapshot(top_items: list[dict]) -> None:
+    """Persistir las top 3 lecturas para que el home las muestre."""
+    SNAPSHOT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "date_display": datetime.now(timezone.utc).strftime("%d %b %Y"),
+        "items": [
+            {
+                "source": it["source"],
+                "source_short": it.get("source_short", it["source"]),
+                "title": it["title"],
+                "url": it["url"],
+                "summary_es": it.get("summary_es", ""),
+            }
+            for it in top_items[:3]
+        ],
+    }
+    SNAPSHOT_FILE.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
 
 
 def render_html(articles: list[dict], bootstrap: bool) -> str:
@@ -182,10 +216,10 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
 </body></html>"""
 
 
-def send_email(html_body: str, subject: str, password: str) -> None:
+def send_via_smtp(html_body: str, subject: str, password: str) -> None:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"] = f"Comité Editorial MML <{EMAIL_FROM}>"
+    msg["From"] = f"{SENDER_NAME} <{EMAIL_FROM}>"
     msg["To"] = EMAIL_TO
     msg.attach(MIMEText(html_body, "html", "utf-8"))
 
@@ -195,16 +229,77 @@ def send_email(html_body: str, subject: str, password: str) -> None:
         smtp.send_message(msg)
 
 
+def fetch_brevo_contacts(api_key: str, list_id: int) -> list[dict]:
+    contacts = []
+    offset = 0
+    limit = 100
+    while True:
+        r = requests.get(
+            f"{BREVO_API_BASE}/contacts/lists/{list_id}/contacts",
+            params={"limit": limit, "offset": offset},
+            headers={"api-key": api_key, "accept": "application/json"},
+            timeout=30,
+        )
+        r.raise_for_status()
+        data = r.json()
+        batch = data.get("contacts", [])
+        for c in batch:
+            attrs = c.get("attributes", {}) or {}
+            contacts.append({
+                "email": c["email"],
+                "name": attrs.get("FIRSTNAME") or attrs.get("NOMBRE") or c["email"].split("@")[0],
+            })
+        if len(batch) < limit:
+            break
+        offset += limit
+    return contacts
+
+
+def send_via_brevo(html_body: str, subject: str, api_key: str, contacts: list[dict]) -> int:
+    if not contacts:
+        return 0
+    sent = 0
+    batch_size = 50
+    for i in range(0, len(contacts), batch_size):
+        chunk = contacts[i:i + batch_size]
+        payload = {
+            "sender": {"name": SENDER_NAME, "email": EMAIL_FROM},
+            "subject": subject,
+            "htmlContent": html_body,
+            "messageVersions": [
+                {"to": [{"email": c["email"], "name": c["name"]}]}
+                for c in chunk
+            ],
+        }
+        r = requests.post(
+            f"{BREVO_API_BASE}/smtp/email",
+            json=payload,
+            headers={
+                "api-key": api_key,
+                "accept": "application/json",
+                "content-type": "application/json",
+            },
+            timeout=45,
+        )
+        if r.status_code >= 400:
+            print(f"error: Brevo send failed ({r.status_code}): {r.text[:400]}", file=sys.stderr)
+            r.raise_for_status()
+        sent += len(chunk)
+    return sent
+
+
 def main() -> int:
     print(f"[{datetime.now(timezone.utc).isoformat()}] starting digest")
 
-    smtp_password = os.environ.get("SMTP_PASSWORD")
     anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not smtp_password:
-        print("error: SMTP_PASSWORD env var missing", file=sys.stderr)
-        return 1
+    brevo_key = os.environ.get("BREVO_API_KEY")
+    smtp_password = os.environ.get("SMTP_PASSWORD")
+
     if not anthropic_key:
         print("error: ANTHROPIC_API_KEY env var missing", file=sys.stderr)
+        return 1
+    if not brevo_key and not smtp_password:
+        print("error: need BREVO_API_KEY or SMTP_PASSWORD", file=sys.stderr)
         return 1
 
     state = load_state()
@@ -223,30 +318,60 @@ def main() -> int:
     new_items = [it for it in all_items if it["url"] not in seen]
     print(f"new items vs state: {len(new_items)} / {len(all_items)}")
 
+    client = Anthropic(api_key=anthropic_key)
+    top_for_widget = all_items[:3]
+    if new_items:
+        print("summarizing new items...")
+        summarize(new_items, client)
+    print("summarizing top-3 for home widget if needed...")
+    summarize(top_for_widget, client)
+
+    write_snapshot(top_for_widget)
+    print(f"snapshot written: {SNAPSHOT_FILE}")
+
     if bootstrap:
-        print("bootstrap run: marking all as seen, sending welcome email")
+        print("bootstrap run: sending welcome only")
         html = render_html([], bootstrap=True)
         subject = "📚 Digest MML activado · primer envío"
+        email_articles = []
     else:
-        if new_items:
-            print("summarizing with Claude...")
-            client = Anthropic(api_key=anthropic_key)
-            summarize(new_items, client)
-        html = render_html(new_items, bootstrap=False)
+        email_articles = new_items
+        html = render_html(email_articles, bootstrap=False)
         today_short = datetime.now(timezone.utc).strftime("%d %b")
-        subject = f"📚 Digest MML · {len(new_items)} novedades · {today_short}"
+        subject = f"📚 Digest MML · {len(email_articles)} novedades · {today_short}"
 
-    print(f"sending email to {EMAIL_TO}...")
-    send_email(html, subject, smtp_password)
+    sent_via = "none"
+    sent_count = 0
+    if brevo_key:
+        print(f"fetching subscribers from Brevo list {BREVO_LIST_ID}...")
+        contacts = fetch_brevo_contacts(brevo_key, BREVO_LIST_ID)
+        print(f"  → {len(contacts)} subscribers")
+        if contacts:
+            print(f"sending via Brevo to {len(contacts)} subscribers...")
+            sent_count = send_via_brevo(html, subject, brevo_key, contacts)
+            sent_via = "brevo"
+        else:
+            print("no Brevo subscribers yet; falling back to SMTP")
+
+    if sent_via == "none":
+        if not smtp_password:
+            print("error: no Brevo subscribers and no SMTP_PASSWORD", file=sys.stderr)
+            return 1
+        print(f"sending via SMTP to {EMAIL_TO}...")
+        send_via_smtp(html, subject, smtp_password)
+        sent_via = "smtp"
+        sent_count = 1
 
     new_seen = seen | {it["url"] for it in all_items}
     state["seen_urls"] = list(new_seen)[-500:]
     state["last_run"] = datetime.now(timezone.utc).isoformat()
     state["first_run"] = False
+    state["last_sent_via"] = sent_via
+    state["last_recipients"] = sent_count
     save_state(state)
 
-    sent_count = 0 if bootstrap else len(new_items)
-    print(f"done. sent {sent_count} new items.")
+    n_email = 0 if bootstrap else len(email_articles)
+    print(f"done. {n_email} items in email; delivered via {sent_via} to {sent_count} recipient(s)")
     return 0
 
 
