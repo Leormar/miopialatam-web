@@ -180,7 +180,8 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
         )
         items_html = ""
     else:
-        intro = f"<p style='color:#5A7184;margin:0 0 1.4em'>{len(articles)} novedades para el skim diario.</p>"
+        word = "novedad destacada" if len(articles) == 1 else "novedades destacadas"
+        intro = f"<p style='color:#5A7184;margin:0 0 1.4em'>{len(articles)} {word} para hoy.</p>"
         items_html = ""
         for i, art in enumerate(articles, 1):
             items_html += f"""
@@ -196,10 +197,21 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
 <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background:#EEF2F6;padding:24px 12px">
   <tr><td align="center">
     <table role="presentation" cellpadding="0" cellspacing="0" width="640" style="max-width:640px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(10,37,64,0.08)">
-      <tr><td style="height:6px;background:#F5C518"></td></tr>
-      <tr><td style="padding:2em 2em 1.2em">
-        <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#0077C8;font-weight:700">Comité Editorial · MML LATAM</div>
-        <h1 style="margin:0.3em 0 0.15em;font-size:24px;color:#0A2540">Digest diario · {today}</h1>
+      <tr><td>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+          <td style="height:6px;background:#F5C518;line-height:6px;font-size:0;width:25%">&nbsp;</td>
+          <td style="height:6px;background:#2EAA4A;line-height:6px;font-size:0;width:25%">&nbsp;</td>
+          <td style="height:6px;background:#0077C8;line-height:6px;font-size:0;width:25%">&nbsp;</td>
+          <td style="height:6px;background:#D42B2B;line-height:6px;font-size:0;width:25%">&nbsp;</td>
+        </tr></table>
+      </td></tr>
+      <tr><td style="padding:30px 32px 6px">
+        <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:18px"><tr>
+          <td style="font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:38px;letter-spacing:3px;line-height:1;padding-right:14px;border-right:1px solid #E5EAEF"><span style="color:#F5C518">M</span><span style="color:#2EAA4A">M</span><span style="color:#0077C8">L</span></td>
+          <td style="padding-left:14px;vertical-align:middle"><div style="font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:12px;color:#0A2540;letter-spacing:0.18em;text-transform:uppercase;line-height:1.35">Grupo<br>Manejo Miopía<br>LATAM</div></td>
+        </tr></table>
+        <div style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#0077C8;font-weight:700">🔎 Búsqueda indexada · Comité Editorial</div>
+        <h1 style="margin:6px 0 10px;font-size:24px;color:#0A2540;line-height:1.2;font-weight:700">Visión MML LATAM · {today}</h1>
         {intro}
         {items_html}
       </td></tr>
