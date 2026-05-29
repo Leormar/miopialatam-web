@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T05:31:56.849004+00:00",
+  "generated_at": "2026-05-29T05:42:59.892695+00:00",
   "date_display": "29 May 2026",
   "items": [
     {
@@ -7,21 +7,30 @@
       "source_short": "RoMM",
       "title": "EssilorLuxottica Highlights Stellest Findings at ARVO 2026",
       "url": "https://reviewofmm.com/essilorluxottica-highlights-stellest-findings-at-arvo-2026/",
-      "summary_es": "EssilorLuxottica presentó en ARVO 2026 los últimos hallazgos sobre las lentes Stellest con 12 resúmenes enfocados en miopía, evidenciando un enfoque integral que combina ensayos clínicos, datos del mundo real y comprensión mecanística para optimizar el manejo personalizado de la miopía."
+      "summary_es": "EssilorLuxottica presentó nuevos hallazgos sobre lentes Stellest en el congreso ARVO 2026, con 12 resúmenes enfocados en manejo miópico que integran ensayos clínicos, datos del mundo real y comprensión mecanística para optimizar resultados personalizados en la trayectoria del paciente.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Tony Sommer Named CEO of Treehouse Eyes",
       "url": "https://reviewofmm.com/tony-sommer-named-ceo-of-treehouse-eyes/",
-      "summary_es": "Tony Sommer asume la dirección ejecutiva de Treehouse Eyes, empresa de manejo de miopía, con más de 25 años de experiencia en optometría y cuidado de la salud. Matt Oerding, cofundador y CEO actual, se desempeñará como presidente del consejo directivo."
+      "summary_es": "Treehouse Eyes anunció el nombramiento de Tony Sommer como Chief Executive Officer, con más de 25 años de experiencia en liderazgo en optometría y healthcare. El cofundador Matt Oerding asume la posición de Board Chairman para enfocarse en la dirección estratégica de la compañía.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "AAO Foundation, Meta Reality Labs Announce Myopia Research Grant Winners",
       "url": "https://reviewofmm.com/aao-foundation-meta-reality-labs-announce-myopia-research-grant-winners/",
-      "summary_es": "La Fundación de la Academia Estadounidense de Optometría y Meta Reality Labs anunciaron ganadores de becas de investigación en miopía por USD 500.000 cada una. Los proyectos abordan el rol de la experiencia visual en el desarrollo y progresión miópica con enfoque en investigación abierta y disponibilidad pública de datos."
+      "summary_es": "La Fundación de la Academia Estadounidense de Optometría y Meta Reality Labs anunciaron los ganadores de becas de investigación en miopía. Se otorgaron tres premios de 500.000 USD cada uno para acelerar la comprensión de la miopía mediante investigación longitudinal de ciencia abierta con datos públicos.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     }
   ]
 }
