@@ -207,7 +207,7 @@ def write_snapshot(top_items: list[dict]) -> None:
                 "category_color": it.get("category_color", "#2EAA4A"),
                 "category_label": it.get("category_label", "Control clínico"),
             }
-            for it in top_items[:3]
+            for it in top_items[:4]
         ],
     }
     SNAPSHOT_FILE.write_text(
@@ -362,6 +362,32 @@ def send_via_brevo(html_body: str, subject: str, api_key: str, contacts: list[di
     return sent
 
 
+def pick_one_per_category(items: list[dict], max_count: int = 4) -> list[dict]:
+    """Selecciona 1 item por cada categoría disponible, en el orden:
+    Verde clínico → Azul gestión → Rojo industria → Amarillo recursos.
+    Rellena con cualquier item adicional hasta max_count si quedan slots.
+    """
+    order = ["CLINICAL", "PRACTICE", "INDUSTRY", "WEB"]
+    picked_urls: set[str] = set()
+    result: list[dict] = []
+    for cat in order:
+        for it in items:
+            if it.get("category") == cat and it["url"] not in picked_urls:
+                result.append(it)
+                picked_urls.add(it["url"])
+                break
+        if len(result) >= max_count:
+            break
+    if len(result) < max_count:
+        for it in items:
+            if len(result) >= max_count:
+                break
+            if it["url"] not in picked_urls:
+                result.append(it)
+                picked_urls.add(it["url"])
+    return result[:max_count]
+
+
 def main() -> int:
     print(f"[{datetime.now(timezone.utc).isoformat()}] starting digest")
 
@@ -393,12 +419,14 @@ def main() -> int:
     print(f"new items vs state: {len(new_items)} / {len(all_items)}")
 
     client = Anthropic(api_key=anthropic_key)
-    top_for_widget = all_items[:3]
     if new_items:
-        print("summarizing new items...")
+        print(f"summarizing {len(new_items)} new items...")
         summarize(new_items, client)
-    print("summarizing top-3 for home widget if needed...")
-    summarize(top_for_widget, client)
+    pool_for_widget = all_items[:12]
+    print(f"summarizing top-{len(pool_for_widget)} pool for widget categorization...")
+    summarize(pool_for_widget, client)
+    top_for_widget = pick_one_per_category(pool_for_widget, max_count=4)
+    print(f"widget selection: {len(top_for_widget)} items ({', '.join(it.get('category', '?') for it in top_for_widget)})")
 
     write_snapshot(top_for_widget)
     print(f"snapshot written: {SNAPSHOT_FILE}")
