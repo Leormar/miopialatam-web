@@ -51,6 +51,13 @@ CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
 
 UA = "Mozilla/5.0 (compatible; MML-Digest/1.0; +https://miopialatam.org)"
 
+CATEGORY_MAP = {
+    "CLINICAL": {"color": "#2EAA4A", "label": "Control clínico", "bg_light": "#E6F7EB"},
+    "PRACTICE": {"color": "#0077C8", "label": "Gestión de consultorio", "bg_light": "#EAF4FB"},
+    "INDUSTRY": {"color": "#D42B2B", "label": "Industria", "bg_light": "#FDECEA"},
+    "WEB": {"color": "#F5C518", "label": "Nuevos recursos", "bg_light": "#FFF8E5"},
+}
+
 
 def load_state() -> dict:
     if STATE_FILE.exists():
@@ -116,15 +123,40 @@ def fetch_myopia_profile() -> list[dict]:
     return items[:15]
 
 
+def _apply_category(art: dict, cat: str) -> None:
+    cat = cat if cat in CATEGORY_MAP else "CLINICAL"
+    meta = CATEGORY_MAP[cat]
+    art["category"] = cat
+    art["category_color"] = meta["color"]
+    art["category_label"] = meta["label"]
+    art["category_bg_light"] = meta["bg_light"]
+
+
 def summarize(articles: list[dict], client: Anthropic) -> None:
     for art in articles:
         if art.get("summary_es"):
             continue
         prompt = (
-            "Resumí en 2 líneas en español neutro LATAM el siguiente artículo "
-            "para el digest diario del Comité Editorial MML LATAM (manejo de "
-            "miopía). Sin saludos, sin markdown, sin viñetas. Solo 2 líneas, "
-            "máximo 280 caracteres, tono editorial profesional.\n\n"
+            "Sos editor del digest diario del Comité Editorial MML LATAM "
+            "(Grupo Manejo Miopía Latinoamérica).\n\n"
+            "Clasificá el artículo en UNA categoría (usá EXACTAMENTE el código):\n"
+            "- CLINICAL → control clínico de la miopía: atropina, ortho-k, "
+            "lentes blandos, lentes oftálmicas, evidencia clínica, axial length, "
+            "protocolos terapéuticos, casos clínicos, screening pediátrico\n"
+            "- PRACTICE → gestión del consultorio: pricing, marketing, "
+            "estrategia de práctica privada, organización, programas pagos, "
+            "modelos de negocio, equipamiento\n"
+            "- INDUSTRY → noticias de la industria: lanzamientos de productos "
+            "de fabricantes (ZEISS, Essilor, CooperVision, HOYA), anuncios "
+            "corporativos, congresos institucionales (BHVI, IMI, AAO, BCLA), "
+            "regulaciones, premios, becas\n"
+            "- WEB → recursos digitales nuevos: calculadoras online, sitios "
+            "web, herramientas digitales, plataformas, apps\n\n"
+            "Resumí en 2 líneas en español neutro LATAM (máximo 280 caracteres, "
+            "tono editorial profesional, sin markdown, sin viñetas, sin saludos).\n\n"
+            "Devolveme EXACTAMENTE en este formato:\n"
+            "CATEGORIA: [código]\n"
+            "RESUMEN: [tu resumen]\n\n"
             f"Título: {art['title']}\n"
             f"Fuente: {art['source']}\n"
             f"Texto original: {art.get('summary', '')[:600] or '(solo título disponible)'}"
@@ -132,11 +164,29 @@ def summarize(articles: list[dict], client: Anthropic) -> None:
         try:
             response = client.messages.create(
                 model=CLAUDE_MODEL,
-                max_tokens=180,
+                max_tokens=300,
                 messages=[{"role": "user", "content": prompt}],
             )
-            art["summary_es"] = response.content[0].text.strip()
+            text = response.content[0].text.strip()
+            cat = "CLINICAL"
+            summary = text
+            up = text.upper()
+            cat_idx = up.find("CATEGORIA:")
+            res_idx = up.find("RESUMEN:")
+            if cat_idx >= 0:
+                end = text.find("\n", cat_idx)
+                if end < 0:
+                    end = len(text)
+                cat_raw = text[cat_idx + len("CATEGORIA:"):end].strip().upper()
+                cat_raw = cat_raw.split()[0] if cat_raw else "CLINICAL"
+                if cat_raw in CATEGORY_MAP:
+                    cat = cat_raw
+            if res_idx >= 0:
+                summary = text[res_idx + len("RESUMEN:"):].strip()
+            _apply_category(art, cat)
+            art["summary_es"] = summary
         except Exception as exc:
+            _apply_category(art, "CLINICAL")
             art["summary_es"] = f"(Resumen no disponible: {exc})"
 
 
@@ -153,6 +203,9 @@ def write_snapshot(top_items: list[dict]) -> None:
                 "title": it["title"],
                 "url": it["url"],
                 "summary_es": it.get("summary_es", ""),
+                "category": it.get("category", "CLINICAL"),
+                "category_color": it.get("category_color", "#2EAA4A"),
+                "category_label": it.get("category_label", "Control clínico"),
             }
             for it in top_items[:3]
         ],
@@ -184,12 +237,15 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
         intro = f"<p style='color:#5A7184;margin:0 0 1.4em'>{len(articles)} {word} para hoy.</p>"
         items_html = ""
         for i, art in enumerate(articles, 1):
+            cat_color = art.get('category_color', '#F5C518')
+            cat_bg = art.get('category_bg_light', '#FFF8E5')
+            cat_label = art.get('category_label', 'Control clínico')
             items_html += f"""
-<div style="margin-bottom:1.3em;padding:1.1em 1.2em;background:#F7F9FC;border-left:4px solid #F5C518;border-radius:6px">
-  <div style="font-size:11px;color:#0077C8;text-transform:uppercase;letter-spacing:0.08em;font-weight:700">{art['source']}</div>
+<div style="margin-bottom:1.3em;padding:1.1em 1.2em;background:{cat_bg};border-left:4px solid {cat_color};border-radius:6px">
+  <div style="font-size:11px;color:{cat_color};text-transform:uppercase;letter-spacing:0.08em;font-weight:800">{cat_label} · <span style="color:#5A7184;font-weight:600">{art['source']}</span></div>
   <div style="margin:0.45em 0 0.5em;font-size:16px;font-weight:700;color:#0A2540;line-height:1.3">{i}. {art['title']}</div>
   <div style="color:#333;line-height:1.55;font-size:14px">{art.get('summary_es', '')}</div>
-  <a href="{art['url']}" style="display:inline-block;margin-top:0.7em;color:#0077C8;font-size:13px;font-weight:700;text-decoration:none">Leer artículo completo →</a>
+  <a href="{art['url']}" style="display:inline-block;margin-top:0.7em;color:{cat_color};font-size:13px;font-weight:700;text-decoration:none">Leer artículo completo →</a>
 </div>"""
 
     return f"""<!DOCTYPE html>
@@ -211,7 +267,13 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
           <td style="vertical-align:middle;border-left:1px solid #E5EAEF;padding-left:16px"><div style="font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:13px;color:#0A2540;letter-spacing:0.18em;text-transform:uppercase;line-height:1.4">Grupo<br>Manejo Miopía<br>LATAM</div></td>
         </tr></table>
         <div style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#0077C8;font-weight:700">🔎 Búsqueda indexada · Comité Editorial</div>
-        <h1 style="margin:6px 0 10px;font-size:24px;color:#0A2540;line-height:1.2;font-weight:700">Visión MML LATAM · {today}</h1>
+        <h1 style="margin:6px 0 8px;font-size:24px;color:#0A2540;line-height:1.2;font-weight:700">Visión MML LATAM · {today}</h1>
+        <div style="font-size:11px;color:#5A7184;letter-spacing:0.04em;line-height:1.5;margin-bottom:4px">
+          <span style="display:inline-block;width:10px;height:10px;background:#2EAA4A;border-radius:2px;vertical-align:middle;margin-right:5px"></span>Control clínico &nbsp;
+          <span style="display:inline-block;width:10px;height:10px;background:#0077C8;border-radius:2px;vertical-align:middle;margin-right:5px"></span>Gestión consultorio &nbsp;
+          <span style="display:inline-block;width:10px;height:10px;background:#D42B2B;border-radius:2px;vertical-align:middle;margin-right:5px"></span>Industria &nbsp;
+          <span style="display:inline-block;width:10px;height:10px;background:#F5C518;border-radius:2px;vertical-align:middle;margin-right:5px"></span>Nuevos recursos
+        </div>
         {intro}
         {items_html}
       </td></tr>
