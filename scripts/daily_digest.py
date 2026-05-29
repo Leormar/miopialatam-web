@@ -16,7 +16,7 @@ import json
 import os
 import smtplib
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
@@ -48,6 +48,8 @@ BREVO_API_BASE = "https://api.brevo.com/v3"
 BREVO_LIST_ID = int(os.environ.get("BREVO_LIST_ID", "6"))
 
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
+
+COLOMBIA_TZ = timezone(timedelta(hours=-5))
 
 UA = "Mozilla/5.0 (compatible; MML-Digest/1.0; +https://miopialatam.org)"
 
@@ -408,6 +410,16 @@ def main() -> int:
     bootstrap = state.get("first_run", True)
     seen = set(state.get("seen_urls", []))
 
+    # Candado de idempotencia: un solo email por día (hora Colombia).
+    # Aunque el cron de respaldo y el disparador externo coincidan, no se
+    # duplica. FORCE_SEND=1 fuerza el envío (útil para pruebas manuales).
+    today_co = datetime.now(COLOMBIA_TZ).strftime("%Y-%m-%d")
+    force_send = os.environ.get("FORCE_SEND", "").strip().lower() in ("1", "true", "yes")
+    already_sent_today = state.get("last_sent_date") == today_co
+    if already_sent_today and not force_send:
+        print(f"idempotency guard: ya se envió hoy ({today_co}); se actualiza el "
+              "snapshot pero se omite el email. Usá FORCE_SEND=1 para forzar.")
+
     print("fetching RoMM RSS...")
     romm = fetch_romm()
     print(f"  → {len(romm)} items")
@@ -446,7 +458,9 @@ def main() -> int:
 
     sent_via = "none"
     sent_count = 0
-    if brevo_key:
+    if already_sent_today and not force_send:
+        sent_via = "skipped-already-sent"
+    elif brevo_key:
         print(f"fetching subscribers from Brevo list {BREVO_LIST_ID}...")
         contacts = fetch_brevo_contacts(brevo_key, BREVO_LIST_ID)
         print(f"  → {len(contacts)} subscribers")
@@ -469,6 +483,10 @@ def main() -> int:
             except Exception as exc:
                 print(f"warn: SMTP send failed: {exc}", file=sys.stderr)
                 sent_via = "smtp-failed"
+
+    # Marcar el día como enviado solo si realmente salió el email.
+    if sent_via in ("brevo", "smtp"):
+        state["last_sent_date"] = today_co
 
     new_seen = seen | {it["url"] for it in all_items}
     state["seen_urls"] = list(new_seen)[-500:]

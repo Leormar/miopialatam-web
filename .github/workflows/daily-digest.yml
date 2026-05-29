@@ -2,9 +2,23 @@ name: Digest MML diario
 
 on:
   schedule:
-    # 12:00 UTC = 7:00 AM Colombia (UTC-5)
-    - cron: '0 12 * * *'
-  workflow_dispatch: {}
+    # 7:00 AM Colombia (UTC-5) = 12:00 UTC, con respaldos por si GitHub
+    # demora/saltea el cron principal. El candado de idempotencia del script
+    # (last_sent_date) garantiza un solo email por día aunque disparen varios.
+    - cron: '0 12 * * *'    # 7:00 AM Colombia (principal)
+    - cron: '20 12 * * *'   # 7:20 AM (respaldo 1)
+    - cron: '40 12 * * *'   # 7:40 AM (respaldo 2)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Forzar envío aunque ya se haya mandado hoy (FORCE_SEND)'
+        type: boolean
+        default: false
+
+# Evita que dos runs solapados pisen el push del estado.
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
 
 jobs:
   digest:
@@ -31,6 +45,7 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          FORCE_SEND: ${{ inputs.force && '1' || '' }}
         run: python scripts/daily_digest.py
 
       - name: Commit updated state and snapshot
@@ -40,7 +55,17 @@ jobs:
           git add state/last_seen.json data/digest-latest.json
           if git diff --staged --quiet; then
             echo "no state/snapshot change"
-          else
-            git commit -m "chore(digest): update state + snapshot $(date -u +%Y-%m-%d)"
-            git push
+            exit 0
           fi
+          git commit -m "chore(digest): update state + snapshot $(date -u +%Y-%m-%d)"
+          # Push resiliente: rebase sobre lo último de remoto y reintentar.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "push ok (intento $attempt)"
+              exit 0
+            fi
+            echo "push rechazado (intento $attempt); rebase y reintento..."
+            git pull --rebase --autostash origin main
+          done
+          echo "::error::no se pudo pushear el estado tras 3 intentos"
+          exit 1
