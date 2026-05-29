@@ -291,9 +291,11 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
 
 
 def send_via_smtp(html_body: str, subject: str, password: str) -> None:
+    from email.utils import formataddr
+    from email.header import Header
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = f"{SENDER_NAME} <{EMAIL_FROM}>"
+    msg["Subject"] = Header(subject, "utf-8")
+    msg["From"] = formataddr((str(Header(SENDER_NAME, "utf-8")), EMAIL_FROM))
     msg["To"] = EMAIL_TO
     msg.attach(MIMEText(html_body, "html", "utf-8"))
 
@@ -457,12 +459,16 @@ def main() -> int:
 
     if sent_via == "none":
         if not smtp_password:
-            print("error: no Brevo subscribers and no SMTP_PASSWORD", file=sys.stderr)
-            return 1
-        print(f"sending via SMTP to {EMAIL_TO}...")
-        send_via_smtp(html, subject, smtp_password)
-        sent_via = "smtp"
-        sent_count = 1
+            print("warn: no Brevo subscribers and no SMTP_PASSWORD; skipping email")
+        else:
+            print(f"sending via SMTP to {EMAIL_TO}...")
+            try:
+                send_via_smtp(html, subject, smtp_password)
+                sent_via = "smtp"
+                sent_count = 1
+            except Exception as exc:
+                print(f"warn: SMTP send failed: {exc}", file=sys.stderr)
+                sent_via = "smtp-failed"
 
     new_seen = seen | {it["url"] for it in all_items}
     state["seen_urls"] = list(new_seen)[-500:]
