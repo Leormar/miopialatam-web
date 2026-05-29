@@ -207,8 +207,8 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
       </td></tr>
       <tr><td style="padding:30px 32px 6px">
         <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:18px"><tr>
-          <td style="font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:38px;letter-spacing:3px;line-height:1;padding-right:14px;border-right:1px solid #E5EAEF"><span style="color:#F5C518">M</span><span style="color:#2EAA4A">M</span><span style="color:#0077C8">L</span></td>
-          <td style="padding-left:14px;vertical-align:middle"><div style="font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:12px;color:#0A2540;letter-spacing:0.18em;text-transform:uppercase;line-height:1.35">Grupo<br>Manejo Miopía<br>LATAM</div></td>
+          <td style="padding-right:16px;vertical-align:middle"><img src="https://miopialatam.org/logo-preview-circulo.png" alt="MML LATAM · Grupo Manejo Miopía Latinoamérica" width="74" height="74" style="display:block;border:0;border-radius:50%"></td>
+          <td style="vertical-align:middle;border-left:1px solid #E5EAEF;padding-left:16px"><div style="font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:13px;color:#0A2540;letter-spacing:0.18em;text-transform:uppercase;line-height:1.4">Grupo<br>Manejo Miopía<br>LATAM</div></td>
         </tr></table>
         <div style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#0077C8;font-weight:700">🔎 Búsqueda indexada · Comité Editorial</div>
         <h1 style="margin:6px 0 10px;font-size:24px;color:#0A2540;line-height:1.2;font-weight:700">Visión MML LATAM · {today}</h1>
