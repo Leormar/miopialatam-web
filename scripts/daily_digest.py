@@ -29,6 +29,12 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parent.parent
 STATE_FILE = ROOT / "state" / "last_seen.json"
 SNAPSHOT_FILE = ROOT / "data" / "digest-latest.json"
+INDEX_FILE = ROOT / "index.html"
+
+# Marcadores dentro de #digestGrid en index.html. El script SOLO reescribe el
+# contenido entre estos dos comentarios: nunca toca clases, IDs ni rutas.
+DIGEST_START = "<!-- DIGEST:START -->"
+DIGEST_END = "<!-- DIGEST:END -->"
 
 ROMM_FEED = "https://reviewofmm.com/feed/"
 MP_CATEGORIES = [
@@ -223,6 +229,68 @@ def write_snapshot(top_items: list[dict]) -> None:
     SNAPSHOT_FILE.write_text(
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
+
+
+def _digest_cards_html(items: list[dict]) -> str:
+    """Renderiza las tarjetas del digest como HTML real, con EXACTAMENTE el
+    mismo markup y clases que produce el JS del home (hb-digest-card + dg-*),
+    para que el contenido quede indexable y index.html cambie a diario sin
+    romper estilos. El JS sigue refrescando en vivo (mismas 3 tarjetas)."""
+    import html as _html
+
+    def _cat_class(it: dict) -> str:
+        c = str(it.get("category", "")).upper()
+        return {
+            "PRACTICE": "dg-practice",
+            "INDUSTRY": "dg-industry",
+            "WEB": "dg-web",
+        }.get(c, "dg-clinical")
+
+    cards = []
+    for it in items[:3]:
+        cls = _cat_class(it)
+        label = _html.escape(str(it.get("category_label") or "Control clínico"))
+        src = _html.escape(str(it.get("source_short") or it.get("source") or ""))
+        title = _html.escape(str(it.get("title") or ""))
+        summary = _html.escape(str(it.get("summary_es") or ""))
+        url = _html.escape(str(it.get("url") or "#"), quote=True)
+        cards.append(
+            f'<a class="hb-digest-card {cls}" href="{url}" target="_blank" rel="noopener">'
+            f'<span class="hb-digest-card-label">{label}</span>'
+            f'<div class="hb-digest-card-src">{src}</div>'
+            f'<div class="hb-digest-card-title">{title}</div>'
+            f'<div class="hb-digest-card-summary">{summary}</div>'
+            f'<span class="hb-digest-card-cta">Leer artículo</span>'
+            f'</a>'
+        )
+    return "\n      ".join(cards)
+
+
+def inject_digest_into_index(items: list[dict]) -> None:
+    """Incrusta las tarjetas del digest dentro de #digestGrid en index.html,
+    SOLO entre los marcadores DIGEST:START/END. No toca nada más del archivo."""
+    import re
+
+    if not INDEX_FILE.exists():
+        print("warn: index.html no encontrado; se omite la inyección")
+        return
+    doc = INDEX_FILE.read_text(encoding="utf-8")
+    if DIGEST_START not in doc or DIGEST_END not in doc:
+        print("warn: marcadores DIGEST no encontrados en index.html; se omite")
+        return
+    cards = _digest_cards_html(items)
+    block = f"{DIGEST_START}\n      {cards}\n      {DIGEST_END}"
+    new_doc = re.sub(
+        re.escape(DIGEST_START) + r".*?" + re.escape(DIGEST_END),
+        lambda _m: block,
+        doc,
+        flags=re.S,
+    )
+    if new_doc != doc:
+        INDEX_FILE.write_text(new_doc, encoding="utf-8")
+        print(f"index.html: digest incrustado en HTML real ({len(items[:4])} tarjetas)")
+    else:
+        print("index.html: digest sin cambios")
 
 
 def render_html(articles: list[dict], bootstrap: bool, fallback: bool = False) -> str:
@@ -458,6 +526,8 @@ def main() -> int:
 
     write_snapshot(top_for_widget)
     print(f"snapshot written: {SNAPSHOT_FILE}")
+
+    inject_digest_into_index(top_for_widget)
 
     if bootstrap:
         print("bootstrap run: sending welcome only")
