@@ -225,7 +225,7 @@ def write_snapshot(top_items: list[dict]) -> None:
     )
 
 
-def render_html(articles: list[dict], bootstrap: bool) -> str:
+def render_html(articles: list[dict], bootstrap: bool, fallback: bool = False) -> str:
     today = datetime.now(timezone.utc).strftime("%d %b %Y")
     if bootstrap:
         intro = (
@@ -238,13 +238,19 @@ def render_html(articles: list[dict], bootstrap: bool) -> str:
         items_html = ""
     elif not articles:
         intro = (
-            "<p>Sin novedades hoy en RoMM ni Myopia Profile. Volveremos mañana "
-            "a las 7:00 AM con el siguiente digest.</p>"
+            "<p>Hoy no encontramos publicaciones nuevas. Volveremos mañana "
+            "a las 7:00 AM con el próximo resumen del manejo de la miopía.</p>"
         )
         items_html = ""
     else:
-        word = "novedad destacada" if len(articles) == 1 else "novedades destacadas"
-        intro = f"<p style='color:#5A7184;margin:0 0 1.4em'>{len(articles)} {word} para hoy.</p>"
+        if fallback:
+            intro = (
+                "<p style='color:#5A7184;margin:0 0 1.4em'>Lo más reciente "
+                "del manejo de la miopía a esta hora.</p>"
+            )
+        else:
+            word = "novedad destacada" if len(articles) == 1 else "novedades destacadas"
+            intro = f"<p style='color:#5A7184;margin:0 0 1.4em'>{len(articles)} {word} para hoy.</p>"
         items_html = ""
         for i, art in enumerate(articles, 1):
             cat_color = art.get('category_color', '#F5C518')
@@ -466,9 +472,20 @@ def main() -> int:
         if len(new_items) > MAX_DIGEST_ITEMS:
             print(f"backlog: {len(new_items)} nuevos; se envían {len(email_articles)} "
                   f"(MAX_DIGEST_ITEMS={MAX_DIGEST_ITEMS}), el resto se marca como visto")
-        html = render_html(email_articles, bootstrap=False)
+        # Si no hay novedades nuevas, igual enviamos lo más reciente de las
+        # fuentes (las mismas tarjetas del home) para que el correo SIEMPRE
+        # traiga info actualizada, aunque se repita respecto a días previos.
+        fallback_mode = not email_articles
+        if fallback_mode:
+            email_articles = top_for_widget
+            print(f"sin novedades nuevas; fallback a lo más reciente: "
+                  f"{len(email_articles)} items")
+        html = render_html(email_articles, bootstrap=False, fallback=fallback_mode)
         today_short = datetime.now(timezone.utc).strftime("%d %b")
-        subject = f"📚 Digest MML · {len(email_articles)} novedades · {today_short}"
+        if fallback_mode:
+            subject = f"📚 Digest MML · Lo más reciente · {today_short}"
+        else:
+            subject = f"📚 Digest MML · {len(email_articles)} novedades · {today_short}"
 
     sent_via = "none"
     sent_count = 0
