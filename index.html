@@ -561,8 +561,8 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     <div class="hb-digest-grid" id="digestGrid">
       <!-- DIGEST:START -->
       <a class="hb-digest-card dg-clinical" href="https://www.myopiaprofile.com/articles/joint-position-statement-contact-lenses-for-myopia-control" target="_blank" rel="noopener"><span class="hb-digest-card-label">Control clínico</span><div class="hb-digest-card-src">Myopia Profile</div><div class="hb-digest-card-title">The Joint Position Statement on contact lenses for myopia management – Q&amp;A with Tacy Song We speak to Tacy Song about impact of the Joint Position Statement on contact lenses for myopia control in the Asia-Pacific region Read Full Article</div><div class="hb-digest-card-summary">Entrevista con Tacy Song sobre el impacto de la declaración de posición conjunta de lentes de contacto para el control de miopía en la región Asia-Pacífico, abordando directrices clínicas y recomendaciones terapéuticas.</div><span class="hb-digest-card-cta">Leer artículo</span></a>
-      <a class="hb-digest-card dg-practice" href="https://reviewofmm.com/pricing-myopia-control-stop-charging-for-a-lens-and-start-charging-for-a-program/" target="_blank" rel="noopener"><span class="hb-digest-card-label">Gestión de consultorio</span><div class="hb-digest-card-src">RoMM</div><div class="hb-digest-card-title">Pricing Myopia Control: Stop Charging for a Lens and Start Charging for a Program</div><div class="hb-digest-card-summary">El artículo aborda la estrategia de pricing en el manejo de la miopía, proponiendo transitar desde un modelo de cobro por producto hacia un modelo de programa médico longitudinal. Discute cómo reposicionar la oferta de control miópico como un servicio integral en lugar de un commodity tradicional.</div><span class="hb-digest-card-cta">Leer artículo</span></a>
-      <a class="hb-digest-card dg-industry" href="https://reviewofmm.com/muru-annamalai-named-president-asia-pacific-at-coopervision/" target="_blank" rel="noopener"><span class="hb-digest-card-label">Industria</span><div class="hb-digest-card-src">RoMM</div><div class="hb-digest-card-title">Muru Annamalai Named President, Asia-Pacific at CooperVision</div><div class="hb-digest-card-summary">CooperVision anunció el nombramiento de Muru Annamalai como Presidente para Asia-Pacífico a partir del 1 de junio de 2026. El ejecutivo cuenta con más de dos décadas de experiencia en liderazgo global en sectores farmacéutico y sanitario, posicionándose estratégicamente para impulsar el crecimiento en la región.</div><span class="hb-digest-card-cta">Leer artículo</span></a>
+      <a class="hb-digest-card dg-practice" href="https://reviewofmm.com/pricing-myopia-control-stop-charging-for-a-lens-and-start-charging-for-a-program/" target="_blank" rel="noopener"><span class="hb-digest-card-label">Gestión de consultorio</span><div class="hb-digest-card-src">Review of Myopia Management</div><div class="hb-digest-card-title">Pricing Myopia Control: Stop Charging for a Lens and Start Charging for a Program</div><div class="hb-digest-card-summary">El artículo aborda la estrategia de pricing en el manejo de la miopía, proponiendo transitar desde un modelo de cobro por producto hacia un modelo de programa médico longitudinal. Discute cómo reposicionar la oferta de control miópico como un servicio integral en lugar de un commodity tradicional.</div><span class="hb-digest-card-cta">Leer artículo</span></a>
+      <a class="hb-digest-card dg-industry" href="https://reviewofmm.com/muru-annamalai-named-president-asia-pacific-at-coopervision/" target="_blank" rel="noopener"><span class="hb-digest-card-label">Industria</span><div class="hb-digest-card-src">Review of Myopia Management</div><div class="hb-digest-card-title">Muru Annamalai Named President, Asia-Pacific at CooperVision</div><div class="hb-digest-card-summary">CooperVision anunció el nombramiento de Muru Annamalai como Presidente para Asia-Pacífico a partir del 1 de junio de 2026. El ejecutivo cuenta con más de dos décadas de experiencia en liderazgo global en sectores farmacéutico y sanitario, posicionándose estratégicamente para impulsar el crecimiento en la región.</div><span class="hb-digest-card-cta">Leer artículo</span></a>
       <!-- DIGEST:END -->
     </div>
 
@@ -1159,19 +1159,25 @@ function showTab(t,el){
   function escapeHtml(str){
     return (str || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
+  function sourceName(it){
+    var s = (it.source_short || it.source || '');
+    if (s === 'RoMM') return 'Review of Myopia Management';
+    if (s.indexOf('Myopia Profile') === 0) return 'Myopia Profile';
+    return s;
+  }
   fetch('data/digest-latest.json', {cache: 'no-store'})
     .then(r => { if (!r.ok) throw new Error('no snapshot'); return r.json(); })
     .then(data => {
       if (dateEl) dateEl.textContent = data.date_display || '—';
       const items = (data.items || []).slice(0, 3);
       if (items.length === 0) {
-        grid.innerHTML = '<div class="hb-digest-empty">Sin novedades hoy en las fuentes indexadas. Mañana 7:00 AM volvemos a indexar.</div>';
+        grid.innerHTML = '<div class="hb-digest-empty">Hoy no hay publicaciones nuevas. Mañana 7:00 AM volvemos con el próximo resumen.</div>';
         return;
       }
       grid.innerHTML = items.map(it => `
         <a class="hb-digest-card ${catClass(it)}" href="${escapeHtml(it.url)}" target="_blank" rel="noopener">
           <span class="hb-digest-card-label">${escapeHtml(it.category_label || 'Control clínico')}</span>
-          <div class="hb-digest-card-src">${escapeHtml(it.source_short || it.source)}</div>
+          <div class="hb-digest-card-src">${escapeHtml(sourceName(it))}</div>
           <div class="hb-digest-card-title">${escapeHtml(it.title)}</div>
           <div class="hb-digest-card-summary">${escapeHtml(it.summary_es || '')}</div>
           <span class="hb-digest-card-cta">Leer artículo</span>

@@ -246,11 +246,20 @@ def _digest_cards_html(items: list[dict]) -> str:
             "WEB": "dg-web",
         }.get(c, "dg-clinical")
 
+    def _source_name(it: dict) -> str:
+        # Nombre público completo: nada de abreviaturas técnicas (ej. "RoMM").
+        s = str(it.get("source_short") or it.get("source") or "")
+        if s == "RoMM":
+            return "Review of Myopia Management"
+        if s.startswith("Myopia Profile"):
+            return "Myopia Profile"
+        return s
+
     cards = []
     for it in items[:3]:
         cls = _cat_class(it)
         label = _html.escape(str(it.get("category_label") or "Control clínico"))
-        src = _html.escape(str(it.get("source_short") or it.get("source") or ""))
+        src = _html.escape(_source_name(it))
         title = _html.escape(str(it.get("title") or ""))
         summary = _html.escape(str(it.get("summary_es") or ""))
         url = _html.escape(str(it.get("url") or "#"), quote=True)
