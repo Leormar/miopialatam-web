@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-05T14:51:46.465937+00:00",
+  "generated_at": "2026-06-05T15:29:49.693484+00:00",
   "date_display": "05 Jun 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Sugar and Myopia: Revisiting the Metabolic Pathway in Ocular Growth",
-      "url": "https://reviewofmm.com/sugar-and-myopia-revisiting-the-metabolic-pathway-in-ocular-growth/",
-      "summary_es": "Artículo de revisión que examina la relación entre metabolismo glucídico y progresión miópica en pediatría, sugiriendo que factores dietéticos y exposición glucémica crónica podrían influir en el crecimiento ocular más allá de comportamientos de cerca y tiempo al aire libre.",
+      "title": "Safety Evaluation of Four Red Light Therapy Devices for Myopia",
+      "url": "https://reviewofmm.com/safety-evaluation-of-four-red-light-therapy-devices-for-myopia/",
+      "summary_es": "Evaluación de seguridad de cuatro dispositivos de terapia con luz roja para control de miopía, verificando el cumplimiento con estándares de seguridad ocular ANSI. Estudio publicado en JAMA Ophthalmology analiza dispositivos comercializados sin consenso clínico unánime sobre su impacto en salud retiniana.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
+      "title": "Matt Oerding Joins Sanitas Advisors",
+      "url": "https://reviewofmm.com/matt-oerding-joins-sanitas-advisors/",
+      "summary_es": "Matt Oerding se incorpora como socio a Sanitas Advisors, fortaleciendo las capacidades de la firma en estrategia de crecimiento y comercialización en salud. Con experiencia en Novartis, Alcon y cofundador de Treehouse Eyes, aportará expertise en modelos escalables de atención oftalmológica especializada pediátrica.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
       "title": "Muru Annamalai Named President, Asia-Pacific at CooperVision",
       "url": "https://reviewofmm.com/muru-annamalai-named-president-asia-pacific-at-coopervision/",
-      "summary_es": "CooperVision designa a Muru Annamalai como presidente de Asia-Pacífico a partir de junio de 2026. El ejecutivo con más de dos décadas de experiencia liderará el crecimiento comercial de la compañía en una de sus regiones estratégicamente más importantes.",
+      "summary_es": "CooperVision anunció el nombramiento de Muru Annamalai como Presidente de Asia-Pacífico a partir de junio de 2026. Con más de dos décadas de experiencia en liderazgo global, Annamalai asumirá la dirección de operaciones en una de las regiones más estratégicas para la compañía.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -25,19 +35,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Multifocal Soft Contact Lenses on the Shape Discrimination Threshold in Myopic Children",
-      "url": "https://reviewofmm.com/multifocal-soft-contact-lenses-on-the-shape-discrimination-threshold/",
-      "summary_es": "Estudio evalúa el desempeño visual de lentes de contacto blandos multifocales en niños miopes bajo condiciones de brillo y sin brillo, analizando su impacto funcional en la discriminación de formas para optimizar el cumplimiento del tratamiento de control de miopía.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "The Latest Research on Combination Therapy for Myopia Management",
-      "url": "https://reviewofmm.com/the-latest-research-on-combination-therapy-for-myopia-management/",
-      "summary_es": "La terapia combinada emerge como opción preferente para pacientes con progresión miópica persistente. La combinación de ortoqueratología con atropina a baja dosis demuestra eficacia replicada en múltiples ensayos, mientras que la fototerapia roja de bajo nivel muestra resultados prometedores pero requiere más datos a largo plazo.",
+      "title": "The Visual Diet in Myopia",
+      "url": "https://reviewofmm.com/the-visual-diet-in-myopia/",
+      "summary_es": "Análisis sobre cómo las señales visuales específicas, particularmente la luz y patrones de imagen retiniana, modulan la progresión miópica más allá de conceptos generales como tiempo al aire libre y reducción de trabajo cercano.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
