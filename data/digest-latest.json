@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-08T16:38:14.832470+00:00",
-  "date_display": "08 Jun 2026",
+  "generated_at": "2026-06-09T12:00:50.371765+00:00",
+  "date_display": "09 Jun 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Safety Evaluation of Four Red Light Therapy Devices for Myopia",
       "url": "https://reviewofmm.com/safety-evaluation-of-four-red-light-therapy-devices-for-myopia/",
-      "summary_es": "Estudio de evaluación de seguridad de cuatro dispositivos de terapia con luz roja para control de miopía, publicado en JAMA Ophthalmology. El análisis examina el cumplimiento de estos dispositivos comerciales con los límites de seguridad ocular establecidos por ANSI, ante la adopción creciente sin consenso clínico unánime sobre su impacto en la salud retiniana.",
+      "summary_es": "Estudio de seguridad de cuatro dispositivos de fototerapia roja para control de miopía, evaluando cumplimiento con estándares ANSI de seguridad ocular. Investigación de laboratorio que valida independientemente la inocuidad retiniana de estos dispositivos comercializados en población pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Matt Oerding Joins Sanitas Advisors",
       "url": "https://reviewofmm.com/matt-oerding-joins-sanitas-advisors/",
-      "summary_es": "Matt Oerding se incorpora como socio en Sanitas Advisors, aportando experiencia en estrategia de crecimiento sanitario y ejecución comercial desde roles previos en Novartis, Alcon y Treehouse Eyes, fortaleciendo las capacidades de la firma en modelos de atención oftalmológica especializada.",
+      "summary_es": "Matt Oerding se integra como socio en Sanitas Advisors, aportando experiencia en estrategia de crecimiento sanitario y modelos de entrega de atención especializada en oftalmología pediátrica, consolidando las capacidades de la firma en comercialización y ejecución de mercado.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "Muru Annamalai Named President, Asia-Pacific at CooperVision",
       "url": "https://reviewofmm.com/muru-annamalai-named-president-asia-pacific-at-coopervision/",
-      "summary_es": "CooperVision nombró a Muru Annamalai como Presidente para la región Asia-Pacífico a partir del 1 de junio de 2026. El ejecutivo cuenta con más de dos décadas de experiencia en liderazgo global en sectores farmacéutico y sanitario, reflejando la inversión estratégica de la compañía en su crecimiento regional.",
+      "summary_es": "CooperVision anunció el nombramiento de Muru Annamalai como Presidente para Asia-Pacífico a partir del 1 de junio de 2026. Su designación refleja el compromiso de la compañía con el crecimiento estratégico en una de sus regiones más dinámicas e importantes.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "The Visual Diet in Myopia",
       "url": "https://reviewofmm.com/the-visual-diet-in-myopia/",
-      "summary_es": "Artículo que analiza los mecanismos visuales subyacentes a la prevención de miopía, enfatizando que la retina responde a señales luminosas y patrones específicos más que a actividades genéricas, replanteando el concepto de \"tiempo al aire libre\" como variable de control miópico.",
+      "summary_es": "Artículo que analiza cómo la señal visual específica recibida por la retina durante actividades al aire libre, más que la actividad en sí, es determinante en la prevención de miopía. Propone reinterpretar las recomendaciones de tiempo outdoor como estrategia basada en patrones visuales específicos.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
