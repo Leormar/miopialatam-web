@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-10T16:24:51.870776+00:00",
-  "date_display": "10 Jun 2026",
+  "generated_at": "2026-06-11T12:00:52.663135+00:00",
+  "date_display": "11 Jun 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Safety Evaluation of Four Red Light Therapy Devices for Myopia",
       "url": "https://reviewofmm.com/safety-evaluation-of-four-red-light-therapy-devices-for-myopia/",
-      "summary_es": "Estudio de seguridad ocular de cuatro dispositivos de terapia con luz roja para control de miopía, evaluando el cumplimiento con estándares ANSI. Los resultados aportan evidencia independiente sobre la seguridad retiniana de estos dispositivos de uso comercial creciente en población pediátrica.",
+      "summary_es": "Estudio de seguridad ocular de cuatro dispositivos de terapia con luz roja para control de miopía, evaluando su cumplimiento con estándares de seguridad oftalmológica establecidos por ANSI. Los hallazgos contribuyen a validar independientemente la seguridad retiniana de estos dispositivos comerciales de uso pediátrico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,17 +17,7 @@
       "source_short": "RoMM",
       "title": "Matt Oerding Joins Sanitas Advisors",
       "url": "https://reviewofmm.com/matt-oerding-joins-sanitas-advisors/",
-      "summary_es": "Matt Oerding se incorpora como socio de Sanitas Advisors, fortaleciendo sus capacidades en estrategia de crecimiento sanitario y ejecución de mercado. Su experiencia incluye roles directivos en Novartis y Alcon, además de cofundar Treehouse Eyes, organización líder en manejo pediátrico de miopía.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Muru Annamalai Named President, Asia-Pacific at CooperVision",
-      "url": "https://reviewofmm.com/muru-annamalai-named-president-asia-pacific-at-coopervision/",
-      "summary_es": "CooperVision designó a Muru Annamalai como Presidente de Asia-Pacífico a partir de junio de 2026. El ejecutivo cuenta con más de veinte años de experiencia en liderazgo global en sectores farmacéutico y sanitario, con trayectoria comprobada en mercados de Asia-Pacífico y América Latina.",
+      "summary_es": "Matt Oerding se une a Sanitas Advisors como socio, fortaleciendo las capacidades de la firma en estrategia de crecimiento sanitario y ejecución comercial. Con experiencia previa en Novartis, Alcon y Treehouse Eyes, aporta expertise en modelos escalables de entrega de atención oftalmológica especializada.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +27,17 @@
       "source_short": "RoMM",
       "title": "The Visual Diet in Myopia",
       "url": "https://reviewofmm.com/the-visual-diet-in-myopia/",
-      "summary_es": "Artículo que analiza cómo las señales visuales específicas, más que las actividades en sí mismas, modulan el desarrollo miópico en niños, enfatizando el rol de la luz y patrones retinianos en la prevención de la miopía.",
+      "summary_es": "Análisis de cómo las señales visuales específicas, particularmente la luz y los patrones de imagen retiniana, son determinantes en la prevención de miopía infantil, profundizando más allá de recomendaciones convencionales como tiempo al aire libre y reducción de cerca.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Sugar and Myopia: Revisiting the Metabolic Pathway in Ocular Growth",
+      "url": "https://reviewofmm.com/sugar-and-myopia-revisiting-the-metabolic-pathway-in-ocular-growth/",
+      "summary_es": "Revisión sobre la relación entre metabolismo glucídico y progresión miópica en población pediátrica. El artículo analiza cómo factores dietéticos y exposición glicémica crónica influyen en el crecimiento ocular más allá de comportamientos de cercanía y actividades al aire libre.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
