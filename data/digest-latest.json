@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T16:01:49.384903+00:00",
+  "generated_at": "2026-06-11T16:31:37.707173+00:00",
   "date_display": "11 Jun 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Safety Evaluation of Four Red Light Therapy Devices for Myopia",
       "url": "https://reviewofmm.com/safety-evaluation-of-four-red-light-therapy-devices-for-myopia/",
-      "summary_es": "Estudio de seguridad ocular de cuatro dispositivos de fototerapia roja comercializados para control de miopía, evaluando su cumplimiento con estándares de seguridad oftalmológica establecidos por ANSI y su impacto en la salud retiniana pediátrica.",
+      "summary_es": "Estudio de evaluación de seguridad de cuatro dispositivos de fototerapia roja para control de miopía, analizando su cumplimiento con los límites de seguridad ocular establecidos por ANSI y validando el impacto en la salud retiniana de estos aparatos comercializados en población pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,17 @@
       "source_short": "RoMM",
       "title": "Matt Oerding Joins Sanitas Advisors",
       "url": "https://reviewofmm.com/matt-oerding-joins-sanitas-advisors/",
-      "summary_es": "Matt Oerding se integra a Sanitas Advisors como socio, aportando experiencia en estrategia de crecimiento sanitario y ejecución comercial desde sus roles previos en Novartis, Alcon y Treehouse Eyes, organización líder en manejo pediátrico de miopía.",
+      "summary_es": "Matt Oerding se incorpora como socio en Sanitas Advisors, aportando experiencia en estrategia de crecimiento sanitario y modelos de entrega especializada en oftalmología pediátrica tras su trayectoria en Novartis, Alcon y Treehouse Eyes.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Muru Annamalai Named President, Asia-Pacific at CooperVision",
+      "url": "https://reviewofmm.com/muru-annamalai-named-president-asia-pacific-at-coopervision/",
+      "summary_es": "CooperVision anunció el nombramiento de Muru Annamalai como Presidente para Asia-Pacífico, efectivo desde junio de 2026. El ejecutivo cuenta con más de dos décadas de experiencia en liderazgo global en sectores farmacéutico y sanitario, reflejando la inversión estratégica de la compañía en la región.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,17 +37,7 @@
       "source_short": "RoMM",
       "title": "The Visual Diet in Myopia",
       "url": "https://reviewofmm.com/the-visual-diet-in-myopia/",
-      "summary_es": "Artículo analiza cómo las señales visuales específicas, más que las actividades en sí, regulan el desarrollo miópico. Propone que el tiempo al aire libre actúa como variable proxy de estímulos retinianos particulares relevantes para la prevención miópica pediátrica.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Sugar and Myopia: Revisiting the Metabolic Pathway in Ocular Growth",
-      "url": "https://reviewofmm.com/sugar-and-myopia-revisiting-the-metabolic-pathway-in-ocular-growth/",
-      "summary_es": "Artículo de revisión que examina la relación entre metabolismo glucémico y progresión miópica en niños, sugiriendo que factores dietéticos y exposición glucémica crónica podrían influir en el crecimiento ocular más allá de comportamientos de cerca y tiempo al aire libre.",
+      "summary_es": "Análisis de cómo las señales visuales específicas (luz y patrones retinianos) generadas por diferentes actividades impactan el desarrollo miópico, más allá de recomendaciones generales como tiempo al aire libre y reducción de trabajo cercano.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
