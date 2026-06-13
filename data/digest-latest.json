@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T14:00:02.383518+00:00",
+  "generated_at": "2026-06-13T14:30:03.082560+00:00",
   "date_display": "13 Jun 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "9 Years of Trust: Why I Prescribe NaturalVue",
       "url": "https://reviewofmm.com/9-years-of-trust-why-i-prescribe-naturalvue/",
-      "summary_es": "Profesional comparte nueve años de experiencia prescribiendo lentes de contacto multifocales NaturalVue para control miópico en pacientes pediátricos, destacando el diseño de centro distancia y profundidad de foco extendida como ventajas clínicas en modalidad de uso diario desechable.",
+      "summary_es": "Testimonio de profesional sobre nueve años de experiencia prescribiendo lentes de contacto multifocales NaturalVue para manejo de miopía en pacientes pediátricos, destacando el diseño center-distance con profundidad de foco extendida y modalidad de uso diario desechable.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,17 @@
       "source_short": "RoMM",
       "title": "Matt Oerding Joins Sanitas Advisors",
       "url": "https://reviewofmm.com/matt-oerding-joins-sanitas-advisors/",
-      "summary_es": "Matt Oerding se incorpora como socio en Sanitas Advisors, aportando experiencia en estrategia de crecimiento sanitario y comercialización. Su trayectoria incluye liderazgo en Novartis y Alcon, así como la cofundación de Treehouse Eyes, organización pionera en modelos escalables de manejo pediátrico de miopía.",
+      "summary_es": "Matt Oerding se incorpora como socio a Sanitas Advisors, fortaleciendo las capacidades de la firma en estrategia de crecimiento sanitario y ejecución de mercado. Su experiencia incluye liderazgo en Novartis y Alcon, así como la cofundación de Treehouse Eyes, organización pionera en modelos escalables de atención oftalmológica pediátrica especializada.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "When Myopia Crisis Drives Reform – Not Awareness",
+      "url": "https://reviewofmm.com/when-myopia-crisis-drives-reform-not-awareness/",
+      "summary_es": "Análisis sobre cómo la crisis de miopía global impulsa reformas en salud visual pediátrica más allá de la sensibilización, enfatizando que la intervención temprana es fundamental para el acceso y la acción en la salud visual de los niños a largo plazo.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,17 +37,7 @@
       "source_short": "RoMM",
       "title": "Safety Evaluation of Four Red Light Therapy Devices for Myopia",
       "url": "https://reviewofmm.com/safety-evaluation-of-four-red-light-therapy-devices-for-myopia/",
-      "summary_es": "Estudio evaluó la seguridad ocular de cuatro dispositivos comerciales de terapia con luz roja para control de miopía, verificando el cumplimiento de los límites de seguridad establecidos por ANSI. Los resultados aportan evidencia independiente sobre la validación clínica de estos dispositivos de adopción creciente en pediatría.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "The Visual Diet in Myopia",
-      "url": "https://reviewofmm.com/the-visual-diet-in-myopia/",
-      "summary_es": "Artículo analiza cómo la señal visual específica que recibe la retina durante actividades al aire libre, más que la actividad en sí misma, es lo que determina el control de la miopía en niños. Profundiza en los mecanismos fisiológicos subyacentes a las recomendaciones tradicionales de prevención miópica.",
+      "summary_es": "Estudio de seguridad ocular de cuatro dispositivos de fototerapia roja para control de miopía, evaluando su cumplimiento con estándares ANSI de la American National Standards Institute y validando potenciales riesgos en salud retiniana de dispositivos comercialmente disponibles.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
