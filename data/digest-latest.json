@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-06-15T17:33:49.398308+00:00",
-  "date_display": "15 Jun 2026",
+  "generated_at": "2026-06-16T12:01:00.743203+00:00",
+  "date_display": "16 Jun 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Elevating Care and Education With Strong Infrastructure",
-      "url": "https://reviewofmm.com/elevating-care-and-education-with-strong-infrastructure/",
-      "summary_es": "Experiencia académica en programas de control de miopía desarrollados en instituciones universitarias, destacando la importancia de la infraestructura educativa y clínica para el manejo de miopía alta, con énfasis en protocolos terapéuticos innovadores y formación profesional especializada.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "OCULUS maps for evaluating ortho-k: Epithelial Reshaping Power Map Learn how to obtain a more accurate evaluation of refractive change from ortho-k with the recently released map in the OCULUS Pentacam. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Epithelial-reshaping-power-map-oculus-evalute-ortho-k",
+      "summary_es": "OCULUS lanzó un nuevo mapa en el Pentacam para evaluar con mayor precisión los cambios refractivos inducidos por ortoqueratología mediante mapeo del poder de remodelación epitelial.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Georgia Mobile School Clinic Removes Children’s Barriers To Care",
-      "url": "https://reviewofmm.com/georgia-mobile-school-clinic-removes-childrens-barriers-to-care/",
-      "summary_es": "Clínica móvil escolar en Georgia implementa modelo innovador de atención oftalmológica directa en instituciones educativas, eliminando barreras de transporte y mejorando la adherencia al tratamiento correctivo en población pediátrica.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
     },
     {
       "source": "Myopia Profile · Clinical",
       "source_short": "Myopia Profile",
       "title": "EssilorLuxottica at ARVO 2026: key insights in myopia research EssilorLuxottica brought new research advancements to ARVO 2026 on Essilor® Stellest® lenses and more. Here's what clinicians need to know. Read Full Article",
       "url": "https://www.myopiaprofile.com/articles/essilorluxottica-arvo-2026-insights",
-      "summary_es": "EssilorLuxottica presentó avances investigativos en ARVO 2026 destacando resultados actualizados sobre lentes Essilor® Stellest® y otras innovaciones relevantes para el manejo de la miopía en la práctica clínica latinoamericana.",
+      "summary_es": "EssilorLuxottica presentó avances en investigación de miopía durante ARVO 2026, incluyendo nuevos datos sobre lentes Essilor® Stellest®. Los hallazgos proporcionan información relevante para profesionales clínicos en el manejo del control miópico.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Myopia Management: Product or Program?",
-      "url": "https://reviewofmm.com/myopia-management-product-or-program/",
-      "summary_es": "Análisis sobre la implementación de lentes para control de miopía como producto aislado versus dentro de un programa integral de manejo. Debate profesional sobre protocolos terapéuticos y criterios de prescripción en consultorios oftalmológicos.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Inside the Consultation Room – Q&A on mEYE® Suite with Amit Sharma Amit Sharma discusses using Ocumetra’s mEYE® Suite in practice. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Amit-Sharma-using-Ocumetra-mEYE-Suite-in-practice",
+      "summary_es": "Ocumetra presenta mEYE® Suite, una plataforma digital para la gestión integral de pacientes con miopía. La herramienta facilita el análisis de datos clínicos y la organización del consultorio oftalmológico.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
+    },
+    {
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Evaluating refractive change from ortho-k: which map to use? This article goes through what corneal topography maps mean geometrically to aid clinical decision making. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Which-map-to-use-when-evaluating-refractive-change-ortho-k",
+      "summary_es": "Análisis de mapas de topografía corneal en ortoqueratología para interpretar correctamente los cambios refractivos y optimizar la toma de decisiones clínicas durante el control de la miopía.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
