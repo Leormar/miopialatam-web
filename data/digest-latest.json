@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-06-22T16:57:41.581165+00:00",
+  "generated_at": "2026-06-22T17:14:25.267666+00:00",
   "date_display": "22 Jun 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "How Age Affects MiSight and OrthoK Success in Children",
-      "url": "https://reviewofmm.com/how-age-affects-misight-and-orthok-success-in-children/",
-      "summary_es": "Estudio retrospectivo comparativo de 239 ojos en niños de 8 a 18 años evalúa la efectividad de lentes MiSight y ortoqueratología en desacelerar la elongación axial y progresión miópica durante 18 meses, estratificando resultados por grupos etarios.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "OCULUS maps for evaluating ortho-k: Epithelial Reshaping Power Map Learn how to obtain a more accurate evaluation of refractive change from ortho-k with the recently released map in the OCULUS Pentacam. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Epithelial-reshaping-power-map-oculus-evalute-ortho-k",
+      "summary_es": "OCULUS lanzó un nuevo mapa en el Pentacam para evaluar con mayor precisión los cambios refractivos y el remodelado epitelial inducido por ortoqueratología, mejorando el control clínico y seguimiento de este tratamiento.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Bringing Myopia Management to Rural Areas",
-      "url": "https://reviewofmm.com/bringing-myopia-management-to-rural-areas/",
-      "summary_es": "Estrategia para implementar programas de manejo de miopía en áreas rurales, basada en experiencia de práctica privada en Wyoming. Se aborda accesibilidad, sostenibilidad e integración comunitaria de servicios de control miópico.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Day of Advocacy Puts Myopia Management Momentum in the Spotlight",
-      "url": "https://reviewofmm.com/day-of-advocacy-puts-myopia-management-momentum-in-the-spotlight/",
-      "summary_es": "The Myopia Collective realizó su primer \"Day of Advocacy\" destacando iniciativas de educación entre pares y compromiso estudiantil para expandir conciencia sobre manejo de miopía a nivel profesional y comunitario. El evento presentó logros de Change Agents y nuevos programas de formación estudiantil en materia de control miópico.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "EssilorLuxottica at ARVO 2026: key insights in myopia research EssilorLuxottica brought new research advancements to ARVO 2026 on Essilor® Stellest® lenses and more. Here's what clinicians need to know. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/essilorluxottica-arvo-2026-insights",
+      "summary_es": "EssilorLuxottica presentó avances de investigación en ARVO 2026 sobre lentes Essilor® Stellest® y desarrollos adicionales relevantes para el manejo clínico de la miopía en la región.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Keeping Staff Educated and Motivated in Myopia Management",
-      "url": "https://reviewofmm.com/keeping-staff-educated-and-motivated-in-myopia-management/",
-      "summary_es": "El artículo aborda la importancia de capacitar y motivar al personal clínico en programas de manejo de miopía para fortalecer el crecimiento de la práctica. Destaca que el éxito depende de estrategias intencionales de educación continua del equipo.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Inside the Consultation Room – Q&A on mEYE® Suite with Amit Sharma Amit Sharma discusses using Ocumetra’s mEYE® Suite in practice. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Amit-Sharma-using-Ocumetra-mEYE-Suite-in-practice",
+      "summary_es": "Ocumetra presenta mEYE® Suite, una plataforma digital para optimizar la gestión de consultas oftalmológicas. La herramienta integra análisis de datos clínicos y facilita el seguimiento de pacientes con miopía en la práctica diaria.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
+    },
+    {
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Evaluating refractive change from ortho-k: which map to use? This article goes through what corneal topography maps mean geometrically to aid clinical decision making. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Which-map-to-use-when-evaluating-refractive-change-ortho-k",
+      "summary_es": "Artículo que analiza la interpretación de mapas de topografía corneal en ortoqueratología para optimizar la toma de decisiones clínicas y evaluar los cambios refractivos inducidos por el tratamiento.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
