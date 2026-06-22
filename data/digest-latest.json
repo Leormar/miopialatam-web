@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-22T12:00:56.369150+00:00",
+  "generated_at": "2026-06-22T16:57:41.581165+00:00",
   "date_display": "22 Jun 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Elevating Care and Education With Strong Infrastructure",
-      "url": "https://reviewofmm.com/elevating-care-and-education-with-strong-infrastructure/",
-      "summary_es": "Experiencia educativa en programas de manejo de miopía dentro de instituciones académicas, enfocada en la capacitación de profesionales y transformación del paradigma clínico respecto al control de la progresión miópica en pacientes pediátricos y adultos jóvenes.",
+      "title": "How Age Affects MiSight and OrthoK Success in Children",
+      "url": "https://reviewofmm.com/how-age-affects-misight-and-orthok-success-in-children/",
+      "summary_es": "Estudio retrospectivo comparativo de 239 ojos en niños de 8 a 18 años evalúa la efectividad de lentes MiSight y ortoqueratología en desacelerar la elongación axial y progresión miópica durante 18 meses, estratificando resultados por grupos etarios.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Georgia Mobile School Clinic Removes Children’s Barriers To Care",
-      "url": "https://reviewofmm.com/georgia-mobile-school-clinic-removes-childrens-barriers-to-care/",
-      "summary_es": "La Fundación Georgia Lions Lighthouse implementa una clínica móvil escolar que lleva atención oftalmológica integral directamente a las instituciones educativas, eliminando barreras de transporte y acceso para familias, mejorando significativamente la adherencia al uso de lentes correctivos en población pediátrica.",
+      "title": "Bringing Myopia Management to Rural Areas",
+      "url": "https://reviewofmm.com/bringing-myopia-management-to-rural-areas/",
+      "summary_es": "Estrategia para implementar programas de manejo de miopía en áreas rurales, basada en experiencia de práctica privada en Wyoming. Se aborda accesibilidad, sostenibilidad e integración comunitaria de servicios de control miópico.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "Day of Advocacy Puts Myopia Management Momentum in the Spotlight",
       "url": "https://reviewofmm.com/day-of-advocacy-puts-myopia-management-momentum-in-the-spotlight/",
-      "summary_es": "The Myopia Collective realizó su primer \"Day of Advocacy\" para destacar iniciativas de educación entre pares y compromiso estudiantil en la expansión de conciencia sobre manejo de miopía. El evento reunió Change Agents y defensores nacionales compartiendo logros de advocacy y esfuerzos en práctica, comunidad y escuelas.",
+      "summary_es": "The Myopia Collective realizó su primer \"Day of Advocacy\" destacando iniciativas de educación entre pares y compromiso estudiantil para expandir conciencia sobre manejo de miopía a nivel profesional y comunitario. El evento presentó logros de Change Agents y nuevos programas de formación estudiantil en materia de control miópico.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "The Myopia Collective Adds 40 New Advocates",
-      "url": "https://reviewofmm.com/the-myopia-collective-adds-40-new-advocates/",
-      "summary_es": "The Myopia Collective amplió su red en un 49% incorporando 22 nuevos Change Agents y el primer grupo de Student Change Agents, fortaleciendo iniciativas de educación y adopción de manejo de miopía en la comunidad oftalmológica.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "title": "Keeping Staff Educated and Motivated in Myopia Management",
+      "url": "https://reviewofmm.com/keeping-staff-educated-and-motivated-in-myopia-management/",
+      "summary_es": "El artículo aborda la importancia de capacitar y motivar al personal clínico en programas de manejo de miopía para fortalecer el crecimiento de la práctica. Destaca que el éxito depende de estrategias intencionales de educación continua del equipo.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
     }
   ]
 }
