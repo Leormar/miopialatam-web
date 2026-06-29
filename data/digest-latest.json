@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-29T12:00:56.635084+00:00",
+  "generated_at": "2026-06-29T15:47:10.134391+00:00",
   "date_display": "29 Jun 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "How Age Affects MiSight and OrthoK Success in Children",
-      "url": "https://reviewofmm.com/how-age-affects-misight-and-orthok-success-in-children/",
-      "summary_es": "Estudio retrospectivo comparativo de 239 ojos en niños de 8 a 18 años que evalúa la efectividad de lentes de contacto de enfoque dual MiSight y ortoqueratología en el control de la elongación axial y progresión miópica durante 18 meses, estratificando resultados por grupos etarios.",
+      "title": "Who is Paying Attention?",
+      "url": "https://reviewofmm.com/who-is-paying-attention/",
+      "summary_es": "Artículo de opinión que reflexiona sobre la importancia de la atención y conciencia en el manejo de la miopía, utilizando una anécdota de vuelo para contextualizar la necesidad de que pacientes y profesionales presten atención a los protocolos y recomendaciones terapéuticas en el control miópico pediátrico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Bringing Myopia Management to Rural Areas",
       "url": "https://reviewofmm.com/bringing-myopia-management-to-rural-areas/",
-      "summary_es": "Experiencia de implementación de programas de manejo de miopía en áreas rurales, compartiendo estrategias prácticas para construir servicios sostenibles e integrados en comunidades de acceso limitado, basado en aprendizajes de múltiples implementaciones.",
+      "summary_es": "Experiencia de construcción de programas de manejo de miopía en entornos rurales mediante integración comunitaria. Documento aborda estrategias prácticas para implementar servicios sostenibles de control miópico en áreas de acceso limitado.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "ARVO 2026: Leading the Shift to Integrated Evidence in Myopia Management",
       "url": "https://reviewofmm.com/arvo-2026-leading-the-shift-to-integrated-evidence-in-myopia-management/",
-      "summary_es": "EssilorLuxottica presenta hallazgos sobre manejo de miopía en ARVO 2026, incluyendo investigaciones sobre progresión miópica, resultados clínicos a largo plazo e integración de evidencia de ensayos clínicos y práctica real. Se destaca la base de evidencia que respalda los lentes Essilor® Stellest® en control miópico.",
+      "summary_es": "EssilorLuxottica presenta investigación sobre manejo de miopía en ARVO 2026, destacando evidencia clínica de lentes Essilor Stellest e integrando hallazgos de ensayos clínicos con datos de práctica real en poblaciones diversas.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Keeping Staff Educated and Motivated in Myopia Management",
-      "url": "https://reviewofmm.com/keeping-staff-educated-and-motivated-in-myopia-management/",
-      "summary_es": "El artículo aborda la importancia de la educación y motivación del personal en programas de manejo de miopía. Destaca que el éxito de estas iniciativas depende de estrategias intencionales de capacitación continua y compromiso del equipo de trabajo en la práctica oftalmológica.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
+      "title": "How Age Affects MiSight and OrthoK Success in Children",
+      "url": "https://reviewofmm.com/how-age-affects-misight-and-orthok-success-in-children/",
+      "summary_es": "Estudio retrospectivo comparativo de 239 ojos en niños de 8 a 18 años evalúa la efectividad según edad de lentes de contacto blandos MiSight y ortoqueratología en control de elongación axial y progresión miópica durante 18 meses.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
