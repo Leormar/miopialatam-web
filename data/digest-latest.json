@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-30T15:16:29.955828+00:00",
-  "date_display": "30 Jun 2026",
+  "generated_at": "2026-07-01T12:01:02.685640+00:00",
+  "date_display": "01 Jul 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Who is Paying Attention?",
       "url": "https://reviewofmm.com/who-is-paying-attention/",
-      "summary_es": "Artículo reflexivo sobre la importancia de la atención en la educación y el manejo de la miopía pediátrica, utilizando una anécdota de vuelo para ilustrar cómo los padres y profesionales deben estar atentos a los signos tempranos de progresión miópica en niños.",
+      "summary_es": "Artículo de opinión que utiliza una anécdota de vuelo para reflexionar sobre la importancia de la atención y conciencia en el manejo de la miopía pediátrica, enfatizando la necesidad de que profesionales y padres reconozcan signos tempranos de progresión miópica en niños.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Bringing Myopia Management to Rural Areas",
       "url": "https://reviewofmm.com/bringing-myopia-management-to-rural-areas/",
-      "summary_es": "Estrategia para implementar programas de manejo de miopía en zonas rurales, con énfasis en la sostenibilidad, integración comunitaria y lecciones aprendidas de múltiples experiencias de desarrollo de práctica desde cero en diferentes localidades.",
+      "summary_es": "Profesional comparte estrategias para implementar programas de manejo de miopía en zonas rurales, basándose en su experiencia replicando iniciativas en diferentes comunidades. Enfatiza la importancia de sostenibilidad, accesibilidad e integración con el sistema de atención local.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "ARVO 2026: Leading the Shift to Integrated Evidence in Myopia Management",
       "url": "https://reviewofmm.com/arvo-2026-leading-the-shift-to-integrated-evidence-in-myopia-management/",
-      "summary_es": "EssilorLuxottica presentó investigaciones sobre manejo de miopía en ARVO 2026, destacando evidencia clínica de lentes Essilor® Stellest® y perspectivas de expertos internacionales sobre progresión miópica y resultados a largo plazo en diversas poblaciones de pacientes.",
+      "summary_es": "EssilorLuxottica presenta investigación sobre manejo de miopía en ARVO 2026, destacando evidencia clínica de lentes Essilor® Stellest® e integrando hallazgos de ensayos clínicos con datos de práctica real y diversas poblaciones de pacientes.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "How Age Affects MiSight and OrthoK Success in Children",
       "url": "https://reviewofmm.com/how-age-affects-misight-and-orthok-success-in-children/",
-      "summary_es": "Estudio retrospectivo compara la efectividad de lentes de contacto MiSight y ortoqueratología según grupos etarios (≤10 y >10 años) en 239 ojos, evaluando elongación axial y progresión miópica durante 18 meses en menores de 8 a 18 años.",
+      "summary_es": "Estudio retrospectivo compara la efectividad de lentes de contacto blandos MiSight y ortoqueratología en el control de la elongación axial según grupo etario en niños de 8 a 18 años durante 18 meses de seguimiento, evaluando 239 ojos tratados con ambas modalidades.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
