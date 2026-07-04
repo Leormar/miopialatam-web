@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-07-03T14:56:13.135241+00:00",
-  "date_display": "03 Jul 2026",
+  "generated_at": "2026-07-04T12:01:32.825998+00:00",
+  "date_display": "04 Jul 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Who is Paying Attention?",
-      "url": "https://reviewofmm.com/who-is-paying-attention/",
-      "summary_es": "Artículo reflexivo sobre la importancia de la atención en el manejo de la miopía, utilizando una anécdota de vuelo para ilustrar cómo la falta de conciencia sobre protocolos de control miópico afecta el diagnóstico y tratamiento temprano en población pediátrica.",
+      "source": "Myopia Profile · Science",
+      "source_short": "Myopia Profile",
+      "title": "Preliminary observations from opaque-feature contact lenses in myopia This pilot study of contact lenses with opaque features in myopic children found no clear evidence of accelerated eye growth or clinically insignificant ocular complications over 14 months. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/preliminary-observations-opaque-feature-contact-lenses-myopia",
+      "summary_es": "Estudio piloto evaluó lentes de contacto con características opacas en niños miopes durante 14 meses, sin evidencia de crecimiento ocular acelerado ni complicaciones oculares clínicamente significativas.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Bringing Myopia Management to Rural Areas",
-      "url": "https://reviewofmm.com/bringing-myopia-management-to-rural-areas/",
-      "summary_es": "Experiencia de profesional en la implementación de programas de manejo de miopía en zonas rurales, compartiendo estrategias para hacer accesible y sostenible la atención integrada en comunidades con recursos limitados a través de iniciativas como Myopia Collective.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "CooperVision Announces New Children’s Vision Campaign",
-      "url": "https://reviewofmm.com/coopervision-announces-new-childrens-vision-campaign/",
-      "summary_es": "CooperVision anuncia nueva campaña educativa sobre visión infantil en asociación con museo estadounidense, incluyendo patrocinio de programa de verano, experiencias interactivas y screenings visuales gratuitos para expandir acceso a la atención oftalmológica pediátrica.",
+      "source": "Myopia Profile · Science",
+      "source_short": "Myopia Profile",
+      "title": "ARVO2026 Recap #5 – The big picture in myopia management The final recap from ARVO 2026 explores the public health impacts of myopia, covering clinical support tools, quality of life, and parental attitudes to myopia management. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/recap-5-ARVO-2026",
+      "summary_es": "ARVO 2026 presenta análisis sobre impacto de salud pública de la miopía, abordando herramientas clínicas de apoyo, calidad de vida y perspectivas parentales en el manejo de la condición refractiva.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "ARVO 2026: Leading the Shift to Integrated Evidence in Myopia Management",
-      "url": "https://reviewofmm.com/arvo-2026-leading-the-shift-to-integrated-evidence-in-myopia-management/",
-      "summary_es": "EssilorLuxottica presentó en ARVO 2026 investigaciones sobre manejo de miopía, incluyendo progresión miópica, resultados clínicos a largo plazo e integración de evidencia de ensayos clínicos y práctica real. Se destacó la base de evidencia que respalda los lentes Essilor® Stellest® en el control miópico.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "source": "Myopia Profile · Science",
+      "source_short": "Myopia Profile",
+      "title": "Multifocal spectacles delay myopia onset in pre-myopic children This study found microlens spectacle lenses reduced axial elongation and delay myopia onset in pre-myopic children, with comparable efficacy across DIMS, HAL and DSDO lens designs. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/microlens-spectacles-delay-myopia-onset-pre-myopia-children",
+      "summary_es": "Estudio demuestra que lentes oftálmicas multifocales con microlentes reducen el alargamiento axial y retrasan el inicio de miopía en niños pre-miópicos, con eficacia comparable entre los diseños DIMS, HAL y DSDO.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    },
+    {
+      "source": "Myopia Profile · Science",
+      "source_short": "Myopia Profile",
+      "title": "How atropine concentration affects visual function in myopic children This was a systematic review of atropine concentration effects on focusing and binocular vision in children undergoing myopia management. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/how-atropine-concentration-affects-visual-function-myopic-children",
+      "summary_es": "Revisión sistemática que evalúa cómo diferentes concentraciones de atropina impactan en la función visual, enfoque y visión binocular en niños bajo manejo de miopía, aportando evidencia para optimizar protocolos terapéuticos.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
