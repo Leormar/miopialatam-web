@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-07-04T14:01:30.226874+00:00",
+  "generated_at": "2026-07-04T14:11:14.359775+00:00",
   "date_display": "04 Jul 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Who is Paying Attention?",
-      "url": "https://reviewofmm.com/who-is-paying-attention/",
-      "summary_es": "Artículo de opinión que reflexiona sobre la atención y conciencia en el manejo de la miopía, utilizando una anécdota de vuelo como punto de partida para analizar cómo profesionales y familias abordan la prevención y control miópico en población pediátrica.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Understanding the Parent and Child Journey: Q&A with Xu Cheng, Alex Nixon and Meredith Bishop Learn insights on supporting parents and children through myopia management. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/understanding-the-parent-and-child-journey-Q-and-A",
+      "summary_es": "Entrevista con expertos sobre estrategias para acompañar a padres e hijos durante el manejo de la miopía, abordando aspectos clínicos y educativos del proceso terapéutico pediátrico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Bringing Myopia Management to Rural Areas",
-      "url": "https://reviewofmm.com/bringing-myopia-management-to-rural-areas/",
-      "summary_es": "Experiencia clínica sobre estrategias para implementar programas de manejo de miopía en zonas rurales, considerando sostenibilidad, accesibilidad e integración comunitaria. Análisis de lecciones aprendidas en múltiples relocalizaciones y participación en iniciativas como Myopia Collective de la Asociación Americana de Optometría.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "CooperVision Announces New Children’s Vision Campaign",
-      "url": "https://reviewofmm.com/coopervision-announces-new-childrens-vision-campaign/",
-      "summary_es": "CooperVision anuncia nueva campaña de visión infantil en asociación con museo estadounidense, incluyendo experiencias interactivas sobre salud ocular y screenings visuales gratuitos para expandir el acceso a la atención oftalmológica pediátrica.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Introducing Essilor® Stellest® 2.0 lenses - Q&A with Dr. Björn Drobe We talk to Dr Björn Drobe about the research behind the Essilor® Stellest® 2.0 lens.‡ Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/introducing-essilor-stellest-2-lenses",
+      "summary_es": "Essilor presenta Stellest® 2.0, nueva generación de lentes para control de miopía. Dr. Björn Drobe detalla la investigación y características del producto en exclusiva.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "ARVO 2026: Leading the Shift to Integrated Evidence in Myopia Management",
-      "url": "https://reviewofmm.com/arvo-2026-leading-the-shift-to-integrated-evidence-in-myopia-management/",
-      "summary_es": "EssilorLuxottica presenta investigación sobre manejo de miopía en ARVO 2026, destacando hallazgos sobre progresión miópica, resultados clínicos a largo plazo e integración de evidencia de ensayos clínicos y práctica real. Se enfatiza la base de evidencia que respalda los lentes Essilor® Stellest® en control miópico.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Inside the Consultation Room – Q&A on mEYE® Suite with Amit Sharma Amit Sharma discusses using Ocumetra’s mEYE® Suite in practice. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Amit-Sharma-using-Ocumetra-mEYE-Suite-in-practice",
+      "summary_es": "Ocumetra presenta mEYE® Suite, una plataforma digital para consultorios oftalmológicos. El recurso incluye una sesión de preguntas y respuestas con especialista sobre su implementación clínica.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
+    },
+    {
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Beyond the basics: sustaining ortho-k success over the long term This article takes a look at the challenges that arise during the longer-term phase of ortho-k care and how to combat them. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/beyond-the-basics-sustaining-ortho-k-success",
+      "summary_es": "Análisis de los desafíos clínicos en el mantenimiento a largo plazo de la ortoqueratología y estrategias para garantizar el éxito sostenido del tratamiento durante las fases avanzadas del cuidado.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
