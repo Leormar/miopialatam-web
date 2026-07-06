@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-06T12:01:32.330275+00:00",
+  "generated_at": "2026-07-06T15:33:11.784474+00:00",
   "date_display": "06 Jul 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Who is Paying Attention?",
-      "url": "https://reviewofmm.com/who-is-paying-attention/",
-      "summary_es": "Artículo editorial que reflexiona sobre la importancia de la atención y conciencia en el manejo de la miopía pediátrica, utilizando una analogía con procedimientos de seguridad aérea para ilustrar cómo los profesionales deben mantener vigilancia activa en el control miópico infantil.",
+      "title": "High Myopia, Syndromic Pathology, or Something Else?",
+      "url": "https://reviewofmm.com/high-myopia-syndromic-pathology-something-else/",
+      "summary_es": "Artículo de revisión que analiza el diagnóstico diferencial en miopía alta pediátrica, diferenciando entre error refractivo simple, patología estructural degenerativa y condiciones sindrómica genéticas. Enfatiza la importancia de un enfoque diagnóstico integral en casos de miopía alta infantil para optimizar su manejo clínico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Bringing Myopia Management to Rural Areas",
-      "url": "https://reviewofmm.com/bringing-myopia-management-to-rural-areas/",
-      "summary_es": "Estrategia para implementar programas de control de miopía en zonas rurales, basada en experiencias de integración práctica en comunidades. Aborda accesibilidad, sostenibilidad y organización clínica del servicio en contextos de recursos limitados.",
+      "title": "Relationship-maxxing in Myopia Management",
+      "url": "https://reviewofmm.com/relationship-maxxing-in-myopia-management/",
+      "summary_es": "El artículo analiza la importancia de las relaciones y la colaboración en la gestión de la miopía, destacando cómo la comunicación efectiva, la coordinación con proveedores de salud y la educación del paciente mejoran los referidos, la adherencia y los resultados clínicos a largo plazo.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "CooperVision Announces New Children’s Vision Campaign",
       "url": "https://reviewofmm.com/coopervision-announces-new-childrens-vision-campaign/",
-      "summary_es": "CooperVision anuncia campaña educativa sobre visión infantil en asociación con museo estadounidense, incluyendo patrocinio de programas de exploración estival y screenings visuales gratuitos para ampliar acceso a cuidado oftalmológico pediátrico.",
+      "summary_es": "CooperVision anuncia campaña educativa sobre visión infantil en asociación con museo estadounidense, incluyendo experiencias interactivas y screenings oftalmológicos gratuitos para familias con énfasis en conciencia sobre miopía.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "ARVO 2026: Leading the Shift to Integrated Evidence in Myopia Management",
-      "url": "https://reviewofmm.com/arvo-2026-leading-the-shift-to-integrated-evidence-in-myopia-management/",
-      "summary_es": "EssilorLuxottica presenta en ARVO 2026 investigaciones sobre manejo de miopía, enfatizando evidencia integrada de ensayos clínicos y práctica real, con énfasis en el respaldo científico de las lentes Essilor Stellest para control de progresión miópica.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "title": "Treating Juvenile Pseudomyopia",
+      "url": "https://reviewofmm.com/treating-juvenile-pseudomyopia/",
+      "summary_es": "Artículo sobre pseudomiopía juvenil y su manejo mediante higiene visual, lentes positivos y agentes ciclopléjicos como atropina y ciclopentolato para reducir el esfuerzo acomodativo y los síntomas de astenopía ocular.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
