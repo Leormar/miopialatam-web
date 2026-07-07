@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-06T16:03:52.284999+00:00",
-  "date_display": "06 Jul 2026",
+  "generated_at": "2026-07-07T12:01:18.782715+00:00",
+  "date_display": "07 Jul 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "High Myopia, Syndromic Pathology, or Something Else?",
-      "url": "https://reviewofmm.com/high-myopia-syndromic-pathology-something-else/",
-      "summary_es": "Artículo de revisión que analiza el enfoque diagnóstico y de manejo en casos de miopía alta pediátrica, diferenciando entre error refractivo simple, patología estructural degenerativa y condiciones sindrómicas o genéticas subyacentes.",
+      "title": "Vision for All: Advancing Myopia Mitigation Strategies in Educational Institutes of Pakistan",
+      "url": "https://reviewofmm.com/vision-for-all-advancing-myopia-mitigation-strategies-in-educational-institutes-of-pakistan/",
+      "summary_es": "La Universidad de Faisalabad implementó un programa de screening visual escolar denominado \"Vision for All\" alineado con los estándares de la World Council of Optometry para mitigación de miopía. La iniciativa busca reducir el riesgo de onset mediante conciencia y detección temprana en población pediátrica pakistaní.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Relationship-maxxing in Myopia Management",
       "url": "https://reviewofmm.com/relationship-maxxing-in-myopia-management/",
-      "summary_es": "El artículo analiza la importancia de construir relaciones sólidas en la práctica de manejo de miopía, enfatizando que el éxito depende de la colaboración efectiva con pacientes, personal y proveedores de salud. Destaca que la comunicación clara, coordinación respetuosa y facilidad en la colaboración mejoran derivaciones, adherencia del paciente y resultados a largo plazo.",
+      "summary_es": "El artículo analiza la importancia de las relaciones interpersonales y la colaboración en la práctica de manejo de miopía, enfatizando que el éxito depende de redes de pacientes, personal y proveedores de salud. Se destaca cómo la comunicación clara y la coordinación respectiva mejoran las derivaciones, adherencia del paciente y resultados a largo plazo.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "CooperVision Announces New Children’s Vision Campaign",
       "url": "https://reviewofmm.com/coopervision-announces-new-childrens-vision-campaign/",
-      "summary_es": "CooperVision anuncia campaña educativa sobre visión infantil en asociación con museo estadounidense, incluyendo experiencias interactivas y screenings visuales gratuitos para expandir el acceso a cuidado oftalmológico en familias.",
+      "summary_es": "CooperVision anunció una campaña educativa sobre visión infantil en asociación con el Museo Nacional del Juego en Rochester, Nueva York. La iniciativa incluye experiencias interactivas y screening visual gratuito para ampliar el acceso a la atención oftalmológica pediátrica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,9 +35,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Treating Juvenile Pseudomyopia",
-      "url": "https://reviewofmm.com/treating-juvenile-pseudomyopia/",
-      "summary_es": "Artículo de revisión sobre pseudomiopía juvenil que aborda su manejo mediante higiene visual, lentes positivos y agentes ciclopléjicos, con énfasis en atropina y ciclopentolato como tratamientos principales para reducir el esfuerzo acomodativo y síntomas de astenopia.",
+      "title": "High Myopia, Syndromic Pathology, or Something Else?",
+      "url": "https://reviewofmm.com/high-myopia-syndromic-pathology-something-else/",
+      "summary_es": "Artículo de revisión que aborda el diagnóstico diferencial en miopía alta pediátrica, distinguiendo entre error refractivo simple, patología estructural y condiciones sindrómicas o genéticas para optimizar el enfoque clínico y terapéutico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
