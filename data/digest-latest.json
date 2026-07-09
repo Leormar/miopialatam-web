@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T14:58:29.675653+00:00",
+  "generated_at": "2026-07-09T15:36:07.294870+00:00",
   "date_display": "09 Jul 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Vision for All: Advancing Myopia Mitigation Strategies in Educational Institutes of Pakistan",
       "url": "https://reviewofmm.com/vision-for-all-advancing-myopia-mitigation-strategies-in-educational-institutes-of-pakistan/",
-      "summary_es": "El Departamento de Optometría de la Universidad de Faisalabad implementa \"Vision for All\", un programa de tamizaje visual escolar basado en estándares de manejo de miopía del World Council of Optometry, enfocado en mitigación temprana y reducción del riesgo de inicio de miopía en población pediátrica.",
+      "summary_es": "La Universidad de Faisalabad implementa \"Vision for All\", un programa de screening visual basado en escuelas alineado con estándares internacionales de manejo de miopía. La iniciativa busca reducir el riesgo de onset mediante detección temprana y promoción de conciencia en poblaciones estudiantiles de Pakistán.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Relationship-maxxing in Myopia Management",
       "url": "https://reviewofmm.com/relationship-maxxing-in-myopia-management/",
-      "summary_es": "El artículo aborda la importancia de las relaciones profesionales y la colaboración en la gestión de la miopía, enfatizando cómo la comunicación efectiva con pacientes, personal y colegas mejora las derivaciones, la adherencia terapéutica y los resultados clínicos a largo plazo.",
+      "summary_es": "El artículo analiza la importancia de construir relaciones sólidas en la práctica de manejo de miopía, enfatizando que el éxito depende de la comunicación efectiva, coordinación con otros proveedores de salud y colaboración con pacientes y personal. Destaca que estas estrategias mejoran derivaciones, adherencia del paciente y resultados a largo plazo.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -25,9 +25,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Dr. Jennifer Palombi, Dr. Felicia Timmermann Named to New Myopia Management Roles at CooperVision",
-      "url": "https://reviewofmm.com/dr-jennifer-palombi-dr-felicia-timmermann/",
-      "summary_es": "CooperVision anunció los nombramientos de Jennifer Palombi como Directora de Asuntos Profesionales para las Américas y Felicia Timmermann como Asesora Senior en Manejo de Miopía para EE.UU., reflejando el compromiso de la empresa con la educación clínica y el apoyo a profesionales en la región.",
+      "title": "Can An Oral Therapy Change Myopia Care?",
+      "url": "https://reviewofmm.com/can-an-oral-therapy-change-myopia-care/",
+      "summary_es": "Theialife, empresa clínica en fase avanzada, desarrolla ND10, una terapia oral investigacional diseñada para abordar los mecanismos biológicos subyacentes de la progresión miópica pediátrica. El CEO de la compañía detalla la motivación científica y el futuro del programa terapéutico.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "High Myopia, Syndromic Pathology, or Something Else?",
-      "url": "https://reviewofmm.com/high-myopia-syndromic-pathology-something-else/",
-      "summary_es": "Artículo de análisis sobre la evaluación clínica diferencial de la miopía alta en pediatría, enfatizando la importancia de distinguir entre error refractivo simple, patología estructural degenerativa y condiciones sindrómicas o genéticas en el manejo terapéutico.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
+      "title": "Dr. Jennifer Palombi, Dr. Felicia Timmermann Named to New Myopia Management Roles at CooperVision",
+      "url": "https://reviewofmm.com/dr-jennifer-palombi-dr-felicia-timmermann/",
+      "summary_es": "CooperVision anuncia promociones en su equipo de manejo de miopía, con Jennifer Palombi como Directora de Asuntos Profesionales para América y Felicia Timmermann como Asesora Sénior en Manejo de Miopía para EE.UU., reflejando el compromiso de la compañía con educación clínica e innovación.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     }
   ]
 }
