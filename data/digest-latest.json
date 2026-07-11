@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-07-11T13:57:20.671906+00:00",
+  "generated_at": "2026-07-11T14:05:34.012680+00:00",
   "date_display": "11 Jul 2026",
   "items": [
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "How to measure fusional reserves in clinical practice Fusional reserves reflect the vergence system's capacity to compensate for a phoria. Discover how to measure and interpret them using a prism bar in clinical practice. Read Full Article",
-      "url": "https://www.myopiaprofile.com/articles/assessing-fusional-reserves-at-near",
-      "summary_es": "Artículo sobre técnicas de medición de reservas fusionales mediante barra de prismas en la práctica clínica, herramienta fundamental para evaluar la capacidad del sistema vergencial y compensar forias en pacientes con miopía.",
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Vision for All: Advancing Myopia Mitigation Strategies in Educational Institutes of Pakistan",
+      "url": "https://reviewofmm.com/vision-for-all-advancing-myopia-mitigation-strategies-in-educational-institutes-of-pakistan/",
+      "summary_es": "El Departamento de Optometría de la Universidad de Faisalabad implementa un programa de screening visual escolar denominado \"Vision for All\" alineado con el estándar de cuidado de la World Council of Optometry para mitigación de miopía, promoviendo detección temprana y conciencia en poblaciones educativas de Pakistán.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Introducing Essilor® Stellest® 2.0 lenses - Q&A with Dr. Björn Drobe We talk to Dr Björn Drobe about the research behind the Essilor® Stellest® 2.0 lens.‡ Read Full Article",
-      "url": "https://www.myopiaprofile.com/articles/introducing-essilor-stellest-2-lenses",
-      "summary_es": "Essilor presenta la nueva generación de lentes Stellest® 2.0 con actualizaciones en su tecnología de control de miopía. La entrevista con el Dr. Björn Drobe detalla la investigación científica que respalda esta innovación en corrección refractiva.",
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Relationship-maxxing in Myopia Management",
+      "url": "https://reviewofmm.com/relationship-maxxing-in-myopia-management/",
+      "summary_es": "El artículo analiza la importancia de las relaciones y la colaboración en la práctica de manejo de miopía, destacando cómo la comunicación efectiva con pacientes, personal y otros proveedores de salud mejora las derivaciones, adherencia y resultados clínicos a largo plazo.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Can An Oral Therapy Change Myopia Care?",
+      "url": "https://reviewofmm.com/can-an-oral-therapy-change-myopia-care/",
+      "summary_es": "Theialife, compañía biofarmacéutica en etapa clínica avanzada, desarrolla ND10, una terapia oral investigacional para abordar los mecanismos biológicos subyacentes de la progresión miópica pediátrica. El nuevo CEO explora el potencial de esta innovadora solución terapéutica en el manejo de la miopía.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Inside the Consultation Room – Q&A on mEYE® Suite with Amit Sharma Amit Sharma discusses using Ocumetra’s mEYE® Suite in practice. Read Full Article",
-      "url": "https://www.myopiaprofile.com/articles/Amit-Sharma-using-Ocumetra-mEYE-Suite-in-practice",
-      "summary_es": "Entrevista con Amit Sharma sobre la plataforma mEYE® Suite de Ocumetra, herramienta digital para la gestión de consultas oftalmológicas y manejo de la miopía en práctica clínica.",
-      "category": "WEB",
-      "category_color": "#F5C518",
-      "category_label": "Nuevos recursos"
-    },
-    {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Understanding the Parent and Child Journey: Q&A with Xu Cheng, Alex Nixon and Meredith Bishop Learn insights on supporting parents and children through myopia management. Read Full Article",
-      "url": "https://www.myopiaprofile.com/articles/understanding-the-parent-and-child-journey-Q-and-A",
-      "summary_es": "Entrevista con especialistas sobre estrategias para acompañar a padres e hijos durante el manejo de la miopía, abordando aspectos educativos y de apoyo en el proceso de control miópico pediátrico.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Dr. Jennifer Palombi, Dr. Felicia Timmermann Named to New Myopia Management Roles at CooperVision",
+      "url": "https://reviewofmm.com/dr-jennifer-palombi-dr-felicia-timmermann/",
+      "summary_es": "CooperVision anuncia el ascenso de las Dras. Jennifer Palombi y Felicia Timmermann a nuevos roles estratégicos en su equipo de manejo de miopía, reflejando el compromiso de la compañía con la educación clínica y el desarrollo de soluciones innovadoras para profesionales de la visión.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     }
   ]
 }
