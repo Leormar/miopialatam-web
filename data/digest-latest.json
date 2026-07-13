@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T15:13:56.653629+00:00",
+  "generated_at": "2026-07-13T15:30:22.437342+00:00",
   "date_display": "13 Jul 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Use and Assessment of Growth Curves in Myopia Consultation and Choice of Treatment Strategy",
       "url": "https://reviewofmm.com/use-and-assessment-of-growth-curves-in-myopia/",
-      "summary_es": "Guía sobre el uso de curvas de crecimiento axial en consulta de miopía para mejorar la comunicación con pacientes e implementar estrategias de tratamiento basadas en evidencia, utilizando la plataforma Myopia.Care como herramienta de práctica clínica.",
+      "summary_es": "Guía sobre el uso de curvas de crecimiento axial en la consulta de miopía para mejorar la comunicación con pacientes e implementar estrategias de tratamiento basadas en evidencia, utilizando la plataforma Myopia.Care como herramienta clínica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "The Hidden Cost of Friction",
       "url": "https://reviewofmm.com/the-hidden-cost-of-friction/",
-      "summary_es": "Análisis sobre cómo períodos de alta demanda en clínicas de miopía exponen debilidades operativas y fricciones en los procesos de práctica. Se destaca la importancia de optimizar la gestión clínica para responder eficientemente al incremento estacional de pacientes pediátricos.",
+      "summary_es": "El artículo analiza cómo los períodos de alta demanda en clínicas de miopía exponen fricción operativa que afecta la eficiencia. Se enfatiza que la sobrecarga no es el problema sino cómo la fricción en los procesos internos limita la capacidad de respuesta durante picos de atención pediátrica.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "FDA Advisory Committee to Meet on Sydnexis’ SYD-101",
       "url": "https://reviewofmm.com/fda-advisory-committee-to-meet-on-sydnexis-syd-101/",
-      "summary_es": "La FDA convocará a un Comité Asesor para revisar SYD-101 de Sydnexis, formulación para miopía progresiva pediátrica. La evaluación incluirá datos del estudio fase 3 STAR, tras la solicitud de resolución de controversia presentada por la empresa.",
+      "summary_es": "La FDA convocará a un Comité Asesor para revisar SYD-101 de Sydnexis, formulación destinada al manejo de la miopía progresiva pediátrica. Se analizarán datos del estudio Phase 3 STAR tras la solicitud de resolución de controversia presentada por la empresa.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "Outdoor Artificial Light at Night Exposure and Myopia Risk",
       "url": "https://reviewofmm.com/outdoor-artificial-light-at-night-exposure-and-myopia-risk/",
-      "summary_es": "Estudio analiza la relación entre la exposición a luz artificial nocturna y el riesgo de miopía, identificando un factor ambiental previamente poco estudiado en la progresión miópica pediátrica, complementando el conocimiento sobre protección por luz diurna.",
+      "summary_es": "Revisión sobre la exposición a luz artificial nocturna exterior como factor de riesgo en miopía. El artículo analiza la interacción gen-ambiente y destaca la importancia de patrones de luz nocturna, complementando evidencia existente sobre luz diurna como factor protector en niños.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
