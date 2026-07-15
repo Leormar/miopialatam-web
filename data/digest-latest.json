@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-07-15T13:43:11.116149+00:00",
+  "generated_at": "2026-07-15T14:13:33.642896+00:00",
   "date_display": "15 Jul 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Use and Assessment of Growth Curves in Myopia Consultation and Choice of Treatment Strategy",
-      "url": "https://reviewofmm.com/use-and-assessment-of-growth-curves-in-myopia/",
-      "summary_es": "Guía sobre el uso de curvas de crecimiento axial en la consulta de miopía para mejorar la comunicación con pacientes e implementar estrategias de tratamiento basadas en evidencia, utilizando plataformas como Myopia.Care para optimizar la práctica clínica.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "How to measure fusional reserves in clinical practice Fusional reserves reflect the vergence system's capacity to compensate for a phoria. Discover how to measure and interpret them using a prism bar in clinical practice. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/assessing-fusional-reserves-at-near",
+      "summary_es": "Artículo sobre técnicas de medición de reservas fusionales mediante barra de prismas en la práctica clínica, evaluando la capacidad del sistema de vergencias para compensar forias en pacientes con miopía.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Managing Myopia Two Days A Week",
-      "url": "https://reviewofmm.com/managing-myopia-two-days-a-week/",
-      "summary_es": "Estrategia de organización del consultorio enfocada en concentrar pacientes de manejo de miopía en dos días semanales. Se describen protocolos de staff, listas de control y optimización de flujo de trabajo ante cambios en la disponibilidad del profesional.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "SightGlass Vision to Present New Data During July 22 Webinar",
-      "url": "https://reviewofmm.com/sightglass-vision-to-present-new-data-during-july-22-webinar/",
-      "summary_es": "SightGlass Vision realizará webinar el 22 de julio dirigido a profesionales canadienses para presentar evidencia clínica sobre lentes MiSight® con Diffusion Optics Technology en el control de miopía pediátrica, contando con participación de especialistas de práctica clínica.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Introducing Essilor® Stellest® 2.0 lenses - Q&A with Dr. Björn Drobe We talk to Dr Björn Drobe about the research behind the Essilor® Stellest® 2.0 lens.‡ Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/introducing-essilor-stellest-2-lenses",
+      "summary_es": "Essilor presenta Stellest® 2.0, lentes innovadores para control de miopía. Se detalla la investigación científica detrás de esta nueva formulación con entrevista al Dr. Björn Drobe.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "AOA Opens New Pediatric Vision Guideline for Review",
-      "url": "https://reviewofmm.com/aoa-opens-new-pediatric-vision-guideline-for-review/",
-      "summary_es": "La Asociación Americana de Optometría abrió período de consulta pública para la segunda edición de su directriz de visión pediátrica, enfocada en exámenes oftalmológicos integrales en niños. El plazo para comentarios vence el 5 de agosto de 2026 y refleja el compromiso de la AOA por garantizar acceso equitativo a cuidado visual temprano en población pediátrica.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Inside the Consultation Room – Q&A on mEYE® Suite with Amit Sharma Amit Sharma discusses using Ocumetra’s mEYE® Suite in practice. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Amit-Sharma-using-Ocumetra-mEYE-Suite-in-practice",
+      "summary_es": "Entrevista con Amit Sharma sobre mEYE® Suite de Ocumetra, plataforma digital para gestión y análisis de datos clínicos en consulta oftalmológica orientada al manejo de miopía.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
+    },
+    {
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Understanding the Parent and Child Journey: Q&A with Xu Cheng, Alex Nixon and Meredith Bishop Learn insights on supporting parents and children through myopia management. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/understanding-the-parent-and-child-journey-Q-and-A",
+      "summary_es": "Entrevista con expertos sobre estrategias para acompañar a padres e hijos durante el manejo de la miopía, abordando aspectos clínicos y educativos del tratamiento oftalmológico pediátrico.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
