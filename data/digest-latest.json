@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-14T14:26:40.875888+00:00",
-  "date_display": "14 Jul 2026",
+  "generated_at": "2026-07-15T12:01:23.585505+00:00",
+  "date_display": "15 Jul 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Use and Assessment of Growth Curves in Myopia Consultation and Choice of Treatment Strategy",
       "url": "https://reviewofmm.com/use-and-assessment-of-growth-curves-in-myopia/",
-      "summary_es": "Artículo sobre el uso de curvas de crecimiento axial en la consulta de miopía para seleccionar estrategias terapéuticas basadas en evidencia. Explora cómo la plataforma Myopia.Care facilita la comunicación con pacientes y mejora la práctica clínica pediátrica mediante análisis de percentiles de elongación.",
+      "summary_es": "Guía sobre uso de curvas de crecimiento de longitud axial en la consulta de miopía mediante la plataforma Myopia.Care para mejorar la comunicación con pacientes e implementar estrategias de tratamiento basadas en evidencia clínica pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "The Hidden Cost of Friction",
       "url": "https://reviewofmm.com/the-hidden-cost-of-friction/",
-      "summary_es": "Artículo que analiza cómo el aumento de demanda estacional en clínicas de miopía expone fricciones operativas. Examina que la presión no proviene solo del volumen de pacientes, sino de ineficiencias en procesos que se evidencian durante períodos de mayor demanda en verano.",
+      "summary_es": "El artículo analiza cómo el aumento estacional de demanda en clínicas de miopía expone ineficiencias operativas. Propone que la fricción en procesos de gestión, más que el volumen de pacientes, es el verdadero desafío para optimizar la práctica clínica.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -25,9 +25,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "FDA Advisory Committee to Meet on Sydnexis’ SYD-101",
-      "url": "https://reviewofmm.com/fda-advisory-committee-to-meet-on-sydnexis-syd-101/",
-      "summary_es": "La FDA convocará a un Comité Asesor para revisar SYD-101 de Sydnexis, una formulación para la miopía progresiva pediátrica, incluyendo datos del estudio Phase 3 STAR. La convocatoria responde a la solicitud de resolución de disputas presentada por la compañía tras recibir una carta de respuesta completa.",
+      "title": "SightGlass Vision to Present New Data During July 22 Webinar",
+      "url": "https://reviewofmm.com/sightglass-vision-to-present-new-data-during-july-22-webinar/",
+      "summary_es": "SightGlass Vision presenta webinar el 22 de julio dirigido a profesionales canadienses sobre lentes MiSight® con tecnología de óptica de difusión para control de miopía en niños. La sesión incluirá evidencia clínica actualizada y experiencias de práctica canadiense con especialistas internacionales.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Outdoor Artificial Light at Night Exposure and Myopia Risk",
-      "url": "https://reviewofmm.com/outdoor-artificial-light-at-night-exposure-and-myopia-risk/",
-      "summary_es": "Estudio analiza la exposición a luz artificial nocturna como factor de riesgo en miopía, complementando el conocimiento sobre factores ambientales y comportamentales en la progresión miópica pediátrica junto con tiempo outdoor diurno y patrones de sueño.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
+      "title": "AOA Opens New Pediatric Vision Guideline for Review",
+      "url": "https://reviewofmm.com/aoa-opens-new-pediatric-vision-guideline-for-review/",
+      "summary_es": "La Asociación Americana de Optometría abrió período de comentarios públicos para la segunda edición de su guía de visión pediátrica, enfocada en examen oftalmológico integral pediátrico. El documento actualizado respalda el acceso de los niños a atención oftalmológica oportuna y exhaustiva.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     }
   ]
 }
