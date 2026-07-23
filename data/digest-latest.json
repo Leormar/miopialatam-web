@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-22T14:36:47.199556+00:00",
-  "date_display": "22 Jul 2026",
+  "generated_at": "2026-07-23T12:00:52.666811+00:00",
+  "date_display": "23 Jul 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "The Biggest Pain Points in Myopia Management",
-      "url": "https://reviewofmm.com/the-biggest-pain-points-in-myopia-management/",
-      "summary_es": "La atención de la miopía pediátrica en Estados Unidos ha evolucionado desde un modelo correctivo tradicional hacia un enfoque proactivo basado en evidencia clínica orientado a desacelerar la progresión de la enfermedad durante los últimos 12 años.",
+      "title": "Shared Genetics and Modifiable Factors in Myopia and Retinal–Optic Nerve Disease",
+      "url": "https://reviewofmm.com/myopia-and-retinal-optic-nerve-disease/",
+      "summary_es": "Estudio caracteriza las relaciones epidemiológicas, genéticas y ambientales entre miopía y enfermedades retinianas y del nervio óptico, evaluando si estas asociaciones reflejan biología compartida o consecuencias estructurales de la elongación axial.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Managing Myopia Two Days A Week",
       "url": "https://reviewofmm.com/managing-myopia-two-days-a-week/",
-      "summary_es": "Experiencia de práctica privada sobre la restructuración del horario de atención de pacientes en manejo de miopía, concentrando los casos en dos días semanales mediante protocolos de personal y checklists operativas para optimizar la eficiencia clínica.",
+      "summary_es": "Estrategia de organización clínica para consolidar la gestión de pacientes en control de miopía en dos días semanales. Experiencia de práctica privada que implementó protocolos de trabajo y checklists para optimizar la eficiencia operativa y gestión administrativa con personal reducido.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "Brenda Raphael Named Vice President of Marketing, Americas at CooperVision",
       "url": "https://reviewofmm.com/brenda-raphael-named-vice-president-of-marketing-americas-at-coopervision/",
-      "summary_es": "CooperVision anunció el nombramiento de Brenda Raphael como Vicepresidenta de Marketing para las Américas. En su rol supervisará estrategias de marketing, relaciones con clientes y asuntos profesionales en el portafolio de marcas de la compañía.",
+      "summary_es": "CooperVision anuncia el nombramiento de Brenda Raphael como Vicepresidenta de Marketing para las Américas. La ejecutiva liderará las estrategias de marketing en Estados Unidos bajo el portafolio de marcas de la compañía, reforzando sus capacidades comerciales y de relacionamiento profesional.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Bending the Curve: How China Is Changing the Trajectory of Childhood Myopia",
-      "url": "https://reviewofmm.com/bending-the-curve-how-china-is-changing-the-trajectory-of-childhood-myopia/",
-      "summary_es": "China lidera cambios en la epidemia de miopía infantil con innovaciones presentadas en Vision China 2026, congreso internacional que reunió más de 10.000 participantes y 1.047 expertos para analizar estrategias de control miópico a nivel global.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "title": "From Prevention to Precision: Treatment, Technology and the Next Front in China’s Myopia Fight",
+      "url": "https://reviewofmm.com/from-prevention-to-precision-treatment-technology-and-the-next-front-in-chinas-myopia-fight/",
+      "summary_es": "Artículo que analiza estrategias de control de la progresión miópica en China, destacando los resultados de prevención nacional y el enfoque de atención integral desde la clínica y laboratorio para detener la progresión en población pediátrica.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
