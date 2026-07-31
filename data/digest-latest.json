@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-07-31T12:00:53.448636+00:00",
+  "generated_at": "2026-07-31T14:05:37.263637+00:00",
   "date_display": "31 Jul 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "The Antithesis of Possibilities",
-      "url": "https://reviewofmm.com/the-antithesis-of-possibilities/",
-      "summary_es": "Reflexión sobre la importancia de mantener apertura mental frente a nuevas evidencias en manejo de miopía, evitando prejuicios confirmatorios que limiten la adopción de innovaciones terapéuticas basadas en investigación científica actualizada.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "How to measure fusional reserves in clinical practice Fusional reserves reflect the vergence system's capacity to compensate for a phoria. Discover how to measure and interpret them using a prism bar in clinical practice. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/assessing-fusional-reserves-at-near",
+      "summary_es": "Artículo sobre técnicas de medición de reservas fusionales mediante barra de prismas en la práctica clínica, herramienta fundamental para evaluar la capacidad del sistema vergencial y compensar forias en pacientes con miopía.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "MiYOSMART iQ Officially Launches in Canada",
-      "url": "https://reviewofmm.com/miyosmart-iq-officially-launches-in-canada/",
-      "summary_es": "HOYA Vision Care lanza oficialmente MiYOSMART iQ en Canadá, incorporando tecnología Triple Enhanced Design con resultados clínicos de 12 meses que demuestran la máxima eficacia de control miópico reportada para lentes oftálmicos basados en tecnología D.I.M.S.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Introducing Essilor® Stellest® 2.0 lenses - Q&A with Dr. Björn Drobe We talk to Dr Björn Drobe about the research behind the Essilor® Stellest® 2.0 lens.‡ Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/introducing-essilor-stellest-2-lenses",
+      "summary_es": "Essilor presenta Stellest® 2.0, nueva generación de lentes para control de miopía. Dr. Björn Drobe detalla la investigación clínica detrás de esta innovación tecnológica en corrección refractiva pediátrica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "The Back-to-School Checklist Parents Forget",
-      "url": "https://reviewofmm.com/the-back-to-school-checklist-parents-forget/",
-      "summary_es": "Artículo que destaca la importancia de realizar exámenes oftalmológicos integrales en niños al inicio del ciclo escolar, más allá de los screenings escolares básicos, como factor crítico para el desempeño académico y la detección temprana de problemas visuales.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Inside the Consultation Room – Q&A on mEYE® Suite with Amit Sharma Amit Sharma discusses using Ocumetra’s mEYE® Suite in practice. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/Amit-Sharma-using-Ocumetra-mEYE-Suite-in-practice",
+      "summary_es": "Ocumetra presenta mEYE® Suite, una plataforma digital para la consulta oftalmológica. Amit Sharma comparte su experiencia de implementación en la práctica clínica y responde preguntas sobre esta herramienta de gestión consultorio.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
+    },
+    {
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Understanding the Parent and Child Journey: Q&A with Xu Cheng, Alex Nixon and Meredith Bishop Learn insights on supporting parents and children through myopia management. Read Full Article",
+      "url": "https://www.myopiaprofile.com/articles/understanding-the-parent-and-child-journey-Q-and-A",
+      "summary_es": "Perspectiva sobre el acompañamiento a padres e hijos en el manejo de la miopía, abordando estrategias de comunicación y apoyo durante el tratamiento oftalmológico pediátrico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Why I See NaturalVue® Enhanced Multifocal as a Lens Built for Real Life",
-      "url": "https://reviewofmm.com/why-i-see-naturalvue-enhanced-multifocal-as-a-lens-built-for-real-life/",
-      "summary_es": "Visioneering Technologies Inc. lanzó las lentes NaturalVue® Enhanced Multifocal 1 Day, diseñadas para el manejo de miopía en condiciones reales de vida cotidiana. El producto busca ofrecer eficacia terapéutica más allá de cambios conductuales ideales en pacientes pediátricos.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
     }
   ]
 }
