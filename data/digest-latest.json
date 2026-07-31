@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-30T14:53:01.966787+00:00",
-  "date_display": "30 Jul 2026",
+  "generated_at": "2026-07-31T12:00:53.448636+00:00",
+  "date_display": "31 Jul 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Shared Genetics and Modifiable Factors in Myopia and Retinal–Optic Nerve Disease",
-      "url": "https://reviewofmm.com/myopia-and-retinal-optic-nerve-disease/",
-      "summary_es": "Estudio analiza las relaciones genéticas y ambientales compartidas entre miopía y enfermedades retinianas y del nervio óptico, aclarando si las asociaciones reflejan biología común o consecuencias estructurales de la elongación axial. Investiga epidemiología y factores modificables en desprendimiento de retina, glaucoma y degeneración macular.",
+      "title": "The Antithesis of Possibilities",
+      "url": "https://reviewofmm.com/the-antithesis-of-possibilities/",
+      "summary_es": "Reflexión sobre la importancia de mantener apertura mental frente a nuevas evidencias en manejo de miopía, evitando prejuicios confirmatorios que limiten la adopción de innovaciones terapéuticas basadas en investigación científica actualizada.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,19 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Managing Myopia Two Days A Week",
-      "url": "https://reviewofmm.com/managing-myopia-two-days-a-week/",
-      "summary_es": "Análisis de optimización de consultorios oftalmológicos mediante concentración de pacientes en manejo de miopía en dos días semanales. Incluye estrategias de organización, protocolos de staff y procedimientos administrativos para mejorar eficiencia operativa.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Brenda Raphael Named Vice President of Marketing, Americas at CooperVision",
-      "url": "https://reviewofmm.com/brenda-raphael-named-vice-president-of-marketing-americas-at-coopervision/",
-      "summary_es": "CooperVision anunció el nombramiento de Brenda Raphael como Vicepresidenta de Marketing para las Américas. En su nuevo rol, Raphael supervisará la estrategia de marketing en Estados Unidos y liderará iniciativas de engagement omnicanal y toma de decisiones basada en datos.",
+      "title": "MiYOSMART iQ Officially Launches in Canada",
+      "url": "https://reviewofmm.com/miyosmart-iq-officially-launches-in-canada/",
+      "summary_es": "HOYA Vision Care lanza oficialmente MiYOSMART iQ en Canadá, incorporando tecnología Triple Enhanced Design con resultados clínicos de 12 meses que demuestran la máxima eficacia de control miópico reportada para lentes oftálmicos basados en tecnología D.I.M.S.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +25,22 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "From Prevention to Precision: Treatment, Technology and the Next Front in China’s Myopia Fight",
-      "url": "https://reviewofmm.com/from-prevention-to-precision-treatment-technology-and-the-next-front-in-chinas-myopia-fight/",
-      "summary_es": "Análisis del enfoque chino en manejo de miopía que combina prevención poblacional con control clínico de progresión. El artículo examina estrategias integrales de atención desde screening masivo hasta intervenciones terapéuticas en laboratorio y clínica para detener la progresión miópica.",
+      "title": "The Back-to-School Checklist Parents Forget",
+      "url": "https://reviewofmm.com/the-back-to-school-checklist-parents-forget/",
+      "summary_es": "Artículo que destaca la importancia de realizar exámenes oftalmológicos integrales en niños al inicio del ciclo escolar, más allá de los screenings escolares básicos, como factor crítico para el desempeño académico y la detección temprana de problemas visuales.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Why I See NaturalVue® Enhanced Multifocal as a Lens Built for Real Life",
+      "url": "https://reviewofmm.com/why-i-see-naturalvue-enhanced-multifocal-as-a-lens-built-for-real-life/",
+      "summary_es": "Visioneering Technologies Inc. lanzó las lentes NaturalVue® Enhanced Multifocal 1 Day, diseñadas para el manejo de miopía en condiciones reales de vida cotidiana. El producto busca ofrecer eficacia terapéutica más allá de cambios conductuales ideales en pacientes pediátricos.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     }
   ]
 }
