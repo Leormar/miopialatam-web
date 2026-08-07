@@ -1,5 +1,46 @@
 {
-  "generated_at": "2026-08-06T14:57:36.201178+00:00",
-  "date_display": "06 Aug 2026",
-  "items": []
+  "generated_at": "2026-08-07T12:00:56.190763+00:00",
+  "date_display": "07 Aug 2026",
+  "items": [
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "The Antithesis of Possibilities",
+      "url": "https://reviewofmm.com/the-antithesis-of-possibilities/",
+      "summary_es": "Reflexión sobre la importancia de cuestionar creencias establecidas en la práctica clínica de manejo de miopía, evitando prejuicios confirmatorios que limiten la adopción de nuevas evidencias y enfoques terapéuticos en la especialidad.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "MiYOSMART iQ Officially Launches in Canada",
+      "url": "https://reviewofmm.com/miyosmart-iq-officially-launches-in-canada/",
+      "summary_es": "HOYA Vision Care lanzó oficialmente MiYOSMART iQ en Canadá, incorporando tecnología Triple Enhanced Design (TED) con resultados clínicos de 12 meses que demuestran la máxima eficacia en control miópico reportada hasta la fecha con lentes de espectáculo basados en tecnología D.I.M.S.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Ocumetra’s mEYE Suite Rolls Out in Bayfields Opticians & Audiologists Offices",
+      "url": "https://reviewofmm.com/bayfields-opticians-and-audiologists-add-meye-suite/",
+      "summary_es": "Ocumetra implementó su plataforma mEYE Suite en los más de 50 consultorios de Bayfields Opticians & Audiologists, proporcionando herramientas digitales para optimizar la atención de pacientes pediátricos con miopía mediante protocolos basados en evidencia.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "The Back-to-School Checklist Parents Forget",
+      "url": "https://reviewofmm.com/the-back-to-school-checklist-parents-forget/",
+      "summary_es": "Artículo sobre la importancia del examen oftalmológico integral pediátrico previo al regreso a clases, destacando que los screenings escolares y la ausencia de síntomas no garantizan una visión óptima en el desarrollo académico infantil.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    }
+  ]
 }
