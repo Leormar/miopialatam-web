@@ -1,5 +1,46 @@
 {
-  "generated_at": "2026-08-13T13:50:11.977371+00:00",
+  "generated_at": "2026-08-13T14:03:27.960034+00:00",
   "date_display": "13 Aug 2026",
-  "items": []
+  "items": [
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Adult Myopia: Another Pandora’s Box",
+      "url": "https://reviewofmm.com/adult-myopia-another-pandoras-box/",
+      "summary_es": "Análisis sobre la progresión miópica en adultos y la demanda clínica de soluciones de manejo, considerando que mientras la mayoría estabiliza alrededor de los 15.6 años, un segmento significativo continúa progresando en la década de los veinte.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "MiYOSMART iQ Officially Launches in Canada",
+      "url": "https://reviewofmm.com/miyosmart-iq-officially-launches-in-canada/",
+      "summary_es": "HOYA Vision Care anuncia el lanzamiento oficial de las lentes MiYOSMART iQ en Canadá, incorporando la tecnología Triple Enhanced Design (TED) con resultados clínicos de 12 meses que demuestran la mayor eficacia de control miópico reportada para lentes con tecnología D.I.M.S.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Ocumetra’s mEYE Suite Rolls Out in Bayfields Opticians & Audiologists Offices",
+      "url": "https://reviewofmm.com/bayfields-opticians-and-audiologists-add-meye-suite/",
+      "summary_es": "Ocumetra anuncia la implementación de su plataforma mEYE Suite en más de 50 consultorios de Bayfields Opticians & Audiologists. La herramienta digital proporcionará a los profesionales recursos para optimizar la atención clínica basada en evidencia en pacientes pediátricos con miopía.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Efficacy of Repeated Low-Level Red Light in Myopia",
+      "url": "https://reviewofmm.com/efficacy-of-repeated-low-level-red-light-in-myopia/",
+      "summary_es": "La terapia de luz roja de bajo nivel repetido emerge como estrategia alternativa para desacelerar la progresión miópica en niños, demostrando reducción de elongación axial y resultados refractivos favorables. Estudios comparativos con ortho-k, atropina y lentes DIMS proporcionan evidencia clínica sobre su eficacia relativa.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    }
+  ]
 }
