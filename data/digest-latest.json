@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-20T13:29:49.272430+00:00",
-  "date_display": "20 Aug 2026",
+  "generated_at": "2026-08-21T12:00:47.673151+00:00",
+  "date_display": "21 Aug 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "School Is Back. Opportunity Never Left.",
       "url": "https://reviewofmm.com/school-is-back-opportunity-never-left/",
-      "summary_es": "El regreso escolar representa una oportunidad para reposicionar el enfoque de los exámenes oftalmológicos pediátricos desde la corrección refractiva tradicional hacia el control y manejo activo de la miopía, considerando cada consulta como una intervención preventiva para proteger la visión futura del paciente.",
+      "summary_es": "El regreso escolar representa una oportunidad para replantearse el enfoque clínico pediátrico, trasladando el foco desde la corrección refractiva tradicional hacia estrategias de control y protección de la visión a largo plazo en niños con miopía progresiva.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Fewer Patients, Better Care",
       "url": "https://reviewofmm.com/fewer-patients-better-care/",
-      "summary_es": "Profesional oftalmóloga comparte su modelo de práctica privada enfocado en bajo volumen de pacientes y alto ingreso por consulta, utilizando el manejo de miopía como servicio diferenciador en consultorio de alto nivel en Colorado.",
+      "summary_es": "Profesional de la salud visual describe su modelo de práctica privada enfocado en bajo volumen de pacientes y alto ingreso por usuario. El enfoque incluye gestión de miopía como servicio diferenciado en consultorio de alta gama ubicado en Colorado, permitiendo mejor relación con pacientes y atención personalizada.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "MiYOSMART iQ Officially Launches in Canada",
       "url": "https://reviewofmm.com/miyosmart-iq-officially-launches-in-canada/",
-      "summary_es": "HOYA Vision Care anuncia el lanzamiento oficial de los lentes MiYOSMART iQ en Canadá, que incorporan la tecnología Triple Enhanced Design y muestran los resultados clínicos más altos de eficacia en control de miopía reportados hasta la fecha con lentes basados en tecnología D.I.M.S.",
+      "summary_es": "HOYA Vision Care lanzó oficialmente MiYOSMART iQ en Canadá, incorporando la tecnología Triple Enhanced Design (TED) con resultados clínicos de 12 meses que demuestran la mayor eficacia de control miópico reportada para lentes espectaculares basados en tecnología D.I.M.S.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "Ocumetra’s mEYE Suite Rolls Out in Bayfields Opticians & Audiologists Offices",
       "url": "https://reviewofmm.com/bayfields-opticians-and-audiologists-add-meye-suite/",
-      "summary_es": "Ocumetra implementó su plataforma mEYE Suite en las más de 50 sucursales de Bayfields Opticians & Audiologists, proporcionando herramientas digitales para optimizar la atención de pacientes pediátricos con miopía bajo protocolos basados en evidencia científica.",
+      "summary_es": "Ocumetra implementa su plataforma mEYE Suite en las más de 50 sucursales de Bayfields Opticians & Audiologists para optimizar la atención de pacientes pediátricos miopes mediante herramientas digitales basadas en evidencia clínica.",
       "category": "WEB",
       "category_color": "#F5C518",
       "category_label": "Nuevos recursos"
