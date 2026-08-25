@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-24T13:33:08.616147+00:00",
-  "date_display": "24 Aug 2026",
+  "generated_at": "2026-08-25T12:01:08.130456+00:00",
+  "date_display": "25 Aug 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "School Is Back. Opportunity Never Left.",
-      "url": "https://reviewofmm.com/school-is-back-opportunity-never-left/",
-      "summary_es": "El regreso escolar presenta una oportunidad para replantear los exámenes oftalmológicos pediátricos, enfocándose no solo en la corrección refractiva sino en estrategias de protección y control de la progresión miópica en la población infantil.",
+      "title": "OrthoK With vs. Without Atropine for Childhood Myopia",
+      "url": "https://reviewofmm.com/orthok-with-vs-without-atropine-for-childhood-myopia/",
+      "summary_es": "Metaanálisis de 18 ensayos controlados aleatorios en 1,669 niños compara ortoqueratología combinada con atropina versus ortoqueratología sola para el control de la miopía, evaluando elongación axial, agudeza visual, medidas de película lagrimal y otros parámetros refractivos.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Fewer Patients, Better Care",
       "url": "https://reviewofmm.com/fewer-patients-better-care/",
-      "summary_es": "Modelo de práctica privada enfocado en bajo volumen de pacientes y alta rentabilidad por caso, aprovechando la oferta de manejo de miopía para expandir servicios en consultorios de mayor gama con espacios diseñados para crear relación sólida con pacientes y entregar atención de alto nivel.",
+      "summary_es": "Modelo de práctica privada enfocado en volumen reducido de pacientes y mayor ingreso por caso, utilizando el manejo de la miopía como servicio diferenciado para expandir la oferta clínica en consultorio de alta gama.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -25,9 +25,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "MiYOSMART iQ Officially Launches in Canada",
-      "url": "https://reviewofmm.com/miyosmart-iq-officially-launches-in-canada/",
-      "summary_es": "HOYA Vision Care anuncia el lanzamiento oficial de MiYOSMART iQ en Canadá, lentes con tecnología Triple Enhanced Design que reportan los resultados de control miópico más altos hasta la fecha según ensayos clínicos de 12 meses realizados con la Universidad Politécnica de Hong Kong.",
+      "title": "SightGlass Vision’s DOT Spectacles Surpass 2 Million Wearers",
+      "url": "https://reviewofmm.com/sightglass-visions-dot-spectacles-surpass-2-million-wearers/",
+      "summary_es": "SightGlass Vision anunció que sus lentes DOT Spectacles superaron los 2 millones de usuarios a nivel mundial, consolidando la adopción rápida de esta tecnología de control miópico basada en gestión de contraste entre profesionales de la visión.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Ocumetra’s mEYE Suite Rolls Out in Bayfields Opticians & Audiologists Offices",
-      "url": "https://reviewofmm.com/bayfields-opticians-and-audiologists-add-meye-suite/",
-      "summary_es": "Ocumetra implementó su plataforma mEYE Suite en las más de 50 sucursales de Bayfields Opticians & Audiologists para optimizar la atención de pacientes con miopía pediátrica. La herramienta digital permite a los profesionales sanitarios acceder a recursos basados en evidencia para mejorar el manejo clínico.",
-      "category": "WEB",
-      "category_color": "#F5C518",
-      "category_label": "Nuevos recursos"
+      "title": "A Passion for Preventative Care Has Piloted My Myopia Management Journey",
+      "url": "https://reviewofmm.com/a-passion-for-preventative-care/",
+      "summary_es": "Profesional de optometría comparte su trayectoria en el manejo de la miopía motivada por experiencia personal con degeneración macular. Enfatiza la importancia del cuidado preventivo y el seguimiento a largo plazo de pacientes para intervenir antes de complicaciones visuales irreversibles.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
