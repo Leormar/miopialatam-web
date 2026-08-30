@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-29T16:51:17.158244+00:00",
-  "date_display": "29 Aug 2026",
+  "generated_at": "2026-08-30T12:00:49.225406+00:00",
+  "date_display": "30 Aug 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "OrthoK With vs. Without Atropine for Childhood Myopia",
       "url": "https://reviewofmm.com/orthok-with-vs-without-atropine-for-childhood-myopia/",
-      "summary_es": "Metaanálisis de 18 estudios controlados aleatorizados en 1,669 niños compara la ortoqueratología combinada con atropina versus ortoqueratología sola para el control miópico, evaluando elongación axial, agudeza visual, película lagrimal, diámetro pupilar, amplitud acomodativa y curvatura corneal.",
+      "summary_es": "Metanálisis de 18 ensayos controlados aleatorizados en 1,669 niños compara ortoqueratología combinada con atropina versus ortoqueratología sola para el control de la miopía, evaluando elongación axial, agudeza visual, película lagrimal, diámetro pupilar, amplitud acomodativa y curvatura corneal.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Fewer Patients, Better Care",
       "url": "https://reviewofmm.com/fewer-patients-better-care/",
-      "summary_es": "Profesional oftalmológica describe su modelo de práctica privada enfocado en bajo volumen de pacientes y alto ingreso por paciente, utilizando el manejo de miopía como servicio diferenciador en su consultorio de alto nivel en Colorado.",
+      "summary_es": "Modelo de práctica privada enfocado en bajo volumen de pacientes y alto ingreso por atención, mediante consultorios de alto nivel y oferta de servicios de control de miopía para optimizar rentabilidad y calidad asistencial.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "JAMA Ophthalmology Publishes 24-Month Data on Essilor Stellest Lenses",
       "url": "https://reviewofmm.com/jama-ophthalmology-publishes-24-month-data-on-essilor-stellest-lenses/",
-      "summary_es": "EssilorLuxottica publicó en JAMA Ophthalmology los resultados a 24 meses del ensayo clínico estadounidense de lentes Essilor Stellest, primer producto oftálmico autorizado por FDA para desacelerar la progresión miópica pediátrica. Los datos respaldan la autorización De Novo y confirman la efectividad clínica del dispositivo en población infantil.",
+      "summary_es": "EssilorLuxottica publica en JAMA Ophthalmology resultados de 24 meses del ensayo clínico estadounidense que respalda la autorización FDA De Novo de los lentes Essilor Stellest, los primeros lentes oftálmicos autorizados en EE.UU. para desacelerar la progresión miópica pediátrica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "A Passion for Preventative Care Has Piloted My Myopia Management Journey",
       "url": "https://reviewofmm.com/a-passion-for-preventative-care/",
-      "summary_es": "Profesional de optometría comparte su experiencia en el manejo de la miopía motivada por prevención de complicaciones oftalmológicas. Destaca la importancia del seguimiento a largo plazo en pacientes pediátricos y adultos para evitar degeneración macular y otras patologías visuales asociadas a la progresión miópica.",
+      "summary_es": "Profesional de optometría comparte su experiencia personal en el manejo de la miopía motivada por historia familiar de degeneración macular, destacando la importancia del cuidado preventivo y el seguimiento longitudinal de pacientes en la práctica clínica oftalmológica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
