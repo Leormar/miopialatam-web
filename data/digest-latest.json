@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-02T12:00:49.492757+00:00",
+  "generated_at": "2026-09-02T16:02:54.335231+00:00",
   "date_display": "02 Sep 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Echoing the Emotional Ecosystem",
-      "url": "https://reviewofmm.com/the-architecture-of-the-emotional-ecosystem/",
-      "summary_es": "Artículo reflexivo sobre la importancia de la experiencia del paciente pediátrico en el manejo de la miopía durante la temporada de regreso a clases, enfatizando el papel de las interacciones auténticas en la consulta oftalmológica.",
+      "title": "OrthoK With vs. Without Atropine for Childhood Myopia",
+      "url": "https://reviewofmm.com/orthok-with-vs-without-atropine-for-childhood-myopia/",
+      "summary_es": "Metaanálisis de 18 ensayos clínicos aleatorizados en 1,669 niños compara ortoqueratología combinada con atropina versus ortoqueratología sola en el control de la miopía, evaluando elongación axial, agudeza visual, película lagrimal, diámetro pupilar, amplitud acomodativa y curvatura corneal.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "What Successful Practices Are Doing Differently",
       "url": "https://reviewofmm.com/what-successful-practices-are-doing-differently/",
-      "summary_es": "El artículo analiza características comunes de prácticas oftalmológicas exitosas basándose en 40 años de experiencia profesional, identificando que el éxito no depende del tamaño o equipamiento, sino de la alineación deliberada con valores fundamentales de la práctica.",
+      "summary_es": "Artículo que analiza las características diferenciales de prácticas oftalmológicas exitosas, enfatizando que el éxito no depende del tamaño o equipamiento sino de la construcción deliberada de la práctica alrededor de valores fundamentales compartidos por los profesionales.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "GMAC Announces 2026-2027 Advisory Panel",
       "url": "https://reviewofmm.com/gmac-announces-2026-2027-advisory-panel/",
-      "summary_es": "La Coalición Global de Conciencia sobre Miopía (GMAC) anunció su Panel Asesor 2026-2027, integrando expertos en investigación, práctica clínica, educación profesional y salud pública para fortalecer su misión de sensibilización global sobre miopía infantil e impulsar acciones informadas en la comunidad oftalmológica.",
+      "summary_es": "La Coalición Global de Conciencia sobre Miopía anuncia su Panel Asesor para 2026-2027, integrando expertos en investigación, práctica clínica, educación profesional y salud pública. El panel proporcionará orientación para fortalecer la misión de conciencia global sobre miopía infantil e impulsar acciones informadas.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "X-Cel Specialty Contacts Releases FDA-Approved Lunara OrthoK Lenses",
       "url": "https://reviewofmm.com/x-cel-specialty-contacts-releases-fda-approved-lunara-orthok-lenses/",
-      "summary_es": "X-Cel Specialty Contacts y Essilor Custom Contacts anunciaron el lanzamiento de Lunara, lentes de ortoqueratología aprobados por FDA, fabricados en material Optimum Infinite con alta permeabilidad al oxígeno para uso nocturno. El diseño de geometría permite aplicar principios de ajuste tangencial establecidos con opciones flexible de zona óptica y diámetro.",
+      "summary_es": "X-Cel Specialty Contacts lanzó Lunara, lentes de ortoqueratología aprobados por FDA fabricados en material Optimum Infinite® con alta permeabilidad de oxígeno para uso nocturno. El diseño se basa en principios de ajuste tangencial establecidos, ofreciendo opciones flexibles de zona óptica y diámetro para adaptarse a necesidades individuales de pacientes.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
