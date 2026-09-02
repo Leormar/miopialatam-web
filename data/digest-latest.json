@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-09-02T16:02:54.335231+00:00",
+  "generated_at": "2026-09-02T16:38:13.166013+00:00",
   "date_display": "02 Sep 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "OrthoK With vs. Without Atropine for Childhood Myopia",
-      "url": "https://reviewofmm.com/orthok-with-vs-without-atropine-for-childhood-myopia/",
-      "summary_es": "Metaanálisis de 18 ensayos clínicos aleatorizados en 1,669 niños compara ortoqueratología combinada con atropina versus ortoqueratología sola en el control de la miopía, evaluando elongación axial, agudeza visual, película lagrimal, diámetro pupilar, amplitud acomodativa y curvatura corneal.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Myopia control efficacy The next generation spectacle lenses for myopia control",
+      "url": "https://www.myopiaprofile.com/articles/the-next-generation-dims-and-halt-technology-spectacle-lenses-for-myopia-control",
+      "summary_es": "Análisis de la eficacia en el control de la miopía mediante lentes oftálmicas de nueva generación, evaluando su desempeño como herramienta terapéutica en la práctica clínica contemporánea.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "What Successful Practices Are Doing Differently",
-      "url": "https://reviewofmm.com/what-successful-practices-are-doing-differently/",
-      "summary_es": "Artículo que analiza las características diferenciales de prácticas oftalmológicas exitosas, enfatizando que el éxito no depende del tamaño o equipamiento sino de la construcción deliberada de la práctica alrededor de valores fundamentales compartidos por los profesionales.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "GMAC Announces 2026-2027 Advisory Panel",
-      "url": "https://reviewofmm.com/gmac-announces-2026-2027-advisory-panel/",
-      "summary_es": "La Coalición Global de Conciencia sobre Miopía anuncia su Panel Asesor para 2026-2027, integrando expertos en investigación, práctica clínica, educación profesional y salud pública. El panel proporcionará orientación para fortalecer la misión de conciencia global sobre miopía infantil e impulsar acciones informadas.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Spectacles ARVO2025 Recap #1 - Updates in myopia control spectacles This first recap brings you updates on DIMS, CARE, HALT, and other lens technologies from ARVO 2025.",
+      "url": "https://www.myopiaprofile.com/articles/recap-1-ARVO-2025",
+      "summary_es": "Recapitulación de actualizaciones presentadas en ARVO 2025 sobre tecnologías de lentes para control de miopía, incluyendo DIMS, CARE, HALT y otras innovaciones de fabricantes de óptica oftálmica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "X-Cel Specialty Contacts Releases FDA-Approved Lunara OrthoK Lenses",
-      "url": "https://reviewofmm.com/x-cel-specialty-contacts-releases-fda-approved-lunara-orthok-lenses/",
-      "summary_es": "X-Cel Specialty Contacts lanzó Lunara, lentes de ortoqueratología aprobados por FDA fabricados en material Optimum Infinite® con alta permeabilidad de oxígeno para uso nocturno. El diseño se basa en principios de ajuste tangencial establecidos, ofreciendo opciones flexibles de zona óptica y diámetro para adaptarse a necesidades individuales de pacientes.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Myopia control efficacy Understanding the new Essilor® Stellest® spectacle lens",
+      "url": "https://www.myopiaprofile.com/articles/understanding-essilor-stellest-lens-myopia",
+      "summary_es": "Análisis de la eficacia del lente oftálmico Essilor Stellest en el control de la miopía, incluyendo mecanismos de acción y resultados clínicos de esta tecnología de corrección refractiva innovadora.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    },
+    {
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Axial length How much axial length growth is normal?",
+      "url": "https://www.myopiaprofile.com/articles/how-much-axial-length-growth-is-normal",
+      "summary_es": "Artículo que analiza el crecimiento axial normal en la progresión miópica pediátrica, proporcionando referencias clínicas para distinguir entre elongación fisiológica y patológica en el seguimiento de pacientes.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
