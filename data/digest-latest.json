@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T16:29:27.544875+00:00",
+  "generated_at": "2026-09-03T16:39:14.839887+00:00",
   "date_display": "03 Sep 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Myopia Spectacles in the Real World: Lessons From the Exam Room to the Optical",
       "url": "https://reviewofmm.com/myopia-spectacles-in-real-world/",
-      "summary_es": "Artículo sobre el cambio de paradigma en atención pediátrica oftalmológica, enfatizando la importancia de gestionar la miopía infantil más allá de la simple corrección refractiva, considerando protocolos de control y seguimiento a largo plazo en la práctica clínica.",
+      "summary_es": "Artículo de revisión sobre gestión de miopía con énfasis en lentes oftálmicas correctivas y cambio de paradigma en la práctica clínica pediátrica, desde la simple corrección refractiva hacia un enfoque de control y manejo de la progresión miópica en niños.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "What Successful Practices Are Doing Differently",
-      "url": "https://reviewofmm.com/what-successful-practices-are-doing-differently/",
-      "summary_es": "Análisis sobre características comunes de prácticas oftalmológicas exitosas basado en 40 años de experiencia profesional. El éxito no depende del tamaño o equipamiento, sino de construir la práctica deliberadamente alrededor de valores fundamentales compartidos.",
+      "title": "Strategies to Manage Families Who Have Consistently Said NO to Myopia Management",
+      "url": "https://reviewofmm.com/families-who-have-consistently-said-no-to-myopia-management/",
+      "summary_es": "Estrategias para abordar familias que rechazan consistentemente el manejo de la miopía, identificando las razones de la negativa y mejorando la educación de padres para facilitar decisiones informadas sobre el tratamiento oftalmológico pediátrico.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "GMAC Announces 2026-2027 Advisory Panel",
       "url": "https://reviewofmm.com/gmac-announces-2026-2027-advisory-panel/",
-      "summary_es": "La Global Myopia Awareness Coalition anuncia su panel asesor para 2026-2027, integrado por expertos en investigación de miopía, práctica clínica, educación profesional y salud pública. El panel guiará las iniciativas de GMAC para incrementar la conciencia global sobre miopía infantil e impulsar acciones informadas en la materia.",
+      "summary_es": "La Coalición Global de Conciencia sobre Miopía (GMAC) anunció su Panel Asesor para 2026-2027, integrado por expertos en investigación, práctica clínica, educación profesional y salud pública para fortalecer su misión de concientización global sobre miopía infantil e impulsar acciones informadas.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "Refractive Error and Mental Health",
       "url": "https://reviewofmm.com/refractive-error-and-mental-health/",
-      "summary_es": "Estudio de la UK Biobank analiza la asociación entre errores refractivos y trastornos de salud mental, identificando mayor incidencia de depresión, trastorno bipolar y esquizofrenia en individuos con miopía comparados con emétropes, generando nuevas perspectivas sobre el impacto sistémico de la miopía.",
+      "summary_es": "Estudio poblacional del UK Biobank evidencia asociación significativa entre errores refractivos y mayor incidencia de trastornos mentales como depresión, trastorno bipolar y esquizofrenia, comparado con individuos emétropes.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
