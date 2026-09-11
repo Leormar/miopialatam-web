@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-09-11T16:32:41.269737+00:00",
+  "generated_at": "2026-09-11T16:43:43.331107+00:00",
   "date_display": "11 Sep 2026",
   "items": [
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Soft contact lenses Ortho-k ARVO2026 Recap #1 – What's new in contact lens myopia control? The first recap from ARVO 2026 covers the latest evidence on soft contact lenses and orthokeratology for myopia control, including long-term and real-world data.",
-      "url": "https://www.myopiaprofile.com/articles/recap-1-ARVO-2026",
-      "summary_es": "Se presentan los últimos avances en lentes de contacto blandos y ortoqueratología para control de miopía desde ARVO 2026, incluyendo datos de seguimiento a largo plazo y evidencia de práctica clínica real.",
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Myopia Spectacles in the Real World: Lessons From the Exam Room to the Optical",
+      "url": "https://reviewofmm.com/myopia-spectacles-in-real-world/",
+      "summary_es": "Artículo de revisión que aborda el cambio de paradigma en la atención oftalmológica pediátrica, pasando de la simple corrección refractiva al manejo activo de la progresión miópica mediante diferentes estrategias terapéuticas disponibles en consultorio y óptica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Myopia control efficacy Understanding the new Essilor® Stellest® spectacle lens",
-      "url": "https://www.myopiaprofile.com/articles/understanding-essilor-stellest-lens-myopia",
-      "summary_es": "Essilor presenta Stellest®, lente oftálmica de control de miopía con tecnología innovadora. El artículo analiza la eficacia clínica de esta nueva solución para el manejo refractivo en población pediátrica.",
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Download Building Your Myopia A-Game Guide 2026",
+      "url": "https://reviewofmm.com/download-building-your-myopia-a-game-guide-2026/",
+      "summary_es": "Guía completa 2026 para optimizar la gestión de práctica en manejo de miopía, abarcando estructuras de honorarios, integración de tecnología, roles del equipo y modelos operacionales para transitar desde enfoque pasivo a atención proactiva centrada en pacientes.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Myopia Leaders Featured at SUNY’s Inaugural Advancing Vision Summit",
+      "url": "https://reviewofmm.com/myopia-leaders-featured-at-sunys-inaugural-advancing-vision-summit/",
+      "summary_es": "La Fundación del SUNY College of Optometry anuncia la cumbre inaugural \"Advancing Vision Summit\" para el 25 de septiembre, con líderes de Microsoft, Mount Sinai, CooperVision y EssilorLuxottica explorando la intersección entre inteligencia artificial, atención oftalmológica y salud pública.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Myopia control efficacy The next generation spectacle lenses for myopia control",
-      "url": "https://www.myopiaprofile.com/articles/the-next-generation-dims-and-halt-technology-spectacle-lenses-for-myopia-control",
-      "summary_es": "Análisis de la eficacia de las nuevas generaciones de lentes oftálmicas diseñadas específicamente para el control de la miopía, evaluando su desempeño en la desaceleración del progreso miópico en población pediátrica.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
-    },
-    {
-      "source": "Myopia Profile · Clinical",
-      "source_short": "Myopia Profile",
-      "title": "Axial length How much axial length growth is normal?",
-      "url": "https://www.myopiaprofile.com/articles/how-much-axial-length-growth-is-normal",
-      "summary_es": "Artículo que aborda el crecimiento axial normal en ojos miopes, proporcionando referentes clave para la evaluación clínica y monitoreo del alargamiento axial en pacientes pediátricos durante el control de la progresión miópica.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Building Your Myopia ‘A-Game,’ THE Myopia Meeting Land in Dallas",
+      "url": "https://reviewofmm.com/building-your-myopia-a-game-the-myopia-meeting-land-in-dallas/",
+      "summary_es": "Review of Myopia Management realizó THE Myopia Meeting en Dallas, evento de educación continua que ofreció a profesionales de la visión estrategias clínicas y operativas para integrar y escalar el manejo de miopía en prácticas de atención primaria.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     }
   ]
 }
