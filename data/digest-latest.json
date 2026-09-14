@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-14T12:00:48.155928+00:00",
+  "generated_at": "2026-09-14T17:48:15.275186+00:00",
   "date_display": "14 Sep 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Myopia Spectacles in the Real World: Lessons From the Exam Room to the Optical",
-      "url": "https://reviewofmm.com/myopia-spectacles-in-real-world/",
-      "summary_es": "Artículo que aborda el manejo clínico de la miopía en pediatría, enfatizando la necesidad de transitar desde la simple corrección refractiva hacia un enfoque integral de control de progresión. Discute la evolución en protocolos terapéuticos y seguimiento del paciente pediátrico con miopía.",
+      "title": "Outdoor Time and Myopia Progression: The Seasonal Signal",
+      "url": "https://reviewofmm.com/outdoor-time-and-myopia-progression-the-seasonal-signal/",
+      "summary_es": "Análisis sobre la relación entre tiempo al aire libre y progresión miópica, considerando su rol tanto en prevención de miopía como en control de la progresión en miopes establecidos. Evidencia clínica que fundamenta la recomendación de exposición outdoor en protocolos de manejo miópico pediátrico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Download Building Your Myopia A-Game Guide 2026",
       "url": "https://reviewofmm.com/download-building-your-myopia-a-game-guide-2026/",
-      "summary_es": "Guía integral 2026 para optimizar la gestión clínica de miopía en consultorios, abordando estructuras de honorarios, integración de tecnología, roles del equipo y protocolos operacionales para transformar la práctica desde enfoque reactivo a modelo proactivo de atención centrado en el paciente.",
+      "summary_es": "Guía integral para optimizar la gestión de práctica en control de miopía, abarcando estructuras de honorarios, integración de lentes de control y organización de equipo. Recurso diseñado para escalar operaciones y transitar desde enfoque pasivo hacia atención proactiva centrada en el paciente.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -25,9 +25,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Myopia Leaders Featured at SUNY’s Inaugural Advancing Vision Summit",
-      "url": "https://reviewofmm.com/myopia-leaders-featured-at-sunys-inaugural-advancing-vision-summit/",
-      "summary_es": "SUNY College of Optometry Foundation anuncia su primer Advancing Vision Summit el 25 de septiembre, reuniendo líderes de tecnología, salud pública e industria oftálmica para explorar la intersección entre inteligencia artificial y atención visual. El evento gratuito contará con participantes de Microsoft, Mount Sinai, CooperVision y EssilorLuxottica.",
+      "title": "The AMA Calls Myopia a Disease. Now What?",
+      "url": "https://reviewofmm.com/the-ama-calls-myopia-a-disease-now-what/",
+      "summary_es": "La Asociación Médica Americana reconoció oficialmente la miopía como enfermedad, marcando un cambio significativo en la percepción de la condición más allá del error refractivo tradicional. Este reconocimiento valida los esfuerzos de la comunidad de manejo de miopía y abre nuevas oportunidades para el abordaje clínico y la cobertura de intervenciones preventivas.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Building Your Myopia ‘A-Game,’ THE Myopia Meeting Land in Dallas",
-      "url": "https://reviewofmm.com/building-your-myopia-a-game-the-myopia-meeting-land-in-dallas/",
-      "summary_es": "Review of Myopia Management realizó THE Myopia Meeting en Dallas, evento de educación continuada que brindó a profesionales de la visión herramientas clínicas y estrategias operacionales para integrar y escalar el manejo de miopía en práctica primaria.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "title": "We Have the Tools. We Just Haven’t Made the Decision.",
+      "url": "https://reviewofmm.com/we-have-the-tools-we-just-havent-made-the-decision/",
+      "summary_es": "Artículo que destaca la disponibilidad de herramientas científicamente validadas para el control de la miopía pediátrica, enfatizando que la barrera actual no es la evidencia sino la adopción clínica de estos protocolos terapéuticos establecidos.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
