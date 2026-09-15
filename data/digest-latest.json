@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-15T12:00:41.395277+00:00",
+  "generated_at": "2026-09-15T16:23:02.124170+00:00",
   "date_display": "15 Sep 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Outdoor Time and Myopia Progression: The Seasonal Signal",
-      "url": "https://reviewofmm.com/outdoor-time-and-myopia-progression-the-seasonal-signal/",
-      "summary_es": "Análisis sobre el impacto del tiempo al aire libre en la progresión miópica pediátrica, diferenciando su rol preventivo en no miopes versus su eficacia limitada como estrategia única en miopes ya establecidos, cuestionando la efectividad real de esta recomendación clínica.",
+      "title": "Helping Families Navigate Myopia Care and Concerns",
+      "url": "https://reviewofmm.com/helping-families-navigate-myopia-care-and-concerns/",
+      "summary_es": "Experiencia clínica en el desarrollo de programas de manejo de miopía, incluyendo tratamiento con ortoqueratología y evolución de recursos disponibles para el control refractivo pediátrico en consultorios privados.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Download Building Your Myopia A-Game Guide 2026",
       "url": "https://reviewofmm.com/download-building-your-myopia-a-game-guide-2026/",
-      "summary_es": "Guía integral 2026 para optimizar la gestión de práctica en miopía, abarcando estructuras de honorarios, integración de tecnologías de control y organización operativa. Recurso diseñado para transitar desde enfoque pasivo hacia atención proactiva centrada en el paciente.",
+      "summary_es": "Guía integral 2026 para optimizar la gestión de consultorios enfocados en manejo de miopía, abordando estructuras de honorarios, integración de tecnología, roles del equipo y estrategias operacionales para transitar desde modelos pasivos hacia atención proactiva centrada en el paciente.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "The AMA Calls Myopia a Disease. Now What?",
       "url": "https://reviewofmm.com/the-ama-calls-myopia-a-disease-now-what/",
-      "summary_es": "La Asociación Médica Americana reconoce oficialmente la miopía como enfermedad, validando años de advocacy de especialistas en manejo miópico. Este cambio de clasificación reposiciona la miopía más allá del error refractivo, enfatizando el riesgo de patología ocular y las oportunidades de intervención preventiva en pacientes pediátricos.",
+      "summary_es": "La Asociación Médica Americana clasificó la miopía como enfermedad, reconociendo su naturaleza más allá de un error refractivo simple y su asociación con cambios estructurales oculares y riesgo de patología. Este cambio de perspectiva institucional marca un hito importante en la posición de la miopía como condición médica intervenible.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,9 +35,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "We Have the Tools. We Just Haven’t Made the Decision.",
-      "url": "https://reviewofmm.com/we-have-the-tools-we-just-havent-made-the-decision/",
-      "summary_es": "Artículo que reflexiona sobre la disponibilidad de herramientas científicamente validadas para el control de la miopía en niños y la necesidad de decisión clínica para su implementación en la práctica oftalmológica.",
+      "title": "Outdoor Time and Myopia Progression: The Seasonal Signal",
+      "url": "https://reviewofmm.com/outdoor-time-and-myopia-progression-the-seasonal-signal/",
+      "summary_es": "El tiempo al aire libre emerge como factor preventivo en la progresión miópica pediátrica, mostrando patrones estacionales significativos. Su efectividad varía según el estadio refractivo, siendo determinante en prevención pero complementario en miopía establecida.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
