@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-21T12:00:57.549893+00:00",
+  "generated_at": "2026-09-21T17:55:26.134994+00:00",
   "date_display": "21 Sep 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Helping Families Navigate Myopia Care and Concerns",
-      "url": "https://reviewofmm.com/helping-families-navigate-myopia-care-and-concerns/",
-      "summary_es": "Experiencia clínica de optómetra en desarrollo y evolución de programas de manejo de miopía, incluyendo tratamiento con ortoqueratología y herramientas terapéuticas disponibles para el control de la progresión miópica en consultorios de práctica privada.",
+      "title": "Stepwise Increase in Concentrations of Atropine for Myopia Treatment",
+      "url": "https://reviewofmm.com/stepwise-increase-in-concentrations-of-atropine-for-myopia-treatment/",
+      "summary_es": "Estudio prospectivo evalúa enfoque escalonado de atropina iniciando con concentración 0.01% en niños con miopía, ajustando según respuesta individual. Investigación explora alternativa práctica a protocolos de dosis fijas para optimizar tratamiento en manejo de progresión miópica pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Download Building Your Myopia A-Game Guide 2026",
       "url": "https://reviewofmm.com/download-building-your-myopia-a-game-guide-2026/",
-      "summary_es": "Guía integral 2026 para optimizar la gestión clínica de miopía en consultorios, abordando estructuras de honorarios, integración de tecnología, roles del equipo y transición hacia modelos de atención proactivos centrados en el paciente.",
+      "summary_es": "Guía integral 2026 para optimizar la gestión práctica en control de miopía, abordando estructuras de honorarios, integración de tecnologías, roles del personal y estrategias operacionales para transitar desde enfoque pasivo hacia atención proactiva centrada en el paciente.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "The AMA Calls Myopia a Disease. Now What?",
       "url": "https://reviewofmm.com/the-ama-calls-myopia-a-disease-now-what/",
-      "summary_es": "La Asociación Médica Americana reconoce oficialmente la miopía como enfermedad, marcando un cambio significativo en su percepción clínica en Estados Unidos. Este clasificación institucional refuerza el paradigma de manejo activo de la miopía en población pediátrica frente a la simple corrección refractiva.",
+      "summary_es": "La Asociación Médica Americana clasificó la miopía como enfermedad, reconociendo su naturaleza más allá del error refractivo y su asociación con cambios estructurales oculares y riesgo aumentado de patología oftalmológica, marcando un punto de inflexión en la percepción clínica de la condición.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,9 +35,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Outdoor Time and Myopia Progression: The Seasonal Signal",
-      "url": "https://reviewofmm.com/outdoor-time-and-myopia-progression-the-seasonal-signal/",
-      "summary_es": "Estudio analiza la relación entre tiempo al aire libre y progresión miópica, considerando variaciones estacionales. Discute el rol del tiempo outdoor como estrategia preventiva versus control en miopes establecidos, evidenciando su importancia en el manejo integral de la miopía pediátrica.",
+      "title": "Written to Be Proven Wrong",
+      "url": "https://reviewofmm.com/written-to-be-proven-wrong/",
+      "summary_es": "Análisis sobre la proyección de 2016 que estimaba que el 50% de la población mundial sería miope en 2050. Una década después, los datos confirman que la proyección se mantiene vigente, evidenciando que los esfuerzos de control de miopía aún no han logrado modificar la tendencia global proyectada.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
