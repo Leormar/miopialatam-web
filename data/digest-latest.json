@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-29T18:07:03.246585+00:00",
+  "generated_at": "2026-09-29T18:14:06.651306+00:00",
   "date_display": "29 Sep 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Retinal ERG Responses to Atropine",
-      "url": "https://reviewofmm.com/retinal-erg-responses-to-atropine/",
-      "summary_es": "Estudio sobre las respuestas electroretinográficas a la atropina tópica, que profundiza en sus mecanismos de acción más allá de la inhibición acomodativa para comprender cómo mitiga la elongación axial y la progresión miópica mediante cascadas de señalización retiniana.",
+      "title": "How to Communicate with Parents Who ‘Just Want Glasses’",
+      "url": "https://reviewofmm.com/how-to-communicate-with-parents-who-just-want-glasses/",
+      "summary_es": "Artículo sobre estrategias de comunicación con padres de pacientes pediátricos miopes para orientarlos hacia opciones de control de miopía más allá de la prescripción convencional de gafas, abordando resistencias y objeciones comunes en la consulta.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,19 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "How to Communicate with Parents Who ‘Just Want Glasses’",
-      "url": "https://reviewofmm.com/how-to-communicate-with-parents-who-just-want-glasses/",
-      "summary_es": "Estrategia de comunicación con padres que solicitan únicamente corrección óptica tradicional en menores con miopía. El artículo aborda técnicas para informar sobre opciones de control miópico en contextos donde la demanda inicial se limita a anteojos convencionales.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "New Research Shows DOT™ Lenses Deliver Natural Vision & Movement for Kids",
-      "url": "https://reviewofmm.com/new-research-shows-dot-lenses-deliver-natural-vision-movement-for-kids/",
-      "summary_es": "SightGlass Vision presentó nueva investigación en la Academia Americana de Optometría 2026 demostrando que los lentes DOT™ proporcionan visión y movimiento natural en niños, comparable a lentes estándar de visión simple, mientras controlan la miopía de forma efectiva.",
+      "title": "Myopia Action Month: Interview with Dr. Monica Jong",
+      "url": "https://reviewofmm.com/myopia-action-month-drjong/",
+      "summary_es": "Entrevista con ejecutiva de EssilorLuxottica durante Myopia Action Month abordando factores ambientales y de estilo de vida que impulsan el aumento de miopía infantil a nivel global, enfatizando la importancia de la intervención temprana.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,9 +25,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
+      "title": "Retinal ERG Responses to Atropine",
+      "url": "https://reviewofmm.com/retinal-erg-responses-to-atropine/",
+      "summary_es": "Estudio sobre los mecanismos de acción de la atropina tópica en respuestas retinianas mediante electrorretinografía. La investigación examina cascadas de señalización retiniana para comprender cómo la atropina mitiga la elongación axial más allá del efecto acomodativo conocido.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
       "title": "Five Lessons That Changed the Way I Practice",
       "url": "https://reviewofmm.com/five-lessons-that-changed-the-way-i-practice/",
-      "summary_es": "Artículo de reflexión sobre la evolución en el manejo clínico de la miopía a través de experiencias prácticas y aprendizajes con colegas, destacando la importancia del intercambio profesional presencial versus educación virtual en la actualidad.",
+      "summary_es": "Reflexión sobre la evolución en la práctica del manejo de miopía a través de experiencias clínicas y aprendizajes clave obtenidos mediante interacciones profesionales y desafíos a creencias establecidas en la práctica oftalmológica cotidiana.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
