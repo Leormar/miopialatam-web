@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-28T19:48:54.531796+00:00",
-  "date_display": "28 Sep 2026",
+  "generated_at": "2026-09-29T12:00:56.563220+00:00",
+  "date_display": "29 Sep 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "How to Communicate with Parents Who ‘Just Want Glasses’",
       "url": "https://reviewofmm.com/how-to-communicate-with-parents-who-just-want-glasses/",
-      "summary_es": "Estrategia comunicacional con padres de menores con miopía progresiva, enfocada en la adopción de protocolos de manejo miópico frente a la demanda inicial de corrección óptica convencional. Aborda desafíos de educación y adhesión terapéutica en población pediátrica con antecedentes familiares.",
+      "summary_es": "Abordaje comunicacional con padres que solicitan únicamente corrección óptica tradicional en niños miopes. Estrategia para presentar opciones de control de miopía considerando la predisposición genética y factores de riesgo progresivo.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "New Research Shows DOT™ Lenses Deliver Natural Vision & Movement for Kids",
-      "url": "https://reviewofmm.com/new-research-shows-dot-lenses-deliver-natural-vision-movement-for-kids/",
-      "summary_es": "SightGlass Vision presenta nuevos datos de investigación sobre lentes DOT™ en la Academia Americana de Optometría 2026, demostrando que niños con estas lentes experimentan visión y movimiento similares a lentes estándar mientras reciben control de miopía.",
+      "title": "Myopia Action Month: Interview with Dr. Monica Jong",
+      "url": "https://reviewofmm.com/myopia-action-month-drjong/",
+      "summary_es": "EssilorLuxottica participa en Myopia Action Month con entrevista sobre factores ambientales y de estilo de vida que impulsan el aumento de miopía infantil, destacando la importancia de la intervención temprana frente a proyecciones que estiman afectará al 50% de la población global para 2050.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "Retinal ERG Responses to Atropine",
       "url": "https://reviewofmm.com/retinal-erg-responses-to-atropine/",
-      "summary_es": "Estudio sobre la respuesta electrofisiológica retiniana a la atropina tópica, explorando mecanismos de acción más allá de la inhibición acomodativa. La investigación utiliza modelos animales para esclarecer las cascadas de señalización retiniana implicadas en el control de la elongación axial y progresión miópica.",
+      "summary_es": "Estudio sobre los mecanismos de acción de la atropina tópica en las respuestas retinianas mediante electroretinografía. La investigación explora las cascadas de señalización retiniana involucradas en la mitigación de la elongación axial, más allá del efecto acomodativo comúnmente conocido.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "Five Lessons That Changed the Way I Practice",
       "url": "https://reviewofmm.com/five-lessons-that-changed-the-way-i-practice/",
-      "summary_es": "Artículo editorial que comparte cinco lecciones clave que transformaron la práctica clínica del manejo de miopía, enfatizando la importancia del aprendizaje colaborativo entre profesionales y la evolución de protocolos terapéuticos basada en experiencia clínica compartida.",
+      "summary_es": "Artículo de reflexión sobre la evolución en la práctica clínica de manejo de miopía, destacando cómo las experiencias interpersonales y conversaciones con colegas han generado cambios significativos en los enfoques terapéuticos más que la educación formal tradicional.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
