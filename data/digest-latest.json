@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-29T18:14:06.651306+00:00",
-  "date_display": "29 Sep 2026",
+  "generated_at": "2026-09-30T12:00:56.310459+00:00",
+  "date_display": "30 Sep 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "How to Communicate with Parents Who ‘Just Want Glasses’",
       "url": "https://reviewofmm.com/how-to-communicate-with-parents-who-just-want-glasses/",
-      "summary_es": "Artículo sobre estrategias de comunicación con padres de pacientes pediátricos miopes para orientarlos hacia opciones de control de miopía más allá de la prescripción convencional de gafas, abordando resistencias y objeciones comunes en la consulta.",
+      "summary_es": "Artículo sobre estrategias de comunicación con padres de niños miopes que inicialmente solicitan únicamente corrección óptica. Analiza cómo presentar opciones de control de miopía de manera efectiva cuando la demanda inicial es solo prescripción de anteojos.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Myopia Action Month: Interview with Dr. Monica Jong",
       "url": "https://reviewofmm.com/myopia-action-month-drjong/",
-      "summary_es": "Entrevista con ejecutiva de EssilorLuxottica durante Myopia Action Month abordando factores ambientales y de estilo de vida que impulsan el aumento de miopía infantil a nivel global, enfatizando la importancia de la intervención temprana.",
+      "summary_es": "EssilorLuxottica participa en Myopia Action Month con entrevista de su Head of Medical Affairs sobre los factores ambientales y de estilo de vida que impulsan el aumento de miopía infantil a nivel global, destacando la importancia de la intervención temprana.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "Retinal ERG Responses to Atropine",
       "url": "https://reviewofmm.com/retinal-erg-responses-to-atropine/",
-      "summary_es": "Estudio sobre los mecanismos de acción de la atropina tópica en respuestas retinianas mediante electrorretinografía. La investigación examina cascadas de señalización retiniana para comprender cómo la atropina mitiga la elongación axial más allá del efecto acomodativo conocido.",
+      "summary_es": "Estudio sobre los efectos de la atropina tópica en las respuestas retinianas mediante electroretinografía, explorando mecanismos de señalización retiniana más allá del control acomodativo en modelos animales para comprender mejor su acción en la progresión miópica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "Five Lessons That Changed the Way I Practice",
       "url": "https://reviewofmm.com/five-lessons-that-changed-the-way-i-practice/",
-      "summary_es": "Reflexión sobre la evolución en la práctica del manejo de miopía a través de experiencias clínicas y aprendizajes clave obtenidos mediante interacciones profesionales y desafíos a creencias establecidas en la práctica oftalmológica cotidiana.",
+      "summary_es": "Reflexión de un oftalmólogo sobre los aprendizajes clave que transformaron su práctica clínica en manejo de miopía, enfatizando la importancia del intercambio profesional y la experiencia colegiada frente a fuentes educativas tradicionales.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
