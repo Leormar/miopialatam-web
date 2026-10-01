@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-30T18:06:29.066160+00:00",
-  "date_display": "30 Sep 2026",
+  "generated_at": "2026-10-01T12:01:02.781013+00:00",
+  "date_display": "01 Oct 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "NaturalVue Lenses Slow Refractive Progression by Over 1.00 D, PROTECT Study Finds",
       "url": "https://reviewofmm.com/naturalvue-lenses-slow-refractive-progression-by-over-1-00-d-protect-study-finds/",
-      "summary_es": "El estudio PROTECT de tres años demuestra que las lentes de contacto multifocales NaturalVue reducen la progresión refractiva en más de 1.00 dioptría en niños miopes. Los resultados finales del ensayo clínico aleatorizado internacional serán presentados en la reunión anual de la Academia Americana de Optometría.",
+      "summary_es": "El estudio PROTECT de tres años demuestra que los lentes de contacto multifocales NaturalVue reducen la progresión refractiva en más de 1,00 D en niños miopes. Los resultados fueron presentados en la reunión anual de la Academia Americana de Optometría.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Myopia Action Month: Interview with Dr. Monica Jong",
       "url": "https://reviewofmm.com/myopia-action-month-drjong/",
-      "summary_es": "EssilorLuxottica participa en Myopia Action Month con una entrevista sobre los factores ambientales y de estilo de vida que impulsan el aumento de miopía infantil a nivel global, enfatizando la importancia de la intervención temprana ante proyecciones de prevalencia del 50% para 2050.",
+      "summary_es": "EssilorLuxottica participa en Myopia Action Month con entrevista de su Head de Medical Affairs abordando los factores ambientales y de estilo de vida detrás del aumento epidemiológico de miopía infantil y la importancia de la intervención temprana en la población global.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "How to Communicate with Parents Who ‘Just Want Glasses’",
       "url": "https://reviewofmm.com/how-to-communicate-with-parents-who-just-want-glasses/",
-      "summary_es": "Artículo sobre estrategias de comunicación con padres de pacientes pediátricos miopes que inicialmente solicitan solo corrección óptica, abordando la necesidad de presentar opciones de control de miopía más allá de los lentes convencionales.",
+      "summary_es": "Abordaje comunicacional con padres que demandan corrección óptica convencional en pacientes pediátricos miopes. Estrategias para presentar opciones de control de miopía en contextos de resistencia inicial a tratamientos alternativos.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "Retinal ERG Responses to Atropine",
       "url": "https://reviewofmm.com/retinal-erg-responses-to-atropine/",
-      "summary_es": "Estudio de electrofisiología retinal que investiga los mecanismos de acción de la atropina tópica en la progresión miópica mediante respuestas ERG, explorando cascadas de señalización retinal más allá del efecto acomodativo conocido en modelos animales.",
+      "summary_es": "Estudio sobre los mecanismos de acción de la atropina tópica en las respuestas retinianas mediante electrorretinografía. La investigación examina las cascadas de señalización retiniana involucradas en la mitigación de la elongación axial, más allá del mecanismo acomodativo tradicionalmente conocido.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
