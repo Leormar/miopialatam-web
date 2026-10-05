@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-04T16:59:28.167608+00:00",
-  "date_display": "04 Oct 2026",
+  "generated_at": "2026-10-05T12:01:05.239372+00:00",
+  "date_display": "05 Oct 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "NaturalVue Lenses Slow Refractive Progression by Over 1.00 D, PROTECT Study Finds",
       "url": "https://reviewofmm.com/naturalvue-lenses-slow-refractive-progression-by-over-1-00-d-protect-study-finds/",
-      "summary_es": "Estudio PROTECT de tres años demuestra que las lentes de contacto multifocales NaturalVue desaceleran la progresión miópica en más de 1.00 dioptría en niños. Los resultados finales serán presentados en la reunión anual de la Academia Americana de Optometría.",
+      "summary_es": "Estudio PROTECT de tres años demuestra que los lentes de contacto multifocales NaturalVue reducen la progresión miópica en más de 1.00 dioptría en niños, según resultados finales presentados en la Academia Americana de Optometría.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
+      "title": "How to Communicate with Parents Who ‘Just Want Glasses’",
+      "url": "https://reviewofmm.com/how-to-communicate-with-parents-who-just-want-glasses/",
+      "summary_es": "Artículo sobre estrategias de comunicación con padres que solicitan únicamente corrección óptica tradicional en lugar de adoptar protocolos de control de miopía, basado en experiencia clínica de 25 años en optometría.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
       "title": "ZEISS Introduces MyoActive Spectacle Lenses for Myopia",
       "url": "https://reviewofmm.com/zeiss-introduces-myoactive-spectacle-lenses-for-myopia/",
-      "summary_es": "ZEISS lanzó MyoActive, lentes oftálmicas innovadores para control de miopía que utilizan tecnología M.O.V.E. patentada, demostrando una reducción promedio de 0.60D en la progresión miópica y ausencia de progresión clínica relevante en niños usuarios.",
+      "summary_es": "ZEISS lanzó MyoActive, lentes oftálmicas innovadores para control de miopía que demuestran 0.60D menos progresión miópica en promedio mediante tecnología M.O.V.E. patentada. Los resultados clínicos muestran la mayor eficacia registrada hasta la fecha en esta categoría de lentes.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -25,19 +35,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "How to Communicate with Parents Who ‘Just Want Glasses’",
-      "url": "https://reviewofmm.com/how-to-communicate-with-parents-who-just-want-glasses/",
-      "summary_es": "Estrategia de comunicación con padres para promover control de miopía pediátrica más allá de la corrección óptica convencional. Aborda desafíos en la adhesión parental a protocolos de manejo miópico en pacientes pediátricos con antecedentes familiares de miopía.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
       "title": "Retinal ERG Responses to Atropine",
       "url": "https://reviewofmm.com/retinal-erg-responses-to-atropine/",
-      "summary_es": "Estudio que investiga los mecanismos de acción de la atropina tópica en la progresión miópica mediante análisis de respuestas retinianas en modelos animales, explorando cascadas de señalización retiniana más allá de la inhibición acomodativa convencional.",
+      "summary_es": "Estudio sobre mecanismos de acción de atropina tópica en respuestas retinianas mediante electroretinografía en modelo animal. Investiga cascadas de señalización retiniana independientes del efecto acomodativo, relevante para comprender control de elongación axial y progresión miópica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
