@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-05T20:55:55.290576+00:00",
-  "date_display": "05 Oct 2026",
+  "generated_at": "2026-10-06T12:00:52.252067+00:00",
+  "date_display": "06 Oct 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "0.01% Atropine for Myopia Prevention in Pre-myopia",
       "url": "https://reviewofmm.com/0-01-atropine-for-myopia-prevention-in-pre-myopia/",
-      "summary_es": "Estudio reciente demuestra que atropina al 0.01% reduce significativamente la progresión refractiva en niños pre-miopes, logrando 53% de reducción comparado con placebo, aunque sin cambios relevantes en longitud axial.",
+      "summary_es": "Estudio demuestra que atropina 0.01% reduce significativamente la progresión refractiva en niños pre-miópicos con 53% de reducción versus placebo, aunque sin cambios significativos en longitud axial. Hallazgo relevante para estrategias de prevención en miopía incipiente.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Five Do’s and Don’ts for Marketing Myopia Management Services",
       "url": "https://reviewofmm.com/marketing-myopia-management-services/",
-      "summary_es": "Artículo sobre estrategias de marketing para servicios de control de miopía, analizando la brecha entre oferta clínica disponible y pacientes que acceden a tratamientos. Aborda tácticas de comunicación para convertir consultas parentales en inicio de terapias de progresión miópica.",
+      "summary_es": "Artículo que analiza estrategias de marketing para servicios de control de miopía, identificando la brecha entre oferta clínica disponible y pacientes que reciben tratamiento, con recomendaciones prácticas para optimizar la comunicación con padres de niños miopes.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "ZEISS Introduces MyoActive Spectacle Lenses for Myopia",
       "url": "https://reviewofmm.com/zeiss-introduces-myoactive-spectacle-lenses-for-myopia/",
-      "summary_es": "ZEISS lanza MyoActive, lentes oftálmicas para control de miopía con tecnología M.O.V.E. patentada. Los resultados clínicos demuestran 0,60D menos de progresión miópica en promedio, con ausencia de progresión clínicamente relevante en niños tratados.",
+      "summary_es": "ZEISS lanza lentes oftálmicos MyoActive para control de miopía con tecnología M.O.V.E. patentada, demostrando reducción de 0.60D en progresión miópica promedio y ausencia de progresión clínicamente relevante en niños usuarios.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "New Research Confirms DOT Lenses Require No Vision Compromise",
       "url": "https://reviewofmm.com/dot-lenses-require-no-vision-compromise/",
-      "summary_es": "Investigación reciente demuestra que lentes DOT no comprometen la visión en niños, mostrando desempeño visual, movimiento y percepción similares a lentes unifocales estándar, con alta satisfacción y adaptación funcional en actividades diarias.",
+      "summary_es": "Investigación reciente confirma que los lentes DOT no comprometen la visión funcional en niños, demostrando adaptación y desempeño visual similar al de lentes monofocales estándar, con alta satisfacción del paciente en actividades cotidianas.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
