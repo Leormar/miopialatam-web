@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T12:00:41.880635+00:00",
+  "generated_at": "2026-10-07T18:29:55.780808+00:00",
   "date_display": "07 Oct 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "0.01% Atropine for Myopia Prevention in Pre-myopia",
       "url": "https://reviewofmm.com/0-01-atropine-for-myopia-prevention-in-pre-myopia/",
-      "summary_es": "Estudio reciente demuestra que atropina 0.01% reduce significativamente la progresión refractiva en niños premiopía, con reducción del 53% en cambio refractivo comparado con placebo, aunque sin diferencias en longitud axial.",
+      "summary_es": "Estudio demuestra que atropina 0.01% reduce significativamente la progresión refractiva en niños pre-miopes, con disminución del 53% en cambio refractivo comparado con placebo, aunque sin diferencias estadísticas en elongación axial.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Five Do’s and Don’ts for Marketing Myopia Management Services",
       "url": "https://reviewofmm.com/marketing-myopia-management-services/",
-      "summary_es": "Artículo sobre estrategias de marketing para servicios de control de miopía en consultorios oftalmológicos. Analiza la brecha entre oferta de terapias (63,6% de prácticas) y demanda real de pacientes pediátricos, enfatizando que la comunicación efectiva es clave para convertir consultantes en usuarios de tratamientos.",
+      "summary_es": "El artículo aborda estrategias de marketing para servicios de control de miopía, analizando la brecha entre prácticas que ofrecen terapia (63.6%) y pacientes menores de 18 años que la reciben (menos del 25%). Presenta recomendaciones clave para comunicar opciones de manejo miópico a padres de pacientes pediátricos.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -25,9 +25,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "ZEISS Introduces MyoActive Spectacle Lenses for Myopia",
-      "url": "https://reviewofmm.com/zeiss-introduces-myoactive-spectacle-lenses-for-myopia/",
-      "summary_es": "ZEISS lanzó las lentes oftálmicas MyoActive para control de miopía, utilizando tecnología patentada M.O.V.E. que genera señales dinámicas. Los resultados clínicos reportan reducción de 0.60D en la progresión miópica promedio, con eficacia superior en comparación con otras lentes oftálmicas disponibles.",
+      "title": "Jesper Wiegandt​ Named CEO of ZEISS Vision Care",
+      "url": "https://reviewofmm.com/jesper-wiegandt/",
+      "summary_es": "Jesper Wiegandt asume el cargo de CEO de ZEISS Vision Care, liderando estratégicamente la división de cuidado de la visión del grupo. El ejecutivo, quien se desempeñaba como Chief Commercial Officer, continuará impulsando la dirección comercial y operativa de la compañía.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "New Research Confirms DOT Lenses Require No Vision Compromise",
       "url": "https://reviewofmm.com/dot-lenses-require-no-vision-compromise/",
-      "summary_es": "Investigación reciente confirma que las lentes DOT (Diffusion Optical Technology) no comprometen la visión en niños, mostrando similares resultados visuales, movimiento y percepción comparadas con lentes monofocales estándar, manteniendo alta satisfacción y desempeño funcional en actividades cotidianas.",
+      "summary_es": "Investigación reciente confirma que lentes con Tecnología Óptica de Difusión no comprometen la visión en niños, demostrando desempeño visual y funcional similar al de lentes monofocales convencionales, con alta satisfacción y adaptación en actividades cotidianas.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
