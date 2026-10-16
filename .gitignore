@@ -7,3 +7,4 @@ Thumbs.db
 *.pdf
 LogotipoFinalMML__2019.ai
 "Upload files"
+__pycache__/

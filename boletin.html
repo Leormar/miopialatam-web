@@ -187,6 +187,25 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
 }
 @media(max-width:640px){.footer-grid{grid-template-columns:1fr}}
+
+/* SUBSTACK · lectura y audio */
+.sk-sec{max-width:1100px;margin:0 auto;padding:0 2rem 1rem}
+.sk-box{display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;background:linear-gradient(135deg,#FFF6F0 0%,#F7FAFD 100%);border:1px solid #F3D9C8;border-radius:22px;padding:1.8rem 2rem;margin:2.5rem 0 0}
+.sk-text{max-width:560px}
+.sk-k{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.74rem;letter-spacing:0.2em;text-transform:uppercase;color:#D45214;margin-bottom:0.45rem;display:flex;align-items:center;gap:8px}
+.sk-k svg{width:16px;height:16px}
+.sk-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.5rem;letter-spacing:-0.01em;color:var(--ink);margin:0 0 0.4rem;text-transform:none}
+.sk-box p{font-size:0.92rem;color:var(--txt);line-height:1.6;margin:0}
+.sk-actions{display:flex;flex-direction:column;gap:10px;min-width:260px}
+.sk-form{display:flex;gap:8px;flex-wrap:wrap}
+.sk-input{flex:1;min-width:150px;padding:0.8rem 1rem;border:1px solid var(--bd);border-radius:12px;font-family:inherit;font-size:0.9rem;color:var(--ink);background:#fff}
+.sk-input:focus{outline:none;border-color:#D45214}
+.sk-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0.8rem 1.3rem;border-radius:12px;border:none;background:#D45214;color:#fff;font-family:inherit;font-weight:700;font-size:0.9rem;cursor:pointer;white-space:nowrap;transition:transform .15s,background .2s}
+.sk-btn:hover{background:#b3430f;transform:translateY(-1px)}
+.sk-link{font-size:0.84rem;font-weight:700;color:#D45214;text-decoration:none;text-align:center}
+.sk-link:hover{text-decoration:underline}
+.sk-mini{font-size:0.72rem;color:var(--mu);text-align:center;line-height:1.5}
+@media(max-width:820px){.sk-box{padding:1.5rem}.sk-actions{width:100%;min-width:0}}
 </style>
 </head>
 <body>
@@ -233,7 +252,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <div class="hero-stats">
         <div class="hero-stat"><strong>3</strong> secciones por número</div>
         <div class="hero-stat"><strong>19</strong> países LATAM</div>
-        <div class="hero-stat"><strong>Trimestral</strong> · sin costo</div>
+        <div class="hero-stat"><strong>10</strong> ediciones · sin costo</div>
       </div>
     </div>
     <div class="sub-form" id="suscribirme">
@@ -248,6 +267,24 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 </section>
 
+<div class="sk-sec">
+  <div class="sk-box" id="substack">
+    <div class="sk-text">
+      <div class="sk-k"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h18v2.6H3V3zm0 5.2h18v2.6H3V8.2zm0 5.2l9 5 9-5V21l-9-5-9 5v-7.6z"/></svg> Tambien en Substack</div>
+      <h3>Lee y escucha cada edicion en Substack</h3>
+      <p>Las ediciones de <strong>Vision MML LATAM</strong> se publican tambien en <strong>Substack</strong>, con las figuras completas y la version narrada en audio. Suscribete gratis y te llega cada numero apenas sale.</p>
+    </div>
+    <div class="sk-actions">
+      <form class="sk-form" onsubmit="return mmlSubstack(this)">
+        <input class="sk-input" type="email" name="email" placeholder="Tu correo profesional" required>
+        <button class="sk-btn" type="submit">Suscribirme</button>
+      </form>
+      <a class="sk-link" href="https://grupomiopialatam.substack.com" target="_blank" rel="noopener">Ver todas las ediciones en Substack &#8599;</a>
+      <div class="sk-mini">Gratis. Puedes cancelar cuando quieras.</div>
+    </div>
+  </div>
+</div>
+
 <div class="content">
   <div class="issues-head">
     <div>
@@ -257,7 +294,115 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
     </div>
   </div>
   <div class="issues">
-
+    <!-- ISSUES:START -->
+    <a href="boletin-ed10.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 10 · Octubre 2026</div>
+        <div class="issue-cover-title">Premiopía: verla venir antes de que llegue</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 15 oct 2026</div>
+        <div class="issue-title">Cómo se detecta y qué se puede hacer a tiempo</div>
+        <div class="issue-desc">Definición IMI · puntos de corte CLEERE · aire libre y LAMP2 · tres cosas que mirar en consulta.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed09.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 09 · Octubre 2026</div>
+        <div class="issue-cover-title">¿Cuánto vale una dioptría?</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 12 oct 2026</div>
+        <div class="issue-title">El costo oculto de no frenar la miopía</div>
+        <div class="issue-desc">AVAC explicado sin fórmulas · costo-efectividad en Hong Kong y modelos globales · el vacío latinoamericano.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed08.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 08 · Octubre 2026</div>
+        <div class="issue-cover-title">Lo que una red de datos revela</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 10 oct 2026</div>
+        <div class="issue-title">Análisis de redes aplicado a la miopía infantil</div>
+        <div class="issue-desc">Similitud de Jaccard · ejemplo didáctico de 12 niños · triángulo de riesgo, aire libre protector y sesgo de indicación.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed07.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 07 · Octubre 2026</div>
+        <div class="issue-cover-title">¿Puede una calculadora predecir la miopía?</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 8 oct 2026</div>
+        <div class="issue-title">Calculadoras de miopía e inteligencia artificial</div>
+        <div class="issue-desc">PreMO, BHVI y MPRAS · modelos de IA con historias clínicas y fondo de ojo · AUC, VPP y VPN explicados.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed06.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 06 · Octubre 2026</div>
+        <div class="issue-cover-title">Lentes de noche: la orto-K</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 7 oct 2026</div>
+        <div class="issue-title">Lo que hay que saber de la ortoqueratología</div>
+        <div class="issue-desc">ROMIO y metaanálisis · efecto a 5 años · queratitis microbiana en proporción · perlas clínicas y reglas para padres.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed05.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 05 · Octubre 2026</div>
+        <div class="issue-cover-title">Gafas que frenan la miopía</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 7 oct 2026</div>
+        <div class="issue-title">Qué dice la evidencia y quién las aprobó</div>
+        <div class="issue-desc">DIMS, HAL y DOT · ensayos y metaanálisis · autorización FDA de 2025 · perlas de adaptación.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed04.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 04 · Octubre 2026</div>
+        <div class="issue-cover-title">¿Dónde actúa la atropina?</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 5 oct 2026</div>
+        <div class="issue-title">Lo que dicen 30 años de datos</div>
+        <div class="issue-desc">La hipótesis acomodativa que se cayó · retina, coroides y esclera · dosis y respuesta en LAMP y CHAMP.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed03.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 03 · Octubre 2026</div>
+        <div class="issue-cover-title">No solo gafas: un plan</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 3 oct 2026</div>
+        <div class="issue-title">Cómo hablar de miopía con los padres</div>
+        <div class="issue-desc">La miopía que no se siente · cada dioptría cuenta · de explicar a acompañar en la consulta.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
+    <a href="boletin-ed02.html" class="issue">
+      <div class="issue-cover">
+        <div class="issue-num">Edición 02 · Octubre 2026</div>
+        <div class="issue-cover-title">ARVO 2026: lentes de contacto que frenan</div>
+      </div>
+      <div class="issue-content">
+        <div class="issue-date">Publicado 2 oct 2026</div>
+        <div class="issue-title">Lo nuevo en lentes de contacto para control de miopía</div>
+        <div class="issue-desc">Abiliti 1-Day a 24 meses · EDOF a 5 años · PROTECT con NaturalVue · orto-K en 14.000 niños de Tianjin.</div>
+        <div class="issue-cta">Leer edición</div>
+      </div>
+    </a>
     <a href="boletin-ed01.html" class="issue">
       <div class="issue-cover">
         <div class="issue-num">Edición 01 · Mayo 2026</div>
@@ -270,19 +415,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
         <div class="issue-cta">Leer edición</div>
       </div>
     </a>
-
-    <div class="issue placeholder">
-      <div class="issue-cover">
-        <div class="issue-num">Edición 02 · Próximamente</div>
-        <div class="issue-cover-title">Próximo número</div>
-      </div>
-      <div class="issue-content">
-        <div class="issue-date">Tercer trimestre 2026</div>
-        <div class="issue-title">Reservado para Ed. 02</div>
-        <div class="issue-desc">Suscríbete arriba para recibir la próxima edición en cuanto se publique.</div>
-        <div class="issue-cta">Esperando publicación</div>
-      </div>
-    </div>
+    <!-- ISSUES:END -->
 
   </div>
 </div>
@@ -371,6 +504,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <a href="miembros.html">Nuestra red</a>
       <a href="familias.html">Para familias</a>
       <a href="boletin.html">Newsletter Visión MML LATAM</a>
+      <a href="https://grupomiopialatam.substack.com" target="_blank" rel="noopener">Boletin en Substack ↗</a>
     </div>
     <div class="footer-col">
       <h5>Contacto</h5>
@@ -501,5 +635,17 @@ function subscribe(e){
 })();
 </script>
 
+
+<script>
+// Suscripcion al boletin en Substack (GRUPO MANEJO MIOPIA LATAM)
+function mmlSubstack(form){
+  var campo = form.querySelector('input[type=email]');
+  var correo = (campo && campo.value || '').trim();
+  var url = 'https://grupomiopialatam.substack.com/subscribe?utm_source=miopialatam.org&utm_medium=web';
+  if (correo) { url += '&email=' + encodeURIComponent(correo); }
+  window.open(url, '_blank', 'noopener');
+  return false;
+}
+</script>
 </body>
 </html>

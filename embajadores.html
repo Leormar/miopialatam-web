@@ -197,6 +197,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   .footer-grid{grid-template-columns:1fr}
 }
 </style>
+<link rel="stylesheet" href="mml-substack.css">
 </head>
 <body>
 
@@ -554,6 +555,24 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 
 <!-- Sección CTA "Registrarse como embajador" oculta · registro temporalmente cerrado -->
 
+<div class="mml-sk">
+  <div class="mml-sk-inner">
+    <div class="mml-sk-text">
+      <div class="mml-sk-k"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h18v2.6H3V3zm0 5.2h18v2.6H3V8.2zm0 5.2l9 5 9-5V21l-9-5-9 5v-7.6z"/></svg> Boletin en Substack</div>
+      <h3>Vision MML LATAM, tambien en Substack</h3>
+      <p>Cada edicion con las figuras completas y la version narrada en audio. Investigacion regional, practica clinica basada en evidencia y futuro LATAM, sin influencias comerciales.</p>
+    </div>
+    <div class="mml-sk-actions">
+      <form class="mml-sk-form" onsubmit="return mmlSubstack(this)">
+        <input class="mml-sk-input" type="email" name="email" placeholder="Tu correo profesional" required>
+        <button class="mml-sk-btn" type="submit">Suscribirme</button>
+      </form>
+      <a class="mml-sk-link" href="https://grupomiopialatam.substack.com" target="_blank" rel="noopener">Ver las ediciones en Substack &#8599;</a>
+      <div class="mml-sk-mini">Gratis. Puedes cancelar cuando quieras.</div>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
@@ -572,6 +591,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <a href="embajadores.html">Embajadores</a>
       <a href="familias.html">Para familias</a>
       <a href="boletin.html">Newsletter Visión MML LATAM</a>
+      <a href="https://grupomiopialatam.substack.com" target="_blank" rel="noopener">Boletin en Substack ↗</a>
     </div>
     <div class="footer-col">
             <h5>Contacto</h5>
@@ -649,5 +669,6 @@ filterPills.forEach(pill => {
   }));
 })();
 </script>
+<script src="mml-substack.js"></script>
 </body>
 </html>

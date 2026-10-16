@@ -1,0 +1,18 @@
+/* Boletin Vision MML LATAM en Substack · bloque de suscripcion compartido */
+.mml-sk{background:linear-gradient(135deg,#FFF6F0 0%,#F7FAFD 100%);border-top:1px solid #F3D9C8;padding:3.4rem 2rem}
+.mml-sk-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.mml-sk-text{max-width:580px}
+.mml-sk-k{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.74rem;letter-spacing:0.2em;text-transform:uppercase;color:#D45214;margin-bottom:0.5rem;display:flex;align-items:center;gap:8px}
+.mml-sk-k svg{width:16px;height:16px}
+.mml-sk h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.65rem;line-height:1.15;letter-spacing:-0.01em;color:var(--ink,#0A2540);margin:0 0 0.5rem}
+.mml-sk p{font-size:0.93rem;color:var(--txt,#1A3347);line-height:1.62;margin:0}
+.mml-sk-actions{display:flex;flex-direction:column;gap:10px;min-width:280px}
+.mml-sk-form{display:flex;gap:8px;flex-wrap:wrap}
+.mml-sk-input{flex:1;min-width:160px;padding:0.85rem 1rem;border:1px solid var(--bd,#E5EAEF);border-radius:12px;font-family:inherit;font-size:0.9rem;color:var(--ink,#0A2540);background:#fff}
+.mml-sk-input:focus{outline:none;border-color:#D45214}
+.mml-sk-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0.85rem 1.4rem;border-radius:12px;border:none;background:#D45214;color:#fff;font-family:inherit;font-weight:700;font-size:0.9rem;cursor:pointer;white-space:nowrap;transition:transform .15s,background .2s}
+.mml-sk-btn:hover{background:#b3430f;transform:translateY(-1px)}
+.mml-sk-link{font-size:0.84rem;font-weight:700;color:#D45214;text-decoration:none;text-align:center}
+.mml-sk-link:hover{text-decoration:underline}
+.mml-sk-mini{font-size:0.72rem;color:var(--mu,#5A7184);text-align:center;line-height:1.5}
+@media(max-width:860px){.mml-sk-inner{flex-direction:column;align-items:flex-start}.mml-sk-actions{width:100%;min-width:0}}

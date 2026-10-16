@@ -174,6 +174,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   .footer-grid{grid-template-columns:1fr}
 }
 </style>
+<link rel="stylesheet" href="mml-substack.css">
 </head>
 <body>
 
@@ -233,6 +234,18 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
 <div class="results-info"><strong>Eventos vigentes</strong> · los eventos cuya fecha ya pasó se ocultan automáticamente · click en <em>"Mostrar eventos pasados"</em> para verlos</div>
 
 <div class="events-grid" id="events-grid">
+
+  <article class="event-card event-verified" data-region="latam" data-type="online" data-date="2026-11-17" style="--c:#D42B2B;--c-dark:#A01F1F">
+    <div class="event-date"><span class="event-month">Nov</span><span class="event-day">3-17</span><span class="event-year">2026</span></div>
+    <div class="event-body">
+      <div class="event-tags"><span class="event-tag tag-latam">LATAM</span><span class="event-tag tag-online">Online en vivo</span><span class="event-tag" style="background:#E6F7EB;color:#1B5E20">Verificado</span><span class="event-tag" style="background:#FFF6D8;color:#92690A">Embajadores MML</span></div>
+      <div class="event-title">Curso en vivo · Miopía de cerca</div>
+      <div class="event-location">100% online · martes y jueves 7:00 p.m. hora Bogotá · grabaciones incluidas</div>
+      <div class="event-organizer">Organiza: TheEye-Herd · con el respaldo de Boston Materials · docentes: embajadores del Grupo Manejo Miopía LATAM</div>
+      <div class="event-desc"><strong>"Más allá de la corrección, el futuro es el control."</strong> 5 clases de 110 minutos con 10 especialistas de 9 países: bases y definiciones, protocolo de examinación y visión binocular, orto-K y lentes blandos, lentes oftálmicos y atropina, e intervenciones emergentes. Panel clínico en cada sesión y certificado. <strong>Preventa USD 97 hasta el 27 de octubre</strong> · después USD 127.</div>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap"><a href="curso-miopia-de-cerca.html" class="event-link">Programa y docentes</a><a href="https://pay.hotmart.com/Y108020169L?off=fga3eto3" target="_blank" rel="noopener" class="event-link">Inscribirme</a></div>
+    </div>
+  </article>
 
   <article class="event-card event-verified" data-region="latam" data-type="online" data-date="2026-06-10" style="--c:#0077C8;--c-dark:#005FA3">
     <div class="event-date"><span class="event-month">Jun</span><span class="event-day">10</span><span class="event-year">2026</span></div>
@@ -366,6 +379,24 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
   </div>
 </section>
 
+<div class="mml-sk">
+  <div class="mml-sk-inner">
+    <div class="mml-sk-text">
+      <div class="mml-sk-k"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h18v2.6H3V3zm0 5.2h18v2.6H3V8.2zm0 5.2l9 5 9-5V21l-9-5-9 5v-7.6z"/></svg> Boletin en Substack</div>
+      <h3>Vision MML LATAM, tambien en Substack</h3>
+      <p>Cada edicion con las figuras completas y la version narrada en audio. Investigacion regional, practica clinica basada en evidencia y futuro LATAM, sin influencias comerciales.</p>
+    </div>
+    <div class="mml-sk-actions">
+      <form class="mml-sk-form" onsubmit="return mmlSubstack(this)">
+        <input class="mml-sk-input" type="email" name="email" placeholder="Tu correo profesional" required>
+        <button class="mml-sk-btn" type="submit">Suscribirme</button>
+      </form>
+      <a class="mml-sk-link" href="https://grupomiopialatam.substack.com" target="_blank" rel="noopener">Ver las ediciones en Substack &#8599;</a>
+      <div class="mml-sk-mini">Gratis. Puedes cancelar cuando quieras.</div>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
@@ -384,6 +415,7 @@ footer{background:var(--ink);padding:4rem 2rem 2rem;color:#fff}
       <a href="miembros.html">Nuestra red</a>
       <a href="familias.html">Para familias</a>
       <a href="boletin.html">Newsletter Visión MML LATAM</a>
+      <a href="https://grupomiopialatam.substack.com" target="_blank" rel="noopener">Boletin en Substack ↗</a>
     </div>
     <div class="footer-col">
             <h5>Contacto</h5>
@@ -484,5 +516,6 @@ filterEvents();
   }));
 })();
 </script>
+<script src="mml-substack.js"></script>
 </body>
 </html>

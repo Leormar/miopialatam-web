@@ -1,0 +1,64 @@
+name: Enviar boletín Visión MML
+
+# Envío manual de ediciones del newsletter a la lista de Brevo.
+# Usa los mismos secrets del digest diario (BREVO_API_KEY, BREVO_LIST_ID, SMTP_PASSWORD).
+# Recomendado: primero MODE=prueba (llega solo a info@miopialatam.org), revisar, y luego MODE=suscriptores.
+
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Edición a enviar: 02..10, o "resumen" (un solo correo con todas las de octubre)'
+        required: true
+        default: 'resumen'
+      mode:
+        description: 'prueba = solo info@miopialatam.org · suscriptores = toda la lista Brevo'
+        type: choice
+        options: [prueba, suscriptores]
+        default: prueba
+      include_course:
+        description: 'Incluir bloque del curso Miopía de cerca'
+        type: boolean
+        default: true
+      force:
+        description: 'Reenviar aunque ya se haya enviado a suscriptores'
+        type: boolean
+        default: false
+
+concurrency:
+  group: send-boletin
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+      - run: pip install -r scripts/requirements.txt
+      - name: Enviar
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EDITION: ${{ inputs.edition }}
+          MODE: ${{ inputs.mode }}
+          INCLUDE_COURSE: ${{ inputs.include_course && '1' || '0' }}
+          FORCE_SEND: ${{ inputs.force && '1' || '' }}
+        run: python scripts/send_boletin.py
+      - name: Guardar registro de envío
+        if: ${{ inputs.mode == 'suscriptores' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/boletin_sent.json || true
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "chore(boletin): registro de envío ${{ inputs.edition }}"
+          for i in 1 2 3; do git push && exit 0; git pull --rebase --autostash origin main; done
+          exit 1
