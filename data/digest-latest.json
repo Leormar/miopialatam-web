@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-20T17:28:44.285803+00:00",
-  "date_display": "20 Oct 2026",
+  "generated_at": "2026-10-21T12:00:40.394299+00:00",
+  "date_display": "21 Oct 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "The Silent Failure in Myopia Management",
       "url": "https://reviewofmm.com/the-silent-failure-in-myopia-management/",
-      "summary_es": "Análisis sobre el abandono del tratamiento en control de miopía pediátrica. El artículo aborda la falta de adherencia de pacientes que iniciaron manejo miópico pero discontinuaron el seguimiento clínico, un aspecto crítico frecuentemente desatendido en la práctica oftalmológica.",
+      "summary_es": "Análisis sobre el abandono del tratamiento en manejo de miopía pediátrica. El artículo destaca la importancia de retención de pacientes y familias que inician terapias pero no continúan, un aspecto frecuentemente pasado por alto en protocolos clínicos de control miópico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Five Do’s and Don’ts for Marketing Myopia Management Services",
       "url": "https://reviewofmm.com/marketing-myopia-management-services/",
-      "summary_es": "Artículo sobre estrategias de marketing para servicios de control de miopía, analizando la brecha entre práctica ofrecen terapias de ralentización (63,6%) y pacientes pediátricos que las reciben (menos del 25%), enfatizando que cerrar esta diferencia requiere estrategias comerciales efectivas.",
+      "summary_es": "Análisis de estrategias de marketing para servicios de control de miopía, destacando la brecha entre oferta clínica disponible y adopción por pacientes pediátricos. El artículo proporciona orientaciones prácticas para optimizar la comunicación con padres de menores con miopía progresiva.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "CooperVision Expands Leadership and Professional Affairs Team",
       "url": "https://reviewofmm.com/coopervision-expands-leadership-and-professional-affairs-team/",
-      "summary_es": "CooperVision anunció la expansión de su equipo de Asuntos Profesionales en Estados Unidos con tres nuevos integrantes y dos promociones de liderazgo, fortaleciendo su capacidad en educación profesional, asuntos académicos, científicos y atención corneal.",
+      "summary_es": "CooperVision anunció la expansión de su equipo de Asuntos Profesionales en Estados Unidos con tres nuevos miembros y dos promociones de liderazgo. La iniciativa busca fortalecer la expertise en educación profesional, asuntos académicos, asuntos científicos y cuidado corneal.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -37,7 +37,7 @@
       "source_short": "RoMM",
       "title": "The Argument for Earlier Myopia Intervention",
       "url": "https://reviewofmm.com/the-argument-for-earlier-myopia-intervention/",
-      "summary_es": "Artículo que destaca la importancia de la intervención temprana en miopía pediátrica, enfatizando la identificación precoz, educación familiar y tratamiento oportuno para prevenir progresión severa de la enfermedad refractiva.",
+      "summary_es": "Artículo que argumenta sobre la importancia de la intervención temprana en miopía, enfatizando la identificación precoz, educación familiar y el impacto del tratamiento temprano en la progresión miópica pediátrica dentro de la práctica clínica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
