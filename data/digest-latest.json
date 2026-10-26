@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-26T12:00:45.473059+00:00",
+  "generated_at": "2026-10-26T18:18:49.910266+00:00",
   "date_display": "26 Oct 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "The Silent Failure in Myopia Management",
-      "url": "https://reviewofmm.com/the-silent-failure-in-myopia-management/",
-      "summary_es": "Artículo que aborda la discontinuidad del tratamiento en pacientes pediátricos bajo manejo de miopía, destacando la importancia de retención y adherencia terapéutica como desafío clínico frecuentemente subestimado en la práctica oftalmológica contemporánea.",
+      "title": "When Night Is No Longer Dark: Light-at-Night, Circadian Rhythm and Childhood Myopia",
+      "url": "https://reviewofmm.com/light-at-night-circadian-rhythm-and-childhood-myopia/",
+      "summary_es": "Artículo de revisión que analiza el impacto de la exposición lumínica nocturna y los ritmos circadianos en el desarrollo de miopía pediátrica, diferenciando entre prevención de inicio versus ralentización de progresión una vez establecida la condición refractiva.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,19 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Five Do’s and Don’ts for Marketing Myopia Management Services",
-      "url": "https://reviewofmm.com/marketing-myopia-management-services/",
-      "summary_es": "Artículo sobre estrategias de marketing para servicios de control de miopía en consultorios oftalmológicos. Analiza la brecha entre la oferta de terapias disponibles y la demanda insatisfecha de pacientes pediátricos con miopía progresiva en Estados Unidos.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Stellest Named One of the Best Inventions by TIME Magazine",
-      "url": "https://reviewofmm.com/stellest-named-one-of-the-best-inventions-by-time-magazine/",
-      "summary_es": "EssilorLuxottica's Stellest lenses fueron reconocidas por TIME Magazine como uno de los mejores inventos de 2026 en la categoría Salud y Bienestar. Este galardón destaca la solución de control de miopía pediátrica con evidencia probada de desaceleración de progresión miópica.",
+      "title": "Pediatric Myopia Needs the Right Experts at the Regulatory Table",
+      "url": "https://reviewofmm.com/pediatric-myopia-needs-the-right-experts-at-the-regulatory-table/",
+      "summary_es": "La FDA enfrenta presión para incluir expertos en miopía pediátrica en procesos regulatorios, considerando el impacto de salud pública global de esta condición. El reconocimiento de la miopía como enfermedad progresiva con complicaciones graves impulsa demandas de evaluación rigurosa de terapias preventivas y de control.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,9 +25,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "The Argument for Earlier Myopia Intervention",
-      "url": "https://reviewofmm.com/the-argument-for-earlier-myopia-intervention/",
-      "summary_es": "Artículo que enfatiza la importancia de la intervención temprana en miopía pediátrica, destacando cómo la identificación precoz y el manejo activo de la progresión miópica constituyen aspectos esenciales en la práctica clínica moderna de optometría.",
+      "title": "European Myopia Network Announces Inaugural In-Person Annual Conference in Madrid",
+      "url": "https://reviewofmm.com/european-myopia-network/",
+      "summary_es": "La European Myopia Network anuncia su primera conferencia anual presencial a realizarse el 22 de enero de 2027 en Madrid, reuniendo investigadores, profesionales y tomadores de decisiones en salud pública para compartir evidencia científica y estrategias en prevención y control de miopía.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Streamlining Myopia Management: Why Lunara OrthoK Became a Seamless Fit for My Practice",
+      "url": "https://reviewofmm.com/why-lunara-orthok-became-a-seamless-fit-for-my-practice/",
+      "summary_es": "Profesional con 30 años de experiencia en ortoqueratología evalúa las lentes Lunara OrthoK de X-Cel Specialty Contacts, destacando su capacidad para ofrecer resultados predecibles y confiables en el manejo de la miopía, manteniendo procesos simplificados para pacientes y práctica clínica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
