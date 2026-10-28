@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T12:00:48.824538+00:00",
+  "generated_at": "2026-10-28T17:56:32.688921+00:00",
   "date_display": "28 Oct 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "When Night Is No Longer Dark: Light-at-Night, Circadian Rhythm and Childhood Myopia",
       "url": "https://reviewofmm.com/light-at-night-circadian-rhythm-and-childhood-myopia/",
-      "summary_es": "Análisis de la relación entre exposición a luz artificial nocturna, ritmos circadianos y progresión de miopía infantil, diferenciando entre efectos preventivos en inicio versus ralentización de progresión miópica establecida según evidencia actual.",
+      "summary_es": "Análisis de la relación entre exposición lumínica nocturna, ritmos circadianos y miopía infantil, diferenciando el efecto protector del tiempo al aire libre en la prevención versus el control de progresión en miopes ya desarrollados.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
+      "title": "Beyond the Lens: The Stellest® Ecosystem and the Future of Myopia Care",
+      "url": "https://reviewofmm.com/the-stellest-ecosystem/",
+      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® para el manejo integral de la miopía, integrando herramientas diagnósticas, soluciones digitales y educación profesional en un enfoque basado en evidencia científica que abarca desde la identificación temprana hasta el monitoreo a largo plazo.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
       "title": "Pediatric Myopia Needs the Right Experts at the Regulatory Table",
       "url": "https://reviewofmm.com/pediatric-myopia-needs-the-right-experts-at-the-regulatory-table/",
-      "summary_es": "Experto en miopía pediátrica argumenta la necesidad de incluir especialistas en manejo de miopía en mesas regulatorias de la FDA, considerando el aumento global de miopía infantil y sus complicaciones oftalmológicas asociadas a largo plazo.",
+      "summary_es": "Expertos en miopía pediátrica demandan mayor participación en las mesas regulatorias de la FDA ante el aumento global de la miopía infantil y la necesidad de terapias seguras y efectivas evaluadas rigurosamente para prevenir complicaciones visuales graves.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,20 +37,10 @@
       "source_short": "RoMM",
       "title": "European Myopia Network Announces Inaugural In-Person Annual Conference in Madrid",
       "url": "https://reviewofmm.com/european-myopia-network/",
-      "summary_es": "La European Myopia Network anuncia su primera conferencia anual presencial en Madrid para enero de 2027, reuniendo investigadores, profesionales de atención ocular y tomadores de decisiones en salud pública para compartir evidencia científica y estrategias de prevención y control de miopía.",
+      "summary_es": "La European Myopia Network anuncia su primera conferencia anual presencial en Madrid para enero de 2027, reuniendo investigadores, profesionales de la visión y tomadores de decisiones en salud pública para compartir evidencia científica y enfoques prácticos en prevención y manejo de miopía.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Streamlining Myopia Management: Why Lunara OrthoK Became a Seamless Fit for My Practice",
-      "url": "https://reviewofmm.com/why-lunara-orthok-became-a-seamless-fit-for-my-practice/",
-      "summary_es": "Profesional con 30 años de experiencia en ortoqueratología evalúa lentes Lunara OrthoK de X-Cel Specialty Contacts, destacando su capacidad para proporcionar resultados predecibles y confiables en el manejo de la miopía, manteniendo la gestión del proceso accesible para pacientes y práctica clínica.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
     }
   ]
 }
