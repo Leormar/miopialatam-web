@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T18:30:52.760929+00:00",
+  "generated_at": "2026-10-29T18:37:56.520415+00:00",
   "date_display": "29 Oct 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "When Night Is No Longer Dark: Light-at-Night, Circadian Rhythm and Childhood Myopia",
       "url": "https://reviewofmm.com/light-at-night-circadian-rhythm-and-childhood-myopia/",
-      "summary_es": "Análisis de la relación entre exposición lumínica nocturna, ritmos circadianos y desarrollo de miopía pediátrica. El artículo distingue entre el efecto preventivo de la exposición outdoor en la aparición de miopía versus su menor impacto en la progresión una vez establecida la condición.",
+      "summary_es": "Análisis de la relación entre exposición lumínica nocturna, ritmos circadianos y desarrollo de miopía infantil. El artículo examina la efectividad diferenciada del tiempo al aire libre en la prevención versus el control de progresión miópica una vez establecida la condición.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
+      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
+      "url": "https://reviewofmm.com/high-stakes-hearing/",
+      "summary_es": "El comité asesor de la FDA evaluará el 30 de octubre la solicitud de aprobación de SYD-101 (solución de atropina) de Sydnexis para desacelerar la progresión miópica en menores de 3 años. La decisión se produce tras una carta de respuesta completa que cuestionó la significancia clínica del efecto terapéutico y la evidencia de eficacia.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
       "title": "Beyond the Lens: The Stellest® Ecosystem and the Future of Myopia Care",
       "url": "https://reviewofmm.com/the-stellest-ecosystem/",
-      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® para el manejo integral de la miopía, integrando herramientas científicas, diagnósticas y digitales que apoyan la toma de decisiones clínicas desde la identificación temprana hasta el monitoreo a largo plazo.",
+      "summary_es": "EssilorLuxottica presenta su ecosistema integrado Stellest® para la gestión de miopía, combinando herramientas diagnósticas, soluciones digitales y educación profesional. El enfoque articula ciencia, tecnología y soporte clínico desde la identificación temprana hasta el monitoreo a largo plazo.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,17 +37,7 @@
       "source_short": "RoMM",
       "title": "Pediatric Myopia Needs the Right Experts at the Regulatory Table",
       "url": "https://reviewofmm.com/pediatric-myopia-needs-the-right-experts-at-the-regulatory-table/",
-      "summary_es": "Expertos en miopía pediátrica demandan mayor participación en mesas regulatorias globales ante el incremento de casos y necesidad de terapias seguras y efectivas. La FDA reconoce la miopía como enfermedad sistémica asociada a complicaciones oftalmológicas graves que requieren evaluación rigurosa.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "European Myopia Network Announces Inaugural In-Person Annual Conference in Madrid",
-      "url": "https://reviewofmm.com/european-myopia-network/",
-      "summary_es": "La European Myopia Network anuncia su primera conferencia anual presencial en Madrid el 22 de enero de 2027, reuniendo investigadores, profesionales de la visión y tomadores de decisiones en salud pública para compartir evidencia científica y enfoques prácticos en prevención y control de miopía.",
+      "summary_es": "La FDA reconoce la importancia de incluir expertos especializados en miopía pediátrica en los procesos regulatorios, considerando el creciente impacto de esta condición como problema de salud pública global y la necesidad de terapias seguras y evaluadas rigurosamente.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
