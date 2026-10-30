@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-10-30T12:00:45.594730+00:00",
+  "generated_at": "2026-10-30T17:45:20.190531+00:00",
   "date_display": "30 Oct 2026",
   "items": [
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "When Night Is No Longer Dark: Light-at-Night, Circadian Rhythm and Childhood Myopia",
-      "url": "https://reviewofmm.com/light-at-night-circadian-rhythm-and-childhood-myopia/",
-      "summary_es": "Artículo de revisión analiza la relación entre exposición a luz nocturna, ritmos circadianos y miopía pediátrica. Distingue entre el efecto preventivo de tiempo al aire libre en inicio de miopía versus su menor impacto en progresión una vez establecida.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Soft contact lenses Ortho-k ARVO2026 Recap #1 – What's new in contact lens myopia control? The first recap from ARVO 2026 covers the latest evidence on soft contact lenses and orthokeratology for myopia control, including long-term and real-world data.",
+      "url": "https://www.myopiaprofile.com/articles/recap-1-ARVO-2026",
+      "summary_es": "Revisión de las últimas evidencias presentadas en ARVO 2026 sobre lentes de contacto blandos y ortoqueratología para el control de la miopía, incluyendo datos de seguimiento a largo plazo y aplicabilidad clínica en práctica real.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
-      "url": "https://reviewofmm.com/high-stakes-hearing/",
-      "summary_es": "El Comité Asesor de la FDA evaluará el 30 de octubre la solicitud de aprobación de SYD-101 de Sydnexis para el control de miopía en pacientes pediátricos. La agencia rechazó previamente la aplicación por eficacia insuficiente, falta de efecto clínicamente significativo y ausencia de impacto relevante en la elongación axial.",
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "MiYOSMART iQ: The next evolution of D.I.M.S. Technology Learn more about MiYOSMART iQ spectacle lens, HOYA's latest DIMS-based spectacle lens design",
+      "url": "https://www.myopiaprofile.com/articles/MiYOSMART-iQ-next-evolution-of-DIMS-technology",
+      "summary_es": "HOYA lanza MiYOSMART iQ, la nueva evolución de su tecnología D.I.M.S. para lentes oftálmicos de control de miopía. El producto representa el avance más reciente en el portafolio de soluciones de gestión miópica basadas en tecnología de defoque periférico.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Beyond the Lens: The Stellest® Ecosystem and the Future of Myopia Care",
-      "url": "https://reviewofmm.com/the-stellest-ecosystem/",
-      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® para el manejo integral de la miopía, integrando herramientas científicas, diagnósticas y digitales. La iniciativa enfatiza un enfoque basado en evidencia que acompaña desde la identificación temprana hasta el monitoreo a largo plazo.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Myopia control efficacy The next generation spectacle lenses for myopia control",
+      "url": "https://www.myopiaprofile.com/articles/the-next-generation-dims-and-halt-technology-spectacle-lenses-for-myopia-control",
+      "summary_es": "Análisis de la eficacia de las nuevas generaciones de lentes oftálmicos diseñados específicamente para el control de la miopía, evaluando su desempeño comparativo en la gestión de la progresión miópica pediátrica.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     },
     {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Pediatric Myopia Needs the Right Experts at the Regulatory Table",
-      "url": "https://reviewofmm.com/pediatric-myopia-needs-the-right-experts-at-the-regulatory-table/",
-      "summary_es": "La FDA reconoce la importancia de incluir expertos pediátricos en regulación de terapias para miopía infantil. Ante el aumento global de miopía pediátrica y sus complicaciones oftalmológicas graves, se demanda evaluación rigurosa de tratamientos seguros y efectivos.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "source": "Myopia Profile · Clinical",
+      "source_short": "Myopia Profile",
+      "title": "Myopia control efficacy Understanding the new Essilor® Stellest® spectacle lens",
+      "url": "https://www.myopiaprofile.com/articles/understanding-essilor-stellest-lens-myopia",
+      "summary_es": "Se presenta un análisis sobre la eficacia del lente oftálmico Essilor Stellest en el control de la miopía, revisando los mecanismos de acción y resultados clínicos de esta tecnología de corrección.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
