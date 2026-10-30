@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T18:02:22.861358+00:00",
+  "generated_at": "2026-10-30T18:10:09.596161+00:00",
   "date_display": "30 Oct 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Rethinking the Next Line",
       "url": "https://reviewofmm.com/rethinking-the-next-line/",
-      "summary_es": "Artículo que analiza la progresión de la miopía hacia la edad adulta y cuestiona si la cirugía refractiva representa necesariamente el siguiente paso en el manejo de pacientes con miopía, explorando alternativas terapéuticas más allá de LASIK.",
+      "summary_es": "Reflexión sobre la transición de pacientes adultos desde el manejo de la miopía hacia cirugía refractiva, cuestionando si LASIK es inevitablemente el siguiente paso o si existen alternativas terapéuticas a considerar según el perfil individual del paciente.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
-      "url": "https://reviewofmm.com/high-stakes-hearing/",
-      "summary_es": "La FDA convocó a su Comité Asesor de Medicamentos Dermatológicos y Oftálmicos para evaluar la solicitud de aprobación de SYD-101 (atropina) de Sydnexis para control de miopía pediátrica. La decisión llega tras una carta de respuesta completa que rechazó inicialmente la aprobación por evidencia insuficiente de eficacia clínica y falta de efecto significativo en longitud axial.",
+      "title": "Can Big Tech Help Protect Kids’ Vision?",
+      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
+      "summary_es": "Apple expande su rol en salud visual con funciones de protección ocular diseñadas para promover comportamientos saludables y reducir el riesgo de miopía en contexto de prevalencia creciente en población pediátrica norteamericana.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -25,19 +25,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Can Big Tech Help Protect Kids’ Vision?",
-      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
-      "summary_es": "Apple desarrolla funcionalidades de salud ocular en sus dispositivos para promover hábitos saludables y reducir riesgo de miopía en contexto de proyecciones que indican 50% de prevalencia miópica en Norteamérica en cuatro años.",
-      "category": "WEB",
-      "category_color": "#F5C518",
-      "category_label": "Nuevos recursos"
+      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
+      "url": "https://reviewofmm.com/high-stakes-hearing/",
+      "summary_es": "El comité asesor de la FDA evaluará el 30 de octubre la solicitud de aprobación de SYD-101 (atropina) de Sydnexis para ralentizar la progresión miópica en pacientes pediátricos. La decisión llega tras rechazos previos por cuestionamientos sobre significancia clínica, respuesta a dosis e impacto en longitud axial.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Beyond the Lens: The Stellest® Ecosystem and the Future of Myopia Care",
       "url": "https://reviewofmm.com/the-stellest-ecosystem/",
-      "summary_es": "EssilorLuxottica presenta el ecosistema Stellest® como enfoque integrado para el manejo de la miopía, combinando herramientas de diagnóstico, soluciones digitales y educación profesional para optimizar la toma de decisiones clínicas en toda la ruta asistencial de los pacientes.",
+      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® para el manejo integral de la miopía, integrando diagnóstico, herramientas digitales, soluciones terapéuticas y educación profesional. El enfoque busca optimizar la toma de decisiones clínicas desde la identificación temprana hasta el monitoreo a largo plazo.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
