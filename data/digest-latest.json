@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-30T18:10:09.596161+00:00",
-  "date_display": "30 Oct 2026",
+  "generated_at": "2026-10-31T12:00:44.047507+00:00",
+  "date_display": "31 Oct 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Rethinking the Next Line",
       "url": "https://reviewofmm.com/rethinking-the-next-line/",
-      "summary_es": "Reflexión sobre la transición de pacientes adultos desde el manejo de la miopía hacia cirugía refractiva, cuestionando si LASIK es inevitablemente el siguiente paso o si existen alternativas terapéuticas a considerar según el perfil individual del paciente.",
+      "summary_es": "Artículo reflexivo sobre la progresión de la miopía en adolescentes y adultos jóvenes, cuestionando si la cirugía refractiva debe considerarse el destino inevitable del manejo de la miopía o si existen alternativas terapéuticas a evaluar según cada caso clínico.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Can Big Tech Help Protect Kids’ Vision?",
-      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
-      "summary_es": "Apple expande su rol en salud visual con funciones de protección ocular diseñadas para promover comportamientos saludables y reducir el riesgo de miopía en contexto de prevalencia creciente en población pediátrica norteamericana.",
+      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
+      "url": "https://reviewofmm.com/high-stakes-hearing/",
+      "summary_es": "El comité asesor de la FDA se reúne el 30 de octubre para evaluar la solicitud de aprobación de SYD-101, solución de atropina de Sydnexis para frenar la progresión miópica en pacientes pediátricos de 3 años o más, después de recibir una carta de respuesta completa que cuestiona la eficacia clínica del tratamiento.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -25,19 +25,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
-      "url": "https://reviewofmm.com/high-stakes-hearing/",
-      "summary_es": "El comité asesor de la FDA evaluará el 30 de octubre la solicitud de aprobación de SYD-101 (atropina) de Sydnexis para ralentizar la progresión miópica en pacientes pediátricos. La decisión llega tras rechazos previos por cuestionamientos sobre significancia clínica, respuesta a dosis e impacto en longitud axial.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "title": "Can Big Tech Help Protect Kids’ Vision?",
+      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
+      "summary_es": "Apple desarrolla funcionalidades de salud visual enfocadas en promover comportamientos saludables y reducir el riesgo de miopía en niños, integrando tecnología a la estrategia de prevención en contexto de proyecciones que indican casi 50% de prevalencia miópica en Norteamérica.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Beyond the Lens: The Stellest® Ecosystem and the Future of Myopia Care",
       "url": "https://reviewofmm.com/the-stellest-ecosystem/",
-      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® para el manejo integral de la miopía, integrando diagnóstico, herramientas digitales, soluciones terapéuticas y educación profesional. El enfoque busca optimizar la toma de decisiones clínicas desde la identificación temprana hasta el monitoreo a largo plazo.",
+      "summary_es": "EssilorLuxottica presenta el ecosistema Stellest® como enfoque integrado para el manejo de la miopía, combinando evidencia científica, herramientas digitales, soluciones terapéuticas y educación profesional en toda la ruta clínica desde la identificación temprana hasta el monitoreo a largo plazo.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
