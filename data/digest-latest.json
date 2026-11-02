@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-01T18:03:43.934919+00:00",
-  "date_display": "01 Nov 2026",
+  "generated_at": "2026-11-02T12:00:44.387074+00:00",
+  "date_display": "02 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Rethinking the Next Line",
       "url": "https://reviewofmm.com/rethinking-the-next-line/",
-      "summary_es": "Análisis sobre la transición de pacientes adultos desde el manejo de miopía hacia cirugía refractiva, cuestionando si LASIK representa necesariamente el destino final del tratamiento miópico y evaluando criterios clínicos para esta decisión terapéutica.",
+      "summary_es": "Análisis sobre la progresión de la miopía hacia la edad adulta y la consideración de opciones terapéuticas más allá de la cirugía refractiva, evaluando cuándo discontinuar el manejo clínico versus considerar procedimientos quirúrgicos como LASIK en pacientes adultos.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Can Big Tech Help Protect Kids’ Vision?",
-      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
-      "summary_es": "Apple incorpora funciones de salud ocular para promover hábitos saludables y reducir el riesgo de miopía, sumándose a iniciativas de prevención en el contexto del incremento global de miopía infantil y su proyección epidemiológica en Norteamérica.",
+      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
+      "url": "https://reviewofmm.com/high-stakes-hearing/",
+      "summary_es": "La FDA convocó a su Comité Asesor de Dermatología y Oftalmología para evaluar la solicitud de aprobación del SYD-101 de Sydnexis, una solución de atropina para desacelerar la progresión miópica en pacientes pediátricos. La revisión ocurre tras una carta de respuesta completa que rechazó inicialmente la aprobación por insuficiente eficacia clínica y falta de efecto significativo en la longitud axial.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -25,19 +25,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
-      "url": "https://reviewofmm.com/high-stakes-hearing/",
-      "summary_es": "El comité asesor de la FDA evaluará el 30 de octubre la solicitud de aprobación de SYD-101 de Sydnexis para frenar la progresión miópica en pediatría. La agencia rechazó previamente la aplicación argumentando efecto terapéutico insuficiente, falta de significancia clínica y evidencia limitada sobre elongación axial.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "title": "Can Big Tech Help Protect Kids’ Vision?",
+      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
+      "summary_es": "Apple amplía sus funcionalidades de salud ocular para promover comportamientos saludables y reducir el riesgo de miopía. La iniciativa refleja la incorporación de tecnología de grandes empresas en la educación y prevención de miopía ante la proyección de que casi 50% de la población norteamericana presentará miopía en cuatro años.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Beyond the Lens: The Stellest® Ecosystem and the Future of Myopia Care",
       "url": "https://reviewofmm.com/the-stellest-ecosystem/",
-      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® como enfoque integrado para la gestión de la miopía, combinando herramientas diagnósticas, soluciones digitales y educación profesional. La iniciativa busca respaldar la toma de decisiones clínicas informadas desde la identificación temprana hasta el monitoreo a largo plazo.",
+      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® para el manejo integral de la miopía, integrando herramientas diagnósticas, soluciones digitales y educación profesional basada en evidencia científica para optimizar la toma de decisiones clínicas en toda la vía de atención.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
