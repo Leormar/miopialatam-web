@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-02T12:00:44.387074+00:00",
+  "generated_at": "2026-11-02T21:26:32.340614+00:00",
   "date_display": "02 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Rethinking the Next Line",
-      "url": "https://reviewofmm.com/rethinking-the-next-line/",
-      "summary_es": "Análisis sobre la progresión de la miopía hacia la edad adulta y la consideración de opciones terapéuticas más allá de la cirugía refractiva, evaluando cuándo discontinuar el manejo clínico versus considerar procedimientos quirúrgicos como LASIK en pacientes adultos.",
+      "title": "Game-Changing Myopia Control: 3-Year PROTECT Study Key Findings",
+      "url": "https://reviewofmm.com/game-changing-myopia-control-3-year-protect-study-key-findings/",
+      "summary_es": "El estudio PROTECT de tres años demuestra que las lentes de contacto multifocales NaturalVue reducen la progresión miópica en 1.06D y frenan el alargamiento axial en niños comparado con grupo control, proporcionando evidencia clínica relevante para el manejo de la miopía pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "High-Stakes Hearing: FDA Advisory Committee to Decide Fate of Sydnexis’ SYD-101",
-      "url": "https://reviewofmm.com/high-stakes-hearing/",
-      "summary_es": "La FDA convocó a su Comité Asesor de Dermatología y Oftalmología para evaluar la solicitud de aprobación del SYD-101 de Sydnexis, una solución de atropina para desacelerar la progresión miópica en pacientes pediátricos. La revisión ocurre tras una carta de respuesta completa que rechazó inicialmente la aprobación por insuficiente eficacia clínica y falta de efecto significativo en la longitud axial.",
+      "title": "FDA Panel Casts Doubt on Sydnexis’ Myopia Drug: Is a New Trial Inevitable?",
+      "url": "https://reviewofmm.com/fda-panel-casts-doubt-on-sydnexis-myopia-drug-is-a-new-trial-inevitable/",
+      "summary_es": "Panel asesor de la FDA expresó escepticismo sobre SYD-101, formulación de atropina en baja dosis de Sydnexis, durante revisión de su solicitud de nuevo fármaco en octubre de 2026, cuestionando suficiencia de datos clínicos presentados.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "Can Big Tech Help Protect Kids’ Vision?",
       "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
-      "summary_es": "Apple amplía sus funcionalidades de salud ocular para promover comportamientos saludables y reducir el riesgo de miopía. La iniciativa refleja la incorporación de tecnología de grandes empresas en la educación y prevención de miopía ante la proyección de que casi 50% de la población norteamericana presentará miopía en cuatro años.",
+      "summary_es": "Apple incorpora herramientas de salud visual en sus dispositivos para promover comportamientos saludables y reducir el riesgo de miopía. La iniciativa refleja la expansión del ecosistema de educación y prevención miópica hacia plataformas tecnológicas de alcance masivo.",
       "category": "WEB",
       "category_color": "#F5C518",
       "category_label": "Nuevos recursos"
@@ -35,9 +35,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Beyond the Lens: The Stellest® Ecosystem and the Future of Myopia Care",
-      "url": "https://reviewofmm.com/the-stellest-ecosystem/",
-      "summary_es": "EssilorLuxottica presenta su ecosistema Stellest® para el manejo integral de la miopía, integrando herramientas diagnósticas, soluciones digitales y educación profesional basada en evidencia científica para optimizar la toma de decisiones clínicas en toda la vía de atención.",
+      "title": "OrthoK Pioneer Awards Celebrate 70 Years of Orthokeratology",
+      "url": "https://reviewofmm.com/orthok-pioneer-awards-celebrate-70-years-of-orthokeratology/",
+      "summary_es": "Orthokeratologist.org lanzó el OrthoK Pioneers Award para conmemorar 70 años de ortoqueratología, reconociendo visionaries e innovadores globales. La plataforma publica una serie de 10 partes sobre la historia de la ortoqueratología y planifica documentar historias de innovadores contemporáneos por país.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
