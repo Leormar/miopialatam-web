@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-11-02T21:44:43.569934+00:00",
+  "generated_at": "2026-11-02T21:54:07.848840+00:00",
   "date_display": "02 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Frontline Clinicians Push for SYD-101 Approval in the Face of FDA Panel Skepticism",
-      "url": "https://reviewofmm.com/frontline-clinicians-push-for-syd-101-approval-in-the-face-of-fda-panel-skepticism/",
-      "summary_es": "Comité asesor de la FDA revisó SYD-101, tratamiento de atropina en baja dosis para miopía pediátrica, con escepticismo inicial. Clínicos líderes defendieron la aprobación mientras se evalúa potencial ensayo clínico adicional.",
+      "title": "Game-Changing Myopia Control: 3-Year PROTECT Study Key Findings",
+      "url": "https://reviewofmm.com/game-changing-myopia-control-3-year-protect-study-key-findings/",
+      "summary_es": "Estudio PROTECT de tres años demuestra que las lentes de contacto multifocales NaturalVue reducen la progresión miópica en 1.06D y el alargamiento axial en niños comparado con grupo control, proporcionando evidencia clínica relevante para el manejo de la miopía pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Frontline Clinicians Push for SYD-101 Approval in the Face of FDA Panel Skepticism",
+      "url": "https://reviewofmm.com/frontline-clinicians-push-for-syd-101-approval-in-the-face-of-fda-panel-skepticism/",
+      "summary_es": "Comité asesor de la FDA revisó SYD-101, un tratamiento de atropina a baja dosis, enfrentando escepticismo regulatorio a pesar del apoyo de clínicos y ejecutivos. La reticencia del panel sugiere que un nuevo ensayo clínico podría ser necesario antes de la aprobación del fármaco pediátrico.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Can Big Tech Help Protect Kids’ Vision?",
+      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
+      "summary_es": "Apple integra funcionalidades de salud ocular en sus dispositivos para promover comportamientos saludables y reducir el riesgo de miopía. La iniciativa se suma a los esfuerzos de educación y prevención en contexto de proyección de prevalencia miópica cercana al 50% en Norteamérica.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "FDA Panel Casts Doubt on Sydnexis’ Myopia Drug: Is a New Trial Inevitable?",
       "url": "https://reviewofmm.com/fda-panel-casts-doubt-on-sydnexis-myopia-drug-is-a-new-trial-inevitable/",
-      "summary_es": "La FDA cuestiona los datos del fármaco SYD-101 de Sydnexis para el control de miopía. El comité asesor expresó escepticismo sobre la formulación de atropina a baja dosis, a pesar de que el ensayo STAR cumplió con los objetivos primarios y secundarios preestablecidos.",
+      "summary_es": "Panel asesor de la FDA expresó escepticismo sobre la formulación de atropina baja dosis SYD-101 de Sydnexis durante reunión del 30 de octubre de 2026, cuestionando los datos presentados a pesar de que el ensayo Phase 3 STAR cumplió con los objetivos primarios y secundarios prespecificados.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "OrthoK Pioneer Awards Celebrate 70 Years of Orthokeratology",
-      "url": "https://reviewofmm.com/orthok-pioneer-awards-celebrate-70-years-of-orthokeratology/",
-      "summary_es": "Orthokeratology.org lanzó los OrthoK Pioneers Awards para celebrar 70 años de ortoqueratología, reconociendo visionaries e innovadores en el campo. La plataforma publica una serie de 10 artículos sobre la historia global de OrthoK, iniciando con los pioneros tempranos y continuando con historias de innovadores contemporáneos por país.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "Game-Changing Myopia Control: 3-Year PROTECT Study Key Findings",
-      "url": "https://reviewofmm.com/game-changing-myopia-control-3-year-protect-study-key-findings/",
-      "summary_es": "Estudio PROTECT de tres años demuestra que las lentes de contacto multifocales NaturalVue reducen la progresión miópica en 1.06D y el alargamiento axial en niños con miopía, comparado con el grupo control.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
     }
   ]
 }
