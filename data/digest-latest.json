@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T12:01:00.756181+00:00",
+  "generated_at": "2026-11-06T18:56:33.743654+00:00",
   "date_display": "06 Nov 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Game-Changing Myopia Control: 3-Year PROTECT Study Key Findings",
       "url": "https://reviewofmm.com/game-changing-myopia-control-3-year-protect-study-key-findings/",
-      "summary_es": "Estudio PROTECT de tres años demuestra que lentes de contacto multifocales NaturalVue reducen la progresión miópica en 1.06D y el alargamiento axial en niños comparado con grupo control, proporcionando evidencia clínica sobre control efectivo de la miopía.",
+      "summary_es": "Estudio PROTECT de tres años demuestra que lentes de contacto multifocales NaturalVue reducen la progresión miópica en 1.06D y el alargamiento axial en niños, comparado con grupo control, proporcionando evidencia clínica relevante para el manejo de miopía pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,27 +17,27 @@
       "source_short": "RoMM",
       "title": "Frontline Clinicians Push for SYD-101 Approval in the Face of FDA Panel Skepticism",
       "url": "https://reviewofmm.com/frontline-clinicians-push-for-syd-101-approval-in-the-face-of-fda-panel-skepticism/",
-      "summary_es": "Comité asesor de la FDA revisó el tratamiento SYD-101 (atropina baja dosis) en octubre con escepticismo, a pesar del respaldo de clínicos y ejecutivos de Sydnexis. La hesitación del panel sugiere que un nuevo ensayo clínico podría ser necesario para la aprobación del fármaco pediátrico de control miópico.",
+      "summary_es": "Comité asesor de la FDA revisó el tratamiento SYD-101 (atropina baja dosis) con cuestionamientos sobre los datos presentados. A pesar del apoyo de clínicos y ejecutivos de Sydnexis, la hesitación del panel sugiere que un nuevo ensayo clínico podría ser necesario para la aprobación del fármaco pediátrico.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "Can Big Tech Help Protect Kids’ Vision?",
+      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
+      "summary_es": "Apple desarrolla funcionalidades de salud ocular para promover conductas preventivas y reducir riesgo de miopía en contexto de escalada epidemiológica pediátrica. La iniciativa integra tecnología de gran alcance en la educación y prevención de miopía a nivel poblacional.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "FDA Panel Casts Doubt on Sydnexis’ Myopia Drug: Is a New Trial Inevitable?",
       "url": "https://reviewofmm.com/fda-panel-casts-doubt-on-sydnexis-myopia-drug-is-a-new-trial-inevitable/",
-      "summary_es": "Panel asesor de la FDA expresó escepticismo sobre la formulación de atropina baja dosis SYD-101 de Sydnexis durante revisión del 30 de octubre de 2026. La empresa argumentó que el ensayo STAR fase 3 cumplió con sus objetivos primarios y secundarios, generando incertidumbre sobre la aprobación regulatoria.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "OrthoK Pioneer Awards Celebrate 70 Years of Orthokeratology",
-      "url": "https://reviewofmm.com/orthok-pioneer-awards-celebrate-70-years-of-orthokeratology/",
-      "summary_es": "Orthokeratology.org lanzó los OrthoK Pioneer Awards para celebrar 70 años de ortoqueratología, reconociendo visionaries e innovadores en este campo. La plataforma publica una serie de 10 partes sobre la historia global de la ortoqueratología, incluyendo relatos de pioneros tempranos e innovadores contemporáneos por país.",
+      "summary_es": "El panel asesor de la FDA cuestionó los datos del fármaco SYD-101 de baja dosis de atropina de Sydnexis durante una revisión en octubre de 2026, generando incertidumbre sobre la aprobación del tratamiento para el control de la miopía pese a que el ensayo STAR Phase 3 alcanzó sus objetivos primarios.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
