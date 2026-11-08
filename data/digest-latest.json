@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-07T17:50:30.325163+00:00",
-  "date_display": "07 Nov 2026",
+  "generated_at": "2026-11-08T12:00:43.789899+00:00",
+  "date_display": "08 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
       "title": "Game-Changing Myopia Control: 3-Year PROTECT Study Key Findings",
       "url": "https://reviewofmm.com/game-changing-myopia-control-3-year-protect-study-key-findings/",
-      "summary_es": "Estudio PROTECT de tres años demuestra que las lentes de contacto multifocales NaturalVue reducen la progresión miópica en 1.06 dioptrías y limitan el alargamiento axial en niños comparado con grupo control, proporcionando evidencia clínica relevante para el manejo de la miopía pediátrica.",
+      "summary_es": "Resultados de tres años del estudio PROTECT demuestran que las lentes de contacto multifocales NaturalVue reducen la progresión miópica en 1.06 dioptrías y el alargamiento axial en niños comparado con grupo control, estableciendo evidencia clínica relevante para manejo de miopía pediátrica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "Frontline Clinicians Push for SYD-101 Approval in the Face of FDA Panel Skepticism",
       "url": "https://reviewofmm.com/frontline-clinicians-push-for-syd-101-approval-in-the-face-of-fda-panel-skepticism/",
-      "summary_es": "Comité asesor de la FDA revisó SYD-101, tratamiento de atropina a baja dosis para miopía pediátrica, generando dudas sobre la aprobación. A pesar del respaldo de clínicos y ejecutivos, la hesitación del panel sugiere que un nuevo ensayo clínico podría ser necesario.",
+      "summary_es": "Panel asesor de la FDA revisó datos de SYD-101, tratamiento de atropina a baja dosis para miopía pediátrica. A pesar del respaldo de clínicos y ejecutivos, la hesitación del comité hace probable un nuevo ensayo clínico para la aprobación del fármaco.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -25,19 +25,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Can Big Tech Help Protect Kids’ Vision?",
-      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
-      "summary_es": "Apple incorpora funcionalidades de salud ocular en sus dispositivos para promover comportamientos saludables y reducir el riesgo de miopía, sumándose a las iniciativas de educación y prevención en el contexto del aumento global de miopía pediátrica.",
-      "category": "WEB",
-      "category_color": "#F5C518",
-      "category_label": "Nuevos recursos"
+      "title": "FDA Panel Casts Doubt on Sydnexis’ Myopia Drug: Is a New Trial Inevitable?",
+      "url": "https://reviewofmm.com/fda-panel-casts-doubt-on-sydnexis-myopia-drug-is-a-new-trial-inevitable/",
+      "summary_es": "Panel asesor de la FDA expresó escepticismo sobre la solicitud de aprobación del fármaco SYD-101 (atropina baja dosis) de Sydnexis para control de miopía, cuestionando la suficiencia de los datos presentados pese a que el ensayo STAR cumplió sus objetivos primarios y secundarios.",
+      "category": "INDUSTRY",
+      "category_color": "#D42B2B",
+      "category_label": "Industria"
     },
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "FDA Panel Casts Doubt on Sydnexis’ Myopia Drug: Is a New Trial Inevitable?",
-      "url": "https://reviewofmm.com/fda-panel-casts-doubt-on-sydnexis-myopia-drug-is-a-new-trial-inevitable/",
-      "summary_es": "Panel asesor de la FDA expresó dudas sobre la formulación de atropina de baja dosis SYD-101 de Sydnexis tras revisar los datos del ensayo STAR fase 3, cuestionando la suficiencia de la evidencia presentada para la aprobación del fármaco de control de miopía.",
+      "title": "OrthoK Pioneer Awards Celebrate 70 Years of Orthokeratology",
+      "url": "https://reviewofmm.com/orthok-pioneer-awards-celebrate-70-years-of-orthokeratology/",
+      "summary_es": "Orthokeratologist.org lanzó el premio OrthoK Pioneers Award para conmemorar 70 años de ortoqueratología, reconociendo visionaries que impulsan el futuro de esta disciplina. La plataforma publica una serie de 10 capítulos sobre la historia global de ortho-k, destacando pioneros clave e innovadores contemporáneos en diferentes países.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
