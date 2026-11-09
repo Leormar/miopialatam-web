@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-09T12:00:49.146532+00:00",
+  "generated_at": "2026-11-09T21:58:30.354492+00:00",
   "date_display": "09 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Game-Changing Myopia Control: 3-Year PROTECT Study Key Findings",
-      "url": "https://reviewofmm.com/game-changing-myopia-control-3-year-protect-study-key-findings/",
-      "summary_es": "Estudio PROTECT de tres años demuestra que lentes de contacto multifocales NaturalVue reducen progresión miópica en 1.06D y enlentecen elongación axial en niños comparado con grupo control, proporcionando evidencia clínica relevante para control de miopía.",
+      "title": "Driven by Data, Defined by Outcomes: Elevating Patient Care with NaturalVue®",
+      "url": "https://reviewofmm.com/driven-by-data-defined-by-outcomes-elevating-patient-care-with-naturalvue/",
+      "summary_es": "Caso clínico que documenta la implementación de lentes de contacto NaturalVue® en una práctica especializada en terapia visual y visión binocular, demostrando resultados clínicos en el manejo integral de pacientes con miopía y sus comorbilidades asociadas.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Frontline Clinicians Push for SYD-101 Approval in the Face of FDA Panel Skepticism",
-      "url": "https://reviewofmm.com/frontline-clinicians-push-for-syd-101-approval-in-the-face-of-fda-panel-skepticism/",
-      "summary_es": "Comité asesor de la FDA revisó SYD-101, tratamiento de atropina en baja dosis para miopía pediátrica, generando cuestionamientos sobre la evidencia presentada. A pesar del respaldo de clínicos y ejecutivos, la hesitación del panel sugiere la necesidad de nuevos ensayos clínicos para su aprobación.",
+      "title": "From Patient to Advocate: Why I Founded Clarity Reach",
+      "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
+      "summary_es": "Fundador de Clarity Reach comparte su experiencia personal con miopía desde la infancia y explica las motivaciones detrás de la creación de su empresa, enfocándose en la perspectiva del paciente como impulsor de soluciones innovadoras en el manejo de la condición refractiva.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "The Myopia Collective Meets in Houston for Change Agent Workshop",
+      "url": "https://reviewofmm.com/the-myopia-collective-meets-in-houston-for-change-agent-workshop/",
+      "summary_es": "The Myopia Collective realizó su taller anual Change Agent Workshop en Houston, reuniendo profesionales de diversos estados para fortalecer conexiones y explorar estrategias de expansión del manejo de miopía basado en evidencia. La iniciativa colaborativa entre AOA y CooperVision busca posicionar el manejo miópico como estándar de atención pediátrica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,20 +37,10 @@
       "source_short": "RoMM",
       "title": "Can Big Tech Help Protect Kids’ Vision?",
       "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
-      "summary_es": "Apple presenta características de salud ocular diseñadas para promover comportamientos saludables y reducir el riesgo de miopía, ampliando el alcance de herramientas digitales en la educación y prevención de la progresión miópica en población pediátrica.",
+      "summary_es": "Apple integra funcionalidades de salud visual en sus dispositivos para promover hábitos saludables y reducir el riesgo de miopía infantil. La iniciativa representa la expansión del ecosistema tecnológico hacia la educación y prevención miópica en contextos de prevalencia creciente.",
       "category": "WEB",
       "category_color": "#F5C518",
       "category_label": "Nuevos recursos"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "FDA Panel Casts Doubt on Sydnexis’ Myopia Drug: Is a New Trial Inevitable?",
-      "url": "https://reviewofmm.com/fda-panel-casts-doubt-on-sydnexis-myopia-drug-is-a-new-trial-inevitable/",
-      "summary_es": "Panel asesor de la FDA expresó dudas sobre el fármaco experimental SYD-101 de baja dosis de atropina de Sydnexis para el control de miopía. Aunque el ensayo STAR Phase 3 alcanzó sus objetivos primarios, el comité manifestó escepticismo sobre el paquete de datos presentado.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
     }
   ]
 }
