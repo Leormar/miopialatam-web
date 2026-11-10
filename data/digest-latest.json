@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T19:23:08.210915+00:00",
+  "generated_at": "2026-11-10T19:47:52.656137+00:00",
   "date_display": "10 Nov 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Driven by Data, Defined by Outcomes: Elevating Patient Care with NaturalVue®",
       "url": "https://reviewofmm.com/driven-by-data-defined-by-outcomes-elevating-patient-care-with-naturalvue/",
-      "summary_es": "Análisis de resultados clínicos en el manejo de la miopía utilizando lentes de contacto NaturalVue®, destacando la evolución de una práctica oftalmológica hacia un enfoque integral basado en datos y resultados terapéuticos en pacientes pediátricos.",
+      "summary_es": "Práctica clínica integral con énfasis en terapia visual y visión binocular presenta su experiencia en manejo de pacientes mediante datos clínicos y resultados medibles. Evolución de 45 años de consultorio especializado hacia atención primaria comprensiva con protocolo de cuidado optimizado.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "From Patient to Advocate: Why I Founded Clarity Reach",
       "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
-      "summary_es": "Relato personal del fundador de Clarity Reach sobre su experiencia con miopía desde la infancia y las motivaciones que lo llevaron a emprender en el sector de gestión de la miopía, combinando perspectiva de paciente con visión empresarial.",
+      "summary_es": "Fundador de Clarity Reach comparte su experiencia personal con miopía desde la infancia y explica las motivaciones que lo llevaron a crear una plataforma orientada a conectar pacientes con soluciones de manejo miópico y advocacy en la comunidad oftalmológica.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "The Myopia Collective Meets in Houston for Change Agent Workshop",
       "url": "https://reviewofmm.com/the-myopia-collective-meets-in-houston-for-change-agent-workshop/",
-      "summary_es": "The Myopia Collective realizó su taller anual Change Agent Workshop en Houston, reuniendo profesionales de diferentes estados para compartir estrategias de implementación de manejo de miopía basado en evidencia como estándar de atención. La iniciativa colaborativa entre AOA y CooperVision busca expandir el acceso a tratamientos de control miópico en población pediátrica.",
+      "summary_es": "The Myopia Collective realizó su taller anual en Houston enfocado en posicionar el manejo de miopía como estándar de atención. El evento, una colaboración entre la American Optometric Association y CooperVision, reunió agentes de cambio para expandir el acceso a estrategias basadas en evidencia para el control de miopía pediátrica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Combined OrthoK and Alternate-Day Atropine for Rapidly Progressing Myopia",
-      "url": "https://reviewofmm.com/combined-orthok-and-alternate-day-atropine-for-rapidly-progressing-myopia/",
-      "summary_es": "Estudio prospectivo aleatorizado que evaluó la eficacia de ortocqueratología de zona de tratamiento pequeño combinada con atropina 0.01% en días alternos en niños de 8-12 años con miopía progresiva rápida, analizando factores ópticos asociados a la respuesta terapéutica.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
+      "title": "Can Big Tech Help Protect Kids’ Vision?",
+      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
+      "summary_es": "Apple incorpora funcionalidades de salud ocular para promover comportamientos saludables y reducir el riesgo de miopía en el contexto de prevalencia creciente de esta condición en población pediátrica norteamericana y global.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
     }
   ]
 }
