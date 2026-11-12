@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T12:00:49.153270+00:00",
+  "generated_at": "2026-11-12T19:35:37.112990+00:00",
   "date_display": "12 Nov 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Driven by Data, Defined by Outcomes: Elevating Patient Care with NaturalVue®",
       "url": "https://reviewofmm.com/driven-by-data-defined-by-outcomes-elevating-patient-care-with-naturalvue/",
-      "summary_es": "Artículo que documenta la evolución de una práctica oftalmológica hacia el manejo integral de la miopía, destacando la importancia de datos clínicos y resultados en la atención al paciente pediátrico mediante enfoques basados en terapia visual y visión binocular.",
+      "summary_es": "Documento que describe la evolución de una práctica clínica hacia el manejo integral de la miopía, destacando el uso de lentes de contacto NaturalVue® y la integración de terapia visual en protocolos de control miópico basados en datos de resultados clínicos.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "From Patient to Advocate: Why I Founded Clarity Reach",
       "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
-      "summary_es": "Relato personal del fundador de Clarity Reach sobre sus inicios con miopía en la infancia y la motivación detrás de la creación de su empresa enfocada en la gestión y advocacy del manejo de la miopía desde la perspectiva del paciente.",
+      "summary_es": "Relato personal del fundador de Clarity Reach sobre su experiencia con miopía desde la infancia y su motivación para crear una plataforma dirigida a pacientes y defensores del manejo de la miopía, enfatizando la importancia de la conciencia y la comunicación en el cuidado oftalmológico.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "The Myopia Collective Meets in Houston for Change Agent Workshop",
       "url": "https://reviewofmm.com/the-myopia-collective-meets-in-houston-for-change-agent-workshop/",
-      "summary_es": "The Myopia Collective realizó su taller anual en Houston enfocado en posicionar el manejo de miopía como estándar de atención. El evento, colaboración entre la Asociación Optométrica Americana y CooperVision, reunió agentes de cambio para fortalecer conexiones profesionales y expandir el acceso a manejo basado en evidencia.",
+      "summary_es": "The Myopia Collective realizó su taller anual en Houston enfocado en posicionar el manejo de miopía como estándar de atención. El evento reunió agentes de cambio de diversos estados para fortalecer conexiones profesionales y expandir el acceso a estrategias basadas en evidencia para el manejo miópico pediátrico.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Combined OrthoK and Alternate-Day Atropine for Rapidly Progressing Myopia",
-      "url": "https://reviewofmm.com/combined-orthok-and-alternate-day-atropine-for-rapidly-progressing-myopia/",
-      "summary_es": "Estudio prospectivo evaluó la eficacia de combinar ortoqueratología de zona de tratamiento pequeño con atropina 0.01% en días alternos para controlar el alargamiento axial en niños con progresión miópica acelerada a pesar del uso de lentes de contacto especializados.",
-      "category": "CLINICAL",
-      "category_color": "#2EAA4A",
-      "category_label": "Control clínico"
+      "title": "Can Big Tech Help Protect Kids’ Vision?",
+      "url": "https://reviewofmm.com/can-big-tech-help-protect-kids-vision/",
+      "summary_es": "Apple desarrolla funcionalidades de salud ocular diseñadas para promover comportamientos saludables y reducir el riesgo de miopía en contexto de proyecciones que indican que cerca del 50% de la población norteamericana presentará miopía en menos de cuatro años.",
+      "category": "WEB",
+      "category_color": "#F5C518",
+      "category_label": "Nuevos recursos"
     }
   ]
 }
