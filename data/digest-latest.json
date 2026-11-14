@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T12:00:42.303290+00:00",
+  "generated_at": "2026-11-14T17:42:13.591404+00:00",
   "date_display": "14 Nov 2026",
   "items": [
     {
@@ -7,7 +7,7 @@
       "source_short": "RoMM",
       "title": "Driven by Data, Defined by Outcomes: Elevating Patient Care with NaturalVue®",
       "url": "https://reviewofmm.com/driven-by-data-defined-by-outcomes-elevating-patient-care-with-naturalvue/",
-      "summary_es": "Práctica oftalmológica con 45 años de trayectoria presenta su evolución desde clínica de terapia visual hacia atención primaria integral, manteniendo especialización en visión binocular y rehabilitación. Enfoque basado en datos para elevar estándares de cuidado del paciente con lentes NaturalVue.",
+      "summary_es": "Práctica clínica de 45 años enfocada en terapia visual y visión binocular integra lentes de contacto NaturalVue® como herramienta de control miópico, documentando resultados y protocolos de manejo basados en datos clínicos de outcomes en pacientes.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,9 +15,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
+      "title": "From Patient to Advocate: Why I Founded Clarity Reach",
+      "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
+      "summary_es": "Testimonio de fundador sobre su experiencia personal con miopía desde la infancia y su motivación para crear Clarity Reach, una iniciativa orientada a transformar pacientes en defensores del control miópico y mejorar el acceso a soluciones de manejo en la región.",
+      "category": "PRACTICE",
+      "category_color": "#0077C8",
+      "category_label": "Gestión de consultorio"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
       "title": "THE Myopia Meeting is Returning to Markham, Greater Toronto December 6",
       "url": "https://reviewofmm.com/the-myopia-meeting-is-returning-to-markham-greater-toronto-deccember-6/",
-      "summary_es": "THE Myopia Meeting regresa a Markham, Ontario, Canadá el 6 de diciembre de 2026 con una jornada completa que incluye sesiones interactivas lideradas por expertos en manejo de miopía, abordando decisiones clínicas del mundo real y desafíos de práctica profesional.",
+      "summary_es": "THE Myopia Meeting regresa a Markham, Ontario, Canadá, el 6 de diciembre de 2026 como evento de día completo. La reunión contará con presentaciones de expertos internacionales en manejo de miopía y sesiones interactivas sobre decisiones clínicas y desafíos de práctica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -27,17 +37,7 @@
       "source_short": "RoMM",
       "title": "The Myopia Collective Meets in Houston for Change Agent Workshop",
       "url": "https://reviewofmm.com/the-myopia-collective-meets-in-houston-for-change-agent-workshop/",
-      "summary_es": "The Myopia Collective realizó su taller anual Change Agent Workshop en Houston, reuniendo a profesionales de distintos estados para compartir estrategias y fortalecer conexiones sobre manejo de miopía basado en evidencia. La iniciativa colaborativa entre AOA y CooperVision busca posicionar el control de la miopía como estándar de atención en pediatría.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
-      "title": "From Patient to Advocate: Why I Founded Clarity Reach",
-      "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
-      "summary_es": "Camden Niknam relata su experiencia personal con miopía desde la infancia y explica las motivaciones detrás de la fundación de Clarity Reach, una iniciativa orientada a la promoción y defensa de pacientes en el manejo de la miopía.",
+      "summary_es": "The Myopia Collective realizó su taller anual Change Agent Workshop en Houston, reuniendo profesionales de distintos estados para avanzar el manejo de miopía como estándar de atención. El evento, colaboración entre AOA y CooperVision, busca expandir el acceso a tratamientos basados en evidencia para niños miopes.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
