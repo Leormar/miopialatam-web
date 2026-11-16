@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-16T12:30:45.318320+00:00",
+  "generated_at": "2026-11-16T21:41:07.587914+00:00",
   "date_display": "16 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Driven by Data, Defined by Outcomes: Elevating Patient Care with NaturalVue®",
-      "url": "https://reviewofmm.com/driven-by-data-defined-by-outcomes-elevating-patient-care-with-naturalvue/",
-      "summary_es": "Artículo sobre la implementación de lentes de contacto NaturalVue® en práctica clínica especializada en terapia visual y visión binocular, enfatizando resultados basados en datos para el manejo integral del paciente con miopía.",
+      "title": "The Ins and Outs of OrthoK for Myopia Management",
+      "url": "https://reviewofmm.com/the-ins-and-outs-of-orthok-for-myopia-management/",
+      "summary_es": "Artículo de revisión sobre ortoqueratología como técnica establecida para corrección de miopía y desaceleración de la progresión miópica. Describe el uso de lentes de geometría invertida de uso nocturno y su aplicación clínica como estrategia de manejo refractivo.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "From Patient to Advocate: Why I Founded Clarity Reach",
       "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
-      "summary_es": "Testimonio fundacional sobre la experiencia personal con miopía que motivó la creación de Clarity Reach, plataforma orientada a transformar pacientes en defensores activos del manejo miópico mediante estrategias de advocacy y comunicación digital.",
+      "summary_es": "Fundador de Clarity Reach comparte su experiencia personal con miopía desde la infancia y explica las motivaciones que lo llevaron a crear su empresa. El artículo destaca la transformación de paciente a emprendedor en el sector de manejo de miopía.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "THE Myopia Meeting is Returning to Markham, Greater Toronto December 6",
       "url": "https://reviewofmm.com/the-myopia-meeting-is-returning-to-markham-greater-toronto-deccember-6/",
-      "summary_es": "THE Myopia Meeting regresa a Markham, Greater Toronto el 6 de diciembre de 2026 con un evento de día completo conducido por expertos en manejo miópico. Se abordarán decisiones clínicas reales, conversaciones y desafíos prácticos en un formato interactivo dirigido a clínicos experimentados.",
+      "summary_es": "THE Myopia Meeting regresa a Markham, Greater Toronto, el 6 de diciembre de 2026 con un evento de día completo. La jornada inaugural presentará sesiones interactivas de expertos sobre decisiones clínicas del mundo real y desafíos en la práctica del manejo de miopía.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,12 +35,12 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "The Myopia Collective Meets in Houston for Change Agent Workshop",
-      "url": "https://reviewofmm.com/the-myopia-collective-meets-in-houston-for-change-agent-workshop/",
-      "summary_es": "The Myopia Collective realizó su taller anual Change Agent Workshop en Houston, reuniendo profesionales de diversos estados para fortalecer conexiones y explorar estrategias de expansión del manejo de miopía basado en evidencia como estándar de atención pediátrica. La iniciativa colaborativa entre AOA y CooperVision busca transformar el enfoque del cuidado de la miopía infantil.",
-      "category": "INDUSTRY",
-      "category_color": "#D42B2B",
-      "category_label": "Industria"
+      "title": "A Season of Gratitude: Remembering What Matters in Myopia Management",
+      "url": "https://reviewofmm.com/a-season-of-gratitude/",
+      "summary_es": "Reflexión sobre los avances en el manejo de la miopía y su impacto en la trayectoria visual de los pacientes pediátricos. El artículo destaca la importancia de valorar los logros alcanzados en esta disciplina y su relevancia clínica para la práctica oftalmológica actual.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
     }
   ]
 }
