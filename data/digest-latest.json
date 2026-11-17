@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-17T12:00:55.087004+00:00",
+  "generated_at": "2026-11-17T20:30:27.671234+00:00",
   "date_display": "17 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "The Ins and Outs of OrthoK for Myopia Management",
-      "url": "https://reviewofmm.com/the-ins-and-outs-of-orthok-for-myopia-management/",
-      "summary_es": "Revisión sobre ortoqueratología como técnica establecida para corrección de miopía y ralentización de su progresión mediante lentes de contacto rígidas de geometría inversa usadas durante la noche, con aplicaciones clínicas comprobadas a nivel mundial.",
+      "title": "Questioning the Textbook: New Insights in Myopia Control",
+      "url": "https://reviewofmm.com/questioning-the-textbook-new-insights-in-myopia-control/",
+      "summary_es": "Artículo que cuestiona conceptos tradicionales en el manejo de la miopía, presentando nuevas perspectivas clínicas sobre el uso de lentes de contacto multifocales para control miópico en práctica diaria.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -17,7 +17,7 @@
       "source_short": "RoMM",
       "title": "From Patient to Advocate: Why I Founded Clarity Reach",
       "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
-      "summary_es": "Testimonio fundacional sobre la experiencia personal con miopía que motivó la creación de Clarity Reach, plataforma orientada a conectar pacientes y profesionales en el manejo de la condición refractiva desde una perspectiva de advocacy y educación comunitaria.",
+      "summary_es": "Testimonio de fundador de plataforma digital sobre su experiencia personal con miopía infantil y motivaciones empresariales para crear soluciones en el sector de gestión de la condición refractiva.",
       "category": "PRACTICE",
       "category_color": "#0077C8",
       "category_label": "Gestión de consultorio"
@@ -27,7 +27,7 @@
       "source_short": "RoMM",
       "title": "THE Myopia Meeting is Returning to Markham, Greater Toronto December 6",
       "url": "https://reviewofmm.com/the-myopia-meeting-is-returning-to-markham-greater-toronto-deccember-6/",
-      "summary_es": "THE Myopia Meeting regresará a Markham, Greater Toronto, el 6 de diciembre de 2026 para un evento de jornada completa. La reunión contará con presentaciones de expertos líderes en manejo de miopía abordando decisiones clínicas del mundo real y desafíos de práctica.",
+      "summary_es": "THE Myopia Meeting regresa a Markham, Greater Toronto, el 6 de diciembre de 2026 para un evento de jornada completa. La reunión contará con presentaciones de expertos en manejo de miopía abordando decisiones clínicas del mundo real y desafíos de práctica.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,9 +35,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "A Season of Gratitude: Remembering What Matters in Myopia Management",
-      "url": "https://reviewofmm.com/a-season-of-gratitude/",
-      "summary_es": "Reflexión profesional sobre los avances logrados en el manejo de la miopía y la oportunidad de modificar la trayectoria visual en niños, destacando la importancia de valorar los momentos significativos en la práctica clínica diaria.",
+      "title": "One Family, Four Children, Four Strategies",
+      "url": "https://reviewofmm.com/one-family-four-children-four-strategies/",
+      "summary_es": "Caso clínico descriptivo de seguimiento de cuatro hermanos con miopía en ambiente controlado, que ilustra diferentes estrategias de manejo y progresión miópica en contexto familiar con factores genéticos y ambientales compartidos.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
