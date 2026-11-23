@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-23T12:00:47.035473+00:00",
+  "generated_at": "2026-11-23T23:26:53.119213+00:00",
   "date_display": "23 Nov 2026",
   "items": [
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "Questioning the Textbook: New Insights in Myopia Control",
-      "url": "https://reviewofmm.com/questioning-the-textbook-new-insights-in-myopia-control/",
-      "summary_es": "Artículo que cuestiona los enfoques tradicionales en el manejo de la miopía, presentando perspectivas innovadoras sobre lentes de contacto multifocales como herramienta de control miópico en práctica clínica real.",
+      "title": "How Refractive States Rewire Retinal Blood Flow",
+      "url": "https://reviewofmm.com/how-refractive-states-rewire-retinal-blood-flow/",
+      "summary_es": "Estudio comparativo mediante SS-OCTA que evalúa cómo diferentes estados refractivos en niños afectan el espesor macular, densidad vascular y características coroides. Los hallazgos sugieren que la miopía genera cambios estructurales y vasculares específicos por región, relevante para el manejo clínico de la enfermedad refractiva.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
@@ -15,19 +15,9 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "From Patient to Advocate: Why I Founded Clarity Reach",
-      "url": "https://reviewofmm.com/from-patient-to-advocate-why-i-founded-clarity-reach/",
-      "summary_es": "Fundador de Clarity Reach comparte su experiencia personal con miopía desde la infancia y explica las motivaciones detrás de la creación de su empresa enfocada en la gestión y advocacy de pacientes con miopía en la práctica oftalmológica moderna.",
-      "category": "PRACTICE",
-      "category_color": "#0077C8",
-      "category_label": "Gestión de consultorio"
-    },
-    {
-      "source": "Review of Myopia Management",
-      "source_short": "RoMM",
       "title": "SUNY Optometry Brings Breakthrough Vision Tech to Kids Nationwide",
       "url": "https://reviewofmm.com/suny-optometry-brings-breakthrough-vision-tech-to-kids-nationwide/",
-      "summary_es": "SUNY Optometry participó en ensayos clínicos multicéntricos que contribuyeron a la autorización FDA de los lentes Essilor Stellest para control de miopía, reconocidos como uno de los mejores inventos de 2026 según TIME.",
+      "summary_es": "SUNY Optometry participó en ensayos clínicos multicéntricos que contribuyeron a la autorización FDA de las lentes Essilor Stellest para control de miopía, reconocidas como uno de los mejores inventos de 2026 por TIME Magazine.",
       "category": "INDUSTRY",
       "category_color": "#D42B2B",
       "category_label": "Industria"
@@ -35,9 +25,19 @@
     {
       "source": "Review of Myopia Management",
       "source_short": "RoMM",
-      "title": "One Family, Four Children, Four Strategies",
-      "url": "https://reviewofmm.com/one-family-four-children-four-strategies/",
-      "summary_es": "Caso clínico longitudinal de seguimiento de cuatro hermanos con miopía en ambiente controlado, que permite evaluar diferentes estrategias de manejo y progresión miópica en población pediátrica con factores genéticos y ambientales similares.",
+      "title": "Efficacy and Safety of Repeated Low-Level Red Light Therapy in Myopia Control",
+      "url": "https://reviewofmm.com/repeated-low-level-red-light-therapy-in-myopia-control/",
+      "summary_es": "Revisión sistemática y metaanálisis de 2026 evalúa eficacia y seguridad de terapia con luz roja de bajo nivel en control de miopía, analizando 19 estudios con 2.586 niños y reportando reducciones sustanciales en elongación axial, aunque persisten interrogantes sobre seguridad a largo plazo y eficacia sostenida.",
+      "category": "CLINICAL",
+      "category_color": "#2EAA4A",
+      "category_label": "Control clínico"
+    },
+    {
+      "source": "Review of Myopia Management",
+      "source_short": "RoMM",
+      "title": "How to Create A Successful Myopia Management Schedule",
+      "url": "https://reviewofmm.com/how-to-create-a-successful-myopia-management-schedule/",
+      "summary_es": "Artículo sobre la planificación de seguimiento en control de miopía, considerando edad del paciente, longitud axial, modalidad terapéutica y factores familiares para optimizar intervalos de visitas y prevenir progresión miópica.",
       "category": "CLINICAL",
       "category_color": "#2EAA4A",
       "category_label": "Control clínico"
